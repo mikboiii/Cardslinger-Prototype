@@ -8,6 +8,10 @@
 #include "Components/InputComponent.h"
 #include "Kismet/GameplayStatics.h"
 #include "Components/CapsuleComponent.h"
+#include "Components/SkeletalMeshComponent.h"
+#include "DrawDebugHelpers.h"
+#include "Engine/DamageEvents.h"
+#include "Engine/World.h"
 
 // Sets default values
 ABaseCharacterClass::ABaseCharacterClass()
@@ -75,5 +79,42 @@ void ABaseCharacterClass::Look(const FInputActionValue& Value)
 
 void ABaseCharacterClass::Shoot()
 {
+	FHitResult Hit;
+	FVector ShotDirection;
+	//AController* OwnerController = GetOwnerController();
+	//if(OwnerController == nullptr) return;
+	if(HitTrace(Hit, ShotDirection))
+	{
+	UE_LOG(LogTemp, Display, TEXT("Trace Called"));
+	FPointDamageEvent DamageEvent(Damage, Hit, ShotDirection, nullptr);
+	DrawDebugSphere(GetWorld(), Hit.ImpactPoint, 100.0f, 16, FColor::Red, true, 10000.0f);
+	AActor* HitActor = Hit.GetActor();
+	if(HitActor == nullptr) return;
+	HitActor->TakeDamage(Damage, DamageEvent, GetController(), this);
+	
+	}
+}
 
+bool ABaseCharacterClass::HitTrace(FHitResult& Hit, FVector& ShotDirection)
+{
+	FVector ViewLocation;
+	FRotator ViewRotation;
+	//AController* OwnerController = GetOwnerController();
+	//if(OwnerController == nullptr) return false;
+	GetController()->GetPlayerViewPoint(ViewLocation, ViewRotation);
+	ShotDirection = -ViewRotation.Vector();
+	FVector End = ViewLocation + ViewRotation.Vector() * MaxRange;
+	FCollisionQueryParams Params;
+	Params.AddIgnoredActor(this);
+	Params.AddIgnoredActor(GetOwner());
+	return GetWorld()->LineTraceSingleByChannel(Hit, ViewLocation, End, ECollisionChannel::ECC_GameTraceChannel1, Params);
+}
+
+AController* ABaseCharacterClass::GetOwnerController() const
+{
+	UE_LOG(LogTemp, Display, TEXT("Controller Called"));
+	APawn* OwnerPawn = Cast<APawn>(GetOwner());
+	if(OwnerPawn == nullptr) return nullptr;
+	UE_LOG(LogTemp, Display, TEXT("Controller returned"));
+	return OwnerPawn->GetController();
 }

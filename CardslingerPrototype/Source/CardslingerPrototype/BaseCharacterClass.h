@@ -57,5 +57,14 @@ private:
 	UPROPERTY(EditDefaultsOnly)
 	float MaxHealth = 100.0f;
 
+	UPROPERTY(EditAnywhere)
+	float MaxRange = 1000.0f;
 
+	UPROPERTY(EditAnywhere)
+	float Damage = 10.0f;
+
+	
+	AController* GetOwnerController() const;
+
+	bool HitTrace(FHitResult& Hit, FVector& ShotDirection);
 };
