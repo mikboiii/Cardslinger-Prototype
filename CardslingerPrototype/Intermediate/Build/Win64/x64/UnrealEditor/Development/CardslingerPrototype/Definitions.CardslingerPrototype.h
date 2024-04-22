@@ -1,4 +1,4 @@
-#include "C:/Users/Mikolaj/Documents/Unreal Projects/Cardslinger/CardslingerPrototype/Intermediate/Build/Win64/x64/CardslingerPrototypeEditor/Development/Engine/SharedDefinitions.Engine.Cpp20.h"
+#include "C:/Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Intermediate/Build/Win64/x64/CardslingerPrototypeEditor/Development/Engine/SharedDefinitions.Engine.Cpp20.h"
 #undef UE_IS_ENGINE_MODULE
 #undef DEPRECATED_FORGAME
 #define DEPRECATED_FORGAME DEPRECATED
@@ -22,3 +22,4 @@
 #define DEPRECATED_FORGAME DEPRECATED
 #define UE_DEPRECATED_FORGAME UE_DEPRECATED
 #define CARDSLINGERPROTOTYPE_API DLLEXPORT
+#define ENHANCEDINPUT_API DLLIMPORT
