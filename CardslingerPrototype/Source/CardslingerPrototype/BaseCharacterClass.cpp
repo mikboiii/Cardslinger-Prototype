@@ -12,6 +12,7 @@
 #include "DrawDebugHelpers.h"
 #include "Engine/DamageEvents.h"
 #include "Engine/World.h"
+#include "BaseCard.h"
 
 // Sets default values
 ABaseCharacterClass::ABaseCharacterClass()
@@ -25,6 +26,14 @@ ABaseCharacterClass::ABaseCharacterClass()
 void ABaseCharacterClass::BeginPlay()
 {
 	Super::BeginPlay();
+	if(CardTemplate!=nullptr)
+	{
+	CardHand.Init(GetWorld()->SpawnActor<ABaseCard>(CardTemplate), 4);
+	}
+	// for(int i = 0; i < 4; i++)
+	// {
+
+	// }
 	
 }
 

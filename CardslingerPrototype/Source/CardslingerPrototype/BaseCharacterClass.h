@@ -9,6 +9,7 @@
 class UInputMappingContext;
 class UInputAction;
 struct FInputActionValue;
+class ABaseCard;
 
 UCLASS()
 class CARDSLINGERPROTOTYPE_API ABaseCharacterClass : public ACharacter
@@ -63,7 +64,13 @@ private:
 	UPROPERTY(EditAnywhere)
 	float Damage = 10.0f;
 
-	
+	TArray<ABaseCard*> CardDeck;
+	UPROPERTY(VisibleAnywhere)
+	TArray<ABaseCard*> CardHand;
+
+	UPROPERTY(EditAnywhere)
+	TSubclassOf<ABaseCard> CardTemplate;
+
 	AController* GetOwnerController() const;
 
 	bool HitTrace(FHitResult& Hit, FVector& ShotDirection);
