@@ -6,6 +6,10 @@
 #include "GameFramework/Character.h"
 #include "BaseCharacterClass.generated.h"
 
+class UInputMappingContext;
+class UInputAction;
+struct FInputActionValue;
+
 UCLASS()
 class CARDSLINGERPROTOTYPE_API ABaseCharacterClass : public ACharacter
 {
@@ -18,6 +22,22 @@ public:
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
+
+	UPROPERTY(EditAnywhere, Category = "Input")
+	UInputMappingContext* InputMapping;
+	UPROPERTY(EditAnywhere, Category = "Input")
+	UInputAction* MoveAction;
+	UPROPERTY(EditAnywhere, Category = "Input")
+	UInputAction* LookAction;
+	UPROPERTY(EditAnywhere, Category = "Input")
+	UInputAction* JumpAction;
+	UPROPERTY(EditAnywhere, Category = "Input")
+	UInputAction* ShootAction;
+
+	void Move(const FInputActionValue& Value);
+	void Look(const FInputActionValue& Value);
+
+	void Shoot();
 
 public:	
 	// Called every frame

@@ -12,6 +12,8 @@ void EmptyLinkFunctionForGeneratedCodeBaseCharacterClass() {}
 	CARDSLINGERPROTOTYPE_API UClass* Z_Construct_UClass_ABaseCharacterClass();
 	CARDSLINGERPROTOTYPE_API UClass* Z_Construct_UClass_ABaseCharacterClass_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_ACharacter();
+	ENHANCEDINPUT_API UClass* Z_Construct_UClass_UInputAction_NoRegister();
+	ENHANCEDINPUT_API UClass* Z_Construct_UClass_UInputMappingContext_NoRegister();
 	UPackage* Z_Construct_UPackage__Script_CardslingerPrototype();
 // End Cross Module References
 	void ABaseCharacterClass::StaticRegisterNativesABaseCharacterClass()
@@ -28,6 +30,26 @@ void EmptyLinkFunctionForGeneratedCodeBaseCharacterClass() {}
 #if WITH_METADATA
 		static const UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_InputMapping_MetaData[];
+#endif
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_InputMapping;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_MoveAction_MetaData[];
+#endif
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_MoveAction;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_LookAction_MetaData[];
+#endif
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_LookAction;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_JumpAction_MetaData[];
+#endif
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_JumpAction;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_ShootAction_MetaData[];
+#endif
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_ShootAction;
 #if WITH_METADATA
 		static const UECodeGen_Private::FMetaDataPairParam NewProp_Speed_MetaData[];
 #endif
@@ -57,6 +79,41 @@ void EmptyLinkFunctionForGeneratedCodeBaseCharacterClass() {}
 	};
 #endif
 #if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_InputMapping_MetaData[] = {
+		{ "Category", "Input" },
+		{ "ModuleRelativePath", "BaseCharacterClass.h" },
+	};
+#endif
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_InputMapping = { "InputMapping", nullptr, (EPropertyFlags)0x0020080000000001, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ABaseCharacterClass, InputMapping), Z_Construct_UClass_UInputMappingContext_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_InputMapping_MetaData), Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_InputMapping_MetaData) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_MoveAction_MetaData[] = {
+		{ "Category", "Input" },
+		{ "ModuleRelativePath", "BaseCharacterClass.h" },
+	};
+#endif
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_MoveAction = { "MoveAction", nullptr, (EPropertyFlags)0x0020080000000001, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ABaseCharacterClass, MoveAction), Z_Construct_UClass_UInputAction_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_MoveAction_MetaData), Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_MoveAction_MetaData) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_LookAction_MetaData[] = {
+		{ "Category", "Input" },
+		{ "ModuleRelativePath", "BaseCharacterClass.h" },
+	};
+#endif
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_LookAction = { "LookAction", nullptr, (EPropertyFlags)0x0020080000000001, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ABaseCharacterClass, LookAction), Z_Construct_UClass_UInputAction_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_LookAction_MetaData), Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_LookAction_MetaData) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_JumpAction_MetaData[] = {
+		{ "Category", "Input" },
+		{ "ModuleRelativePath", "BaseCharacterClass.h" },
+	};
+#endif
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_JumpAction = { "JumpAction", nullptr, (EPropertyFlags)0x0020080000000001, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ABaseCharacterClass, JumpAction), Z_Construct_UClass_UInputAction_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_JumpAction_MetaData), Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_JumpAction_MetaData) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_ShootAction_MetaData[] = {
+		{ "Category", "Input" },
+		{ "ModuleRelativePath", "BaseCharacterClass.h" },
+	};
+#endif
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_ShootAction = { "ShootAction", nullptr, (EPropertyFlags)0x0020080000000001, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ABaseCharacterClass, ShootAction), Z_Construct_UClass_UInputAction_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_ShootAction_MetaData), Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_ShootAction_MetaData) };
+#if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_Speed_MetaData[] = {
 		{ "Category", "BaseCharacterClass" },
 		{ "ModuleRelativePath", "BaseCharacterClass.h" },
@@ -78,6 +135,11 @@ void EmptyLinkFunctionForGeneratedCodeBaseCharacterClass() {}
 #endif
 	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_MaxHealth = { "MaxHealth", nullptr, (EPropertyFlags)0x0040000000010001, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ABaseCharacterClass, MaxHealth), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_MaxHealth_MetaData), Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_MaxHealth_MetaData) };
 	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ABaseCharacterClass_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_InputMapping,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_MoveAction,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_LookAction,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_JumpAction,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_ShootAction,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_Speed,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_Health,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_MaxHealth,
@@ -120,9 +182,9 @@ void EmptyLinkFunctionForGeneratedCodeBaseCharacterClass() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_BaseCharacterClass_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_ABaseCharacterClass, ABaseCharacterClass::StaticClass, TEXT("ABaseCharacterClass"), &Z_Registration_Info_UClass_ABaseCharacterClass, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ABaseCharacterClass), 2891409666U) },
+		{ Z_Construct_UClass_ABaseCharacterClass, ABaseCharacterClass::StaticClass, TEXT("ABaseCharacterClass"), &Z_Registration_Info_UClass_ABaseCharacterClass, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ABaseCharacterClass), 791596161U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_BaseCharacterClass_h_1583235335(TEXT("/Script/CardslingerPrototype"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_BaseCharacterClass_h_2270749850(TEXT("/Script/CardslingerPrototype"),
 		Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_BaseCharacterClass_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_BaseCharacterClass_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);
