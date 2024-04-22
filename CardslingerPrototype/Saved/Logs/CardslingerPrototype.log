@@ -1165,3 +1165,186 @@ LogConfig: CVar [[LogNamedEventFilters:Frame *]] deferred - dummy variable creat
 [2024.04.22-13.54.23:306][149]LogSlate: Took 0.000290 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
 [2024.04.22-13.54.27:741][338]LogSlate: Window 'Project Settings' being destroyed
 [2024.04.22-13.54.27:750][338]LogSlate: Window 'Project Settings' being destroyed
+[2024.04.22-13.55.32:198][580]LogAudioMixer: Display: Audio Buffer Underrun (starvation) detected. InstanceID=1
+[2024.04.22-13.56.12:918][702]LogDerivedDataCache: C:/Users/Mikolaj/AppData/Local/UnrealEngine/Common/DerivedDataCache: Maintenance finished in +00:00:42.049 and deleted 1 files with total size 0 MiB and 1 empty folders. Scanned 21518 files in 23445 folders with total size 1769 MiB.
+[2024.04.22-13.56.50:329][814]LogAudioMixer: Display: Audio Buffer Underrun (starvation) detected. InstanceID=1
+[2024.04.22-13.57.04:870][858]LogAudioMixer: Display: Audio Buffer Underrun (starvation) detected. InstanceID=1
+[2024.04.22-13.57.56:842][345]LogAudioMixer: Display: Audio Buffer Underrun (starvation) detected. InstanceID=1
+[2024.04.22-13.58.51:992][781]LogSlate: Took 0.001560 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-BoldCondensed.ttf' (158K)
+[2024.04.22-13.58.58:319][ 84]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/BP_BaseCharacterClass.BP_BaseCharacterClass
+[2024.04.22-13.58.58:322][ 84]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.04.22-13.58.58:322][ 84]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2024.04.22-13.58.58:337][ 84]LogSlate: Warning: The command 'BlueprintEditorSpawnNodes.AddActorRefAction->CommandInfo' has the same default chord as 'BlueprintEditorSpawnNodes.(Class=/Script/BlueprintGraph.K2Node_Knot Key=R Shift=false Ctrl=false Alt=false)' [R]
+[2024.04.22-13.58.59:608][ 84]LogSlate: Window 'Add Blueprint Class' being destroyed
+[2024.04.22-13.58.59:733][ 84]LogViewport: Scene viewport resized to 1281x1010, mode Windowed.
+[2024.04.22-13.59.03:785][314]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.04.22-13.59.03:918][314]LogPackageLocalizationCache: Processed 46 localized package path(s) for 1 prioritized culture(s) in 0.010380 seconds
+[2024.04.22-13.59.03:934][314]LogSavePackage: Moving output files for package: /Game/BP_BaseCharacterClass
+[2024.04.22-13.59.03:934][314]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/BP_BaseCharacterClass95F9299D4E28DB2BD3C763BB5AD0F4EA.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/BP_BaseCharacterClass.uasset'
+[2024.04.22-13.59.03:954][314]LogFileHelpers: InternalPromptForCheckoutAndSave took 169 ms
+[2024.04.22-13.59.03:956][314]AssetCheck: New page: Asset Save: BP_BaseCharacterClass
+[2024.04.22-13.59.03:957][314]LogContentValidation: Display: Validating /Script/Engine.Blueprint /Game/BP_BaseCharacterClass.BP_BaseCharacterClass
+[2024.04.22-13.59.34:246][519]LogAudioMixer: Display: Audio Buffer Underrun (starvation) detected. InstanceID=1
+[2024.04.22-14.00.12:565][634]LogAudioMixer: Display: Audio Buffer Underrun (starvation) detected. InstanceID=1
+[2024.04.22-14.00.59:208][803]LogAudioMixer: Display: Audio Buffer Underrun (starvation) detected. InstanceID=1
+[2024.04.22-14.01.09:533][833]LogAudioMixer: Display: Audio Buffer Underrun (starvation) detected. InstanceID=1
+[2024.04.22-14.01.45:210][940]LogAudioMixer: Display: Audio Buffer Underrun (starvation) detected. InstanceID=1
+[2024.04.22-14.02.21:792][ 50]LogAudioMixer: Display: Audio Buffer Underrun (starvation) detected. InstanceID=1
+[2024.04.22-14.02.59:532][163]LogAudioMixer: Display: Audio Buffer Underrun (starvation) detected. InstanceID=1
+[2024.04.22-14.03.56:047][333]LogAudioMixer: Display: Audio Buffer Underrun (starvation) detected. InstanceID=1
+[2024.04.22-14.04.09:379][810]LogMetaData: Removing '/Game/Player/BP_BaseCharacterClass.BP_BaseCharacterClass:UserConstructionScript.K2Node_FunctionEntry_0' ref from Metadata '/Game/BP_BaseCharacterClass.PackageMetaData'
+[2024.04.22-14.04.09:379][810]LogMetaData: Removing '/Game/Player/BP_BaseCharacterClass.SKEL_BP_BaseCharacterClass_C:UserConstructionScript' ref from Metadata '/Game/BP_BaseCharacterClass.PackageMetaData'
+[2024.04.22-14.04.09:379][810]LogMetaData: Removing '/Game/Player/BP_BaseCharacterClass.SKEL_BP_BaseCharacterClass_C' ref from Metadata '/Game/BP_BaseCharacterClass.PackageMetaData'
+[2024.04.22-14.04.09:379][810]LogMetaData: Removing '/Game/Player/BP_BaseCharacterClass.BP_BaseCharacterClass_C' ref from Metadata '/Game/BP_BaseCharacterClass.PackageMetaData'
+[2024.04.22-14.04.09:379][810]LogMetaData: Removing '/Game/Player/BP_BaseCharacterClass.BP_BaseCharacterClass:EventGraph.K2Node_Event_0' ref from Metadata '/Game/BP_BaseCharacterClass.PackageMetaData'
+[2024.04.22-14.04.09:379][810]LogMetaData: Removing '/Game/Player/BP_BaseCharacterClass.BP_BaseCharacterClass:EventGraph.K2Node_Event_1' ref from Metadata '/Game/BP_BaseCharacterClass.PackageMetaData'
+[2024.04.22-14.04.09:379][810]LogMetaData: Removing '/Game/Player/BP_BaseCharacterClass.BP_BaseCharacterClass:EventGraph.K2Node_Event_2' ref from Metadata '/Game/BP_BaseCharacterClass.PackageMetaData'
+[2024.04.22-14.04.09:415][810]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.04.22-14.04.09:566][810]LogSavePackage: Moving output files for package: /Game/Player/BP_BaseCharacterClass
+[2024.04.22-14.04.09:566][810]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/BP_BaseCharacterClass670DC68145C57CF28FB87B95843ECC5E.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/Player/BP_BaseCharacterClass.uasset'
+[2024.04.22-14.04.09:583][810]LogFileHelpers: InternalPromptForCheckoutAndSave took 167 ms (total: 337 ms)
+[2024.04.22-14.04.09:632][810]LogUObjectHash: Compacting FUObjectHashTables data took   2.44ms
+[2024.04.22-14.04.09:653][810]LogUObjectHash: Compacting FUObjectHashTables data took   1.54ms
+[2024.04.22-14.04.09:677][810]LogUObjectHash: Compacting FUObjectHashTables data took   0.66ms
+[2024.04.22-14.04.09:761][810]AssetCheck: New page: Asset Save: BP_BaseCharacterClass
+[2024.04.22-14.04.09:761][810]LogContentValidation: Display: Validating /Script/Engine.Blueprint /Game/Player/BP_BaseCharacterClass.BP_BaseCharacterClass
+[2024.04.22-14.04.14:940][ 40]LogContentBrowser: Deferred new asset file creation: NewInputMappingContext
+[2024.04.22-14.04.14:951][ 40]LogContentBrowser: Creating deferred item: NewInputMappingContext
+[2024.04.22-14.04.14:968][ 41]LogContentBrowser: Renaming the item being created (Deferred Item: NewInputMappingContext).
+[2024.04.22-14.04.20:913][380]LogContentBrowser: Attempting asset rename: NewInputMappingContext -> PlayerInputMap
+[2024.04.22-14.04.20:918][380]LogContentBrowser: End creating deferred item NewInputMappingContext
+[2024.04.22-14.04.21:838][434]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.04.22-14.04.21:955][434]LogSavePackage: Moving output files for package: /Game/Player/PlayerInputMap
+[2024.04.22-14.04.21:955][434]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/PlayerInputMap5ACE00A44F35CCC2B1C72DB8D7D44447.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/Player/PlayerInputMap.uasset'
+[2024.04.22-14.04.21:970][434]LogFileHelpers: InternalPromptForCheckoutAndSave took 132 ms (total: 469 ms)
+[2024.04.22-14.04.21:970][434]AssetCheck: New page: Asset Save: PlayerInputMap
+[2024.04.22-14.04.21:972][434]LogContentValidation: Display: Validating /Script/EnhancedInput.InputMappingContext /Game/Player/PlayerInputMap.PlayerInputMap
+[2024.04.22-14.04.22:293][453]LogAssetEditorSubsystem: Opening Asset editor for InputMappingContext /Game/Player/PlayerInputMap.PlayerInputMap
+[2024.04.22-14.04.42:127][643]LogAudioMixer: Display: Audio Buffer Underrun (starvation) detected. InstanceID=1
+[2024.04.22-14.04.57:754][690]LogAudioMixer: Display: Audio Buffer Underrun (starvation) detected. InstanceID=1
+[2024.04.22-14.05.07:970][720]LogAudioMixer: Display: Audio Buffer Underrun (starvation) detected. InstanceID=1
+[2024.04.22-14.05.33:682][903]LogAudioMixer: Display: Audio Buffer Underrun (starvation) detected. InstanceID=1
+[2024.04.22-14.05.58:124][976]LogAudioMixer: Display: Audio Buffer Underrun (starvation) detected. InstanceID=1
+[2024.04.22-14.07.01:982][167]LogAudioMixer: Display: Audio Buffer Underrun (starvation) detected. InstanceID=1
+[2024.04.22-14.07.22:565][229]LogAudioMixer: Display: Audio Buffer Underrun (starvation) detected. InstanceID=1
+[2024.04.22-14.07.34:472][265]LogAudioMixer: Display: Audio Buffer Underrun (starvation) detected. InstanceID=1
+[2024.04.22-14.07.57:129][865]LogContentBrowser: Deferred new asset folder creation: NewFolder
+[2024.04.22-14.07.57:137][865]LogContentBrowser: Creating deferred item: NewFolder
+[2024.04.22-14.07.57:143][865]LogContentBrowser: Renaming the item being created (Deferred Item: NewFolder).
+[2024.04.22-14.08.00:209][865]LogContentBrowser: Attempting asset rename: NewFolder -> InputActions
+[2024.04.22-14.08.00:209][865]LogContentBrowser: End creating deferred item NewFolder
+[2024.04.22-14.08.08:471][865]LogSlate: Window 'Save Asset As' being destroyed
+[2024.04.22-14.08.08:515][866]LogAutomationController: Ignoring very large delta of 16.11 seconds in calls to FAutomationControllerManager::Tick() and not penalizing unresponsive tests
+[2024.04.22-14.08.12:013][ 28]LogUObjectHash: Compacting FUObjectHashTables data took   2.13ms
+[2024.04.22-14.08.12:015][ 28]LogFileHelpers: Editor autosave (incl. external actors) for '/Game/EmptyLevel' took 0.028
+[2024.04.22-14.08.12:016][ 28]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/Player/PlayerInputMap] ([1] browsable assets)...
+[2024.04.22-14.08.12:016][ 28]OBJ SavePackage: Finished generating thumbnails for package [/Game/Player/PlayerInputMap]
+[2024.04.22-14.08.12:020][ 28]LogSavePackage: Moving output files for package: /Temp/Autosaves/Game/Player/PlayerInputMap_Auto1
+[2024.04.22-14.08.12:020][ 28]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/PlayerInputMap_Auto10919096A411DB56AA1D1F391B59D9D6B.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/Autosaves/Game/Player/PlayerInputMap_Auto1.uasset'
+[2024.04.22-14.08.12:021][ 28]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/InputActions/IA_Move] ([1] browsable assets)...
+[2024.04.22-14.08.12:021][ 28]OBJ SavePackage: Finished generating thumbnails for package [/Game/InputActions/IA_Move]
+[2024.04.22-14.08.12:025][ 28]LogSavePackage: Moving output files for package: /Temp/Autosaves/Game/InputActions/IA_Move_Auto1
+[2024.04.22-14.08.12:026][ 28]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/IA_Move_Auto1A08FFA9741335A77D8C7B6AF0E43B816.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/Autosaves/Game/InputActions/IA_Move_Auto1.uasset'
+[2024.04.22-14.08.12:028][ 28]LogFileHelpers: Auto-saving content packages took 0.013
+[2024.04.22-14.08.58:755][135]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.04.22-14.08.59:035][135]LogSavePackage: Moving output files for package: /Game/Player/PlayerInputMap
+[2024.04.22-14.08.59:039][135]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/PlayerInputMap33860D1C43C5F89C70C3F8B76E2F4B35.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/Player/PlayerInputMap.uasset'
+[2024.04.22-14.08.59:062][135]LogFileHelpers: InternalPromptForCheckoutAndSave took 306 ms (total: 776 ms)
+[2024.04.22-14.08.59:065][135]AssetCheck: New page: Asset Save: PlayerInputMap
+[2024.04.22-14.08.59:065][135]LogContentValidation: Display: Validating /Script/EnhancedInput.InputMappingContext /Game/Player/PlayerInputMap.PlayerInputMap
+[2024.04.22-14.09.23:008][ 85]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.04.22-14.09.23:263][ 85]LogSavePackage: Moving output files for package: /Game/Player/PlayerInputMap
+[2024.04.22-14.09.23:266][ 85]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/PlayerInputMap37AE45B1441D0068A7ABAEBA232644BE.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/Player/PlayerInputMap.uasset'
+[2024.04.22-14.09.23:300][ 85]LogFileHelpers: InternalPromptForCheckoutAndSave took 292 ms (total: 1.06 sec)
+[2024.04.22-14.09.23:304][ 85]AssetCheck: New page: Asset Save: PlayerInputMap
+[2024.04.22-14.09.23:304][ 85]LogContentValidation: Display: Validating /Script/EnhancedInput.InputMappingContext /Game/Player/PlayerInputMap.PlayerInputMap
+[2024.04.22-14.12.22:889][742]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.04.22-14.12.23:226][742]LogSavePackage: Moving output files for package: /Game/Player/PlayerInputMap
+[2024.04.22-14.12.23:231][742]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/PlayerInputMap40463DEC44204EC3EF732B8A995A681C.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/Player/PlayerInputMap.uasset'
+[2024.04.22-14.12.23:264][742]LogFileHelpers: InternalPromptForCheckoutAndSave took 375 ms (total: 1.44 sec)
+[2024.04.22-14.12.23:273][742]AssetCheck: New page: Asset Save: PlayerInputMap
+[2024.04.22-14.12.23:273][742]LogContentValidation: Display: Validating /Script/EnhancedInput.InputMappingContext /Game/Player/PlayerInputMap.PlayerInputMap
+[2024.04.22-14.12.56:203][249]LogSlate: Window 'Save Asset As' being destroyed
+[2024.04.22-14.12.56:479][249]LogAutomationController: Ignoring very large delta of 5.13 seconds in calls to FAutomationControllerManager::Tick() and not penalizing unresponsive tests
+[2024.04.22-14.12.58:610][329]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.04.22-14.12.58:903][329]LogSavePackage: Moving output files for package: /Game/Player/PlayerInputMap
+[2024.04.22-14.12.58:909][329]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/PlayerInputMap8A59E423474F8DA58788FBBDB95AD646.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/Player/PlayerInputMap.uasset'
+[2024.04.22-14.12.58:941][329]LogFileHelpers: InternalPromptForCheckoutAndSave took 330 ms (total: 1.77 sec)
+[2024.04.22-14.12.58:952][329]AssetCheck: New page: Asset Save: PlayerInputMap
+[2024.04.22-14.12.58:952][329]LogContentValidation: Display: Validating /Script/EnhancedInput.InputMappingContext /Game/Player/PlayerInputMap.PlayerInputMap
+[2024.04.22-14.13.14:117][838]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.04.22-14.13.14:383][838]LogSavePackage: Moving output files for package: /Game/Player/PlayerInputMap
+[2024.04.22-14.13.14:386][838]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/PlayerInputMap9754B5724B7CBA7809DF21B663123ECA.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/Player/PlayerInputMap.uasset'
+[2024.04.22-14.13.14:413][838]LogFileHelpers: InternalPromptForCheckoutAndSave took 296 ms (total: 2.07 sec)
+[2024.04.22-14.13.14:417][838]AssetCheck: New page: Asset Save: PlayerInputMap
+[2024.04.22-14.13.14:417][838]LogContentValidation: Display: Validating /Script/EnhancedInput.InputMappingContext /Game/Player/PlayerInputMap.PlayerInputMap
+[2024.04.22-14.13.42:585][381]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.04.22-14.13.42:820][381]LogSavePackage: Moving output files for package: /Game/Player/PlayerInputMap
+[2024.04.22-14.13.42:823][381]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/PlayerInputMap373084EA465129E068F13587BB9BCD75.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/Player/PlayerInputMap.uasset'
+[2024.04.22-14.13.42:847][381]LogFileHelpers: InternalPromptForCheckoutAndSave took 262 ms (total: 2.33 sec)
+[2024.04.22-14.13.42:851][381]AssetCheck: New page: Asset Save: PlayerInputMap
+[2024.04.22-14.13.42:851][381]LogContentValidation: Display: Validating /Script/EnhancedInput.InputMappingContext /Game/Player/PlayerInputMap.PlayerInputMap
+[2024.04.22-14.14.11:940][172]LogSlate: Window 'Save Asset As' being destroyed
+[2024.04.22-14.14.12:213][172]LogAutomationController: Ignoring very large delta of 5.02 seconds in calls to FAutomationControllerManager::Tick() and not penalizing unresponsive tests
+[2024.04.22-14.14.17:618][379]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.04.22-14.14.17:874][379]LogSavePackage: Moving output files for package: /Game/Player/PlayerInputMap
+[2024.04.22-14.14.17:879][379]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/PlayerInputMapAB14EBE343787B6871596CBC1F2F9236.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/Player/PlayerInputMap.uasset'
+[2024.04.22-14.14.17:905][379]LogFileHelpers: InternalPromptForCheckoutAndSave took 287 ms (total: 2.62 sec)
+[2024.04.22-14.14.17:912][379]AssetCheck: New page: Asset Save: PlayerInputMap
+[2024.04.22-14.14.17:912][379]LogContentValidation: Display: Validating /Script/EnhancedInput.InputMappingContext /Game/Player/PlayerInputMap.PlayerInputMap
+[2024.04.22-14.14.22:351][431]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.04.22-14.14.22:599][431]LogSavePackage: Moving output files for package: /Game/Player/PlayerInputMap
+[2024.04.22-14.14.22:602][431]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/PlayerInputMap3BA6F50E4A79F6CCDE9BBDA1A9AB14D5.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/Player/PlayerInputMap.uasset'
+[2024.04.22-14.14.22:630][431]LogFileHelpers: InternalPromptForCheckoutAndSave took 279 ms (total: 2.90 sec)
+[2024.04.22-14.14.22:633][431]AssetCheck: New page: Asset Save: PlayerInputMap
+[2024.04.22-14.14.22:633][431]LogContentValidation: Display: Validating /Script/EnhancedInput.InputMappingContext /Game/Player/PlayerInputMap.PlayerInputMap
+[2024.04.22-14.14.32:473][676]LogAssetEditorSubsystem: Opening Asset editor for InputAction /Game/InputActions/IA_Look.IA_Look
+[2024.04.22-14.14.33:999][739]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.04.22-14.14.34:334][739]LogSavePackage: Moving output files for package: /Game/InputActions/IA_Look
+[2024.04.22-14.14.34:334][739]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/IA_Look3DB8B05543E88FA0E64416BFEA0C1AFB.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/InputActions/IA_Look.uasset'
+[2024.04.22-14.14.34:374][739]LogFileHelpers: InternalPromptForCheckoutAndSave took 374 ms (total: 3.27 sec)
+[2024.04.22-14.14.34:377][739]AssetCheck: New page: Asset Save: IA_Look
+[2024.04.22-14.14.34:377][739]LogContentValidation: Display: Validating /Script/EnhancedInput.InputAction /Game/InputActions/IA_Look.IA_Look
+[2024.04.22-14.15.11:667][157]LogSlate: Window 'Save Asset As' being destroyed
+[2024.04.22-14.15.12:082][158]LogAutomationController: Ignoring very large delta of 4.68 seconds in calls to FAutomationControllerManager::Tick() and not penalizing unresponsive tests
+[2024.04.22-14.15.15:789][283]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.04.22-14.15.16:120][283]LogSavePackage: Moving output files for package: /Game/Player/PlayerInputMap
+[2024.04.22-14.15.16:125][283]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/PlayerInputMap0759A92A41C2BCADEA31D1B059ADCE62.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/Player/PlayerInputMap.uasset'
+[2024.04.22-14.15.16:154][283]LogFileHelpers: InternalPromptForCheckoutAndSave took 364 ms (total: 3.64 sec)
+[2024.04.22-14.15.16:160][283]AssetCheck: New page: Asset Save: PlayerInputMap
+[2024.04.22-14.15.16:160][283]LogContentValidation: Display: Validating /Script/EnhancedInput.InputMappingContext /Game/Player/PlayerInputMap.PlayerInputMap
+[2024.04.22-14.15.39:532][695]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.04.22-14.15.39:879][695]LogSavePackage: Moving output files for package: /Game/InputActions/IA_Look
+[2024.04.22-14.15.39:882][695]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/IA_Look428A80ED4B57D0CE5933B7A30E54596B.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/InputActions/IA_Look.uasset'
+[2024.04.22-14.15.39:912][695]LogFileHelpers: InternalPromptForCheckoutAndSave took 380 ms (total: 4.02 sec)
+[2024.04.22-14.15.39:916][695]AssetCheck: New page: Asset Save: IA_Look
+[2024.04.22-14.15.39:916][695]LogContentValidation: Display: Validating /Script/EnhancedInput.InputAction /Game/InputActions/IA_Look.IA_Look
+[2024.04.22-14.15.46:899][886]LogWorld: UWorld::CleanupWorld for World_1, bSessionEnded=true, bCleanupResources=true
+[2024.04.22-14.15.46:905][886]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.04.22-14.15.50:444][923]LogAssetEditorSubsystem: Opening Asset editor for InputAction /Game/InputActions/IA_Move.IA_Move
+[2024.04.22-14.15.51:388][963]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.04.22-14.15.51:702][963]LogSavePackage: Moving output files for package: /Game/InputActions/IA_Move
+[2024.04.22-14.15.51:702][963]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/IA_Move163ADB054779F424B9CF43B137EE6888.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/InputActions/IA_Move.uasset'
+[2024.04.22-14.15.51:739][963]LogFileHelpers: InternalPromptForCheckoutAndSave took 350 ms (total: 4.37 sec)
+[2024.04.22-14.15.51:740][963]AssetCheck: New page: Asset Save: IA_Move
+[2024.04.22-14.15.51:740][963]LogContentValidation: Display: Validating /Script/EnhancedInput.InputAction /Game/InputActions/IA_Move.IA_Move
+[2024.04.22-14.16.08:273][260]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.04.22-14.16.08:575][260]LogSavePackage: Moving output files for package: /Game/InputActions/IA_Move
+[2024.04.22-14.16.08:579][260]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/IA_Move7D2F556848C09EB6017A02833EBE5A23.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/InputActions/IA_Move.uasset'
+[2024.04.22-14.16.08:612][260]LogFileHelpers: InternalPromptForCheckoutAndSave took 338 ms (total: 4.70 sec)
+[2024.04.22-14.16.08:617][260]AssetCheck: New page: Asset Save: IA_Move
+[2024.04.22-14.16.08:617][260]LogContentValidation: Display: Validating /Script/EnhancedInput.InputAction /Game/InputActions/IA_Move.IA_Move
+[2024.04.22-14.16.09:948][277]LogAssetEditorSubsystem: Opening Asset editor for InputAction /Game/InputActions/IA_Shoot.IA_Shoot
+[2024.04.22-14.16.10:995][314]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.04.22-14.16.11:232][314]LogSavePackage: Moving output files for package: /Game/InputActions/IA_Shoot
+[2024.04.22-14.16.11:232][314]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/IA_ShootDD607D694F358BBDDEC7C1BB785F8575.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/InputActions/IA_Shoot.uasset'
+[2024.04.22-14.16.11:279][314]LogFileHelpers: InternalPromptForCheckoutAndSave took 284 ms (total: 4.99 sec)
+[2024.04.22-14.16.11:280][314]AssetCheck: New page: Asset Save: IA_Shoot
+[2024.04.22-14.16.11:280][314]LogContentValidation: Display: Validating /Script/EnhancedInput.InputAction /Game/InputActions/IA_Shoot.IA_Shoot
+[2024.04.22-14.16.31:568][531]LogAssetEditorSubsystem: Opening Asset editor for InputAction /Game/InputActions/IA_Jump.IA_Jump
+[2024.04.22-14.16.32:511][559]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.04.22-14.16.32:921][559]LogSavePackage: Moving output files for package: /Game/InputActions/IA_Jump
+[2024.04.22-14.16.32:922][559]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/IA_JumpE83C698D4EB953B81F75CCA7CEB78767.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/InputActions/IA_Jump.uasset'
+[2024.04.22-14.16.32:967][559]LogFileHelpers: InternalPromptForCheckoutAndSave took 457 ms (total: 5.45 sec)
+[2024.04.22-14.16.32:971][559]AssetCheck: New page: Asset Save: IA_Jump
+[2024.04.22-14.16.32:971][559]LogContentValidation: Display: Validating /Script/EnhancedInput.InputAction /Game/InputActions/IA_Jump.IA_Jump
