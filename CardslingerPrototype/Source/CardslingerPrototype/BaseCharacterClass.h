@@ -36,6 +36,8 @@ protected:
 	UInputAction* ShootAction;
 	UPROPERTY(EditAnywhere, Category = "Input")
 	UInputAction* CardAction;
+	UPROPERTY(EditAnywhere, Category = "Input")
+	UInputAction* ReloadAction;
 
 	void Move(const FInputActionValue& Value);
 	void Look(const FInputActionValue& Value);
@@ -73,6 +75,9 @@ private:
 	UPROPERTY(VisibleAnywhere, Category = "Combat")
 	int16 CurrentClip;
 
+	UPROPERTY(EditDefaultsOnly, Category="Combat")
+	float ReloadDelay = 5.0f;
+
 //temporary card deck array -> card deck will be its own object
 	TArray<ABaseCard*> CardDeck;
 	UPROPERTY(VisibleAnywhere)
@@ -84,4 +89,12 @@ private:
 	AController* GetOwnerController() const;
 
 	bool HitTrace(FHitResult& Hit, FVector& ShotDirection);
+	
+	FTimerHandle ReloadTimeManager;
+
+	void ReloadTimerFunction();
+
+	void Reload();
+	UPROPERTY(VisibleAnywhere, Category="Combat")
+	bool CanReload = true;
 };

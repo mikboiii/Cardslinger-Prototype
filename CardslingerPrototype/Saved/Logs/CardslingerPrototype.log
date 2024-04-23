@@ -1632,3 +1632,460 @@ LogConfig: Set CVar [[r.Shadow.DetectVertexShaderLayerAtRuntime:1]]
 [2024.04.23-13.18.20:907][410]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=7
 [2024.04.23-13.18.20:942][410]LogUObjectHash: Compacting FUObjectHashTables data took   3.29ms
 [2024.04.23-13.18.21:093][411]LogPlayLevel: Display: Destroying online subsystem :Context_7
+[2024.04.23-13.36.35:007][736]LogLiveCoding: Display: Starting Live Coding compile.
+[2024.04.23-13.37.23:085][880]LogLiveCoding: Display:    Creating library C:\Users\Mikolaj\Documents\Unreal Projects\Cardslinger-Prototype\CardslingerPrototype\Binaries\Win64\UnrealEditor-CardslingerPrototype.patch_4.lib and object C:\Users\Mikolaj\Documents\Unreal Projects\Cardslinger-Prototype\CardslingerPrototype\Binaries\Win64\UnrealEditor-CardslingerPrototype.patch_4.exp
+[2024.04.23-13.37.24:679][884]LogClass: UPackage /Script/CardslingerPrototype Reload.
+[2024.04.23-13.37.24:682][884]LogClass: UClass BaseCharacterClass Reload.
+[2024.04.23-13.37.24:705][884]LogClass: Could not find existing class BaseCharacterClass in package /Script/CardslingerPrototype for reload, assuming new or modified class
+[2024.04.23-13.37.24:830][884]Re-instancing BaseCharacterClass after reload.
+[2024.04.23-13.37.26:165][884]LogUObjectHash: Compacting FUObjectHashTables data took   3.72ms
+[2024.04.23-13.37.27:303][885]Display: Reload/Re-instancing Complete: 1 package changed, 1 class changed
+[2024.04.23-13.37.27:303][885]LogLiveCoding: Warning: Live coding succeeded, data type changes may cause packaging to fail if assets reference the new or updated data types
+[2024.04.23-13.38.08:978][ 10]LogLiveCoding: Display: Starting Live Coding compile.
+[2024.04.23-13.38.36:955][ 96]LogLiveCoding: Display:    Creating library C:\Users\Mikolaj\Documents\Unreal Projects\Cardslinger-Prototype\CardslingerPrototype\Binaries\Win64\UnrealEditor-CardslingerPrototype.patch_5.lib and object C:\Users\Mikolaj\Documents\Unreal Projects\Cardslinger-Prototype\CardslingerPrototype\Binaries\Win64\UnrealEditor-CardslingerPrototype.patch_5.exp
+[2024.04.23-13.38.38:327][ 99]LogUObjectHash: Compacting FUObjectHashTables data took   3.24ms
+[2024.04.23-13.38.38:887][100]Display: Reload/Re-instancing Complete: No object changes detected
+[2024.04.23-13.38.38:887][100]LogLiveCoding: Display: Live coding succeeded
+[2024.04.23-13.40.02:932][749]LogSlate: Took 0.002581 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
+[2024.04.23-13.40.10:441][851]LogSlate: Window 'Save Asset As' being destroyed
+[2024.04.23-13.40.18:136][268]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.04.23-13.40.18:371][268]LogSavePackage: Moving output files for package: /Game/Player/PlayerInputMap
+[2024.04.23-13.40.18:372][268]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/PlayerInputMap00AB2D2D40F0127F983844B30DDB9D25.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/Player/PlayerInputMap.uasset'
+[2024.04.23-13.40.18:394][268]LogFileHelpers: InternalPromptForCheckoutAndSave took 258 ms (total: 2.12 sec)
+[2024.04.23-13.40.18:411][268]AssetCheck: New page: Asset Save: PlayerInputMap
+[2024.04.23-13.40.18:411][268]LogContentValidation: Display: Validating /Script/EnhancedInput.InputMappingContext /Game/Player/PlayerInputMap.PlayerInputMap
+[2024.04.23-13.40.45:445][516]LogUObjectHash: Compacting FUObjectHashTables data took   3.67ms
+[2024.04.23-13.40.45:447][516]LogFileHelpers: Editor autosave (incl. external actors) for '/Game/EmptyLevel' took 0.200
+[2024.04.23-13.40.45:451][516]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/InputActions/IA_Reload] ([1] browsable assets)...
+[2024.04.23-13.40.45:451][516]OBJ SavePackage: Finished generating thumbnails for package [/Game/InputActions/IA_Reload]
+[2024.04.23-13.40.45:457][516]LogSavePackage: Moving output files for package: /Temp/Autosaves/Game/InputActions/IA_Reload_Auto1
+[2024.04.23-13.40.45:457][516]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/IA_Reload_Auto1C894C762409AFB964078D8A6B3BE7001.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/Autosaves/Game/InputActions/IA_Reload_Auto1.uasset'
+[2024.04.23-13.40.45:459][516]LogFileHelpers: Auto-saving content packages took 0.011
+[2024.04.23-13.41.23:111][630]LogLiveCoding: Display: Starting Live Coding compile.
+[2024.04.23-13.42.09:479][769]LogLiveCoding: Display:    Creating library C:\Users\Mikolaj\Documents\Unreal Projects\Cardslinger-Prototype\CardslingerPrototype\Binaries\Win64\UnrealEditor-CardslingerPrototype.patch_6.lib and object C:\Users\Mikolaj\Documents\Unreal Projects\Cardslinger-Prototype\CardslingerPrototype\Binaries\Win64\UnrealEditor-CardslingerPrototype.patch_6.exp
+[2024.04.23-13.42.10:679][773]LogClass: UClass BaseCharacterClass Reload.
+[2024.04.23-13.42.10:679][773]LogClass: Could not find existing class BaseCharacterClass in package /Script/CardslingerPrototype for reload, assuming new or modified class
+[2024.04.23-13.42.10:695][773]Re-instancing BaseCharacterClass after reload.
+[2024.04.23-13.42.11:061][773]LogUObjectHash: Compacting FUObjectHashTables data took   2.09ms
+[2024.04.23-13.42.11:814][774]Display: Reload/Re-instancing Complete: 1 class changed
+[2024.04.23-13.42.11:814][774]LogLiveCoding: Warning: Live coding succeeded, data type changes may cause packaging to fail if assets reference the new or updated data types
+[2024.04.23-13.42.27:215][392]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.04.23-13.42.27:363][392]LogSavePackage: Moving output files for package: /Game/Player/BP_BaseCharacterClass
+[2024.04.23-13.42.27:365][392]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/BP_BaseCharacterClass9DA578B642E63423C5D19499B3DF6BBE.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/Player/BP_BaseCharacterClass.uasset'
+[2024.04.23-13.42.27:381][392]LogFileHelpers: InternalPromptForCheckoutAndSave took 165 ms (total: 2.29 sec)
+[2024.04.23-13.42.27:388][392]AssetCheck: New page: Asset Save: BP_BaseCharacterClass
+[2024.04.23-13.42.27:388][392]LogContentValidation: Display: Validating /Script/Engine.Blueprint /Game/Player/BP_BaseCharacterClass.BP_BaseCharacterClass
+[2024.04.23-13.42.28:364][447]LogAssetEditorSubsystem: Opening Asset editor for InputAction /Game/InputActions/IA_Reload.IA_Reload
+[2024.04.23-13.42.29:359][494]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.04.23-13.42.29:481][494]LogSavePackage: Moving output files for package: /Game/InputActions/IA_Reload
+[2024.04.23-13.42.29:481][494]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/IA_Reload349F7EBC4D81CFFF8AC0FA9B81EE5133.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/InputActions/IA_Reload.uasset'
+[2024.04.23-13.42.29:495][494]LogFileHelpers: InternalPromptForCheckoutAndSave took 135 ms (total: 2.42 sec)
+[2024.04.23-13.42.29:496][494]AssetCheck: New page: Asset Save: IA_Reload
+[2024.04.23-13.42.29:496][494]LogContentValidation: Display: Validating /Script/EnhancedInput.InputAction /Game/InputActions/IA_Reload.IA_Reload
+[2024.04.23-13.42.31:916][637]BlueprintLog: New page: Compile BP_BaseCharacterClass
+[2024.04.23-13.42.32:120][637]LogUObjectHash: Compacting FUObjectHashTables data took   4.08ms
+[2024.04.23-13.42.34:953][769]LogDebuggerCommands: Repeating last play command: Selected Viewport
+[2024.04.23-13.42.35:003][769]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2024.04.23-13.42.35:014][769]PIE: New page: PIE session: EmptyLevel (23 Apr 2024, 15:42:35)
+[2024.04.23-13.42.35:024][769]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_EmptyLevel
+[2024.04.23-13.42.35:061][769]LogPlayLevel: PIE: StaticDuplicateObject took: (0.037298s)
+[2024.04.23-13.42.35:061][769]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/EmptyLevel.EmptyLevel to /Game/UEDPIE_0_EmptyLevel.EmptyLevel (0.037408s)
+[2024.04.23-13.42.35:117][769]LogUObjectHash: Compacting FUObjectHashTables data took   3.16ms
+[2024.04.23-13.42.35:144][769]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.04.23-13.42.35:167][769]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2024.04.23-13.42.35:208][769]LogAIModule: Creating AISystem for world EmptyLevel
+[2024.04.23-13.42.35:237][769]LogPlayLevel: PIE: World Init took: (0.104256s)
+[2024.04.23-13.42.35:242][769]LogAudio: Display: Creating Audio Device:                 Id: 8, Scope: Unique, Realtime: True
+[2024.04.23-13.42.35:244][769]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2024.04.23-13.42.35:244][769]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2024.04.23-13.42.35:244][769]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2024.04.23-13.42.35:244][769]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2024.04.23-13.42.35:244][769]LogAudioMixer: Display: 	Number of buffers to queue:			  1
+[2024.04.23-13.42.35:244][769]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2024.04.23-13.42.35:244][769]LogAudioMixer: Display: 	Number of Async Source Workers:		  4
+[2024.04.23-13.42.35:244][769]LogAudio: Display: AudioDevice MaxSources: 32
+[2024.04.23-13.42.35:252][769]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2024.04.23-13.42.35:252][769]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2024.04.23-13.42.35:252][769]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2024.04.23-13.42.35:261][769]LogAudioMixer: Display: Initializing audio mixer using platform API: 'XAudio2'
+[2024.04.23-13.42.35:383][769]LogAudioMixer: Display: Using Audio Hardware Device Headphones (Realtek(R) Audio)
+[2024.04.23-13.42.35:389][769]LogAudioMixer: Display: Initializing Sound Submixes...
+[2024.04.23-13.42.35:389][769]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2024.04.23-13.42.35:390][769]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2024.04.23-13.42.35:400][769]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called. InstanceID=8
+[2024.04.23-13.42.35:400][769]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048, InstanceID=8
+[2024.04.23-13.42.35:405][769]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=8
+[2024.04.23-13.42.35:405][769]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time. InstanceID=8
+[2024.04.23-13.42.35:406][769]LogInit: FAudioDevice initialized with ID 8.
+[2024.04.23-13.42.35:406][769]LogAudio: Display: Audio Device (ID: 8) registered with world 'EmptyLevel'.
+[2024.04.23-13.42.35:406][769]LogAudioMixer: Initializing Audio Bus Subsystem for audio device with ID 8
+[2024.04.23-13.42.35:443][769]LogLoad: Game class is 'TestGameMode_C'
+[2024.04.23-13.42.35:461][769]LogWorld: Bringing World /Game/UEDPIE_0_EmptyLevel.EmptyLevel up for play (max tick rate 60) at 2024.04.23-14.42.35
+[2024.04.23-13.42.35:466][769]LogWorld: Bringing up level for play took: 0.020893
+[2024.04.23-13.42.35:489][769]LogOnline: OSS: Created online subsystem instance for: :Context_8
+[2024.04.23-13.42.35:559][769]PIE: Server logged in
+[2024.04.23-13.42.35:561][769]PIE: Play in editor total start time 0.578 seconds.
+[2024.04.23-13.42.38:641][872]LogViewport: Scene viewport resized to 737x405, mode Windowed.
+[2024.04.23-13.42.41:197][898]LogTemp: Display: Trace Called
+[2024.04.23-13.42.41:213][899]LogTemp: Display: Trace Called
+[2024.04.23-13.42.41:244][900]LogTemp: Display: Trace Called
+[2024.04.23-13.42.41:345][901]LogTemp: Display: Trace Called
+[2024.04.23-13.42.41:362][902]LogTemp: Display: Trace Called
+[2024.04.23-13.42.41:377][903]LogTemp: Display: Trace Called
+[2024.04.23-13.42.41:401][904]LogTemp: Display: Trace Called
+[2024.04.23-13.42.41:419][905]LogTemp: Display: Trace Called
+[2024.04.23-13.42.41:437][906]LogTemp: Display: Trace Called
+[2024.04.23-13.42.41:456][907]LogTemp: Display: Trace Called
+[2024.04.23-13.42.41:477][908]LogTemp: Display: Trace Called
+[2024.04.23-13.42.41:494][909]LogTemp: Display: Trace Called
+[2024.04.23-13.42.41:514][910]LogTemp: Display: Trace Called
+[2024.04.23-13.42.41:532][911]LogTemp: Display: Trace Called
+[2024.04.23-13.42.41:552][912]LogTemp: Display: Trace Called
+[2024.04.23-13.42.41:571][913]LogTemp: Display: Trace Called
+[2024.04.23-13.42.41:590][914]LogTemp: Display: Trace Called
+[2024.04.23-13.42.41:611][915]LogTemp: Display: Trace Called
+[2024.04.23-13.42.41:628][916]LogTemp: Display: Trace Called
+[2024.04.23-13.42.41:645][917]LogTemp: Display: Trace Called
+[2024.04.23-13.42.41:665][918]LogTemp: Display: Trace Called
+[2024.04.23-13.42.41:680][919]LogTemp: Display: Trace Called
+[2024.04.23-13.42.41:701][920]LogTemp: Display: Trace Called
+[2024.04.23-13.42.41:717][921]LogTemp: Display: Trace Called
+[2024.04.23-13.42.41:735][922]LogTemp: Display: Trace Called
+[2024.04.23-13.42.41:753][923]LogTemp: Display: Trace Called
+[2024.04.23-13.42.41:771][924]LogTemp: Display: Trace Called
+[2024.04.23-13.42.41:788][925]LogTemp: Display: Trace Called
+[2024.04.23-13.42.41:805][926]LogTemp: Display: Trace Called
+[2024.04.23-13.42.41:822][927]LogTemp: Display: Trace Called
+[2024.04.23-13.42.41:840][928]LogTemp: Display: Trace Called
+[2024.04.23-13.42.41:857][929]LogTemp: Display: Trace Called
+[2024.04.23-13.42.41:873][930]LogTemp: Display: Trace Called
+[2024.04.23-13.42.41:889][931]LogTemp: Display: Trace Called
+[2024.04.23-13.42.41:907][932]LogTemp: Display: Trace Called
+[2024.04.23-13.42.41:924][933]LogTemp: Display: Trace Called
+[2024.04.23-13.42.41:940][934]LogTemp: Display: Trace Called
+[2024.04.23-13.42.41:959][935]LogTemp: Display: Trace Called
+[2024.04.23-13.42.41:977][936]LogTemp: Display: Trace Called
+[2024.04.23-13.42.41:998][937]LogTemp: Display: Trace Called
+[2024.04.23-13.42.42:015][938]LogTemp: Display: Trace Called
+[2024.04.23-13.42.42:033][939]LogTemp: Display: Trace Called
+[2024.04.23-13.42.42:050][940]LogTemp: Display: Trace Called
+[2024.04.23-13.42.42:068][941]LogTemp: Display: Trace Called
+[2024.04.23-13.42.42:084][942]LogTemp: Display: Trace Called
+[2024.04.23-13.42.42:101][943]LogTemp: Display: Trace Called
+[2024.04.23-13.42.42:119][944]LogTemp: Display: Trace Called
+[2024.04.23-13.42.42:134][945]LogTemp: Display: Trace Called
+[2024.04.23-13.42.42:151][946]LogTemp: Display: Trace Called
+[2024.04.23-13.42.42:167][947]LogTemp: Display: Trace Called
+[2024.04.23-13.42.42:184][948]LogTemp: Display: Trace Called
+[2024.04.23-13.42.42:201][949]LogTemp: Display: Trace Called
+[2024.04.23-13.42.59:384][966]LogTemp: Display: Trace Called
+[2024.04.23-13.42.59:401][967]LogTemp: Display: Trace Called
+[2024.04.23-13.42.59:417][968]LogTemp: Display: Trace Called
+[2024.04.23-13.42.59:434][969]LogTemp: Display: Trace Called
+[2024.04.23-13.42.59:452][970]LogTemp: Display: Trace Called
+[2024.04.23-13.42.59:465][971]LogTemp: Display: Trace Called
+[2024.04.23-13.42.59:486][972]LogTemp: Display: Trace Called
+[2024.04.23-13.42.59:504][973]LogTemp: Display: Trace Called
+[2024.04.23-13.42.59:522][974]LogTemp: Display: Trace Called
+[2024.04.23-13.42.59:539][975]LogTemp: Display: Trace Called
+[2024.04.23-13.42.59:555][976]LogTemp: Display: Trace Called
+[2024.04.23-13.42.59:576][977]LogTemp: Display: Trace Called
+[2024.04.23-13.42.59:594][978]LogTemp: Display: Trace Called
+[2024.04.23-13.42.59:610][979]LogTemp: Display: Trace Called
+[2024.04.23-13.42.59:629][980]LogTemp: Display: Trace Called
+[2024.04.23-13.42.59:645][981]LogTemp: Display: Trace Called
+[2024.04.23-13.42.59:663][982]LogTemp: Display: Trace Called
+[2024.04.23-13.42.59:680][983]LogTemp: Display: Trace Called
+[2024.04.23-13.42.59:697][984]LogTemp: Display: Trace Called
+[2024.04.23-13.42.59:714][985]LogTemp: Display: Trace Called
+[2024.04.23-13.42.59:735][986]LogTemp: Display: Trace Called
+[2024.04.23-13.42.59:752][987]LogTemp: Display: Trace Called
+[2024.04.23-13.42.59:772][988]LogTemp: Display: Trace Called
+[2024.04.23-13.42.59:793][989]LogTemp: Display: Trace Called
+[2024.04.23-13.42.59:812][990]LogTemp: Display: Trace Called
+[2024.04.23-13.42.59:835][991]LogTemp: Display: Trace Called
+[2024.04.23-13.42.59:856][992]LogTemp: Display: Trace Called
+[2024.04.23-13.42.59:875][993]LogTemp: Display: Trace Called
+[2024.04.23-13.42.59:901][994]LogTemp: Display: Trace Called
+[2024.04.23-13.42.59:924][995]LogTemp: Display: Trace Called
+[2024.04.23-13.42.59:946][996]LogTemp: Display: Trace Called
+[2024.04.23-13.42.59:968][997]LogTemp: Display: Trace Called
+[2024.04.23-13.42.59:987][998]LogTemp: Display: Trace Called
+[2024.04.23-13.43.00:005][999]LogTemp: Display: Trace Called
+[2024.04.23-13.43.00:029][  0]LogTemp: Display: Trace Called
+[2024.04.23-13.43.00:052][  1]LogTemp: Display: Trace Called
+[2024.04.23-13.43.00:072][  2]LogTemp: Display: Trace Called
+[2024.04.23-13.43.00:094][  3]LogTemp: Display: Trace Called
+[2024.04.23-13.43.00:112][  4]LogTemp: Display: Trace Called
+[2024.04.23-13.43.00:135][  5]LogTemp: Display: Trace Called
+[2024.04.23-13.43.00:155][  6]LogTemp: Display: Trace Called
+[2024.04.23-13.43.00:176][  7]LogTemp: Display: Trace Called
+[2024.04.23-13.43.00:197][  8]LogTemp: Display: Trace Called
+[2024.04.23-13.43.00:215][  9]LogTemp: Display: Trace Called
+[2024.04.23-13.43.00:240][ 10]LogTemp: Display: Trace Called
+[2024.04.23-13.43.00:259][ 11]LogTemp: Display: Trace Called
+[2024.04.23-13.43.00:279][ 12]LogTemp: Display: Trace Called
+[2024.04.23-13.43.00:299][ 13]LogTemp: Display: Trace Called
+[2024.04.23-13.43.00:319][ 14]LogTemp: Display: Trace Called
+[2024.04.23-13.43.00:341][ 15]LogTemp: Display: Trace Called
+[2024.04.23-13.43.00:366][ 16]LogTemp: Display: Trace Called
+[2024.04.23-13.43.00:389][ 17]LogTemp: Display: Trace Called
+[2024.04.23-13.43.08:197][317]LogTemp: Display: Trace Called
+[2024.04.23-13.43.08:224][318]LogTemp: Display: Trace Called
+[2024.04.23-13.43.08:257][319]LogTemp: Display: Trace Called
+[2024.04.23-13.43.08:283][320]LogTemp: Display: Trace Called
+[2024.04.23-13.43.08:314][321]LogTemp: Display: Trace Called
+[2024.04.23-13.43.08:339][322]LogTemp: Display: Trace Called
+[2024.04.23-13.43.08:362][323]LogTemp: Display: Trace Called
+[2024.04.23-13.43.08:384][324]LogTemp: Display: Trace Called
+[2024.04.23-13.43.08:411][325]LogTemp: Display: Trace Called
+[2024.04.23-13.43.08:436][326]LogTemp: Display: Trace Called
+[2024.04.23-13.43.08:461][327]LogTemp: Display: Trace Called
+[2024.04.23-13.43.08:488][328]LogTemp: Display: Trace Called
+[2024.04.23-13.43.08:511][329]LogTemp: Display: Trace Called
+[2024.04.23-13.43.08:536][330]LogTemp: Display: Trace Called
+[2024.04.23-13.43.08:559][331]LogTemp: Display: Trace Called
+[2024.04.23-13.43.08:589][332]LogTemp: Display: Trace Called
+[2024.04.23-13.43.08:617][333]LogTemp: Display: Trace Called
+[2024.04.23-13.43.08:640][334]LogTemp: Display: Trace Called
+[2024.04.23-13.43.08:668][335]LogTemp: Display: Trace Called
+[2024.04.23-13.43.08:693][336]LogTemp: Display: Trace Called
+[2024.04.23-13.43.08:718][337]LogTemp: Display: Trace Called
+[2024.04.23-13.43.08:741][338]LogTemp: Display: Trace Called
+[2024.04.23-13.43.08:767][339]LogTemp: Display: Trace Called
+[2024.04.23-13.43.08:795][340]LogTemp: Display: Trace Called
+[2024.04.23-13.43.08:820][341]LogTemp: Display: Trace Called
+[2024.04.23-13.43.08:848][342]LogTemp: Display: Trace Called
+[2024.04.23-13.43.08:879][343]LogTemp: Display: Trace Called
+[2024.04.23-13.43.08:909][344]LogTemp: Display: Trace Called
+[2024.04.23-13.43.08:937][345]LogTemp: Display: Trace Called
+[2024.04.23-13.43.09:000][346]LogTemp: Display: Trace Called
+[2024.04.23-13.43.09:024][347]LogTemp: Display: Trace Called
+[2024.04.23-13.43.09:053][348]LogTemp: Display: Trace Called
+[2024.04.23-13.43.09:079][349]LogTemp: Display: Trace Called
+[2024.04.23-13.43.09:107][350]LogTemp: Display: Trace Called
+[2024.04.23-13.43.09:132][351]LogTemp: Display: Trace Called
+[2024.04.23-13.43.09:162][352]LogTemp: Display: Trace Called
+[2024.04.23-13.43.09:194][353]LogTemp: Display: Trace Called
+[2024.04.23-13.43.09:227][354]LogTemp: Display: Trace Called
+[2024.04.23-13.43.09:257][355]LogTemp: Display: Trace Called
+[2024.04.23-13.43.09:285][356]LogTemp: Display: Trace Called
+[2024.04.23-13.43.09:318][357]LogTemp: Display: Trace Called
+[2024.04.23-13.43.09:349][358]LogTemp: Display: Trace Called
+[2024.04.23-13.43.09:383][359]LogTemp: Display: Trace Called
+[2024.04.23-13.43.09:415][360]LogTemp: Display: Trace Called
+[2024.04.23-13.43.09:446][361]LogTemp: Display: Trace Called
+[2024.04.23-13.43.09:477][362]LogTemp: Display: Trace Called
+[2024.04.23-13.43.09:507][363]LogTemp: Display: Trace Called
+[2024.04.23-13.43.09:538][364]LogTemp: Display: Trace Called
+[2024.04.23-13.43.09:569][365]LogTemp: Display: Trace Called
+[2024.04.23-13.43.09:599][366]LogTemp: Display: Trace Called
+[2024.04.23-13.43.09:630][367]LogTemp: Display: Trace Called
+[2024.04.23-13.43.10:255][386]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2024.04.23-13.43.10:255][386]LogWorld: BeginTearingDown for /Game/UEDPIE_0_EmptyLevel
+[2024.04.23-13.43.10:261][386]LogWorld: UWorld::CleanupWorld for EmptyLevel, bSessionEnded=true, bCleanupResources=true
+[2024.04.23-13.43.10:267][386]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.04.23-13.43.10:285][386]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2024.04.23-13.43.10:292][386]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.04.23-13.43.10:311][386]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2024.04.23-13.43.10:312][386]LogAudioMixer: Deinitializing Audio Bus Subsystem for audio device with ID 8
+[2024.04.23-13.43.10:316][386]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=8
+[2024.04.23-13.43.10:318][386]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=8
+[2024.04.23-13.43.10:329][386]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2024.04.23-13.43.10:355][386]LogUObjectHash: Compacting FUObjectHashTables data took   1.50ms
+[2024.04.23-13.43.10:819][387]LogPlayLevel: Display: Destroying online subsystem :Context_8
+[2024.04.23-13.43.56:622][957]LogLiveCoding: Display: Starting Live Coding compile.
+[2024.04.23-13.43.59:784][967]Display: Reload/Re-instancing Complete: No object changes detected
+[2024.04.23-13.43.59:784][967]LogLiveCoding: Error: Live coding failed, please see Live console for more information
+[2024.04.23-13.44.52:189][124]LogLiveCoding: Display: Starting Live Coding compile.
+[2024.04.23-13.45.39:173][265]LogLiveCoding: Display:    Creating library C:\Users\Mikolaj\Documents\Unreal Projects\Cardslinger-Prototype\CardslingerPrototype\Binaries\Win64\UnrealEditor-CardslingerPrototype.patch_7.lib and object C:\Users\Mikolaj\Documents\Unreal Projects\Cardslinger-Prototype\CardslingerPrototype\Binaries\Win64\UnrealEditor-CardslingerPrototype.patch_7.exp
+[2024.04.23-13.45.40:629][269]LogClass: UPackage /Script/CardslingerPrototype Reload.
+[2024.04.23-13.45.40:630][269]LogClass: UClass BaseCharacterClass Reload.
+[2024.04.23-13.45.40:630][269]LogClass: Could not find existing class BaseCharacterClass in package /Script/CardslingerPrototype for reload, assuming new or modified class
+[2024.04.23-13.45.40:644][269]Re-instancing BaseCharacterClass after reload.
+[2024.04.23-13.45.40:856][269]LogUObjectHash: Compacting FUObjectHashTables data took   1.97ms
+[2024.04.23-13.45.41:712][270]Display: Reload/Re-instancing Complete: 1 package changed, 1 class changed
+[2024.04.23-13.45.41:712][270]LogLiveCoding: Warning: Live coding succeeded, data type changes may cause packaging to fail if assets reference the new or updated data types
+[2024.04.23-13.45.49:819][595]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.04.23-13.45.49:942][595]LogSavePackage: Moving output files for package: /Game/Player/BP_BaseCharacterClass
+[2024.04.23-13.45.49:944][595]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/BP_BaseCharacterClass198C44BF40F425F40DA2B79444EF56BD.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/Player/BP_BaseCharacterClass.uasset'
+[2024.04.23-13.45.49:958][595]LogFileHelpers: InternalPromptForCheckoutAndSave took 138 ms (total: 2.56 sec)
+[2024.04.23-13.45.49:961][595]AssetCheck: New page: Asset Save: BP_BaseCharacterClass
+[2024.04.23-13.45.49:962][595]LogContentValidation: Display: Validating /Script/Engine.Blueprint /Game/Player/BP_BaseCharacterClass.BP_BaseCharacterClass
+[2024.04.23-13.45.50:852][645]BlueprintLog: New page: Compile BP_BaseCharacterClass
+[2024.04.23-13.45.51:054][645]LogUObjectHash: Compacting FUObjectHashTables data took   2.03ms
+[2024.04.23-13.45.54:281][807]LogDebuggerCommands: Repeating last play command: Selected Viewport
+[2024.04.23-13.45.54:299][807]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2024.04.23-13.45.54:299][807]PIE: New page: PIE session: EmptyLevel (23 Apr 2024, 15:45:54)
+[2024.04.23-13.45.54:299][807]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_EmptyLevel
+[2024.04.23-13.45.54:302][807]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002378s)
+[2024.04.23-13.45.54:302][807]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/EmptyLevel.EmptyLevel to /Game/UEDPIE_0_EmptyLevel.EmptyLevel (0.002453s)
+[2024.04.23-13.45.54:354][807]LogUObjectHash: Compacting FUObjectHashTables data took   2.63ms
+[2024.04.23-13.45.54:367][807]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.04.23-13.45.54:367][807]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2024.04.23-13.45.54:367][807]LogAIModule: Creating AISystem for world EmptyLevel
+[2024.04.23-13.45.54:368][807]LogPlayLevel: PIE: World Init took: (0.001144s)
+[2024.04.23-13.45.54:368][807]LogAudio: Display: Creating Audio Device:                 Id: 9, Scope: Unique, Realtime: True
+[2024.04.23-13.45.54:368][807]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2024.04.23-13.45.54:368][807]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2024.04.23-13.45.54:368][807]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2024.04.23-13.45.54:368][807]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2024.04.23-13.45.54:368][807]LogAudioMixer: Display: 	Number of buffers to queue:			  1
+[2024.04.23-13.45.54:368][807]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2024.04.23-13.45.54:368][807]LogAudioMixer: Display: 	Number of Async Source Workers:		  4
+[2024.04.23-13.45.54:368][807]LogAudio: Display: AudioDevice MaxSources: 32
+[2024.04.23-13.45.54:368][807]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2024.04.23-13.45.54:368][807]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2024.04.23-13.45.54:369][807]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2024.04.23-13.45.54:371][807]LogAudioMixer: Display: Initializing audio mixer using platform API: 'XAudio2'
+[2024.04.23-13.45.54:446][807]LogAudioMixer: Display: Using Audio Hardware Device Headphones (Realtek(R) Audio)
+[2024.04.23-13.45.54:447][807]LogAudioMixer: Display: Initializing Sound Submixes...
+[2024.04.23-13.45.54:447][807]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2024.04.23-13.45.54:447][807]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2024.04.23-13.45.54:450][807]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called. InstanceID=9
+[2024.04.23-13.45.54:450][807]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048, InstanceID=9
+[2024.04.23-13.45.54:452][807]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=9
+[2024.04.23-13.45.54:452][807]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time. InstanceID=9
+[2024.04.23-13.45.54:453][807]LogInit: FAudioDevice initialized with ID 9.
+[2024.04.23-13.45.54:453][807]LogAudio: Display: Audio Device (ID: 9) registered with world 'EmptyLevel'.
+[2024.04.23-13.45.54:453][807]LogAudioMixer: Initializing Audio Bus Subsystem for audio device with ID 9
+[2024.04.23-13.45.54:456][807]LogLoad: Game class is 'TestGameMode_C'
+[2024.04.23-13.45.54:457][807]LogWorld: Bringing World /Game/UEDPIE_0_EmptyLevel.EmptyLevel up for play (max tick rate 60) at 2024.04.23-14.45.54
+[2024.04.23-13.45.54:458][807]LogWorld: Bringing up level for play took: 0.000704
+[2024.04.23-13.45.54:461][807]LogOnline: OSS: Created online subsystem instance for: :Context_9
+[2024.04.23-13.45.54:463][807]PIE: Server logged in
+[2024.04.23-13.45.54:464][807]PIE: Play in editor total start time 0.167 seconds.
+[2024.04.23-13.45.57:622][930]LogViewport: Scene viewport resized to 737x405, mode Windowed.
+[2024.04.23-13.46.11:879][643]LogTemp: Display: Trace Called
+[2024.04.23-13.46.11:894][644]LogTemp: Display: Trace Called
+[2024.04.23-13.46.11:934][645]LogTemp: Display: Trace Called
+[2024.04.23-13.46.11:950][646]LogTemp: Display: Trace Called
+[2024.04.23-13.46.11:967][647]LogTemp: Display: Trace Called
+[2024.04.23-13.46.11:984][648]LogTemp: Display: Trace Called
+[2024.04.23-13.46.12:000][649]LogTemp: Display: Trace Called
+[2024.04.23-13.46.12:018][650]LogTemp: Display: Trace Called
+[2024.04.23-13.46.12:034][651]LogTemp: Display: Trace Called
+[2024.04.23-13.46.12:053][652]LogTemp: Display: Trace Called
+[2024.04.23-13.46.12:073][653]LogTemp: Display: Trace Called
+[2024.04.23-13.46.12:092][654]LogTemp: Display: Trace Called
+[2024.04.23-13.46.12:109][655]LogTemp: Display: Trace Called
+[2024.04.23-13.46.12:129][656]LogTemp: Display: Trace Called
+[2024.04.23-13.46.12:151][657]LogTemp: Display: Trace Called
+[2024.04.23-13.46.12:170][658]LogTemp: Display: Trace Called
+[2024.04.23-13.46.12:187][659]LogTemp: Display: Trace Called
+[2024.04.23-13.46.12:206][660]LogTemp: Display: Trace Called
+[2024.04.23-13.46.12:220][661]LogTemp: Display: Trace Called
+[2024.04.23-13.46.12:240][662]LogTemp: Display: Trace Called
+[2024.04.23-13.46.12:258][663]LogTemp: Display: Trace Called
+[2024.04.23-13.46.12:274][664]LogTemp: Display: Trace Called
+[2024.04.23-13.46.12:291][665]LogTemp: Display: Trace Called
+[2024.04.23-13.46.12:306][666]LogTemp: Display: Trace Called
+[2024.04.23-13.46.12:324][667]LogTemp: Display: Trace Called
+[2024.04.23-13.46.19:331][ 84]LogTemp: Display: Trace Called
+[2024.04.23-13.46.19:346][ 85]LogTemp: Display: Trace Called
+[2024.04.23-13.46.19:363][ 86]LogTemp: Display: Trace Called
+[2024.04.23-13.46.19:381][ 87]LogTemp: Display: Trace Called
+[2024.04.23-13.46.19:398][ 88]LogTemp: Display: Trace Called
+[2024.04.23-13.46.19:415][ 89]LogTemp: Display: Trace Called
+[2024.04.23-13.46.19:432][ 90]LogTemp: Display: Trace Called
+[2024.04.23-13.46.19:447][ 91]LogTemp: Display: Trace Called
+[2024.04.23-13.46.19:463][ 92]LogTemp: Display: Trace Called
+[2024.04.23-13.46.19:481][ 93]LogTemp: Display: Trace Called
+[2024.04.23-13.46.19:498][ 94]LogTemp: Display: Trace Called
+[2024.04.23-13.46.19:515][ 95]LogTemp: Display: Trace Called
+[2024.04.23-13.46.19:532][ 96]LogTemp: Display: Trace Called
+[2024.04.23-13.46.19:549][ 97]LogTemp: Display: Trace Called
+[2024.04.23-13.46.19:948][121]LogTemp: Display: Trace Called
+[2024.04.23-13.46.19:965][122]LogTemp: Display: Trace Called
+[2024.04.23-13.46.19:982][123]LogTemp: Display: Trace Called
+[2024.04.23-13.46.19:998][124]LogTemp: Display: Trace Called
+[2024.04.23-13.46.20:016][125]LogTemp: Display: Trace Called
+[2024.04.23-13.46.20:032][126]LogTemp: Display: Trace Called
+[2024.04.23-13.46.20:050][127]LogTemp: Display: Trace Called
+[2024.04.23-13.46.20:066][128]LogTemp: Display: Trace Called
+[2024.04.23-13.46.20:082][129]LogTemp: Display: Trace Called
+[2024.04.23-13.46.20:099][130]LogTemp: Display: Trace Called
+[2024.04.23-13.46.20:116][131]LogTemp: Display: Trace Called
+[2024.04.23-13.46.20:133][132]LogTemp: Display: Trace Called
+[2024.04.23-13.46.20:153][133]LogTemp: Display: Trace Called
+[2024.04.23-13.46.20:171][134]LogTemp: Display: Trace Called
+[2024.04.23-13.46.20:191][135]LogTemp: Display: Trace Called
+[2024.04.23-13.46.24:848][408]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2024.04.23-13.46.24:848][408]LogWorld: BeginTearingDown for /Game/UEDPIE_0_EmptyLevel
+[2024.04.23-13.46.24:848][408]LogWorld: UWorld::CleanupWorld for EmptyLevel, bSessionEnded=true, bCleanupResources=true
+[2024.04.23-13.46.24:849][408]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.04.23-13.46.24:852][408]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2024.04.23-13.46.24:859][408]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.04.23-13.46.24:875][408]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2024.04.23-13.46.24:876][408]LogAudioMixer: Deinitializing Audio Bus Subsystem for audio device with ID 9
+[2024.04.23-13.46.24:876][408]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=9
+[2024.04.23-13.46.24:878][408]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=9
+[2024.04.23-13.46.24:890][408]LogUObjectHash: Compacting FUObjectHashTables data took   1.77ms
+[2024.04.23-13.46.25:001][409]LogPlayLevel: Display: Destroying online subsystem :Context_9
+[2024.04.23-13.46.26:149][451]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.04.23-13.46.26:338][451]LogUObjectHash: Compacting FUObjectHashTables data took   2.91ms
+[2024.04.23-13.46.26:390][451]LogSavePackage: Moving output files for package: /Game/EmptyLevel
+[2024.04.23-13.46.26:391][451]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/EmptyLevelD34A9A5147BB46B79087208FECFAD502.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/EmptyLevel.umap'
+[2024.04.23-13.46.26:436][451]LogFileHelpers: Saving map 'EmptyLevel' took 0.170
+[2024.04.23-13.46.26:452][451]LogFileHelpers: InternalPromptForCheckoutAndSave took 303 ms (total: 2.86 sec)
+[2024.04.23-13.46.26:456][451]AssetCheck: New page: Asset Save: EmptyLevel
+[2024.04.23-13.46.26:456][451]LogContentValidation: Display: Validating /Script/Engine.World /Game/EmptyLevel.EmptyLevel
+[2024.04.23-13.46.30:129][476]LogUObjectHash: Compacting FUObjectHashTables data took   1.08ms
+[2024.04.23-13.46.30:132][476]LogStall: Shutdown...
+[2024.04.23-13.46.30:147][476]LogStall: Shutdown complete.
+[2024.04.23-13.46.30:326][476]LogWorld: UWorld::CleanupWorld for World_0, bSessionEnded=true, bCleanupResources=true
+[2024.04.23-13.46.30:326][476]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.04.23-13.46.30:467][476]LogSlate: Window 'CardslingerPrototype - Unreal Editor' being destroyed
+[2024.04.23-13.46.30:710][477]Cmd: QUIT_EDITOR
+[2024.04.23-13.46.30:710][477]LogCore: Engine exit requested (reason: UUnrealEdEngine::CloseEditor())
+[2024.04.23-13.46.30:727][477]LogCore: Engine exit requested (reason: EngineExit() was called; note: exit was already requested)
+[2024.04.23-13.46.30:730][477]LogStaticMesh: Abandoning remaining async distance field tasks for shutdown
+[2024.04.23-13.46.30:730][477]LogStaticMesh: Abandoning remaining async card representation tasks for shutdown
+[2024.04.23-13.46.30:737][477]LogWorld: UWorld::CleanupWorld for EmptyLevel, bSessionEnded=true, bCleanupResources=true
+[2024.04.23-13.46.30:737][477]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.04.23-13.46.30:794][477]LogLevelSequenceEditor: LevelSequenceEditor subsystem deinitialized.
+[2024.04.23-13.46.31:697][477]LogAudio: Display: Beginning Audio Device Manager Shutdown (Module: AudioMixerXAudio2)...
+[2024.04.23-13.46.31:697][477]LogAudio: Display: Destroying 1 Remaining Audio Device(s)...
+[2024.04.23-13.46.31:697][477]LogAudio: Display: Audio Device unregistered from world 'EmptyLevel'.
+[2024.04.23-13.46.31:698][477]LogAudioMixer: Deinitializing Audio Bus Subsystem for audio device with ID 1
+[2024.04.23-13.46.31:699][477]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=1
+[2024.04.23-13.46.31:703][477]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=1
+[2024.04.23-13.46.31:767][477]LogAudio: Display: Audio Device Manager Shutdown
+[2024.04.23-13.46.31:768][477]LogWindowsTextInputMethodSystem: Activated input method: English (United Kingdom) - (Keyboard).
+[2024.04.23-13.46.31:790][477]LogSlate: Slate User Destroyed.  User Index 0, Is Virtual User: 0
+[2024.04.23-13.46.31:791][477]LogExit: Preparing to exit.
+[2024.04.23-13.46.31:894][477]LogUObjectHash: Compacting FUObjectHashTables data took   2.59ms
+[2024.04.23-13.46.31:915][477]LogPython: Display: Object '/Engine/PythonTypes.add_controls_for_selected_options' was externally referenced when shutting down Python. Forcibly releasing its Python resources!
+[2024.04.23-13.46.31:916][477]LogPython: Display: Object '/Engine/PythonTypes.add_controls_for_selected' was externally referenced when shutting down Python. Forcibly releasing its Python resources!
+[2024.04.23-13.46.31:932][477]LogPython: Display: Object '/Engine/PythonTypes.add_null_above_selected' was externally referenced when shutting down Python. Forcibly releasing its Python resources!
+[2024.04.23-13.46.31:935][477]LogPython: Display: Object '/Engine/PythonTypes.align_translation_rotation' was externally referenced when shutting down Python. Forcibly releasing its Python resources!
+[2024.04.23-13.46.31:935][477]LogPython: Display: Object '/Engine/PythonTypes.align_translation_all' was externally referenced when shutting down Python. Forcibly releasing its Python resources!
+[2024.04.23-13.46.31:935][477]LogPython: Display: Object '/Engine/PythonTypes.align_translation_x' was externally referenced when shutting down Python. Forcibly releasing its Python resources!
+[2024.04.23-13.46.31:935][477]LogPython: Display: Object '/Engine/PythonTypes.align_translation_y' was externally referenced when shutting down Python. Forcibly releasing its Python resources!
+[2024.04.23-13.46.31:936][477]LogPython: Display: Object '/Engine/PythonTypes.align_translation_z' was externally referenced when shutting down Python. Forcibly releasing its Python resources!
+[2024.04.23-13.46.31:936][477]LogPython: Display: Object '/Engine/PythonTypes.align_rotation' was externally referenced when shutting down Python. Forcibly releasing its Python resources!
+[2024.04.23-13.46.31:936][477]LogPython: Display: Object '/Engine/PythonTypes.align_scale' was externally referenced when shutting down Python. Forcibly releasing its Python resources!
+[2024.04.23-13.46.31:936][477]LogPython: Display: Object '/Engine/PythonTypes.search_replace_name_dialog' was externally referenced when shutting down Python. Forcibly releasing its Python resources!
+[2024.04.23-13.46.31:936][477]LogPython: Display: Object '/Engine/PythonTypes.search_replace_entry' was externally referenced when shutting down Python. Forcibly releasing its Python resources!
+[2024.04.23-13.46.31:937][477]LogPython: Display: Object '/Engine/PythonTypes.add_prefix_dialog' was externally referenced when shutting down Python. Forcibly releasing its Python resources!
+[2024.04.23-13.46.31:937][477]LogPython: Display: Object '/Engine/PythonTypes.add_prefix_entry' was externally referenced when shutting down Python. Forcibly releasing its Python resources!
+[2024.04.23-13.46.31:937][477]LogPython: Display: Object '/Engine/PythonTypes.add_suffix_dialog' was externally referenced when shutting down Python. Forcibly releasing its Python resources!
+[2024.04.23-13.46.31:937][477]LogPython: Display: Object '/Engine/PythonTypes.add_suffix_entry' was externally referenced when shutting down Python. Forcibly releasing its Python resources!
+[2024.04.23-13.46.31:937][477]LogPython: Display: Object '/Engine/PythonTypes.do_rename_dialog' was externally referenced when shutting down Python. Forcibly releasing its Python resources!
+[2024.04.23-13.46.31:937][477]LogPython: Display: Object '/Engine/PythonTypes.do_rename_entry' was externally referenced when shutting down Python. Forcibly releasing its Python resources!
+[2024.04.23-13.46.31:938][477]LogPython: Display: Object '/Engine/PythonTypes.set_bone_reference_pose' was externally referenced when shutting down Python. Forcibly releasing its Python resources!
+[2024.04.23-13.46.31:939][477]LogPython: Display: Object '/Engine/PythonTypes.ControlOutputFormat' was externally referenced when shutting down Python. Forcibly releasing its Python resources!
+[2024.04.23-13.46.33:932][477]LogDemo: Cleaned up 0 splitscreen connections, owner deletion: enabled
+[2024.04.23-13.46.34:359][477]LogExit: Editor shut down
+[2024.04.23-13.46.34:402][477]LogExit: Transaction tracking system shut down
+[2024.04.23-13.46.38:436][477]LogWindows: Error: === Critical error: ===
+[2024.04.23-13.46.38:436][477]LogWindows: Error: 
+[2024.04.23-13.46.38:436][477]LogWindows: Error: Fatal error!
+[2024.04.23-13.46.38:436][477]LogWindows: Error: 
+[2024.04.23-13.46.38:436][477]LogWindows: Error: Unhandled Exception: EXCEPTION_ACCESS_VIOLATION 0x0000000000000000
+[2024.04.23-13.46.38:436][477]LogWindows: Error: 
+[2024.04.23-13.46.38:436][477]LogWindows: Error: 
+[2024.04.23-13.46.38:445][477]LogExit: Executing StaticShutdownAfterError
+[2024.04.23-13.46.38:455][477]LogWindows: FPlatformMisc::RequestExit(1, WindowsPlatformCrashContext.EngineUnhandledExceptionFilter)
+[2024.04.23-13.46.38:455][477]LogWindows: FPlatformMisc::RequestExitWithStatus(1, 3, WindowsPlatformCrashContext.EngineUnhandledExceptionFilter)
+[2024.04.23-13.46.38:455][477]LogCore: Engine exit requested (reason: Win RequestExit; note: exit was already requested)

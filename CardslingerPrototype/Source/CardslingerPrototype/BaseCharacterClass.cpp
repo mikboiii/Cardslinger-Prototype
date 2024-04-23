@@ -14,6 +14,7 @@
 #include "Engine/DamageEvents.h"
 #include "Engine/World.h"
 #include "Math/UnrealMathUtility.h"
+#include "TimerManager.h"
 #include "BaseCard.h"
 
 // Sets default values
@@ -68,6 +69,7 @@ void ABaseCharacterClass::SetupPlayerInputComponent(UInputComponent* PlayerInput
         EnhancedInputComponent->BindAction(JumpAction, ETriggerEvent::Triggered, this, &ACharacter::Jump);
         EnhancedInputComponent->BindAction(ShootAction, ETriggerEvent::Triggered, this, &ABaseCharacterClass::Shoot);
 		EnhancedInputComponent->BindAction(CardAction, ETriggerEvent::Triggered, this, &ABaseCharacterClass::UseCard);
+		EnhancedInputComponent->BindAction(ReloadAction, ETriggerEvent::Triggered, this, &ABaseCharacterClass::Reload);
         //EnhancedInputComponent->BindAction(RotateAction, ETriggerEvent::Triggered, this, &ATank::Rotate);
     }
 }
@@ -142,4 +144,19 @@ AController* ABaseCharacterClass::GetOwnerController() const
 	if(OwnerPawn == nullptr) return nullptr;
 	UE_LOG(LogTemp, Display, TEXT("Controller returned"));
 	return OwnerPawn->GetController();
+}
+
+void ABaseCharacterClass::Reload()
+{
+	if(CanReload && CurrentClip != MaxClip)
+	{
+	CanReload = false;
+	GetWorldTimerManager().SetTimer(ReloadTimeManager, this, &ABaseCharacterClass::ReloadTimerFunction, ReloadDelay);
+	}
+}
+
+void ABaseCharacterClass::ReloadTimerFunction()
+{
+	CanReload = true;
+	CurrentClip = MaxClip;
 }
