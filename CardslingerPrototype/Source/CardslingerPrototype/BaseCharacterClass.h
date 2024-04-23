@@ -34,9 +34,12 @@ protected:
 	UInputAction* JumpAction;
 	UPROPERTY(EditAnywhere, Category = "Input")
 	UInputAction* ShootAction;
+	UPROPERTY(EditAnywhere, Category = "Input")
+	UInputAction* CardAction;
 
 	void Move(const FInputActionValue& Value);
 	void Look(const FInputActionValue& Value);
+	void UseCard(const FInputActionValue& Value);
 
 	void Shoot();
 

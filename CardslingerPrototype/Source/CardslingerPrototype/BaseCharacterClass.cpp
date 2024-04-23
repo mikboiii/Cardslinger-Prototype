@@ -13,6 +13,7 @@
 #include "DrawDebugHelpers.h"
 #include "Engine/DamageEvents.h"
 #include "Engine/World.h"
+#include "Math/UnrealMathUtility.h"
 #include "BaseCard.h"
 
 // Sets default values
@@ -65,6 +66,7 @@ void ABaseCharacterClass::SetupPlayerInputComponent(UInputComponent* PlayerInput
         EnhancedInputComponent->BindAction(LookAction, ETriggerEvent::Triggered, this, &ABaseCharacterClass::Look);
         EnhancedInputComponent->BindAction(JumpAction, ETriggerEvent::Triggered, this, &ACharacter::Jump);
         EnhancedInputComponent->BindAction(ShootAction, ETriggerEvent::Triggered, this, &ABaseCharacterClass::Shoot);
+		EnhancedInputComponent->BindAction(CardAction, ETriggerEvent::Triggered, this, &ABaseCharacterClass::UseCard);
         //EnhancedInputComponent->BindAction(RotateAction, ETriggerEvent::Triggered, this, &ATank::Rotate);
     }
 }
@@ -86,6 +88,14 @@ void ABaseCharacterClass::Look(const FInputActionValue& Value)
 {
     AddControllerPitchInput(Value.Get<FVector2D>().Y);
     AddControllerYawInput(Value.Get<FVector2D>().X);
+}
+
+void ABaseCharacterClass::UseCard(const FInputActionValue& Value)
+{
+	UE_LOG(LogTemp, Display, TEXT("Value: %f"),Value.Get<float>()-1);
+	if(CardHand[FMath::Floor(Value.Get<float>())-1] == nullptr) return;
+	CardHand[FMath::Floor(Value.Get<float>())-1]->CardEffect();
+	
 }
 
 void ABaseCharacterClass::Shoot()
