@@ -27,6 +27,6 @@ void ABaseCard::Tick(float DeltaTime)
 
 void ABaseCard::CardEffect()
 {
-	
+	UE_LOG(LogTemp, Display, TEXT("Card Effect Used"));
 }
 

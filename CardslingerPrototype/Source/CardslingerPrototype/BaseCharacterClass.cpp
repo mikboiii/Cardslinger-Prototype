@@ -9,6 +9,7 @@
 #include "Kismet/GameplayStatics.h"
 #include "Components/CapsuleComponent.h"
 #include "Components/SkeletalMeshComponent.h"
+#include "BaseCardInheritanceTest.h"
 #include "DrawDebugHelpers.h"
 #include "Engine/DamageEvents.h"
 #include "Engine/World.h"
@@ -30,6 +31,7 @@ void ABaseCharacterClass::BeginPlay()
 	{
 	CardHand.Init(GetWorld()->SpawnActor<ABaseCard>(CardTemplate), 4);
 	}
+	CardHand[0] = GetWorld()->SpawnActor<ABaseCardInheritanceTest>(ABaseCardInheritanceTest::StaticClass());
 	// for(int i = 0; i < 4; i++)
 	// {
 
@@ -100,7 +102,7 @@ void ABaseCharacterClass::Shoot()
 	AActor* HitActor = Hit.GetActor();
 	if(HitActor == nullptr) return;
 	HitActor->TakeDamage(Damage, DamageEvent, GetController(), this);
-	
+	CardHand[0]->CardEffect();
 	}
 }
 
