@@ -1511,3 +1511,124 @@ LogConfig: Set CVar [[r.Shadow.DetectVertexShaderLayerAtRuntime:1]]
 [2024.04.23-12.58.27:420][ 74]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=6
 [2024.04.23-12.58.27:501][ 74]LogUObjectHash: Compacting FUObjectHashTables data took   3.83ms
 [2024.04.23-12.58.27:888][ 75]LogPlayLevel: Display: Destroying online subsystem :Context_6
+[2024.04.23-13.08.14:528][388]LogLiveCoding: Display: Starting Live Coding compile.
+[2024.04.23-13.08.19:803][404]Display: Reload/Re-instancing Complete: No object changes detected
+[2024.04.23-13.08.19:804][404]LogLiveCoding: Error: Live coding failed, please see Live console for more information
+[2024.04.23-13.08.46:718][484]LogLiveCoding: Display: Starting Live Coding compile.
+[2024.04.23-13.09.55:236][690]LogLiveCoding: Display:    Creating library C:\Users\Mikolaj\Documents\Unreal Projects\Cardslinger-Prototype\CardslingerPrototype\Binaries\Win64\UnrealEditor-CardslingerPrototype.patch_2.lib and object C:\Users\Mikolaj\Documents\Unreal Projects\Cardslinger-Prototype\CardslingerPrototype\Binaries\Win64\UnrealEditor-CardslingerPrototype.patch_2.exp
+[2024.04.23-13.09.56:088][692]LogClass: UPackage /Script/CardslingerPrototype Reload.
+[2024.04.23-13.09.56:088][692]LogClass: UClass BaseCharacterClass Reload.
+[2024.04.23-13.09.56:088][692]LogClass: Could not find existing class BaseCharacterClass in package /Script/CardslingerPrototype for reload, assuming new or modified class
+[2024.04.23-13.09.56:126][692]Re-instancing BaseCharacterClass after reload.
+[2024.04.23-13.09.56:802][692]LogUObjectHash: Compacting FUObjectHashTables data took  14.09ms
+[2024.04.23-13.09.58:291][693]Display: Reload/Re-instancing Complete: 1 package changed, 1 class changed
+[2024.04.23-13.09.58:291][693]LogLiveCoding: Warning: Live coding succeeded, data type changes may cause packaging to fail if assets reference the new or updated data types
+[2024.04.23-13.16.55:229][847]LogLiveCoding: Display: Starting Live Coding compile.
+[2024.04.23-13.17.36:038][994]LogLiveCoding: Display:    Creating library C:\Users\Mikolaj\Documents\Unreal Projects\Cardslinger-Prototype\CardslingerPrototype\Binaries\Win64\UnrealEditor-CardslingerPrototype.patch_3.lib and object C:\Users\Mikolaj\Documents\Unreal Projects\Cardslinger-Prototype\CardslingerPrototype\Binaries\Win64\UnrealEditor-CardslingerPrototype.patch_3.exp
+[2024.04.23-13.17.37:303][998]LogClass: UPackage /Script/CardslingerPrototype Reload.
+[2024.04.23-13.17.37:303][998]LogClass: UClass BaseCharacterClass Reload.
+[2024.04.23-13.17.37:303][998]LogClass: Could not find existing class BaseCharacterClass in package /Script/CardslingerPrototype for reload, assuming new or modified class
+[2024.04.23-13.17.37:320][998]Re-instancing BaseCharacterClass after reload.
+[2024.04.23-13.17.37:621][998]LogUObjectHash: Compacting FUObjectHashTables data took   2.81ms
+[2024.04.23-13.17.38:212][999]Display: Reload/Re-instancing Complete: 1 package changed, 1 class changed
+[2024.04.23-13.17.38:212][999]LogLiveCoding: Warning: Live coding succeeded, data type changes may cause packaging to fail if assets reference the new or updated data types
+[2024.04.23-13.18.05:660][719]LogDebuggerCommands: Repeating last play command: Selected Viewport
+[2024.04.23-13.18.05:685][719]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2024.04.23-13.18.05:685][719]PIE: New page: PIE session: EmptyLevel (23 Apr 2024, 15:18:05)
+[2024.04.23-13.18.05:687][719]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_EmptyLevel
+[2024.04.23-13.18.05:690][719]LogPlayLevel: PIE: StaticDuplicateObject took: (0.003824s)
+[2024.04.23-13.18.05:690][719]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/EmptyLevel.EmptyLevel to /Game/UEDPIE_0_EmptyLevel.EmptyLevel (0.003971s)
+[2024.04.23-13.18.05:807][719]LogUObjectHash: Compacting FUObjectHashTables data took   2.22ms
+[2024.04.23-13.18.05:809][719]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.04.23-13.18.05:810][719]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2024.04.23-13.18.05:810][719]LogAIModule: Creating AISystem for world EmptyLevel
+[2024.04.23-13.18.05:816][719]LogPlayLevel: PIE: World Init took: (0.007168s)
+[2024.04.23-13.18.05:817][719]LogAudio: Display: Creating Audio Device:                 Id: 7, Scope: Unique, Realtime: True
+[2024.04.23-13.18.05:817][719]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2024.04.23-13.18.05:817][719]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2024.04.23-13.18.05:817][719]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2024.04.23-13.18.05:817][719]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2024.04.23-13.18.05:817][719]LogAudioMixer: Display: 	Number of buffers to queue:			  1
+[2024.04.23-13.18.05:817][719]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2024.04.23-13.18.05:817][719]LogAudioMixer: Display: 	Number of Async Source Workers:		  4
+[2024.04.23-13.18.05:817][719]LogAudio: Display: AudioDevice MaxSources: 32
+[2024.04.23-13.18.05:817][719]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2024.04.23-13.18.05:817][719]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2024.04.23-13.18.05:817][719]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2024.04.23-13.18.05:820][719]LogAudioMixer: Display: Initializing audio mixer using platform API: 'XAudio2'
+[2024.04.23-13.18.05:886][719]LogAudioMixer: Display: Using Audio Hardware Device Headphones (Realtek(R) Audio)
+[2024.04.23-13.18.05:886][719]LogAudioMixer: Display: Initializing Sound Submixes...
+[2024.04.23-13.18.05:886][719]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2024.04.23-13.18.05:887][719]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2024.04.23-13.18.05:888][719]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called. InstanceID=7
+[2024.04.23-13.18.05:888][719]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048, InstanceID=7
+[2024.04.23-13.18.05:890][719]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=7
+[2024.04.23-13.18.05:891][719]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time. InstanceID=7
+[2024.04.23-13.18.05:891][719]LogInit: FAudioDevice initialized with ID 7.
+[2024.04.23-13.18.05:891][719]LogAudio: Display: Audio Device (ID: 7) registered with world 'EmptyLevel'.
+[2024.04.23-13.18.05:891][719]LogAudioMixer: Initializing Audio Bus Subsystem for audio device with ID 7
+[2024.04.23-13.18.05:899][719]LogLoad: Game class is 'TestGameMode_C'
+[2024.04.23-13.18.05:900][719]LogWorld: Bringing World /Game/UEDPIE_0_EmptyLevel.EmptyLevel up for play (max tick rate 60) at 2024.04.23-14.18.05
+[2024.04.23-13.18.05:901][719]LogWorld: Bringing up level for play took: 0.000815
+[2024.04.23-13.18.05:904][719]LogOnline: OSS: Created online subsystem instance for: :Context_7
+[2024.04.23-13.18.05:910][719]PIE: Server logged in
+[2024.04.23-13.18.05:911][719]PIE: Play in editor total start time 0.227 seconds.
+[2024.04.23-13.18.08:628][794]LogViewport: Scene viewport resized to 737x405, mode Windowed.
+[2024.04.23-13.18.14:364][ 37]LogTemp: Display: Trace Called
+[2024.04.23-13.18.14:378][ 38]LogTemp: Display: Trace Called
+[2024.04.23-13.18.14:394][ 39]LogTemp: Display: Trace Called
+[2024.04.23-13.18.14:412][ 40]LogTemp: Display: Trace Called
+[2024.04.23-13.18.14:429][ 41]LogTemp: Display: Trace Called
+[2024.04.23-13.18.14:445][ 42]LogTemp: Display: Trace Called
+[2024.04.23-13.18.14:462][ 43]LogTemp: Display: Trace Called
+[2024.04.23-13.18.15:063][ 79]LogTemp: Display: Trace Called
+[2024.04.23-13.18.15:079][ 80]LogTemp: Display: Trace Called
+[2024.04.23-13.18.15:098][ 81]LogTemp: Display: Trace Called
+[2024.04.23-13.18.15:114][ 82]LogTemp: Display: Trace Called
+[2024.04.23-13.18.15:130][ 83]LogTemp: Display: Trace Called
+[2024.04.23-13.18.15:415][100]LogTemp: Display: Trace Called
+[2024.04.23-13.18.15:431][101]LogTemp: Display: Trace Called
+[2024.04.23-13.18.15:447][102]LogTemp: Display: Trace Called
+[2024.04.23-13.18.15:465][103]LogTemp: Display: Trace Called
+[2024.04.23-13.18.15:480][104]LogTemp: Display: Trace Called
+[2024.04.23-13.18.15:498][105]LogTemp: Display: Trace Called
+[2024.04.23-13.18.15:515][106]LogTemp: Display: Trace Called
+[2024.04.23-13.18.15:531][107]LogTemp: Display: Trace Called
+[2024.04.23-13.18.15:547][108]LogTemp: Display: Trace Called
+[2024.04.23-13.18.15:565][109]LogTemp: Display: Trace Called
+[2024.04.23-13.18.15:582][110]LogTemp: Display: Trace Called
+[2024.04.23-13.18.15:601][111]LogTemp: Display: Trace Called
+[2024.04.23-13.18.15:617][112]LogTemp: Display: Trace Called
+[2024.04.23-13.18.15:634][113]LogTemp: Display: Trace Called
+[2024.04.23-13.18.15:651][114]LogTemp: Display: Trace Called
+[2024.04.23-13.18.15:668][115]LogTemp: Display: Trace Called
+[2024.04.23-13.18.15:686][116]LogTemp: Display: Trace Called
+[2024.04.23-13.18.15:702][117]LogTemp: Display: Trace Called
+[2024.04.23-13.18.16:009][135]LogTemp: Display: Trace Called
+[2024.04.23-13.18.16:026][136]LogTemp: Display: Trace Called
+[2024.04.23-13.18.16:041][137]LogTemp: Display: Trace Called
+[2024.04.23-13.18.16:061][138]LogTemp: Display: Trace Called
+[2024.04.23-13.18.16:080][139]LogTemp: Display: Trace Called
+[2024.04.23-13.18.16:098][140]LogTemp: Display: Trace Called
+[2024.04.23-13.18.16:116][141]LogTemp: Display: Trace Called
+[2024.04.23-13.18.16:133][142]LogTemp: Display: Trace Called
+[2024.04.23-13.18.16:155][143]LogTemp: Display: Trace Called
+[2024.04.23-13.18.16:170][144]LogTemp: Display: Trace Called
+[2024.04.23-13.18.16:190][145]LogTemp: Display: Trace Called
+[2024.04.23-13.18.16:209][146]LogTemp: Display: Trace Called
+[2024.04.23-13.18.16:226][147]LogTemp: Display: Trace Called
+[2024.04.23-13.18.16:248][148]LogTemp: Display: Trace Called
+[2024.04.23-13.18.16:265][149]LogTemp: Display: Trace Called
+[2024.04.23-13.18.16:281][150]LogTemp: Display: Trace Called
+[2024.04.23-13.18.20:871][410]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2024.04.23-13.18.20:871][410]LogWorld: BeginTearingDown for /Game/UEDPIE_0_EmptyLevel
+[2024.04.23-13.18.20:871][410]LogWorld: UWorld::CleanupWorld for EmptyLevel, bSessionEnded=true, bCleanupResources=true
+[2024.04.23-13.18.20:872][410]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.04.23-13.18.20:876][410]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2024.04.23-13.18.20:881][410]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.04.23-13.18.20:898][410]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2024.04.23-13.18.20:906][410]LogAudioMixer: Deinitializing Audio Bus Subsystem for audio device with ID 7
+[2024.04.23-13.18.20:906][410]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=7
+[2024.04.23-13.18.20:907][410]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=7
+[2024.04.23-13.18.20:942][410]LogUObjectHash: Compacting FUObjectHashTables data took   3.29ms
+[2024.04.23-13.18.21:093][411]LogPlayLevel: Display: Destroying online subsystem :Context_7

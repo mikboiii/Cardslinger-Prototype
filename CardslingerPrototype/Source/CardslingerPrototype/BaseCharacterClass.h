@@ -55,18 +55,25 @@ private:
 	UPROPERTY(EditAnywhere)
 	float Speed = 10.f;
 	
-	UPROPERTY(VisibleAnywhere)
+	UPROPERTY(VisibleAnywhere, Category = "Combat")
 	float Health;
 
-	UPROPERTY(EditDefaultsOnly)
+	UPROPERTY(EditDefaultsOnly, Category = "Combat")
 	float MaxHealth = 100.0f;
 
-	UPROPERTY(EditAnywhere)
+	UPROPERTY(EditAnywhere, Category = "Combat")
 	float MaxRange = 1000.0f;
 
-	UPROPERTY(EditAnywhere)
+	UPROPERTY(EditAnywhere, Category = "Combat")
 	float Damage = 10.0f;
 
+	UPROPERTY(EditAnywhere, Category = "Combat")
+	int16 MaxClip = 52;
+
+	UPROPERTY(VisibleAnywhere, Category = "Combat")
+	int16 CurrentClip;
+
+//temporary card deck array -> card deck will be its own object
 	TArray<ABaseCard*> CardDeck;
 	UPROPERTY(VisibleAnywhere)
 	TArray<ABaseCard*> CardHand;

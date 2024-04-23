@@ -33,6 +33,7 @@ void ABaseCharacterClass::BeginPlay()
 	CardHand.Init(GetWorld()->SpawnActor<ABaseCard>(CardTemplate), 4);
 	}
 	CardHand[0] = GetWorld()->SpawnActor<ABaseCardInheritanceTest>(ABaseCardInheritanceTest::StaticClass());
+	CurrentClip = MaxClip;
 	// for(int i = 0; i < 4; i++)
 	// {
 
@@ -100,10 +101,13 @@ void ABaseCharacterClass::UseCard(const FInputActionValue& Value)
 
 void ABaseCharacterClass::Shoot()
 {
+	if(CurrentClip > 0)
+	{
 	FHitResult Hit;
 	FVector ShotDirection;
 	//AController* OwnerController = GetOwnerController();
 	//if(OwnerController == nullptr) return;
+	CurrentClip--;
 	if(HitTrace(Hit, ShotDirection))
 	{
 	UE_LOG(LogTemp, Display, TEXT("Trace Called"));
@@ -112,7 +116,7 @@ void ABaseCharacterClass::Shoot()
 	AActor* HitActor = Hit.GetActor();
 	if(HitActor == nullptr) return;
 	HitActor->TakeDamage(Damage, DamageEvent, GetController(), this);
-	CardHand[0]->CardEffect();
+	}
 	}
 }
 
