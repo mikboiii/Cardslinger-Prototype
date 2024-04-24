@@ -38,6 +38,6 @@ public:
 
 	void ShuffleDiscard();
 
+	UFUNCTION(BlueprintCallable)
 	void ShuffleDeck();
-
 };

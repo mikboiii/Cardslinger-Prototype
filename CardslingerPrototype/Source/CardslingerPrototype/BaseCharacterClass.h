@@ -79,7 +79,8 @@ private:
 	float ReloadDelay = 5.0f;
 
 //temporary card deck array -> card deck will be its own object
-	TArray<ABaseCard*> CardDeck;
+	UPROPERTY(EditAnywhere)
+	TSubclassOf<class ACardDeck> CardDeck;
 	UPROPERTY(VisibleAnywhere)
 	TArray<ABaseCard*> CardHand;
 
