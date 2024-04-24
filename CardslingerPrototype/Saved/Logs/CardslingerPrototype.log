@@ -2868,3 +2868,627 @@ LogConfig: CVar [[r.Occlusion.SingleRHIThreadStall:1]] deferred - dummy variable
 [2024.04.24-16.03.36:212][272]LogFileHelpers: InternalPromptForCheckoutAndSave took 356 ms (total: 6.05 sec)
 [2024.04.24-16.03.36:213][272]AssetCheck: New page: Asset Save: EmptyLevelNew
 [2024.04.24-16.03.36:213][272]LogContentValidation: Display: Validating /Script/Engine.World /Game/EmptyLevelNew.EmptyLevelNew
+[2024.04.24-16.04.42:973][329]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.04.24-16.04.43:111][329]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/BP_CardDeck" FILE="../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/BP_CardDeck.uasset" SILENT=true
+[2024.04.24-16.04.43:135][329]LogSavePackage: Moving output files for package: /Game/BP_CardDeck
+[2024.04.24-16.04.43:136][329]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/BP_CardDeck039D7EE64E93F7F6420A5EABF0433847.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/BP_CardDeck.uasset'
+[2024.04.24-16.04.43:151][329]LogFileHelpers: InternalPromptForCheckoutAndSave took 178 ms (total: 6.23 sec)
+[2024.04.24-16.04.43:154][329]AssetCheck: New page: Asset Save: BP_CardDeck
+[2024.04.24-16.04.43:154][329]LogContentValidation: Display: Validating /Script/Engine.Blueprint /Game/BP_CardDeck.BP_CardDeck
+[2024.04.24-16.05.06:029][374]LogAssetEditorSubsystem: Opening Asset editor for AnimBlueprint /Game/FBXTest/SingleCardTest/ABP_SingleCard.ABP_SingleCard
+[2024.04.24-16.05.06:038][374]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.04.24-16.05.06:038][374]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2024.04.24-16.05.06:075][374]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.04.24-16.05.06:075][374]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2024.04.24-16.05.06:090][374]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_12:PersistentLevel.AnimationEditorPreviewActor_0.DebugSkelMeshComponent_0) Already registered. Aborting.
+[2024.04.24-16.05.06:662][374]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.04.24-16.05.06:662][374]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2024.04.24-16.05.06:970][374]LogViewport: Scene viewport resized to 633x601, mode Windowed.
+[2024.04.24-16.05.30:407][485]LogSlate: Took 0.002686 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
+[2024.04.24-16.05.35:257][657]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.04.24-16.05.35:486][657]LogSavePackage: Moving output files for package: /Game/FBXTest/SingleCardTest/ABP_SingleCard
+[2024.04.24-16.05.35:488][657]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/ABP_SingleCardC829BBA94024A85BE0804EB72176B261.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/FBXTest/SingleCardTest/ABP_SingleCard.uasset'
+[2024.04.24-16.05.35:510][657]LogFileHelpers: InternalPromptForCheckoutAndSave took 252 ms (total: 6.49 sec)
+[2024.04.24-16.05.35:514][657]AssetCheck: New page: Asset Save: ABP_SingleCard
+[2024.04.24-16.05.35:514][657]LogContentValidation: Display: Validating /Script/Engine.AnimBlueprint /Game/FBXTest/SingleCardTest/ABP_SingleCard.ABP_SingleCard
+[2024.04.24-16.05.36:682][718]BlueprintLog: New page: Compile ABP_SingleCard
+[2024.04.24-16.05.36:755][718]LogUObjectHash: Compacting FUObjectHashTables data took   1.89ms
+[2024.04.24-16.05.40:730][903]LogDebuggerCommands: Repeating last play command: Selected Viewport
+[2024.04.24-16.05.40:750][903]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2024.04.24-16.05.40:750][903]PIE: New page: PIE session: EmptyLevelNew (24 Apr 2024, 18:05:40)
+[2024.04.24-16.05.40:751][903]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_EmptyLevelNew
+[2024.04.24-16.05.40:757][903]LogPlayLevel: PIE: StaticDuplicateObject took: (0.004774s)
+[2024.04.24-16.05.40:757][903]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/EmptyLevelNew.EmptyLevelNew to /Game/UEDPIE_0_EmptyLevelNew.EmptyLevelNew (0.005033s)
+[2024.04.24-16.05.40:786][903]LogUObjectHash: Compacting FUObjectHashTables data took   2.71ms
+[2024.04.24-16.05.40:792][903]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.04.24-16.05.40:794][903]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2024.04.24-16.05.40:795][903]LogAIModule: Creating AISystem for world EmptyLevelNew
+[2024.04.24-16.05.40:796][903]LogPlayLevel: PIE: World Init took: (0.003265s)
+[2024.04.24-16.05.40:796][903]LogAudio: Display: Creating Audio Device:                 Id: 22, Scope: Unique, Realtime: True
+[2024.04.24-16.05.40:796][903]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2024.04.24-16.05.40:796][903]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2024.04.24-16.05.40:796][903]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2024.04.24-16.05.40:796][903]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2024.04.24-16.05.40:796][903]LogAudioMixer: Display: 	Number of buffers to queue:			  1
+[2024.04.24-16.05.40:796][903]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2024.04.24-16.05.40:796][903]LogAudioMixer: Display: 	Number of Async Source Workers:		  4
+[2024.04.24-16.05.40:796][903]LogAudio: Display: AudioDevice MaxSources: 32
+[2024.04.24-16.05.40:797][903]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2024.04.24-16.05.40:797][903]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2024.04.24-16.05.40:797][903]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2024.04.24-16.05.40:801][903]LogAudioMixer: Display: Initializing audio mixer using platform API: 'XAudio2'
+[2024.04.24-16.05.40:906][903]LogAudioMixer: Display: Using Audio Hardware Device Headphones (Realtek(R) Audio)
+[2024.04.24-16.05.40:907][903]LogAudioMixer: Display: Initializing Sound Submixes...
+[2024.04.24-16.05.40:907][903]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2024.04.24-16.05.40:907][903]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2024.04.24-16.05.40:908][903]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called. InstanceID=22
+[2024.04.24-16.05.40:908][903]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048, InstanceID=22
+[2024.04.24-16.05.40:912][903]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=22
+[2024.04.24-16.05.40:912][903]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time. InstanceID=22
+[2024.04.24-16.05.40:912][903]LogInit: FAudioDevice initialized with ID 22.
+[2024.04.24-16.05.40:912][903]LogAudio: Display: Audio Device (ID: 22) registered with world 'EmptyLevelNew'.
+[2024.04.24-16.05.40:912][903]LogAudioMixer: Initializing Audio Bus Subsystem for audio device with ID 22
+[2024.04.24-16.05.40:917][903]LogLoad: Game class is 'TestGameMode_C'
+[2024.04.24-16.05.40:918][903]LogWorld: Bringing World /Game/UEDPIE_0_EmptyLevelNew.EmptyLevelNew up for play (max tick rate 60) at 2024.04.24-17.05.40
+[2024.04.24-16.05.40:918][903]LogWorld: Bringing up level for play took: 0.001088
+[2024.04.24-16.05.40:922][903]LogOnline: OSS: Created online subsystem instance for: :Context_35
+[2024.04.24-16.05.40:924][903]LogBlueprintUserMessages: [BP_CardDeck_C_3] begin play called
+[2024.04.24-16.05.40:925][903]PIE: Server logged in
+[2024.04.24-16.05.40:926][903]PIE: Play in editor total start time 0.175 seconds.
+[2024.04.24-16.05.40:986][904]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.05.40:988][904]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.05.41:354][905]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.05.41:355][905]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.05.41:356][905]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.05.41:358][905]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.05.41:909][906]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.05.41:911][906]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.05.41:913][906]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.05.41:913][906]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.05.42:121][907]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.05.42:123][907]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.05.42:252][908]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.05.42:291][909]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.05.42:405][913]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.05.42:512][917]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.05.42:612][921]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.05.42:709][925]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.05.42:813][929]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.05.42:891][932]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.05.42:997][936]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.05.43:098][940]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.05.43:200][944]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.05.43:304][948]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.05.43:389][951]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.05.43:500][955]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.05.43:606][959]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.05.43:691][962]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.05.43:807][967]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.05.43:897][971]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.05.44:009][976]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.05.44:099][980]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.05.44:194][984]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.05.44:305][989]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.05.44:402][993]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.05.44:502][997]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.05.44:589][  1]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.05.44:711][  6]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.05.44:804][ 10]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.05.44:897][ 14]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.05.44:991][ 18]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.05.45:114][ 23]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.05.45:211][ 27]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.05.45:314][ 31]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.05.45:391][ 34]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.05.45:517][ 39]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.05.45:590][ 42]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.05.45:693][ 46]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.05.45:792][ 50]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.05.45:892][ 54]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.05.46:016][ 59]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.05.46:092][ 62]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.05.49:786][191]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2024.04.24-16.05.49:786][191]LogWorld: BeginTearingDown for /Game/UEDPIE_0_EmptyLevelNew
+[2024.04.24-16.05.49:786][191]LogWorld: UWorld::CleanupWorld for EmptyLevelNew, bSessionEnded=true, bCleanupResources=true
+[2024.04.24-16.05.49:788][191]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.04.24-16.05.49:820][191]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2024.04.24-16.05.49:825][191]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.04.24-16.05.49:846][191]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2024.04.24-16.05.49:848][191]LogAudioMixer: Deinitializing Audio Bus Subsystem for audio device with ID 22
+[2024.04.24-16.05.49:848][191]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=22
+[2024.04.24-16.05.49:852][191]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=22
+[2024.04.24-16.05.49:864][191]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2024.04.24-16.05.49:869][191]LogUObjectHash: Compacting FUObjectHashTables data took   2.17ms
+[2024.04.24-16.05.49:978][192]LogPlayLevel: Display: Destroying online subsystem :Context_35
+[2024.04.24-16.05.52:432][239]LogDebuggerCommands: Repeating last play command: Selected Viewport
+[2024.04.24-16.05.52:454][239]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2024.04.24-16.05.52:454][239]PIE: New page: PIE session: EmptyLevelNew (24 Apr 2024, 18:05:52)
+[2024.04.24-16.05.52:455][239]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_EmptyLevelNew
+[2024.04.24-16.05.52:460][239]LogPlayLevel: PIE: StaticDuplicateObject took: (0.005753s)
+[2024.04.24-16.05.52:460][239]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/EmptyLevelNew.EmptyLevelNew to /Game/UEDPIE_0_EmptyLevelNew.EmptyLevelNew (0.005945s)
+[2024.04.24-16.05.52:484][239]LogUObjectHash: Compacting FUObjectHashTables data took   3.74ms
+[2024.04.24-16.05.52:491][239]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.04.24-16.05.52:492][239]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2024.04.24-16.05.52:492][239]LogAIModule: Creating AISystem for world EmptyLevelNew
+[2024.04.24-16.05.52:493][239]LogPlayLevel: PIE: World Init took: (0.002057s)
+[2024.04.24-16.05.52:493][239]LogAudio: Display: Creating Audio Device:                 Id: 23, Scope: Unique, Realtime: True
+[2024.04.24-16.05.52:493][239]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2024.04.24-16.05.52:493][239]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2024.04.24-16.05.52:493][239]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2024.04.24-16.05.52:493][239]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2024.04.24-16.05.52:493][239]LogAudioMixer: Display: 	Number of buffers to queue:			  1
+[2024.04.24-16.05.52:493][239]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2024.04.24-16.05.52:493][239]LogAudioMixer: Display: 	Number of Async Source Workers:		  4
+[2024.04.24-16.05.52:493][239]LogAudio: Display: AudioDevice MaxSources: 32
+[2024.04.24-16.05.52:494][239]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2024.04.24-16.05.52:494][239]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2024.04.24-16.05.52:494][239]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2024.04.24-16.05.52:498][239]LogAudioMixer: Display: Initializing audio mixer using platform API: 'XAudio2'
+[2024.04.24-16.05.52:577][239]LogAudioMixer: Display: Using Audio Hardware Device Headphones (Realtek(R) Audio)
+[2024.04.24-16.05.52:577][239]LogAudioMixer: Display: Initializing Sound Submixes...
+[2024.04.24-16.05.52:577][239]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2024.04.24-16.05.52:577][239]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2024.04.24-16.05.52:578][239]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called. InstanceID=23
+[2024.04.24-16.05.52:578][239]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048, InstanceID=23
+[2024.04.24-16.05.52:582][239]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=23
+[2024.04.24-16.05.52:582][239]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time. InstanceID=23
+[2024.04.24-16.05.52:582][239]LogInit: FAudioDevice initialized with ID 23.
+[2024.04.24-16.05.52:582][239]LogAudio: Display: Audio Device (ID: 23) registered with world 'EmptyLevelNew'.
+[2024.04.24-16.05.52:582][239]LogAudioMixer: Initializing Audio Bus Subsystem for audio device with ID 23
+[2024.04.24-16.05.52:587][239]LogLoad: Game class is 'TestGameMode_C'
+[2024.04.24-16.05.52:588][239]LogWorld: Bringing World /Game/UEDPIE_0_EmptyLevelNew.EmptyLevelNew up for play (max tick rate 60) at 2024.04.24-17.05.52
+[2024.04.24-16.05.52:588][239]LogWorld: Bringing up level for play took: 0.001107
+[2024.04.24-16.05.52:591][239]LogOnline: OSS: Created online subsystem instance for: :Context_36
+[2024.04.24-16.05.52:594][239]LogBlueprintUserMessages: [BP_CardDeck_C_3] begin play called
+[2024.04.24-16.05.52:594][239]PIE: Server logged in
+[2024.04.24-16.05.52:595][239]PIE: Play in editor total start time 0.142 seconds.
+[2024.04.24-16.05.52:642][240]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.05.52:643][240]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.05.52:824][241]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.05.53:008][242]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.05.53:010][242]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.05.53:056][243]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.05.53:439][244]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.05.53:441][244]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.05.53:443][244]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.05.53:471][245]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.05.53:544][248]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.05.53:642][252]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.05.53:740][256]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.05.53:845][260]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.05.53:948][264]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.05.54:050][268]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.05.54:156][272]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.05.54:238][275]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.05.54:351][279]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.05.54:455][283]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.05.54:550][286]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.05.54:658][290]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.05.54:759][294]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.05.54:840][297]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.05.54:944][301]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.05.55:045][305]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.05.55:147][309]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.05.55:243][313]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.05.55:347][317]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.05.55:446][321]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.05.55:550][325]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.05.55:652][329]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.05.55:751][333]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.05.55:854][337]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.05.55:962][341]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.05.56:038][344]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.05.56:146][348]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.05.56:239][351]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.05.56:363][355]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.05.56:447][358]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.05.56:545][362]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.05.56:662][366]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.05.56:757][370]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.05.56:856][374]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.05.56:940][377]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.05.57:057][381]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.05.57:147][384]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.05.57:261][388]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.05.57:353][391]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.05.57:441][394]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.05.57:560][398]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.05.57:650][401]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.05.59:195][463]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2024.04.24-16.05.59:196][463]LogWorld: BeginTearingDown for /Game/UEDPIE_0_EmptyLevelNew
+[2024.04.24-16.05.59:196][463]LogWorld: UWorld::CleanupWorld for EmptyLevelNew, bSessionEnded=true, bCleanupResources=true
+[2024.04.24-16.05.59:198][463]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.04.24-16.05.59:210][463]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2024.04.24-16.05.59:220][463]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.04.24-16.05.59:242][463]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2024.04.24-16.05.59:243][463]LogAudioMixer: Deinitializing Audio Bus Subsystem for audio device with ID 23
+[2024.04.24-16.05.59:243][463]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=23
+[2024.04.24-16.05.59:246][463]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=23
+[2024.04.24-16.05.59:261][463]LogUObjectHash: Compacting FUObjectHashTables data took   1.66ms
+[2024.04.24-16.05.59:374][464]LogPlayLevel: Display: Destroying online subsystem :Context_36
+[2024.04.24-16.06.10:864][ 21]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.04.24-16.06.11:005][ 21]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/BP_CardDeck" FILE="../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/BP_CardDeck.uasset" SILENT=true
+[2024.04.24-16.06.11:026][ 21]LogSavePackage: Moving output files for package: /Game/BP_CardDeck
+[2024.04.24-16.06.11:028][ 21]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/BP_CardDeckAF9B843D4207F203B0EF6D9F24139695.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/BP_CardDeck.uasset'
+[2024.04.24-16.06.11:045][ 21]LogFileHelpers: InternalPromptForCheckoutAndSave took 181 ms (total: 6.67 sec)
+[2024.04.24-16.06.11:048][ 21]AssetCheck: New page: Asset Save: BP_CardDeck
+[2024.04.24-16.06.11:048][ 21]LogContentValidation: Display: Validating /Script/Engine.Blueprint /Game/BP_CardDeck.BP_CardDeck
+[2024.04.24-16.06.11:735][ 58]BlueprintLog: New page: Compile BP_CardDeck
+[2024.04.24-16.06.11:794][ 58]LogUObjectHash: Compacting FUObjectHashTables data took   1.55ms
+[2024.04.24-16.06.18:093][281]LogAnalytics: Display: [UEEditor.Rocket.Release] APIServer = https://datarouter.ol.epicgames.com/. AppVersion = 5.3.2-29314046+++UE5+Release-5.3
+[2024.04.24-16.06.18:276][281]LogAnalyticsSessionSummarySender: Sent summary session report for: AppId=UEEditor.Rocket.Release SessionId={D4B71E1E-487B-73B4-D6F9-6BA2DE41A1DF}
+[2024.04.24-16.06.45:583][773]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.04.24-16.06.45:759][773]LogSavePackage: Moving output files for package: /Game/FBXTest/SingleCardTest/ABP_SingleCard
+[2024.04.24-16.06.45:760][773]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/ABP_SingleCardD8573A454B07C08094825099783ADED5.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/FBXTest/SingleCardTest/ABP_SingleCard.uasset'
+[2024.04.24-16.06.45:773][773]LogFileHelpers: InternalPromptForCheckoutAndSave took 190 ms (total: 6.86 sec)
+[2024.04.24-16.06.45:775][773]AssetCheck: New page: Asset Save: ABP_SingleCard
+[2024.04.24-16.06.45:775][773]LogContentValidation: Display: Validating /Script/Engine.AnimBlueprint /Game/FBXTest/SingleCardTest/ABP_SingleCard.ABP_SingleCard
+[2024.04.24-16.07.04:635][851]LogAssetEditorSubsystem: Opening Asset editor for AnimSequence /Game/FBXTest/SingleCardTest/A_CardRise.A_CardRise
+[2024.04.24-16.07.04:643][851]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.04.24-16.07.04:643][851]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2024.04.24-16.07.04:654][851]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_14:PersistentLevel.AnimationEditorPreviewActor_0.DebugSkelMeshComponent_0) Already registered. Aborting.
+[2024.04.24-16.07.05:032][851]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.04.24-16.07.05:032][851]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2024.04.24-16.07.05:336][851]LogUObjectGlobals: Warning: Failed to find object 'Class /Script/ApexDestruction.DestructibleMesh'
+[2024.04.24-16.07.05:361][851]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.04.24-16.07.05:361][851]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2024.04.24-16.07.05:399][851]LogViewport: Scene viewport resized to 1384x846, mode Windowed.
+[2024.04.24-16.07.05:450][851]LogContentBrowser: Verbose: The majority of assets in the view are of type: /Script/Engine.AnimSequence
+[2024.04.24-16.07.11:851][145]LogViewport: Scene viewport resized to 192x192, mode Windowed.
+[2024.04.24-16.07.12:547][173]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.04.24-16.07.12:547][173]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2024.04.24-16.07.12:567][173]LogWorld: UWorld::CleanupWorld for World_16, bSessionEnded=true, bCleanupResources=true
+[2024.04.24-16.07.12:568][173]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.04.24-16.07.13:737][217]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.04.24-16.07.13:739][217]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2024.04.24-16.07.13:762][217]LogWorld: UWorld::CleanupWorld for World_17, bSessionEnded=true, bCleanupResources=true
+[2024.04.24-16.07.13:762][217]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.04.24-16.07.22:146][594]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.04.24-16.07.22:294][594]LogSavePackage: Moving output files for package: /Game/FBXTest/SingleCardTest/A_CardFall
+[2024.04.24-16.07.22:296][594]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/A_CardFall83B7EF5F480E46D74B72D4A4E1ABC8FC.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/FBXTest/SingleCardTest/A_CardFall.uasset'
+[2024.04.24-16.07.22:314][594]LogFileHelpers: InternalPromptForCheckoutAndSave took 168 ms (total: 7.03 sec)
+[2024.04.24-16.07.22:318][594]AssetCheck: New page: Asset Save: A_CardFall
+[2024.04.24-16.07.22:318][594]LogContentValidation: Display: Validating /Script/Engine.AnimSequence /Game/FBXTest/SingleCardTest/A_CardFall.A_CardFall
+[2024.04.24-16.07.30:006][960]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.04.24-16.07.30:006][960]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2024.04.24-16.07.30:030][960]LogWorld: UWorld::CleanupWorld for World_18, bSessionEnded=true, bCleanupResources=true
+[2024.04.24-16.07.30:031][960]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.04.24-16.07.31:372][ 14]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.04.24-16.07.31:372][ 14]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2024.04.24-16.07.31:394][ 14]LogWorld: UWorld::CleanupWorld for World_19, bSessionEnded=true, bCleanupResources=true
+[2024.04.24-16.07.31:394][ 14]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.04.24-16.07.32:407][ 54]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.04.24-16.07.32:407][ 54]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2024.04.24-16.07.32:430][ 54]LogWorld: UWorld::CleanupWorld for World_20, bSessionEnded=true, bCleanupResources=true
+[2024.04.24-16.07.32:430][ 54]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.04.24-16.07.47:823][756]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.04.24-16.07.47:823][756]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2024.04.24-16.07.47:853][756]LogWorld: UWorld::CleanupWorld for World_21, bSessionEnded=true, bCleanupResources=true
+[2024.04.24-16.07.47:853][756]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.04.24-16.07.52:600][917]LogUObjectHash: Compacting FUObjectHashTables data took   2.62ms
+[2024.04.24-16.07.54:809][917]LogSlate: Took 0.000939 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
+[2024.04.24-16.07.56:969][917]LogSlate: Window 'Delete Assets' being destroyed
+[2024.04.24-16.07.57:215][917]LogWorld: UWorld::CleanupWorld for World_13, bSessionEnded=true, bCleanupResources=true
+[2024.04.24-16.07.57:215][917]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.04.24-16.07.57:234][917]LogWorld: UWorld::CleanupWorld for World_12, bSessionEnded=true, bCleanupResources=true
+[2024.04.24-16.07.57:234][917]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.04.24-16.07.57:262][917]LogWorld: UWorld::CleanupWorld for World_11, bSessionEnded=true, bCleanupResources=true
+[2024.04.24-16.07.57:262][917]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.04.24-16.07.57:376][917]LogWorld: UWorld::CleanupWorld for World_0, bSessionEnded=true, bCleanupResources=true
+[2024.04.24-16.07.57:376][917]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.04.24-16.07.57:493][917]LogActorComponent: UnregisterComponent: (/Engine/Transient.EditorFloorComp) Not registered. Aborting.
+[2024.04.24-16.07.57:493][917]LogWorld: UWorld::CleanupWorld for World_6, bSessionEnded=true, bCleanupResources=true
+[2024.04.24-16.07.57:493][917]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.04.24-16.07.57:585][917]LogUObjectGlobals: Force Deleting 1 Package(s):
+	Asset Name: /Game/FBXTest/SingleCardTest/A_CardFall.A_CardFall
+	Asset Type: AnimSequence
+[2024.04.24-16.07.58:216][917]LogUObjectHash: Compacting FUObjectHashTables data took   1.56ms
+[2024.04.24-16.07.58:255][917]LogUObjectHash: Compacting FUObjectHashTables data took   2.28ms
+[2024.04.24-16.07.58:275][917]LogUObjectHash: Compacting FUObjectHashTables data took   0.62ms
+[2024.04.24-16.08.15:058][353]LogSlate: Window 'Save Asset As' being destroyed
+[2024.04.24-16.08.15:093][353]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.04.24-16.08.15:285][353]LogSavePackage: Moving output files for package: /Game/FBXTest/SingleCardTest/A_CardFall
+[2024.04.24-16.08.15:285][353]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/A_CardFallB884D3F445479E264CBFB3B55A9102B2.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/FBXTest/SingleCardTest/A_CardFall.uasset'
+[2024.04.24-16.08.15:303][353]LogFileHelpers: InternalPromptForCheckoutAndSave took 210 ms (total: 7.24 sec)
+[2024.04.24-16.08.15:347][353]LogAssetEditorSubsystem: Opening Asset editor for AnimSequence /Game/FBXTest/SingleCardTest/A_CardFall.A_CardFall
+[2024.04.24-16.08.15:347][353]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.04.24-16.08.15:347][353]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2024.04.24-16.08.15:361][353]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_23:PersistentLevel.AnimationEditorPreviewActor_0.DebugSkelMeshComponent_0) Already registered. Aborting.
+[2024.04.24-16.08.15:787][353]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.04.24-16.08.15:788][353]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2024.04.24-16.08.15:880][353]LogWorld: UWorld::CleanupWorld for World_22, bSessionEnded=true, bCleanupResources=true
+[2024.04.24-16.08.15:880][353]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.04.24-16.08.15:976][353]LogWorld: UWorld::CleanupWorld for World_15, bSessionEnded=true, bCleanupResources=true
+[2024.04.24-16.08.15:976][353]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.04.24-16.08.15:997][353]LogWorld: UWorld::CleanupWorld for World_14, bSessionEnded=true, bCleanupResources=true
+[2024.04.24-16.08.15:997][353]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.04.24-16.08.16:033][353]AssetCheck: New page: Asset Save: A_CardFall
+[2024.04.24-16.08.16:033][353]LogContentValidation: Display: Validating /Script/Engine.AnimSequence /Game/FBXTest/SingleCardTest/A_CardFall.A_CardFall
+[2024.04.24-16.08.16:148][353]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.04.24-16.08.16:148][353]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2024.04.24-16.08.16:180][353]LogViewport: Scene viewport resized to 1384x846, mode Windowed.
+[2024.04.24-16.08.16:204][353]LogContentBrowser: Verbose: The majority of assets in the view are of type: /Script/Engine.AnimSequence
+[2024.04.24-16.08.20:480][567]LogViewport: Scene viewport resized to 192x192, mode Windowed.
+[2024.04.24-16.08.21:341][604]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.04.24-16.08.21:341][604]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2024.04.24-16.08.21:362][604]LogWorld: UWorld::CleanupWorld for World_25, bSessionEnded=true, bCleanupResources=true
+[2024.04.24-16.08.21:362][604]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.04.24-16.08.22:966][671]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.04.24-16.08.22:966][671]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2024.04.24-16.08.22:990][671]LogWorld: UWorld::CleanupWorld for World_26, bSessionEnded=true, bCleanupResources=true
+[2024.04.24-16.08.22:990][671]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.04.24-16.08.23:695][696]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.04.24-16.08.23:695][696]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2024.04.24-16.08.23:715][696]LogWorld: UWorld::CleanupWorld for World_27, bSessionEnded=true, bCleanupResources=true
+[2024.04.24-16.08.23:716][696]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.04.24-16.08.25:410][764]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.04.24-16.08.25:410][764]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2024.04.24-16.08.25:436][764]LogWorld: UWorld::CleanupWorld for World_28, bSessionEnded=true, bCleanupResources=true
+[2024.04.24-16.08.25:436][764]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.04.24-16.09.06:033][957]LogAnimationCompression: Display: Building compressed animation data for AnimSequence /Game/FBXTest/SingleCardTest/A_CardFall.A_CardFall
+[2024.04.24-16.09.06:048][957]LogAnimationCompression: Display: Storing compressed animation data for /Game/FBXTest/SingleCardTest/A_CardFall.A_CardFall, at AnimationSequence/5c889214af8bfd9b17bab809eb3ce7026832d85d
+[2024.04.24-16.09.20:238][720]LogAnimationCompression: Display: Building compressed animation data for AnimSequence /Game/FBXTest/SingleCardTest/A_CardFall.A_CardFall
+[2024.04.24-16.09.20:240][720]LogAnimationCompression: Display: Storing compressed animation data for /Game/FBXTest/SingleCardTest/A_CardFall.A_CardFall, at AnimationSequence/8acea3a7de1c6a829c50fd3099e7700a3efa5b4e
+[2024.04.24-16.09.21:308][767]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.04.24-16.09.21:454][767]LogSavePackage: Moving output files for package: /Game/FBXTest/SingleCardTest/A_CardFall
+[2024.04.24-16.09.21:456][767]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/A_CardFallD6FEF81A46CE053A750B1090931633C6.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/FBXTest/SingleCardTest/A_CardFall.uasset'
+[2024.04.24-16.09.21:470][767]LogFileHelpers: InternalPromptForCheckoutAndSave took 161 ms (total: 7.40 sec)
+[2024.04.24-16.09.21:473][767]AssetCheck: New page: Asset Save: A_CardFall
+[2024.04.24-16.09.21:474][767]LogContentValidation: Display: Validating /Script/Engine.AnimSequence /Game/FBXTest/SingleCardTest/A_CardFall.A_CardFall
+[2024.04.24-16.09.23:624][870]LogWorld: UWorld::CleanupWorld for World_29, bSessionEnded=true, bCleanupResources=true
+[2024.04.24-16.09.23:624][870]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.04.24-16.09.23:638][870]LogWorld: UWorld::CleanupWorld for World_23, bSessionEnded=true, bCleanupResources=true
+[2024.04.24-16.09.23:638][870]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.04.24-16.09.23:701][870]LogWorld: UWorld::CleanupWorld for World_24, bSessionEnded=true, bCleanupResources=true
+[2024.04.24-16.09.23:701][870]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.04.24-16.09.24:669][886]LogAssetEditorSubsystem: Opening Asset editor for AnimBlueprint /Game/FBXTest/SingleCardTest/ABP_SingleCard.ABP_SingleCard
+[2024.04.24-16.09.24:670][886]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.04.24-16.09.24:670][886]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2024.04.24-16.09.24:770][886]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.04.24-16.09.24:770][886]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2024.04.24-16.09.24:784][886]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_31:PersistentLevel.AnimationEditorPreviewActor_0.DebugSkelMeshComponent_0) Already registered. Aborting.
+[2024.04.24-16.09.25:234][886]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.04.24-16.09.25:234][886]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2024.04.24-16.09.25:491][886]LogViewport: Scene viewport resized to 633x601, mode Windowed.
+[2024.04.24-16.09.26:555][941]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.04.24-16.09.26:726][941]LogSavePackage: Moving output files for package: /Game/FBXTest/SingleCardTest/ABP_SingleCard
+[2024.04.24-16.09.26:728][941]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/ABP_SingleCardA387501C44D297356D496E9A389A193A.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/FBXTest/SingleCardTest/ABP_SingleCard.uasset'
+[2024.04.24-16.09.26:743][941]LogFileHelpers: InternalPromptForCheckoutAndSave took 188 ms (total: 7.59 sec)
+[2024.04.24-16.09.26:747][941]AssetCheck: New page: Asset Save: ABP_SingleCard
+[2024.04.24-16.09.26:747][941]LogContentValidation: Display: Validating /Script/Engine.AnimBlueprint /Game/FBXTest/SingleCardTest/ABP_SingleCard.ABP_SingleCard
+[2024.04.24-16.09.36:724][346]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.04.24-16.09.36:977][346]LogSavePackage: Moving output files for package: /Game/FBXTest/SingleCardTest/ABP_SingleCard
+[2024.04.24-16.09.36:979][346]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/ABP_SingleCard54A27F0343E09D51F8CA63AA10B42174.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/FBXTest/SingleCardTest/ABP_SingleCard.uasset'
+[2024.04.24-16.09.36:997][346]LogFileHelpers: InternalPromptForCheckoutAndSave took 273 ms (total: 7.86 sec)
+[2024.04.24-16.09.37:001][346]AssetCheck: New page: Asset Save: ABP_SingleCard
+[2024.04.24-16.09.37:001][346]LogContentValidation: Display: Validating /Script/Engine.AnimBlueprint /Game/FBXTest/SingleCardTest/ABP_SingleCard.ABP_SingleCard
+[2024.04.24-16.09.37:755][386]BlueprintLog: New page: Compile ABP_SingleCard
+[2024.04.24-16.09.37:816][386]LogUObjectHash: Compacting FUObjectHashTables data took   1.73ms
+[2024.04.24-16.09.38:839][416]LogDebuggerCommands: Repeating last play command: Selected Viewport
+[2024.04.24-16.09.38:856][416]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2024.04.24-16.09.38:857][416]PIE: New page: PIE session: EmptyLevelNew (24 Apr 2024, 18:09:38)
+[2024.04.24-16.09.38:857][416]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_EmptyLevelNew
+[2024.04.24-16.09.38:859][416]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002695s)
+[2024.04.24-16.09.38:859][416]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/EmptyLevelNew.EmptyLevelNew to /Game/UEDPIE_0_EmptyLevelNew.EmptyLevelNew (0.002766s)
+[2024.04.24-16.09.38:885][416]LogUObjectHash: Compacting FUObjectHashTables data took   2.70ms
+[2024.04.24-16.09.38:888][416]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.04.24-16.09.38:888][416]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2024.04.24-16.09.38:888][416]LogAIModule: Creating AISystem for world EmptyLevelNew
+[2024.04.24-16.09.38:890][416]LogPlayLevel: PIE: World Init took: (0.001095s)
+[2024.04.24-16.09.38:890][416]LogAudio: Display: Creating Audio Device:                 Id: 24, Scope: Unique, Realtime: True
+[2024.04.24-16.09.38:890][416]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2024.04.24-16.09.38:890][416]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2024.04.24-16.09.38:890][416]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2024.04.24-16.09.38:890][416]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2024.04.24-16.09.38:890][416]LogAudioMixer: Display: 	Number of buffers to queue:			  1
+[2024.04.24-16.09.38:890][416]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2024.04.24-16.09.38:890][416]LogAudioMixer: Display: 	Number of Async Source Workers:		  4
+[2024.04.24-16.09.38:890][416]LogAudio: Display: AudioDevice MaxSources: 32
+[2024.04.24-16.09.38:890][416]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2024.04.24-16.09.38:890][416]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2024.04.24-16.09.38:890][416]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2024.04.24-16.09.38:893][416]LogAudioMixer: Display: Initializing audio mixer using platform API: 'XAudio2'
+[2024.04.24-16.09.38:964][416]LogAudioMixer: Display: Using Audio Hardware Device Headphones (Realtek(R) Audio)
+[2024.04.24-16.09.38:964][416]LogAudioMixer: Display: Initializing Sound Submixes...
+[2024.04.24-16.09.38:966][416]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2024.04.24-16.09.38:966][416]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2024.04.24-16.09.38:967][416]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called. InstanceID=24
+[2024.04.24-16.09.38:967][416]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048, InstanceID=24
+[2024.04.24-16.09.38:970][416]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=24
+[2024.04.24-16.09.38:970][416]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time. InstanceID=24
+[2024.04.24-16.09.38:970][416]LogInit: FAudioDevice initialized with ID 24.
+[2024.04.24-16.09.38:970][416]LogAudio: Display: Audio Device (ID: 24) registered with world 'EmptyLevelNew'.
+[2024.04.24-16.09.38:970][416]LogAudioMixer: Initializing Audio Bus Subsystem for audio device with ID 24
+[2024.04.24-16.09.38:974][416]LogLoad: Game class is 'TestGameMode_C'
+[2024.04.24-16.09.38:975][416]LogWorld: Bringing World /Game/UEDPIE_0_EmptyLevelNew.EmptyLevelNew up for play (max tick rate 60) at 2024.04.24-17.09.38
+[2024.04.24-16.09.38:975][416]LogWorld: Bringing up level for play took: 0.001050
+[2024.04.24-16.09.38:979][416]LogOnline: OSS: Created online subsystem instance for: :Context_56
+[2024.04.24-16.09.38:980][416]LogBlueprintUserMessages: [BP_CardDeck_C_3] begin play called
+[2024.04.24-16.09.38:980][416]PIE: Server logged in
+[2024.04.24-16.09.38:982][416]PIE: Play in editor total start time 0.127 seconds.
+[2024.04.24-16.09.39:024][417]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.09.39:025][417]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.09.39:026][417]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.09.39:432][418]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.09.39:432][418]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.09.39:433][418]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.09.39:435][418]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.09.39:435][418]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.09.39:436][418]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.09.39:437][418]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.09.39:437][418]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.09.39:824][419]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.09.39:825][419]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.09.39:826][419]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.09.39:826][419]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.09.39:827][419]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.09.39:828][419]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.09.39:829][419]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.09.39:830][419]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.09.39:892][420]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.09.40:168][421]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.09.40:169][421]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.09.40:170][421]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.09.40:170][421]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.09.40:172][421]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.09.40:173][421]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.09.40:203][422]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.09.40:272][424]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.09.40:333][425]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.09.40:354][426]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.09.40:403][428]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.09.40:457][430]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.09.40:518][433]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.09.40:558][435]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.09.40:606][437]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.09.40:655][439]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.09.40:723][442]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.09.40:775][444]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.09.40:803][445]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.09.40:873][448]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.09.40:925][450]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.09.40:962][451]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.09.41:008][453]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.09.41:056][455]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.09.41:101][457]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.09.41:171][460]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.09.41:219][462]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.09.41:263][464]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.09.41:314][466]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.09.41:358][468]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.09.41:405][470]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.09.41:465][473]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.09.46:283][691]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2024.04.24-16.09.46:284][691]LogWorld: BeginTearingDown for /Game/UEDPIE_0_EmptyLevelNew
+[2024.04.24-16.09.46:284][691]LogWorld: UWorld::CleanupWorld for EmptyLevelNew, bSessionEnded=true, bCleanupResources=true
+[2024.04.24-16.09.46:286][691]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.04.24-16.09.46:306][691]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2024.04.24-16.09.46:315][691]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.04.24-16.09.46:336][691]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2024.04.24-16.09.46:337][691]LogAudioMixer: Deinitializing Audio Bus Subsystem for audio device with ID 24
+[2024.04.24-16.09.46:338][691]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=24
+[2024.04.24-16.09.46:341][691]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=24
+[2024.04.24-16.09.46:357][691]LogUObjectHash: Compacting FUObjectHashTables data took   1.76ms
+[2024.04.24-16.09.46:465][692]LogPlayLevel: Display: Destroying online subsystem :Context_56
+[2024.04.24-16.09.48:389][754]LogAssetEditorSubsystem: Opening Asset editor for AnimSequence /Game/FBXTest/SingleCardTest/A_CardFall.A_CardFall
+[2024.04.24-16.09.48:389][754]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.04.24-16.09.48:389][754]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2024.04.24-16.09.48:406][754]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_33:PersistentLevel.AnimationEditorPreviewActor_0.DebugSkelMeshComponent_0) Already registered. Aborting.
+[2024.04.24-16.09.48:763][754]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.04.24-16.09.48:763][754]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2024.04.24-16.09.48:997][754]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.04.24-16.09.48:998][754]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2024.04.24-16.09.49:021][754]LogViewport: Scene viewport resized to 1384x846, mode Windowed.
+[2024.04.24-16.09.49:046][754]LogContentBrowser: Verbose: The majority of assets in the view are of type: /Script/Engine.AnimSequence
+[2024.04.24-16.10.00:191][302]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.04.24-16.10.00:340][302]LogSavePackage: Moving output files for package: /Game/FBXTest/SingleCardTest/A_CardFall
+[2024.04.24-16.10.00:341][302]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/A_CardFall19E0300A4311F3F8D8D935BCB114CFC0.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/FBXTest/SingleCardTest/A_CardFall.uasset'
+[2024.04.24-16.10.00:356][302]LogFileHelpers: InternalPromptForCheckoutAndSave took 164 ms (total: 8.02 sec)
+[2024.04.24-16.10.00:358][302]AssetCheck: New page: Asset Save: A_CardFall
+[2024.04.24-16.10.00:358][302]LogContentValidation: Display: Validating /Script/Engine.AnimSequence /Game/FBXTest/SingleCardTest/A_CardFall.A_CardFall
+[2024.04.24-16.10.04:864][493]LogDebuggerCommands: Repeating last play command: Selected Viewport
+[2024.04.24-16.10.04:886][493]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2024.04.24-16.10.04:887][493]PIE: New page: PIE session: EmptyLevelNew (24 Apr 2024, 18:10:04)
+[2024.04.24-16.10.04:887][493]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_EmptyLevelNew
+[2024.04.24-16.10.04:890][493]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002992s)
+[2024.04.24-16.10.04:890][493]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/EmptyLevelNew.EmptyLevelNew to /Game/UEDPIE_0_EmptyLevelNew.EmptyLevelNew (0.003060s)
+[2024.04.24-16.10.04:913][493]LogUObjectHash: Compacting FUObjectHashTables data took   2.09ms
+[2024.04.24-16.10.04:918][493]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.04.24-16.10.04:918][493]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2024.04.24-16.10.04:919][493]LogAIModule: Creating AISystem for world EmptyLevelNew
+[2024.04.24-16.10.04:919][493]LogPlayLevel: PIE: World Init took: (0.001090s)
+[2024.04.24-16.10.04:919][493]LogAudio: Display: Creating Audio Device:                 Id: 25, Scope: Unique, Realtime: True
+[2024.04.24-16.10.04:919][493]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2024.04.24-16.10.04:919][493]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2024.04.24-16.10.04:919][493]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2024.04.24-16.10.04:919][493]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2024.04.24-16.10.04:919][493]LogAudioMixer: Display: 	Number of buffers to queue:			  1
+[2024.04.24-16.10.04:919][493]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2024.04.24-16.10.04:919][493]LogAudioMixer: Display: 	Number of Async Source Workers:		  4
+[2024.04.24-16.10.04:919][493]LogAudio: Display: AudioDevice MaxSources: 32
+[2024.04.24-16.10.04:920][493]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2024.04.24-16.10.04:920][493]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2024.04.24-16.10.04:920][493]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2024.04.24-16.10.04:923][493]LogAudioMixer: Display: Initializing audio mixer using platform API: 'XAudio2'
+[2024.04.24-16.10.04:993][493]LogAudioMixer: Display: Using Audio Hardware Device Headphones (Realtek(R) Audio)
+[2024.04.24-16.10.04:993][493]LogAudioMixer: Display: Initializing Sound Submixes...
+[2024.04.24-16.10.04:993][493]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2024.04.24-16.10.04:993][493]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2024.04.24-16.10.04:994][493]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called. InstanceID=25
+[2024.04.24-16.10.04:994][493]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048, InstanceID=25
+[2024.04.24-16.10.04:997][493]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=25
+[2024.04.24-16.10.04:997][493]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time. InstanceID=25
+[2024.04.24-16.10.04:997][493]LogInit: FAudioDevice initialized with ID 25.
+[2024.04.24-16.10.04:997][493]LogAudio: Display: Audio Device (ID: 25) registered with world 'EmptyLevelNew'.
+[2024.04.24-16.10.04:997][493]LogAudioMixer: Initializing Audio Bus Subsystem for audio device with ID 25
+[2024.04.24-16.10.05:000][493]LogLoad: Game class is 'TestGameMode_C'
+[2024.04.24-16.10.05:001][493]LogWorld: Bringing World /Game/UEDPIE_0_EmptyLevelNew.EmptyLevelNew up for play (max tick rate 60) at 2024.04.24-17.10.05
+[2024.04.24-16.10.05:002][493]LogWorld: Bringing up level for play took: 0.000850
+[2024.04.24-16.10.05:005][493]LogOnline: OSS: Created online subsystem instance for: :Context_60
+[2024.04.24-16.10.05:007][493]LogBlueprintUserMessages: [BP_CardDeck_C_3] begin play called
+[2024.04.24-16.10.05:007][493]PIE: Server logged in
+[2024.04.24-16.10.05:008][493]PIE: Play in editor total start time 0.122 seconds.
+[2024.04.24-16.10.05:047][494]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.10.05:048][494]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.10.05:048][494]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.10.05:510][495]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.10.05:511][495]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.10.05:512][495]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.10.05:513][495]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.10.05:513][495]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.10.05:515][495]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.10.05:515][495]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.10.05:516][495]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.10.05:917][496]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.10.05:918][496]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.10.05:918][496]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.10.05:919][496]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.10.05:919][496]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.10.05:920][496]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.10.05:920][496]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.10.05:920][496]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.10.05:944][497]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.10.06:066][498]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.10.06:067][498]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.10.06:110][499]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.10.06:161][501]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.10.06:207][503]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.10.06:252][505]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.10.06:296][507]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.10.06:345][509]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.10.06:389][511]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.10.06:453][514]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.10.06:496][516]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.10.06:536][518]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.10.06:587][520]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.10.06:653][523]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.10.06:699][525]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.10.06:751][527]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.10.06:799][529]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.10.06:843][531]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.10.06:891][533]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.10.06:944][535]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.10.06:989][537]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.10.07:038][539]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.10.07:104][542]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.10.07:153][544]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.10.07:198][546]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.10.07:240][548]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.10.07:304][551]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.10.07:349][553]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.10.07:387][555]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.10.07:455][558]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.10.07:500][560]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.10.07:543][562]LogBlueprintUserMessages: [BP_CardDeck_C_3] false
+[2024.04.24-16.10.14:254][852]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2024.04.24-16.10.14:254][852]LogWorld: BeginTearingDown for /Game/UEDPIE_0_EmptyLevelNew
+[2024.04.24-16.10.14:254][852]LogWorld: UWorld::CleanupWorld for EmptyLevelNew, bSessionEnded=true, bCleanupResources=true
+[2024.04.24-16.10.14:255][852]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.04.24-16.10.14:292][852]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2024.04.24-16.10.14:299][852]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.04.24-16.10.14:319][852]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2024.04.24-16.10.14:319][852]LogAudioMixer: Deinitializing Audio Bus Subsystem for audio device with ID 25
+[2024.04.24-16.10.14:319][852]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=25
+[2024.04.24-16.10.14:323][852]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=25
+[2024.04.24-16.10.14:340][852]LogUObjectHash: Compacting FUObjectHashTables data took   1.82ms
+[2024.04.24-16.10.14:461][853]LogPlayLevel: Display: Destroying online subsystem :Context_60
