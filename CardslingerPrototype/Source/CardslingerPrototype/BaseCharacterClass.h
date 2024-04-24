@@ -103,6 +103,6 @@ private:
 	UPROPERTY(VisibleAnywhere, Category="Combat")
 	bool CanReload = true;
 
-	UPROPERTY()
+	UPROPERTY(Instanced, EditAnywhere)
 	class USceneComponent* CardDeckLocation;
 };
