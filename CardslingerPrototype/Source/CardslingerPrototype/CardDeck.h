@@ -1,0 +1,43 @@
+// Fill out your copyright notice in the Description page of Project Settings.
+
+
+/*
+Deck object stores special cards for the game
+TODO:
+Serialise/Deserialise saved decks
+*/
+#pragma once
+
+#include "CoreMinimal.h"
+#include "GameFramework/Actor.h"
+#include "CardDeck.generated.h"
+
+class ABaseCard;
+
+UCLASS()
+class CARDSLINGERPROTOTYPE_API ACardDeck : public AActor
+{
+	GENERATED_BODY()
+	
+public:	
+	// Sets default values for this actor's properties
+	ACardDeck();
+
+	TArray<ABaseCard*> DrawPile;
+	TArray<ABaseCard*> DiscardPile;
+
+protected:
+	// Called when the game starts or when spawned
+	virtual void BeginPlay() override;
+
+public:	
+	// Called every frame
+	virtual void Tick(float DeltaTime) override;
+
+	ABaseCard* DrawCard();
+
+	void ShuffleDiscard();
+
+	void ShuffleDeck();
+
+};
