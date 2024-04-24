@@ -51,6 +51,8 @@ public:
 
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
+	UFUNCTION(BlueprintPure)
+	ACardDeck* GetDeck() const;
 
 private:
 
@@ -80,7 +82,9 @@ private:
 
 //temporary card deck array -> card deck will be its own object
 	UPROPERTY(EditAnywhere)
-	TSubclassOf<class ACardDeck> CardDeck;
+	TSubclassOf<class ACardDeck> CardDeckClass;
+	UPROPERTY(EditAnywhere)
+	class ACardDeck* CardDeck;
 	UPROPERTY(VisibleAnywhere)
 	TArray<ABaseCard*> CardHand;
 
@@ -98,4 +102,7 @@ private:
 	void Reload();
 	UPROPERTY(VisibleAnywhere, Category="Combat")
 	bool CanReload = true;
+
+	UPROPERTY()
+	class USceneComponent* CardDeckLocation;
 };

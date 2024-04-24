@@ -14,14 +14,19 @@
 #include "Engine/DamageEvents.h"
 #include "Engine/World.h"
 #include "Math/UnrealMathUtility.h"
+#include "Components/SceneComponent.h"
 #include "TimerManager.h"
 #include "BaseCard.h"
+#include "CardDeck.h"
 
 // Sets default values
 ABaseCharacterClass::ABaseCharacterClass()
 {
  	// Set this character to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
+	CardDeckLocation = CreateDefaultSubobject<USceneComponent>(TEXT("CardLocation"));
+	CardDeckLocation->SetupAttachment(RootComponent);
+
 
 }
 
@@ -35,6 +40,11 @@ void ABaseCharacterClass::BeginPlay()
 	}
 	CardHand[0] = GetWorld()->SpawnActor<AExplosionTestCard>(AExplosionTestCard::StaticClass());
 	CurrentClip = MaxClip;
+	if(CardDeckClass != nullptr && CardDeckLocation != nullptr)
+	{
+	CardDeck = GetWorld()->SpawnActor<ACardDeck>(CardDeckClass);
+	CardDeck->AttachToComponent(CardDeckLocation, FAttachmentTransformRules::KeepRelativeTransform);
+	}
 	// for(int i = 0; i < 4; i++)
 	// {
 
@@ -152,6 +162,7 @@ void ABaseCharacterClass::Reload()
 	{
 	CanReload = false;
 	GetWorldTimerManager().SetTimer(ReloadTimeManager, this, &ABaseCharacterClass::ReloadTimerFunction, ReloadDelay);
+	CardDeck->ShuffleDeck();
 	}
 }
 
@@ -159,4 +170,9 @@ void ABaseCharacterClass::ReloadTimerFunction()
 {
 	CanReload = true;
 	CurrentClip = MaxClip;
+}
+
+ACardDeck* ABaseCharacterClass::GetDeck() const
+{
+	return CardDeck;
 }
