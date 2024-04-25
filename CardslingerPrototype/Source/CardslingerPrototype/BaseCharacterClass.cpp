@@ -128,7 +128,9 @@ void ABaseCharacterClass::Shoot()
 	AActor* HitActor = Hit.GetActor();
 	if(HitActor == nullptr) return;
 	HitActor->TakeDamage(Damage, DamageEvent, GetController(), this);
+
 	}
+	CardDeck->FireCard(-ShotDirection);
 	}
 }
 

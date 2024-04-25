@@ -3,6 +3,7 @@
 
 #include "CardDeck.h"
 #include "BaseCard.h"
+#include "ProjectileCard.h"
 
 
 // Sets default values
@@ -40,5 +41,15 @@ void ACardDeck::ShuffleDiscard()
 void ACardDeck::ShuffleDeck()
 {
 	
+}
+
+void ACardDeck::FireCard(FVector Direction)
+{
+	if(ProjectileCardClass != nullptr)
+	{
+	//GetWorld()->SpawnActor<AProjectileCard>(ProjectileCardClass, GetActorLocation(), Direction.Rotation());
+	AProjectileCard* Projectile = GetWorld()->SpawnActor<AProjectileCard>(ProjectileCardClass, GetActorLocation(), Direction.Rotation());
+	Projectile->SetOwner(this);
+	}
 }
 

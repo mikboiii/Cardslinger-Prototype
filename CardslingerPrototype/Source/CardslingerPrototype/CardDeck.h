@@ -25,6 +25,8 @@ public:
 
 	TArray<ABaseCard*> DrawPile;
 	TArray<ABaseCard*> DiscardPile;
+	UPROPERTY(EditAnywhere)
+	TSubclassOf<class AProjectileCard> ProjectileCardClass;
 
 protected:
 	// Called when the game starts or when spawned
@@ -40,4 +42,6 @@ public:
 
 	UFUNCTION(BlueprintCallable)
 	void ShuffleDeck();
+
+	void FireCard(FVector Direction);
 };
