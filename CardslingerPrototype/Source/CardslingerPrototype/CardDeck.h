@@ -28,6 +28,9 @@ public:
 	UPROPERTY(EditAnywhere)
 	TSubclassOf<class AProjectileCard> ProjectileCardClass;
 
+	UFUNCTION(BlueprintImplementableEvent)
+	void RemoveCardFromDeck(int CardIndex);
+
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;

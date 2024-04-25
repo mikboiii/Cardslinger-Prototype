@@ -124,13 +124,14 @@ void ABaseCharacterClass::Shoot()
 	{
 	UE_LOG(LogTemp, Display, TEXT("Trace Called"));
 	FPointDamageEvent DamageEvent(Damage, Hit, ShotDirection, nullptr);
-	DrawDebugSphere(GetWorld(), Hit.ImpactPoint, 100.0f, 16, FColor::Red, true, 10000.0f);
+	//DrawDebugSphere(GetWorld(), Hit.ImpactPoint, 100.0f, 16, FColor::Red, true, 10000.0f);
 	AActor* HitActor = Hit.GetActor();
 	if(HitActor == nullptr) return;
 	HitActor->TakeDamage(Damage, DamageEvent, GetController(), this);
 
 	}
 	CardDeck->FireCard(-ShotDirection);
+	CardDeck->RemoveCardFromDeck(CurrentClip);
 	}
 }
 
