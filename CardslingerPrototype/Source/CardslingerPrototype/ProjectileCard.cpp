@@ -2,6 +2,8 @@
 
 
 #include "ProjectileCard.h"
+#include "Kismet/GameplayStatics.h"
+#include "TimerManager.h"
 
 // Sets default values
 AProjectileCard::AProjectileCard()
@@ -15,6 +17,7 @@ AProjectileCard::AProjectileCard()
 void AProjectileCard::BeginPlay()
 {
 	Super::BeginPlay();
+	GetWorldTimerManager().SetTimer(CardLifetimeManager, this, &AProjectileCard::DestroyCard, CardLifetime);
 	
 }
 
@@ -25,3 +28,7 @@ void AProjectileCard::Tick(float DeltaTime)
 
 }
 
+void AProjectileCard::DestroyCard()
+{
+	Destroy();
+}

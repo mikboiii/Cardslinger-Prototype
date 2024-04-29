@@ -110,28 +110,27 @@ void ABaseCharacterClass::UseCard(const FInputActionValue& Value)
 	CardHand[FMath::Floor(Value.Get<float>())-1]->CardEffect();
 	
 }
-
+/// @brief Get good scrub
 void ABaseCharacterClass::Shoot()
 {
 	if(CurrentClip > 0)
 	{
-	FHitResult Hit;
-	FVector ShotDirection;
-	//AController* OwnerController = GetOwnerController();
-	//if(OwnerController == nullptr) return;
-	CurrentClip--;
-	if(HitTrace(Hit, ShotDirection))
-	{
-	UE_LOG(LogTemp, Display, TEXT("Trace Called"));
-	FPointDamageEvent DamageEvent(Damage, Hit, ShotDirection, nullptr);
-	//DrawDebugSphere(GetWorld(), Hit.ImpactPoint, 100.0f, 16, FColor::Red, true, 10000.0f);
-	AActor* HitActor = Hit.GetActor();
-	if(HitActor == nullptr) return;
-	HitActor->TakeDamage(Damage, DamageEvent, GetController(), this);
-
-	}
-	CardDeck->FireCard(-ShotDirection);
-	CardDeck->RemoveCardFromDeck(CurrentClip);
+		FHitResult Hit;
+		FVector ShotDirection;
+		//AController* OwnerController = GetOwnerController();
+		//if(OwnerController == nullptr) return;
+		CurrentClip--;
+		if(HitTrace(Hit, ShotDirection))
+		{
+			UE_LOG(LogTemp, Display, TEXT("Trace Called"));
+			FPointDamageEvent DamageEvent(Damage, Hit, ShotDirection, nullptr);
+			//DrawDebugSphere(GetWorld(), Hit.ImpactPoint, 100.0f, 16, FColor::Red, true, 10000.0f);
+			AActor* HitActor = Hit.GetActor();
+			if(HitActor == nullptr) return;
+			HitActor->TakeDamage(Damage, DamageEvent, GetController(), this);
+		}
+		CardDeck->FireCard(-ShotDirection);
+		CardDeck->RemoveCardFromDeck(CurrentClip);
 	}
 }
 

@@ -25,6 +25,13 @@ protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 
+	void DestroyCard();
+
+	FTimerHandle CardLifetimeManager;
+
+	UPROPERTY(EditAnywhere)
+	float CardLifetime = 100.0f;
+
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
