@@ -32,6 +32,15 @@ protected:
 	UPROPERTY(EditAnywhere)
 	float CardLifetime = 100.0f;
 
+	UFUNCTION()
+	void OnHit(UPrimitiveComponent* HitComponent, AActor* OtherActor, UPrimitiveComponent* OtherComponent, FVector NormalImpulse, const FHitResult& Hit);
+
+	UPROPERTY(Instanced,EditAnywhere)
+	class UBoxComponent* CardCollision;
+
+	UPROPERTY(Instanced, EditAnywhere)
+	class USkeletalMeshComponent* CardSkeletalMesh;
+
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
