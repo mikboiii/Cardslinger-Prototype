@@ -43,12 +43,12 @@ void ACardDeck::ShuffleDeck()
 	
 }
 
-void ACardDeck::FireCard(FVector Direction)
+void ACardDeck::FireCard(FVector Direction, TSubclassOf<class AProjectileCard> CardClass)
 {
-	if(ProjectileCardClass != nullptr)
+	if(CardClass != nullptr)
 	{
 	//GetWorld()->SpawnActor<AProjectileCard>(ProjectileCardClass, GetActorLocation(), Direction.Rotation());
-	AProjectileCard* Projectile = GetWorld()->SpawnActor<AProjectileCard>(ProjectileCardClass, GetActorLocation(), Direction.Rotation());
+	AProjectileCard* Projectile = GetWorld()->SpawnActor<AProjectileCard>(CardClass, GetActorLocation(), Direction.Rotation());
 	Projectile->SetOwner(this);
 	}
 }

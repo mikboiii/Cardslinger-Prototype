@@ -18,6 +18,7 @@
 #include "TimerManager.h"
 #include "BaseCard.h"
 #include "CardDeck.h"
+#include "ProjectileCard.h"
 
 // Sets default values
 ABaseCharacterClass::ABaseCharacterClass()
@@ -107,7 +108,7 @@ void ABaseCharacterClass::UseCard(const FInputActionValue& Value)
 {
 	UE_LOG(LogTemp, Display, TEXT("Value: %f"),Value.Get<float>()-1);
 	if(CardHand[FMath::Floor(Value.Get<float>())-1] == nullptr) return;
-	CardHand[FMath::Floor(Value.Get<float>())-1]->CardEffect();
+	CardHand[FMath::Floor(Value.Get<float>())-1]->CardEffect(CardDeck);
 	
 }
 /// @brief Get good scrub
@@ -129,7 +130,7 @@ void ABaseCharacterClass::Shoot()
 			if(HitActor == nullptr) return;
 			HitActor->TakeDamage(Damage, DamageEvent, GetController(), this);
 		}
-		CardDeck->FireCard(-ShotDirection);
+		CardDeck->FireCard(-ShotDirection, BasicCardProjectile);
 		CardDeck->RemoveCardFromDeck(CurrentClip);
 	}
 }

@@ -25,7 +25,7 @@ public:
 
 	TArray<ABaseCard*> DrawPile;
 	TArray<ABaseCard*> DiscardPile;
-	UPROPERTY(EditAnywhere)
+	UPROPERTY(EditAnywhere, Category = "Card Types")
 	TSubclassOf<class AProjectileCard> ProjectileCardClass;
 
 	UFUNCTION(BlueprintImplementableEvent)
@@ -46,5 +46,5 @@ public:
 	UFUNCTION(BlueprintCallable)
 	void ShuffleDeck();
 
-	void FireCard(FVector Direction);
+	void FireCard(FVector Direction, TSubclassOf<class AProjectileCard> CardClass);
 };

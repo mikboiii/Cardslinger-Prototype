@@ -80,7 +80,6 @@ private:
 	UPROPERTY(EditDefaultsOnly, Category="Combat")
 	float ReloadDelay = 5.0f;
 
-//temporary card deck array -> card deck will be its own object
 	UPROPERTY(EditAnywhere)
 	TSubclassOf<class ACardDeck> CardDeckClass;
 	UPROPERTY(EditAnywhere)
@@ -91,9 +90,13 @@ private:
 	UPROPERTY(EditAnywhere)
 	TSubclassOf<ABaseCard> CardTemplate;
 
+	UPROPERTY(EditAnywhere)
+	TSubclassOf<class AProjectileCard> BasicCardProjectile;
+
 	AController* GetOwnerController() const;
 
 	bool HitTrace(FHitResult& Hit, FVector& ShotDirection);
+
 	
 	FTimerHandle ReloadTimeManager;
 

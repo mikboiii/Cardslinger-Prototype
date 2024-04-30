@@ -2,9 +2,10 @@
 
 
 #include "ExplosionTestCard.h"
+#include "CardDeck.h"
 #include "Engine/World.h"
 
-void AExplosionTestCard::CardEffect()
+void AExplosionTestCard::CardEffect(ACardDeck* CardDeck)
 {
     UE_LOG(LogTemp, Display, TEXT("Exploding Card"));
 }
