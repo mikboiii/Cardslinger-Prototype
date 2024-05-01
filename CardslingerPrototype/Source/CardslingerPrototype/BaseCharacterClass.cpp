@@ -108,7 +108,10 @@ void ABaseCharacterClass::UseCard(const FInputActionValue& Value)
 {
 	UE_LOG(LogTemp, Display, TEXT("Value: %f"),Value.Get<float>()-1);
 	if(CardHand[FMath::Floor(Value.Get<float>())-1] == nullptr) return;
-	CardHand[FMath::Floor(Value.Get<float>())-1]->CardEffect(CardDeck);
+	FVector ShotDirection;
+	FHitResult Hit;
+	HitTrace(Hit, ShotDirection);
+	CardHand[FMath::Floor(Value.Get<float>())-1]->CardEffect(CardDeck, -ShotDirection);
 	
 }
 /// @brief Get good scrub

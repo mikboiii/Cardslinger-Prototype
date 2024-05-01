@@ -30,5 +30,5 @@ public:
 
 	FString CardDescription;
 
-	virtual void CardEffect(class ACardDeck* CardDeck);
+	virtual void CardEffect(class ACardDeck* CardDeck, FVector Direction);
 };

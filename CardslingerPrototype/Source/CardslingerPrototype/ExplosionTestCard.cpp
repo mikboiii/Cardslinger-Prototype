@@ -3,9 +3,11 @@
 
 #include "ExplosionTestCard.h"
 #include "CardDeck.h"
+#include "ProjectileCard.h"
 #include "Engine/World.h"
 
-void AExplosionTestCard::CardEffect(ACardDeck* CardDeck)
+void AExplosionTestCard::CardEffect(ACardDeck* CardDeck, FVector Direction)
 {
+    CardDeck->FireCard(Direction, ExplosionProjectileCardClass);
     UE_LOG(LogTemp, Display, TEXT("Exploding Card"));
 }
