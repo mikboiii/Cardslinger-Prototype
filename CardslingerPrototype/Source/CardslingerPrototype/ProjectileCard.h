@@ -40,6 +40,8 @@ protected:
 
 	UPROPERTY(Instanced, EditAnywhere)
 	class USkeletalMeshComponent* CardSkeletalMesh;
+	UPROPERTY(EditAnywhere)
+	float CardVelocity = 20.0f;
 
 public:	
 	// Called every frame

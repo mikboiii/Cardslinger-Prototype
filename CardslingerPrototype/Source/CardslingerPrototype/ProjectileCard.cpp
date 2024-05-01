@@ -37,6 +37,9 @@ void AProjectileCard::BeginPlay()
 void AProjectileCard::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
+	FVector ToMove;
+	ToMove = GetActorForwardVector() * CardVelocity;
+	AddActorWorldOffset(ToMove, true);
 
 }
 
