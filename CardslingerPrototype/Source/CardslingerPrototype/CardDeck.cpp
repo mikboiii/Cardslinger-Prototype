@@ -30,7 +30,7 @@ void ACardDeck::Tick(float DeltaTime)
 
 ABaseCard* ACardDeck::DrawCard()
 {
-	return DrawPile[0];
+	return GetWorld()->SpawnActor<ABaseCard>(DrawPile[0]);
 }
 
 void ACardDeck::ShuffleDiscard()
@@ -55,3 +55,7 @@ void ACardDeck::FireCard(FVector Direction, TSubclassOf<class AProjectileCard> C
 	}
 }
 
+bool ACardDeck::IsDeckEmpty() const
+{
+	return DrawPile.Num() == 0;
+}

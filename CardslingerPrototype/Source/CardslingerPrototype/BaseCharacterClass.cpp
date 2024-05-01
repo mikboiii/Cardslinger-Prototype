@@ -106,15 +106,34 @@ void ABaseCharacterClass::Look(const FInputActionValue& Value)
 
 void ABaseCharacterClass::UseCard(const FInputActionValue& Value)
 {
-	UE_LOG(LogTemp, Display, TEXT("Value: %f"),Value.Get<float>()-1);
-	if(CardHand[FMath::Floor(Value.Get<float>())-1] == nullptr) return;
+	int Index = FMath::Floor(Value.Get<float>())-1;
+	if(CardHand[Index] == nullptr) return;
 	FVector ShotDirection;
 	FHitResult Hit;
 	HitTrace(Hit, ShotDirection);
-	CardHand[FMath::Floor(Value.Get<float>())-1]->CardEffect(CardDeck, -ShotDirection);
-	
+	CardHand[Index]->CardEffect(CardDeck, -ShotDirection);
+	CardHand.RemoveAt(Index, 1, false);
+	if(CardDeck->IsDeckEmpty())
+	{
+		CardHand[Index] = CardDeck->DrawCard();
+	}
+	else
+	{
+
+	}
+
+	/*
+	* Use Card x
+	* Remove from hand
+	* Keep slot on cooldown for a few seconds
+	* Check if card available to replace
+	* If yes, draw new card
+	* If no, keep closed until 
+	*/
 }
-/// @brief Get good scrub
+
+
+
 void ABaseCharacterClass::Shoot()
 {
 	if(CurrentClip > 0)

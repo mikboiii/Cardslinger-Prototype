@@ -19,17 +19,21 @@ class CARDSLINGERPROTOTYPE_API ACardDeck : public AActor
 {
 	GENERATED_BODY()
 	
-public:	
+private:
 	// Sets default values for this actor's properties
 	ACardDeck();
 
-	TArray<ABaseCard*> DrawPile;
-	TArray<ABaseCard*> DiscardPile;
+	UPROPERTY(EditAnywhere)
+	TArray<TSubclassOf<ABaseCard>> DrawPile;
+
+	UPROPERTY(VisibleAnywhere)
+	TArray<TSubclassOf<ABaseCard>> DiscardPile;
+
+
 	UPROPERTY(EditAnywhere, Category = "Card Types")
 	TSubclassOf<class AProjectileCard> ProjectileCardClass;
 
-	UFUNCTION(BlueprintImplementableEvent)
-	void RemoveCardFromDeck(int CardIndex);
+	
 
 protected:
 	// Called when the game starts or when spawned
@@ -47,4 +51,10 @@ public:
 	void ShuffleDeck();
 
 	void FireCard(FVector Direction, TSubclassOf<class AProjectileCard> CardClass);
+
+	UFUNCTION(BlueprintPure)
+	bool IsDeckEmpty() const;
+
+	UFUNCTION(BlueprintImplementableEvent)
+	void RemoveCardFromDeck(int CardIndex);
 };
