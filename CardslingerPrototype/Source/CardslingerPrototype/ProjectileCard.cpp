@@ -5,6 +5,7 @@
 #include "Kismet/GameplayStatics.h"
 #include "Components/BoxComponent.h"
 #include "Components/SkeletalMeshComponent.h"
+#include "NiagaraComponent.h"
 #include "DrawDebugHelpers.h"
 #include "TimerManager.h"
 
@@ -17,6 +18,8 @@ AProjectileCard::AProjectileCard()
 	CardSkeletalMesh->SetupAttachment(RootComponent);
 	CardCollision = CreateDefaultSubobject<UBoxComponent>(TEXT("CardCollision"));
 	CardCollision->SetupAttachment(CardSkeletalMesh);
+	CardTrail = CreateDefaultSubobject<UNiagaraComponent>(TEXT("CardTrail"));
+	CardTrail->SetupAttachment(CardCollision);
 	if(CardCollision != nullptr)
 	{
 	CardCollision->OnComponentHit.AddDynamic(this, &AProjectileCard::OnHit);
@@ -52,8 +55,7 @@ void AProjectileCard::OnHit(UPrimitiveComponent* HitComponent, AActor* OtherActo
 {
 	if (OtherActor != this)
     {
-        DrawDebugSphere(GetWorld(), Hit.ImpactPoint, 100.0f, 16, FColor::Red, true, 10000.0f);
-		UE_LOG(LogTemp, Display, TEXT("Card Impact"));
+        DrawDebugSphere(GetWorld(), Hit.ImpactPoint, 10.0f, 16, FColor::Red, true, 10000.0f);
     }
 
     Destroy();

@@ -39,7 +39,7 @@ void ABaseCharacterClass::BeginPlay()
 	{
 	CardHand.Init(GetWorld()->SpawnActor<ABaseCard>(CardTemplate), 4);
 	}
-	CardHand[0] = GetWorld()->SpawnActor<AExplosionTestCard>(AExplosionTestCard::StaticClass());
+	CardHand[0] = GetWorld()->SpawnActor<ABaseCard>(CardToTest);
 	CurrentClip = MaxClip;
 	if(CardDeckClass != nullptr && CardDeckLocation != nullptr)
 	{

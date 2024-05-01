@@ -45,10 +45,12 @@ void ACardDeck::ShuffleDeck()
 
 void ACardDeck::FireCard(FVector Direction, TSubclassOf<class AProjectileCard> CardClass)
 {
+	UE_LOG(LogTemp, Display, TEXT("FireCard Called"));
 	if(CardClass != nullptr)
 	{
 	//GetWorld()->SpawnActor<AProjectileCard>(ProjectileCardClass, GetActorLocation(), Direction.Rotation());
 	AProjectileCard* Projectile = GetWorld()->SpawnActor<AProjectileCard>(CardClass, GetActorLocation(), Direction.Rotation());
+	UE_LOG(LogTemp, Display, TEXT("Card Spawned"));
 	Projectile->SetOwner(this);
 	}
 }

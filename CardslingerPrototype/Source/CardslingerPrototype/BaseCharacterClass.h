@@ -91,6 +91,9 @@ private:
 	TSubclassOf<ABaseCard> CardTemplate;
 
 	UPROPERTY(EditAnywhere)
+	TSubclassOf<class ABaseCard> CardToTest;
+
+	UPROPERTY(EditAnywhere)
 	TSubclassOf<class AProjectileCard> BasicCardProjectile;
 
 	AController* GetOwnerController() const;
