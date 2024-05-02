@@ -113,7 +113,11 @@ void ABaseCharacterClass::UseCard(const FInputActionValue& Value)
 	FHitResult Hit;
 	HitTrace(Hit, ShotDirection);
 	CardHand[Index]->CardEffect(CardDeck, -ShotDirection);
-	UE_LOG(LogTemp, Display, TEXT("Card removed at index %d"), Index);
+	CardHand[Index] = nullptr;
+	FTimerDelegate CardCooldownDelegate = FTimerDelegate::CreateUObject(this, &ABaseCharacterClass::DrawCardTimerFunction, Index);
+	FTimerHandle DrawCardTimeManager;
+	GetWorldTimerManager().SetTimer(DrawCardTimeManager, CardCooldownDelegate ,CardCooldownDelay, false);
+	/*
 	if(!CardDeck->IsDeckEmpty())
 	{
 		CardHand[Index] = CardDeck->DrawCard();
@@ -122,14 +126,6 @@ void ABaseCharacterClass::UseCard(const FInputActionValue& Value)
 	{
 		CardHand[Index] = nullptr;
 	}
-
-	/*
-	* Use Card x
-	* Remove from hand
-	* Keep slot on cooldown for a few seconds
-	* Check if card available to replace
-	* If yes, draw new card
-	* If no, keep closed until 
 	*/
 }
 
@@ -210,4 +206,16 @@ bool ABaseCharacterClass::IsHandEmpty() const
 		if(CardHand[i] != nullptr) return false;
 	}
 	return true;
+}
+
+void ABaseCharacterClass::DrawCardTimerFunction(int CardIndex)
+{
+	if(CardDeck->IsDeckEmpty())
+	{
+		//CardHand[CardIndex] = nullptr;
+	}
+	else
+	{
+		CardHand[CardIndex] = CardDeck->DrawCard();
+	}
 }

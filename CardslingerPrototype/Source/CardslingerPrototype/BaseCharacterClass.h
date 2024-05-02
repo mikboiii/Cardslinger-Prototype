@@ -82,6 +82,8 @@ private:
 	UPROPERTY(EditDefaultsOnly, Category="Combat")
 	float ReloadDelay = 5.0f;
 
+	UPROPERTY(EditDefaultsOnly, Category="Combat")
+	float CardCooldownDelay = 4.0f;
 	UPROPERTY(EditAnywhere)
 	TSubclassOf<class ACardDeck> CardDeckClass;
 	UPROPERTY(EditAnywhere)
@@ -104,6 +106,7 @@ private:
 
 	
 	FTimerHandle ReloadTimeManager;
+	//FTimerHandle DrawCardTimeManager;
 
 	void ReloadTimerFunction();
 
@@ -113,4 +116,6 @@ private:
 
 	UPROPERTY(Instanced, EditAnywhere)
 	class USceneComponent* CardDeckLocation;
+
+	void DrawCardTimerFunction(int CardIndex);
 };
