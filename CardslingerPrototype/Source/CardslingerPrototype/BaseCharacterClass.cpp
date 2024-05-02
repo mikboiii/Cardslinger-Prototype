@@ -115,7 +115,7 @@ void ABaseCharacterClass::UseCard(const FInputActionValue& Value)
 	CardHand.RemoveAt(Index, 0, false);
 	if(!CardDeck->IsDeckEmpty())
 	{
-		UE_LOG(LogTemp, Display, TEXT("CardDrawn"));
+		UE_LOG(LogTemp, Display, TEXT("Card Drawn, is deck empty: %s"), CardDeck->IsDeckEmpty()? TEXT("true") : TEXT("false"));
 		CardHand[Index] = CardDeck->DrawCard();
 	}
 	else

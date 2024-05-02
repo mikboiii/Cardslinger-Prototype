@@ -30,13 +30,15 @@ void ACardDeck::Tick(float DeltaTime)
 
 ABaseCard* ACardDeck::DrawCard()
 {
-	if(DrawPile.IsEmpty())
+	if(!DrawPile.IsEmpty())
 	{
+	UE_LOG(LogTemp, Display, TEXT("DrawCard() Called"));
 	TSubclassOf<ABaseCard> CardToReturn = DrawPile[0];
 	DiscardPile.Emplace(DrawPile[0]);
 	DrawPile.RemoveAt(0);
 	return GetWorld()->SpawnActor<ABaseCard>(CardToReturn);
 	}
+	UE_LOG(LogTemp, Display, TEXT("Draw Pile empty, has %d items remaining, %s"), DrawPile.Num(), DrawPile.IsEmpty()?TEXT("true"):TEXT("false"));
 	return nullptr;
 }
 
