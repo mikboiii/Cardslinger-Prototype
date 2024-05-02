@@ -4,6 +4,7 @@
 #include "CardDeck.h"
 #include "BaseCard.h"
 #include "ProjectileCard.h"
+#include "Math/UnrealMathUtility.h"
 
 
 // Sets default values
@@ -42,7 +43,14 @@ ABaseCard* ACardDeck::DrawCard()
 
 void ACardDeck::ShuffleDiscard()
 {
-
+	int32 NumberOfCards = DiscardPile.Num();
+	for(int32 i = NumberOfCards - 1; i >= 0; --i)
+	{
+		int32 RandomCardIndex = FMath::RandRange(0,i);
+		DrawPile.Emplace(DiscardPile[RandomCardIndex]);
+		DiscardPile.RemoveAt(RandomCardIndex);
+	}
+	DiscardPile.Empty();
 }
 
 void ACardDeck::ShuffleDeck()

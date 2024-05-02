@@ -117,6 +117,11 @@ void ABaseCharacterClass::UseCard(const FInputActionValue& Value)
 	FTimerDelegate CardCooldownDelegate = FTimerDelegate::CreateUObject(this, &ABaseCharacterClass::DrawCardTimerFunction, Index);
 	FTimerHandle DrawCardTimeManager;
 	GetWorldTimerManager().SetTimer(DrawCardTimeManager, CardCooldownDelegate ,CardCooldownDelay, false);
+	if(CardDeck->IsDeckEmpty() && IsHandEmpty())
+	{
+		UE_LOG(LogTemp, Display, TEXT("Shuffle Called"));
+		CardDeck->ShuffleDiscard();
+	}
 	/*
 	if(!CardDeck->IsDeckEmpty())
 	{
