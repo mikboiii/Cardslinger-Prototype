@@ -112,9 +112,10 @@ void ABaseCharacterClass::UseCard(const FInputActionValue& Value)
 	FHitResult Hit;
 	HitTrace(Hit, ShotDirection);
 	CardHand[Index]->CardEffect(CardDeck, -ShotDirection);
-	CardHand.RemoveAt(Index, 1, false);
-	if(CardDeck->IsDeckEmpty())
+	CardHand.RemoveAt(Index, 0, false);
+	if(!CardDeck->IsDeckEmpty())
 	{
+		UE_LOG(LogTemp, Display, TEXT("CardDrawn"));
 		CardHand[Index] = CardDeck->DrawCard();
 	}
 	else
@@ -200,4 +201,13 @@ void ABaseCharacterClass::ReloadTimerFunction()
 ACardDeck* ABaseCharacterClass::GetDeck() const
 {
 	return CardDeck;
+}
+
+bool ABaseCharacterClass::IsHandEmpty() const
+{
+	for(int i = 0; i < CardHand.Num(); i++)
+	{
+		if(CardHand[i] != nullptr) return false;
+	}
+	return true;
 }

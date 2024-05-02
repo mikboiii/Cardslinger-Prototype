@@ -30,7 +30,14 @@ void ACardDeck::Tick(float DeltaTime)
 
 ABaseCard* ACardDeck::DrawCard()
 {
-	return GetWorld()->SpawnActor<ABaseCard>(DrawPile[0]);
+	if(DrawPile.IsEmpty())
+	{
+	TSubclassOf<ABaseCard> CardToReturn = DrawPile[0];
+	DiscardPile.Emplace(DrawPile[0]);
+	DrawPile.RemoveAt(0);
+	return GetWorld()->SpawnActor<ABaseCard>(CardToReturn);
+	}
+	return nullptr;
 }
 
 void ACardDeck::ShuffleDiscard()

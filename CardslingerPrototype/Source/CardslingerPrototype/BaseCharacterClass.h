@@ -53,6 +53,8 @@ public:
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 	UFUNCTION(BlueprintPure)
 	ACardDeck* GetDeck() const;
+	UFUNCTION(BlueprintPure)
+	bool IsHandEmpty() const;
 
 private:
 
