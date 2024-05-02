@@ -107,20 +107,20 @@ void ABaseCharacterClass::Look(const FInputActionValue& Value)
 void ABaseCharacterClass::UseCard(const FInputActionValue& Value)
 {
 	int Index = FMath::Floor(Value.Get<float>())-1;
+	if(!CardHand.IsValidIndex(Index)) return;
 	if(CardHand[Index] == nullptr) return;
 	FVector ShotDirection;
 	FHitResult Hit;
 	HitTrace(Hit, ShotDirection);
 	CardHand[Index]->CardEffect(CardDeck, -ShotDirection);
-	CardHand.RemoveAt(Index, 0, false);
+	UE_LOG(LogTemp, Display, TEXT("Card removed at index %d"), Index);
 	if(!CardDeck->IsDeckEmpty())
 	{
-		UE_LOG(LogTemp, Display, TEXT("Card Drawn, is deck empty: %s"), CardDeck->IsDeckEmpty()? TEXT("true") : TEXT("false"));
 		CardHand[Index] = CardDeck->DrawCard();
 	}
 	else
 	{
-
+		CardHand[Index] = nullptr;
 	}
 
 	/*
