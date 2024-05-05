@@ -121,6 +121,7 @@ void ABaseCharacterClass::UseCard(const FInputActionValue& Value)
 	{
 		UE_LOG(LogTemp, Display, TEXT("Shuffle Called"));
 		CardDeck->ShuffleDiscard();
+		GetWorldTimerManager().SetTimer(DrawCardTimeManager, this, &ABaseCharacterClass::ReplenishHandFunction, CardCooldownDelay);
 	}
 	/*
 	if(!CardDeck->IsDeckEmpty())
@@ -222,5 +223,13 @@ void ABaseCharacterClass::DrawCardTimerFunction(int CardIndex)
 	else
 	{
 		CardHand[CardIndex] = CardDeck->DrawCard();
+	}
+}
+
+void ABaseCharacterClass::ReplenishHandFunction()
+{
+	for(int i = 0; i < CardHand.Num(); i++)
+	{
+		CardHand[i] = CardDeck->DrawCard();
 	}
 }

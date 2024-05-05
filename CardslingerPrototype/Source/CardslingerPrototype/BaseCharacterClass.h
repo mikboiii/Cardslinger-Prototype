@@ -118,4 +118,6 @@ private:
 	class USceneComponent* CardDeckLocation;
 
 	void DrawCardTimerFunction(int CardIndex);
+
+	void ReplenishHandFunction();
 };
