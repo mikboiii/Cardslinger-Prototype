@@ -117,7 +117,14 @@ private:
 	UPROPERTY(Instanced, EditAnywhere)
 	class USceneComponent* CardDeckLocation;
 
+	UPROPERTY(Instanced, EditAnywhere)
+	class UCameraComponent* CameraComponent;
+
+	UPROPERTY(EditAnywhere, Instanced)
+	class USpringArmComponent* SpringArm2;
+
 	void DrawCardTimerFunction(int CardIndex);
+
 
 	void ReplenishHandFunction();
 };

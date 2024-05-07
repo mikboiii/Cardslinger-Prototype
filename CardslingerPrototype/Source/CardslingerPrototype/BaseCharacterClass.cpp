@@ -2,6 +2,7 @@
 
 
 #include "BaseCharacterClass.h"
+#include "GameFramework/SpringArmComponent.h"
 #include "EnhancedInputSubsystems.h"
 #include "EnhancedInputComponent.h"
 #include "InputActionValue.h"
@@ -9,6 +10,7 @@
 #include "Kismet/GameplayStatics.h"
 #include "Components/CapsuleComponent.h"
 #include "Components/SkeletalMeshComponent.h"
+#include "Camera/CameraComponent.h"
 #include "ExplosionTestCard.h"
 #include "DrawDebugHelpers.h"
 #include "Engine/DamageEvents.h"
@@ -25,8 +27,12 @@ ABaseCharacterClass::ABaseCharacterClass()
 {
  	// Set this character to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
+	SpringArm2 = CreateDefaultSubobject<USpringArmComponent>(TEXT("SpringArmComponent"));
+	SpringArm2->SetupAttachment(GetCapsuleComponent());
+	CameraComponent = CreateDefaultSubobject<UCameraComponent>(TEXT("Camera"));
+	CameraComponent->SetupAttachment(SpringArm2);
 	CardDeckLocation = CreateDefaultSubobject<USceneComponent>(TEXT("CardLocation"));
-	CardDeckLocation->SetupAttachment(RootComponent);
+	CardDeckLocation->SetupAttachment(CameraComponent);
 
 
 }
