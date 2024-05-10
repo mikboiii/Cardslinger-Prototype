@@ -1454,3 +1454,24 @@ C:\Users\Mikolaj\Documents\Unreal Projects\Cardslinger-Prototype\CardslingerProt
 [2024.05.10-15.03.07:931][140]LogFileHelpers: InternalPromptForCheckoutAndSave took 495 ms (total: 4.73 sec)
 [2024.05.10-15.03.07:935][140]AssetCheck: New page: Asset Save: EmptyLevel
 [2024.05.10-15.03.07:937][140]LogContentValidation: Display: Validating /Script/Engine.World /Game/EmptyLevel.EmptyLevel
+[2024.05.10-15.05.00:671][388]LogLiveCoding: Display: Starting Live Coding compile.
+[2024.05.10-15.05.00:783][388]LogSlate: Window 'Add C++ Class' being destroyed
+[2024.05.10-15.07.44:555][881]Display: Reload/Re-instancing Complete: No object changes detected
+[2024.05.10-15.07.44:556][881]LogLiveCoding: Error: Live coding failed, please see Live console for more information
+[2024.05.10-15.14.18:109][ 61]LogLiveCoding: Display: Starting Live Coding compile.
+[2024.05.10-15.16.29:692][455]LogLiveCoding: Display:    Creating library C:\Users\Mikolaj\Documents\Unreal Projects\Cardslinger-Prototype\CardslingerPrototype\Binaries\Win64\UnrealEditor-CardslingerPrototype.patch_7.lib and object C:\Users\Mikolaj\Documents\Unreal Projects\Cardslinger-Prototype\CardslingerPrototype\Binaries\Win64\UnrealEditor-CardslingerPrototype.patch_7.exp
+[2024.05.10-15.16.30:990][459]LogClass: UPackage /Script/CardslingerPrototype Reload.
+[2024.05.10-15.16.31:020][459]LogClass: Could not find existing class BaseAIController in package /Script/CardslingerPrototype for reload, assuming new or modified class
+[2024.05.10-15.16.31:708][459]LogUObjectHash: Compacting FUObjectHashTables data took   4.44ms
+[2024.05.10-15.16.32:698][460]Display: Reload/Re-instancing Complete: 1 package changed, 1 class new, 12 classes unchanged, 7 functions remapped
+[2024.05.10-15.16.32:698][460]LogLiveCoding: Warning: Live coding succeeded, data type changes may cause packaging to fail if assets reference the new or updated data types
+[2024.05.10-15.19.37:029][659]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.05.10-15.19.37:199][659]LogWorldPartition: Can't find class descriptor '/Game/AI/BP_BaseAIClass.BP_BaseAIClass_C' for saving '/Game/AI/BP_BaseAIClass.BP_BaseAIClass_C'
+[2024.05.10-15.19.37:201][659]LogWorldPartition: Can't find class descriptor '/Game/AI/BP_BaseAIClass.BP_BaseAIClass_C' for saving '/Game/AI/BP_BaseAIClass.BP_BaseAIClass_C'
+[2024.05.10-15.19.37:209][659]LogSavePackage: Moving output files for package: /Game/AI/BP_BaseAIClass
+[2024.05.10-15.19.37:211][659]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/BP_BaseAIClass3321B7D948D23872D79473A7839E5F5F.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/AI/BP_BaseAIClass.uasset'
+[2024.05.10-15.19.37:232][659]LogFileHelpers: InternalPromptForCheckoutAndSave took 202 ms (total: 4.94 sec)
+[2024.05.10-15.19.37:241][659]AssetCheck: New page: Asset Save: BP_BaseAIClass
+[2024.05.10-15.19.37:241][659]LogContentValidation: Display: Validating /Script/Engine.Blueprint /Game/AI/BP_BaseAIClass.BP_BaseAIClass
+[2024.05.10-15.19.38:272][718]BlueprintLog: New page: Compile BP_BaseAIClass
+[2024.05.10-15.19.38:660][718]LogUObjectHash: Compacting FUObjectHashTables data took   4.12ms
