@@ -1226,3 +1226,190 @@ C:\Users\Mikolaj\Documents\Unreal Projects\Cardslinger-Prototype\CardslingerProt
 [2024.05.10-13.31.40:551][262]AssetCheck: New page: Asset Save: BP_BaseAIClass
 [2024.05.10-13.31.40:551][262]LogContentValidation: Display: Validating /Script/Engine.Blueprint /Game/AI/BP_BaseAIClass.BP_BaseAIClass
 [2024.05.10-13.31.44:916][460]LogSlate: Took 0.007564 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2024.05.10-13.35.42:714][596]LogContentBrowser: Deferred new asset file creation: NewBehaviorTree
+[2024.05.10-13.35.42:866][596]LogContentBrowser: Creating deferred item: NewBehaviorTree
+[2024.05.10-13.35.42:884][597]LogContentBrowser: Renaming the item being created (Deferred Item: NewBehaviorTree).
+[2024.05.10-13.35.51:899][124]LogContentBrowser: Attempting asset rename: NewBehaviorTree -> BasicEnemyTree
+[2024.05.10-13.35.51:907][124]LogContentBrowser: End creating deferred item NewBehaviorTree
+[2024.05.10-13.35.52:457][155]LogAssetEditorSubsystem: Opening Asset editor for BehaviorTree /Game/AI/BasicEnemyTree.BasicEnemyTree
+[2024.05.10-13.35.53:485][205]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.05.10-13.35.53:620][205]LogSavePackage: Moving output files for package: /Game/AI/BasicEnemyTree
+[2024.05.10-13.35.53:620][205]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/BasicEnemyTreeB148FE55434726505122808BCF55BDF7.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/AI/BasicEnemyTree.uasset'
+[2024.05.10-13.35.53:635][205]LogFileHelpers: InternalPromptForCheckoutAndSave took 149 ms (total: 799 ms)
+[2024.05.10-13.35.53:637][205]AssetCheck: New page: Asset Save: BasicEnemyTree
+[2024.05.10-13.35.53:637][205]LogContentValidation: Display: Validating /Script/AIModule.BehaviorTree /Game/AI/BasicEnemyTree.BasicEnemyTree
+[2024.05.10-13.38.14:459][210]LogContentBrowser: Attempting asset rename: BasicEnemyTree -> BT_BasicEnemy
+[2024.05.10-13.38.15:315][210]LogMetaData: Removing '/Game/AI/BT_BasicEnemy.BT_BasicEnemy:Behavior Tree.BehaviorTreeGraphNode_Root_0' ref from Metadata '/Game/AI/BasicEnemyTree.PackageMetaData'
+[2024.05.10-13.38.15:380][210]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.05.10-13.38.15:576][210]LogSavePackage: Moving output files for package: /Game/AI/BT_BasicEnemy
+[2024.05.10-13.38.15:576][210]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/BT_BasicEnemyBCBF1FA04737A2C091B925BDA65A5596.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/AI/BT_BasicEnemy.uasset'
+[2024.05.10-13.38.15:596][210]LogFileHelpers: InternalPromptForCheckoutAndSave took 217 ms (total: 1.01 sec)
+[2024.05.10-13.38.15:942][210]LogUObjectHash: Compacting FUObjectHashTables data took  11.90ms
+[2024.05.10-13.38.15:991][210]LogUObjectHash: Compacting FUObjectHashTables data took   2.76ms
+[2024.05.10-13.38.16:024][210]LogUObjectHash: Compacting FUObjectHashTables data took   0.91ms
+[2024.05.10-13.38.16:029][210]AssetCheck: New page: Asset Save: BT_BasicEnemy
+[2024.05.10-13.38.16:029][210]LogContentValidation: Display: Validating /Script/AIModule.BehaviorTree /Game/AI/BT_BasicEnemy.BT_BasicEnemy
+[2024.05.10-13.40.20:978][884]LogContentBrowser: Deferred new asset file creation: NewBlackboardData
+[2024.05.10-13.40.20:993][884]LogContentBrowser: Creating deferred item: NewBlackboardData
+[2024.05.10-13.40.21:015][885]LogContentBrowser: Renaming the item being created (Deferred Item: NewBlackboardData).
+[2024.05.10-13.40.26:139][170]LogContentBrowser: Attempting asset rename: NewBlackboardData -> BB_BasicEnemy
+[2024.05.10-13.40.26:157][170]LogContentBrowser: End creating deferred item NewBlackboardData
+[2024.05.10-13.40.26:898][213]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.05.10-13.40.27:034][213]LogSavePackage: Moving output files for package: /Game/AI/BB_BasicEnemy
+[2024.05.10-13.40.27:034][213]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/BB_BasicEnemy79F661B84F6F9FAA7D43B5870F7B92C0.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/AI/BB_BasicEnemy.uasset'
+[2024.05.10-13.40.27:052][213]LogFileHelpers: InternalPromptForCheckoutAndSave took 153 ms (total: 1.17 sec)
+[2024.05.10-13.40.27:054][213]AssetCheck: New page: Asset Save: BB_BasicEnemy
+[2024.05.10-13.40.27:054][213]LogContentValidation: Display: Validating /Script/AIModule.BlackboardData /Game/AI/BB_BasicEnemy.BB_BasicEnemy
+[2024.05.10-13.40.32:894][538]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.05.10-13.40.33:033][538]LogSavePackage: Moving output files for package: /Game/AI/BT_BasicEnemy
+[2024.05.10-13.40.33:034][538]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/BT_BasicEnemy6356CB2149B970AA41D00C936D936168.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/AI/BT_BasicEnemy.uasset'
+[2024.05.10-13.40.33:059][538]LogFileHelpers: InternalPromptForCheckoutAndSave took 165 ms (total: 1.33 sec)
+[2024.05.10-13.40.33:060][538]AssetCheck: New page: Asset Save: BT_BasicEnemy
+[2024.05.10-13.40.33:060][538]LogContentValidation: Display: Validating /Script/AIModule.BehaviorTree /Game/AI/BT_BasicEnemy.BT_BasicEnemy
+[2024.05.10-13.43.09:202][612]LogAssetEditorSubsystem: Opening Asset editor for BlackboardData /Game/AI/BB_BasicEnemy.BB_BasicEnemy
+[2024.05.10-13.43.09:861][643]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.05.10-13.43.10:024][643]LogSavePackage: Moving output files for package: /Game/AI/BB_BasicEnemy
+[2024.05.10-13.43.10:027][643]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/BB_BasicEnemy67EE206348F281D6DCFE50A01DAF747F.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/AI/BB_BasicEnemy.uasset'
+[2024.05.10-13.43.10:040][643]LogFileHelpers: InternalPromptForCheckoutAndSave took 178 ms (total: 1.51 sec)
+[2024.05.10-13.43.10:041][643]AssetCheck: New page: Asset Save: BB_BasicEnemy
+[2024.05.10-13.43.10:041][643]LogContentValidation: Display: Validating /Script/AIModule.BlackboardData /Game/AI/BB_BasicEnemy.BB_BasicEnemy
+[2024.05.10-13.43.47:729][747]LogLiveCoding: Display: Starting Live Coding compile.
+[2024.05.10-13.43.47:858][747]LogSlate: Window 'Add C++ Class' being destroyed
+[2024.05.10-13.45.45:334][101]Display: Reload/Re-instancing Complete: No object changes detected
+[2024.05.10-13.45.45:337][101]LogLiveCoding: Error: Live coding failed, please see Live console for more information
+[2024.05.10-13.48.45:462][641]LogLiveCoding: Display: Starting Live Coding compile.
+[2024.05.10-13.50.04:701][878]LogLiveCoding: Display:    Creating library C:\Users\Mikolaj\Documents\Unreal Projects\Cardslinger-Prototype\CardslingerPrototype\Binaries\Win64\UnrealEditor-CardslingerPrototype.patch_2.lib and object C:\Users\Mikolaj\Documents\Unreal Projects\Cardslinger-Prototype\CardslingerPrototype\Binaries\Win64\UnrealEditor-CardslingerPrototype.patch_2.exp
+[2024.05.10-13.50.06:054][882]LogClass: UPackage /Script/CardslingerPrototype Reload.
+[2024.05.10-13.50.06:054][882]LogClass: Could not find existing class BTService_PlayerLocationIfSeen in package /Script/CardslingerPrototype for reload, assuming new or modified class
+[2024.05.10-13.50.06:724][882]LogUObjectHash: Compacting FUObjectHashTables data took   3.53ms
+[2024.05.10-13.50.07:785][883]Display: Reload/Re-instancing Complete: 1 package changed, 1 class new, 9 classes unchanged, 7 functions remapped
+[2024.05.10-13.50.07:785][883]LogLiveCoding: Warning: Live coding succeeded, data type changes may cause packaging to fail if assets reference the new or updated data types
+[2024.05.10-13.50.31:468][942]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.05.10-13.50.31:618][942]LogSavePackage: Moving output files for package: /Game/AI/BT_BasicEnemy
+[2024.05.10-13.50.31:620][942]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/BT_BasicEnemy814F53B34BA88409A9BB09AAAD5CEBA3.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/AI/BT_BasicEnemy.uasset'
+[2024.05.10-13.50.31:631][942]LogFileHelpers: InternalPromptForCheckoutAndSave took 163 ms (total: 1.67 sec)
+[2024.05.10-13.50.31:634][942]AssetCheck: New page: Asset Save: BT_BasicEnemy
+[2024.05.10-13.50.31:634][942]LogContentValidation: Display: Validating /Script/AIModule.BehaviorTree /Game/AI/BT_BasicEnemy.BT_BasicEnemy
+[2024.05.10-13.50.35:223][137]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.05.10-13.50.35:345][137]LogSavePackage: Moving output files for package: /Game/AI/BT_BasicEnemy
+[2024.05.10-13.50.35:346][137]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/BT_BasicEnemy782F54814919D27511FCDF8E780FA95B.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/AI/BT_BasicEnemy.uasset'
+[2024.05.10-13.50.35:357][137]LogFileHelpers: InternalPromptForCheckoutAndSave took 135 ms (total: 1.81 sec)
+[2024.05.10-13.50.35:360][137]AssetCheck: New page: Asset Save: BT_BasicEnemy
+[2024.05.10-13.50.35:360][137]LogContentValidation: Display: Validating /Script/AIModule.BehaviorTree /Game/AI/BT_BasicEnemy.BT_BasicEnemy
+[2024.05.10-13.50.41:634][491]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.05.10-13.50.41:770][491]LogSavePackage: Moving output files for package: /Game/AI/BT_BasicEnemy
+[2024.05.10-13.50.41:771][491]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/BT_BasicEnemy4672721746B39A09A935AA81BD750BDF.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/AI/BT_BasicEnemy.uasset'
+[2024.05.10-13.50.41:782][491]LogFileHelpers: InternalPromptForCheckoutAndSave took 148 ms (total: 1.96 sec)
+[2024.05.10-13.50.41:783][491]AssetCheck: New page: Asset Save: BT_BasicEnemy
+[2024.05.10-13.50.41:783][491]LogContentValidation: Display: Validating /Script/AIModule.BehaviorTree /Game/AI/BT_BasicEnemy.BT_BasicEnemy
+[2024.05.10-13.53.27:703][379]LogLiveCoding: Display: Starting Live Coding compile.
+[2024.05.10-13.53.27:823][379]LogSlate: Window 'Add C++ Class' being destroyed
+[2024.05.10-13.55.08:109][680]LogLiveCoding: Display:    Creating library C:\Users\Mikolaj\Documents\Unreal Projects\Cardslinger-Prototype\CardslingerPrototype\Binaries\Win64\UnrealEditor-CardslingerPrototype.patch_3.lib and object C:\Users\Mikolaj\Documents\Unreal Projects\Cardslinger-Prototype\CardslingerPrototype\Binaries\Win64\UnrealEditor-CardslingerPrototype.patch_3.exp
+[2024.05.10-13.55.09:004][683]LogClass: UPackage /Script/CardslingerPrototype Reload.
+[2024.05.10-13.55.09:009][683]LogClass: Could not find existing class BTService_PlayerLocation in package /Script/CardslingerPrototype for reload, assuming new or modified class
+[2024.05.10-13.55.09:676][683]LogUObjectHash: Compacting FUObjectHashTables data took   3.71ms
+[2024.05.10-13.55.10:348][684]Display: Reload/Re-instancing Complete: 1 package changed, 1 class new, 10 classes unchanged, 7 functions remapped
+[2024.05.10-13.55.10:348][684]LogLiveCoding: Warning: Live coding succeeded, data type changes may cause packaging to fail if assets reference the new or updated data types
+[2024.05.10-13.55.21:410][916]LogDerivedDataCache: C:/Users/Mikolaj/AppData/Local/UnrealEngine/Common/DerivedDataCache: Maintenance finished in +00:00:20.017 and deleted 0 files with total size 0 MiB and 0 empty folders. Scanned 10121 files in 12218 folders with total size 1320 MiB.
+[2024.05.10-13.55.43:440][982]LogLiveCoding: Display: Starting Live Coding compile.
+[2024.05.10-13.57.17:716][264]LogLiveCoding: Display:    Creating library C:\Users\Mikolaj\Documents\Unreal Projects\Cardslinger-Prototype\CardslingerPrototype\Binaries\Win64\UnrealEditor-CardslingerPrototype.patch_4.lib and object C:\Users\Mikolaj\Documents\Unreal Projects\Cardslinger-Prototype\CardslingerPrototype\Binaries\Win64\UnrealEditor-CardslingerPrototype.patch_4.exp
+[2024.05.10-13.57.19:352][269]LogClass: UPackage /Script/CardslingerPrototype Reload.
+[2024.05.10-13.57.19:801][269]LogUObjectHash: Compacting FUObjectHashTables data took   8.17ms
+[2024.05.10-13.57.20:563][270]Display: Reload/Re-instancing Complete: 1 package changed, 11 classes unchanged, 7 functions remapped
+[2024.05.10-13.57.20:563][270]LogLiveCoding: Display: Live coding succeeded
+[2024.05.10-13.58.24:715][164]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.05.10-13.58.24:862][164]LogSavePackage: Moving output files for package: /Game/AI/BT_BasicEnemy
+[2024.05.10-13.58.24:864][164]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/BT_BasicEnemy74AABD7A4FE77DA6D4C0BA9C4B23919D.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/AI/BT_BasicEnemy.uasset'
+[2024.05.10-13.58.24:877][164]LogFileHelpers: InternalPromptForCheckoutAndSave took 162 ms (total: 2.12 sec)
+[2024.05.10-13.58.24:879][164]AssetCheck: New page: Asset Save: BT_BasicEnemy
+[2024.05.10-13.58.24:879][164]LogContentValidation: Display: Validating /Script/AIModule.BehaviorTree /Game/AI/BT_BasicEnemy.BT_BasicEnemy
+[2024.05.10-13.59.04:912][620]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.05.10-13.59.05:053][620]LogSavePackage: Moving output files for package: /Game/AI/BT_BasicEnemy
+[2024.05.10-13.59.05:054][620]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/BT_BasicEnemy74E96CD64C942864D6E66FBE35AD247A.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/AI/BT_BasicEnemy.uasset'
+[2024.05.10-13.59.05:067][620]LogFileHelpers: InternalPromptForCheckoutAndSave took 154 ms (total: 2.27 sec)
+[2024.05.10-13.59.05:070][620]AssetCheck: New page: Asset Save: BT_BasicEnemy
+[2024.05.10-13.59.05:070][620]LogContentValidation: Display: Validating /Script/AIModule.BehaviorTree /Game/AI/BT_BasicEnemy.BT_BasicEnemy
+[2024.05.10-13.59.14:248][ 15]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.05.10-13.59.14:374][ 15]LogSavePackage: Moving output files for package: /Game/AI/BT_BasicEnemy
+[2024.05.10-13.59.14:375][ 15]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/BT_BasicEnemy11A9F3D64CC176CFF3EF0A9BEE0296AD.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/AI/BT_BasicEnemy.uasset'
+[2024.05.10-13.59.14:384][ 15]LogFileHelpers: InternalPromptForCheckoutAndSave took 134 ms (total: 2.41 sec)
+[2024.05.10-13.59.14:385][ 15]AssetCheck: New page: Asset Save: BT_BasicEnemy
+[2024.05.10-13.59.14:385][ 15]LogContentValidation: Display: Validating /Script/AIModule.BehaviorTree /Game/AI/BT_BasicEnemy.BT_BasicEnemy
+[2024.05.10-13.59.43:219][179]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.05.10-13.59.43:340][179]LogSavePackage: Moving output files for package: /Game/AI/BB_BasicEnemy
+[2024.05.10-13.59.43:341][179]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/BB_BasicEnemy1E2DF64E4EB6EBB6EEAF838133B7AFD1.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/AI/BB_BasicEnemy.uasset'
+[2024.05.10-13.59.43:352][179]LogFileHelpers: InternalPromptForCheckoutAndSave took 132 ms (total: 2.54 sec)
+[2024.05.10-13.59.43:355][179]AssetCheck: New page: Asset Save: BB_BasicEnemy
+[2024.05.10-13.59.43:355][179]LogContentValidation: Display: Validating /Script/AIModule.BlackboardData /Game/AI/BB_BasicEnemy.BB_BasicEnemy
+[2024.05.10-14.00.14:630][999]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.05.10-14.00.14:760][999]LogSavePackage: Moving output files for package: /Game/AI/BT_BasicEnemy
+[2024.05.10-14.00.14:762][999]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/BT_BasicEnemyE872CB4C401D8CDF9E53AD9EA71117DF.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/AI/BT_BasicEnemy.uasset'
+[2024.05.10-14.00.14:774][999]LogFileHelpers: InternalPromptForCheckoutAndSave took 144 ms (total: 2.69 sec)
+[2024.05.10-14.00.14:776][999]AssetCheck: New page: Asset Save: BT_BasicEnemy
+[2024.05.10-14.00.14:776][999]LogContentValidation: Display: Validating /Script/AIModule.BehaviorTree /Game/AI/BT_BasicEnemy.BT_BasicEnemy
+[2024.05.10-14.00.21:541][400]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.05.10-14.00.21:684][400]LogSavePackage: Moving output files for package: /Game/AI/BT_BasicEnemy
+[2024.05.10-14.00.21:685][400]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/BT_BasicEnemyD9BD861742E69EDBD8B513B6F56E0153.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/AI/BT_BasicEnemy.uasset'
+[2024.05.10-14.00.21:698][400]LogFileHelpers: InternalPromptForCheckoutAndSave took 156 ms (total: 2.84 sec)
+[2024.05.10-14.00.21:699][400]AssetCheck: New page: Asset Save: BT_BasicEnemy
+[2024.05.10-14.00.21:699][400]LogContentValidation: Display: Validating /Script/AIModule.BehaviorTree /Game/AI/BT_BasicEnemy.BT_BasicEnemy
+[2024.05.10-14.00.32:105][933]LogSlate: Window 'Create New Blueprint' being destroyed
+[2024.05.10-14.00.39:530][352]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.05.10-14.00.39:673][352]LogSavePackage: Moving output files for package: /Game/AI/BB_BasicEnemy
+[2024.05.10-14.00.39:675][352]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/BB_BasicEnemy95B51F2848A93119ED9EABB261A23EE2.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/AI/BB_BasicEnemy.uasset'
+[2024.05.10-14.00.39:687][352]LogFileHelpers: InternalPromptForCheckoutAndSave took 157 ms (total: 3.00 sec)
+[2024.05.10-14.00.39:690][352]AssetCheck: New page: Asset Save: BB_BasicEnemy
+[2024.05.10-14.00.39:690][352]LogContentValidation: Display: Validating /Script/AIModule.BlackboardData /Game/AI/BB_BasicEnemy.BB_BasicEnemy
+[2024.05.10-14.00.45:661][678]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.05.10-14.00.45:809][678]LogSavePackage: Moving output files for package: /Game/AI/BT_BasicEnemy
+[2024.05.10-14.00.45:811][678]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/BT_BasicEnemy12F6C724461F03CABEE9E2B9D6237D81.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/AI/BT_BasicEnemy.uasset'
+[2024.05.10-14.00.45:820][678]LogFileHelpers: InternalPromptForCheckoutAndSave took 159 ms (total: 3.16 sec)
+[2024.05.10-14.00.45:824][678]AssetCheck: New page: Asset Save: BT_BasicEnemy
+[2024.05.10-14.00.45:824][678]LogContentValidation: Display: Validating /Script/AIModule.BehaviorTree /Game/AI/BT_BasicEnemy.BT_BasicEnemy
+[2024.05.10-14.01.09:267][229]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.05.10-14.01.09:415][229]LogSavePackage: Moving output files for package: /Game/AI/BT_BasicEnemy
+[2024.05.10-14.01.09:418][229]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/BT_BasicEnemyB1FC7753480AD07C9D6608B367502AC7.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/AI/BT_BasicEnemy.uasset'
+[2024.05.10-14.01.09:429][229]LogFileHelpers: InternalPromptForCheckoutAndSave took 161 ms (total: 3.32 sec)
+[2024.05.10-14.01.09:430][229]AssetCheck: New page: Asset Save: BT_BasicEnemy
+[2024.05.10-14.01.09:430][229]LogContentValidation: Display: Validating /Script/AIModule.BehaviorTree /Game/AI/BT_BasicEnemy.BT_BasicEnemy
+[2024.05.10-14.01.18:333][645]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.05.10-14.01.18:458][645]LogSavePackage: Moving output files for package: /Game/AI/BT_BasicEnemy
+[2024.05.10-14.01.18:460][645]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/BT_BasicEnemy3C5E6216403CCC2D0A49E683564C6C43.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/AI/BT_BasicEnemy.uasset'
+[2024.05.10-14.01.18:472][645]LogFileHelpers: InternalPromptForCheckoutAndSave took 138 ms (total: 3.46 sec)
+[2024.05.10-14.01.18:473][645]AssetCheck: New page: Asset Save: BT_BasicEnemy
+[2024.05.10-14.01.18:473][645]LogContentValidation: Display: Validating /Script/AIModule.BehaviorTree /Game/AI/BT_BasicEnemy.BT_BasicEnemy
+[2024.05.10-14.02.34:602][738]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.05.10-14.02.34:731][738]LogSavePackage: Moving output files for package: /Game/AI/BT_BasicEnemy
+[2024.05.10-14.02.34:732][738]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/BT_BasicEnemy861C1F6B42C620AF008BCAB624BF70A5.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/AI/BT_BasicEnemy.uasset'
+[2024.05.10-14.02.34:745][738]LogFileHelpers: InternalPromptForCheckoutAndSave took 142 ms (total: 3.60 sec)
+[2024.05.10-14.02.34:747][738]AssetCheck: New page: Asset Save: BT_BasicEnemy
+[2024.05.10-14.02.34:747][738]LogContentValidation: Display: Validating /Script/AIModule.BehaviorTree /Game/AI/BT_BasicEnemy.BT_BasicEnemy
+[2024.05.10-14.03.00:600][310]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.05.10-14.03.00:748][310]LogSavePackage: Moving output files for package: /Game/AI/BT_BasicEnemy
+[2024.05.10-14.03.00:750][310]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/BT_BasicEnemy8DD2F22F4568D5C0D09CE380A699AEA0.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/AI/BT_BasicEnemy.uasset'
+[2024.05.10-14.03.00:760][310]LogFileHelpers: InternalPromptForCheckoutAndSave took 160 ms (total: 3.76 sec)
+[2024.05.10-14.03.00:761][310]AssetCheck: New page: Asset Save: BT_BasicEnemy
+[2024.05.10-14.03.00:761][310]LogContentValidation: Display: Validating /Script/AIModule.BehaviorTree /Game/AI/BT_BasicEnemy.BT_BasicEnemy
+[2024.05.10-14.03.23:483][558]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.05.10-14.03.23:604][558]LogSavePackage: Moving output files for package: /Game/AI/BT_BasicEnemy
+[2024.05.10-14.03.23:605][558]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/BT_BasicEnemy050A85FE401AB277C7F5E2A813770342.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/AI/BT_BasicEnemy.uasset'
+[2024.05.10-14.03.23:615][558]LogFileHelpers: InternalPromptForCheckoutAndSave took 132 ms (total: 3.89 sec)
+[2024.05.10-14.03.23:616][558]AssetCheck: New page: Asset Save: BT_BasicEnemy
+[2024.05.10-14.03.23:616][558]LogContentValidation: Display: Validating /Script/AIModule.BehaviorTree /Game/AI/BT_BasicEnemy.BT_BasicEnemy
+[2024.05.10-14.03.59:494][552]LogLiveCoding: Display: Starting Live Coding compile.
+[2024.05.10-14.03.59:617][552]LogSlate: Window 'Add C++ Class' being destroyed
+[2024.05.10-14.05.37:328][865]Display: Reload/Re-instancing Complete: No object changes detected
+[2024.05.10-14.05.37:329][865]LogLiveCoding: Error: Live coding failed, please see Live console for more information
+[2024.05.10-14.05.49:981][902]LogLiveCoding: Display: Starting Live Coding compile.
+[2024.05.10-14.07.15:365][158]LogLiveCoding: Display:    Creating library C:\Users\Mikolaj\Documents\Unreal Projects\Cardslinger-Prototype\CardslingerPrototype\Binaries\Win64\UnrealEditor-CardslingerPrototype.patch_5.lib and object C:\Users\Mikolaj\Documents\Unreal Projects\Cardslinger-Prototype\CardslingerPrototype\Binaries\Win64\UnrealEditor-CardslingerPrototype.patch_5.exp
+[2024.05.10-14.07.16:569][162]LogClass: UPackage /Script/CardslingerPrototype Reload.
+[2024.05.10-14.07.16:582][162]LogClass: Could not find existing class BTTask_ClearBlackboardValue in package /Script/CardslingerPrototype for reload, assuming new or modified class
+[2024.05.10-14.07.16:999][162]LogUObjectHash: Compacting FUObjectHashTables data took   6.00ms
+[2024.05.10-14.07.17:779][163]Display: Reload/Re-instancing Complete: 1 package changed, 1 class new, 11 classes unchanged, 7 functions remapped
+[2024.05.10-14.07.17:779][163]LogLiveCoding: Warning: Live coding succeeded, data type changes may cause packaging to fail if assets reference the new or updated data types
+[2024.05.10-14.08.07:413][697]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.05.10-14.08.07:561][697]LogSavePackage: Moving output files for package: /Game/AI/BT_BasicEnemy
+[2024.05.10-14.08.07:562][697]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/BT_BasicEnemyBDEB5B624680FC470004DE965635AEBD.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/AI/BT_BasicEnemy.uasset'
+[2024.05.10-14.08.07:585][697]LogFileHelpers: InternalPromptForCheckoutAndSave took 171 ms (total: 4.06 sec)
+[2024.05.10-14.08.07:586][697]AssetCheck: New page: Asset Save: BT_BasicEnemy
+[2024.05.10-14.08.07:586][697]LogContentValidation: Display: Validating /Script/AIModule.BehaviorTree /Game/AI/BT_BasicEnemy.BT_BasicEnemy
