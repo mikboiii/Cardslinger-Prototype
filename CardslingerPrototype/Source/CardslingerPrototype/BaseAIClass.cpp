@@ -9,6 +9,11 @@
 #include "Kismet/GameplayStatics.h"
 #include "Components/CapsuleComponent.h"
 #include "CardslingerTestGameMode.h"
+#include "Components/SkeletalMeshComponent.h"
+#include "Engine/DamageEvents.h"
+#include "Engine/World.h"
+#include "Sound/SoundBase.h"
+
 // Sets default values
 ABaseAIClass::ABaseAIClass()
 {
@@ -65,5 +70,37 @@ bool ABaseAIClass::IsDead() const
 float ABaseAIClass::GetHealthPercent() const
 {
     return Health/MaxHealth;
+}
+
+bool ABaseAIClass::HitTrace(FHitResult& Hit, FVector& ShotDirection)
+{
+	FVector ViewLocation;
+	FRotator ViewRotation;
+	//AController* OwnerController = GetOwnerController();
+	//if(OwnerController == nullptr) return false;
+	GetController()->GetPlayerViewPoint(ViewLocation, ViewRotation);
+	ShotDirection = -ViewRotation.Vector();
+	FVector End = ViewLocation + ViewRotation.Vector() * MaxRange;
+	FCollisionQueryParams Params;
+	Params.AddIgnoredActor(this);
+	Params.AddIgnoredActor(GetOwner());
+	return GetWorld()->LineTraceSingleByChannel(Hit, ViewLocation, End, ECollisionChannel::ECC_GameTraceChannel1, Params);
+}
+
+void ABaseAIClass::Shoot()
+{
+	FHitResult Hit;
+	FVector ShotDirection;
+	AController* OwnerController = GetController();
+	if(OwnerController == nullptr) return;
+	if(HitTrace(Hit, ShotDirection))
+	{
+	//UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), ImpactFlash, Hit.Location, ShotDirection.Rotation());
+	//UGameplayStatics::PlaySoundAtLocation(GetWorld(), ImpactSound, Hit.Location);
+	FPointDamageEvent DamageEvent(Damage, Hit, ShotDirection, nullptr);
+	AActor* HitActor = Hit.GetActor();
+	if(HitActor == nullptr) return;
+	HitActor->TakeDamage(Damage, DamageEvent, OwnerController, this);
+	}
 }
 

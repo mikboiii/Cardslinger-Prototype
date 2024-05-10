@@ -53,4 +53,5 @@ private:
 	UPROPERTY(EditAnywhere, Category = "Combat")
 	float Damage = 10.0f;
 
+	bool HitTrace(FHitResult& Hit, FVector& ShotDirection);
 };
