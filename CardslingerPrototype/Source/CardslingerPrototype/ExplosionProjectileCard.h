@@ -16,4 +16,7 @@ class CARDSLINGERPROTOTYPE_API AExplosionProjectileCard : public AProjectileCard
 
 protected:
 	virtual void OnHit(UPrimitiveComponent* HitComponent, AActor* OtherActor, UPrimitiveComponent* OtherComponent, FVector NormalImpulse, const FHitResult& Hit) override;
+
+	UPROPERTY(EditAnywhere)
+	float CardExplosiveDamage = 100.0f;
 };
