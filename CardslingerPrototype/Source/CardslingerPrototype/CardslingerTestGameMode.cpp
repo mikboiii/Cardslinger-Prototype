@@ -25,6 +25,7 @@ void ACardslingerTestGameMode::PawnKilled(APawn* PawnKilled)
     EndGame(true);
 }
 
+
 void ACardslingerTestGameMode::EndGame(bool bIsPlayerWinner)
 {
     //bool bIsPlayerController = Controller->IsPlayerController();

@@ -29,6 +29,7 @@ ABaseCharacterClass::ABaseCharacterClass()
 {
  	// Set this character to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
+	//Generate blueprint components
 	SpringArm2 = CreateDefaultSubobject<USpringArmComponent>(TEXT("SpringArmComponent"));
 	SpringArm2->SetupAttachment(GetCapsuleComponent());
 	CameraComponent = CreateDefaultSubobject<UCameraComponent>(TEXT("Camera"));
@@ -45,20 +46,22 @@ void ABaseCharacterClass::BeginPlay()
 	Super::BeginPlay();
 	if(CardTemplate!=nullptr)
 	{
-	CardHand.Init(GetWorld()->SpawnActor<ABaseCard>(CardTemplate), 4);
+		//init player hand
+		CardHand.Init(nullptr, 4);
 	}
-	CardHand[0] = GetWorld()->SpawnActor<ABaseCard>(CardToTest);
+
 	CurrentClip = MaxClip;
+
 	if(CardDeckClass != nullptr && CardDeckLocation != nullptr)
 	{
-	CardDeck = GetWorld()->SpawnActor<ACardDeck>(CardDeckClass);
-	CardDeck->AttachToComponent(CardDeckLocation, FAttachmentTransformRules::KeepRelativeTransform);
+		//spawn card deck in world
+		CardDeck = GetWorld()->SpawnActor<ACardDeck>(CardDeckClass);
+		CardDeck->AttachToComponent(CardDeckLocation, FAttachmentTransformRules::KeepRelativeTransform);
 	}
+	//draw initial hands
+	ReplenishHandFunction();
+	//init health
 	Health = MaxHealth;
-	// for(int i = 0; i < 4; i++)
-	// {
-
-	// }
 	
 }
 
@@ -83,21 +86,19 @@ void ABaseCharacterClass::SetupPlayerInputComponent(UInputComponent* PlayerInput
 
 	if (UEnhancedInputComponent* EnhancedInputComponent = Cast<UEnhancedInputComponent>(PlayerInputComponent))
     {
-        // Moving
         EnhancedInputComponent->BindAction(MoveAction, ETriggerEvent::Triggered, this, &ABaseCharacterClass::Move);
         EnhancedInputComponent->BindAction(LookAction, ETriggerEvent::Triggered, this, &ABaseCharacterClass::Look);
         EnhancedInputComponent->BindAction(JumpAction, ETriggerEvent::Triggered, this, &ACharacter::Jump);
         EnhancedInputComponent->BindAction(ShootAction, ETriggerEvent::Triggered, this, &ABaseCharacterClass::Shoot);
 		EnhancedInputComponent->BindAction(CardAction, ETriggerEvent::Triggered, this, &ABaseCharacterClass::UseCard);
 		EnhancedInputComponent->BindAction(ReloadAction, ETriggerEvent::Triggered, this, &ABaseCharacterClass::Reload);
-        //EnhancedInputComponent->BindAction(RotateAction, ETriggerEvent::Triggered, this, &ATank::Rotate);
     }
 }
 
 void ABaseCharacterClass::Move(const FInputActionValue& Value)
 {
 	// Get the axis value from the input action value
-    float Forward = Value.Get<FVector2D>().Y; // Replace "AxisName" with the name of your input axis
+    float Forward = Value.Get<FVector2D>().Y;
 	float Right = Value.Get<FVector2D>().X;
 
     FVector DeltaLocation = FVector::ZeroVector;
@@ -113,6 +114,12 @@ void ABaseCharacterClass::Look(const FInputActionValue& Value)
     AddControllerYawInput(Value.Get<FVector2D>().X);
 }
 
+/// @brief Function used to apply damage to the player and notify game mode in case of death
+/// @param DamageAmount Incoming damage amount
+/// @param DamageEvent Incoming damage event
+/// @param EventInstigator Incoming damage controller
+/// @param DamageCauser Actor causing the damage
+/// @return Returns a damage applied float
 float ABaseCharacterClass::TakeDamage(float DamageAmount, struct FDamageEvent const &DamageEvent, class AController *EventInstigator, AActor* DamageCauser)
 {
     float DamageToApply = Super::TakeDamage(DamageAmount, DamageEvent, EventInstigator, EventInstigator);
@@ -120,51 +127,55 @@ float ABaseCharacterClass::TakeDamage(float DamageAmount, struct FDamageEvent co
 
     if(IsDead())
     {
+		//prevent negative health values
         Health = 0.0f;
         ACardslingerTestGameMode* GameMode = GetWorld()->GetAuthGameMode<ACardslingerTestGameMode>();
         if(GameMode != nullptr)
         {
+			//notify game mode that player is dead
             GameMode->PawnKilled(this);
         }
+		//remove controller from player
         DetachFromControllerPendingDestroy();
+		//disable collision
         GetCapsuleComponent()->SetCollisionEnabled(ECollisionEnabled::NoCollision);
     }
     return DamageToApply;
 }
 
+///@brief Uses the selected card's special effect and moves it to the discard pile
+///@param Value This is the index of the selected card
 void ABaseCharacterClass::UseCard(const FInputActionValue& Value)
 {
+	//enhanced input only allows floats, so value is floored and decremented to compensate for zero index
 	int Index = FMath::Floor(Value.Get<float>())-1;
 	if(!CardHand.IsValidIndex(Index)) return;
 	if(CardHand[Index] == nullptr) return;
+	//hit trace maintained in case specific card effects require hitscan
 	FVector ShotDirection;
 	FHitResult Hit;
 	HitTrace(Hit, ShotDirection);
+	//Has shot direction reversed: shot direction originally made for hit events
 	CardHand[Index]->CardEffect(CardDeck, -ShotDirection);
+	//Sets the array index to nullptr to prevent array resizing
 	CardHand[Index] = nullptr;
+	//Creates a timer delegate to enable the use of parameters in timer function
+	//index reserves spot in player hand
 	FTimerDelegate CardCooldownDelegate = FTimerDelegate::CreateUObject(this, &ABaseCharacterClass::DrawCardTimerFunction, Index);
+	//creates a new timer manager for each card to prevent timer overriding
 	FTimerHandle DrawCardTimeManager;
 	GetWorldTimerManager().SetTimer(DrawCardTimeManager, CardCooldownDelegate ,CardCooldownDelay, false);
+
+	//if deck is empty, call function to replenish from discard pile and queue hand replenishing
 	if(CardDeck->IsDeckEmpty() && IsHandEmpty())
 	{
-		UE_LOG(LogTemp, Display, TEXT("Shuffle Called"));
 		CardDeck->ShuffleDiscard();
 		GetWorldTimerManager().SetTimer(DrawCardTimeManager, this, &ABaseCharacterClass::ReplenishHandFunction, CardCooldownDelay);
 	}
-	/*
-	if(!CardDeck->IsDeckEmpty())
-	{
-		CardHand[Index] = CardDeck->DrawCard();
-	}
-	else
-	{
-		CardHand[Index] = nullptr;
-	}
-	*/
 }
 
 
-
+/// @brief Fires a single basic shot
 void ABaseCharacterClass::Shoot()
 {
 	if(CurrentClip > 0)
@@ -176,18 +187,21 @@ void ABaseCharacterClass::Shoot()
 		CurrentClip--;
 		if(HitTrace(Hit, ShotDirection))
 		{
-			UE_LOG(LogTemp, Display, TEXT("Trace Called"));
 			FPointDamageEvent DamageEvent(Damage, Hit, ShotDirection, nullptr);
 			//DrawDebugSphere(GetWorld(), Hit.ImpactPoint, 100.0f, 16, FColor::Red, true, 10000.0f);
 			AActor* HitActor = Hit.GetActor();
 			if(HitActor == nullptr) return;
 			//HitActor->TakeDamage(Damage, DamageEvent, GetController(), this);
 		}
+		//launch basic projectile
 		CardDeck->FireCard(-ShotDirection, BasicCardProjectile);
 		CardDeck->RemoveCardFromDeck(CurrentClip);
 	}
 }
 
+///@brief Creates line trace between shot origin and end point
+///@param Hit Out FHitResult parameter
+///@param ShotDirection The direction for the line trace
 bool ABaseCharacterClass::HitTrace(FHitResult& Hit, FVector& ShotDirection)
 {
 	FVector ViewLocation;
@@ -203,6 +217,8 @@ bool ABaseCharacterClass::HitTrace(FHitResult& Hit, FVector& ShotDirection)
 	return GetWorld()->LineTraceSingleByChannel(Hit, ViewLocation, End, ECollisionChannel::ECC_GameTraceChannel1, Params);
 }
 
+/// @brief Gets player controller
+/// @return returns player controller
 AController* ABaseCharacterClass::GetOwnerController() const
 {
 	APawn* OwnerPawn = Cast<APawn>(GetOwner());
@@ -210,27 +226,32 @@ AController* ABaseCharacterClass::GetOwnerController() const
 	return OwnerPawn->GetController();
 }
 
+/// @brief Starts the reload function for the primary weapon
 void ABaseCharacterClass::Reload()
 {
 	if(CanReload && CurrentClip != MaxClip)
 	{
 	CanReload = false;
+	//Starts timer for when weapon restores ammo and re-enables reloading
 	GetWorldTimerManager().SetTimer(ReloadTimeManager, this, &ABaseCharacterClass::ReloadTimerFunction, ReloadDelay);
 	CardDeck->ShuffleDeck();
 	}
 }
 
+/// @brief Restores ammo and enables reloading. For use only with timer functions
 void ABaseCharacterClass::ReloadTimerFunction()
 {
 	CanReload = true;
 	CurrentClip = MaxClip;
 }
 
+///@brief Returns the CardDeck object that the player is using
 ACardDeck* ABaseCharacterClass::GetDeck() const
 {
 	return CardDeck;
 }
 
+///@brief Checks if the player's hand is empty
 bool ABaseCharacterClass::IsHandEmpty() const
 {
 	for(int i = 0; i < CardHand.Num(); i++)
@@ -240,6 +261,8 @@ bool ABaseCharacterClass::IsHandEmpty() const
 	return true;
 }
 
+/// @brief Draws a card from the deck at the given index in the player's hand. For use only with timer functions
+/// @param CardIndex This is the index in the hand where the card will be drawn
 void ABaseCharacterClass::DrawCardTimerFunction(int CardIndex)
 {
 	if(CardDeck->IsDeckEmpty())
@@ -252,6 +275,7 @@ void ABaseCharacterClass::DrawCardTimerFunction(int CardIndex)
 	}
 }
 
+///@brief Draws a card for each index in the hand
 void ABaseCharacterClass::ReplenishHandFunction()
 {
 	for(int i = 0; i < CardHand.Num(); i++)
@@ -260,6 +284,7 @@ void ABaseCharacterClass::ReplenishHandFunction()
 	}
 }
 
+///@brief Returns alive state of the player
 bool ABaseCharacterClass::IsDead() const
 {
 	return Health <= 0.0f;
