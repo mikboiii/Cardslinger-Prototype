@@ -21,6 +21,8 @@
 #include "BaseCard.h"
 #include "CardDeck.h"
 #include "ProjectileCard.h"
+#include "CardslingerTestGameMode.h"
+
 
 // Sets default values
 ABaseCharacterClass::ABaseCharacterClass()
@@ -52,6 +54,7 @@ void ABaseCharacterClass::BeginPlay()
 	CardDeck = GetWorld()->SpawnActor<ACardDeck>(CardDeckClass);
 	CardDeck->AttachToComponent(CardDeckLocation, FAttachmentTransformRules::KeepRelativeTransform);
 	}
+	Health = MaxHealth;
 	// for(int i = 0; i < 4; i++)
 	// {
 
@@ -108,6 +111,25 @@ void ABaseCharacterClass::Look(const FInputActionValue& Value)
 {
     AddControllerPitchInput(Value.Get<FVector2D>().Y);
     AddControllerYawInput(Value.Get<FVector2D>().X);
+}
+
+float ABaseCharacterClass::TakeDamage(float DamageAmount, struct FDamageEvent const &DamageEvent, class AController *EventInstigator, AActor* DamageCauser)
+{
+    float DamageToApply = Super::TakeDamage(DamageAmount, DamageEvent, EventInstigator, EventInstigator);
+    Health -= DamageToApply;
+
+    if(IsDead())
+    {
+        Health = 0.0f;
+        ACardslingerTestGameMode* GameMode = GetWorld()->GetAuthGameMode<ACardslingerTestGameMode>();
+        if(GameMode != nullptr)
+        {
+            GameMode->PawnKilled(this);
+        }
+        DetachFromControllerPendingDestroy();
+        GetCapsuleComponent()->SetCollisionEnabled(ECollisionEnabled::NoCollision);
+    }
+    return DamageToApply;
 }
 
 void ABaseCharacterClass::UseCard(const FInputActionValue& Value)
@@ -238,4 +260,9 @@ void ABaseCharacterClass::ReplenishHandFunction()
 	{
 		CardHand[i] = CardDeck->DrawCard();
 	}
+}
+
+bool ABaseCharacterClass::IsDead() const
+{
+	return Health <= 0.0f;
 }

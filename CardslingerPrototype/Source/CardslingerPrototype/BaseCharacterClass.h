@@ -51,10 +51,14 @@ public:
 
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
+
+	float TakeDamage(float DamageAmount, struct FDamageEvent const &DamageEvent, class AController *EventInstigator, AActor* DamageCauser) override;
 	UFUNCTION(BlueprintPure)
 	ACardDeck* GetDeck() const;
 	UFUNCTION(BlueprintPure)
 	bool IsHandEmpty() const;
+	UFUNCTION(BlueprintPure)
+	bool IsDead() const;
 
 private:
 

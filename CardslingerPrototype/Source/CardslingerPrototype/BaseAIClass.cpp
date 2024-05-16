@@ -102,6 +102,7 @@ void ABaseAIClass::Shoot()
 	FPointDamageEvent DamageEvent(Damage, Hit, ShotDirection, nullptr);
 	AActor* HitActor = Hit.GetActor();
 	if(HitActor == nullptr) return;
+	UE_LOG(LogTemp, Display, TEXT("TakeDamage called on %s. Apparently."), *HitActor->GetActorNameOrLabel());
 	HitActor->TakeDamage(Damage, DamageEvent, OwnerController, this);
 	}
 }
