@@ -15,4 +15,6 @@ class CARDSLINGERPROTOTYPE_API ACardslingerTestGameMode : public AGameModeBase
 	GENERATED_BODY()
 	public:
 		virtual void PawnKilled(class APawn* PawnKilled);
+
+		virtual void EndGame(bool bIsPlayerWinner);
 };

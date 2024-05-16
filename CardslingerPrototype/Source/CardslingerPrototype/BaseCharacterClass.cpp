@@ -205,10 +205,8 @@ bool ABaseCharacterClass::HitTrace(FHitResult& Hit, FVector& ShotDirection)
 
 AController* ABaseCharacterClass::GetOwnerController() const
 {
-	UE_LOG(LogTemp, Display, TEXT("Controller Called"));
 	APawn* OwnerPawn = Cast<APawn>(GetOwner());
 	if(OwnerPawn == nullptr) return nullptr;
-	UE_LOG(LogTemp, Display, TEXT("Controller returned"));
 	return OwnerPawn->GetController();
 }
 
