@@ -26,6 +26,7 @@ ABaseAIClass::ABaseAIClass()
 void ABaseAIClass::BeginPlay()
 {
 	Super::BeginPlay();
+	Health = MaxHealth;
 	
 }
 
