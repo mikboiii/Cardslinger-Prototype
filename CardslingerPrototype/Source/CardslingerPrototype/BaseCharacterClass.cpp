@@ -159,7 +159,7 @@ void ABaseCharacterClass::Shoot()
 			//DrawDebugSphere(GetWorld(), Hit.ImpactPoint, 100.0f, 16, FColor::Red, true, 10000.0f);
 			AActor* HitActor = Hit.GetActor();
 			if(HitActor == nullptr) return;
-			HitActor->TakeDamage(Damage, DamageEvent, GetController(), this);
+			//HitActor->TakeDamage(Damage, DamageEvent, GetController(), this);
 		}
 		CardDeck->FireCard(-ShotDirection, BasicCardProjectile);
 		CardDeck->RemoveCardFromDeck(CurrentClip);

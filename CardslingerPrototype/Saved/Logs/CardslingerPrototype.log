@@ -4843,3 +4843,194 @@ LogConfig: Set CVar [[r.Shadow.DetectVertexShaderLayerAtRuntime:1]]
 [2024.05.16-11.35.44:012][252]LogFileHelpers: InternalPromptForCheckoutAndSave took 260 ms (total: 2.67 sec)
 [2024.05.16-11.35.44:014][252]AssetCheck: New page: Asset Save: EmptyLevel
 [2024.05.16-11.35.44:014][252]LogContentValidation: Display: Validating /Script/Engine.World /Game/EmptyLevel.EmptyLevel
+[2024.05.16-11.38.08:736][951]LogDebuggerCommands: Repeating last play command: Selected Viewport
+[2024.05.16-11.38.08:761][951]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2024.05.16-11.38.08:761][951]PIE: New page: PIE session: EmptyLevel (16 May 2024, 13:38:08)
+[2024.05.16-11.38.08:761][951]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_EmptyLevel
+[2024.05.16-11.38.08:765][951]LogPlayLevel: PIE: StaticDuplicateObject took: (0.004031s)
+[2024.05.16-11.38.08:765][951]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/EmptyLevel.EmptyLevel to /Game/UEDPIE_0_EmptyLevel.EmptyLevel (0.004096s)
+[2024.05.16-11.38.08:783][951]LogUObjectHash: Compacting FUObjectHashTables data took   1.91ms
+[2024.05.16-11.38.08:784][951]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.05.16-11.38.08:785][951]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2024.05.16-11.38.08:785][951]LogAIModule: Creating AISystem for world EmptyLevel
+[2024.05.16-11.38.08:786][951]LogPlayLevel: PIE: World Init took: (0.001603s)
+[2024.05.16-11.38.08:786][951]LogAudio: Display: Creating Audio Device:                 Id: 19, Scope: Unique, Realtime: True
+[2024.05.16-11.38.08:786][951]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2024.05.16-11.38.08:786][951]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2024.05.16-11.38.08:786][951]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2024.05.16-11.38.08:786][951]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2024.05.16-11.38.08:786][951]LogAudioMixer: Display: 	Number of buffers to queue:			  1
+[2024.05.16-11.38.08:786][951]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2024.05.16-11.38.08:786][951]LogAudioMixer: Display: 	Number of Async Source Workers:		  4
+[2024.05.16-11.38.08:786][951]LogAudio: Display: AudioDevice MaxSources: 32
+[2024.05.16-11.38.08:786][951]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2024.05.16-11.38.08:786][951]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2024.05.16-11.38.08:786][951]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2024.05.16-11.38.08:790][951]LogAudioMixer: Display: Initializing audio mixer using platform API: 'XAudio2'
+[2024.05.16-11.38.08:851][951]LogAudioMixer: Display: Using Audio Hardware Device Speakers (Realtek(R) Audio)
+[2024.05.16-11.38.08:851][951]LogAudioMixer: Display: Initializing Sound Submixes...
+[2024.05.16-11.38.08:851][951]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2024.05.16-11.38.08:851][951]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2024.05.16-11.38.08:852][951]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called. InstanceID=19
+[2024.05.16-11.38.08:852][951]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048, InstanceID=19
+[2024.05.16-11.38.08:853][951]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=19
+[2024.05.16-11.38.08:854][951]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time. InstanceID=19
+[2024.05.16-11.38.08:854][951]LogInit: FAudioDevice initialized with ID 19.
+[2024.05.16-11.38.08:854][951]LogAudio: Display: Audio Device (ID: 19) registered with world 'EmptyLevel'.
+[2024.05.16-11.38.08:854][951]LogAudioMixer: Initializing Audio Bus Subsystem for audio device with ID 19
+[2024.05.16-11.38.08:856][951]LogLoad: Game class is 'TestGameMode_C'
+[2024.05.16-11.38.08:859][951]LogWorld: Bringing World /Game/UEDPIE_0_EmptyLevel.EmptyLevel up for play (max tick rate 60) at 2024.05.16-12.38.08
+[2024.05.16-11.38.08:859][951]LogWorld: Bringing up level for play took: 0.001887
+[2024.05.16-11.38.08:862][951]LogOnline: OSS: Created online subsystem instance for: :Context_32
+[2024.05.16-11.38.08:868][951]PIE: Server logged in
+[2024.05.16-11.38.08:869][951]PIE: Play in editor total start time 0.113 seconds.
+[2024.05.16-11.38.15:814][135]LogViewport: Scene viewport resized to 671x382, mode Windowed.
+[2024.05.16-11.38.17:240][137]LogShaderCompilers: Display: ================================================
+[2024.05.16-11.38.17:241][137]LogShaderCompilers: Display: === FShaderJobCache stats ===
+[2024.05.16-11.38.17:241][137]LogShaderCompilers: Display: Total job queries 65, among them cache hits 1 (1.54%)
+[2024.05.16-11.38.17:241][137]LogShaderCompilers: Display: Tracking 64 distinct input hashes that result in 50 distinct outputs (78.12%)
+[2024.05.16-11.38.17:241][137]LogShaderCompilers: Display: RAM used: 1.50 MiB of 819.20 MiB budget. Usage: 0.18%
+[2024.05.16-11.38.17:241][137]LogShaderCompilers: Display: === Shader Compilation stats ===
+[2024.05.16-11.38.17:241][137]LogShaderCompilers: Display: Shaders Compiled: 0
+[2024.05.16-11.38.17:241][137]LogShaderCompilers: Display: Jobs assigned 0, completed 0 (0%)
+[2024.05.16-11.38.17:241][137]LogShaderCompilers: Display: Time at least one job was in flight (either pending or executed): 0.00 s
+[2024.05.16-11.38.17:241][137]LogShaderCompilers: Display: ================================================
+[2024.05.16-11.38.28:511][489]LogActor: Warning: BP_ProjectileCard_C /Game/UEDPIE_0_EmptyLevel.EmptyLevel:PersistentLevel.BP_ProjectileCard_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2024.05.16-11.38.30:735][612]LogActor: Warning: BP_ProjectileCard_C /Game/UEDPIE_0_EmptyLevel.EmptyLevel:PersistentLevel.BP_ProjectileCard_C_1 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2024.05.16-11.38.31:071][631]LogActor: Warning: BP_ProjectileCard_C /Game/UEDPIE_0_EmptyLevel.EmptyLevel:PersistentLevel.BP_ProjectileCard_C_2 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2024.05.16-11.38.31:265][642]LogActor: Warning: BP_ProjectileCard_C /Game/UEDPIE_0_EmptyLevel.EmptyLevel:PersistentLevel.BP_ProjectileCard_C_3 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2024.05.16-11.38.31:426][651]LogActor: Warning: BP_ProjectileCard_C /Game/UEDPIE_0_EmptyLevel.EmptyLevel:PersistentLevel.BP_ProjectileCard_C_4 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2024.05.16-11.38.31:770][671]LogActor: Warning: BP_ProjectileCard_C /Game/UEDPIE_0_EmptyLevel.EmptyLevel:PersistentLevel.BP_ProjectileCard_C_5 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2024.05.16-11.38.32:168][694]LogActor: Warning: BP_ProjectileCard_C /Game/UEDPIE_0_EmptyLevel.EmptyLevel:PersistentLevel.BP_ProjectileCard_C_6 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2024.05.16-11.38.32:323][703]LogActor: Warning: BP_ProjectileCard_C /Game/UEDPIE_0_EmptyLevel.EmptyLevel:PersistentLevel.BP_ProjectileCard_C_7 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2024.05.16-11.38.32:715][726]LogActor: Warning: BP_ProjectileCard_C /Game/UEDPIE_0_EmptyLevel.EmptyLevel:PersistentLevel.BP_ProjectileCard_C_8 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2024.05.16-11.38.32:972][741]LogActor: Warning: BP_ProjectileCard_C /Game/UEDPIE_0_EmptyLevel.EmptyLevel:PersistentLevel.BP_ProjectileCard_C_9 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2024.05.16-11.38.33:161][752]LogActor: Warning: BP_ProjectileCard_C /Game/UEDPIE_0_EmptyLevel.EmptyLevel:PersistentLevel.BP_ProjectileCard_C_10 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2024.05.16-11.38.33:352][763]LogActor: Warning: BP_ProjectileCard_C /Game/UEDPIE_0_EmptyLevel.EmptyLevel:PersistentLevel.BP_ProjectileCard_C_11 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2024.05.16-11.38.33:555][774]LogActor: Warning: BP_ProjectileCard_C /Game/UEDPIE_0_EmptyLevel.EmptyLevel:PersistentLevel.BP_ProjectileCard_C_12 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2024.05.16-11.38.33:737][784]LogActor: Warning: BP_ProjectileCard_C /Game/UEDPIE_0_EmptyLevel.EmptyLevel:PersistentLevel.BP_ProjectileCard_C_13 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2024.05.16-11.38.33:912][794]LogActor: Warning: BP_ProjectileCard_C /Game/UEDPIE_0_EmptyLevel.EmptyLevel:PersistentLevel.BP_ProjectileCard_C_14 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2024.05.16-11.38.34:093][804]LogActor: Warning: BP_ProjectileCard_C /Game/UEDPIE_0_EmptyLevel.EmptyLevel:PersistentLevel.BP_ProjectileCard_C_15 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2024.05.16-11.38.34:282][815]LogActor: Warning: BP_ProjectileCard_C /Game/UEDPIE_0_EmptyLevel.EmptyLevel:PersistentLevel.BP_ProjectileCard_C_16 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2024.05.16-11.38.34:440][824]LogActor: Warning: BP_ProjectileCard_C /Game/UEDPIE_0_EmptyLevel.EmptyLevel:PersistentLevel.BP_ProjectileCard_C_17 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2024.05.16-11.38.34:613][834]LogActor: Warning: BP_ProjectileCard_C /Game/UEDPIE_0_EmptyLevel.EmptyLevel:PersistentLevel.BP_ProjectileCard_C_18 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2024.05.16-11.38.36:398][937]LogTemp: Display: Trace Called
+[2024.05.16-11.38.36:399][937]LogActor: Warning: BP_ProjectileCard_C /Game/UEDPIE_0_EmptyLevel.EmptyLevel:PersistentLevel.BP_ProjectileCard_C_19 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2024.05.16-11.38.36:890][966]LogTemp: Display: Trace Called
+[2024.05.16-11.38.36:890][966]LogActor: Warning: BP_ProjectileCard_C /Game/UEDPIE_0_EmptyLevel.EmptyLevel:PersistentLevel.BP_ProjectileCard_C_20 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2024.05.16-11.38.37:027][974]LogTemp: Display: Trace Called
+[2024.05.16-11.38.37:027][974]LogActor: Warning: BP_ProjectileCard_C /Game/UEDPIE_0_EmptyLevel.EmptyLevel:PersistentLevel.BP_ProjectileCard_C_21 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2024.05.16-11.38.37:165][982]LogTemp: Display: Trace Called
+[2024.05.16-11.38.37:165][982]LogActor: Warning: BP_ProjectileCard_C /Game/UEDPIE_0_EmptyLevel.EmptyLevel:PersistentLevel.BP_ProjectileCard_C_22 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2024.05.16-11.38.37:285][989]LogTemp: Display: Trace Called
+[2024.05.16-11.38.37:286][989]LogActor: Warning: BP_ProjectileCard_C /Game/UEDPIE_0_EmptyLevel.EmptyLevel:PersistentLevel.BP_ProjectileCard_C_23 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2024.05.16-11.38.37:425][997]LogTemp: Display: Trace Called
+[2024.05.16-11.38.37:425][997]LogActor: Warning: BP_ProjectileCard_C /Game/UEDPIE_0_EmptyLevel.EmptyLevel:PersistentLevel.BP_ProjectileCard_C_24 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2024.05.16-11.38.37:682][ 12]LogTemp: Display: Trace Called
+[2024.05.16-11.38.37:682][ 12]LogActor: Warning: BP_ProjectileCard_C /Game/UEDPIE_0_EmptyLevel.EmptyLevel:PersistentLevel.BP_ProjectileCard_C_25 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2024.05.16-11.38.37:822][ 20]LogTemp: Display: Trace Called
+[2024.05.16-11.38.37:822][ 20]LogActor: Warning: BP_ProjectileCard_C /Game/UEDPIE_0_EmptyLevel.EmptyLevel:PersistentLevel.BP_ProjectileCard_C_26 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2024.05.16-11.38.37:925][ 26]LogTemp: Display: Trace Called
+[2024.05.16-11.38.37:926][ 26]LogActor: Warning: BP_ProjectileCard_C /Game/UEDPIE_0_EmptyLevel.EmptyLevel:PersistentLevel.BP_ProjectileCard_C_27 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2024.05.16-11.38.38:134][ 38]LogTemp: Display: Trace Called
+[2024.05.16-11.38.38:134][ 38]LogActor: Warning: BP_ProjectileCard_C /Game/UEDPIE_0_EmptyLevel.EmptyLevel:PersistentLevel.BP_ProjectileCard_C_28 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2024.05.16-11.38.39:028][ 88]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2024.05.16-11.38.39:028][ 88]LogWorld: BeginTearingDown for /Game/UEDPIE_0_EmptyLevel
+[2024.05.16-11.38.39:028][ 88]LogWorld: UWorld::CleanupWorld for EmptyLevel, bSessionEnded=true, bCleanupResources=true
+[2024.05.16-11.38.39:029][ 88]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.05.16-11.38.39:034][ 88]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2024.05.16-11.38.39:040][ 88]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.05.16-11.38.39:055][ 88]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2024.05.16-11.38.39:057][ 88]LogAudioMixer: Deinitializing Audio Bus Subsystem for audio device with ID 19
+[2024.05.16-11.38.39:057][ 88]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=19
+[2024.05.16-11.38.39:060][ 88]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=19
+[2024.05.16-11.38.39:069][ 88]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2024.05.16-11.38.39:072][ 88]LogUObjectHash: Compacting FUObjectHashTables data took   1.43ms
+[2024.05.16-11.38.39:222][ 89]LogPlayLevel: Display: Destroying online subsystem :Context_32
+[2024.05.16-11.47.22:126][704]LogLiveCoding: Display: Starting Live Coding compile.
+[2024.05.16-11.48.39:422][936]LogLiveCoding: Display:    Creating library C:\Users\Mikolaj\Documents\Unreal Projects\Cardslinger-Prototype\CardslingerPrototype\Binaries\Win64\UnrealEditor-CardslingerPrototype.patch_6.lib and object C:\Users\Mikolaj\Documents\Unreal Projects\Cardslinger-Prototype\CardslingerPrototype\Binaries\Win64\UnrealEditor-CardslingerPrototype.patch_6.exp
+[2024.05.16-11.48.41:029][940]LogClass: UPackage /Script/CardslingerPrototype Reload.
+[2024.05.16-11.48.41:032][940]LogClass: UClass ExplosionProjectileCard Reload.
+[2024.05.16-11.48.41:058][940]LogClass: UClass ProjectileCard Reload.
+[2024.05.16-11.48.41:061][940]LogClass: Could not find existing class ExplosionProjectileCard in package /Script/CardslingerPrototype for reload, assuming new or modified class
+[2024.05.16-11.48.41:061][940]LogClass: Could not find existing class ProjectileCard in package /Script/CardslingerPrototype for reload, assuming new or modified class
+[2024.05.16-11.48.41:062][940]LogClass: Function OnHit is new or belongs to a modified class.
+[2024.05.16-11.48.41:194][940]Re-instancing ProjectileCard after reload.
+[2024.05.16-11.48.41:382][940]LogActor: Warning: BP_ProjectileCard_C /Engine/Transient.World_2:PersistentLevel.BP_ProjectileCard_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2024.05.16-11.48.41:684][940]Re-instancing ExplosionProjectileCard after reload.
+[2024.05.16-11.48.41:696][940]LogActor: Warning: BP_ExplosionProjectileCard_C /Engine/Transient.World_3:PersistentLevel.BP_ExplosionProjectileCard_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2024.05.16-11.48.42:207][940]LogUObjectHash: Compacting FUObjectHashTables data took   3.35ms
+[2024.05.16-11.48.43:504][941]Display: Reload/Re-instancing Complete: 1 package changed, 2 classes changed
+[2024.05.16-11.48.43:504][941]LogLiveCoding: Warning: Live coding succeeded, data type changes may cause packaging to fail if assets reference the new or updated data types
+[2024.05.16-11.49.19:248][311]LogDebuggerCommands: Repeating last play command: Selected Viewport
+[2024.05.16-11.49.19:360][311]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2024.05.16-11.49.19:368][311]PIE: New page: PIE session: EmptyLevel (16 May 2024, 13:49:19)
+[2024.05.16-11.49.19:374][311]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_EmptyLevel
+[2024.05.16-11.49.19:453][311]LogPlayLevel: PIE: StaticDuplicateObject took: (0.078167s)
+[2024.05.16-11.49.19:453][311]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/EmptyLevel.EmptyLevel to /Game/UEDPIE_0_EmptyLevel.EmptyLevel (0.078991s)
+[2024.05.16-11.49.19:793][311]LogUObjectHash: Compacting FUObjectHashTables data took   4.34ms
+[2024.05.16-11.49.19:816][311]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.05.16-11.49.19:828][311]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2024.05.16-11.49.19:854][311]LogAIModule: Creating AISystem for world EmptyLevel
+[2024.05.16-11.49.19:869][311]LogPlayLevel: PIE: World Init took: (0.061740s)
+[2024.05.16-11.49.19:873][311]LogAudio: Display: Creating Audio Device:                 Id: 20, Scope: Unique, Realtime: True
+[2024.05.16-11.49.19:875][311]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2024.05.16-11.49.19:875][311]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2024.05.16-11.49.19:875][311]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2024.05.16-11.49.19:875][311]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2024.05.16-11.49.19:875][311]LogAudioMixer: Display: 	Number of buffers to queue:			  1
+[2024.05.16-11.49.19:875][311]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2024.05.16-11.49.19:875][311]LogAudioMixer: Display: 	Number of Async Source Workers:		  4
+[2024.05.16-11.49.19:875][311]LogAudio: Display: AudioDevice MaxSources: 32
+[2024.05.16-11.49.19:879][311]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2024.05.16-11.49.19:879][311]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2024.05.16-11.49.19:879][311]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2024.05.16-11.49.19:885][311]LogAudioMixer: Display: Initializing audio mixer using platform API: 'XAudio2'
+[2024.05.16-11.49.19:993][311]LogAudioMixer: Display: Using Audio Hardware Device Speakers (Realtek(R) Audio)
+[2024.05.16-11.49.20:001][311]LogAudioMixer: Display: Initializing Sound Submixes...
+[2024.05.16-11.49.20:002][311]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2024.05.16-11.49.20:003][311]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2024.05.16-11.49.20:008][311]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called. InstanceID=20
+[2024.05.16-11.49.20:008][311]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048, InstanceID=20
+[2024.05.16-11.49.20:014][311]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=20
+[2024.05.16-11.49.20:014][311]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time. InstanceID=20
+[2024.05.16-11.49.20:014][311]LogInit: FAudioDevice initialized with ID 20.
+[2024.05.16-11.49.20:014][311]LogAudio: Display: Audio Device (ID: 20) registered with world 'EmptyLevel'.
+[2024.05.16-11.49.20:014][311]LogAudioMixer: Initializing Audio Bus Subsystem for audio device with ID 20
+[2024.05.16-11.49.20:046][311]LogLoad: Game class is 'TestGameMode_C'
+[2024.05.16-11.49.20:101][311]LogWorld: Bringing World /Game/UEDPIE_0_EmptyLevel.EmptyLevel up for play (max tick rate 60) at 2024.05.16-12.49.20
+[2024.05.16-11.49.20:119][311]LogWorld: Bringing up level for play took: 0.070936
+[2024.05.16-11.49.20:141][311]LogOnline: OSS: Created online subsystem instance for: :Context_33
+[2024.05.16-11.49.20:249][311]PIE: Server logged in
+[2024.05.16-11.49.20:251][311]PIE: Play in editor total start time 0.965 seconds.
+[2024.05.16-11.49.26:898][462]LogActor: Warning: BP_ProjectileCard_C /Game/UEDPIE_0_EmptyLevel.EmptyLevel:PersistentLevel.BP_ProjectileCard_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2024.05.16-11.49.31:980][689]LogActor: Warning: BP_ProjectileCard_C /Game/UEDPIE_0_EmptyLevel.EmptyLevel:PersistentLevel.BP_ProjectileCard_C_1 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2024.05.16-11.49.33:586][781]LogActor: Warning: BP_ProjectileCard_C /Game/UEDPIE_0_EmptyLevel.EmptyLevel:PersistentLevel.BP_ProjectileCard_C_2 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2024.05.16-11.49.33:805][793]LogActor: Warning: BP_ProjectileCard_C /Game/UEDPIE_0_EmptyLevel.EmptyLevel:PersistentLevel.BP_ProjectileCard_C_3 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2024.05.16-11.49.33:971][802]LogActor: Warning: BP_ProjectileCard_C /Game/UEDPIE_0_EmptyLevel.EmptyLevel:PersistentLevel.BP_ProjectileCard_C_4 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2024.05.16-11.49.34:138][811]LogActor: Warning: BP_ProjectileCard_C /Game/UEDPIE_0_EmptyLevel.EmptyLevel:PersistentLevel.BP_ProjectileCard_C_5 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2024.05.16-11.49.34:286][819]LogTemp: Display: Trace Called
+[2024.05.16-11.49.34:287][819]LogActor: Warning: BP_ProjectileCard_C /Game/UEDPIE_0_EmptyLevel.EmptyLevel:PersistentLevel.BP_ProjectileCard_C_6 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2024.05.16-11.49.34:466][828]LogActor: Warning: BP_ProjectileCard_C /Game/UEDPIE_0_EmptyLevel.EmptyLevel:PersistentLevel.BP_ProjectileCard_C_7 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2024.05.16-11.49.34:611][836]LogActor: Warning: BP_ProjectileCard_C /Game/UEDPIE_0_EmptyLevel.EmptyLevel:PersistentLevel.BP_ProjectileCard_C_8 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2024.05.16-11.49.34:778][845]LogActor: Warning: BP_ProjectileCard_C /Game/UEDPIE_0_EmptyLevel.EmptyLevel:PersistentLevel.BP_ProjectileCard_C_9 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2024.05.16-11.49.34:928][853]LogActor: Warning: BP_ProjectileCard_C /Game/UEDPIE_0_EmptyLevel.EmptyLevel:PersistentLevel.BP_ProjectileCard_C_10 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2024.05.16-11.49.35:092][862]LogActor: Warning: BP_ProjectileCard_C /Game/UEDPIE_0_EmptyLevel.EmptyLevel:PersistentLevel.BP_ProjectileCard_C_11 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2024.05.16-11.49.35:257][871]LogActor: Warning: BP_ProjectileCard_C /Game/UEDPIE_0_EmptyLevel.EmptyLevel:PersistentLevel.BP_ProjectileCard_C_12 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2024.05.16-11.49.35:385][878]LogActor: Warning: BP_ProjectileCard_C /Game/UEDPIE_0_EmptyLevel.EmptyLevel:PersistentLevel.BP_ProjectileCard_C_13 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2024.05.16-11.49.35:542][886]LogActor: Warning: BP_ProjectileCard_C /Game/UEDPIE_0_EmptyLevel.EmptyLevel:PersistentLevel.BP_ProjectileCard_C_14 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2024.05.16-11.49.35:699][894]LogActor: Warning: BP_ProjectileCard_C /Game/UEDPIE_0_EmptyLevel.EmptyLevel:PersistentLevel.BP_ProjectileCard_C_15 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2024.05.16-11.49.35:843][902]LogActor: Warning: BP_ProjectileCard_C /Game/UEDPIE_0_EmptyLevel.EmptyLevel:PersistentLevel.BP_ProjectileCard_C_16 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2024.05.16-11.49.37:094][969]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2024.05.16-11.49.37:094][969]LogWorld: BeginTearingDown for /Game/UEDPIE_0_EmptyLevel
+[2024.05.16-11.49.37:104][969]LogWorld: UWorld::CleanupWorld for EmptyLevel, bSessionEnded=true, bCleanupResources=true
+[2024.05.16-11.49.37:108][969]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.05.16-11.49.37:158][969]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2024.05.16-11.49.37:164][969]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.05.16-11.49.37:185][969]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2024.05.16-11.49.37:189][969]LogAudioMixer: Deinitializing Audio Bus Subsystem for audio device with ID 20
+[2024.05.16-11.49.37:192][969]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=20
+[2024.05.16-11.49.37:210][969]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=20
+[2024.05.16-11.49.37:238][969]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2024.05.16-11.49.37:353][969]LogUObjectHash: Compacting FUObjectHashTables data took   3.19ms
+[2024.05.16-11.49.37:489][970]LogPlayLevel: Display: Destroying online subsystem :Context_33

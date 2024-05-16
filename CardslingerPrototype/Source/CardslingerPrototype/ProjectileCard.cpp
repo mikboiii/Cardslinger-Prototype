@@ -5,6 +5,7 @@
 #include "Kismet/GameplayStatics.h"
 #include "Components/BoxComponent.h"
 #include "Components/SkeletalMeshComponent.h"
+#include "Engine/DamageEvents.h"
 #include "NiagaraComponent.h"
 #include "DrawDebugHelpers.h"
 #include "TimerManager.h"
@@ -56,6 +57,11 @@ void AProjectileCard::OnHit(UPrimitiveComponent* HitComponent, AActor* OtherActo
 	if (OtherActor != this)
     {
         DrawDebugSphere(GetWorld(), Hit.ImpactPoint, 10.0f, 16, FColor::Red, true, 10000.0f);
+		if(OtherActor != UGameplayStatics::GetPlayerPawn(GetWorld(), 0))
+		{
+			FPointDamageEvent DamageEvent(CardDamage, Hit, -GetActorForwardVector(), nullptr);
+			OtherActor->TakeDamage(CardDamage, DamageEvent, UGameplayStatics::GetPlayerPawn(GetWorld(), 0)->GetController(), this);
+		}
     }
 
     Destroy();
