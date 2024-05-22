@@ -29,8 +29,13 @@ void ACardslingerPlayerController::BeginPlay()
 {
     Super::BeginPlay();
 
-    UUserWidget *PlayerHUD = CreateWidget(this, HUDScreenClass);
-    if(PlayerHUD == nullptr) return;
-    PlayerHUD->AddToViewport();
+    HUD = CreateWidget(this, HUDScreenClass);
+    if(HUD == nullptr) return;
+    HUD->AddToViewport();
+}
+
+UUserWidget* ACardslingerPlayerController::GetHUD() const
+{
+    return HUD;
 }
 

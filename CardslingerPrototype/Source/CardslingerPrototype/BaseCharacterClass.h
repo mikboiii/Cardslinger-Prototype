@@ -10,7 +10,8 @@ class UInputMappingContext;
 class UInputAction;
 struct FInputActionValue;
 class ABaseCard;
-
+class UProgressBar;
+class UUWidget;
 UCLASS()
 class CARDSLINGERPROTOTYPE_API ABaseCharacterClass : public ACharacter
 {
@@ -85,6 +86,9 @@ private:
 
 	UPROPERTY(EditDefaultsOnly, Category="Combat")
 	float ReloadDelay = 5.0f;
+
+	UPROPERTY()
+	UUserWidget* PlayerHUD;
 
 	UPROPERTY(EditDefaultsOnly, Category="Combat")
 	float CardCooldownDelay = 4.0f;

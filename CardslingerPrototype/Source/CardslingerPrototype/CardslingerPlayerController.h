@@ -33,4 +33,9 @@ class CARDSLINGERPROTOTYPE_API ACardslingerPlayerController : public APlayerCont
 
 		UPROPERTY(EditAnywhere)
 		TSubclassOf<class UUserWidget> HUDScreenClass;
+
+		class UUserWidget* HUD;
+
+	public:
+		class UUserWidget* GetHUD() const;
 };

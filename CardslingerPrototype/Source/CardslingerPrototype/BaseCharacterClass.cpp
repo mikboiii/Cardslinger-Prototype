@@ -22,6 +22,9 @@
 #include "CardDeck.h"
 #include "ProjectileCard.h"
 #include "CardslingerTestGameMode.h"
+#include "CardslingerPlayerController.h"
+#include "Components/ProgressBar.h"
+#include "Blueprint/UserWidget.h"
 
 
 // Sets default values
@@ -58,11 +61,16 @@ void ABaseCharacterClass::BeginPlay()
 		CardDeck = GetWorld()->SpawnActor<ACardDeck>(CardDeckClass);
 		CardDeck->AttachToComponent(CardDeckLocation, FAttachmentTransformRules::KeepRelativeTransform);
 	}
-	//draw initial hands
-	ReplenishHandFunction();
+
 	//init health
 	Health = MaxHealth;
+
+	ACardslingerPlayerController* PC = Cast<ACardslingerPlayerController>(GetController());
+
+	PlayerHUD = PC->GetHUD();
 	
+	//draw initial hands
+	ReplenishHandFunction();
 }
 
 // Called every frame
@@ -157,6 +165,11 @@ void ABaseCharacterClass::UseCard(const FInputActionValue& Value)
 	HitTrace(Hit, ShotDirection);
 	//Has shot direction reversed: shot direction originally made for hit events
 	CardHand[Index]->CardEffect(CardDeck, -ShotDirection);
+	FString CardName = FString::Printf(TEXT("Card%d"), Index+1);
+	UE_LOG(LogTemp, Display, TEXT("%s"), *CardName);
+	UProgressBar* CardUI = PlayerHUD->GetClass()->FindPropertyByName(*CardName)->ContainerPtrToValuePtr<UProgressBar>(PlayerHUD);
+
+	CardUI->SetPercent(0.0f);
 	//Sets the array index to nullptr to prevent array resizing
 	CardHand[Index] = nullptr;
 	//Creates a timer delegate to enable the use of parameters in timer function
@@ -281,6 +294,9 @@ void ABaseCharacterClass::ReplenishHandFunction()
 	for(int i = 0; i < CardHand.Num(); i++)
 	{
 		CardHand[i] = CardDeck->DrawCard();
+		UProgressBar* CardUI = PlayerHUD->GetClass()->FindPropertyByName(TEXT("Card1"))->ContainerPtrToValuePtr<UProgressBar>(PlayerHUD);
+
+		CardUI->SetPercent(100.0f);
 	}
 }
 
