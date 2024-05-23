@@ -1252,3 +1252,213 @@ LogConfig: Set CVar [[r.Shadow.DetectVertexShaderLayerAtRuntime:1]]
 [2024.05.23-13.39.33:544][425]LogFileHelpers: InternalPromptForCheckoutAndSave took 181 ms (total: 354 ms)
 [2024.05.23-13.39.33:545][425]AssetCheck: New page: Asset Save: WBP_PlayerHUD
 [2024.05.23-13.39.33:545][425]LogContentValidation: Display: Validating /Script/UMGEditor.WidgetBlueprint /Game/UI/WBP_PlayerHUD.WBP_PlayerHUD
+[2024.05.23-13.47.51:864][185]LogLiveCoding: Display: Starting Live Coding compile.
+[2024.05.23-13.47.55:344][196]Display: Reload/Re-instancing Complete: No object changes detected
+[2024.05.23-13.47.55:344][196]LogLiveCoding: Error: Live coding failed, please see Live console for more information
+[2024.05.23-13.48.02:521][217]LogLiveCoding: Display: Starting Live Coding compile.
+[2024.05.23-13.48.38:351][325]Display: Reload/Re-instancing Complete: No object changes detected
+[2024.05.23-13.48.38:351][325]LogLiveCoding: Error: Live coding failed, please see Live console for more information
+[2024.05.23-13.49.13:606][430]LogLiveCoding: Display: Starting Live Coding compile.
+[2024.05.23-13.49.19:764][509]Display: Reload/Re-instancing Complete: No object changes detected
+[2024.05.23-13.49.19:764][509]LogLiveCoding: Error: Live coding failed, please see Live console for more information
+[2024.05.23-13.56.05:114][792]LogLiveCoding: Display: Starting Live Coding compile.
+[2024.05.23-13.56.50:769][929]LogLiveCoding: Display:    Creating library C:\Users\Mikolaj\Documents\Unreal Projects\Cardslinger-Prototype\CardslingerPrototype\Binaries\Win64\UnrealEditor-CardslingerPrototype.patch_1.lib and object C:\Users\Mikolaj\Documents\Unreal Projects\Cardslinger-Prototype\CardslingerPrototype\Binaries\Win64\UnrealEditor-CardslingerPrototype.patch_1.exp
+[2024.05.23-13.56.51:629][931]LogClass: UPackage /Script/CardslingerPrototype Reload.
+[2024.05.23-13.56.51:629][931]LogClass: UClass PlayerHUDWidget Reload.
+[2024.05.23-13.56.51:655][931]LogClass: Could not find existing class PlayerHUDWidget in package /Script/CardslingerPrototype for reload, assuming new or modified class
+[2024.05.23-13.56.51:683][931]Re-instancing PlayerHUDWidget after reload.
+[2024.05.23-13.56.51:939][931]LogUObjectHash: Compacting FUObjectHashTables data took   2.09ms
+[2024.05.23-13.56.52:672][932]Display: Reload/Re-instancing Complete: 1 package changed, 1 class changed, 14 classes unchanged, 8 functions remapped
+[2024.05.23-13.56.52:672][932]LogLiveCoding: Warning: Live coding succeeded, data type changes may cause packaging to fail if assets reference the new or updated data types
+[2024.05.23-13.57.47:132][ 44]LogSlate: Took 0.005788 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/DroidSansFallback.ttf' (3848K)
+[2024.05.23-13.58.27:461][374]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.05.23-13.58.27:627][374]LogSavePackage: Moving output files for package: /Game/UI/WBP_PlayerHUD
+[2024.05.23-13.58.27:628][374]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/WBP_PlayerHUD190AF470477B5B3A48CA3CB74DC001EA.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/UI/WBP_PlayerHUD.uasset'
+[2024.05.23-13.58.27:640][374]LogFileHelpers: InternalPromptForCheckoutAndSave took 178 ms (total: 533 ms)
+[2024.05.23-13.58.27:641][374]AssetCheck: New page: Asset Save: WBP_PlayerHUD
+[2024.05.23-13.58.27:641][374]LogContentValidation: Display: Validating /Script/UMGEditor.WidgetBlueprint /Game/UI/WBP_PlayerHUD.WBP_PlayerHUD
+[2024.05.23-13.58.28:769][442]BlueprintLog: New page: Compile WBP_PlayerHUD
+[2024.05.23-13.58.28:883][442]LogUObjectHash: Compacting FUObjectHashTables data took   2.82ms
+[2024.05.23-13.58.47:066][526]BlueprintLog: New page: Compile WBP_PlayerHUD
+[2024.05.23-13.58.47:140][526]LogUObjectHash: Compacting FUObjectHashTables data took   1.93ms
+[2024.05.23-13.59.11:990][663]LogUObjectHash: Compacting FUObjectHashTables data took   1.58ms
+[2024.05.23-13.59.11:999][663]LogFileHelpers: Editor autosave (incl. external actors) for '/Game/EmptyLevel' took 0.026
+[2024.05.23-13.59.12:001][663]OBJ SavePackage: Generating thumbnails for [2] asset(s) in package [/Game/UI/WBP_PlayerHUD] ([2] browsable assets)...
+[2024.05.23-13.59.12:011][663]OBJ SavePackage:     Rendered thumbnail for [WidgetBlueprint /Game/UI/WBP_PlayerHUD.WBP_PlayerHUD]
+[2024.05.23-13.59.12:011][663]OBJ SavePackage: Finished generating thumbnails for package [/Game/UI/WBP_PlayerHUD]
+[2024.05.23-13.59.12:021][663]LogSavePackage: Moving output files for package: /Temp/Autosaves/Game/UI/WBP_PlayerHUD_Auto1
+[2024.05.23-13.59.12:023][663]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/WBP_PlayerHUD_Auto1046E8BA24A07CDD7ED4F9D8BC55EC3C0.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/Autosaves/Game/UI/WBP_PlayerHUD_Auto1.uasset'
+[2024.05.23-13.59.12:024][663]LogFileHelpers: Auto-saving content packages took 0.025
+[2024.05.23-13.59.40:435][875]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.05.23-13.59.40:564][875]LogSavePackage: Moving output files for package: /Game/UI/WBP_PlayerHUD
+[2024.05.23-13.59.40:566][875]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/WBP_PlayerHUD78E1385E40E71CC9564924BFB7934849.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/UI/WBP_PlayerHUD.uasset'
+[2024.05.23-13.59.40:577][875]LogFileHelpers: InternalPromptForCheckoutAndSave took 142 ms (total: 675 ms)
+[2024.05.23-13.59.40:579][875]AssetCheck: New page: Asset Save: WBP_PlayerHUD
+[2024.05.23-13.59.40:579][875]LogContentValidation: Display: Validating /Script/UMGEditor.WidgetBlueprint /Game/UI/WBP_PlayerHUD.WBP_PlayerHUD
+[2024.05.23-13.59.46:463][206]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/Player/BP_CardslingerPlayerController.BP_CardslingerPlayerController
+[2024.05.23-13.59.46:465][206]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.05.23-13.59.46:465][206]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2024.05.23-13.59.52:293][527]BlueprintLog: New page: Compile BP_CardslingerPlayerController
+[2024.05.23-13.59.52:335][527]LogUObjectHash: Compacting FUObjectHashTables data took   1.60ms
+[2024.05.23-13.59.53:060][568]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.05.23-13.59.53:195][568]LogSavePackage: Moving output files for package: /Game/Player/BP_CardslingerPlayerController
+[2024.05.23-13.59.53:196][568]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/BP_CardslingerPlayerController08A31CB2403C36A78200AA9877A334EB.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/Player/BP_CardslingerPlayerController.uasset'
+[2024.05.23-13.59.53:209][568]LogFileHelpers: InternalPromptForCheckoutAndSave took 149 ms (total: 824 ms)
+[2024.05.23-13.59.53:211][568]AssetCheck: New page: Asset Save: BP_CardslingerPlayerController
+[2024.05.23-13.59.53:211][568]LogContentValidation: Display: Validating /Script/Engine.Blueprint /Game/Player/BP_CardslingerPlayerController.BP_CardslingerPlayerController
+[2024.05.23-13.59.58:471][882]LogWorld: UWorld::CleanupWorld for World_6, bSessionEnded=true, bCleanupResources=true
+[2024.05.23-13.59.58:471][882]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.05.23-14.02.05:800][507]LogLiveCoding: Display: Starting Live Coding compile.
+[2024.05.23-14.02.18:036][544]LogLiveCoding: Display:    Creating library C:\Users\Mikolaj\Documents\Unreal Projects\Cardslinger-Prototype\CardslingerPrototype\Binaries\Win64\UnrealEditor-CardslingerPrototype.patch_2.lib and object C:\Users\Mikolaj\Documents\Unreal Projects\Cardslinger-Prototype\CardslingerPrototype\Binaries\Win64\UnrealEditor-CardslingerPrototype.patch_2.exp
+[2024.05.23-14.02.19:176][547]LogClass: UPackage /Script/CardslingerPrototype Reload.
+[2024.05.23-14.02.19:176][547]LogClass: UClass PlayerHUDWidget Reload.
+[2024.05.23-14.02.19:205][547]LogClass: Could not find existing class PlayerHUDWidget in package /Script/CardslingerPrototype for reload, assuming new or modified class
+[2024.05.23-14.02.19:229][547]Re-instancing PlayerHUDWidget after reload.
+[2024.05.23-14.02.19:230][547]LogBlueprint: Error: [AssetLog] C:\Users\Mikolaj\Documents\Unreal Projects\Cardslinger-Prototype\CardslingerPrototype\Content\UI\WBP_PlayerHUD.uasset: [Compiler] A required widget binding "CardPanel" of type  Uniform Grid Panel  was not found.
+[2024.05.23-14.02.19:231][547]LogBlueprint: Error: [AssetLog] C:\Users\Mikolaj\Documents\Unreal Projects\Cardslinger-Prototype\CardslingerPrototype\Content\UI\WBP_PlayerHUD.uasset: [Compiler] A required widget binding "CardPanel" of type  Uniform Grid Panel  was not found.
+[2024.05.23-14.02.19:450][547]LogUObjectHash: Compacting FUObjectHashTables data took   2.08ms
+[2024.05.23-14.02.20:105][548]Display: Reload/Re-instancing Complete: 1 package changed, 1 class changed, 14 classes unchanged, 8 functions remapped
+[2024.05.23-14.02.20:105][548]LogLiveCoding: Warning: Live coding succeeded, data type changes may cause packaging to fail if assets reference the new or updated data types
+[2024.05.23-14.03.02:063][163]BlueprintLog: New page: Compile WBP_PlayerHUD
+[2024.05.23-14.03.02:063][163]LogBlueprint: Error: [AssetLog] C:\Users\Mikolaj\Documents\Unreal Projects\Cardslinger-Prototype\CardslingerPrototype\Content\UI\WBP_PlayerHUD.uasset: [Compiler] A required widget binding "CardPanel" of type  Uniform Grid Panel  was not found.
+[2024.05.23-14.03.02:065][163]LogBlueprint: Error: [AssetLog] C:\Users\Mikolaj\Documents\Unreal Projects\Cardslinger-Prototype\CardslingerPrototype\Content\UI\WBP_PlayerHUD.uasset: [Compiler] A required widget binding "CardPanel" of type  Uniform Grid Panel  was not found.
+[2024.05.23-14.03.02:153][163]LogUObjectHash: Compacting FUObjectHashTables data took   2.02ms
+[2024.05.23-14.03.04:188][280]LogBlueprint: Warning: Unknown type of hyperlinked object (UniformGridPanel), cannot focus it
+[2024.05.23-14.03.19:986][203]LogBlueprint: Error: [AssetLog] C:\Users\Mikolaj\Documents\Unreal Projects\Cardslinger-Prototype\CardslingerPrototype\Content\UI\WBP_PlayerHUD.uasset: [Compiler] A required widget binding "CardPanel" of type  Uniform Grid Panel  was not found.
+[2024.05.23-14.03.46:146][731]BlueprintLog: New page: Compile WBP_PlayerHUD
+[2024.05.23-14.03.46:147][731]LogBlueprint: Error: [AssetLog] C:\Users\Mikolaj\Documents\Unreal Projects\Cardslinger-Prototype\CardslingerPrototype\Content\UI\WBP_PlayerHUD.uasset: [Compiler] A required widget binding "CardPanel" of type  Uniform Grid Panel  was not found.
+[2024.05.23-14.03.46:149][731]LogBlueprint: Error: [AssetLog] C:\Users\Mikolaj\Documents\Unreal Projects\Cardslinger-Prototype\CardslingerPrototype\Content\UI\WBP_PlayerHUD.uasset: [Compiler] A required widget binding "CardPanel" of type  Uniform Grid Panel  was not found.
+[2024.05.23-14.03.46:200][731]LogUObjectHash: Compacting FUObjectHashTables data took   1.82ms
+[2024.05.23-14.03.50:478][981]LogBlueprint: Warning: Unknown type of hyperlinked object (UniformGridPanel), cannot focus it
+[2024.05.23-14.03.52:194][ 84]LogBlueprint: Warning: Unknown type of hyperlinked object (UniformGridPanel), cannot focus it
+[2024.05.23-14.03.52:828][122]LogBlueprint: Warning: Unknown type of hyperlinked object (UniformGridPanel), cannot focus it
+[2024.05.23-14.03.53:561][166]LogBlueprint: Warning: Unknown type of hyperlinked object (UniformGridPanel), cannot focus it
+[2024.05.23-14.03.54:044][195]LogBlueprint: Warning: Unknown type of hyperlinked object (UniformGridPanel), cannot focus it
+[2024.05.23-14.03.58:461][447]LogBlueprint: Error: [AssetLog] C:\Users\Mikolaj\Documents\Unreal Projects\Cardslinger-Prototype\CardslingerPrototype\Content\UI\WBP_PlayerHUD.uasset: [Compiler] A required widget binding "CardPanel" of type  Uniform Grid Panel  was not found.
+[2024.05.23-14.03.59:608][507]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.05.23-14.03.59:721][507]LogSavePackage: Moving output files for package: /Game/UI/WBP_PlayerHUD
+[2024.05.23-14.03.59:722][507]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/WBP_PlayerHUD8EAAC5444E6FC8B76E760D9661D8BFE2.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/UI/WBP_PlayerHUD.uasset'
+[2024.05.23-14.03.59:733][507]LogFileHelpers: InternalPromptForCheckoutAndSave took 124 ms (total: 949 ms)
+[2024.05.23-14.03.59:735][507]AssetCheck: New page: Asset Save: WBP_PlayerHUD
+[2024.05.23-14.03.59:735][507]LogContentValidation: Display: Validating /Script/UMGEditor.WidgetBlueprint /Game/UI/WBP_PlayerHUD.WBP_PlayerHUD
+[2024.05.23-14.04.01:696][625]BlueprintLog: New page: Compile WBP_PlayerHUD
+[2024.05.23-14.04.01:696][625]LogBlueprint: Error: [AssetLog] C:\Users\Mikolaj\Documents\Unreal Projects\Cardslinger-Prototype\CardslingerPrototype\Content\UI\WBP_PlayerHUD.uasset: [Compiler] A required widget binding "CardPanel" of type  Uniform Grid Panel  was not found.
+[2024.05.23-14.04.01:698][625]LogBlueprint: Error: [AssetLog] C:\Users\Mikolaj\Documents\Unreal Projects\Cardslinger-Prototype\CardslingerPrototype\Content\UI\WBP_PlayerHUD.uasset: [Compiler] A required widget binding "CardPanel" of type  Uniform Grid Panel  was not found.
+[2024.05.23-14.04.01:741][625]LogUObjectHash: Compacting FUObjectHashTables data took   1.77ms
+[2024.05.23-14.04.03:137][701]LogBlueprint: Warning: Unknown type of hyperlinked object (UniformGridPanel), cannot focus it
+[2024.05.23-14.04.03:669][733]LogBlueprint: Warning: Unknown type of hyperlinked object (UniformGridPanel), cannot focus it
+[2024.05.23-14.04.03:887][746]LogBlueprint: Warning: Unknown type of hyperlinked object (UniformGridPanel), cannot focus it
+[2024.05.23-14.04.04:070][757]LogBlueprint: Warning: Unknown type of hyperlinked object (UniformGridPanel), cannot focus it
+[2024.05.23-14.04.04:436][779]LogBlueprint: Warning: Unknown type of hyperlinked object (UniformGridPanel), cannot focus it
+[2024.05.23-14.04.04:803][801]LogBlueprint: Warning: Unknown type of hyperlinked object (UniformGridPanel), cannot focus it
+[2024.05.23-14.04.14:749][378]LogBlueprint: Error: [AssetLog] C:\Users\Mikolaj\Documents\Unreal Projects\Cardslinger-Prototype\CardslingerPrototype\Content\UI\WBP_PlayerHUD.uasset: [Compiler] A required widget binding "CardPanel" of type  Uniform Grid Panel  was not found.
+[2024.05.23-14.04.15:970][441]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.05.23-14.04.16:091][441]LogSavePackage: Moving output files for package: /Game/UI/WBP_PlayerHUD
+[2024.05.23-14.04.16:092][441]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/WBP_PlayerHUD8B81A2054EA692AA8455E1AC110F809C.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/UI/WBP_PlayerHUD.uasset'
+[2024.05.23-14.04.16:102][441]LogFileHelpers: InternalPromptForCheckoutAndSave took 133 ms (total: 1.08 sec)
+[2024.05.23-14.04.16:105][441]AssetCheck: New page: Asset Save: WBP_PlayerHUD
+[2024.05.23-14.04.16:105][441]LogContentValidation: Display: Validating /Script/UMGEditor.WidgetBlueprint /Game/UI/WBP_PlayerHUD.WBP_PlayerHUD
+[2024.05.23-14.04.18:741][570]LogBlueprint: Warning: Unknown type of hyperlinked object (UniformGridPanel), cannot focus it
+[2024.05.23-14.04.19:324][605]LogBlueprint: Warning: Unknown type of hyperlinked object (UniformGridPanel), cannot focus it
+[2024.05.23-14.04.20:548][677]BlueprintLog: New page: Compile WBP_PlayerHUD
+[2024.05.23-14.04.20:550][677]LogBlueprint: Error: [AssetLog] C:\Users\Mikolaj\Documents\Unreal Projects\Cardslinger-Prototype\CardslingerPrototype\Content\UI\WBP_PlayerHUD.uasset: [Compiler] A required widget binding "CardPanel" of type  Uniform Grid Panel  was not found.
+[2024.05.23-14.04.20:551][677]LogBlueprint: Error: [AssetLog] C:\Users\Mikolaj\Documents\Unreal Projects\Cardslinger-Prototype\CardslingerPrototype\Content\UI\WBP_PlayerHUD.uasset: [Compiler] A required widget binding "CardPanel" of type  Uniform Grid Panel  was not found.
+[2024.05.23-14.04.20:580][677]LogUObjectHash: Compacting FUObjectHashTables data took   1.92ms
+[2024.05.23-14.04.22:090][766]LogBlueprint: Warning: Unknown type of hyperlinked object (UniformGridPanel), cannot focus it
+[2024.05.23-14.04.28:381][137]BlueprintLog: New page: Compile WBP_PlayerHUD
+[2024.05.23-14.04.28:382][137]LogBlueprint: Error: [AssetLog] C:\Users\Mikolaj\Documents\Unreal Projects\Cardslinger-Prototype\CardslingerPrototype\Content\UI\WBP_PlayerHUD.uasset: [Compiler] A required widget binding "CardPanel" of type  Uniform Grid Panel  was not found.
+[2024.05.23-14.04.28:383][137]LogBlueprint: Error: [AssetLog] C:\Users\Mikolaj\Documents\Unreal Projects\Cardslinger-Prototype\CardslingerPrototype\Content\UI\WBP_PlayerHUD.uasset: [Compiler] A required widget binding "CardPanel" of type  Uniform Grid Panel  was not found.
+[2024.05.23-14.04.28:402][137]LogUObjectHash: Compacting FUObjectHashTables data took   1.68ms
+[2024.05.23-14.04.30:834][278]LogBlueprint: Error: [AssetLog] C:\Users\Mikolaj\Documents\Unreal Projects\Cardslinger-Prototype\CardslingerPrototype\Content\UI\WBP_PlayerHUD.uasset: [Compiler] A required widget binding "CardPanel" of type  Uniform Grid Panel  was not found.
+[2024.05.23-14.04.35:950][571]BlueprintLog: New page: Compile WBP_PlayerHUD
+[2024.05.23-14.04.35:950][571]LogBlueprint: Error: [AssetLog] C:\Users\Mikolaj\Documents\Unreal Projects\Cardslinger-Prototype\CardslingerPrototype\Content\UI\WBP_PlayerHUD.uasset: [Compiler] A required widget binding "CardPanel" of type  Uniform Grid Panel  was not found.
+[2024.05.23-14.04.35:953][571]LogBlueprint: Error: [AssetLog] C:\Users\Mikolaj\Documents\Unreal Projects\Cardslinger-Prototype\CardslingerPrototype\Content\UI\WBP_PlayerHUD.uasset: [Compiler] A required widget binding "CardPanel" of type  Uniform Grid Panel  was not found.
+[2024.05.23-14.04.35:973][571]LogUObjectHash: Compacting FUObjectHashTables data took   1.74ms
+[2024.05.23-14.04.36:632][609]BlueprintLog: New page: Compile WBP_PlayerHUD
+[2024.05.23-14.04.36:634][609]LogBlueprint: Error: [AssetLog] C:\Users\Mikolaj\Documents\Unreal Projects\Cardslinger-Prototype\CardslingerPrototype\Content\UI\WBP_PlayerHUD.uasset: [Compiler] A required widget binding "CardPanel" of type  Uniform Grid Panel  was not found.
+[2024.05.23-14.04.36:635][609]LogBlueprint: Error: [AssetLog] C:\Users\Mikolaj\Documents\Unreal Projects\Cardslinger-Prototype\CardslingerPrototype\Content\UI\WBP_PlayerHUD.uasset: [Compiler] A required widget binding "CardPanel" of type  Uniform Grid Panel  was not found.
+[2024.05.23-14.04.36:654][609]LogUObjectHash: Compacting FUObjectHashTables data took   1.92ms
+[2024.05.23-14.04.37:610][665]LogBlueprint: Warning: Unknown type of hyperlinked object (UniformGridPanel), cannot focus it
+[2024.05.23-14.04.38:109][695]LogBlueprint: Warning: Unknown type of hyperlinked object (UniformGridPanel), cannot focus it
+[2024.05.23-14.04.46:995][199]LogBlueprint: Error: [AssetLog] C:\Users\Mikolaj\Documents\Unreal Projects\Cardslinger-Prototype\CardslingerPrototype\Content\UI\WBP_PlayerHUD.uasset: [Compiler] A required widget binding "CardPanel" of type  Uniform Grid Panel  was not found.
+[2024.05.23-14.04.47:982][249]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.05.23-14.04.48:095][249]LogSavePackage: Moving output files for package: /Game/UI/WBP_PlayerHUD
+[2024.05.23-14.04.48:096][249]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/WBP_PlayerHUDECA6160B4873E6DF03246C9A3C9C9DC4.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/UI/WBP_PlayerHUD.uasset'
+[2024.05.23-14.04.48:108][249]LogFileHelpers: InternalPromptForCheckoutAndSave took 125 ms (total: 1.20 sec)
+[2024.05.23-14.04.48:109][249]AssetCheck: New page: Asset Save: WBP_PlayerHUD
+[2024.05.23-14.04.48:110][249]LogContentValidation: Display: Validating /Script/UMGEditor.WidgetBlueprint /Game/UI/WBP_PlayerHUD.WBP_PlayerHUD
+[2024.05.23-14.05.12:425][980]BlueprintLog: New page: Compile WBP_PlayerHUD
+[2024.05.23-14.05.12:425][980]LogBlueprint: Error: [AssetLog] C:\Users\Mikolaj\Documents\Unreal Projects\Cardslinger-Prototype\CardslingerPrototype\Content\UI\WBP_PlayerHUD.uasset: [Compiler] A required widget binding "CardPanel" of type  Uniform Grid Panel  was not found.
+[2024.05.23-14.05.12:427][980]LogBlueprint: Error: [AssetLog] C:\Users\Mikolaj\Documents\Unreal Projects\Cardslinger-Prototype\CardslingerPrototype\Content\UI\WBP_PlayerHUD.uasset: [Compiler] A required widget binding "CardPanel" of type  Uniform Grid Panel  was not found.
+[2024.05.23-14.05.12:471][980]LogUObjectHash: Compacting FUObjectHashTables data took   1.75ms
+[2024.05.23-14.05.20:471][440]LogBlueprint: Error: [AssetLog] C:\Users\Mikolaj\Documents\Unreal Projects\Cardslinger-Prototype\CardslingerPrototype\Content\UI\WBP_PlayerHUD.uasset: [Compiler] A required widget binding "CardPanel" of type  Uniform Grid Panel  was not found.
+[2024.05.23-14.06.03:753][899]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.05.23-14.06.03:825][899]LogBlueprint: Error: [AssetLog] C:\Users\Mikolaj\Documents\Unreal Projects\Cardslinger-Prototype\CardslingerPrototype\Content\UI\WBP_PlayerHUD.uasset: [Compiler] A required widget binding "CardPanel" of type  Uniform Grid Panel  was not found.
+[2024.05.23-14.06.03:885][899]LogSavePackage: Moving output files for package: /Game/UI/WBP_PlayerHUD
+[2024.05.23-14.06.03:886][899]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/WBP_PlayerHUD1829A8F2419B7101FC5DBC802EF0131B.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/UI/WBP_PlayerHUD.uasset'
+[2024.05.23-14.06.03:898][899]LogFileHelpers: InternalPromptForCheckoutAndSave took 145 ms (total: 1.35 sec)
+[2024.05.23-14.06.03:900][899]AssetCheck: New page: Asset Save: WBP_PlayerHUD
+[2024.05.23-14.06.03:900][899]LogContentValidation: Display: Validating /Script/UMGEditor.WidgetBlueprint /Game/UI/WBP_PlayerHUD.WBP_PlayerHUD
+[2024.05.23-14.06.05:293][981]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.05.23-14.06.05:425][981]LogSavePackage: Moving output files for package: /Game/UI/WBP_PlayerHUD
+[2024.05.23-14.06.05:426][981]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/WBP_PlayerHUD2750029C48924084F2DE4F8835868EA3.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/UI/WBP_PlayerHUD.uasset'
+[2024.05.23-14.06.05:438][981]LogFileHelpers: InternalPromptForCheckoutAndSave took 144 ms (total: 1.49 sec)
+[2024.05.23-14.06.05:439][981]AssetCheck: New page: Asset Save: WBP_PlayerHUD
+[2024.05.23-14.06.05:439][981]LogContentValidation: Display: Validating /Script/UMGEditor.WidgetBlueprint /Game/UI/WBP_PlayerHUD.WBP_PlayerHUD
+[2024.05.23-14.06.08:496][145]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.05.23-14.06.08:621][145]LogSavePackage: Moving output files for package: /Game/UI/WBP_PlayerHUD
+[2024.05.23-14.06.08:622][145]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/WBP_PlayerHUDB86553CD41546E46D015969B5C6175E5.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/UI/WBP_PlayerHUD.uasset'
+[2024.05.23-14.06.08:633][145]LogFileHelpers: InternalPromptForCheckoutAndSave took 137 ms (total: 1.63 sec)
+[2024.05.23-14.06.08:634][145]AssetCheck: New page: Asset Save: WBP_PlayerHUD
+[2024.05.23-14.06.08:634][145]LogContentValidation: Display: Validating /Script/UMGEditor.WidgetBlueprint /Game/UI/WBP_PlayerHUD.WBP_PlayerHUD
+[2024.05.23-14.06.09:176][178]BlueprintLog: New page: Compile WBP_PlayerHUD
+[2024.05.23-14.06.09:177][178]LogBlueprint: Error: [AssetLog] C:\Users\Mikolaj\Documents\Unreal Projects\Cardslinger-Prototype\CardslingerPrototype\Content\UI\WBP_PlayerHUD.uasset: [Compiler] A required widget binding "CardPanel" of type  Uniform Grid Panel  was not found.
+[2024.05.23-14.06.09:178][178]LogBlueprint: Error: [AssetLog] C:\Users\Mikolaj\Documents\Unreal Projects\Cardslinger-Prototype\CardslingerPrototype\Content\UI\WBP_PlayerHUD.uasset: [Compiler] A required widget binding "CardPanel" of type  Uniform Grid Panel  was not found.
+[2024.05.23-14.06.09:222][178]LogUObjectHash: Compacting FUObjectHashTables data took   2.28ms
+[2024.05.23-14.07.36:095][766]LogLiveCoding: Display: Starting Live Coding compile.
+[2024.05.23-14.07.47:087][798]LogLiveCoding: Display:    Creating library C:\Users\Mikolaj\Documents\Unreal Projects\Cardslinger-Prototype\CardslingerPrototype\Binaries\Win64\UnrealEditor-CardslingerPrototype.patch_3.lib and object C:\Users\Mikolaj\Documents\Unreal Projects\Cardslinger-Prototype\CardslingerPrototype\Binaries\Win64\UnrealEditor-CardslingerPrototype.patch_3.exp
+[2024.05.23-14.07.48:376][802]LogClass: UPackage /Script/CardslingerPrototype Reload.
+[2024.05.23-14.07.48:376][802]LogClass: UClass PlayerHUDWidget Reload.
+[2024.05.23-14.07.48:431][802]LogClass: Could not find existing class PlayerHUDWidget in package /Script/CardslingerPrototype for reload, assuming new or modified class
+[2024.05.23-14.07.48:458][802]Re-instancing PlayerHUDWidget after reload.
+[2024.05.23-14.07.48:460][802]LogBlueprint: Error: [AssetLog] C:\Users\Mikolaj\Documents\Unreal Projects\Cardslinger-Prototype\CardslingerPrototype\Content\UI\WBP_PlayerHUD.uasset: [Compiler] A required widget binding "CardPanel" of type  Uniform Grid Panel  was not found.
+[2024.05.23-14.07.48:461][802]LogBlueprint: Error: [AssetLog] C:\Users\Mikolaj\Documents\Unreal Projects\Cardslinger-Prototype\CardslingerPrototype\Content\UI\WBP_PlayerHUD.uasset: [Compiler] A required widget binding "CardPanel" of type  Uniform Grid Panel  was not found.
+[2024.05.23-14.07.48:695][802]LogUObjectHash: Compacting FUObjectHashTables data took   1.74ms
+[2024.05.23-14.07.49:541][803]Display: Reload/Re-instancing Complete: 1 package changed, 1 class changed, 14 classes unchanged, 8 functions remapped
+[2024.05.23-14.07.49:541][803]LogLiveCoding: Warning: Live coding succeeded, data type changes may cause packaging to fail if assets reference the new or updated data types
+[2024.05.23-14.07.59:697][944]BlueprintLog: New page: Compile WBP_PlayerHUD
+[2024.05.23-14.07.59:698][944]LogBlueprint: Error: [AssetLog] C:\Users\Mikolaj\Documents\Unreal Projects\Cardslinger-Prototype\CardslingerPrototype\Content\UI\WBP_PlayerHUD.uasset: [Compiler] A required widget binding "CardPanel" of type  Uniform Grid Panel  was not found.
+[2024.05.23-14.07.59:699][944]LogBlueprint: Error: [AssetLog] C:\Users\Mikolaj\Documents\Unreal Projects\Cardslinger-Prototype\CardslingerPrototype\Content\UI\WBP_PlayerHUD.uasset: [Compiler] A required widget binding "CardPanel" of type  Uniform Grid Panel  was not found.
+[2024.05.23-14.07.59:801][944]LogUObjectHash: Compacting FUObjectHashTables data took   2.42ms
+[2024.05.23-14.08.13:103][704]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.05.23-14.08.13:234][704]LogSavePackage: Moving output files for package: /Game/UI/WBP_PlayerHUD
+[2024.05.23-14.08.13:236][704]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/WBP_PlayerHUD2CB801734284CBCF6ECAE5AFB7E5A370.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/UI/WBP_PlayerHUD.uasset'
+[2024.05.23-14.08.13:249][704]LogFileHelpers: InternalPromptForCheckoutAndSave took 145 ms (total: 1.78 sec)
+[2024.05.23-14.08.13:251][704]AssetCheck: New page: Asset Save: WBP_PlayerHUD
+[2024.05.23-14.08.13:251][704]LogContentValidation: Display: Validating /Script/UMGEditor.WidgetBlueprint /Game/UI/WBP_PlayerHUD.WBP_PlayerHUD
+[2024.05.23-14.08.13:379][712]BlueprintLog: New page: Compile WBP_PlayerHUD
+[2024.05.23-14.08.13:447][712]LogUObjectHash: Compacting FUObjectHashTables data took   2.24ms
+[2024.05.23-14.08.17:405][938]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.05.23-14.08.17:523][938]LogSavePackage: Moving output files for package: /Game/UI/WBP_PlayerHUD
+[2024.05.23-14.08.17:525][938]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/WBP_PlayerHUD535C30194948136500E538B0CD5CE315.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/UI/WBP_PlayerHUD.uasset'
+[2024.05.23-14.08.17:536][938]LogFileHelpers: InternalPromptForCheckoutAndSave took 131 ms (total: 1.91 sec)
+[2024.05.23-14.08.17:538][938]AssetCheck: New page: Asset Save: WBP_PlayerHUD
+[2024.05.23-14.08.17:539][938]LogContentValidation: Display: Validating /Script/UMGEditor.WidgetBlueprint /Game/UI/WBP_PlayerHUD.WBP_PlayerHUD
+[2024.05.23-14.08.22:920][252]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.05.23-14.08.23:031][252]LogSavePackage: Moving output files for package: /Game/UI/WBP_PlayerHUD
+[2024.05.23-14.08.23:032][252]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/WBP_PlayerHUDD14DFA324B215A1E228FBE8ECB63E557.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/UI/WBP_PlayerHUD.uasset'
+[2024.05.23-14.08.23:043][252]LogFileHelpers: InternalPromptForCheckoutAndSave took 123 ms (total: 2.03 sec)
+[2024.05.23-14.08.23:045][252]AssetCheck: New page: Asset Save: WBP_PlayerHUD
+[2024.05.23-14.08.23:045][252]LogContentValidation: Display: Validating /Script/UMGEditor.WidgetBlueprint /Game/UI/WBP_PlayerHUD.WBP_PlayerHUD
+[2024.05.23-14.08.30:666][696]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.05.23-14.08.30:781][696]LogSavePackage: Moving output files for package: /Game/UI/WBP_PlayerHUD
+[2024.05.23-14.08.30:782][696]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/WBP_PlayerHUD4B64162245F6E92767163B8C0DC92C97.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/UI/WBP_PlayerHUD.uasset'
+[2024.05.23-14.08.30:791][696]LogFileHelpers: InternalPromptForCheckoutAndSave took 125 ms (total: 2.16 sec)
+[2024.05.23-14.08.30:794][696]AssetCheck: New page: Asset Save: WBP_PlayerHUD
+[2024.05.23-14.08.30:794][696]LogContentValidation: Display: Validating /Script/UMGEditor.WidgetBlueprint /Game/UI/WBP_PlayerHUD.WBP_PlayerHUD
+[2024.05.23-14.08.44:355][510]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.05.23-14.08.44:501][510]LogSavePackage: Moving output files for package: /Game/UI/WBP_PlayerHUD
+[2024.05.23-14.08.44:503][510]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/WBP_PlayerHUD223588D84507D5BADC563DBA501CC75E.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/UI/WBP_PlayerHUD.uasset'
+[2024.05.23-14.08.44:513][510]LogFileHelpers: InternalPromptForCheckoutAndSave took 157 ms (total: 2.32 sec)
+[2024.05.23-14.08.44:515][510]AssetCheck: New page: Asset Save: WBP_PlayerHUD
+[2024.05.23-14.08.44:515][510]LogContentValidation: Display: Validating /Script/UMGEditor.WidgetBlueprint /Game/UI/WBP_PlayerHUD.WBP_PlayerHUD

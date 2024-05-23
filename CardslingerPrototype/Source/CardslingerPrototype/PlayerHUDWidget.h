@@ -13,5 +13,10 @@ UCLASS()
 class CARDSLINGERPROTOTYPE_API UPlayerHUDWidget : public UUserWidget
 {
 	GENERATED_BODY()
-	
+
+protected:
+	UPROPERTY(meta=(BindWidget))
+	class UUniformGridPanel* CardPanel;
+
+	virtual void NativeConstruct() override;
 };
