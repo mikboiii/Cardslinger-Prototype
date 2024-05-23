@@ -165,11 +165,6 @@ void ABaseCharacterClass::UseCard(const FInputActionValue& Value)
 	HitTrace(Hit, ShotDirection);
 	//Has shot direction reversed: shot direction originally made for hit events
 	CardHand[Index]->CardEffect(CardDeck, -ShotDirection);
-	FString CardName = FString::Printf(TEXT("Card%d"), Index+1);
-	UE_LOG(LogTemp, Display, TEXT("%s"), *CardName);
-	UProgressBar* CardUI = PlayerHUD->GetClass()->FindPropertyByName(*CardName)->ContainerPtrToValuePtr<UProgressBar>(PlayerHUD);
-
-	CardUI->SetPercent(0.0f);
 	//Sets the array index to nullptr to prevent array resizing
 	CardHand[Index] = nullptr;
 	//Creates a timer delegate to enable the use of parameters in timer function

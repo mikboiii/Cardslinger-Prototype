@@ -5,9 +5,9 @@
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
 #include "Containers/UnrealString.h"
+#include "Engine/Texture2D.h"
+#include "Styling/SlateTypes.h"
 #include "BaseCard.generated.h"
-
-class FString;
 
 UCLASS()
 class CARDSLINGERPROTOTYPE_API ABaseCard : public AActor
@@ -26,9 +26,13 @@ public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
+	UPROPERTY(EditAnywhere)
 	FString CardName;
 
+	UPROPERTY(EditAnywhere)
 	FString CardDescription;
 
+	UPROPERTY(EditDefaultsOnly)
+	FProgressBarStyle CardStyle;
 	virtual void CardEffect(class ACardDeck* CardDeck, FVector Direction);
 };
