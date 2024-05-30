@@ -32,7 +32,8 @@ public:
 	UPROPERTY(EditAnywhere)
 	FString CardDescription;
 
-	UPROPERTY(EditDefaultsOnly)
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Instanced)
 	UUserWidget* CardWidget;
+
 	virtual void CardEffect(class ACardDeck* CardDeck, FVector Direction);
 };

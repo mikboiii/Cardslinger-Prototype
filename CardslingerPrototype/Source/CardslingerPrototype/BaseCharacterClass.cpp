@@ -25,6 +25,7 @@
 #include "CardslingerPlayerController.h"
 #include "Components/ProgressBar.h"
 #include "Blueprint/UserWidget.h"
+#include "PlayerHUDWidget.h"
 
 
 // Sets default values
@@ -289,9 +290,10 @@ void ABaseCharacterClass::ReplenishHandFunction()
 	for(int i = 0; i < CardHand.Num(); i++)
 	{
 		CardHand[i] = CardDeck->DrawCard();
-		UProgressBar* CardUI = PlayerHUD->GetClass()->FindPropertyByName(TEXT("Card1"))->ContainerPtrToValuePtr<UProgressBar>(PlayerHUD);
-
-		CardUI->SetPercent(100.0f);
+		if(CardHand[i]->CardWidget != nullptr)
+		{
+			Cast<UPlayerHUDWidget>(PlayerHUD)->SetCard(i, CardHand[i]->CardWidget);
+		}
 	}
 }
 
