@@ -33,6 +33,6 @@ public:
 	FString CardDescription;
 
 	UPROPERTY(EditDefaultsOnly)
-	FProgressBarStyle CardStyle;
+	UUserWidget* CardWidget;
 	virtual void CardEffect(class ACardDeck* CardDeck, FVector Direction);
 };

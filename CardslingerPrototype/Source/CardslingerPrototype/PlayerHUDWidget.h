@@ -19,4 +19,11 @@ protected:
 	class UUniformGridPanel* CardPanel;
 
 	virtual void NativeConstruct() override;
+	TArray<class UProgressBar*> Cards;
+
+	UPROPERTY(EditAnywhere)
+	class UUserWidget* CardTemplate;
+
+public:
+	void SetCard(int32 Index, class UUserWidget* NewCard);
 };

@@ -6,14 +6,13 @@
 
 #include "UObject/GeneratedCppIncludes.h"
 #include "CardslingerPrototype/BaseCard.h"
-#include "Styling/SlateTypes.h"
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCodeBaseCard() {}
 // Cross Module References
 	CARDSLINGERPROTOTYPE_API UClass* Z_Construct_UClass_ABaseCard();
 	CARDSLINGERPROTOTYPE_API UClass* Z_Construct_UClass_ABaseCard_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_AActor();
-	SLATECORE_API UScriptStruct* Z_Construct_UScriptStruct_FProgressBarStyle();
+	UMG_API UClass* Z_Construct_UClass_UUserWidget_NoRegister();
 	UPackage* Z_Construct_UPackage__Script_CardslingerPrototype();
 // End Cross Module References
 	void ABaseCard::StaticRegisterNativesABaseCard()
@@ -39,9 +38,9 @@ void EmptyLinkFunctionForGeneratedCodeBaseCard() {}
 #endif
 		static const UECodeGen_Private::FStrPropertyParams NewProp_CardDescription;
 #if WITH_METADATA
-		static const UECodeGen_Private::FMetaDataPairParam NewProp_CardStyle_MetaData[];
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_CardWidget_MetaData[];
 #endif
-		static const UECodeGen_Private::FStructPropertyParams NewProp_CardStyle;
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_CardWidget;
 		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UECodeGen_Private::FClassParams ClassParams;
@@ -72,16 +71,17 @@ void EmptyLinkFunctionForGeneratedCodeBaseCard() {}
 #endif
 	const UECodeGen_Private::FStrPropertyParams Z_Construct_UClass_ABaseCard_Statics::NewProp_CardDescription = { "CardDescription", nullptr, (EPropertyFlags)0x0010000000000001, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ABaseCard, CardDescription), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_ABaseCard_Statics::NewProp_CardDescription_MetaData), Z_Construct_UClass_ABaseCard_Statics::NewProp_CardDescription_MetaData) };
 #if WITH_METADATA
-	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABaseCard_Statics::NewProp_CardStyle_MetaData[] = {
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABaseCard_Statics::NewProp_CardWidget_MetaData[] = {
 		{ "Category", "BaseCard" },
+		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "BaseCard.h" },
 	};
 #endif
-	const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_ABaseCard_Statics::NewProp_CardStyle = { "CardStyle", nullptr, (EPropertyFlags)0x0010000000010001, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ABaseCard, CardStyle), Z_Construct_UScriptStruct_FProgressBarStyle, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_ABaseCard_Statics::NewProp_CardStyle_MetaData), Z_Construct_UClass_ABaseCard_Statics::NewProp_CardStyle_MetaData) }; // 2988023842
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ABaseCard_Statics::NewProp_CardWidget = { "CardWidget", nullptr, (EPropertyFlags)0x0010000000090009, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ABaseCard, CardWidget), Z_Construct_UClass_UUserWidget_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_ABaseCard_Statics::NewProp_CardWidget_MetaData), Z_Construct_UClass_ABaseCard_Statics::NewProp_CardWidget_MetaData) };
 	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ABaseCard_Statics::PropPointers[] = {
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABaseCard_Statics::NewProp_CardName,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABaseCard_Statics::NewProp_CardDescription,
-		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABaseCard_Statics::NewProp_CardStyle,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABaseCard_Statics::NewProp_CardWidget,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_ABaseCard_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<ABaseCard>::IsAbstract,
@@ -121,9 +121,9 @@ void EmptyLinkFunctionForGeneratedCodeBaseCard() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_BaseCard_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_ABaseCard, ABaseCard::StaticClass, TEXT("ABaseCard"), &Z_Registration_Info_UClass_ABaseCard, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ABaseCard), 1424331280U) },
+		{ Z_Construct_UClass_ABaseCard, ABaseCard::StaticClass, TEXT("ABaseCard"), &Z_Registration_Info_UClass_ABaseCard, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ABaseCard), 2726104803U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_BaseCard_h_228016261(TEXT("/Script/CardslingerPrototype"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_BaseCard_h_2117296058(TEXT("/Script/CardslingerPrototype"),
 		Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_BaseCard_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_BaseCard_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);
