@@ -307,4 +307,10 @@ void ABaseCharacterClass::Heal(bool IsPercentile, float HealingValue)
 {
 	if(IsPercentile) Health += MaxHealth * HealingValue;
 	else Health += HealingValue;
+	if(Health > MaxHealth) Health = MaxHealth;
+}
+
+float ABaseCharacterClass::GetHealthPercent() const
+{
+	return Health/MaxHealth;
 }
