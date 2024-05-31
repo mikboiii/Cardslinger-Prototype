@@ -201,6 +201,7 @@ void ABaseCharacterClass::Shoot()
 			//DrawDebugSphere(GetWorld(), Hit.ImpactPoint, 100.0f, 16, FColor::Red, true, 10000.0f);
 			AActor* HitActor = Hit.GetActor();
 			if(HitActor == nullptr) return;
+			ShotDirection = CardDeck->GetActorLocation() - Hit.ImpactPoint;
 			//HitActor->TakeDamage(Damage, DamageEvent, GetController(), this);
 		}
 		//launch basic projectile
@@ -219,8 +220,9 @@ bool ABaseCharacterClass::HitTrace(FHitResult& Hit, FVector& ShotDirection)
 	//AController* OwnerController = GetOwnerController();
 	//if(OwnerController == nullptr) return false;
 	GetController()->GetPlayerViewPoint(ViewLocation, ViewRotation);
-	ShotDirection = -ViewRotation.Vector();
+	//ShotDirection = -ViewRotation.Vector();
 	FVector End = ViewLocation + ViewRotation.Vector() * MaxRange;
+	ShotDirection = -ViewRotation.Vector();
 	FCollisionQueryParams Params;
 	Params.AddIgnoredActor(this);
 	Params.AddIgnoredActor(GetOwner());
