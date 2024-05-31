@@ -282,6 +282,7 @@ void ABaseCharacterClass::DrawCardTimerFunction(int CardIndex)
 	else
 	{
 		CardHand[CardIndex] = CardDeck->DrawCard();
+		Cast<UPlayerHUDWidget>(PlayerHUD)->SetCard(CardIndex, CardHand[CardIndex]->CardWidget);
 	}
 }
 
