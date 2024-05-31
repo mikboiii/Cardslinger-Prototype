@@ -302,3 +302,9 @@ bool ABaseCharacterClass::IsDead() const
 {
 	return Health <= 0.0f;
 }
+
+void ABaseCharacterClass::Heal(bool IsPercentile, float HealingValue)
+{
+	if(IsPercentile) Health += MaxHealth * HealingValue;
+	else Health += HealingValue;
+}

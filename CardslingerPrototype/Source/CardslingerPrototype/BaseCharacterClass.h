@@ -61,6 +61,8 @@ public:
 	UFUNCTION(BlueprintPure)
 	bool IsDead() const;
 
+	void Heal(bool IsPercentile, float HealingAmount);
+
 private:
 
 	UPROPERTY(EditAnywhere)
