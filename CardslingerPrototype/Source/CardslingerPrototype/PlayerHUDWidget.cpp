@@ -18,7 +18,24 @@ void UPlayerHUDWidget::NativeConstruct()
 void UPlayerHUDWidget::SetCard(int32 Index, UUserWidget* NewCard)
 {
     UE_LOG(LogTemp, Display, TEXT("New card set in UI"));
-    UUniformGridSlot* CardOnPanel = Cast<UUniformGridSlot>(CardPanel->AddChild(NewCard));
-    CardOnPanel->SetColumn(Index);
-    CardOnPanel->SetRow(0);
+    UUniformGridSlot* CardOnPanel = CardPanel->AddChildToUniformGrid(NewCard, 0, Index);
+    if(CardOnPanel) UE_LOG(LogTemp, Display, TEXT("New card at index %d"), CardOnPanel->GetColumn());
+}
+
+void UPlayerHUDWidget::RemoveCard(int32 Index)
+{
+    TArray<UWidget*> AllChildren = CardPanel->GetAllChildren();
+    for(int32 i = AllChildren.Num() - 1; i >= 0; i--)
+    {
+        if(AllChildren.IsValidIndex(i))
+        {
+            UUniformGridSlot* CardOnPanel = Cast<UUniformGridSlot>(CardPanel->GetChildAt(i)->Slot);
+            if(CardOnPanel && CardOnPanel->GetColumn() == Index)
+            {
+                //UE_LOG(LogTemp, Display, TEXT("CardPanel index is %d"), i);
+                UWidget* CardToRemove = CardPanel->GetChildAt(i);
+                CardPanel->RemoveChild(CardToRemove);
+            }
+        }
+    }
 }

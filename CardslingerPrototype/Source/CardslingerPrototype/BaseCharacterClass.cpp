@@ -160,6 +160,7 @@ void ABaseCharacterClass::UseCard(const FInputActionValue& Value)
 	int Index = FMath::Floor(Value.Get<float>())-1;
 	if(!CardHand.IsValidIndex(Index)) return;
 	if(CardHand[Index] == nullptr) return;
+	Cast<UPlayerHUDWidget>(PlayerHUD)->RemoveCard(Index);
 	//hit trace maintained in case specific card effects require hitscan
 	FVector ShotDirection;
 	FHitResult Hit;
