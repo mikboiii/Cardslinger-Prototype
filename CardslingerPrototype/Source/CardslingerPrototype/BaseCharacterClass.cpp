@@ -164,7 +164,7 @@ void ABaseCharacterClass::UseCard(const FInputActionValue& Value)
 	//hit trace maintained in case specific card effects require hitscan
 	FVector ShotDirection;
 	FHitResult Hit;
-	HitTrace(Hit, ShotDirection);
+	if(HitTrace(Hit, ShotDirection)) ShotDirection = CardDeck->GetActorLocation() - Hit.ImpactPoint;
 	//Has shot direction reversed: shot direction originally made for hit events
 	CardHand[Index]->CardEffect(CardDeck, -ShotDirection);
 	//Sets the array index to nullptr to prevent array resizing
@@ -179,7 +179,6 @@ void ABaseCharacterClass::UseCard(const FInputActionValue& Value)
 	//if deck is empty, call function to replenish from discard pile and queue hand replenishing
 	if(CardDeck->IsDeckEmpty() && IsHandEmpty())
 	{
-		CardDeck->ShuffleDiscard();
 		GetWorldTimerManager().SetTimer(DrawCardTimeManager, this, &ABaseCharacterClass::ReplenishHandFunction, CardCooldownDelay);
 	}
 }
@@ -291,6 +290,7 @@ void ABaseCharacterClass::DrawCardTimerFunction(int CardIndex)
 ///@brief Draws a card for each index in the hand
 void ABaseCharacterClass::ReplenishHandFunction()
 {
+	if(CardDeck->IsDeckEmpty()) CardDeck->ShuffleDiscard();
 	for(int i = 0; i < CardHand.Num(); i++)
 	{
 		CardHand[i] = CardDeck->DrawCard();

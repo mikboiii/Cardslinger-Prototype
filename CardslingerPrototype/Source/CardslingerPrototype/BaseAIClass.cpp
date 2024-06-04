@@ -57,8 +57,10 @@ float ABaseAIClass::TakeDamage(float DamageAmount, struct FDamageEvent const &Da
         {
             GameMode->PawnKilled(this);
         }
+		GetCapsuleComponent()->SetCollisionEnabled(ECollisionEnabled::NoCollision);
+		GetMesh()->SetCollisionEnabled(ECollisionEnabled::NoCollision);
         DetachFromControllerPendingDestroy();
-        GetCapsuleComponent()->SetCollisionEnabled(ECollisionEnabled::NoCollision);
+        
     }
     return DamageToApply;
 }
