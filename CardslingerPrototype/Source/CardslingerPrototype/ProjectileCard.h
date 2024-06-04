@@ -41,6 +41,9 @@ protected:
 	UPROPERTY(Instanced, EditAnywhere)
 	class UNiagaraComponent* CardTrail;
 
+	UPROPERTY(EditAnywhere)
+	class UNiagaraSystem* CardImpact;
+
 	UPROPERTY(Instanced, EditAnywhere)
 	class USkeletalMeshComponent* CardSkeletalMesh;
 	UPROPERTY(EditAnywhere)

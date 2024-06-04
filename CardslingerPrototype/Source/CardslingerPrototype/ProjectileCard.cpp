@@ -4,9 +4,11 @@
 #include "ProjectileCard.h"
 #include "Kismet/GameplayStatics.h"
 #include "Components/BoxComponent.h"
+#include "Kismet/KismetMathLibrary.h"
 #include "Components/SkeletalMeshComponent.h"
 #include "Engine/DamageEvents.h"
 #include "NiagaraComponent.h"
+#include "NiagaraFunctionLibrary.h"
 #include "DrawDebugHelpers.h"
 #include "TimerManager.h"
 
@@ -63,6 +65,9 @@ void AProjectileCard::OnHit(UPrimitiveComponent* HitComponent, AActor* OtherActo
 			OtherActor->TakeDamage(CardDamage, DamageEvent, UGameplayStatics::GetPlayerPawn(GetWorld(), 0)->GetController(), this);
 		}
     }
-
+	if(CardImpact)
+	{
+		UNiagaraFunctionLibrary::SpawnSystemAtLocation(GetWorld(), CardImpact, Hit.ImpactPoint, GetActorForwardVector().Rotation() + FRotator(0,180,0), FVector::One(), true, true, ENCPoolMethod::None, true);
+	}
     Destroy();
 }
