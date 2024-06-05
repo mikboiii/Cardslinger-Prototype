@@ -1288,3 +1288,664 @@ LogConfig: Set CVar [[r.Shadow.DetectVertexShaderLayerAtRuntime:1]]
 [2024.06.05-18.49.40:798][830]LogContentValidation: Display: Validating /Script/UMGEditor.WidgetBlueprint /Game/UI/WBP_MainMenu.WBP_MainMenu
 [2024.06.05-18.50.17:676][ 80]BlueprintLog: New page: Compile WBP_MainMenu
 [2024.06.05-18.50.17:704][ 80]LogUObjectHash: Compacting FUObjectHashTables data took   2.43ms
+[2024.06.05-18.51.00:517][592]LogSlateStyle: Warning: Missing Resource from 'NiagaraEditorStyle' Style: 'Unable to find Color 'NiagaraEditor.AssetColors.DataChannel'.'
+[2024.06.05-18.51.06:864][951]LogContentBrowser: Deferred new asset folder creation: NewFolder
+[2024.06.05-18.51.06:886][951]LogContentBrowser: Creating deferred item: NewFolder
+[2024.06.05-18.51.06:901][952]LogContentBrowser: Renaming the item being created (Deferred Item: NewFolder).
+[2024.06.05-18.51.10:251][148]LogD3D12RHI: OnlineHeap RollOver Detected. Increase the heap size to prevent creation of additional heaps
+[2024.06.05-18.51.12:365][275]LogContentBrowser: Attempting asset rename: NewFolder -> Gamemodes
+[2024.06.05-18.51.12:366][275]LogContentBrowser: End creating deferred item NewFolder
+[2024.06.05-18.51.14:095][373]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.06.05-18.51.14:270][373]LogUObjectHash: Compacting FUObjectHashTables data took   2.98ms
+[2024.06.05-18.51.14:283][373]LogSavePackage: Moving output files for package: /Game/Levels/MainMenu
+[2024.06.05-18.51.14:284][373]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/MainMenuFD98646C45E917EA0CF611B861685A31.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/Levels/MainMenu.umap'
+[2024.06.05-18.51.14:301][373]LogFileHelpers: Saving map 'MainMenu' took 0.100
+[2024.06.05-18.51.14:310][373]LogFileHelpers: InternalPromptForCheckoutAndSave took 215 ms (total: 4.09 sec)
+[2024.06.05-18.51.14:312][373]AssetCheck: New page: Asset Save: MainMenu
+[2024.06.05-18.51.14:312][373]LogContentValidation: Display: Validating /Script/Engine.World /Game/Levels/MainMenu.MainMenu
+[2024.06.05-18.51.20:113][497]LogSlate: Warning: Unable to rasterize '../../../Engine/Content/Editor/Slate/Starship/AssetIcons/SpecularProfile_64.svg'. File could not be found
+[2024.06.05-18.51.35:107][171]LogSlate: Window 'Pick Parent Class' being destroyed
+[2024.06.05-18.51.35:148][171]LogContentBrowser: Deferred new asset file creation: NewBlueprint
+[2024.06.05-18.51.35:157][171]LogContentBrowser: Creating deferred item: NewBlueprint
+[2024.06.05-18.51.35:195][173]LogContentBrowser: Renaming the item being created (Deferred Item: NewBlueprint).
+[2024.06.05-18.51.38:082][340]LogContentBrowser: Attempting asset rename: NewBlueprint -> MainMenu
+[2024.06.05-18.51.38:092][340]LogContentBrowser: End creating deferred item NewBlueprint
+[2024.06.05-18.51.38:413][358]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/Gamemodes/MainMenu.MainMenu
+[2024.06.05-18.51.38:416][358]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.06.05-18.51.38:416][358]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2024.06.05-18.51.38:784][358]LogViewport: Scene viewport resized to 1124x1010, mode Windowed.
+[2024.06.05-18.51.39:853][415]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.06.05-18.51.39:983][415]LogSavePackage: Moving output files for package: /Game/Gamemodes/MainMenu
+[2024.06.05-18.51.39:983][415]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/MainMenu6414471242A3C63C5B405C99DE8C62CD.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/Gamemodes/MainMenu.uasset'
+[2024.06.05-18.51.39:996][415]LogFileHelpers: InternalPromptForCheckoutAndSave took 142 ms (total: 4.23 sec)
+[2024.06.05-18.51.39:996][415]AssetCheck: New page: Asset Save: MainMenu
+[2024.06.05-18.51.39:996][415]LogContentValidation: Display: Validating /Script/Engine.Blueprint /Game/Gamemodes/MainMenu.MainMenu
+[2024.06.05-18.52.09:037][696]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.06.05-18.52.09:168][696]LogSavePackage: Moving output files for package: /Game/Gamemodes/MainMenu
+[2024.06.05-18.52.09:169][696]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/MainMenu34B1C534436BB3C684640D86CFD73BBE.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/Gamemodes/MainMenu.uasset'
+[2024.06.05-18.52.09:183][696]LogFileHelpers: InternalPromptForCheckoutAndSave took 145 ms (total: 4.38 sec)
+[2024.06.05-18.52.09:185][696]AssetCheck: New page: Asset Save: MainMenu
+[2024.06.05-18.52.09:186][696]LogContentValidation: Display: Validating /Script/Engine.Blueprint /Game/Gamemodes/MainMenu.MainMenu
+[2024.06.05-18.52.11:825][827]LogEditorViewport: Clicking Background
+[2024.06.05-18.52.13:210][894]LogSlate: Took 0.001049 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
+[2024.06.05-18.52.13:260][895]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.06.05-18.52.23:135][412]LogEditorViewport: Clicking Background
+[2024.06.05-18.52.23:572][437]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.06.05-18.52.23:747][437]LogUObjectHash: Compacting FUObjectHashTables data took   2.42ms
+[2024.06.05-18.52.23:755][437]LogSavePackage: Moving output files for package: /Game/Levels/MainMenu
+[2024.06.05-18.52.23:756][437]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/MainMenu15F684FF476A59BEC1B70B985B365B30.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/Levels/MainMenu.umap'
+[2024.06.05-18.52.23:771][437]LogFileHelpers: Saving map 'MainMenu' took 0.097
+[2024.06.05-18.52.23:785][437]LogFileHelpers: InternalPromptForCheckoutAndSave took 212 ms (total: 4.59 sec)
+[2024.06.05-18.52.23:787][437]AssetCheck: New page: Asset Save: MainMenu
+[2024.06.05-18.52.23:787][437]LogContentValidation: Display: Validating /Script/Engine.World /Game/Levels/MainMenu.MainMenu
+[2024.06.05-18.52.29:112][522]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.06.05-18.52.29:122][522]LogActor: Warning: BP_ExplosionProjectileCard_C /Engine/Transient.World_10:PersistentLevel.BP_ExplosionProjectileCard_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2024.06.05-18.52.29:181][523]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.06.05-18.52.29:189][523]LogActor: Warning: BP_ProjectileCard_C /Engine/Transient.World_11:PersistentLevel.BP_ProjectileCard_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2024.06.05-18.52.29:586][544]LogAssetEditorSubsystem: Opening Asset editor for LevelScriptBlueprint /Game/Levels/MainMenu.MainMenu:PersistentLevel.MainMenu
+[2024.06.05-18.52.29:587][544]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.06.05-18.52.29:587][544]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2024.06.05-18.52.30:875][605]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.06.05-18.52.31:067][605]LogUObjectHash: Compacting FUObjectHashTables data took   1.43ms
+[2024.06.05-18.52.31:079][605]LogSavePackage: Moving output files for package: /Game/Levels/MainMenu
+[2024.06.05-18.52.31:080][605]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/MainMenu76946A35496EE9DF4D5791857C9CB5CA.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/Levels/MainMenu.umap'
+[2024.06.05-18.52.31:096][605]LogFileHelpers: Saving map 'MainMenu' took 0.095
+[2024.06.05-18.52.31:107][605]LogFileHelpers: InternalPromptForCheckoutAndSave took 231 ms (total: 4.82 sec)
+[2024.06.05-18.52.31:109][605]AssetCheck: New page: Asset Save: MainMenu
+[2024.06.05-18.52.31:109][605]LogContentValidation: Display: Validating /Script/Engine.World /Game/Levels/MainMenu.MainMenu
+[2024.06.05-18.52.39:777][979]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.06.05-18.52.39:984][979]LogUObjectHash: Compacting FUObjectHashTables data took   1.01ms
+[2024.06.05-18.52.39:996][979]LogSavePackage: Moving output files for package: /Game/Levels/MainMenu
+[2024.06.05-18.52.39:998][979]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/MainMenuF3F41D264C50B1CA8EA50B9F8992624C.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/Levels/MainMenu.umap'
+[2024.06.05-18.52.40:015][979]LogFileHelpers: Saving map 'MainMenu' took 0.100
+[2024.06.05-18.52.40:028][979]LogFileHelpers: InternalPromptForCheckoutAndSave took 250 ms (total: 5.07 sec)
+[2024.06.05-18.52.40:029][979]AssetCheck: New page: Asset Save: MainMenu
+[2024.06.05-18.52.40:029][979]LogContentValidation: Display: Validating /Script/Engine.World /Game/Levels/MainMenu.MainMenu
+[2024.06.05-18.52.45:155][184]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.06.05-18.52.45:344][184]LogUObjectHash: Compacting FUObjectHashTables data took   0.87ms
+[2024.06.05-18.52.45:356][184]LogSavePackage: Moving output files for package: /Game/Levels/MainMenu
+[2024.06.05-18.52.45:358][184]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/MainMenu7FDA5E1B4E31671D748F8F826D863A59.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/Levels/MainMenu.umap'
+[2024.06.05-18.52.45:374][184]LogFileHelpers: Saving map 'MainMenu' took 0.091
+[2024.06.05-18.52.45:384][184]LogFileHelpers: InternalPromptForCheckoutAndSave took 229 ms (total: 5.30 sec)
+[2024.06.05-18.52.45:386][184]AssetCheck: New page: Asset Save: MainMenu
+[2024.06.05-18.52.45:386][184]LogContentValidation: Display: Validating /Script/Engine.World /Game/Levels/MainMenu.MainMenu
+[2024.06.05-18.52.46:425][244]BlueprintLog: New page: Compile MainMenu
+[2024.06.05-18.52.46:454][244]LogUObjectHash: Compacting FUObjectHashTables data took   1.86ms
+[2024.06.05-18.52.46:748][259]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.06.05-18.52.46:934][259]LogUObjectHash: Compacting FUObjectHashTables data took   1.88ms
+[2024.06.05-18.52.46:949][259]LogSavePackage: Moving output files for package: /Game/Levels/MainMenu
+[2024.06.05-18.52.46:950][259]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/MainMenuF1B75B2C4775C6C659270B8F0C6DD7EE.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/Levels/MainMenu.umap'
+[2024.06.05-18.52.46:966][259]LogFileHelpers: Saving map 'MainMenu' took 0.101
+[2024.06.05-18.52.46:977][259]LogFileHelpers: InternalPromptForCheckoutAndSave took 229 ms (total: 5.53 sec)
+[2024.06.05-18.52.46:979][259]AssetCheck: New page: Asset Save: MainMenu
+[2024.06.05-18.52.46:979][259]LogContentValidation: Display: Validating /Script/Engine.World /Game/Levels/MainMenu.MainMenu
+[2024.06.05-18.52.50:735][425]LogDebuggerCommands: Repeating last play command: Selected Viewport
+[2024.06.05-18.52.50:754][425]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2024.06.05-18.52.50:755][425]PIE: New page: PIE session: MainMenu (5 Jun 2024, 20:52:50)
+[2024.06.05-18.52.50:775][425]LogOnline: OSS: Created online subsystem instance for: NULL
+[2024.06.05-18.52.50:777][425]LogOnline: OSS: TryLoadSubsystemAndSetDefault: Loaded subsystem for type [NULL]
+[2024.06.05-18.52.50:778][425]LogPlayLevel: Creating play world package: /Game/Levels/UEDPIE_0_MainMenu
+[2024.06.05-18.52.50:780][425]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002463s)
+[2024.06.05-18.52.50:781][425]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Levels/MainMenu.MainMenu to /Game/Levels/UEDPIE_0_MainMenu.MainMenu (0.002717s)
+[2024.06.05-18.52.50:797][425]LogUObjectHash: Compacting FUObjectHashTables data took   2.53ms
+[2024.06.05-18.52.50:802][425]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.06.05-18.52.50:805][425]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2024.06.05-18.52.50:806][425]LogAIModule: Creating AISystem for world MainMenu
+[2024.06.05-18.52.50:812][425]LogPlayLevel: PIE: World Init took: (0.012343s)
+[2024.06.05-18.52.50:813][425]LogAudio: Display: Creating Audio Device:                 Id: 2, Scope: Unique, Realtime: True
+[2024.06.05-18.52.50:814][425]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2024.06.05-18.52.50:814][425]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2024.06.05-18.52.50:814][425]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2024.06.05-18.52.50:814][425]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2024.06.05-18.52.50:814][425]LogAudioMixer: Display: 	Number of buffers to queue:			  1
+[2024.06.05-18.52.50:814][425]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2024.06.05-18.52.50:815][425]LogAudioMixer: Display: 	Number of Async Source Workers:		  4
+[2024.06.05-18.52.50:815][425]LogAudio: Display: AudioDevice MaxSources: 32
+[2024.06.05-18.52.50:816][425]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2024.06.05-18.52.50:816][425]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2024.06.05-18.52.50:816][425]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2024.06.05-18.52.50:822][425]LogAudioMixer: Display: Initializing audio mixer using platform API: 'XAudio2'
+[2024.06.05-18.52.50:901][425]LogAudioMixer: Display: Using Audio Hardware Device Speakers (Realtek(R) Audio)
+[2024.06.05-18.52.50:904][425]LogAudioMixer: Display: Initializing Sound Submixes...
+[2024.06.05-18.52.50:904][425]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2024.06.05-18.52.50:905][425]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2024.06.05-18.52.50:917][425]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called. InstanceID=2
+[2024.06.05-18.52.50:917][425]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048, InstanceID=2
+[2024.06.05-18.52.50:920][425]LogInit: FAudioDevice initialized with ID 2.
+[2024.06.05-18.52.50:920][425]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=2
+[2024.06.05-18.52.50:920][425]LogAudio: Display: Audio Device (ID: 2) registered with world 'MainMenu'.
+[2024.06.05-18.52.50:920][425]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time. InstanceID=2
+[2024.06.05-18.52.50:920][425]LogAudioMixer: Initializing Audio Bus Subsystem for audio device with ID 2
+[2024.06.05-18.52.50:945][425]LogLoad: Game class is 'MainMenu_C'
+[2024.06.05-18.52.50:945][425]LogWorld: Bringing World /Game/Levels/UEDPIE_0_MainMenu.MainMenu up for play (max tick rate 60) at 2024.06.05-19.52.50
+[2024.06.05-18.52.50:947][425]LogWorld: Bringing up level for play took: 0.001745
+[2024.06.05-18.52.50:952][425]LogOnline: OSS: Created online subsystem instance for: :Context_11
+[2024.06.05-18.52.50:991][425]PIE: Server logged in
+[2024.06.05-18.52.50:992][425]PIE: Play in editor total start time 0.241 seconds.
+[2024.06.05-18.52.54:245][584]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2024.06.05-18.52.54:245][584]LogWorld: BeginTearingDown for /Game/Levels/UEDPIE_0_MainMenu
+[2024.06.05-18.52.54:246][584]LogWorld: UWorld::CleanupWorld for MainMenu, bSessionEnded=true, bCleanupResources=true
+[2024.06.05-18.52.54:247][584]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.06.05-18.52.54:252][584]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2024.06.05-18.52.54:258][584]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.06.05-18.52.54:274][584]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2024.06.05-18.52.54:274][584]LogAudioMixer: Deinitializing Audio Bus Subsystem for audio device with ID 2
+[2024.06.05-18.52.54:275][584]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=2
+[2024.06.05-18.52.54:277][584]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=2
+[2024.06.05-18.52.54:285][584]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2024.06.05-18.52.54:294][584]LogUObjectHash: Compacting FUObjectHashTables data took   1.65ms
+[2024.06.05-18.52.54:322][585]LogPlayLevel: Display: Destroying online subsystem :Context_11
+[2024.06.05-18.54.39:875][ 87]LogWorld: UWorld::CleanupWorld for World_12, bSessionEnded=true, bCleanupResources=true
+[2024.06.05-18.54.39:875][ 87]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.06.05-18.56.02:787][ 32]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.06.05-18.56.02:919][ 32]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/UI/WBP_MainMenu" FILE="../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/UI/WBP_MainMenu.uasset" SILENT=true
+[2024.06.05-18.56.02:932][ 32]LogSavePackage: Moving output files for package: /Game/UI/WBP_MainMenu
+[2024.06.05-18.56.02:934][ 32]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/WBP_MainMenu0BA210C14CD5FCDFDE7BDEB38B3265FB.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/UI/WBP_MainMenu.uasset'
+[2024.06.05-18.56.02:945][ 32]LogFileHelpers: InternalPromptForCheckoutAndSave took 157 ms (total: 5.69 sec)
+[2024.06.05-18.56.02:947][ 32]AssetCheck: New page: Asset Save: WBP_MainMenu
+[2024.06.05-18.56.02:947][ 32]LogContentValidation: Display: Validating /Script/UMGEditor.WidgetBlueprint /Game/UI/WBP_MainMenu.WBP_MainMenu
+[2024.06.05-18.56.19:584][346]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.06.05-18.56.19:706][346]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/UI/WBP_MainMenu" FILE="../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/UI/WBP_MainMenu.uasset" SILENT=true
+[2024.06.05-18.56.19:726][346]LogSavePackage: Moving output files for package: /Game/UI/WBP_MainMenu
+[2024.06.05-18.56.19:727][346]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/WBP_MainMenu200AC94D4B5E9D08CAAA35BCDEED0B11.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/UI/WBP_MainMenu.uasset'
+[2024.06.05-18.56.19:739][346]LogFileHelpers: InternalPromptForCheckoutAndSave took 155 ms (total: 5.85 sec)
+[2024.06.05-18.56.19:741][346]AssetCheck: New page: Asset Save: WBP_MainMenu
+[2024.06.05-18.56.19:741][346]LogContentValidation: Display: Validating /Script/UMGEditor.WidgetBlueprint /Game/UI/WBP_MainMenu.WBP_MainMenu
+[2024.06.05-18.56.23:432][410]BlueprintLog: New page: Compile WBP_MainMenu
+[2024.06.05-18.56.23:470][410]LogUObjectHash: Compacting FUObjectHashTables data took   2.70ms
+[2024.06.05-18.56.32:693][857]LogDebuggerCommands: Repeating last play command: Selected Viewport
+[2024.06.05-18.56.32:710][857]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2024.06.05-18.56.32:710][857]PIE: New page: PIE session: MainMenu (5 Jun 2024, 20:56:32)
+[2024.06.05-18.56.32:710][857]LogPlayLevel: Creating play world package: /Game/Levels/UEDPIE_0_MainMenu
+[2024.06.05-18.56.32:711][857]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001255s)
+[2024.06.05-18.56.32:711][857]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Levels/MainMenu.MainMenu to /Game/Levels/UEDPIE_0_MainMenu.MainMenu (0.001342s)
+[2024.06.05-18.56.32:730][857]LogUObjectHash: Compacting FUObjectHashTables data took   1.72ms
+[2024.06.05-18.56.32:733][857]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.06.05-18.56.32:733][857]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2024.06.05-18.56.32:733][857]LogAIModule: Creating AISystem for world MainMenu
+[2024.06.05-18.56.32:734][857]LogPlayLevel: PIE: World Init took: (0.002281s)
+[2024.06.05-18.56.32:734][857]LogAudio: Display: Creating Audio Device:                 Id: 3, Scope: Unique, Realtime: True
+[2024.06.05-18.56.32:734][857]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2024.06.05-18.56.32:734][857]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2024.06.05-18.56.32:734][857]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2024.06.05-18.56.32:734][857]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2024.06.05-18.56.32:734][857]LogAudioMixer: Display: 	Number of buffers to queue:			  1
+[2024.06.05-18.56.32:734][857]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2024.06.05-18.56.32:734][857]LogAudioMixer: Display: 	Number of Async Source Workers:		  4
+[2024.06.05-18.56.32:734][857]LogAudio: Display: AudioDevice MaxSources: 32
+[2024.06.05-18.56.32:734][857]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2024.06.05-18.56.32:734][857]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2024.06.05-18.56.32:734][857]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2024.06.05-18.56.32:737][857]LogAudioMixer: Display: Initializing audio mixer using platform API: 'XAudio2'
+[2024.06.05-18.56.32:799][857]LogAudioMixer: Display: Using Audio Hardware Device Speakers (Realtek(R) Audio)
+[2024.06.05-18.56.32:799][857]LogAudioMixer: Display: Initializing Sound Submixes...
+[2024.06.05-18.56.32:799][857]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2024.06.05-18.56.32:799][857]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2024.06.05-18.56.32:801][857]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called. InstanceID=3
+[2024.06.05-18.56.32:801][857]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048, InstanceID=3
+[2024.06.05-18.56.32:803][857]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=3
+[2024.06.05-18.56.32:803][857]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time. InstanceID=3
+[2024.06.05-18.56.32:803][857]LogInit: FAudioDevice initialized with ID 3.
+[2024.06.05-18.56.32:803][857]LogAudio: Display: Audio Device (ID: 3) registered with world 'MainMenu'.
+[2024.06.05-18.56.32:803][857]LogAudioMixer: Initializing Audio Bus Subsystem for audio device with ID 3
+[2024.06.05-18.56.32:806][857]LogLoad: Game class is 'MainMenu_C'
+[2024.06.05-18.56.32:806][857]LogWorld: Bringing World /Game/Levels/UEDPIE_0_MainMenu.MainMenu up for play (max tick rate 60) at 2024.06.05-19.56.32
+[2024.06.05-18.56.32:808][857]LogWorld: Bringing up level for play took: 0.000442
+[2024.06.05-18.56.32:811][857]LogOnline: OSS: Created online subsystem instance for: :Context_12
+[2024.06.05-18.56.32:814][857]PIE: Server logged in
+[2024.06.05-18.56.32:815][857]PIE: Play in editor total start time 0.105 seconds.
+[2024.06.05-18.56.35:098][921]LogStreaming: Display: UWorld::AddToWorld: routing Initialize on actors for /Game/UEDPIE_0_EmptyLevel_LevelInstance_1 took (less than) 36.64 ms
+[2024.06.05-18.56.35:125][922]LogNavigation: Warning: NavData RegistrationFailed_DataPendingKill.
+[2024.06.05-18.56.42:619][358]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2024.06.05-18.56.42:619][358]LogWorld: BeginTearingDown for /Game/Levels/UEDPIE_0_MainMenu
+[2024.06.05-18.56.42:623][358]LogWorld: UWorld::CleanupWorld for MainMenu, bSessionEnded=true, bCleanupResources=true
+[2024.06.05-18.56.42:624][358]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.06.05-18.56.42:629][358]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2024.06.05-18.56.42:634][358]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.06.05-18.56.42:650][358]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2024.06.05-18.56.42:651][358]LogAudioMixer: Deinitializing Audio Bus Subsystem for audio device with ID 3
+[2024.06.05-18.56.42:651][358]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=3
+[2024.06.05-18.56.42:653][358]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=3
+[2024.06.05-18.56.42:676][358]LogUObjectHash: Compacting FUObjectHashTables data took   1.70ms
+[2024.06.05-18.56.42:749][359]LogPlayLevel: Display: Destroying online subsystem :Context_12
+[2024.06.05-18.56.42:768][359]LogUObjectHash: Compacting FUObjectHashTables data took   1.68ms
+[2024.06.05-18.56.43:334][362]LogSlate: Took 0.001183 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2024.06.05-18.57.16:172][277]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.06.05-18.57.16:322][277]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/UI/WBP_MainMenu" FILE="../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/UI/WBP_MainMenu.uasset" SILENT=true
+[2024.06.05-18.57.16:337][277]LogSavePackage: Moving output files for package: /Game/UI/WBP_MainMenu
+[2024.06.05-18.57.16:339][277]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/WBP_MainMenu73903AAF42D896F701F199A197121DEF.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/UI/WBP_MainMenu.uasset'
+[2024.06.05-18.57.16:351][277]LogFileHelpers: InternalPromptForCheckoutAndSave took 179 ms (total: 6.03 sec)
+[2024.06.05-18.57.16:353][277]AssetCheck: New page: Asset Save: WBP_MainMenu
+[2024.06.05-18.57.16:353][277]LogContentValidation: Display: Validating /Script/UMGEditor.WidgetBlueprint /Game/UI/WBP_MainMenu.WBP_MainMenu
+[2024.06.05-18.57.17:469][342]BlueprintLog: New page: Compile WBP_MainMenu
+[2024.06.05-18.57.17:501][342]LogUObjectHash: Compacting FUObjectHashTables data took   1.97ms
+[2024.06.05-18.57.20:354][504]LogDebuggerCommands: Repeating last play command: Selected Viewport
+[2024.06.05-18.57.20:367][504]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2024.06.05-18.57.20:367][504]PIE: New page: PIE session: MainMenu (5 Jun 2024, 20:57:20)
+[2024.06.05-18.57.20:390][504]LogPlayLevel: Creating play world package: /Game/Levels/UEDPIE_0_MainMenu
+[2024.06.05-18.57.20:391][504]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001470s)
+[2024.06.05-18.57.20:391][504]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Levels/MainMenu.MainMenu to /Game/Levels/UEDPIE_0_MainMenu.MainMenu (0.001531s)
+[2024.06.05-18.57.20:408][504]LogUObjectHash: Compacting FUObjectHashTables data took   1.47ms
+[2024.06.05-18.57.20:411][504]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.06.05-18.57.20:411][504]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2024.06.05-18.57.20:412][504]LogAIModule: Creating AISystem for world MainMenu
+[2024.06.05-18.57.20:412][504]LogPlayLevel: PIE: World Init took: (0.001141s)
+[2024.06.05-18.57.20:412][504]LogAudio: Display: Creating Audio Device:                 Id: 4, Scope: Unique, Realtime: True
+[2024.06.05-18.57.20:412][504]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2024.06.05-18.57.20:412][504]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2024.06.05-18.57.20:412][504]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2024.06.05-18.57.20:412][504]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2024.06.05-18.57.20:412][504]LogAudioMixer: Display: 	Number of buffers to queue:			  1
+[2024.06.05-18.57.20:412][504]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2024.06.05-18.57.20:412][504]LogAudioMixer: Display: 	Number of Async Source Workers:		  4
+[2024.06.05-18.57.20:412][504]LogAudio: Display: AudioDevice MaxSources: 32
+[2024.06.05-18.57.20:413][504]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2024.06.05-18.57.20:413][504]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2024.06.05-18.57.20:413][504]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2024.06.05-18.57.20:415][504]LogAudioMixer: Display: Initializing audio mixer using platform API: 'XAudio2'
+[2024.06.05-18.57.20:478][504]LogAudioMixer: Display: Using Audio Hardware Device Speakers (Realtek(R) Audio)
+[2024.06.05-18.57.20:478][504]LogAudioMixer: Display: Initializing Sound Submixes...
+[2024.06.05-18.57.20:478][504]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2024.06.05-18.57.20:478][504]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2024.06.05-18.57.20:480][504]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called. InstanceID=4
+[2024.06.05-18.57.20:480][504]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048, InstanceID=4
+[2024.06.05-18.57.20:482][504]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=4
+[2024.06.05-18.57.20:482][504]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time. InstanceID=4
+[2024.06.05-18.57.20:482][504]LogInit: FAudioDevice initialized with ID 4.
+[2024.06.05-18.57.20:482][504]LogAudio: Display: Audio Device (ID: 4) registered with world 'MainMenu'.
+[2024.06.05-18.57.20:482][504]LogAudioMixer: Initializing Audio Bus Subsystem for audio device with ID 4
+[2024.06.05-18.57.20:485][504]LogLoad: Game class is 'MainMenu_C'
+[2024.06.05-18.57.20:485][504]LogWorld: Bringing World /Game/Levels/UEDPIE_0_MainMenu.MainMenu up for play (max tick rate 60) at 2024.06.05-19.57.20
+[2024.06.05-18.57.20:485][504]LogWorld: Bringing up level for play took: 0.000398
+[2024.06.05-18.57.20:487][504]LogOnline: OSS: Created online subsystem instance for: :Context_13
+[2024.06.05-18.57.20:490][504]PIE: Server logged in
+[2024.06.05-18.57.20:490][504]PIE: Play in editor total start time 0.123 seconds.
+[2024.06.05-18.57.21:249][545]LogLevel: Warning: Failed to find streaming level object associated with '/Game/Levels/MainMenu'
+[2024.06.05-18.57.21:328][549]LogNavigation: Warning: NavData RegistrationFailed_DataPendingKill.
+[2024.06.05-18.57.33:200][170]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2024.06.05-18.57.33:200][170]LogWorld: BeginTearingDown for /Game/Levels/UEDPIE_0_MainMenu
+[2024.06.05-18.57.33:204][170]LogWorld: UWorld::CleanupWorld for MainMenu, bSessionEnded=true, bCleanupResources=true
+[2024.06.05-18.57.33:204][170]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.06.05-18.57.33:209][170]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2024.06.05-18.57.33:215][170]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.06.05-18.57.33:232][170]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2024.06.05-18.57.33:235][170]LogAudioMixer: Deinitializing Audio Bus Subsystem for audio device with ID 4
+[2024.06.05-18.57.33:235][170]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=4
+[2024.06.05-18.57.33:237][170]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=4
+[2024.06.05-18.57.33:246][170]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2024.06.05-18.57.33:252][170]LogUObjectHash: Compacting FUObjectHashTables data took   1.69ms
+[2024.06.05-18.57.33:292][171]LogPlayLevel: Display: Destroying online subsystem :Context_13
+[2024.06.05-18.57.33:313][171]LogUObjectHash: Compacting FUObjectHashTables data took   1.57ms
+[2024.06.05-18.58.30:055][888]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.06.05-18.58.30:171][888]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/UI/WBP_MainMenu" FILE="../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/UI/WBP_MainMenu.uasset" SILENT=true
+[2024.06.05-18.58.30:185][888]LogSavePackage: Moving output files for package: /Game/UI/WBP_MainMenu
+[2024.06.05-18.58.30:186][888]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/WBP_MainMenuEA0984E64854A353199605B8AFC0C087.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/UI/WBP_MainMenu.uasset'
+[2024.06.05-18.58.30:197][888]LogFileHelpers: InternalPromptForCheckoutAndSave took 142 ms (total: 6.17 sec)
+[2024.06.05-18.58.30:201][888]AssetCheck: New page: Asset Save: WBP_MainMenu
+[2024.06.05-18.58.30:201][888]LogContentValidation: Display: Validating /Script/UMGEditor.WidgetBlueprint /Game/UI/WBP_MainMenu.WBP_MainMenu
+[2024.06.05-18.58.32:867][ 45]BlueprintLog: New page: Compile WBP_MainMenu
+[2024.06.05-18.58.32:896][ 45]LogUObjectHash: Compacting FUObjectHashTables data took   1.62ms
+[2024.06.05-18.58.35:283][180]LogDebuggerCommands: Repeating last play command: Selected Viewport
+[2024.06.05-18.58.35:296][180]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2024.06.05-18.58.35:296][180]PIE: New page: PIE session: MainMenu (5 Jun 2024, 20:58:35)
+[2024.06.05-18.58.35:332][180]LogPlayLevel: Creating play world package: /Game/Levels/UEDPIE_0_MainMenu
+[2024.06.05-18.58.35:333][180]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001368s)
+[2024.06.05-18.58.35:333][180]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Levels/MainMenu.MainMenu to /Game/Levels/UEDPIE_0_MainMenu.MainMenu (0.001436s)
+[2024.06.05-18.58.35:351][180]LogUObjectHash: Compacting FUObjectHashTables data took   1.60ms
+[2024.06.05-18.58.35:354][180]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.06.05-18.58.35:354][180]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2024.06.05-18.58.35:355][180]LogAIModule: Creating AISystem for world MainMenu
+[2024.06.05-18.58.35:355][180]LogPlayLevel: PIE: World Init took: (0.001249s)
+[2024.06.05-18.58.35:355][180]LogAudio: Display: Creating Audio Device:                 Id: 5, Scope: Unique, Realtime: True
+[2024.06.05-18.58.35:355][180]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2024.06.05-18.58.35:355][180]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2024.06.05-18.58.35:355][180]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2024.06.05-18.58.35:356][180]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2024.06.05-18.58.35:356][180]LogAudioMixer: Display: 	Number of buffers to queue:			  1
+[2024.06.05-18.58.35:356][180]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2024.06.05-18.58.35:356][180]LogAudioMixer: Display: 	Number of Async Source Workers:		  4
+[2024.06.05-18.58.35:356][180]LogAudio: Display: AudioDevice MaxSources: 32
+[2024.06.05-18.58.35:356][180]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2024.06.05-18.58.35:356][180]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2024.06.05-18.58.35:356][180]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2024.06.05-18.58.35:358][180]LogAudioMixer: Display: Initializing audio mixer using platform API: 'XAudio2'
+[2024.06.05-18.58.35:422][180]LogAudioMixer: Display: Using Audio Hardware Device Speakers (Realtek(R) Audio)
+[2024.06.05-18.58.35:423][180]LogAudioMixer: Display: Initializing Sound Submixes...
+[2024.06.05-18.58.35:423][180]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2024.06.05-18.58.35:423][180]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2024.06.05-18.58.35:423][180]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called. InstanceID=5
+[2024.06.05-18.58.35:423][180]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048, InstanceID=5
+[2024.06.05-18.58.35:426][180]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=5
+[2024.06.05-18.58.35:426][180]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time. InstanceID=5
+[2024.06.05-18.58.35:426][180]LogInit: FAudioDevice initialized with ID 5.
+[2024.06.05-18.58.35:426][180]LogAudio: Display: Audio Device (ID: 5) registered with world 'MainMenu'.
+[2024.06.05-18.58.35:426][180]LogAudioMixer: Initializing Audio Bus Subsystem for audio device with ID 5
+[2024.06.05-18.58.35:429][180]LogLoad: Game class is 'MainMenu_C'
+[2024.06.05-18.58.35:429][180]LogWorld: Bringing World /Game/Levels/UEDPIE_0_MainMenu.MainMenu up for play (max tick rate 60) at 2024.06.05-19.58.35
+[2024.06.05-18.58.35:430][180]LogWorld: Bringing up level for play took: 0.000466
+[2024.06.05-18.58.35:433][180]LogOnline: OSS: Created online subsystem instance for: :Context_14
+[2024.06.05-18.58.35:435][180]PIE: Server logged in
+[2024.06.05-18.58.35:436][180]PIE: Play in editor total start time 0.139 seconds.
+[2024.06.05-18.58.36:227][217]LogNet: Browse: /Game/EmptyLevel
+[2024.06.05-18.58.36:228][217]LogLoad: LoadMap: /Game/EmptyLevel
+[2024.06.05-18.58.36:229][217]LogWorld: BeginTearingDown for /Game/Levels/UEDPIE_0_MainMenu
+[2024.06.05-18.58.36:229][217]LogWorld: UWorld::CleanupWorld for MainMenu, bSessionEnded=true, bCleanupResources=true
+[2024.06.05-18.58.36:229][217]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.06.05-18.58.36:282][217]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2024.06.05-18.58.36:285][217]LogUObjectHash: Compacting FUObjectHashTables data took   1.48ms
+[2024.06.05-18.58.36:299][217]LogAudio: Display: Audio Device (ID: 5) registered with world 'EmptyLevel'.
+[2024.06.05-18.58.36:300][217]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.06.05-18.58.36:300][217]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2024.06.05-18.58.36:300][217]LogAIModule: Creating AISystem for world EmptyLevel
+[2024.06.05-18.58.36:301][217]LogPlayLevel: PIE: World Init took: (0.001356s)
+[2024.06.05-18.58.36:301][217]LogLoad: Game class is 'MainMenu_C'
+[2024.06.05-18.58.36:309][217]LogWorld: Bringing World /Game/UEDPIE_0_EmptyLevel.EmptyLevel up for play (max tick rate 60) at 2024.06.05-19.58.36
+[2024.06.05-18.58.36:311][217]LogWorld: Bringing up level for play took: 0.009493
+[2024.06.05-18.58.36:317][217]LogLoad: Took 0.088794 seconds to LoadMap(/Game/EmptyLevel)
+[2024.06.05-18.58.48:332][865]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2024.06.05-18.58.48:333][865]LogWorld: BeginTearingDown for /Game/UEDPIE_0_EmptyLevel
+[2024.06.05-18.58.48:333][865]LogWorld: UWorld::CleanupWorld for EmptyLevel, bSessionEnded=true, bCleanupResources=true
+[2024.06.05-18.58.48:335][865]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.06.05-18.58.48:339][865]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2024.06.05-18.58.48:351][865]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.06.05-18.58.48:368][865]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2024.06.05-18.58.48:368][865]LogAudioMixer: Deinitializing Audio Bus Subsystem for audio device with ID 5
+[2024.06.05-18.58.48:368][865]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=5
+[2024.06.05-18.58.48:370][865]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=5
+[2024.06.05-18.58.48:387][865]LogUObjectHash: Compacting FUObjectHashTables data took   2.54ms
+[2024.06.05-18.58.48:425][866]LogPlayLevel: Display: Destroying online subsystem :Context_14
+[2024.06.05-18.59.51:055][805]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.06.05-19.00.02:156][878]LogSlate: Window 'Message' being destroyed
+[2024.06.05-19.00.02:162][878]Message dialog closed, result: Ok, title: Message, text: Source code, config INI, and text files may need Find/Replace for:
+
+
+EmptyLevel
+
+Otherwise assets can be missing from cooked builds. Continue with rename?
+[2024.06.05-19.00.02:199][878]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.06.05-19.00.02:346][878]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2024.06.05-19.00.02:376][878]LogUObjectHash: Compacting FUObjectHashTables data took   1.55ms
+[2024.06.05-19.00.02:414][878]LogSavePackage: Moving output files for package: /Game/Levels/EmptyLevel
+[2024.06.05-19.00.02:414][878]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/EmptyLevelEE8ABC654CDA6D127B1204A620C828E3.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/Levels/EmptyLevel.umap'
+[2024.06.05-19.00.02:425][878]LogFileHelpers: Saving map 'EmptyLevel' took 0.080
+[2024.06.05-19.00.02:426][878]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/EmptyLevel" FILE="../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/EmptyLevel.umap" SILENT=true
+[2024.06.05-19.00.02:436][878]LogSavePackage: Moving output files for package: /Game/EmptyLevel
+[2024.06.05-19.00.02:437][878]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/EmptyLevel8B4B67AC4D5921647912BAAA7390F74D.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/EmptyLevel.umap'
+[2024.06.05-19.00.02:450][878]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/UI/WBP_MainMenu" FILE="../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/UI/WBP_MainMenu.uasset" SILENT=true
+[2024.06.05-19.00.02:465][878]LogSavePackage: Moving output files for package: /Game/UI/WBP_MainMenu
+[2024.06.05-19.00.02:468][878]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/WBP_MainMenuCD0FFCBF40446098FD0E31B485E1E155.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/UI/WBP_MainMenu.uasset'
+[2024.06.05-19.00.02:478][878]LogFileHelpers: InternalPromptForCheckoutAndSave took 280 ms (total: 6.45 sec)
+[2024.06.05-19.00.02:566][878]AssetCheck: New page: Asset Save: multiple assets
+[2024.06.05-19.00.02:566][878]LogContentValidation: Display: Validating /Script/Engine.World /Game/Levels/EmptyLevel.EmptyLevel
+[2024.06.05-19.00.02:566][878]LogContentValidation: Display: Validating /Script/CoreUObject.ObjectRedirector /Game/EmptyLevel.EmptyLevel
+[2024.06.05-19.00.02:566][878]LogContentValidation: Display: Validating /Script/UMGEditor.WidgetBlueprint /Game/UI/WBP_MainMenu.WBP_MainMenu
+[2024.06.05-19.00.05:638][ 42]LogUObjectHash: Compacting FUObjectHashTables data took   1.79ms
+[2024.06.05-19.00.05:641][ 42]LogAssetEditorSubsystem: Opening Asset editor for World /Game/Levels/EmptyLevel.EmptyLevel
+[2024.06.05-19.00.05:645][ 42]Cmd: MAP LOAD FILE="../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/Levels/EmptyLevel.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=4
+[2024.06.05-19.00.05:645][ 42]LightingResults: New page: Lighting Build
+[2024.06.05-19.00.05:646][ 42]LoadErrors: New page: Loading map: EmptyLevel.umap
+[2024.06.05-19.00.05:709][ 42]LogWorld: UWorld::CleanupWorld for MainMenu, bSessionEnded=true, bCleanupResources=true
+[2024.06.05-19.00.05:709][ 42]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.06.05-19.00.05:710][ 42]MapCheck: New page: Map Check
+[2024.06.05-19.00.05:710][ 42]LightingResults: New page: Lighting Build
+[2024.06.05-19.00.05:727][ 42]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2024.06.05-19.00.05:731][ 42]LogUObjectHash: Compacting FUObjectHashTables data took   2.04ms
+[2024.06.05-19.00.05:734][ 42]LogWorld: UWorld::CleanupWorld for EmptyLevel, bSessionEnded=true, bCleanupResources=true
+[2024.06.05-19.00.05:734][ 42]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.06.05-19.00.05:754][ 42]LogUObjectHash: Compacting FUObjectHashTables data took   1.50ms
+[2024.06.05-19.00.05:771][ 42]LogUObjectHash: Compacting FUObjectHashTables data took   1.41ms
+[2024.06.05-19.00.05:779][ 42]LogAudio: Display: Audio Device (ID: 1) registered with world 'EmptyLevel'.
+[2024.06.05-19.00.05:779][ 42]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.06.05-19.00.05:779][ 42]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2024.06.05-19.00.05:779][ 42]LogAIModule: Creating AISystem for world EmptyLevel
+[2024.06.05-19.00.05:919][ 42]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2024.06.05-19.00.05:949][ 42]LogUObjectHash: Compacting FUObjectHashTables data took   1.80ms
+[2024.06.05-19.00.05:965][ 42]Cmd: MAP CHECKDEP NOCLEARLOG
+[2024.06.05-19.00.05:965][ 42]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 0.331ms to complete.
+[2024.06.05-19.00.22:357][763]LogViewport: Scene viewport resized to 1615x806, mode Windowed.
+[2024.06.05-19.00.22:414][764]LogViewport: Scene viewport resized to 1593x806, mode Windowed.
+[2024.06.05-19.00.22:476][765]LogViewport: Scene viewport resized to 1589x806, mode Windowed.
+[2024.06.05-19.00.22:547][766]LogViewport: Scene viewport resized to 1585x806, mode Windowed.
+[2024.06.05-19.00.22:613][767]LogViewport: Scene viewport resized to 1582x806, mode Windowed.
+[2024.06.05-19.00.22:669][768]LogViewport: Scene viewport resized to 1575x806, mode Windowed.
+[2024.06.05-19.00.22:900][778]LogViewport: Scene viewport resized to 1567x806, mode Windowed.
+[2024.06.05-19.00.22:953][779]LogViewport: Scene viewport resized to 1520x806, mode Windowed.
+[2024.06.05-19.00.23:015][780]LogViewport: Scene viewport resized to 1485x806, mode Windowed.
+[2024.06.05-19.00.23:090][781]LogViewport: Scene viewport resized to 1471x806, mode Windowed.
+[2024.06.05-19.00.23:330][791]LogViewport: Scene viewport resized to 1470x806, mode Windowed.
+[2024.06.05-19.00.23:373][792]LogViewport: Scene viewport resized to 1469x806, mode Windowed.
+[2024.06.05-19.00.23:634][806]LogViewport: Scene viewport resized to 1471x806, mode Windowed.
+[2024.06.05-19.00.23:667][807]LogViewport: Scene viewport resized to 1473x806, mode Windowed.
+[2024.06.05-19.00.23:705][808]LogViewport: Scene viewport resized to 1482x806, mode Windowed.
+[2024.06.05-19.00.23:756][809]LogViewport: Scene viewport resized to 1494x806, mode Windowed.
+[2024.06.05-19.00.23:806][810]LogViewport: Scene viewport resized to 1498x806, mode Windowed.
+[2024.06.05-19.00.31:888][116]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.06.05-19.00.32:113][116]LogUObjectHash: Compacting FUObjectHashTables data took   0.92ms
+[2024.06.05-19.00.32:161][116]LogSavePackage: Moving output files for package: /Game/Levels/EmptyLevel
+[2024.06.05-19.00.32:163][116]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/EmptyLevelAFABAFF14129BD645ACDA9B04F67D376.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/Levels/EmptyLevel.umap'
+[2024.06.05-19.00.32:195][116]LogFileHelpers: Saving map 'EmptyLevel' took 0.173
+[2024.06.05-19.00.32:206][116]LogFileHelpers: InternalPromptForCheckoutAndSave took 318 ms (total: 6.77 sec)
+[2024.06.05-19.00.32:208][116]AssetCheck: New page: Asset Save: EmptyLevel
+[2024.06.05-19.00.32:208][116]LogContentValidation: Display: Validating /Script/Engine.World /Game/Levels/EmptyLevel.EmptyLevel
+[2024.06.05-19.00.33:435][172]LogUObjectHash: Compacting FUObjectHashTables data took   0.91ms
+[2024.06.05-19.00.33:593][172]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.06.05-19.00.33:595][172]LogAssetEditorSubsystem: Opening Asset editor for World /Game/Levels/MainMenu.MainMenu
+[2024.06.05-19.00.33:595][172]Cmd: MAP LOAD FILE="../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/Levels/MainMenu.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=4
+[2024.06.05-19.00.33:595][172]LightingResults: New page: Lighting Build
+[2024.06.05-19.00.33:595][172]LoadErrors: New page: Loading map: MainMenu.umap
+[2024.06.05-19.00.33:660][172]LogWorld: UWorld::CleanupWorld for EmptyLevel, bSessionEnded=true, bCleanupResources=true
+[2024.06.05-19.00.33:660][172]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.06.05-19.00.33:661][172]MapCheck: New page: Map Check
+[2024.06.05-19.00.33:661][172]LightingResults: New page: Lighting Build
+[2024.06.05-19.00.33:675][172]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2024.06.05-19.00.33:681][172]LogUObjectHash: Compacting FUObjectHashTables data took   1.73ms
+[2024.06.05-19.00.33:684][172]LogWorld: UWorld::CleanupWorld for MainMenu, bSessionEnded=true, bCleanupResources=true
+[2024.06.05-19.00.33:685][172]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.06.05-19.00.33:704][172]LogUObjectHash: Compacting FUObjectHashTables data took   1.79ms
+[2024.06.05-19.00.33:720][172]LogUObjectHash: Compacting FUObjectHashTables data took   1.05ms
+[2024.06.05-19.00.33:728][172]LogAudio: Display: Audio Device (ID: 1) registered with world 'MainMenu'.
+[2024.06.05-19.00.33:729][172]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.06.05-19.00.33:729][172]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2024.06.05-19.00.33:729][172]LogAIModule: Creating AISystem for world MainMenu
+[2024.06.05-19.00.33:782][172]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2024.06.05-19.00.33:802][172]LogUObjectHash: Compacting FUObjectHashTables data took   1.53ms
+[2024.06.05-19.00.33:818][172]Cmd: MAP CHECKDEP NOCLEARLOG
+[2024.06.05-19.00.33:819][172]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 0.346ms to complete.
+[2024.06.05-19.00.37:931][362]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.06.05-19.00.38:116][362]LogUObjectHash: Compacting FUObjectHashTables data took   1.00ms
+[2024.06.05-19.00.38:139][362]LogSavePackage: Moving output files for package: /Game/Levels/MainMenu
+[2024.06.05-19.00.38:140][362]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/MainMenu6605346B4E0FCF1842C04A832CD265BA.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/Levels/MainMenu.umap'
+[2024.06.05-19.00.38:159][362]LogFileHelpers: Saving map 'MainMenu' took 0.127
+[2024.06.05-19.00.38:167][362]LogFileHelpers: InternalPromptForCheckoutAndSave took 235 ms (total: 7.00 sec)
+[2024.06.05-19.00.38:170][362]AssetCheck: New page: Asset Save: MainMenu
+[2024.06.05-19.00.38:170][362]LogContentValidation: Display: Validating /Script/Engine.World /Game/Levels/MainMenu.MainMenu
+[2024.06.05-19.00.39:297][427]LogDebuggerCommands: Repeating last play command: Selected Viewport
+[2024.06.05-19.00.39:322][427]BlueprintLog: New page: Pre-Play auto-recompile
+[2024.06.05-19.00.39:325][427]LogPlayLevel: [PlayLevel] Compiling WBP_MainMenu before play...
+[2024.06.05-19.00.39:377][427]LogUObjectHash: Compacting FUObjectHashTables data took   1.77ms
+[2024.06.05-19.00.39:379][427]LogPlayLevel: PlayLevel: Blueprint regeneration took 57 ms (1 blueprints)
+[2024.06.05-19.00.39:380][427]PIE: New page: PIE session: MainMenu (5 Jun 2024, 21:00:39)
+[2024.06.05-19.00.39:380][427]LogPlayLevel: Creating play world package: /Game/Levels/UEDPIE_0_MainMenu
+[2024.06.05-19.00.39:381][427]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001542s)
+[2024.06.05-19.00.39:381][427]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Levels/MainMenu.MainMenu to /Game/Levels/UEDPIE_0_MainMenu.MainMenu (0.001599s)
+[2024.06.05-19.00.39:399][427]LogUObjectHash: Compacting FUObjectHashTables data took   1.51ms
+[2024.06.05-19.00.39:400][427]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.06.05-19.00.39:401][427]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2024.06.05-19.00.39:401][427]LogAIModule: Creating AISystem for world MainMenu
+[2024.06.05-19.00.39:401][427]LogPlayLevel: PIE: World Init took: (0.001413s)
+[2024.06.05-19.00.39:402][427]LogAudio: Display: Creating Audio Device:                 Id: 6, Scope: Unique, Realtime: True
+[2024.06.05-19.00.39:402][427]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2024.06.05-19.00.39:402][427]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2024.06.05-19.00.39:402][427]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2024.06.05-19.00.39:402][427]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2024.06.05-19.00.39:402][427]LogAudioMixer: Display: 	Number of buffers to queue:			  1
+[2024.06.05-19.00.39:402][427]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2024.06.05-19.00.39:402][427]LogAudioMixer: Display: 	Number of Async Source Workers:		  4
+[2024.06.05-19.00.39:402][427]LogAudio: Display: AudioDevice MaxSources: 32
+[2024.06.05-19.00.39:402][427]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2024.06.05-19.00.39:402][427]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2024.06.05-19.00.39:402][427]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2024.06.05-19.00.39:405][427]LogAudioMixer: Display: Initializing audio mixer using platform API: 'XAudio2'
+[2024.06.05-19.00.39:482][427]LogAudioMixer: Display: Using Audio Hardware Device Speakers (Realtek(R) Audio)
+[2024.06.05-19.00.39:482][427]LogAudioMixer: Display: Initializing Sound Submixes...
+[2024.06.05-19.00.39:482][427]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2024.06.05-19.00.39:482][427]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2024.06.05-19.00.39:484][427]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called. InstanceID=6
+[2024.06.05-19.00.39:485][427]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048, InstanceID=6
+[2024.06.05-19.00.39:486][427]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=6
+[2024.06.05-19.00.39:486][427]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time. InstanceID=6
+[2024.06.05-19.00.39:486][427]LogInit: FAudioDevice initialized with ID 6.
+[2024.06.05-19.00.39:486][427]LogAudio: Display: Audio Device (ID: 6) registered with world 'MainMenu'.
+[2024.06.05-19.00.39:486][427]LogAudioMixer: Initializing Audio Bus Subsystem for audio device with ID 6
+[2024.06.05-19.00.39:490][427]LogLoad: Game class is 'MainMenu_C'
+[2024.06.05-19.00.39:491][427]LogWorld: Bringing World /Game/Levels/UEDPIE_0_MainMenu.MainMenu up for play (max tick rate 60) at 2024.06.05-20.00.39
+[2024.06.05-19.00.39:491][427]LogWorld: Bringing up level for play took: 0.000476
+[2024.06.05-19.00.39:494][427]LogOnline: OSS: Created online subsystem instance for: :Context_15
+[2024.06.05-19.00.39:496][427]PIE: Server logged in
+[2024.06.05-19.00.39:497][427]PIE: Play in editor total start time 0.175 seconds.
+[2024.06.05-19.00.40:457][472]LogNet: Browse: /Game/Levels/EmptyLevel
+[2024.06.05-19.00.40:458][472]LogLoad: LoadMap: /Game/Levels/EmptyLevel
+[2024.06.05-19.00.40:458][472]LogWorld: BeginTearingDown for /Game/Levels/UEDPIE_0_MainMenu
+[2024.06.05-19.00.40:458][472]LogWorld: UWorld::CleanupWorld for MainMenu, bSessionEnded=true, bCleanupResources=true
+[2024.06.05-19.00.40:459][472]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.06.05-19.00.40:474][472]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2024.06.05-19.00.40:477][472]LogUObjectHash: Compacting FUObjectHashTables data took   1.71ms
+[2024.06.05-19.00.40:487][472]LogAudio: Display: Audio Device (ID: 6) registered with world 'EmptyLevel'.
+[2024.06.05-19.00.40:487][472]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.06.05-19.00.40:488][472]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2024.06.05-19.00.40:488][472]LogAIModule: Creating AISystem for world EmptyLevel
+[2024.06.05-19.00.40:489][472]LogPlayLevel: PIE: World Init took: (0.001186s)
+[2024.06.05-19.00.40:489][472]LogLoad: Game class is 'BP_CardslingerTestGameMode_C'
+[2024.06.05-19.00.40:495][472]LogWorld: Bringing World /Game/Levels/UEDPIE_0_EmptyLevel.EmptyLevel up for play (max tick rate 60) at 2024.06.05-20.00.40
+[2024.06.05-19.00.40:497][472]LogWorld: Bringing up level for play took: 0.008190
+[2024.06.05-19.00.40:517][472]LogTemp: Display: UI Constructed
+[2024.06.05-19.00.40:519][472]LogTemp: Display: New card set in UI
+[2024.06.05-19.00.40:520][472]LogTemp: Display: New card at index 0
+[2024.06.05-19.00.40:520][472]LogTemp: Display: New card set in UI
+[2024.06.05-19.00.40:520][472]LogTemp: Display: New card at index 1
+[2024.06.05-19.00.40:521][472]LogTemp: Display: New card set in UI
+[2024.06.05-19.00.40:521][472]LogTemp: Display: New card at index 2
+[2024.06.05-19.00.40:521][472]LogTemp: Display: New card set in UI
+[2024.06.05-19.00.40:521][472]LogTemp: Display: New card at index 3
+[2024.06.05-19.00.40:521][472]LogLoad: Took 0.063194 seconds to LoadMap(/Game/Levels/EmptyLevel)
+[2024.06.05-19.00.44:131][590]LogActor: Warning: BP_ProjectileCard_C /Game/Levels/UEDPIE_0_EmptyLevel.EmptyLevel:PersistentLevel.BP_ProjectileCard_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2024.06.05-19.00.44:266][596]LogActor: Warning: BP_ProjectileCard_C /Game/Levels/UEDPIE_0_EmptyLevel.EmptyLevel:PersistentLevel.BP_ProjectileCard_C_1 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2024.06.05-19.00.44:414][604]LogActor: Warning: BP_ProjectileCard_C /Game/Levels/UEDPIE_0_EmptyLevel.EmptyLevel:PersistentLevel.BP_ProjectileCard_C_2 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2024.06.05-19.00.44:568][612]LogActor: Warning: BP_ProjectileCard_C /Game/Levels/UEDPIE_0_EmptyLevel.EmptyLevel:PersistentLevel.BP_ProjectileCard_C_3 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2024.06.05-19.00.44:724][620]LogActor: Warning: BP_ProjectileCard_C /Game/Levels/UEDPIE_0_EmptyLevel.EmptyLevel:PersistentLevel.BP_ProjectileCard_C_4 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2024.06.05-19.00.44:861][627]LogActor: Warning: BP_ProjectileCard_C /Game/Levels/UEDPIE_0_EmptyLevel.EmptyLevel:PersistentLevel.BP_ProjectileCard_C_5 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2024.06.05-19.00.48:049][800]LogActor: Warning: BP_ProjectileCard_C /Game/Levels/UEDPIE_0_EmptyLevel.EmptyLevel:PersistentLevel.BP_ProjectileCard_C_6 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2024.06.05-19.00.48:183][807]LogActor: Warning: BP_ProjectileCard_C /Game/Levels/UEDPIE_0_EmptyLevel.EmptyLevel:PersistentLevel.BP_ProjectileCard_C_7 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2024.06.05-19.00.48:307][814]LogActor: Warning: BP_ProjectileCard_C /Game/Levels/UEDPIE_0_EmptyLevel.EmptyLevel:PersistentLevel.BP_ProjectileCard_C_8 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2024.06.05-19.00.48:475][823]LogActor: Warning: BP_ProjectileCard_C /Game/Levels/UEDPIE_0_EmptyLevel.EmptyLevel:PersistentLevel.BP_ProjectileCard_C_9 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2024.06.05-19.00.48:626][831]LogActor: Warning: BP_ProjectileCard_C /Game/Levels/UEDPIE_0_EmptyLevel.EmptyLevel:PersistentLevel.BP_ProjectileCard_C_10 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2024.06.05-19.00.48:775][839]LogActor: Warning: BP_ProjectileCard_C /Game/Levels/UEDPIE_0_EmptyLevel.EmptyLevel:PersistentLevel.BP_ProjectileCard_C_11 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2024.06.05-19.00.48:945][848]LogActor: Warning: BP_ProjectileCard_C /Game/Levels/UEDPIE_0_EmptyLevel.EmptyLevel:PersistentLevel.BP_ProjectileCard_C_12 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2024.06.05-19.00.49:115][857]LogActor: Warning: BP_ProjectileCard_C /Game/Levels/UEDPIE_0_EmptyLevel.EmptyLevel:PersistentLevel.BP_ProjectileCard_C_13 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2024.06.05-19.00.49:281][866]LogActor: Warning: BP_ProjectileCard_C /Game/Levels/UEDPIE_0_EmptyLevel.EmptyLevel:PersistentLevel.BP_ProjectileCard_C_14 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2024.06.05-19.00.49:421][873]LogActor: Warning: BP_ProjectileCard_C /Game/Levels/UEDPIE_0_EmptyLevel.EmptyLevel:PersistentLevel.BP_ProjectileCard_C_15 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2024.06.05-19.00.49:586][882]LogActor: Warning: BP_ProjectileCard_C /Game/Levels/UEDPIE_0_EmptyLevel.EmptyLevel:PersistentLevel.BP_ProjectileCard_C_16 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2024.06.05-19.00.49:747][891]LogActor: Warning: BP_ProjectileCard_C /Game/Levels/UEDPIE_0_EmptyLevel.EmptyLevel:PersistentLevel.BP_ProjectileCard_C_17 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2024.06.05-19.00.49:919][901]LogActor: Warning: BP_ProjectileCard_C /Game/Levels/UEDPIE_0_EmptyLevel.EmptyLevel:PersistentLevel.BP_ProjectileCard_C_18 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2024.06.05-19.00.50:078][910]LogActor: Warning: BP_ProjectileCard_C /Game/Levels/UEDPIE_0_EmptyLevel.EmptyLevel:PersistentLevel.BP_ProjectileCard_C_19 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2024.06.05-19.00.50:235][919]LogActor: Warning: BP_ProjectileCard_C /Game/Levels/UEDPIE_0_EmptyLevel.EmptyLevel:PersistentLevel.BP_ProjectileCard_C_20 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2024.06.05-19.00.50:410][929]LogActor: Warning: BP_ProjectileCard_C /Game/Levels/UEDPIE_0_EmptyLevel.EmptyLevel:PersistentLevel.BP_ProjectileCard_C_21 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2024.06.05-19.00.50:582][939]LogActor: Warning: BP_ProjectileCard_C /Game/Levels/UEDPIE_0_EmptyLevel.EmptyLevel:PersistentLevel.BP_ProjectileCard_C_22 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2024.06.05-19.00.50:705][946]LogActor: Warning: BP_ProjectileCard_C /Game/Levels/UEDPIE_0_EmptyLevel.EmptyLevel:PersistentLevel.BP_ProjectileCard_C_23 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2024.06.05-19.00.50:860][955]LogActor: Warning: BP_ProjectileCard_C /Game/Levels/UEDPIE_0_EmptyLevel.EmptyLevel:PersistentLevel.BP_ProjectileCard_C_24 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2024.06.05-19.00.51:018][964]LogActor: Warning: BP_ProjectileCard_C /Game/Levels/UEDPIE_0_EmptyLevel.EmptyLevel:PersistentLevel.BP_ProjectileCard_C_25 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2024.06.05-19.00.51:194][974]LogActor: Warning: BP_ProjectileCard_C /Game/Levels/UEDPIE_0_EmptyLevel.EmptyLevel:PersistentLevel.BP_ProjectileCard_C_26 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2024.06.05-19.00.51:349][983]LogActor: Warning: BP_ProjectileCard_C /Game/Levels/UEDPIE_0_EmptyLevel.EmptyLevel:PersistentLevel.BP_ProjectileCard_C_27 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2024.06.05-19.00.51:811][  6]LogActor: Warning: BP_ProjectileCard_C /Game/Levels/UEDPIE_0_EmptyLevel.EmptyLevel:PersistentLevel.BP_ProjectileCard_C_28 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2024.06.05-19.00.51:959][ 13]LogActor: Warning: BP_ProjectileCard_C /Game/Levels/UEDPIE_0_EmptyLevel.EmptyLevel:PersistentLevel.BP_ProjectileCard_C_29 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2024.06.05-19.00.52:119][ 21]LogActor: Warning: BP_ProjectileCard_C /Game/Levels/UEDPIE_0_EmptyLevel.EmptyLevel:PersistentLevel.BP_ProjectileCard_C_30 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2024.06.05-19.00.52:295][ 30]LogActor: Warning: BP_ProjectileCard_C /Game/Levels/UEDPIE_0_EmptyLevel.EmptyLevel:PersistentLevel.BP_ProjectileCard_C_31 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2024.06.05-19.00.52:441][ 37]LogActor: Warning: BP_ProjectileCard_C /Game/Levels/UEDPIE_0_EmptyLevel.EmptyLevel:PersistentLevel.BP_ProjectileCard_C_32 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2024.06.05-19.00.52:598][ 45]LogActor: Warning: BP_ProjectileCard_C /Game/Levels/UEDPIE_0_EmptyLevel.EmptyLevel:PersistentLevel.BP_ProjectileCard_C_33 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2024.06.05-19.00.52:741][ 52]LogActor: Warning: BP_ProjectileCard_C /Game/Levels/UEDPIE_0_EmptyLevel.EmptyLevel:PersistentLevel.BP_ProjectileCard_C_34 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2024.06.05-19.00.52:934][ 62]LogActor: Warning: BP_ProjectileCard_C /Game/Levels/UEDPIE_0_EmptyLevel.EmptyLevel:PersistentLevel.BP_ProjectileCard_C_35 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2024.06.05-19.00.53:105][ 71]LogActor: Warning: BP_ProjectileCard_C /Game/Levels/UEDPIE_0_EmptyLevel.EmptyLevel:PersistentLevel.BP_ProjectileCard_C_36 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2024.06.05-19.00.53:245][ 78]LogActor: Warning: BP_ProjectileCard_C /Game/Levels/UEDPIE_0_EmptyLevel.EmptyLevel:PersistentLevel.BP_ProjectileCard_C_37 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2024.06.05-19.00.53:408][ 86]LogActor: Warning: BP_ProjectileCard_C /Game/Levels/UEDPIE_0_EmptyLevel.EmptyLevel:PersistentLevel.BP_ProjectileCard_C_38 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2024.06.05-19.00.53:564][ 94]LogActor: Warning: BP_ProjectileCard_C /Game/Levels/UEDPIE_0_EmptyLevel.EmptyLevel:PersistentLevel.BP_ProjectileCard_C_39 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2024.06.05-19.00.53:735][103]LogActor: Warning: BP_ProjectileCard_C /Game/Levels/UEDPIE_0_EmptyLevel.EmptyLevel:PersistentLevel.BP_ProjectileCard_C_40 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2024.06.05-19.00.53:891][112]LogActor: Warning: BP_ProjectileCard_C /Game/Levels/UEDPIE_0_EmptyLevel.EmptyLevel:PersistentLevel.BP_ProjectileCard_C_41 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2024.06.05-19.00.54:045][121]LogActor: Warning: BP_ProjectileCard_C /Game/Levels/UEDPIE_0_EmptyLevel.EmptyLevel:PersistentLevel.BP_ProjectileCard_C_42 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2024.06.05-19.00.55:336][195]LogActor: Warning: BP_ProjectileCard_C /Game/Levels/UEDPIE_0_EmptyLevel.EmptyLevel:PersistentLevel.BP_ProjectileCard_C_43 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2024.06.05-19.00.55:509][205]LogActor: Warning: BP_ProjectileCard_C /Game/Levels/UEDPIE_0_EmptyLevel.EmptyLevel:PersistentLevel.BP_ProjectileCard_C_44 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2024.06.05-19.00.55:676][215]LogActor: Warning: BP_ProjectileCard_C /Game/Levels/UEDPIE_0_EmptyLevel.EmptyLevel:PersistentLevel.BP_ProjectileCard_C_45 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2024.06.05-19.00.55:830][224]LogActor: Warning: BP_ProjectileCard_C /Game/Levels/UEDPIE_0_EmptyLevel.EmptyLevel:PersistentLevel.BP_ProjectileCard_C_46 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2024.06.05-19.00.55:999][234]LogActor: Warning: BP_ProjectileCard_C /Game/Levels/UEDPIE_0_EmptyLevel.EmptyLevel:PersistentLevel.BP_ProjectileCard_C_47 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2024.06.05-19.00.56:186][245]LogActor: Warning: BP_ProjectileCard_C /Game/Levels/UEDPIE_0_EmptyLevel.EmptyLevel:PersistentLevel.BP_ProjectileCard_C_48 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2024.06.05-19.01.01:346][533]LogActor: Warning: BP_ProjectileCard_C /Game/Levels/UEDPIE_0_EmptyLevel.EmptyLevel:PersistentLevel.BP_ProjectileCard_C_49 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2024.06.05-19.01.01:516][542]LogActor: Warning: BP_ProjectileCard_C /Game/Levels/UEDPIE_0_EmptyLevel.EmptyLevel:PersistentLevel.BP_ProjectileCard_C_50 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2024.06.05-19.01.01:651][549]LogActor: Warning: BP_ProjectileCard_C /Game/Levels/UEDPIE_0_EmptyLevel.EmptyLevel:PersistentLevel.BP_ProjectileCard_C_51 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2024.06.05-19.01.01:806][557]LogActor: Warning: BP_ProjectileCard_C /Game/Levels/UEDPIE_0_EmptyLevel.EmptyLevel:PersistentLevel.BP_ProjectileCard_C_52 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2024.06.05-19.01.01:943][564]LogActor: Warning: BP_ProjectileCard_C /Game/Levels/UEDPIE_0_EmptyLevel.EmptyLevel:PersistentLevel.BP_ProjectileCard_C_53 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2024.06.05-19.01.02:101][572]LogActor: Warning: BP_ProjectileCard_C /Game/Levels/UEDPIE_0_EmptyLevel.EmptyLevel:PersistentLevel.BP_ProjectileCard_C_54 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2024.06.05-19.01.02:254][580]LogActor: Warning: BP_ProjectileCard_C /Game/Levels/UEDPIE_0_EmptyLevel.EmptyLevel:PersistentLevel.BP_ProjectileCard_C_55 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2024.06.05-19.01.02:687][604]LogActor: Warning: BP_ExplosionProjectileCard_C /Game/Levels/UEDPIE_0_EmptyLevel.EmptyLevel:PersistentLevel.BP_ExplosionProjectileCard_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2024.06.05-19.01.02:688][604]LogTemp: Display: Exploding Card
+[2024.06.05-19.01.03:836][667]LogActor: Warning: BP_ProjectileCard_C /Game/Levels/UEDPIE_0_EmptyLevel.EmptyLevel:PersistentLevel.BP_ProjectileCard_C_56 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2024.06.05-19.01.03:999][676]LogActor: Warning: BP_ProjectileCard_C /Game/Levels/UEDPIE_0_EmptyLevel.EmptyLevel:PersistentLevel.BP_ProjectileCard_C_57 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2024.06.05-19.01.04:180][686]LogActor: Warning: BP_ProjectileCard_C /Game/Levels/UEDPIE_0_EmptyLevel.EmptyLevel:PersistentLevel.BP_ProjectileCard_C_58 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2024.06.05-19.01.04:324][694]LogActor: Warning: BP_ProjectileCard_C /Game/Levels/UEDPIE_0_EmptyLevel.EmptyLevel:PersistentLevel.BP_ProjectileCard_C_59 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2024.06.05-19.01.04:487][703]LogActor: Warning: BP_ProjectileCard_C /Game/Levels/UEDPIE_0_EmptyLevel.EmptyLevel:PersistentLevel.BP_ProjectileCard_C_60 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2024.06.05-19.01.04:646][712]LogActor: Warning: BP_ProjectileCard_C /Game/Levels/UEDPIE_0_EmptyLevel.EmptyLevel:PersistentLevel.BP_ProjectileCard_C_61 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2024.06.05-19.01.04:810][721]LogActor: Warning: BP_ProjectileCard_C /Game/Levels/UEDPIE_0_EmptyLevel.EmptyLevel:PersistentLevel.BP_ProjectileCard_C_62 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2024.06.05-19.01.04:970][730]LogActor: Warning: BP_ProjectileCard_C /Game/Levels/UEDPIE_0_EmptyLevel.EmptyLevel:PersistentLevel.BP_ProjectileCard_C_63 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2024.06.05-19.01.05:144][740]LogActor: Warning: BP_ProjectileCard_C /Game/Levels/UEDPIE_0_EmptyLevel.EmptyLevel:PersistentLevel.BP_ProjectileCard_C_64 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2024.06.05-19.01.05:288][748]LogActor: Warning: BP_ProjectileCard_C /Game/Levels/UEDPIE_0_EmptyLevel.EmptyLevel:PersistentLevel.BP_ProjectileCard_C_65 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2024.06.05-19.01.05:447][757]LogActor: Warning: BP_ProjectileCard_C /Game/Levels/UEDPIE_0_EmptyLevel.EmptyLevel:PersistentLevel.BP_ProjectileCard_C_66 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2024.06.05-19.01.05:612][766]LogActor: Warning: BP_ProjectileCard_C /Game/Levels/UEDPIE_0_EmptyLevel.EmptyLevel:PersistentLevel.BP_ProjectileCard_C_67 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2024.06.05-19.01.05:757][774]LogActor: Warning: BP_ProjectileCard_C /Game/Levels/UEDPIE_0_EmptyLevel.EmptyLevel:PersistentLevel.BP_ProjectileCard_C_68 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2024.06.05-19.01.05:904][782]LogActor: Warning: BP_ProjectileCard_C /Game/Levels/UEDPIE_0_EmptyLevel.EmptyLevel:PersistentLevel.BP_ProjectileCard_C_69 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2024.06.05-19.01.06:075][791]LogActor: Warning: BP_ProjectileCard_C /Game/Levels/UEDPIE_0_EmptyLevel.EmptyLevel:PersistentLevel.BP_ProjectileCard_C_70 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2024.06.05-19.01.06:243][800]LogActor: Warning: BP_ProjectileCard_C /Game/Levels/UEDPIE_0_EmptyLevel.EmptyLevel:PersistentLevel.BP_ProjectileCard_C_71 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2024.06.05-19.01.06:395][808]LogActor: Warning: BP_ProjectileCard_C /Game/Levels/UEDPIE_0_EmptyLevel.EmptyLevel:PersistentLevel.BP_ProjectileCard_C_72 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2024.06.05-19.01.06:542][816]LogActor: Warning: BP_ProjectileCard_C /Game/Levels/UEDPIE_0_EmptyLevel.EmptyLevel:PersistentLevel.BP_ProjectileCard_C_73 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2024.06.05-19.01.06:692][824]LogTemp: Display: New card set in UI
+[2024.06.05-19.01.06:692][824]LogTemp: Display: New card at index 0
+[2024.06.05-19.01.06:708][825]LogActor: Warning: BP_ProjectileCard_C /Game/Levels/UEDPIE_0_EmptyLevel.EmptyLevel:PersistentLevel.BP_ProjectileCard_C_74 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2024.06.05-19.01.06:892][835]LogActor: Warning: BP_ProjectileCard_C /Game/Levels/UEDPIE_0_EmptyLevel.EmptyLevel:PersistentLevel.BP_ProjectileCard_C_75 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2024.06.05-19.01.07:059][844]LogActor: Warning: BP_ProjectileCard_C /Game/Levels/UEDPIE_0_EmptyLevel.EmptyLevel:PersistentLevel.BP_ProjectileCard_C_76 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2024.06.05-19.01.08:907][950]LogTemp: Display: Card Effect Used
+[2024.06.05-19.01.12:924][187]LogTemp: Display: New card set in UI
+[2024.06.05-19.01.12:924][187]LogTemp: Display: New card at index 1
+[2024.06.05-19.01.17:409][443]LogActor: Warning: BP_ProjectileCard_C /Game/Levels/UEDPIE_0_EmptyLevel.EmptyLevel:PersistentLevel.BP_ProjectileCard_C_77 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2024.06.05-19.01.17:573][452]LogActor: Warning: BP_ProjectileCard_C /Game/Levels/UEDPIE_0_EmptyLevel.EmptyLevel:PersistentLevel.BP_ProjectileCard_C_78 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2024.06.05-19.01.17:716][460]LogActor: Warning: BP_ProjectileCard_C /Game/Levels/UEDPIE_0_EmptyLevel.EmptyLevel:PersistentLevel.BP_ProjectileCard_C_79 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2024.06.05-19.01.17:852][468]LogActor: Warning: BP_ProjectileCard_C /Game/Levels/UEDPIE_0_EmptyLevel.EmptyLevel:PersistentLevel.BP_ProjectileCard_C_80 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2024.06.05-19.01.18:010][477]LogActor: Warning: BP_ProjectileCard_C /Game/Levels/UEDPIE_0_EmptyLevel.EmptyLevel:PersistentLevel.BP_ProjectileCard_C_81 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2024.06.05-19.01.18:165][486]LogActor: Warning: BP_ProjectileCard_C /Game/Levels/UEDPIE_0_EmptyLevel.EmptyLevel:PersistentLevel.BP_ProjectileCard_C_82 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2024.06.05-19.01.18:319][495]LogActor: Warning: BP_ProjectileCard_C /Game/Levels/UEDPIE_0_EmptyLevel.EmptyLevel:PersistentLevel.BP_ProjectileCard_C_83 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2024.06.05-19.01.18:474][504]LogActor: Warning: BP_ProjectileCard_C /Game/Levels/UEDPIE_0_EmptyLevel.EmptyLevel:PersistentLevel.BP_ProjectileCard_C_84 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2024.06.05-19.01.19:211][547]LogActor: Warning: BP_ExplosionProjectileCard_C /Game/Levels/UEDPIE_0_EmptyLevel.EmptyLevel:PersistentLevel.BP_ExplosionProjectileCard_C_1 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2024.06.05-19.01.19:212][547]LogTemp: Display: Exploding Card
+[2024.06.05-19.01.21:307][669]LogActor: Warning: BP_ExplosionProjectileCard_C /Game/Levels/UEDPIE_0_EmptyLevel.EmptyLevel:PersistentLevel.BP_ExplosionProjectileCard_C_2 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2024.06.05-19.01.21:308][669]LogTemp: Display: Exploding Card
+[2024.06.05-19.01.22:257][725]LogTemp: Display: Card Effect Used
+[2024.06.05-19.01.22:831][759]LogTemp: Display: Card Effect Used
+[2024.06.05-19.01.23:217][782]LogTemp: Display: New card set in UI
+[2024.06.05-19.01.23:219][782]LogTemp: Display: New card at index 2
+[2024.06.05-19.01.23:248][782]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2024.06.05-19.01.23:248][782]LogWorld: BeginTearingDown for /Game/Levels/UEDPIE_0_EmptyLevel
+[2024.06.05-19.01.23:249][782]LogWorld: UWorld::CleanupWorld for EmptyLevel, bSessionEnded=true, bCleanupResources=true
+[2024.06.05-19.01.23:249][782]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.06.05-19.01.23:254][782]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2024.06.05-19.01.23:259][782]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.06.05-19.01.23:278][782]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2024.06.05-19.01.23:278][782]LogAudioMixer: Deinitializing Audio Bus Subsystem for audio device with ID 6
+[2024.06.05-19.01.23:278][782]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=6
+[2024.06.05-19.01.23:280][782]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=6
+[2024.06.05-19.01.23:300][782]LogUObjectHash: Compacting FUObjectHashTables data took   2.01ms
+[2024.06.05-19.01.23:381][783]LogPlayLevel: Display: Destroying online subsystem :Context_15
+[2024.06.05-19.01.44:212][620]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.06.05-19.01.44:354][620]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/UI/WBP_MainMenu" FILE="../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/UI/WBP_MainMenu.uasset" SILENT=true
+[2024.06.05-19.01.44:373][620]LogSavePackage: Moving output files for package: /Game/UI/WBP_MainMenu
+[2024.06.05-19.01.44:374][620]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/WBP_MainMenu1CCEBDAD442B9F782D5C6697458D20B4.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/UI/WBP_MainMenu.uasset'
+[2024.06.05-19.01.44:387][620]LogFileHelpers: InternalPromptForCheckoutAndSave took 174 ms (total: 7.18 sec)
+[2024.06.05-19.01.44:388][620]AssetCheck: New page: Asset Save: WBP_MainMenu
+[2024.06.05-19.01.44:388][620]LogContentValidation: Display: Validating /Script/UMGEditor.WidgetBlueprint /Game/UI/WBP_MainMenu.WBP_MainMenu
+[2024.06.05-19.01.47:068][781]BlueprintLog: New page: Compile WBP_MainMenu
+[2024.06.05-19.01.47:100][781]LogUObjectHash: Compacting FUObjectHashTables data took   1.85ms
