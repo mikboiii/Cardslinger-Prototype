@@ -1,25 +1,265 @@
 [
 	{
-		"file": "C:\\Users\\Mikolaj\\Documents\\Unreal Projects\\Cardslinger\\CardslingerPrototype\\Source\\CardslingerPrototype\\CardslingerPrototype.Build.cs",
+		"file": "C:\\Users\\Mikolaj\\Documents\\Unreal Projects\\Cardslinger-Prototype\\CardslingerPrototype\\Source\\CardslingerPrototype\\BTService_PlayerLocation.cpp",
 		"arguments": [
 			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe",
-			"@C:\\Users\\Mikolaj\\Documents\\Unreal Projects\\Cardslinger\\CardslingerPrototype\\.vscode\\compileCommands_CardslingerPrototype\\CardslingerPrototype.1.rsp"
+			"@C:\\Users\\Mikolaj\\Documents\\Unreal Projects\\Cardslinger-Prototype\\CardslingerPrototype\\.vscode\\compileCommands_CardslingerPrototype\\CardslingerPrototype.1.rsp"
 		],
 		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
 	},
 	{
-		"file": "C:\\Users\\Mikolaj\\Documents\\Unreal Projects\\Cardslinger\\CardslingerPrototype\\Source\\CardslingerPrototype\\CardslingerPrototype.cpp",
+		"file": "C:\\Users\\Mikolaj\\Documents\\Unreal Projects\\Cardslinger-Prototype\\CardslingerPrototype\\Source\\CardslingerPrototype\\BTService_PlayerLocation.h",
 		"arguments": [
 			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe",
-			"@C:\\Users\\Mikolaj\\Documents\\Unreal Projects\\Cardslinger\\CardslingerPrototype\\.vscode\\compileCommands_CardslingerPrototype\\CardslingerPrototype.1.rsp"
+			"@C:\\Users\\Mikolaj\\Documents\\Unreal Projects\\Cardslinger-Prototype\\CardslingerPrototype\\.vscode\\compileCommands_CardslingerPrototype\\CardslingerPrototype.1.rsp"
 		],
 		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
 	},
 	{
-		"file": "C:\\Users\\Mikolaj\\Documents\\Unreal Projects\\Cardslinger\\CardslingerPrototype\\Source\\CardslingerPrototype\\CardslingerPrototype.h",
+		"file": "C:\\Users\\Mikolaj\\Documents\\Unreal Projects\\Cardslinger-Prototype\\CardslingerPrototype\\Source\\CardslingerPrototype\\BTService_PlayerLocationIfSeen.cpp",
 		"arguments": [
 			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe",
-			"@C:\\Users\\Mikolaj\\Documents\\Unreal Projects\\Cardslinger\\CardslingerPrototype\\.vscode\\compileCommands_CardslingerPrototype\\CardslingerPrototype.1.rsp"
+			"@C:\\Users\\Mikolaj\\Documents\\Unreal Projects\\Cardslinger-Prototype\\CardslingerPrototype\\.vscode\\compileCommands_CardslingerPrototype\\CardslingerPrototype.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Mikolaj\\Documents\\Unreal Projects\\Cardslinger-Prototype\\CardslingerPrototype\\Source\\CardslingerPrototype\\BTService_PlayerLocationIfSeen.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\Mikolaj\\Documents\\Unreal Projects\\Cardslinger-Prototype\\CardslingerPrototype\\.vscode\\compileCommands_CardslingerPrototype\\CardslingerPrototype.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Mikolaj\\Documents\\Unreal Projects\\Cardslinger-Prototype\\CardslingerPrototype\\Source\\CardslingerPrototype\\BTTask_ClearBlackboardValue.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\Mikolaj\\Documents\\Unreal Projects\\Cardslinger-Prototype\\CardslingerPrototype\\.vscode\\compileCommands_CardslingerPrototype\\CardslingerPrototype.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Mikolaj\\Documents\\Unreal Projects\\Cardslinger-Prototype\\CardslingerPrototype\\Source\\CardslingerPrototype\\BTTask_ClearBlackboardValue.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\Mikolaj\\Documents\\Unreal Projects\\Cardslinger-Prototype\\CardslingerPrototype\\.vscode\\compileCommands_CardslingerPrototype\\CardslingerPrototype.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Mikolaj\\Documents\\Unreal Projects\\Cardslinger-Prototype\\CardslingerPrototype\\Source\\CardslingerPrototype\\BTTask_Shoot.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\Mikolaj\\Documents\\Unreal Projects\\Cardslinger-Prototype\\CardslingerPrototype\\.vscode\\compileCommands_CardslingerPrototype\\CardslingerPrototype.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Mikolaj\\Documents\\Unreal Projects\\Cardslinger-Prototype\\CardslingerPrototype\\Source\\CardslingerPrototype\\BTTask_Shoot.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\Mikolaj\\Documents\\Unreal Projects\\Cardslinger-Prototype\\CardslingerPrototype\\.vscode\\compileCommands_CardslingerPrototype\\CardslingerPrototype.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Mikolaj\\Documents\\Unreal Projects\\Cardslinger-Prototype\\CardslingerPrototype\\Source\\CardslingerPrototype\\BaseAIClass.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\Mikolaj\\Documents\\Unreal Projects\\Cardslinger-Prototype\\CardslingerPrototype\\.vscode\\compileCommands_CardslingerPrototype\\CardslingerPrototype.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Mikolaj\\Documents\\Unreal Projects\\Cardslinger-Prototype\\CardslingerPrototype\\Source\\CardslingerPrototype\\BaseAIClass.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\Mikolaj\\Documents\\Unreal Projects\\Cardslinger-Prototype\\CardslingerPrototype\\.vscode\\compileCommands_CardslingerPrototype\\CardslingerPrototype.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Mikolaj\\Documents\\Unreal Projects\\Cardslinger-Prototype\\CardslingerPrototype\\Source\\CardslingerPrototype\\BaseAIController.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\Mikolaj\\Documents\\Unreal Projects\\Cardslinger-Prototype\\CardslingerPrototype\\.vscode\\compileCommands_CardslingerPrototype\\CardslingerPrototype.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Mikolaj\\Documents\\Unreal Projects\\Cardslinger-Prototype\\CardslingerPrototype\\Source\\CardslingerPrototype\\BaseAIController.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\Mikolaj\\Documents\\Unreal Projects\\Cardslinger-Prototype\\CardslingerPrototype\\.vscode\\compileCommands_CardslingerPrototype\\CardslingerPrototype.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Mikolaj\\Documents\\Unreal Projects\\Cardslinger-Prototype\\CardslingerPrototype\\Source\\CardslingerPrototype\\BaseCard.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\Mikolaj\\Documents\\Unreal Projects\\Cardslinger-Prototype\\CardslingerPrototype\\.vscode\\compileCommands_CardslingerPrototype\\CardslingerPrototype.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Mikolaj\\Documents\\Unreal Projects\\Cardslinger-Prototype\\CardslingerPrototype\\Source\\CardslingerPrototype\\BaseCard.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\Mikolaj\\Documents\\Unreal Projects\\Cardslinger-Prototype\\CardslingerPrototype\\.vscode\\compileCommands_CardslingerPrototype\\CardslingerPrototype.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Mikolaj\\Documents\\Unreal Projects\\Cardslinger-Prototype\\CardslingerPrototype\\Source\\CardslingerPrototype\\BaseCharacterClass.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\Mikolaj\\Documents\\Unreal Projects\\Cardslinger-Prototype\\CardslingerPrototype\\.vscode\\compileCommands_CardslingerPrototype\\CardslingerPrototype.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Mikolaj\\Documents\\Unreal Projects\\Cardslinger-Prototype\\CardslingerPrototype\\Source\\CardslingerPrototype\\BaseCharacterClass.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\Mikolaj\\Documents\\Unreal Projects\\Cardslinger-Prototype\\CardslingerPrototype\\.vscode\\compileCommands_CardslingerPrototype\\CardslingerPrototype.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Mikolaj\\Documents\\Unreal Projects\\Cardslinger-Prototype\\CardslingerPrototype\\Source\\CardslingerPrototype\\CardDeck.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\Mikolaj\\Documents\\Unreal Projects\\Cardslinger-Prototype\\CardslingerPrototype\\.vscode\\compileCommands_CardslingerPrototype\\CardslingerPrototype.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Mikolaj\\Documents\\Unreal Projects\\Cardslinger-Prototype\\CardslingerPrototype\\Source\\CardslingerPrototype\\CardDeck.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\Mikolaj\\Documents\\Unreal Projects\\Cardslinger-Prototype\\CardslingerPrototype\\.vscode\\compileCommands_CardslingerPrototype\\CardslingerPrototype.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Mikolaj\\Documents\\Unreal Projects\\Cardslinger-Prototype\\CardslingerPrototype\\Source\\CardslingerPrototype\\CardslingerPlayerController.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\Mikolaj\\Documents\\Unreal Projects\\Cardslinger-Prototype\\CardslingerPrototype\\.vscode\\compileCommands_CardslingerPrototype\\CardslingerPrototype.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Mikolaj\\Documents\\Unreal Projects\\Cardslinger-Prototype\\CardslingerPrototype\\Source\\CardslingerPrototype\\CardslingerPlayerController.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\Mikolaj\\Documents\\Unreal Projects\\Cardslinger-Prototype\\CardslingerPrototype\\.vscode\\compileCommands_CardslingerPrototype\\CardslingerPrototype.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Mikolaj\\Documents\\Unreal Projects\\Cardslinger-Prototype\\CardslingerPrototype\\Source\\CardslingerPrototype\\CardslingerPrototype.Build.cs",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\Mikolaj\\Documents\\Unreal Projects\\Cardslinger-Prototype\\CardslingerPrototype\\.vscode\\compileCommands_CardslingerPrototype\\CardslingerPrototype.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Mikolaj\\Documents\\Unreal Projects\\Cardslinger-Prototype\\CardslingerPrototype\\Source\\CardslingerPrototype\\CardslingerPrototype.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\Mikolaj\\Documents\\Unreal Projects\\Cardslinger-Prototype\\CardslingerPrototype\\.vscode\\compileCommands_CardslingerPrototype\\CardslingerPrototype.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Mikolaj\\Documents\\Unreal Projects\\Cardslinger-Prototype\\CardslingerPrototype\\Source\\CardslingerPrototype\\CardslingerPrototype.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\Mikolaj\\Documents\\Unreal Projects\\Cardslinger-Prototype\\CardslingerPrototype\\.vscode\\compileCommands_CardslingerPrototype\\CardslingerPrototype.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Mikolaj\\Documents\\Unreal Projects\\Cardslinger-Prototype\\CardslingerPrototype\\Source\\CardslingerPrototype\\CardslingerTestGameMode.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\Mikolaj\\Documents\\Unreal Projects\\Cardslinger-Prototype\\CardslingerPrototype\\.vscode\\compileCommands_CardslingerPrototype\\CardslingerPrototype.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Mikolaj\\Documents\\Unreal Projects\\Cardslinger-Prototype\\CardslingerPrototype\\Source\\CardslingerPrototype\\CardslingerTestGameMode.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\Mikolaj\\Documents\\Unreal Projects\\Cardslinger-Prototype\\CardslingerPrototype\\.vscode\\compileCommands_CardslingerPrototype\\CardslingerPrototype.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Mikolaj\\Documents\\Unreal Projects\\Cardslinger-Prototype\\CardslingerPrototype\\Source\\CardslingerPrototype\\ExplosionProjectileCard.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\Mikolaj\\Documents\\Unreal Projects\\Cardslinger-Prototype\\CardslingerPrototype\\.vscode\\compileCommands_CardslingerPrototype\\CardslingerPrototype.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Mikolaj\\Documents\\Unreal Projects\\Cardslinger-Prototype\\CardslingerPrototype\\Source\\CardslingerPrototype\\ExplosionProjectileCard.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\Mikolaj\\Documents\\Unreal Projects\\Cardslinger-Prototype\\CardslingerPrototype\\.vscode\\compileCommands_CardslingerPrototype\\CardslingerPrototype.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Mikolaj\\Documents\\Unreal Projects\\Cardslinger-Prototype\\CardslingerPrototype\\Source\\CardslingerPrototype\\ExplosionTestCard.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\Mikolaj\\Documents\\Unreal Projects\\Cardslinger-Prototype\\CardslingerPrototype\\.vscode\\compileCommands_CardslingerPrototype\\CardslingerPrototype.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Mikolaj\\Documents\\Unreal Projects\\Cardslinger-Prototype\\CardslingerPrototype\\Source\\CardslingerPrototype\\ExplosionTestCard.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\Mikolaj\\Documents\\Unreal Projects\\Cardslinger-Prototype\\CardslingerPrototype\\.vscode\\compileCommands_CardslingerPrototype\\CardslingerPrototype.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Mikolaj\\Documents\\Unreal Projects\\Cardslinger-Prototype\\CardslingerPrototype\\Source\\CardslingerPrototype\\PlayerHUDWidget.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\Mikolaj\\Documents\\Unreal Projects\\Cardslinger-Prototype\\CardslingerPrototype\\.vscode\\compileCommands_CardslingerPrototype\\CardslingerPrototype.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Mikolaj\\Documents\\Unreal Projects\\Cardslinger-Prototype\\CardslingerPrototype\\Source\\CardslingerPrototype\\PlayerHUDWidget.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\Mikolaj\\Documents\\Unreal Projects\\Cardslinger-Prototype\\CardslingerPrototype\\.vscode\\compileCommands_CardslingerPrototype\\CardslingerPrototype.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Mikolaj\\Documents\\Unreal Projects\\Cardslinger-Prototype\\CardslingerPrototype\\Source\\CardslingerPrototype\\ProjectileCard.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\Mikolaj\\Documents\\Unreal Projects\\Cardslinger-Prototype\\CardslingerPrototype\\.vscode\\compileCommands_CardslingerPrototype\\CardslingerPrototype.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Mikolaj\\Documents\\Unreal Projects\\Cardslinger-Prototype\\CardslingerPrototype\\Source\\CardslingerPrototype\\ProjectileCard.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Users\\Mikolaj\\Documents\\Unreal Projects\\Cardslinger-Prototype\\CardslingerPrototype\\.vscode\\compileCommands_CardslingerPrototype\\CardslingerPrototype.1.rsp"
 		],
 		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
 	}

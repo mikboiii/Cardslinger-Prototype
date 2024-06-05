@@ -7,7 +7,14 @@
 		{
 			"Name": "CardslingerPrototype",
 			"Type": "Runtime",
-			"LoadingPhase": "Default"
+			"LoadingPhase": "Default",
+			"AdditionalDependencies": [
+				"Engine",
+				"CoreUObject",
+				"AIModule",
+				"UMGEditor",
+				"UMG"
+			]
 		}
 	],
 	"Plugins": [
