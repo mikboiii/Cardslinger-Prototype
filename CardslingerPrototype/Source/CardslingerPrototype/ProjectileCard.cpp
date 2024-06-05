@@ -9,6 +9,7 @@
 #include "Engine/DamageEvents.h"
 #include "NiagaraComponent.h"
 #include "NiagaraFunctionLibrary.h"
+#include "BaseAIClass.h"
 #include "DrawDebugHelpers.h"
 #include "TimerManager.h"
 
@@ -58,16 +59,17 @@ void AProjectileCard::OnHit(UPrimitiveComponent* HitComponent, AActor* OtherActo
 {
 	if (OtherActor != this)
     {
-        DrawDebugSphere(GetWorld(), Hit.ImpactPoint, 10.0f, 16, FColor::Red, true, 10000.0f);
-		if(OtherActor != UGameplayStatics::GetPlayerPawn(GetWorld(), 0))
+        //DrawDebugSphere(GetWorld(), Hit.ImpactPoint, 10.0f, 16, FColor::Red, true, 10000.0f);
+		if(OtherActor != UGameplayStatics::GetPlayerPawn(GetWorld(), 0) && OtherActor->IsA(ABaseAIClass::StaticClass()))
 		{
 			FPointDamageEvent DamageEvent(CardDamage, Hit, -GetActorForwardVector(), nullptr);
 			OtherActor->TakeDamage(CardDamage, DamageEvent, UGameplayStatics::GetPlayerPawn(GetWorld(), 0)->GetController(), this);
+				if(CardImpact)
+				{
+					UNiagaraFunctionLibrary::SpawnSystemAtLocation(GetWorld(), CardImpact, Hit.ImpactPoint, GetActorForwardVector().Rotation(),FVector(ParticleScale), true, true, ENCPoolMethod::None, true);
+				}
 		}
     }
-	if(CardImpact)
-	{
-		UNiagaraFunctionLibrary::SpawnSystemAtLocation(GetWorld(), CardImpact, Hit.ImpactPoint, GetActorForwardVector().Rotation() + FRotator(0,180,0), FVector::One(), true, true, ENCPoolMethod::None, true);
-	}
+
     Destroy();
 }

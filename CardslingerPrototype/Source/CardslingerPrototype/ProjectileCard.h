@@ -32,6 +32,9 @@ protected:
 	UPROPERTY(EditAnywhere)
 	float CardLifetime = 100.0f;
 
+	UPROPERTY(EditAnywhere)
+	float ParticleScale = 1.0f;
+
 	UFUNCTION()
 	virtual void OnHit(UPrimitiveComponent* HitComponent, AActor* OtherActor, UPrimitiveComponent* OtherComponent, FVector NormalImpulse, const FHitResult& Hit);
 
