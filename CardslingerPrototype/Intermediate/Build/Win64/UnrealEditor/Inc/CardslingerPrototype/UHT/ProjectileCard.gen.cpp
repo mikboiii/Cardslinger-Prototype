@@ -24,11 +24,18 @@ void EmptyLinkFunctionForGeneratedCodeProjectileCard() {}
 	NIAGARA_API UClass* Z_Construct_UClass_UNiagaraSystem_NoRegister();
 	UPackage* Z_Construct_UPackage__Script_CardslingerPrototype();
 // End Cross Module References
+	DEFINE_FUNCTION(AProjectileCard::execCalculateCurveControlPoint)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->CalculateCurveControlPoint();
+		P_NATIVE_END;
+	}
 	DEFINE_FUNCTION(AProjectileCard::execCalculateMidPoint)
 	{
 		P_FINISH;
 		P_NATIVE_BEGIN;
-		*(FVector*)Z_Param__Result=P_THIS->CalculateMidPoint();
+		P_THIS->CalculateMidPoint();
 		P_NATIVE_END;
 	}
 	DEFINE_FUNCTION(AProjectileCard::execOnHit)
@@ -55,37 +62,48 @@ void EmptyLinkFunctionForGeneratedCodeProjectileCard() {}
 	{
 		UClass* Class = AProjectileCard::StaticClass();
 		static const FNameNativePtrPair Funcs[] = {
+			{ "CalculateCurveControlPoint", &AProjectileCard::execCalculateCurveControlPoint },
 			{ "CalculateMidPoint", &AProjectileCard::execCalculateMidPoint },
 			{ "OnHit", &AProjectileCard::execOnHit },
 			{ "SetHomingTarget", &AProjectileCard::execSetHomingTarget },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
 	}
-	struct Z_Construct_UFunction_AProjectileCard_CalculateMidPoint_Statics
+	struct Z_Construct_UFunction_AProjectileCard_CalculateCurveControlPoint_Statics
 	{
-		struct ProjectileCard_eventCalculateMidPoint_Parms
-		{
-			FVector ReturnValue;
-		};
-		static const UECodeGen_Private::FStructPropertyParams NewProp_ReturnValue;
-		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 #if WITH_METADATA
 		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
 #endif
 		static const UECodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AProjectileCard_CalculateMidPoint_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ProjectileCard_eventCalculateMidPoint_Parms, ReturnValue), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(0, nullptr) };
-	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AProjectileCard_CalculateMidPoint_Statics::PropPointers[] = {
-		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AProjectileCard_CalculateMidPoint_Statics::NewProp_ReturnValue,
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AProjectileCard_CalculateCurveControlPoint_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "ProjectileCard.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AProjectileCard_CalculateCurveControlPoint_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AProjectileCard, nullptr, "CalculateCurveControlPoint", nullptr, nullptr, nullptr, 0, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00080401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_AProjectileCard_CalculateCurveControlPoint_Statics::Function_MetaDataParams), Z_Construct_UFunction_AProjectileCard_CalculateCurveControlPoint_Statics::Function_MetaDataParams) };
+	UFunction* Z_Construct_UFunction_AProjectileCard_CalculateCurveControlPoint()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_AProjectileCard_CalculateCurveControlPoint_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_AProjectileCard_CalculateMidPoint_Statics
+	{
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
 	};
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AProjectileCard_CalculateMidPoint_Statics::Function_MetaDataParams[] = {
 		{ "ModuleRelativePath", "ProjectileCard.h" },
 	};
 #endif
-	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AProjectileCard_CalculateMidPoint_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AProjectileCard, nullptr, "CalculateMidPoint", nullptr, nullptr, Z_Construct_UFunction_AProjectileCard_CalculateMidPoint_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_AProjectileCard_CalculateMidPoint_Statics::PropPointers), sizeof(Z_Construct_UFunction_AProjectileCard_CalculateMidPoint_Statics::ProjectileCard_eventCalculateMidPoint_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00880401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_AProjectileCard_CalculateMidPoint_Statics::Function_MetaDataParams), Z_Construct_UFunction_AProjectileCard_CalculateMidPoint_Statics::Function_MetaDataParams) };
-	static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_AProjectileCard_CalculateMidPoint_Statics::PropPointers) < 2048);
-	static_assert(sizeof(Z_Construct_UFunction_AProjectileCard_CalculateMidPoint_Statics::ProjectileCard_eventCalculateMidPoint_Parms) < MAX_uint16);
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AProjectileCard_CalculateMidPoint_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AProjectileCard, nullptr, "CalculateMidPoint", nullptr, nullptr, nullptr, 0, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00080401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_AProjectileCard_CalculateMidPoint_Statics::Function_MetaDataParams), Z_Construct_UFunction_AProjectileCard_CalculateMidPoint_Statics::Function_MetaDataParams) };
 	UFunction* Z_Construct_UFunction_AProjectileCard_CalculateMidPoint()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -297,7 +315,8 @@ void EmptyLinkFunctionForGeneratedCodeProjectileCard() {}
 	};
 	static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_AProjectileCard_Statics::DependentSingletons) < 16);
 	const FClassFunctionLinkInfo Z_Construct_UClass_AProjectileCard_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AProjectileCard_CalculateMidPoint, "CalculateMidPoint" }, // 884197241
+		{ &Z_Construct_UFunction_AProjectileCard_CalculateCurveControlPoint, "CalculateCurveControlPoint" }, // 2280886562
+		{ &Z_Construct_UFunction_AProjectileCard_CalculateMidPoint, "CalculateMidPoint" }, // 2990521993
 		{ &Z_Construct_UFunction_AProjectileCard_OnHit, "OnHit" }, // 119443953
 		{ &Z_Construct_UFunction_AProjectileCard_SetHomingTarget, "SetHomingTarget" }, // 4222389383
 	};
@@ -496,9 +515,9 @@ void EmptyLinkFunctionForGeneratedCodeProjectileCard() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_ProjectileCard_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_AProjectileCard, AProjectileCard::StaticClass, TEXT("AProjectileCard"), &Z_Registration_Info_UClass_AProjectileCard, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AProjectileCard), 2293323921U) },
+		{ Z_Construct_UClass_AProjectileCard, AProjectileCard::StaticClass, TEXT("AProjectileCard"), &Z_Registration_Info_UClass_AProjectileCard, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AProjectileCard), 4273401733U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_ProjectileCard_h_625898410(TEXT("/Script/CardslingerPrototype"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_ProjectileCard_h_423463079(TEXT("/Script/CardslingerPrototype"),
 		Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_ProjectileCard_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_ProjectileCard_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);

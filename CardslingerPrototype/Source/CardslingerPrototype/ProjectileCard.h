@@ -83,7 +83,9 @@ protected:
 	float MaxAngle = 360.0f;
 
 	UFUNCTION()
-	FVector CalculateMidPoint();
+	void CalculateMidPoint();
+	UFUNCTION()
+	void CalculateCurveControlPoint();
 
 public:	
 	// Called every frame

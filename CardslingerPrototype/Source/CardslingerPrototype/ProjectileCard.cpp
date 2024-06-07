@@ -1,6 +1,5 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
-
 #include "ProjectileCard.h"
 #include "Kismet/GameplayStatics.h"
 #include "Components/BoxComponent.h"
@@ -87,8 +86,16 @@ void AProjectileCard::SetHomingTarget(FVector Target)
 	TargetLocation = Target;
 }
 
-FVector AProjectileCard::CalculateMidPoint()
+void AProjectileCard::CalculateMidPoint()
 {
-	FVector CalculatedVector = GetActorLocation() + ((TargetLocation - GetActorLocation()) * UKismetMathLibrary::RandomFloatInRange(MinCurvePointDistance, MaxCurvePointDistance));
-	return CalculatedVector;
+	MidPoint = GetActorLocation() + ((TargetLocation - GetActorLocation()) * UKismetMathLibrary::RandomFloatInRange(MinCurvePointDistance, MaxCurvePointDistance));
+}
+
+void AProjectileCard::CalculateCurveControlPoint()
+{
+	FRotator MidToTargetRot = UKismetMathLibrary::FindLookAtRotation(MidPoint, TargetLocation);
+	FVector x, y, z;
+	UKismetMathLibrary::BreakRotIntoAxes(MidToTargetRot, x, y, z);
+	y *= UKismetMathLibrary::RandomFloatInRange(MinCurveRadius, MaxCurveRadius);
+	CurvedPoint = MidPoint + UKismetMathLibrary::RotateAngleAxis(y, UKismetMathLibrary::RandomFloatInRange(MinAngle, MaxAngle), x);
 }

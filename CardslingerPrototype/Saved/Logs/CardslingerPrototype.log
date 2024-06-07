@@ -2191,3 +2191,34 @@ LogConfig: Set CVar [[r.Shadow.DetectVertexShaderLayerAtRuntime:1]]
 [2024.06.07-16.46.51:628][733]LogUObjectHash: Compacting FUObjectHashTables data took   4.94ms
 [2024.06.07-16.46.52:213][734]Display: Reload/Re-instancing Complete: 1 package changed, 16 classes unchanged, 11 functions remapped
 [2024.06.07-16.46.52:213][734]LogLiveCoding: Display: Live coding succeeded
+[2024.06.07-16.55.54:510][388]LogActor: Warning: BP_ExplosionProjectileCard_C /Engine/Transient.World_1:PersistentLevel.BP_ExplosionProjectileCard_C_3 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2024.06.07-16.56.06:903][964]LogSelectionDetails: Warning: NavigateToFunctionSource:  Unable to find source file and line number for 'UKismetMathLibrary::RotateAngleAxis' [Element not found.]
+[2024.06.07-16.56.45:354][525]LogUObjectHash: Compacting FUObjectHashTables data took   6.65ms
+[2024.06.07-16.56.45:357][525]LogFileHelpers: Editor autosave (incl. external actors) for '/Game/EmptyLevel' took 0.122
+[2024.06.07-16.56.45:362][525]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/Cards/BP_ProjectileCard] ([2] browsable assets)...
+[2024.06.07-16.56.45:442][525]OBJ SavePackage:     Rendered thumbnail for [Blueprint /Game/Cards/BP_ProjectileCard.BP_ProjectileCard]
+[2024.06.07-16.56.45:444][525]OBJ SavePackage: Finished generating thumbnails for package [/Game/Cards/BP_ProjectileCard]
+[2024.06.07-16.56.45:487][525]LogSavePackage: Moving output files for package: /Temp/Autosaves/Game/Cards/BP_ProjectileCard_Auto1
+[2024.06.07-16.56.45:488][525]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/BP_ProjectileCard_Auto1254C46CB4E218D15E82C4C8283237EA6.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/Autosaves/Game/Cards/BP_ProjectileCard_Auto1.uasset'
+[2024.06.07-16.56.45:493][525]LogFileHelpers: Auto-saving content packages took 0.136
+[2024.06.07-17.01.24:692][428]LogLiveCoding: Display: Starting Live Coding compile.
+[2024.06.07-17.02.16:467][583]LogLiveCoding: Display:    Creating library C:\Users\Mikolaj\Documents\Unreal Projects\Cardslinger-Prototype\CardslingerPrototype\Binaries\Win64\UnrealEditor-CardslingerPrototype.patch_5.lib and object C:\Users\Mikolaj\Documents\Unreal Projects\Cardslinger-Prototype\CardslingerPrototype\Binaries\Win64\UnrealEditor-CardslingerPrototype.patch_5.exp
+[2024.06.07-17.02.17:774][587]LogClass: UPackage /Script/CardslingerPrototype Reload.
+[2024.06.07-17.02.17:775][587]LogClass: UClass ExplosionProjectileCard Reload.
+[2024.06.07-17.02.17:778][587]LogClass: UClass ProjectileCard Reload.
+[2024.06.07-17.02.17:823][587]LogClass: Could not find existing class ExplosionProjectileCard in package /Script/CardslingerPrototype for reload, assuming new or modified class
+[2024.06.07-17.02.17:824][587]LogClass: Could not find existing class ProjectileCard in package /Script/CardslingerPrototype for reload, assuming new or modified class
+[2024.06.07-17.02.17:824][587]LogClass: Function CalculateCurveControlPoint is new or belongs to a modified class.
+[2024.06.07-17.02.17:824][587]LogClass: Function CalculateMidPoint is new or belongs to a modified class.
+[2024.06.07-17.02.17:825][587]LogClass: Function OnHit is new or belongs to a modified class.
+[2024.06.07-17.02.17:826][587]LogClass: Function SetHomingTarget is new or belongs to a modified class.
+[2024.06.07-17.02.17:883][587]Re-instancing ProjectileCard after reload.
+[2024.06.07-17.02.17:974][587]LogActor: Warning: BP_ProjectileCard_C /Engine/Transient.World_2:PersistentLevel.BP_ProjectileCard_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2024.06.07-17.02.18:026][587]LogActor: Warning: BP_ProjectileCard_C /Engine/Transient.World_3:PersistentLevel.BP_ProjectileCard_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2024.06.07-17.02.18:032][587]LogActor: Warning: BP_ProjectileCard_C /Engine/Transient.World_0:PersistentLevel.BP_ProjectileCard_C_8 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2024.06.07-17.02.18:080][587]LogActor: Warning: BP_ProjectileCard_C /Engine/Transient.World_0:PersistentLevel.BP_ProjectileCard_C_9 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2024.06.07-17.02.18:160][587]Re-instancing ExplosionProjectileCard after reload.
+[2024.06.07-17.02.18:170][587]LogActor: Warning: BP_ExplosionProjectileCard_C /Engine/Transient.World_1:PersistentLevel.BP_ExplosionProjectileCard_C_3 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2024.06.07-17.02.18:562][587]LogUObjectHash: Compacting FUObjectHashTables data took  20.54ms
+[2024.06.07-17.02.19:307][588]Display: Reload/Re-instancing Complete: 1 package changed, 2 classes changed, 14 classes unchanged, 8 functions remapped
+[2024.06.07-17.02.19:307][588]LogLiveCoding: Warning: Live coding succeeded, data type changes may cause packaging to fail if assets reference the new or updated data types
