@@ -6,6 +6,8 @@
 #include "Components/BoxComponent.h"
 #include "Kismet/KismetMathLibrary.h"
 #include "Components/SkeletalMeshComponent.h"
+#include "GameFramework/ProjectileMovementComponent.h"
+#include "Components/SceneComponent.h"
 #include "Engine/DamageEvents.h"
 #include "NiagaraComponent.h"
 #include "NiagaraFunctionLibrary.h"
@@ -24,6 +26,9 @@ AProjectileCard::AProjectileCard()
 	CardCollision->SetupAttachment(CardSkeletalMesh);
 	CardTrail = CreateDefaultSubobject<UNiagaraComponent>(TEXT("CardTrail"));
 	CardTrail->SetupAttachment(CardCollision);
+	CardProjectile = CreateDefaultSubobject<UProjectileMovementComponent>(TEXT("CardProjectileMovement"));
+	CardProjectile->SetUpdatedComponent(RootComponent);
+
 	if(CardCollision != nullptr)
 	{
 	CardCollision->OnComponentHit.AddDynamic(this, &AProjectileCard::OnHit);
@@ -44,10 +49,11 @@ void AProjectileCard::BeginPlay()
 void AProjectileCard::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
+	/*
 	FVector ToMove;
 	ToMove = GetActorForwardVector() * CardVelocity;
 	AddActorWorldOffset(ToMove, true);
-
+	*/
 }
 
 void AProjectileCard::DestroyCard()

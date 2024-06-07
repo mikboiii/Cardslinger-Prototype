@@ -48,6 +48,9 @@ protected:
 	class UNiagaraSystem* CardImpact;
 
 	UPROPERTY(Instanced, EditAnywhere)
+	class UProjectileMovementComponent* CardProjectile;
+
+	UPROPERTY(Instanced, EditAnywhere)
 	class USkeletalMeshComponent* CardSkeletalMesh;
 	UPROPERTY(EditAnywhere)
 	float CardVelocity = 20.0f;
