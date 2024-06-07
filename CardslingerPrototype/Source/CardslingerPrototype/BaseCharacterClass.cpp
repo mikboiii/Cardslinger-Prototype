@@ -169,12 +169,12 @@ void ABaseCharacterClass::UseCard(const FInputActionValue& Value)
 
 	if(Hit.GetActor()->IsA(ABaseAIClass::StaticClass()))
 	{
-		CardHand[Index]->CardEffect(CardDeck, -ShotDirection);
+		CardHand[Index]->CardEffect(CardDeck, -ShotDirection, Hit.ImpactPoint);
 	}
 	else
 	{
 		//Has shot direction reversed: shot direction originally made for hit events
-		CardHand[Index]->CardEffect(CardDeck, -ShotDirection);
+		CardHand[Index]->CardEffect(CardDeck, -ShotDirection, Hit.ImpactPoint);
 	}
 	//Sets the array index to nullptr to prevent array resizing
 	CardHand[Index] = nullptr;
@@ -213,13 +213,13 @@ void ABaseCharacterClass::Shoot()
 			//HitActor->TakeDamage(Damage, DamageEvent, GetController(), this);
 			if(Hit.GetActor()->IsA(ABaseAIClass::StaticClass()))
 			{
-				CardDeck->FireCard(-ShotDirection, BasicCardProjectile);
+				CardDeck->FireCard(-ShotDirection, BasicCardProjectile, Hit.ImpactPoint);
 				CardDeck->RemoveCardFromDeck(CurrentClip);
 				return;
 			}
 		}
 		//launch basic projectile
-		CardDeck->FireCard(-ShotDirection, BasicCardProjectile);
+		CardDeck->FireCard(-ShotDirection, BasicCardProjectile, Hit.ImpactPoint);
 		CardDeck->RemoveCardFromDeck(CurrentClip);
 	}
 }

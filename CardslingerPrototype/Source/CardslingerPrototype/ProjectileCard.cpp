@@ -80,16 +80,15 @@ void AProjectileCard::OnHit(UPrimitiveComponent* HitComponent, AActor* OtherActo
     Destroy();
 }
 
-void AProjectileCard::SetHomingTarget(TWeakObjectPtr<USceneComponent> Target)
+void AProjectileCard::SetHomingTarget(FVector Target)
 {
 	UE_LOG(LogTemp, Display, TEXT("TARGET SET"));
-	if(Target != nullptr)
-	{
-	CardProjectile->HomingTargetComponent = Target;
-	}
+
+	TargetLocation = Target;
 }
 
 FVector AProjectileCard::CalculateMidPoint()
 {
-	return FVector::One();
+	FVector CalculatedVector = GetActorLocation() + ((TargetLocation - GetActorLocation()) * UKismetMathLibrary::RandomFloatInRange(MinCurvePointDistance, MaxCurvePointDistance));
+	return CalculatedVector;
 }

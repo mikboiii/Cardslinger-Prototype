@@ -6,8 +6,8 @@
 #include "ProjectileCard.h"
 #include "Engine/World.h"
 
-void AExplosionTestCard::CardEffect(ACardDeck* CardDeck, FVector Direction)
+void AExplosionTestCard::CardEffect(ACardDeck* CardDeck, FVector Direction, FVector Target)
 {
-    AProjectileCard* LaunchedCard = CardDeck->FireCard(Direction, ExplosionProjectileCardClass);
+    AProjectileCard* LaunchedCard = CardDeck->FireCard(Direction, ExplosionProjectileCardClass, Target);
     UE_LOG(LogTemp, Display, TEXT("Exploding Card"));
 }

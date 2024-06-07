@@ -25,7 +25,7 @@ void ABaseCard::Tick(float DeltaTime)
 
 }
 
-void ABaseCard::CardEffect(ACardDeck* CardDeck, FVector Direction)
+void ABaseCard::CardEffect(ACardDeck* CardDeck, FVector Direction, FVector Target)
 {
 	UE_LOG(LogTemp, Display, TEXT("Card Effect Used"));
 }

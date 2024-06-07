@@ -18,7 +18,6 @@ void EmptyLinkFunctionForGeneratedCodeProjectileCard() {}
 	ENGINE_API UClass* Z_Construct_UClass_UBoxComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UPrimitiveComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UProjectileMovementComponent_NoRegister();
-	ENGINE_API UClass* Z_Construct_UClass_USceneComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_USkeletalMeshComponent_NoRegister();
 	ENGINE_API UScriptStruct* Z_Construct_UScriptStruct_FHitResult();
 	NIAGARA_API UClass* Z_Construct_UClass_UNiagaraComponent_NoRegister();
@@ -46,7 +45,7 @@ void EmptyLinkFunctionForGeneratedCodeProjectileCard() {}
 	}
 	DEFINE_FUNCTION(AProjectileCard::execSetHomingTarget)
 	{
-		P_GET_WEAKOBJECT(TWeakObjectPtr<USceneComponent>,Z_Param_Target);
+		P_GET_STRUCT(FVector,Z_Param_Target);
 		P_FINISH;
 		P_NATIVE_BEGIN;
 		P_THIS->SetHomingTarget(Z_Param_Target);
@@ -174,16 +173,16 @@ void EmptyLinkFunctionForGeneratedCodeProjectileCard() {}
 	{
 		struct ProjectileCard_eventSetHomingTarget_Parms
 		{
-			TWeakObjectPtr<USceneComponent> Target;
+			FVector Target;
 		};
-		static const UECodeGen_Private::FWeakObjectPropertyParams NewProp_Target;
+		static const UECodeGen_Private::FStructPropertyParams NewProp_Target;
 		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 #if WITH_METADATA
 		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
 #endif
 		static const UECodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UECodeGen_Private::FWeakObjectPropertyParams Z_Construct_UFunction_AProjectileCard_SetHomingTarget_Statics::NewProp_Target = { "Target", nullptr, (EPropertyFlags)0x0014000000000080, UECodeGen_Private::EPropertyGenFlags::WeakObject, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ProjectileCard_eventSetHomingTarget_Parms, Target), Z_Construct_UClass_USceneComponent_NoRegister, METADATA_PARAMS(0, nullptr) };
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AProjectileCard_SetHomingTarget_Statics::NewProp_Target = { "Target", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ProjectileCard_eventSetHomingTarget_Parms, Target), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(0, nullptr) };
 	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AProjectileCard_SetHomingTarget_Statics::PropPointers[] = {
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AProjectileCard_SetHomingTarget_Statics::NewProp_Target,
 	};
@@ -192,7 +191,7 @@ void EmptyLinkFunctionForGeneratedCodeProjectileCard() {}
 		{ "ModuleRelativePath", "ProjectileCard.h" },
 	};
 #endif
-	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AProjectileCard_SetHomingTarget_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AProjectileCard, nullptr, "SetHomingTarget", nullptr, nullptr, Z_Construct_UFunction_AProjectileCard_SetHomingTarget_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_AProjectileCard_SetHomingTarget_Statics::PropPointers), sizeof(Z_Construct_UFunction_AProjectileCard_SetHomingTarget_Statics::ProjectileCard_eventSetHomingTarget_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_AProjectileCard_SetHomingTarget_Statics::Function_MetaDataParams), Z_Construct_UFunction_AProjectileCard_SetHomingTarget_Statics::Function_MetaDataParams) };
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AProjectileCard_SetHomingTarget_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AProjectileCard, nullptr, "SetHomingTarget", nullptr, nullptr, Z_Construct_UFunction_AProjectileCard_SetHomingTarget_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_AProjectileCard_SetHomingTarget_Statics::PropPointers), sizeof(Z_Construct_UFunction_AProjectileCard_SetHomingTarget_Statics::ProjectileCard_eventSetHomingTarget_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00820401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_AProjectileCard_SetHomingTarget_Statics::Function_MetaDataParams), Z_Construct_UFunction_AProjectileCard_SetHomingTarget_Statics::Function_MetaDataParams) };
 	static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_AProjectileCard_SetHomingTarget_Statics::PropPointers) < 2048);
 	static_assert(sizeof(Z_Construct_UFunction_AProjectileCard_SetHomingTarget_Statics::ProjectileCard_eventSetHomingTarget_Parms) < MAX_uint16);
 	UFunction* Z_Construct_UFunction_AProjectileCard_SetHomingTarget()
@@ -300,7 +299,7 @@ void EmptyLinkFunctionForGeneratedCodeProjectileCard() {}
 	const FClassFunctionLinkInfo Z_Construct_UClass_AProjectileCard_Statics::FuncInfo[] = {
 		{ &Z_Construct_UFunction_AProjectileCard_CalculateMidPoint, "CalculateMidPoint" }, // 884197241
 		{ &Z_Construct_UFunction_AProjectileCard_OnHit, "OnHit" }, // 119443953
-		{ &Z_Construct_UFunction_AProjectileCard_SetHomingTarget, "SetHomingTarget" }, // 709641019
+		{ &Z_Construct_UFunction_AProjectileCard_SetHomingTarget, "SetHomingTarget" }, // 4222389383
 	};
 	static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_AProjectileCard_Statics::FuncInfo) < 2048);
 #if WITH_METADATA
@@ -497,9 +496,9 @@ void EmptyLinkFunctionForGeneratedCodeProjectileCard() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_ProjectileCard_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_AProjectileCard, AProjectileCard::StaticClass, TEXT("AProjectileCard"), &Z_Registration_Info_UClass_AProjectileCard, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AProjectileCard), 355822395U) },
+		{ Z_Construct_UClass_AProjectileCard, AProjectileCard::StaticClass, TEXT("AProjectileCard"), &Z_Registration_Info_UClass_AProjectileCard, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AProjectileCard), 2293323921U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_ProjectileCard_h_2634885356(TEXT("/Script/CardslingerPrototype"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_ProjectileCard_h_625898410(TEXT("/Script/CardslingerPrototype"),
 		Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_ProjectileCard_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_ProjectileCard_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);

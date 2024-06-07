@@ -50,7 +50,7 @@ public:
 	UFUNCTION(BlueprintCallable)
 	void ShuffleDeck();
 
-	AProjectileCard* FireCard(FVector Direction, TSubclassOf<class AProjectileCard> CardClass);
+	AProjectileCard* FireCard(FVector Direction, TSubclassOf<class AProjectileCard> CardClass, FVector Target);
 
 	UFUNCTION(BlueprintPure)
 	bool IsDeckEmpty() const;

@@ -23,7 +23,7 @@ public:
 
 	
 	UFUNCTION()
-	void SetHomingTarget(TWeakObjectPtr<USceneComponent> Target);
+	void SetHomingTarget(FVector Target);
 
 protected:
 	// Called when the game starts or when spawned

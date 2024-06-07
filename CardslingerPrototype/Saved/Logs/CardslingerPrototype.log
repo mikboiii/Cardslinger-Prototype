@@ -2154,3 +2154,40 @@ LogConfig: Set CVar [[r.Shadow.DetectVertexShaderLayerAtRuntime:1]]
 [2024.06.07-16.29.00:727][734]Display: Reload/Re-instancing Complete: 1 package changed, 2 classes changed, 14 classes unchanged, 8 functions remapped
 [2024.06.07-16.29.00:727][734]LogLiveCoding: Warning: Live coding succeeded, data type changes may cause packaging to fail if assets reference the new or updated data types
 [2024.06.07-16.29.01:150][735]LogActor: Warning: BP_ExplosionProjectileCard_C /Engine/Transient.World_1:PersistentLevel.BP_ExplosionProjectileCard_C_2 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2024.06.07-16.34.10:046][670]LogLiveCoding: Display: Starting Live Coding compile.
+[2024.06.07-16.34.44:013][782]Display: Reload/Re-instancing Complete: No object changes detected
+[2024.06.07-16.34.44:013][782]LogLiveCoding: Error: Live coding failed, please see Live console for more information
+[2024.06.07-16.35.25:093][905]LogLiveCoding: Display: Starting Live Coding compile.
+[2024.06.07-16.35.43:743][961]Display: Reload/Re-instancing Complete: No object changes detected
+[2024.06.07-16.35.43:743][961]LogLiveCoding: Error: Live coding canceled
+[2024.06.07-16.35.59:015][  6]LogLiveCoding: Display: Starting Live Coding compile.
+[2024.06.07-16.36.07:074][ 31]Display: Reload/Re-instancing Complete: No object changes detected
+[2024.06.07-16.36.07:074][ 31]LogLiveCoding: Error: Live coding failed, please see Live console for more information
+[2024.06.07-16.36.23:194][ 79]LogLiveCoding: Display: Starting Live Coding compile.
+[2024.06.07-16.36.39:729][128]LogLiveCoding: Display:    Creating library C:\Users\Mikolaj\Documents\Unreal Projects\Cardslinger-Prototype\CardslingerPrototype\Binaries\Win64\UnrealEditor-CardslingerPrototype.patch_3.lib and object C:\Users\Mikolaj\Documents\Unreal Projects\Cardslinger-Prototype\CardslingerPrototype\Binaries\Win64\UnrealEditor-CardslingerPrototype.patch_3.exp
+[2024.06.07-16.36.41:045][132]LogClass: UPackage /Script/CardslingerPrototype Reload.
+[2024.06.07-16.36.41:045][132]LogClass: UClass ExplosionProjectileCard Reload.
+[2024.06.07-16.36.41:046][132]LogClass: UClass ProjectileCard Reload.
+[2024.06.07-16.36.41:083][132]LogClass: Could not find existing class ExplosionProjectileCard in package /Script/CardslingerPrototype for reload, assuming new or modified class
+[2024.06.07-16.36.41:083][132]LogClass: Could not find existing class ProjectileCard in package /Script/CardslingerPrototype for reload, assuming new or modified class
+[2024.06.07-16.36.41:083][132]LogClass: Function CalculateMidPoint is new or belongs to a modified class.
+[2024.06.07-16.36.41:083][132]LogClass: Function OnHit is new or belongs to a modified class.
+[2024.06.07-16.36.41:083][132]LogClass: Function SetHomingTarget is new or belongs to a modified class.
+[2024.06.07-16.36.41:136][132]Re-instancing ProjectileCard after reload.
+[2024.06.07-16.36.41:175][132]LogActor: Warning: BP_ProjectileCard_C /Engine/Transient.World_2:PersistentLevel.BP_ProjectileCard_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2024.06.07-16.36.41:180][132]LogActor: Warning: BP_ProjectileCard_C /Engine/Transient.World_3:PersistentLevel.BP_ProjectileCard_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2024.06.07-16.36.41:182][132]LogActor: Warning: BP_ProjectileCard_C /Engine/Transient.World_0:PersistentLevel.BP_ProjectileCard_C_7 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2024.06.07-16.36.41:229][132]LogActor: Warning: BP_ProjectileCard_C /Engine/Transient.World_0:PersistentLevel.BP_ProjectileCard_C_8 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2024.06.07-16.36.41:263][132]Re-instancing ExplosionProjectileCard after reload.
+[2024.06.07-16.36.41:270][132]LogActor: Warning: BP_ExplosionProjectileCard_C /Engine/Transient.World_1:PersistentLevel.BP_ExplosionProjectileCard_C_2 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2024.06.07-16.36.41:757][132]LogUObjectHash: Compacting FUObjectHashTables data took   7.37ms
+[2024.06.07-16.36.42:411][133]Display: Reload/Re-instancing Complete: 1 package changed, 2 classes changed, 14 classes unchanged, 8 functions remapped
+[2024.06.07-16.36.42:412][133]LogLiveCoding: Warning: Live coding succeeded, data type changes may cause packaging to fail if assets reference the new or updated data types
+[2024.06.07-16.44.39:192][337]LogLiveCoding: Display: Starting Live Coding compile.
+[2024.06.07-16.45.21:316][464]Display: Reload/Re-instancing Complete: No object changes detected
+[2024.06.07-16.45.21:316][464]LogLiveCoding: Error: Live coding failed, please see Live console for more information
+[2024.06.07-16.46.07:100][601]LogLiveCoding: Display: Starting Live Coding compile.
+[2024.06.07-16.46.50:174][730]LogLiveCoding: Display:    Creating library C:\Users\Mikolaj\Documents\Unreal Projects\Cardslinger-Prototype\CardslingerPrototype\Binaries\Win64\UnrealEditor-CardslingerPrototype.patch_4.lib and object C:\Users\Mikolaj\Documents\Unreal Projects\Cardslinger-Prototype\CardslingerPrototype\Binaries\Win64\UnrealEditor-CardslingerPrototype.patch_4.exp
+[2024.06.07-16.46.51:628][733]LogUObjectHash: Compacting FUObjectHashTables data took   4.94ms
+[2024.06.07-16.46.52:213][734]Display: Reload/Re-instancing Complete: 1 package changed, 16 classes unchanged, 11 functions remapped
+[2024.06.07-16.46.52:213][734]LogLiveCoding: Display: Live coding succeeded

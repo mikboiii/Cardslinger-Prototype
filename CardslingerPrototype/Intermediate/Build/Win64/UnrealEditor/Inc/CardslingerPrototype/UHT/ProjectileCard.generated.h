@@ -11,7 +11,6 @@
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 class AActor;
 class UPrimitiveComponent;
-class USceneComponent;
 struct FHitResult;
 #ifdef CARDSLINGERPROTOTYPE_ProjectileCard_generated_h
 #error "ProjectileCard.generated.h already included, missing '#pragma once' in ProjectileCard.h"
