@@ -13,7 +13,7 @@ UCLASS()
 class CARDSLINGERPROTOTYPE_API AExplosionTestCard : public ABaseCard
 {
 	GENERATED_BODY()
-	virtual void CardEffect(class ACardDeck* CardDeck, FVector Direction) override;
+	virtual void CardEffect(class ACardDeck* CardDeck, FVector Direction, TWeakObjectPtr<USceneComponent> Target) override;
 
 private:
 	UPROPERTY(EditAnywhere)

@@ -26,6 +26,7 @@
 #include "Components/ProgressBar.h"
 #include "Blueprint/UserWidget.h"
 #include "PlayerHUDWidget.h"
+#include "BaseAIClass.h"
 
 
 // Sets default values
@@ -165,8 +166,16 @@ void ABaseCharacterClass::UseCard(const FInputActionValue& Value)
 	FVector ShotDirection;
 	FHitResult Hit;
 	if(HitTrace(Hit, ShotDirection)) ShotDirection = CardDeck->GetActorLocation() - Hit.ImpactPoint;
-	//Has shot direction reversed: shot direction originally made for hit events
-	CardHand[Index]->CardEffect(CardDeck, -ShotDirection);
+
+	if(Hit.GetActor()->IsA(ABaseAIClass::StaticClass()))
+	{
+		CardHand[Index]->CardEffect(CardDeck, -ShotDirection, Cast<UPrimitiveComponent>(Hit.GetActor()->GetRootComponent()));
+	}
+	else
+	{
+		//Has shot direction reversed: shot direction originally made for hit events
+		CardHand[Index]->CardEffect(CardDeck, -ShotDirection, nullptr);
+	}
 	//Sets the array index to nullptr to prevent array resizing
 	CardHand[Index] = nullptr;
 	//Creates a timer delegate to enable the use of parameters in timer function
@@ -204,7 +213,7 @@ void ABaseCharacterClass::Shoot()
 			//HitActor->TakeDamage(Damage, DamageEvent, GetController(), this);
 		}
 		//launch basic projectile
-		CardDeck->FireCard(-ShotDirection, BasicCardProjectile);
+		CardDeck->FireCard(-ShotDirection, BasicCardProjectile, nullptr);
 		CardDeck->RemoveCardFromDeck(CurrentClip);
 	}
 }

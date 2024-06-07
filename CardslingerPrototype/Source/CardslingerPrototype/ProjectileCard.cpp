@@ -79,3 +79,8 @@ void AProjectileCard::OnHit(UPrimitiveComponent* HitComponent, AActor* OtherActo
 
     Destroy();
 }
+
+void AProjectileCard::SetHomingTarget(TWeakObjectPtr<USceneComponent> Target)
+{
+	CardProjectile->HomingTargetComponent = Target;
+}

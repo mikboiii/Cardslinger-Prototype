@@ -38,6 +38,11 @@ void EmptyLinkFunctionForGeneratedCodeBaseCard() {}
 #endif
 		static const UECodeGen_Private::FStrPropertyParams NewProp_CardDescription;
 #if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_bIsHoming_MetaData[];
+#endif
+		static void NewProp_bIsHoming_SetBit(void* Obj);
+		static const UECodeGen_Private::FBoolPropertyParams NewProp_bIsHoming;
+#if WITH_METADATA
 		static const UECodeGen_Private::FMetaDataPairParam NewProp_CardWidget_MetaData[];
 #endif
 		static const UECodeGen_Private::FObjectPropertyParams NewProp_CardWidget;
@@ -71,6 +76,17 @@ void EmptyLinkFunctionForGeneratedCodeBaseCard() {}
 #endif
 	const UECodeGen_Private::FStrPropertyParams Z_Construct_UClass_ABaseCard_Statics::NewProp_CardDescription = { "CardDescription", nullptr, (EPropertyFlags)0x0010000000000001, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ABaseCard, CardDescription), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_ABaseCard_Statics::NewProp_CardDescription_MetaData), Z_Construct_UClass_ABaseCard_Statics::NewProp_CardDescription_MetaData) };
 #if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABaseCard_Statics::NewProp_bIsHoming_MetaData[] = {
+		{ "Category", "BaseCard" },
+		{ "ModuleRelativePath", "BaseCard.h" },
+	};
+#endif
+	void Z_Construct_UClass_ABaseCard_Statics::NewProp_bIsHoming_SetBit(void* Obj)
+	{
+		((ABaseCard*)Obj)->bIsHoming = 1;
+	}
+	const UECodeGen_Private::FBoolPropertyParams Z_Construct_UClass_ABaseCard_Statics::NewProp_bIsHoming = { "bIsHoming", nullptr, (EPropertyFlags)0x0010000000000001, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, sizeof(bool), sizeof(ABaseCard), &Z_Construct_UClass_ABaseCard_Statics::NewProp_bIsHoming_SetBit, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_ABaseCard_Statics::NewProp_bIsHoming_MetaData), Z_Construct_UClass_ABaseCard_Statics::NewProp_bIsHoming_MetaData) };
+#if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABaseCard_Statics::NewProp_CardWidget_MetaData[] = {
 		{ "Category", "BaseCard" },
 		{ "EditInline", "true" },
@@ -81,6 +97,7 @@ void EmptyLinkFunctionForGeneratedCodeBaseCard() {}
 	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ABaseCard_Statics::PropPointers[] = {
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABaseCard_Statics::NewProp_CardName,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABaseCard_Statics::NewProp_CardDescription,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABaseCard_Statics::NewProp_bIsHoming,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABaseCard_Statics::NewProp_CardWidget,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_ABaseCard_Statics::StaticCppClassTypeInfo = {
@@ -121,9 +138,9 @@ void EmptyLinkFunctionForGeneratedCodeBaseCard() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_BaseCard_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_ABaseCard, ABaseCard::StaticClass, TEXT("ABaseCard"), &Z_Registration_Info_UClass_ABaseCard, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ABaseCard), 2497119850U) },
+		{ Z_Construct_UClass_ABaseCard, ABaseCard::StaticClass, TEXT("ABaseCard"), &Z_Registration_Info_UClass_ABaseCard, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ABaseCard), 2066801759U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_BaseCard_h_1100332032(TEXT("/Script/CardslingerPrototype"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_BaseCard_h_1293524171(TEXT("/Script/CardslingerPrototype"),
 		Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_BaseCard_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_BaseCard_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);

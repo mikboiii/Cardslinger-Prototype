@@ -6,8 +6,9 @@
 #include "ProjectileCard.h"
 #include "Engine/World.h"
 
-void AExplosionTestCard::CardEffect(ACardDeck* CardDeck, FVector Direction)
+void AExplosionTestCard::CardEffect(ACardDeck* CardDeck, FVector Direction, TWeakObjectPtr<USceneComponent> Target)
 {
-    CardDeck->FireCard(Direction, ExplosionProjectileCardClass);
+    AProjectileCard* LaunchedCard = CardDeck->FireCard(Direction, ExplosionProjectileCardClass, Target);
+    LaunchedCard->SetHomingTarget(Target);
     UE_LOG(LogTemp, Display, TEXT("Exploding Card"));
 }

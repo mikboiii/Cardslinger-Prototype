@@ -32,8 +32,11 @@ public:
 	UPROPERTY(EditAnywhere)
 	FString CardDescription;
 
+	UPROPERTY(EditAnywhere)
+	bool bIsHoming = false;
+
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Instanced)
 	UUserWidget* CardWidget;
 
-	virtual void CardEffect(class ACardDeck* CardDeck, FVector Direction);
+	virtual void CardEffect(class ACardDeck* CardDeck, FVector Direction, TWeakObjectPtr<USceneComponent> Target);
 };

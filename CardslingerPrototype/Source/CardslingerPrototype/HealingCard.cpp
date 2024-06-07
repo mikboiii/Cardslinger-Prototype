@@ -5,8 +5,8 @@
 #include "Kismet/GameplayStatics.h"
 #include "BaseCharacterClass.h"
 
-void AHealingCard::CardEffect(ACardDeck* CardDeck, FVector Direction)
+void AHealingCard::CardEffect(ACardDeck* CardDeck, FVector Direction, TWeakObjectPtr<USceneComponent> Target)
 {
-	Super::CardEffect(CardDeck, Direction);
+	Super::CardEffect(CardDeck, Direction, Target);
     Cast<ABaseCharacterClass>(UGameplayStatics::GetPlayerPawn(GetWorld(), 0))->Heal(true, 0.25f);
 }
