@@ -24,7 +24,7 @@ public:
 	
 	UFUNCTION()
 	void SetHomingTarget(TWeakObjectPtr<USceneComponent> Target);
-	
+
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
@@ -60,6 +60,30 @@ protected:
 	float CardVelocity = 20.0f;
 	UPROPERTY(EditAnywhere)
 	float CardDamage = 10.0f;
+
+
+	UPROPERTY(EditAnywhere, Category="Projectile Flight")
+	FVector TargetLocation;
+	UPROPERTY(EditAnywhere, Category="Projectile Flight")
+	FVector MidPoint;
+	UPROPERTY(EditAnywhere, Category="Projectile Flight")
+	FVector CurvedPoint;
+
+	UPROPERTY(EditAnywhere, Category="Projectile Flight")
+	float MinCurveRadius = 40.0f;
+	UPROPERTY(EditAnywhere, Category="Projectile Flight")
+	float MaxCurveRadius = 400.0f;
+	UPROPERTY(EditAnywhere, Category="Projectile Flight")
+	float MinCurvePointDistance = 0.2f;
+	UPROPERTY(EditAnywhere, Category="Projectile Flight")
+	float MaxCurvePointDistance = 0.8f;
+	UPROPERTY(EditAnywhere, Category="Projectile Flight")
+	float MinAngle = 0.0f;
+	UPROPERTY(EditAnywhere, Category="Projectile Flight")
+	float MaxAngle = 360.0f;
+
+	UFUNCTION()
+	FVector CalculateMidPoint();
 
 public:	
 	// Called every frame

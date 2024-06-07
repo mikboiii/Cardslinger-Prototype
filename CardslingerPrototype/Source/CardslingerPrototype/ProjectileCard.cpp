@@ -88,3 +88,8 @@ void AProjectileCard::SetHomingTarget(TWeakObjectPtr<USceneComponent> Target)
 	CardProjectile->HomingTargetComponent = Target;
 	}
 }
+
+FVector AProjectileCard::CalculateMidPoint()
+{
+	return FVector::One();
+}

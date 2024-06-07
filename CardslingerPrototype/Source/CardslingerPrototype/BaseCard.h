@@ -38,5 +38,5 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Instanced)
 	UUserWidget* CardWidget;
 
-	virtual void CardEffect(class ACardDeck* CardDeck, FVector Direction, TWeakObjectPtr<USceneComponent> Target);
+	virtual void CardEffect(class ACardDeck* CardDeck, FVector Direction);
 };
