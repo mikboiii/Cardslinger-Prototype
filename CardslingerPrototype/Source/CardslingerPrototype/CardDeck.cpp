@@ -65,6 +65,7 @@ AProjectileCard* ACardDeck::FireCard(FVector Direction, TSubclassOf<class AProje
 	//GetWorld()->SpawnActor<AProjectileCard>(ProjectileCardClass, GetActorLocation(), Direction.Rotation());
 	AProjectileCard* Projectile = GetWorld()->SpawnActor<AProjectileCard>(CardClass, GetActorLocation(), Direction.Rotation());
 	Projectile->SetOwner(this);
+	Projectile->SetHomingTarget(Target);
 	return Projectile;
 	}
 	return nullptr;

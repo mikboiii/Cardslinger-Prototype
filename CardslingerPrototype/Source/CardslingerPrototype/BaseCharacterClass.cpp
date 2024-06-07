@@ -211,6 +211,12 @@ void ABaseCharacterClass::Shoot()
 			if(HitActor == nullptr) return;
 			ShotDirection = CardDeck->GetActorLocation() - Hit.ImpactPoint;
 			//HitActor->TakeDamage(Damage, DamageEvent, GetController(), this);
+			if(Hit.GetActor()->IsA(ABaseAIClass::StaticClass()))
+			{
+				CardDeck->FireCard(-ShotDirection, BasicCardProjectile, Cast<UPrimitiveComponent>(Hit.GetActor()->GetRootComponent()));
+				CardDeck->RemoveCardFromDeck(CurrentClip);
+				return;
+			}
 		}
 		//launch basic projectile
 		CardDeck->FireCard(-ShotDirection, BasicCardProjectile, nullptr);

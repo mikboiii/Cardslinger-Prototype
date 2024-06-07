@@ -82,5 +82,9 @@ void AProjectileCard::OnHit(UPrimitiveComponent* HitComponent, AActor* OtherActo
 
 void AProjectileCard::SetHomingTarget(TWeakObjectPtr<USceneComponent> Target)
 {
+	UE_LOG(LogTemp, Display, TEXT("TARGET SET"));
+	if(Target != nullptr)
+	{
 	CardProjectile->HomingTargetComponent = Target;
+	}
 }
