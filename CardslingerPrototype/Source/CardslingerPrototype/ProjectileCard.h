@@ -50,9 +50,9 @@ protected:
 
 	UPROPERTY(EditAnywhere)
 	class UNiagaraSystem* CardImpact;
-
-	UPROPERTY(Instanced, EditAnywhere)
-	class UProjectileMovementComponent* CardProjectile;
+	
+	UPROPERTY(EditAnywhere)
+	float CardSpeed;
 
 	UPROPERTY(Instanced, EditAnywhere)
 	class USkeletalMeshComponent* CardSkeletalMesh;

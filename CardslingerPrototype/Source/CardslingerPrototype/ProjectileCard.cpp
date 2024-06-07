@@ -25,9 +25,6 @@ AProjectileCard::AProjectileCard()
 	CardCollision->SetupAttachment(CardSkeletalMesh);
 	CardTrail = CreateDefaultSubobject<UNiagaraComponent>(TEXT("CardTrail"));
 	CardTrail->SetupAttachment(CardCollision);
-	CardProjectile = CreateDefaultSubobject<UProjectileMovementComponent>(TEXT("CardProjectileMovement"));
-	CardProjectile->SetUpdatedComponent(RootComponent);
-
 	if(CardCollision != nullptr)
 	{
 	CardCollision->OnComponentHit.AddDynamic(this, &AProjectileCard::OnHit);
@@ -41,13 +38,16 @@ void AProjectileCard::BeginPlay()
 {
 	Super::BeginPlay();
 	GetWorldTimerManager().SetTimer(CardLifetimeManager, this, &AProjectileCard::DestroyCard, CardLifetime);
-	
 }
 
 // Called every frame
 void AProjectileCard::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
+
+	CurvedPoint = UKismetMathLibrary::VInterpTo_Constant(CurvedPoint, TargetLocation, DeltaTime, CardSpeed);
+	FVector NewLocation = UKismetMathLibrary::VInterpTo_Constant(GetActorLocation(), CurvedPoint, DeltaTime, CardSpeed);
+	SetActorLocation(NewLocation, true);
 	/*
 	FVector ToMove;
 	ToMove = GetActorForwardVector() * CardVelocity;
@@ -84,6 +84,8 @@ void AProjectileCard::SetHomingTarget(FVector Target)
 	UE_LOG(LogTemp, Display, TEXT("TARGET SET"));
 
 	TargetLocation = Target;
+	CalculateMidPoint();
+	CalculateCurveControlPoint();
 }
 
 void AProjectileCard::CalculateMidPoint()
