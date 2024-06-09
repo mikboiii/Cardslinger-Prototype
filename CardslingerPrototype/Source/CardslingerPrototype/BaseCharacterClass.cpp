@@ -240,6 +240,7 @@ bool ABaseCharacterClass::HitTrace(FHitResult& Hit, FVector& ShotDirection)
 	FCollisionQueryParams Params;
 	Params.AddIgnoredActor(this);
 	Params.AddIgnoredActor(GetOwner());
+	Params.AddIgnoredActors(CardDeck->Children);
 	return GetWorld()->LineTraceSingleByChannel(Hit, ViewLocation, End, ECollisionChannel::ECC_GameTraceChannel1, Params);
 }
 
