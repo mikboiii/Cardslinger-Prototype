@@ -15,7 +15,7 @@ class CARDSLINGERPROTOTYPE_API AHealingCard : public ABaseCard
 	GENERATED_BODY()
 	
 	public:
-		virtual void CardEffect(class ACardDeck* CardDeck, FVector Direction, FVector Target) override;
+		virtual void CardEffect(class ACardDeck* CardDeck, FVector Direction, FVector Target, AActor* TargetActor) override;
 		UPROPERTY(EditDefaultsOnly)
 		float HealingRestored;
 		UPROPERTY(EditDefaultsOnly)

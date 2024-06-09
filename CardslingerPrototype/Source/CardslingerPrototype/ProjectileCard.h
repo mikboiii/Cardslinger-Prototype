@@ -22,8 +22,9 @@ public:
 	AProjectileCard();
 
 	
-	UFUNCTION()
 	void SetHomingTarget(FVector Target);
+
+	void SetHomingTarget(FVector Target, AActor* TargetActor);
 
 protected:
 	// Called when the game starts or when spawned
@@ -81,6 +82,10 @@ protected:
 	float MinAngle = 0.0f;
 	UPROPERTY(EditAnywhere, Category="Projectile Flight")
 	float MaxAngle = 360.0f;
+	UPROPERTY(EditAnywhere, Category="Projectile Flight")
+	bool IsHoming;
+
+	AActor* TargetEnemy;
 
 	UFUNCTION()
 	void CalculateMidPoint();

@@ -24,8 +24,7 @@ struct FHitResult;
  \
 	DECLARE_FUNCTION(execCalculateCurveControlPoint); \
 	DECLARE_FUNCTION(execCalculateMidPoint); \
-	DECLARE_FUNCTION(execOnHit); \
-	DECLARE_FUNCTION(execSetHomingTarget);
+	DECLARE_FUNCTION(execOnHit);
 
 
 #define FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_ProjectileCard_h_18_ACCESSORS

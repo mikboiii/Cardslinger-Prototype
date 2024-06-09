@@ -49,14 +49,6 @@ void EmptyLinkFunctionForGeneratedCodeProjectileCard() {}
 		P_THIS->OnHit(Z_Param_HitComponent,Z_Param_OtherActor,Z_Param_OtherComponent,Z_Param_NormalImpulse,Z_Param_Out_Hit);
 		P_NATIVE_END;
 	}
-	DEFINE_FUNCTION(AProjectileCard::execSetHomingTarget)
-	{
-		P_GET_STRUCT(FVector,Z_Param_Target);
-		P_FINISH;
-		P_NATIVE_BEGIN;
-		P_THIS->SetHomingTarget(Z_Param_Target);
-		P_NATIVE_END;
-	}
 	void AProjectileCard::StaticRegisterNativesAProjectileCard()
 	{
 		UClass* Class = AProjectileCard::StaticClass();
@@ -64,7 +56,6 @@ void EmptyLinkFunctionForGeneratedCodeProjectileCard() {}
 			{ "CalculateCurveControlPoint", &AProjectileCard::execCalculateCurveControlPoint },
 			{ "CalculateMidPoint", &AProjectileCard::execCalculateMidPoint },
 			{ "OnHit", &AProjectileCard::execOnHit },
-			{ "SetHomingTarget", &AProjectileCard::execSetHomingTarget },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
 	}
@@ -186,40 +177,6 @@ void EmptyLinkFunctionForGeneratedCodeProjectileCard() {}
 		}
 		return ReturnFunction;
 	}
-	struct Z_Construct_UFunction_AProjectileCard_SetHomingTarget_Statics
-	{
-		struct ProjectileCard_eventSetHomingTarget_Parms
-		{
-			FVector Target;
-		};
-		static const UECodeGen_Private::FStructPropertyParams NewProp_Target;
-		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
-#if WITH_METADATA
-		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
-#endif
-		static const UECodeGen_Private::FFunctionParams FuncParams;
-	};
-	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AProjectileCard_SetHomingTarget_Statics::NewProp_Target = { "Target", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ProjectileCard_eventSetHomingTarget_Parms, Target), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(0, nullptr) };
-	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AProjectileCard_SetHomingTarget_Statics::PropPointers[] = {
-		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AProjectileCard_SetHomingTarget_Statics::NewProp_Target,
-	};
-#if WITH_METADATA
-	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AProjectileCard_SetHomingTarget_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "ProjectileCard.h" },
-	};
-#endif
-	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AProjectileCard_SetHomingTarget_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AProjectileCard, nullptr, "SetHomingTarget", nullptr, nullptr, Z_Construct_UFunction_AProjectileCard_SetHomingTarget_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_AProjectileCard_SetHomingTarget_Statics::PropPointers), sizeof(Z_Construct_UFunction_AProjectileCard_SetHomingTarget_Statics::ProjectileCard_eventSetHomingTarget_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00820401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_AProjectileCard_SetHomingTarget_Statics::Function_MetaDataParams), Z_Construct_UFunction_AProjectileCard_SetHomingTarget_Statics::Function_MetaDataParams) };
-	static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_AProjectileCard_SetHomingTarget_Statics::PropPointers) < 2048);
-	static_assert(sizeof(Z_Construct_UFunction_AProjectileCard_SetHomingTarget_Statics::ProjectileCard_eventSetHomingTarget_Parms) < MAX_uint16);
-	UFunction* Z_Construct_UFunction_AProjectileCard_SetHomingTarget()
-	{
-		static UFunction* ReturnFunction = nullptr;
-		if (!ReturnFunction)
-		{
-			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_AProjectileCard_SetHomingTarget_Statics::FuncParams);
-		}
-		return ReturnFunction;
-	}
 	IMPLEMENT_CLASS_NO_AUTO_REGISTRATION(AProjectileCard);
 	UClass* Z_Construct_UClass_AProjectileCard_NoRegister()
 	{
@@ -304,6 +261,11 @@ void EmptyLinkFunctionForGeneratedCodeProjectileCard() {}
 		static const UECodeGen_Private::FMetaDataPairParam NewProp_MaxAngle_MetaData[];
 #endif
 		static const UECodeGen_Private::FFloatPropertyParams NewProp_MaxAngle;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_IsHoming_MetaData[];
+#endif
+		static void NewProp_IsHoming_SetBit(void* Obj);
+		static const UECodeGen_Private::FBoolPropertyParams NewProp_IsHoming;
 		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UECodeGen_Private::FClassParams ClassParams;
@@ -317,7 +279,6 @@ void EmptyLinkFunctionForGeneratedCodeProjectileCard() {}
 		{ &Z_Construct_UFunction_AProjectileCard_CalculateCurveControlPoint, "CalculateCurveControlPoint" }, // 2280886562
 		{ &Z_Construct_UFunction_AProjectileCard_CalculateMidPoint, "CalculateMidPoint" }, // 2990521993
 		{ &Z_Construct_UFunction_AProjectileCard_OnHit, "OnHit" }, // 119443953
-		{ &Z_Construct_UFunction_AProjectileCard_SetHomingTarget, "SetHomingTarget" }, // 4222389383
 	};
 	static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_AProjectileCard_Statics::FuncInfo) < 2048);
 #if WITH_METADATA
@@ -455,6 +416,17 @@ void EmptyLinkFunctionForGeneratedCodeProjectileCard() {}
 	};
 #endif
 	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AProjectileCard_Statics::NewProp_MaxAngle = { "MaxAngle", nullptr, (EPropertyFlags)0x0020080000000001, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AProjectileCard, MaxAngle), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_AProjectileCard_Statics::NewProp_MaxAngle_MetaData), Z_Construct_UClass_AProjectileCard_Statics::NewProp_MaxAngle_MetaData) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AProjectileCard_Statics::NewProp_IsHoming_MetaData[] = {
+		{ "Category", "Projectile Flight" },
+		{ "ModuleRelativePath", "ProjectileCard.h" },
+	};
+#endif
+	void Z_Construct_UClass_AProjectileCard_Statics::NewProp_IsHoming_SetBit(void* Obj)
+	{
+		((AProjectileCard*)Obj)->IsHoming = 1;
+	}
+	const UECodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AProjectileCard_Statics::NewProp_IsHoming = { "IsHoming", nullptr, (EPropertyFlags)0x0020080000000001, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, sizeof(bool), sizeof(AProjectileCard), &Z_Construct_UClass_AProjectileCard_Statics::NewProp_IsHoming_SetBit, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_AProjectileCard_Statics::NewProp_IsHoming_MetaData), Z_Construct_UClass_AProjectileCard_Statics::NewProp_IsHoming_MetaData) };
 	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AProjectileCard_Statics::PropPointers[] = {
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AProjectileCard_Statics::NewProp_CardLifetime,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AProjectileCard_Statics::NewProp_ParticleScale,
@@ -474,6 +446,7 @@ void EmptyLinkFunctionForGeneratedCodeProjectileCard() {}
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AProjectileCard_Statics::NewProp_MaxCurvePointDistance,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AProjectileCard_Statics::NewProp_MinAngle,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AProjectileCard_Statics::NewProp_MaxAngle,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AProjectileCard_Statics::NewProp_IsHoming,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_AProjectileCard_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<AProjectileCard>::IsAbstract,
@@ -513,9 +486,9 @@ void EmptyLinkFunctionForGeneratedCodeProjectileCard() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_ProjectileCard_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_AProjectileCard, AProjectileCard::StaticClass, TEXT("AProjectileCard"), &Z_Registration_Info_UClass_AProjectileCard, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AProjectileCard), 1848944215U) },
+		{ Z_Construct_UClass_AProjectileCard, AProjectileCard::StaticClass, TEXT("AProjectileCard"), &Z_Registration_Info_UClass_AProjectileCard, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AProjectileCard), 1566692366U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_ProjectileCard_h_2403932426(TEXT("/Script/CardslingerPrototype"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_ProjectileCard_h_509415276(TEXT("/Script/CardslingerPrototype"),
 		Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_ProjectileCard_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_ProjectileCard_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);

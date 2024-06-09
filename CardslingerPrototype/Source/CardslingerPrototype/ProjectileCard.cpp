@@ -45,6 +45,7 @@ void AProjectileCard::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
+	if(IsHoming && TargetEnemy != nullptr) TargetLocation = TargetEnemy->GetActorLocation();
 	CurvedPoint = UKismetMathLibrary::VInterpTo_Constant(CurvedPoint, TargetLocation, DeltaTime, CardSpeed);
 	FVector NewLocation = UKismetMathLibrary::VInterpTo_Constant(GetActorLocation(), CurvedPoint, DeltaTime, CardSpeed);
 	SetActorLocation(NewLocation, true);
@@ -84,6 +85,14 @@ void AProjectileCard::SetHomingTarget(FVector Target)
 	UE_LOG(LogTemp, Display, TEXT("TARGET SET"));
 
 	TargetLocation = Target;
+	CalculateMidPoint();
+	CalculateCurveControlPoint();
+}
+
+void AProjectileCard::SetHomingTarget(FVector Target, AActor* TargetActor)
+{
+	TargetLocation = Target;
+	TargetEnemy = TargetActor;
 	CalculateMidPoint();
 	CalculateCurveControlPoint();
 }
