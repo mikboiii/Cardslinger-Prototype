@@ -49,6 +49,7 @@ void AProjectileCard::Tick(float DeltaTime)
 	CurvedPoint = UKismetMathLibrary::VInterpTo_Constant(CurvedPoint, TargetLocation, DeltaTime, CardSpeed);
 	FVector NewLocation = UKismetMathLibrary::VInterpTo_Constant(GetActorLocation(), CurvedPoint, DeltaTime, CardSpeed);
 	SetActorLocation(NewLocation, true);
+	if(FVector::Dist(GetActorLocation(), TargetLocation) == 0) DestroyCard();
 	/*
 	FVector ToMove;
 	ToMove = GetActorForwardVector() * CardVelocity;
