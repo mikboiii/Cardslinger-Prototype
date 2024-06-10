@@ -29,18 +29,26 @@ void ACardDeck::Tick(float DeltaTime)
 
 }
 
+/// @brief Draws the top card from the draw pile
+/// @return returns the card that was drawn
 ABaseCard* ACardDeck::DrawCard()
 {
 	if(!DrawPile.IsEmpty())
 	{
+	//selects the type of card being drawn
 	TSubclassOf<ABaseCard> CardToReturn = DrawPile[0];
+	//place the card in the discard pile after drawing
 	DiscardPile.Emplace(DrawPile[0]);
+	//remove from the top of the draw stack
 	DrawPile.RemoveAt(0);
+	//returns the card
 	return GetWorld()->SpawnActor<ABaseCard>(CardToReturn);
 	}
+	//returns nullptr if the draw pile is empty
 	return nullptr;
 }
 
+/// @brief Shuffles the discard pile and places it back in the draw pile
 void ACardDeck::ShuffleDiscard()
 {
 	int32 NumberOfCards = DiscardPile.Num();
@@ -50,27 +58,41 @@ void ACardDeck::ShuffleDiscard()
 		DrawPile.Emplace(DiscardPile[RandomCardIndex]);
 		DiscardPile.RemoveAt(RandomCardIndex);
 	}
+	//remove all cards from the discard pile
 	DiscardPile.Empty();
 }
 
+/// @brief Shuffles the deck's current cards
 void ACardDeck::ShuffleDeck()
 {
-	
+
 }
 
+/// @brief Launches a projectile card
+/// @param Direction The direction that card will fly in
+/// @param CardClass The type of projectile card that will be launched
+/// @param Target The FVector location in the world space that the card will fly to
+/// @param TargetActor The AActor the card will fly towards
+/// @return Returns a pointer to the card that was just launched
 AProjectileCard* ACardDeck::FireCard(FVector Direction, TSubclassOf<class AProjectileCard> CardClass, FVector Target, AActor* TargetActor)
 {
 	if(CardClass != nullptr)
 	{
-	//GetWorld()->SpawnActor<AProjectileCard>(ProjectileCardClass, GetActorLocation(), Direction.Rotation());
+	//spawns the projectile card in the world
 	AProjectileCard* Projectile = GetWorld()->SpawnActor<AProjectileCard>(CardClass, GetActorLocation(), Direction.Rotation());
+	//sets the deck as the owner of the card in the hierarchy
 	Projectile->SetOwner(this);
+	//sets the card's homing target
 	Projectile->SetHomingTarget(Target, TargetActor);
+	//returns the card actor
 	return Projectile;
 	}
+	//returns nullptr if the card class is invalid
 	return nullptr;
 }
 
+/// @brief blueprint pure function to check if the deck is empty
+/// @return returns bool of if the deck is empty
 bool ACardDeck::IsDeckEmpty() const
 {
 	return DrawPile.Num() == 0;
