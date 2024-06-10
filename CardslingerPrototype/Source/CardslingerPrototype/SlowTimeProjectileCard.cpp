@@ -12,12 +12,12 @@
 
 void ASlowTimeProjectileCard::OnHit(UPrimitiveComponent* HitComponent, AActor* OtherActor, UPrimitiveComponent* OtherComponent, FVector NormalImpulse, const FHitResult& Hit)
 {
-    UE_LOG(LogTemp, Display, TEXT("Card impact"));
 	if (OtherActor != this)
     {
         SlowTimeSphere();
         //spawn slow fx
         UNiagaraFunctionLibrary::SpawnSystemAtLocation(GetWorld(), CardImpact, Hit.ImpactPoint, GetActorForwardVector().Rotation(), FVector(ParticleScale), true, true, ENCPoolMethod::None, true);
+        SetActorEnableCollision(false);
     }
 }
 
@@ -33,23 +33,30 @@ void ASlowTimeProjectileCard::SlowTimeSphere()
 
 TArray<AActor*> ASlowTimeProjectileCard::FindActorsInRange(UClass* ActorClass, float Radius)
 {
-    TArray<AActor*> ActorsInSphere;
+    TArray<AActor*> OverlappingActors;
+    TArray<AActor*> FoundActors;
 
-    FCollisionShape Sphere = FCollisionShape::MakeSphere(Radius);
-    TArray<FOverlapResult> OverlapResults;
-    bool bHasOverlaps = GetWorld()->OverlapMultiByObjectType(OverlapResults, GetActorLocation(), FQuat::Identity, 
-    FCollisionObjectQueryParams(ECollisionChannel::ECC_WorldDynamic), Sphere);
+    // Perform the sphere overlap
+    bool bHasOverlaps = UKismetSystemLibrary::SphereOverlapActors(
+        this,
+        GetActorLocation(),
+        Radius,
+        { EObjectTypeQuery::ObjectTypeQuery3 }, // ObjectTypeQuery3 is WorldDynamic by default, adjust as needed
+        ActorClass,
+        TArray<AActor*>(), // Actors to ignore
+        OverlappingActors
+    );
 
-    if(bHasOverlaps)
+    if (bHasOverlaps)
     {
-        for (const FOverlapResult& Result : OverlapResults)
+        for (AActor* Actor : OverlappingActors)
         {
-            if (Result.GetActor() && Result.GetActor()->IsA(ActorClass))
+            if (Actor && Actor->IsA(ActorClass))
             {
-                UE_LOG(LogTemp, Display, TEXT("Actor Checked"));
-                ActorsInSphere.Add(Result.GetActor());
+                FoundActors.Add(Actor);
             }
         }
     }
-    return ActorsInSphere;
+
+    return FoundActors;
 }
