@@ -26,6 +26,7 @@
 #include "Components/ProgressBar.h"
 #include "Blueprint/UserWidget.h"
 #include "PlayerHUDWidget.h"
+#include "BaseAIClass.h"
 
 
 // Sets default values
@@ -54,20 +55,19 @@ void ABaseCharacterClass::BeginPlay()
 		CardHand.Init(nullptr, 4);
 	}
 
-	CurrentClip = MaxClip;
-
 	if(CardDeckClass != nullptr && CardDeckLocation != nullptr)
 	{
 		//spawn card deck in world
 		CardDeck = GetWorld()->SpawnActor<ACardDeck>(CardDeckClass);
 		CardDeck->AttachToComponent(CardDeckLocation, FAttachmentTransformRules::KeepRelativeTransform);
 	}
+	Reload();
 
 	//init health
 	Health = MaxHealth;
 
 	ACardslingerPlayerController* PC = Cast<ACardslingerPlayerController>(GetController());
-
+	//get pointer to player hud widget
 	PlayerHUD = PC->GetHUD();
 	
 	//draw initial hands
@@ -95,6 +95,7 @@ void ABaseCharacterClass::SetupPlayerInputComponent(UInputComponent* PlayerInput
 
 	if (UEnhancedInputComponent* EnhancedInputComponent = Cast<UEnhancedInputComponent>(PlayerInputComponent))
     {
+		//binds all input actions to functions in the player
         EnhancedInputComponent->BindAction(MoveAction, ETriggerEvent::Triggered, this, &ABaseCharacterClass::Move);
         EnhancedInputComponent->BindAction(LookAction, ETriggerEvent::Triggered, this, &ABaseCharacterClass::Look);
         EnhancedInputComponent->BindAction(JumpAction, ETriggerEvent::Triggered, this, &ACharacter::Jump);
@@ -164,9 +165,25 @@ void ABaseCharacterClass::UseCard(const FInputActionValue& Value)
 	//hit trace maintained in case specific card effects require hitscan
 	FVector ShotDirection;
 	FHitResult Hit;
-	if(HitTrace(Hit, ShotDirection)) ShotDirection = CardDeck->GetActorLocation() - Hit.ImpactPoint;
-	//Has shot direction reversed: shot direction originally made for hit events
-	CardHand[Index]->CardEffect(CardDeck, -ShotDirection);
+	if(HitTrace(Hit, ShotDirection)) 
+	{
+		ShotDirection = CardDeck->GetActorLocation() - Hit.ImpactPoint;
+		//if the hitscan finds an enemy actor, the card will have their details
+		if(Hit.GetActor()->IsA(ABaseAIClass::StaticClass()))
+		{
+			CardHand[Index]->CardEffect(CardDeck, -ShotDirection, Hit.ImpactPoint, Hit.GetActor());
+		}
+		else
+		{
+			//Has shot direction reversed: shot direction originally made for hit events
+			CardHand[Index]->CardEffect(CardDeck, -ShotDirection, Hit.ImpactPoint, nullptr);
+		}
+	}
+
+	else
+	{
+		CardHand[Index]->CardEffect(CardDeck, -ShotDirection, Hit.ImpactPoint, nullptr);
+	}
 	//Sets the array index to nullptr to prevent array resizing
 	CardHand[Index] = nullptr;
 	//Creates a timer delegate to enable the use of parameters in timer function
@@ -197,14 +214,23 @@ void ABaseCharacterClass::Shoot()
 		if(HitTrace(Hit, ShotDirection))
 		{
 			FPointDamageEvent DamageEvent(Damage, Hit, ShotDirection, nullptr);
-			//DrawDebugSphere(GetWorld(), Hit.ImpactPoint, 100.0f, 16, FColor::Red, true, 10000.0f);
+			//gets pointer to the actor hit by the line trace
 			AActor* HitActor = Hit.GetActor();
 			if(HitActor == nullptr) return;
 			ShotDirection = CardDeck->GetActorLocation() - Hit.ImpactPoint;
-			//HitActor->TakeDamage(Damage, DamageEvent, GetController(), this);
+			//if the line trace hits an enemy actor, have the card home in on them
+			if(Hit.GetActor()->IsA(ABaseAIClass::StaticClass()))
+			{
+				//launch basic projectile
+				CardDeck->FireCard(-ShotDirection, BasicCardProjectile, Hit.ImpactPoint, Hit.GetActor());
+				//remove from deck
+				CardDeck->RemoveCardFromDeck(CurrentClip);
+				return;
+			}
 		}
 		//launch basic projectile
-		CardDeck->FireCard(-ShotDirection, BasicCardProjectile);
+		CardDeck->FireCard(-ShotDirection, BasicCardProjectile, Hit.ImpactPoint, nullptr);
+		//remove from deck
 		CardDeck->RemoveCardFromDeck(CurrentClip);
 	}
 }
@@ -216,15 +242,18 @@ bool ABaseCharacterClass::HitTrace(FHitResult& Hit, FVector& ShotDirection)
 {
 	FVector ViewLocation;
 	FRotator ViewRotation;
-	//AController* OwnerController = GetOwnerController();
-	//if(OwnerController == nullptr) return false;
+	//gets position of player eyes
 	GetController()->GetPlayerViewPoint(ViewLocation, ViewRotation);
-	//ShotDirection = -ViewRotation.Vector();
+	//Determines the end FVector of the linetrace
 	FVector End = ViewLocation + ViewRotation.Vector() * MaxRange;
+	//Shot firection for aiming the card's velocity
 	ShotDirection = -ViewRotation.Vector();
+	//creates parameter list for the line trace
 	FCollisionQueryParams Params;
+	//ignores specific actors so the projectiles don't collide with them
 	Params.AddIgnoredActor(this);
 	Params.AddIgnoredActor(GetOwner());
+	Params.AddIgnoredActors(CardDeck->Children);
 	return GetWorld()->LineTraceSingleByChannel(Hit, ViewLocation, End, ECollisionChannel::ECC_GameTraceChannel1, Params);
 }
 
@@ -307,6 +336,9 @@ bool ABaseCharacterClass::IsDead() const
 	return Health <= 0.0f;
 }
 
+/// @brief Heals the player
+/// @param IsPercentile changes whether the HealingValue parameter is a percentile healing amount
+/// @param HealingValue the amount of healing delivered
 void ABaseCharacterClass::Heal(bool IsPercentile, float HealingValue)
 {
 	if(IsPercentile) Health += MaxHealth * HealingValue;
@@ -314,6 +346,8 @@ void ABaseCharacterClass::Heal(bool IsPercentile, float HealingValue)
 	if(Health > MaxHealth) Health = MaxHealth;
 }
 
+/// @brief blueprint pure function to return the remaning health percentage of the player
+/// @return the remaining percentage of health the character is left on 
 float ABaseCharacterClass::GetHealthPercent() const
 {
 	return Health/MaxHealth;

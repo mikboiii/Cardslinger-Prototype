@@ -13,9 +13,10 @@ UCLASS()
 class CARDSLINGERPROTOTYPE_API AExplosionTestCard : public ABaseCard
 {
 	GENERATED_BODY()
-	virtual void CardEffect(class ACardDeck* CardDeck, FVector Direction) override;
+	virtual void CardEffect(class ACardDeck* CardDeck, FVector Direction, FVector Target, AActor* TargetActor) override;
 
 private:
+	//the explosive projectile card class
 	UPROPERTY(EditAnywhere)
 	TSubclassOf<class AProjectileCard> ExplosionProjectileCardClass;
 

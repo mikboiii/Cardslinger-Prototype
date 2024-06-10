@@ -25,8 +25,9 @@ void ABaseCard::Tick(float DeltaTime)
 
 }
 
-void ABaseCard::CardEffect(ACardDeck* CardDeck, FVector Direction)
+/// @brief This is the function for the card's special effect
+void ABaseCard::CardEffect(ACardDeck* CardDeck, FVector Direction, FVector Target, AActor* TargetActor)
 {
-	UE_LOG(LogTemp, Display, TEXT("Card Effect Used"));
+
 }
 

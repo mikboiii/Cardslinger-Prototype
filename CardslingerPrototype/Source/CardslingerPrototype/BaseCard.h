@@ -25,15 +25,15 @@ protected:
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
-
+	//The name of the card
 	UPROPERTY(EditAnywhere)
 	FString CardName;
-
+	//the description of what the card does
 	UPROPERTY(EditAnywhere)
 	FString CardDescription;
-
+	//stores the widget of the card's ui design
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Instanced)
 	UUserWidget* CardWidget;
 
-	virtual void CardEffect(class ACardDeck* CardDeck, FVector Direction);
+	virtual void CardEffect(class ACardDeck* CardDeck, FVector Direction, FVector Target, AActor* TargetActor);
 };

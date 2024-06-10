@@ -55,7 +55,13 @@ void EmptyLinkFunctionForGeneratedCodeExplosionTestCard() {}
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AExplosionTestCard_Statics::NewProp_ExplosionProjectileCardClass_MetaData[] = {
 		{ "Category", "ExplosionTestCard" },
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "//the explosive projectile card class\n" },
+#endif
 		{ "ModuleRelativePath", "ExplosionTestCard.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "the explosive projectile card class" },
+#endif
 	};
 #endif
 	const UECodeGen_Private::FClassPropertyParams Z_Construct_UClass_AExplosionTestCard_Statics::NewProp_ExplosionProjectileCardClass = { "ExplosionProjectileCardClass", nullptr, (EPropertyFlags)0x0044000000000001, UECodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AExplosionTestCard, ExplosionProjectileCardClass), Z_Construct_UClass_UClass, Z_Construct_UClass_AProjectileCard_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_AExplosionTestCard_Statics::NewProp_ExplosionProjectileCardClass_MetaData), Z_Construct_UClass_AExplosionTestCard_Statics::NewProp_ExplosionProjectileCardClass_MetaData) };
@@ -101,9 +107,9 @@ void EmptyLinkFunctionForGeneratedCodeExplosionTestCard() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_ExplosionTestCard_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_AExplosionTestCard, AExplosionTestCard::StaticClass, TEXT("AExplosionTestCard"), &Z_Registration_Info_UClass_AExplosionTestCard, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AExplosionTestCard), 2010710281U) },
+		{ Z_Construct_UClass_AExplosionTestCard, AExplosionTestCard::StaticClass, TEXT("AExplosionTestCard"), &Z_Registration_Info_UClass_AExplosionTestCard, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AExplosionTestCard), 3525208297U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_ExplosionTestCard_h_1699004978(TEXT("/Script/CardslingerPrototype"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_ExplosionTestCard_h_2532644626(TEXT("/Script/CardslingerPrototype"),
 		Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_ExplosionTestCard_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_ExplosionTestCard_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);

@@ -32,6 +32,10 @@ void EmptyLinkFunctionForGeneratedCodeExplosionProjectileCard() {}
 		static const UECodeGen_Private::FMetaDataPairParam NewProp_CardExplosiveDamage_MetaData[];
 #endif
 		static const UECodeGen_Private::FFloatPropertyParams NewProp_CardExplosiveDamage;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_CardExplosionRadius_MetaData[];
+#endif
+		static const UECodeGen_Private::FFloatPropertyParams NewProp_CardExplosionRadius;
 		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UECodeGen_Private::FClassParams ClassParams;
@@ -53,12 +57,32 @@ void EmptyLinkFunctionForGeneratedCodeExplosionProjectileCard() {}
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AExplosionProjectileCard_Statics::NewProp_CardExplosiveDamage_MetaData[] = {
 		{ "Category", "ExplosionProjectileCard" },
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "//the damage that the card explosion deals\n" },
+#endif
 		{ "ModuleRelativePath", "ExplosionProjectileCard.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "the damage that the card explosion deals" },
+#endif
 	};
 #endif
 	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AExplosionProjectileCard_Statics::NewProp_CardExplosiveDamage = { "CardExplosiveDamage", nullptr, (EPropertyFlags)0x0020080000000001, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AExplosionProjectileCard, CardExplosiveDamage), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_AExplosionProjectileCard_Statics::NewProp_CardExplosiveDamage_MetaData), Z_Construct_UClass_AExplosionProjectileCard_Statics::NewProp_CardExplosiveDamage_MetaData) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AExplosionProjectileCard_Statics::NewProp_CardExplosionRadius_MetaData[] = {
+		{ "Category", "ExplosionProjectileCard" },
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "//the radius of the card explosion\n" },
+#endif
+		{ "ModuleRelativePath", "ExplosionProjectileCard.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "the radius of the card explosion" },
+#endif
+	};
+#endif
+	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AExplosionProjectileCard_Statics::NewProp_CardExplosionRadius = { "CardExplosionRadius", nullptr, (EPropertyFlags)0x0020080000000001, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AExplosionProjectileCard, CardExplosionRadius), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_AExplosionProjectileCard_Statics::NewProp_CardExplosionRadius_MetaData), Z_Construct_UClass_AExplosionProjectileCard_Statics::NewProp_CardExplosionRadius_MetaData) };
 	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AExplosionProjectileCard_Statics::PropPointers[] = {
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AExplosionProjectileCard_Statics::NewProp_CardExplosiveDamage,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AExplosionProjectileCard_Statics::NewProp_CardExplosionRadius,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_AExplosionProjectileCard_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<AExplosionProjectileCard>::IsAbstract,
@@ -99,9 +123,9 @@ void EmptyLinkFunctionForGeneratedCodeExplosionProjectileCard() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_ExplosionProjectileCard_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_AExplosionProjectileCard, AExplosionProjectileCard::StaticClass, TEXT("AExplosionProjectileCard"), &Z_Registration_Info_UClass_AExplosionProjectileCard, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AExplosionProjectileCard), 3496153592U) },
+		{ Z_Construct_UClass_AExplosionProjectileCard, AExplosionProjectileCard::StaticClass, TEXT("AExplosionProjectileCard"), &Z_Registration_Info_UClass_AExplosionProjectileCard, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AExplosionProjectileCard), 3786564250U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_ExplosionProjectileCard_h_3575894647(TEXT("/Script/CardslingerPrototype"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_ExplosionProjectileCard_h_2816897377(TEXT("/Script/CardslingerPrototype"),
 		Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_ExplosionProjectileCard_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_ExplosionProjectileCard_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);
