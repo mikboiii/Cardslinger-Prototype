@@ -27,6 +27,7 @@ AProjectileCard::AProjectileCard()
 	CardTrail->SetupAttachment(CardCollision);
 	if(CardCollision != nullptr)
 	{
+	//Sets up collision delegates
 	CardCollision->OnComponentHit.AddDynamic(this, &AProjectileCard::OnHit);
 	CardSkeletalMesh->OnComponentHit.AddDynamic(this, &AProjectileCard::OnHit);
 	}
@@ -44,52 +45,62 @@ void AProjectileCard::BeginPlay()
 void AProjectileCard::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
-
+	//if the card is homing and the hitscan detects an enemy, the card will seek the actor
 	if(IsHoming && TargetEnemy != nullptr) TargetLocation = TargetEnemy->GetActorLocation();
+	//updates the curve point on the card's trajectory
 	CurvedPoint = UKismetMathLibrary::VInterpTo_Constant(CurvedPoint, TargetLocation, DeltaTime, CardSpeed);
+	//finds the new location for the card based on the projected path
 	FVector NewLocation = UKismetMathLibrary::VInterpTo_Constant(GetActorLocation(), CurvedPoint, DeltaTime, CardSpeed);
 	SetActorLocation(NewLocation, true);
+	//if the card meets its location, it gets deleted. used to prevent cards floating in place of a dead enemy.
 	if(FVector::Dist(GetActorLocation(), TargetLocation) == 0) DestroyCard();
-	/*
-	FVector ToMove;
-	ToMove = GetActorForwardVector() * CardVelocity;
-	AddActorWorldOffset(ToMove, true);
-	*/
 }
 
+/// @brief Destroys the projectile card
 void AProjectileCard::DestroyCard()
 {
 	Destroy();
 }
 
+/// @brief Triggers the projectile card's collision function
+/// @param HitComponent this is the primitive component of the card
+/// @param OtherActor this is the actor with which the card collides
+/// @param OtherComponent this is the primitive component of the impacted actor
+/// @param NormalImpulse this is the fvector knockback force
+/// @param Hit this is the reference to the collision event
 void AProjectileCard::OnHit(UPrimitiveComponent* HitComponent, AActor* OtherActor, UPrimitiveComponent* OtherComponent, FVector NormalImpulse, const FHitResult& Hit)
 {
 	if (OtherActor != this)
     {
-        //DrawDebugSphere(GetWorld(), Hit.ImpactPoint, 10.0f, 16, FColor::Red, true, 10000.0f);
+        //if the collision is an enemy class actor, apply damage and hit fx
 		if(OtherActor != UGameplayStatics::GetPlayerPawn(GetWorld(), 0) && OtherActor->IsA(ABaseAIClass::StaticClass()))
 		{
+
 			FPointDamageEvent DamageEvent(CardDamage, Hit, -GetActorForwardVector(), nullptr);
 			OtherActor->TakeDamage(CardDamage, DamageEvent, UGameplayStatics::GetPlayerPawn(GetWorld(), 0)->GetController(), this);
-				if(CardImpact)
-				{
-					UNiagaraFunctionLibrary::SpawnSystemAtLocation(GetWorld(), CardImpact, Hit.ImpactPoint, GetActorForwardVector().Rotation(),FVector(ParticleScale), true, true, ENCPoolMethod::None, true);
-				}
+			if(CardImpact)
+			{
+				UNiagaraFunctionLibrary::SpawnSystemAtLocation(GetWorld(), CardImpact, Hit.ImpactPoint, GetActorForwardVector().Rotation(),FVector(ParticleScale), true, true, ENCPoolMethod::None, true);
+			}
 		}
     }
 
     Destroy();
 }
 
+/// @brief This sets the card's homing location to an FVector location
+/// @param Target This is the location in world space that the card will home in on
 void AProjectileCard::SetHomingTarget(FVector Target)
 {
-	UE_LOG(LogTemp, Display, TEXT("TARGET SET"));
 
 	TargetLocation = Target;
 	CalculateMidPoint();
 	CalculateCurveControlPoint();
 }
 
+/// @brief This sets the card's homing location to an FVector location and also sets the AActor target
+/// @param Target This is the location in world space that the card will home in on
+/// @param TargetActor This is a pointer to the actor that the card will seek
 void AProjectileCard::SetHomingTarget(FVector Target, AActor* TargetActor)
 {
 	TargetLocation = Target;
