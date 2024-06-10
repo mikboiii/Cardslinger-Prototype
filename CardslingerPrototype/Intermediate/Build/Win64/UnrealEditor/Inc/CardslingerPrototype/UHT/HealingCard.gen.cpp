@@ -128,9 +128,9 @@ void EmptyLinkFunctionForGeneratedCodeHealingCard() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_HealingCard_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_AHealingCard, AHealingCard::StaticClass, TEXT("AHealingCard"), &Z_Registration_Info_UClass_AHealingCard, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AHealingCard), 3847456395U) },
+		{ Z_Construct_UClass_AHealingCard, AHealingCard::StaticClass, TEXT("AHealingCard"), &Z_Registration_Info_UClass_AHealingCard, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AHealingCard), 3271365931U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_HealingCard_h_1890585879(TEXT("/Script/CardslingerPrototype"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_HealingCard_h_425864656(TEXT("/Script/CardslingerPrototype"),
 		Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_HealingCard_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_HealingCard_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);

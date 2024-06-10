@@ -55,14 +55,13 @@ void ABaseCharacterClass::BeginPlay()
 		CardHand.Init(nullptr, 4);
 	}
 
-	CurrentClip = MaxClip;
-
 	if(CardDeckClass != nullptr && CardDeckLocation != nullptr)
 	{
 		//spawn card deck in world
 		CardDeck = GetWorld()->SpawnActor<ACardDeck>(CardDeckClass);
 		CardDeck->AttachToComponent(CardDeckLocation, FAttachmentTransformRules::KeepRelativeTransform);
 	}
+	Reload();
 
 	//init health
 	Health = MaxHealth;
