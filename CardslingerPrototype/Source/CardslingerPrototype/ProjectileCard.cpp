@@ -109,11 +109,13 @@ void AProjectileCard::SetHomingTarget(FVector Target, AActor* TargetActor)
 	CalculateCurveControlPoint();
 }
 
+/// @brief calculates the centre of the flight curve
 void AProjectileCard::CalculateMidPoint()
 {
 	MidPoint = GetActorLocation() + ((TargetLocation - GetActorLocation()) * UKismetMathLibrary::RandomFloatInRange(MinCurvePointDistance, MaxCurvePointDistance));
 }
 
+/// @brief calculates the point in the flight path which adjusts the curve (like a point in a bezier curve)
 void AProjectileCard::CalculateCurveControlPoint()
 {
 	FRotator MidToTargetRot = UKismetMathLibrary::FindLookAtRotation(MidPoint, TargetLocation);

@@ -58,14 +58,26 @@ void EmptyLinkFunctionForGeneratedCodeHealingCard() {}
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AHealingCard_Statics::NewProp_HealingRestored_MetaData[] = {
 		{ "Category", "HealingCard" },
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "//determines the value healed (between 0 and 1 if percentile)\n" },
+#endif
 		{ "ModuleRelativePath", "HealingCard.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "determines the value healed (between 0 and 1 if percentile)" },
+#endif
 	};
 #endif
 	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AHealingCard_Statics::NewProp_HealingRestored = { "HealingRestored", nullptr, (EPropertyFlags)0x0010000000010001, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AHealingCard, HealingRestored), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_AHealingCard_Statics::NewProp_HealingRestored_MetaData), Z_Construct_UClass_AHealingCard_Statics::NewProp_HealingRestored_MetaData) };
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AHealingCard_Statics::NewProp_IsPercentileHealing_MetaData[] = {
 		{ "Category", "HealingCard" },
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "//determines if the card restores a percentage of health\n" },
+#endif
 		{ "ModuleRelativePath", "HealingCard.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "determines if the card restores a percentage of health" },
+#endif
 	};
 #endif
 	void Z_Construct_UClass_AHealingCard_Statics::NewProp_IsPercentileHealing_SetBit(void* Obj)
@@ -116,9 +128,9 @@ void EmptyLinkFunctionForGeneratedCodeHealingCard() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_HealingCard_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_AHealingCard, AHealingCard::StaticClass, TEXT("AHealingCard"), &Z_Registration_Info_UClass_AHealingCard, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AHealingCard), 2578303039U) },
+		{ Z_Construct_UClass_AHealingCard, AHealingCard::StaticClass, TEXT("AHealingCard"), &Z_Registration_Info_UClass_AHealingCard, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AHealingCard), 3847456395U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_HealingCard_h_3032886016(TEXT("/Script/CardslingerPrototype"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_HealingCard_h_1890585879(TEXT("/Script/CardslingerPrototype"),
 		Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_HealingCard_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_HealingCard_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);

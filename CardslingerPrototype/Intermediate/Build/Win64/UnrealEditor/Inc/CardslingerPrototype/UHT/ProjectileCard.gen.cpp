@@ -290,44 +290,80 @@ void EmptyLinkFunctionForGeneratedCodeProjectileCard() {}
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AProjectileCard_Statics::NewProp_CardLifetime_MetaData[] = {
 		{ "Category", "ProjectileCard" },
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "//the amount of time (in seconds) that a card will last for before naturally deleting itself\n" },
+#endif
 		{ "ModuleRelativePath", "ProjectileCard.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "the amount of time (in seconds) that a card will last for before naturally deleting itself" },
+#endif
 	};
 #endif
 	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AProjectileCard_Statics::NewProp_CardLifetime = { "CardLifetime", nullptr, (EPropertyFlags)0x0020080000000001, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AProjectileCard, CardLifetime), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_AProjectileCard_Statics::NewProp_CardLifetime_MetaData), Z_Construct_UClass_AProjectileCard_Statics::NewProp_CardLifetime_MetaData) };
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AProjectileCard_Statics::NewProp_ParticleScale_MetaData[] = {
 		{ "Category", "ProjectileCard" },
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "//the multiplier applied to the scale of the particle hit effect\n" },
+#endif
 		{ "ModuleRelativePath", "ProjectileCard.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "the multiplier applied to the scale of the particle hit effect" },
+#endif
 	};
 #endif
 	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AProjectileCard_Statics::NewProp_ParticleScale = { "ParticleScale", nullptr, (EPropertyFlags)0x0020080000000001, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AProjectileCard, ParticleScale), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_AProjectileCard_Statics::NewProp_ParticleScale_MetaData), Z_Construct_UClass_AProjectileCard_Statics::NewProp_ParticleScale_MetaData) };
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AProjectileCard_Statics::NewProp_CardCollision_MetaData[] = {
 		{ "Category", "ProjectileCard" },
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "//the card's collider\n" },
+#endif
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "ProjectileCard.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "the card's collider" },
+#endif
 	};
 #endif
 	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AProjectileCard_Statics::NewProp_CardCollision = { "CardCollision", nullptr, (EPropertyFlags)0x0022080000080009, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AProjectileCard, CardCollision), Z_Construct_UClass_UBoxComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_AProjectileCard_Statics::NewProp_CardCollision_MetaData), Z_Construct_UClass_AProjectileCard_Statics::NewProp_CardCollision_MetaData) };
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AProjectileCard_Statics::NewProp_CardTrail_MetaData[] = {
 		{ "Category", "ProjectileCard" },
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "//the card's trail particle system\n" },
+#endif
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "ProjectileCard.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "the card's trail particle system" },
+#endif
 	};
 #endif
 	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AProjectileCard_Statics::NewProp_CardTrail = { "CardTrail", nullptr, (EPropertyFlags)0x0022080000080009, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AProjectileCard, CardTrail), Z_Construct_UClass_UNiagaraComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_AProjectileCard_Statics::NewProp_CardTrail_MetaData), Z_Construct_UClass_AProjectileCard_Statics::NewProp_CardTrail_MetaData) };
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AProjectileCard_Statics::NewProp_CardImpact_MetaData[] = {
 		{ "Category", "ProjectileCard" },
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "//the card's particle impact system\n" },
+#endif
 		{ "ModuleRelativePath", "ProjectileCard.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "the card's particle impact system" },
+#endif
 	};
 #endif
 	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AProjectileCard_Statics::NewProp_CardImpact = { "CardImpact", nullptr, (EPropertyFlags)0x0020080000000001, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AProjectileCard, CardImpact), Z_Construct_UClass_UNiagaraSystem_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_AProjectileCard_Statics::NewProp_CardImpact_MetaData), Z_Construct_UClass_AProjectileCard_Statics::NewProp_CardImpact_MetaData) };
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AProjectileCard_Statics::NewProp_CardSpeed_MetaData[] = {
 		{ "Category", "ProjectileCard" },
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "//the card's velocity\n" },
+#endif
 		{ "ModuleRelativePath", "ProjectileCard.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "the card's velocity" },
+#endif
 	};
 #endif
 	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AProjectileCard_Statics::NewProp_CardSpeed = { "CardSpeed", nullptr, (EPropertyFlags)0x0020080000000001, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AProjectileCard, CardSpeed), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_AProjectileCard_Statics::NewProp_CardSpeed_MetaData), Z_Construct_UClass_AProjectileCard_Statics::NewProp_CardSpeed_MetaData) };
@@ -355,29 +391,50 @@ void EmptyLinkFunctionForGeneratedCodeProjectileCard() {}
 	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AProjectileCard_Statics::NewProp_CardDamage = { "CardDamage", nullptr, (EPropertyFlags)0x0020080000000001, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AProjectileCard, CardDamage), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_AProjectileCard_Statics::NewProp_CardDamage_MetaData), Z_Construct_UClass_AProjectileCard_Statics::NewProp_CardDamage_MetaData) };
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AProjectileCard_Statics::NewProp_TargetLocation_MetaData[] = {
-		{ "Category", "Projectile Flight" },
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "//target location of the card\n" },
+#endif
 		{ "ModuleRelativePath", "ProjectileCard.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "target location of the card" },
+#endif
 	};
 #endif
-	const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_AProjectileCard_Statics::NewProp_TargetLocation = { "TargetLocation", nullptr, (EPropertyFlags)0x0020080000000001, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AProjectileCard, TargetLocation), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_AProjectileCard_Statics::NewProp_TargetLocation_MetaData), Z_Construct_UClass_AProjectileCard_Statics::NewProp_TargetLocation_MetaData) };
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_AProjectileCard_Statics::NewProp_TargetLocation = { "TargetLocation", nullptr, (EPropertyFlags)0x0020080000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AProjectileCard, TargetLocation), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_AProjectileCard_Statics::NewProp_TargetLocation_MetaData), Z_Construct_UClass_AProjectileCard_Statics::NewProp_TargetLocation_MetaData) };
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AProjectileCard_Statics::NewProp_MidPoint_MetaData[] = {
-		{ "Category", "Projectile Flight" },
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "//mid point of the curve\n" },
+#endif
 		{ "ModuleRelativePath", "ProjectileCard.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "mid point of the curve" },
+#endif
 	};
 #endif
-	const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_AProjectileCard_Statics::NewProp_MidPoint = { "MidPoint", nullptr, (EPropertyFlags)0x0020080000000001, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AProjectileCard, MidPoint), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_AProjectileCard_Statics::NewProp_MidPoint_MetaData), Z_Construct_UClass_AProjectileCard_Statics::NewProp_MidPoint_MetaData) };
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_AProjectileCard_Statics::NewProp_MidPoint = { "MidPoint", nullptr, (EPropertyFlags)0x0020080000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AProjectileCard, MidPoint), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_AProjectileCard_Statics::NewProp_MidPoint_MetaData), Z_Construct_UClass_AProjectileCard_Statics::NewProp_MidPoint_MetaData) };
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AProjectileCard_Statics::NewProp_CurvedPoint_MetaData[] = {
-		{ "Category", "Projectile Flight" },
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "//curve point of the curve\n" },
+#endif
 		{ "ModuleRelativePath", "ProjectileCard.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "curve point of the curve" },
+#endif
 	};
 #endif
-	const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_AProjectileCard_Statics::NewProp_CurvedPoint = { "CurvedPoint", nullptr, (EPropertyFlags)0x0020080000000001, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AProjectileCard, CurvedPoint), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_AProjectileCard_Statics::NewProp_CurvedPoint_MetaData), Z_Construct_UClass_AProjectileCard_Statics::NewProp_CurvedPoint_MetaData) };
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_AProjectileCard_Statics::NewProp_CurvedPoint = { "CurvedPoint", nullptr, (EPropertyFlags)0x0020080000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AProjectileCard, CurvedPoint), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_AProjectileCard_Statics::NewProp_CurvedPoint_MetaData), Z_Construct_UClass_AProjectileCard_Statics::NewProp_CurvedPoint_MetaData) };
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AProjectileCard_Statics::NewProp_MinCurveRadius_MetaData[] = {
 		{ "Category", "Projectile Flight" },
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "//the width of the card's flight path\n" },
+#endif
 		{ "ModuleRelativePath", "ProjectileCard.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "the width of the card's flight path" },
+#endif
 	};
 #endif
 	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AProjectileCard_Statics::NewProp_MinCurveRadius = { "MinCurveRadius", nullptr, (EPropertyFlags)0x0020080000000001, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AProjectileCard, MinCurveRadius), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_AProjectileCard_Statics::NewProp_MinCurveRadius_MetaData), Z_Construct_UClass_AProjectileCard_Statics::NewProp_MinCurveRadius_MetaData) };
@@ -391,7 +448,13 @@ void EmptyLinkFunctionForGeneratedCodeProjectileCard() {}
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AProjectileCard_Statics::NewProp_MinCurvePointDistance_MetaData[] = {
 		{ "Category", "Projectile Flight" },
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "//the distance of the widest point in the card flight path from the starting position\n//longer = flatter curve\n" },
+#endif
 		{ "ModuleRelativePath", "ProjectileCard.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "the distance of the widest point in the card flight path from the starting position\nlonger = flatter curve" },
+#endif
 	};
 #endif
 	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AProjectileCard_Statics::NewProp_MinCurvePointDistance = { "MinCurvePointDistance", nullptr, (EPropertyFlags)0x0020080000000001, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AProjectileCard, MinCurvePointDistance), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_AProjectileCard_Statics::NewProp_MinCurvePointDistance_MetaData), Z_Construct_UClass_AProjectileCard_Statics::NewProp_MinCurvePointDistance_MetaData) };
@@ -405,7 +468,13 @@ void EmptyLinkFunctionForGeneratedCodeProjectileCard() {}
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AProjectileCard_Statics::NewProp_MinAngle_MetaData[] = {
 		{ "Category", "Projectile Flight" },
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "//the min and max angle of the card's initial trajectory\n" },
+#endif
 		{ "ModuleRelativePath", "ProjectileCard.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "the min and max angle of the card's initial trajectory" },
+#endif
 	};
 #endif
 	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AProjectileCard_Statics::NewProp_MinAngle = { "MinAngle", nullptr, (EPropertyFlags)0x0020080000000001, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AProjectileCard, MinAngle), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_AProjectileCard_Statics::NewProp_MinAngle_MetaData), Z_Construct_UClass_AProjectileCard_Statics::NewProp_MinAngle_MetaData) };
@@ -419,7 +488,13 @@ void EmptyLinkFunctionForGeneratedCodeProjectileCard() {}
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AProjectileCard_Statics::NewProp_IsHoming_MetaData[] = {
 		{ "Category", "Projectile Flight" },
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "//determines if the card is homing or not\n" },
+#endif
 		{ "ModuleRelativePath", "ProjectileCard.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "determines if the card is homing or not" },
+#endif
 	};
 #endif
 	void Z_Construct_UClass_AProjectileCard_Statics::NewProp_IsHoming_SetBit(void* Obj)
@@ -486,9 +561,9 @@ void EmptyLinkFunctionForGeneratedCodeProjectileCard() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_ProjectileCard_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_AProjectileCard, AProjectileCard::StaticClass, TEXT("AProjectileCard"), &Z_Registration_Info_UClass_AProjectileCard, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AProjectileCard), 1566692366U) },
+		{ Z_Construct_UClass_AProjectileCard, AProjectileCard::StaticClass, TEXT("AProjectileCard"), &Z_Registration_Info_UClass_AProjectileCard, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AProjectileCard), 543719847U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_ProjectileCard_h_509415276(TEXT("/Script/CardslingerPrototype"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_ProjectileCard_h_1324186610(TEXT("/Script/CardslingerPrototype"),
 		Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_ProjectileCard_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_ProjectileCard_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);

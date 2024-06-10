@@ -166,15 +166,23 @@ void ABaseCharacterClass::UseCard(const FInputActionValue& Value)
 	//hit trace maintained in case specific card effects require hitscan
 	FVector ShotDirection;
 	FHitResult Hit;
-	if(HitTrace(Hit, ShotDirection)) ShotDirection = CardDeck->GetActorLocation() - Hit.ImpactPoint;
-	//if the hitscan finds an enemy actor, the card will have their details
-	if(Hit.GetActor()->IsA(ABaseAIClass::StaticClass()))
+	if(HitTrace(Hit, ShotDirection)) 
 	{
-		CardHand[Index]->CardEffect(CardDeck, -ShotDirection, Hit.ImpactPoint, Hit.GetActor());
+		ShotDirection = CardDeck->GetActorLocation() - Hit.ImpactPoint;
+		//if the hitscan finds an enemy actor, the card will have their details
+		if(Hit.GetActor()->IsA(ABaseAIClass::StaticClass()))
+		{
+			CardHand[Index]->CardEffect(CardDeck, -ShotDirection, Hit.ImpactPoint, Hit.GetActor());
+		}
+		else
+		{
+			//Has shot direction reversed: shot direction originally made for hit events
+			CardHand[Index]->CardEffect(CardDeck, -ShotDirection, Hit.ImpactPoint, nullptr);
+		}
 	}
+
 	else
 	{
-		//Has shot direction reversed: shot direction originally made for hit events
 		CardHand[Index]->CardEffect(CardDeck, -ShotDirection, Hit.ImpactPoint, nullptr);
 	}
 	//Sets the array index to nullptr to prevent array resizing

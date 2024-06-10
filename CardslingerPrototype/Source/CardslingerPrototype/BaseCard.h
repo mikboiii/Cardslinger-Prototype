@@ -25,16 +25,16 @@ protected:
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
-
+	//The name of the card
 	UPROPERTY(EditAnywhere)
 	FString CardName;
-
+	//the description of what the card does
 	UPROPERTY(EditAnywhere)
 	FString CardDescription;
-
+	//determines if the card is homing
 	UPROPERTY(EditAnywhere)
 	bool bIsHoming = false;
-
+	//stores the widget of the card's ui design
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Instanced)
 	UUserWidget* CardWidget;
 

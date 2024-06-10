@@ -5,6 +5,7 @@
 #include "Kismet/GameplayStatics.h"
 #include "BaseCharacterClass.h"
 
+/// @brief finds the player pawn and applies healing to them
 void AHealingCard::CardEffect(ACardDeck* CardDeck, FVector Direction, FVector Target, AActor* TargetActor)
 {
 	Super::CardEffect(CardDeck, Direction, Target, TargetActor);

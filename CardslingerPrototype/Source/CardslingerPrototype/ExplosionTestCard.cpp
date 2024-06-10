@@ -6,8 +6,8 @@
 #include "ProjectileCard.h"
 #include "Engine/World.h"
 
+/// @brief launches an explosive card (damage values are stored in the projectile card)
 void AExplosionTestCard::CardEffect(ACardDeck* CardDeck, FVector Direction, FVector Target, AActor* TargetActor)
 {
     AProjectileCard* LaunchedCard = CardDeck->FireCard(Direction, ExplosionProjectileCardClass, Target, TargetActor);
-    UE_LOG(LogTemp, Display, TEXT("Exploding Card"));
 }
