@@ -6,6 +6,7 @@
 #include "DrawDebugHelpers.h"
 #include "BaseAIClass.h"
 #include "NiagaraFunctionLibrary.h"
+#include "TimerManager.h"
 #include "NiagaraComponent.h"
 #include "Engine/DamageEvents.h"
 #include "Components/SphereComponent.h"
@@ -24,11 +25,13 @@ void ASlowTimeProjectileCard::OnHit(UPrimitiveComponent* HitComponent, AActor* O
 void ASlowTimeProjectileCard::SlowTimeSphere()
 {
     DrawDebugSphere(GetWorld(), GetActorLocation(), CardSlowTimeRadius, 32, FColor::Blue, true, 100.0f);
-    TArray<AActor*> AffectedEnemies = FindActorsInRange(ABaseAIClass::StaticClass(), CardSlowTimeRadius);
+    AffectedEnemies = FindActorsInRange(ABaseAIClass::StaticClass(), CardSlowTimeRadius);
     for(AActor* Actor : AffectedEnemies)
     {
-        UE_LOG(LogTemp, Display, TEXT("Affected enemy: %s"), *Actor->GetActorNameOrLabel());
-    }   
+        Actor->CustomTimeDilation = CardSlowDilationValue;
+    }
+    FTimerHandle TimeResetHandle;
+    GetWorldTimerManager().SetTimer(TimeResetHandle, this, &ASlowTimeProjectileCard::ResetTimeDilation, CardSlowDuration);
 }
 
 TArray<AActor*> ASlowTimeProjectileCard::FindActorsInRange(UClass* ActorClass, float Radius)
@@ -59,4 +62,12 @@ TArray<AActor*> ASlowTimeProjectileCard::FindActorsInRange(UClass* ActorClass, f
     }
 
     return FoundActors;
+}
+
+void ASlowTimeProjectileCard::ResetTimeDilation()
+{
+    for(AActor* Actor : AffectedEnemies)
+    {
+        Actor->CustomTimeDilation = 1.0f;
+    }
 }

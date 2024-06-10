@@ -20,8 +20,18 @@ class CARDSLINGERPROTOTYPE_API ASlowTimeProjectileCard : public AProjectileCard
 
 		void SlowTimeSphere();
 
+		void ResetTimeDilation();
+
 		TArray<AActor*> FindActorsInRange(UClass* ActorClass, float Radius);
-		
+
+		TArray<AActor*> AffectedEnemies;
+
 		UPROPERTY(EditAnywhere)
 		float CardSlowTimeRadius = 300.0f;
+
+		UPROPERTY(EditAnywhere)
+		float CardSlowDilationValue = 0.5f;
+
+		UPROPERTY(EditAnywhere)
+		float CardSlowDuration = 15.0f;
 };

@@ -1820,3 +1820,319 @@ LogConfig: Set CVar [[r.Shadow.DetectVertexShaderLayerAtRuntime:1]]
 [2024.06.10-19.00.40:170][702]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=7
 [2024.06.10-19.00.40:202][702]LogUObjectHash: Compacting FUObjectHashTables data took   3.10ms
 [2024.06.10-19.00.40:255][703]LogPlayLevel: Display: Destroying online subsystem :Context_15
+[2024.06.10-19.02.22:077][225]LogLiveCoding: Display: Starting Live Coding compile.
+[2024.06.10-19.03.07:765][362]Display: Reload/Re-instancing Complete: No object changes detected
+[2024.06.10-19.03.07:765][362]LogLiveCoding: Error: Live coding failed, please see Live console for more information
+[2024.06.10-19.09.33:221][518]LogLiveCoding: Display: Starting Live Coding compile.
+[2024.06.10-19.10.20:012][658]LogLiveCoding: Display:    Creating library C:\Users\Mikolaj\Documents\Unreal Projects\Cardslinger-Prototype\CardslingerPrototype\Binaries\Win64\UnrealEditor-CardslingerPrototype.patch_5.lib and object C:\Users\Mikolaj\Documents\Unreal Projects\Cardslinger-Prototype\CardslingerPrototype\Binaries\Win64\UnrealEditor-CardslingerPrototype.patch_5.exp
+[2024.06.10-19.10.21:144][661]LogClass: UPackage /Script/CardslingerPrototype Reload.
+[2024.06.10-19.10.21:145][661]LogClass: UClass SlowTimeProjectileCard Reload.
+[2024.06.10-19.10.21:187][661]LogClass: Could not find existing class SlowTimeProjectileCard in package /Script/CardslingerPrototype for reload, assuming new or modified class
+[2024.06.10-19.10.21:233][661]Re-instancing SlowTimeProjectileCard after reload.
+[2024.06.10-19.10.21:482][661]LogActor: Warning: BP_SlowTimeProjectileCard_C /Engine/Transient.World_6:PersistentLevel.BP_SlowTimeProjectileCard_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2024.06.10-19.10.21:491][661]LogActor: Warning: BP_SlowTimeProjectileCard_C /Engine/Transient.World_7:PersistentLevel.BP_SlowTimeProjectileCard_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2024.06.10-19.10.21:494][661]LogActor: Warning: BP_SlowTimeProjectileCard_C /Engine/Transient.World_2:PersistentLevel.BP_SlowTimeProjectileCard_C_2 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2024.06.10-19.10.21:538][661]LogActor: Warning: BP_SlowTimeProjectileCard_C /Engine/Transient.World_2:PersistentLevel.BP_SlowTimeProjectileCard_C_3 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2024.06.10-19.10.21:823][661]LogUObjectHash: Compacting FUObjectHashTables data took   2.08ms
+[2024.06.10-19.10.22:530][662]Display: Reload/Re-instancing Complete: 1 package changed, 1 class changed, 17 classes unchanged, 11 functions remapped
+[2024.06.10-19.10.22:531][662]LogLiveCoding: Warning: Live coding succeeded, data type changes may cause packaging to fail if assets reference the new or updated data types
+[2024.06.10-19.10.36:277][736]LogDebuggerCommands: Repeating last play command: Selected Viewport
+[2024.06.10-19.10.36:303][736]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2024.06.10-19.10.36:309][736]PIE: New page: PIE session: EmptyLevel (10 Jun 2024, 21:10:36)
+[2024.06.10-19.10.36:309][736]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_EmptyLevel
+[2024.06.10-19.10.36:320][736]LogPlayLevel: PIE: StaticDuplicateObject took: (0.011011s)
+[2024.06.10-19.10.36:320][736]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/EmptyLevel.EmptyLevel to /Game/UEDPIE_0_EmptyLevel.EmptyLevel (0.011128s)
+[2024.06.10-19.10.36:396][736]LogUObjectHash: Compacting FUObjectHashTables data took   2.24ms
+[2024.06.10-19.10.36:397][736]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.06.10-19.10.36:398][736]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2024.06.10-19.10.36:398][736]LogAIModule: Creating AISystem for world EmptyLevel
+[2024.06.10-19.10.36:398][736]LogPlayLevel: PIE: World Init took: (0.001736s)
+[2024.06.10-19.10.36:398][736]LogAudio: Display: Creating Audio Device:                 Id: 8, Scope: Unique, Realtime: True
+[2024.06.10-19.10.36:400][736]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2024.06.10-19.10.36:400][736]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2024.06.10-19.10.36:400][736]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2024.06.10-19.10.36:400][736]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2024.06.10-19.10.36:400][736]LogAudioMixer: Display: 	Number of buffers to queue:			  1
+[2024.06.10-19.10.36:400][736]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2024.06.10-19.10.36:400][736]LogAudioMixer: Display: 	Number of Async Source Workers:		  4
+[2024.06.10-19.10.36:400][736]LogAudio: Display: AudioDevice MaxSources: 32
+[2024.06.10-19.10.36:400][736]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2024.06.10-19.10.36:400][736]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2024.06.10-19.10.36:400][736]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2024.06.10-19.10.36:408][736]LogAudioMixer: Display: Initializing audio mixer using platform API: 'XAudio2'
+[2024.06.10-19.10.36:488][736]LogAudioMixer: Display: Using Audio Hardware Device Speakers (Realtek(R) Audio)
+[2024.06.10-19.10.36:489][736]LogAudioMixer: Display: Initializing Sound Submixes...
+[2024.06.10-19.10.36:489][736]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2024.06.10-19.10.36:489][736]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2024.06.10-19.10.36:490][736]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called. InstanceID=8
+[2024.06.10-19.10.36:490][736]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048, InstanceID=8
+[2024.06.10-19.10.36:493][736]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=8
+[2024.06.10-19.10.36:493][736]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time. InstanceID=8
+[2024.06.10-19.10.36:493][736]LogInit: FAudioDevice initialized with ID 8.
+[2024.06.10-19.10.36:493][736]LogAudio: Display: Audio Device (ID: 8) registered with world 'EmptyLevel'.
+[2024.06.10-19.10.36:493][736]LogAudioMixer: Initializing Audio Bus Subsystem for audio device with ID 8
+[2024.06.10-19.10.36:498][736]LogLoad: Game class is 'BP_CardslingerTestGameMode_C'
+[2024.06.10-19.10.36:506][736]LogWorld: Bringing World /Game/UEDPIE_0_EmptyLevel.EmptyLevel up for play (max tick rate 60) at 2024.06.10-20.10.36
+[2024.06.10-19.10.36:508][736]LogWorld: Bringing up level for play took: 0.008352
+[2024.06.10-19.10.36:514][736]LogOnline: OSS: Created online subsystem instance for: :Context_16
+[2024.06.10-19.10.36:520][736]LogTemp: Display: UI Constructed
+[2024.06.10-19.10.36:521][736]LogTemp: Display: New card set in UI
+[2024.06.10-19.10.36:521][736]LogTemp: Display: New card at index 0
+[2024.06.10-19.10.36:522][736]LogTemp: Display: New card set in UI
+[2024.06.10-19.10.36:522][736]LogTemp: Display: New card at index 1
+[2024.06.10-19.10.36:522][736]LogTemp: Display: New card set in UI
+[2024.06.10-19.10.36:522][736]LogTemp: Display: New card at index 2
+[2024.06.10-19.10.36:522][736]LogTemp: Display: New card set in UI
+[2024.06.10-19.10.36:523][736]LogTemp: Display: New card at index 3
+[2024.06.10-19.10.36:523][736]PIE: Server logged in
+[2024.06.10-19.10.36:524][736]PIE: Play in editor total start time 0.223 seconds.
+[2024.06.10-19.10.37:823][798]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2024.06.10-19.10.37:823][798]LogWorld: BeginTearingDown for /Game/UEDPIE_0_EmptyLevel
+[2024.06.10-19.10.37:823][798]LogWorld: UWorld::CleanupWorld for EmptyLevel, bSessionEnded=true, bCleanupResources=true
+[2024.06.10-19.10.37:824][798]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.06.10-19.10.37:830][798]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2024.06.10-19.10.37:835][798]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.06.10-19.10.37:858][798]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2024.06.10-19.10.37:866][798]LogAudioMixer: Deinitializing Audio Bus Subsystem for audio device with ID 8
+[2024.06.10-19.10.37:866][798]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=8
+[2024.06.10-19.10.37:868][798]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=8
+[2024.06.10-19.10.37:891][798]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2024.06.10-19.10.37:910][798]LogUObjectHash: Compacting FUObjectHashTables data took   2.25ms
+[2024.06.10-19.10.37:964][799]LogPlayLevel: Display: Destroying online subsystem :Context_16
+[2024.06.10-19.10.47:752][340]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.06.10-19.10.47:960][340]LogSavePackage: Moving output files for package: /Game/Cards/BP_SlowTimeProjectileCard
+[2024.06.10-19.10.47:962][340]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/BP_SlowTimeProjectileCardDAD927144B65777F5CB67DB124426F0A.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/Cards/BP_SlowTimeProjectileCard.uasset'
+[2024.06.10-19.10.47:978][340]LogFileHelpers: InternalPromptForCheckoutAndSave took 224 ms (total: 641 ms)
+[2024.06.10-19.10.47:986][340]AssetCheck: New page: Asset Save: BP_SlowTimeProjectileCard
+[2024.06.10-19.10.47:986][340]LogContentValidation: Display: Validating /Script/Engine.Blueprint /Game/Cards/BP_SlowTimeProjectileCard.BP_SlowTimeProjectileCard
+[2024.06.10-19.10.48:900][384]LogDebuggerCommands: Repeating last play command: Selected Viewport
+[2024.06.10-19.10.48:913][384]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2024.06.10-19.10.48:913][384]PIE: New page: PIE session: EmptyLevel (10 Jun 2024, 21:10:48)
+[2024.06.10-19.10.48:913][384]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_EmptyLevel
+[2024.06.10-19.10.48:920][384]LogPlayLevel: PIE: StaticDuplicateObject took: (0.006626s)
+[2024.06.10-19.10.48:920][384]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/EmptyLevel.EmptyLevel to /Game/UEDPIE_0_EmptyLevel.EmptyLevel (0.006671s)
+[2024.06.10-19.10.48:936][384]LogUObjectHash: Compacting FUObjectHashTables data took   1.23ms
+[2024.06.10-19.10.48:944][384]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.06.10-19.10.48:944][384]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2024.06.10-19.10.48:945][384]LogAIModule: Creating AISystem for world EmptyLevel
+[2024.06.10-19.10.48:945][384]LogPlayLevel: PIE: World Init took: (0.001050s)
+[2024.06.10-19.10.48:945][384]LogAudio: Display: Creating Audio Device:                 Id: 9, Scope: Unique, Realtime: True
+[2024.06.10-19.10.48:945][384]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2024.06.10-19.10.48:945][384]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2024.06.10-19.10.48:945][384]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2024.06.10-19.10.48:945][384]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2024.06.10-19.10.48:945][384]LogAudioMixer: Display: 	Number of buffers to queue:			  1
+[2024.06.10-19.10.48:945][384]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2024.06.10-19.10.48:945][384]LogAudioMixer: Display: 	Number of Async Source Workers:		  4
+[2024.06.10-19.10.48:945][384]LogAudio: Display: AudioDevice MaxSources: 32
+[2024.06.10-19.10.48:946][384]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2024.06.10-19.10.48:946][384]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2024.06.10-19.10.48:946][384]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2024.06.10-19.10.48:948][384]LogAudioMixer: Display: Initializing audio mixer using platform API: 'XAudio2'
+[2024.06.10-19.10.49:008][384]LogAudioMixer: Display: Using Audio Hardware Device Speakers (Realtek(R) Audio)
+[2024.06.10-19.10.49:009][384]LogAudioMixer: Display: Initializing Sound Submixes...
+[2024.06.10-19.10.49:009][384]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2024.06.10-19.10.49:009][384]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2024.06.10-19.10.49:010][384]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called. InstanceID=9
+[2024.06.10-19.10.49:010][384]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048, InstanceID=9
+[2024.06.10-19.10.49:013][384]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=9
+[2024.06.10-19.10.49:013][384]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time. InstanceID=9
+[2024.06.10-19.10.49:013][384]LogInit: FAudioDevice initialized with ID 9.
+[2024.06.10-19.10.49:013][384]LogAudio: Display: Audio Device (ID: 9) registered with world 'EmptyLevel'.
+[2024.06.10-19.10.49:013][384]LogAudioMixer: Initializing Audio Bus Subsystem for audio device with ID 9
+[2024.06.10-19.10.49:015][384]LogLoad: Game class is 'BP_CardslingerTestGameMode_C'
+[2024.06.10-19.10.49:023][384]LogWorld: Bringing World /Game/UEDPIE_0_EmptyLevel.EmptyLevel up for play (max tick rate 60) at 2024.06.10-20.10.49
+[2024.06.10-19.10.49:024][384]LogWorld: Bringing up level for play took: 0.007899
+[2024.06.10-19.10.49:028][384]LogOnline: OSS: Created online subsystem instance for: :Context_17
+[2024.06.10-19.10.49:031][384]LogTemp: Display: UI Constructed
+[2024.06.10-19.10.49:031][384]LogTemp: Display: New card set in UI
+[2024.06.10-19.10.49:031][384]LogTemp: Display: New card at index 0
+[2024.06.10-19.10.49:032][384]LogTemp: Display: New card set in UI
+[2024.06.10-19.10.49:032][384]LogTemp: Display: New card at index 1
+[2024.06.10-19.10.49:032][384]LogTemp: Display: New card set in UI
+[2024.06.10-19.10.49:032][384]LogTemp: Display: New card at index 2
+[2024.06.10-19.10.49:032][384]LogTemp: Display: New card set in UI
+[2024.06.10-19.10.49:032][384]LogTemp: Display: New card at index 3
+[2024.06.10-19.10.49:032][384]PIE: Server logged in
+[2024.06.10-19.10.49:033][384]PIE: Play in editor total start time 0.12 seconds.
+[2024.06.10-19.10.55:660][775]LogActor: Warning: BP_SlowTimeProjectileCard_C /Game/UEDPIE_0_EmptyLevel.EmptyLevel:PersistentLevel.BP_SlowTimeProjectileCard_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2024.06.10-19.10.59:681][ 13]LogTemp: Display: New card set in UI
+[2024.06.10-19.10.59:681][ 13]LogTemp: Display: New card at index 2
+[2024.06.10-19.11.04:715][312]LogActor: Warning: BP_ExplosionProjectileCard_C /Game/UEDPIE_0_EmptyLevel.EmptyLevel:PersistentLevel.BP_ExplosionProjectileCard_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2024.06.10-19.11.07:342][467]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2024.06.10-19.11.07:342][467]LogWorld: BeginTearingDown for /Game/UEDPIE_0_EmptyLevel
+[2024.06.10-19.11.07:343][467]LogWorld: UWorld::CleanupWorld for EmptyLevel, bSessionEnded=true, bCleanupResources=true
+[2024.06.10-19.11.07:344][467]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.06.10-19.11.07:348][467]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2024.06.10-19.11.07:354][467]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.06.10-19.11.07:371][467]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2024.06.10-19.11.07:371][467]LogAudioMixer: Deinitializing Audio Bus Subsystem for audio device with ID 9
+[2024.06.10-19.11.07:371][467]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=9
+[2024.06.10-19.11.07:374][467]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=9
+[2024.06.10-19.11.07:388][467]LogUObjectHash: Compacting FUObjectHashTables data took   1.85ms
+[2024.06.10-19.11.07:432][468]LogPlayLevel: Display: Destroying online subsystem :Context_17
+[2024.06.10-19.11.10:383][643]LogDebuggerCommands: Repeating last play command: Selected Viewport
+[2024.06.10-19.11.10:397][643]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2024.06.10-19.11.10:397][643]PIE: New page: PIE session: EmptyLevel (10 Jun 2024, 21:11:10)
+[2024.06.10-19.11.10:432][643]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_EmptyLevel
+[2024.06.10-19.11.10:438][643]LogPlayLevel: PIE: StaticDuplicateObject took: (0.005784s)
+[2024.06.10-19.11.10:438][643]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/EmptyLevel.EmptyLevel to /Game/UEDPIE_0_EmptyLevel.EmptyLevel (0.005850s)
+[2024.06.10-19.11.10:454][643]LogUObjectHash: Compacting FUObjectHashTables data took   1.77ms
+[2024.06.10-19.11.10:456][643]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.06.10-19.11.10:456][643]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2024.06.10-19.11.10:457][643]LogAIModule: Creating AISystem for world EmptyLevel
+[2024.06.10-19.11.10:457][643]LogPlayLevel: PIE: World Init took: (0.001441s)
+[2024.06.10-19.11.10:457][643]LogAudio: Display: Creating Audio Device:                 Id: 10, Scope: Unique, Realtime: True
+[2024.06.10-19.11.10:457][643]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2024.06.10-19.11.10:457][643]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2024.06.10-19.11.10:457][643]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2024.06.10-19.11.10:457][643]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2024.06.10-19.11.10:457][643]LogAudioMixer: Display: 	Number of buffers to queue:			  1
+[2024.06.10-19.11.10:457][643]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2024.06.10-19.11.10:457][643]LogAudioMixer: Display: 	Number of Async Source Workers:		  4
+[2024.06.10-19.11.10:457][643]LogAudio: Display: AudioDevice MaxSources: 32
+[2024.06.10-19.11.10:458][643]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2024.06.10-19.11.10:458][643]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2024.06.10-19.11.10:458][643]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2024.06.10-19.11.10:461][643]LogAudioMixer: Display: Initializing audio mixer using platform API: 'XAudio2'
+[2024.06.10-19.11.10:521][643]LogAudioMixer: Display: Using Audio Hardware Device Speakers (Realtek(R) Audio)
+[2024.06.10-19.11.10:521][643]LogAudioMixer: Display: Initializing Sound Submixes...
+[2024.06.10-19.11.10:521][643]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2024.06.10-19.11.10:521][643]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2024.06.10-19.11.10:522][643]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called. InstanceID=10
+[2024.06.10-19.11.10:522][643]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048, InstanceID=10
+[2024.06.10-19.11.10:525][643]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=10
+[2024.06.10-19.11.10:525][643]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time. InstanceID=10
+[2024.06.10-19.11.10:525][643]LogInit: FAudioDevice initialized with ID 10.
+[2024.06.10-19.11.10:525][643]LogAudio: Display: Audio Device (ID: 10) registered with world 'EmptyLevel'.
+[2024.06.10-19.11.10:525][643]LogAudioMixer: Initializing Audio Bus Subsystem for audio device with ID 10
+[2024.06.10-19.11.10:528][643]LogLoad: Game class is 'BP_CardslingerTestGameMode_C'
+[2024.06.10-19.11.10:533][643]LogWorld: Bringing World /Game/UEDPIE_0_EmptyLevel.EmptyLevel up for play (max tick rate 60) at 2024.06.10-20.11.10
+[2024.06.10-19.11.10:534][643]LogWorld: Bringing up level for play took: 0.006715
+[2024.06.10-19.11.10:539][643]LogOnline: OSS: Created online subsystem instance for: :Context_18
+[2024.06.10-19.11.10:543][643]LogTemp: Display: UI Constructed
+[2024.06.10-19.11.10:543][643]LogTemp: Display: New card set in UI
+[2024.06.10-19.11.10:543][643]LogTemp: Display: New card at index 0
+[2024.06.10-19.11.10:544][643]LogTemp: Display: New card set in UI
+[2024.06.10-19.11.10:544][643]LogTemp: Display: New card at index 1
+[2024.06.10-19.11.10:544][643]LogTemp: Display: New card set in UI
+[2024.06.10-19.11.10:544][643]LogTemp: Display: New card at index 2
+[2024.06.10-19.11.10:544][643]LogTemp: Display: New card set in UI
+[2024.06.10-19.11.10:544][643]LogTemp: Display: New card at index 3
+[2024.06.10-19.11.10:544][643]PIE: Server logged in
+[2024.06.10-19.11.10:545][643]PIE: Play in editor total start time 0.148 seconds.
+[2024.06.10-19.11.17:017][ 25]LogActor: Warning: BP_SlowTimeProjectileCard_C /Game/UEDPIE_0_EmptyLevel.EmptyLevel:PersistentLevel.BP_SlowTimeProjectileCard_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2024.06.10-19.11.20:625][241]LogActor: Warning: BP_ProjectileCard_C /Game/UEDPIE_0_EmptyLevel.EmptyLevel:PersistentLevel.BP_ProjectileCard_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2024.06.10-19.11.20:744][248]LogActor: Warning: BP_ProjectileCard_C /Game/UEDPIE_0_EmptyLevel.EmptyLevel:PersistentLevel.BP_ProjectileCard_C_1 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2024.06.10-19.11.20:895][257]LogActor: Warning: BP_ProjectileCard_C /Game/UEDPIE_0_EmptyLevel.EmptyLevel:PersistentLevel.BP_ProjectileCard_C_2 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2024.06.10-19.11.21:031][265]LogTemp: Display: New card set in UI
+[2024.06.10-19.11.21:031][265]LogTemp: Display: New card at index 2
+[2024.06.10-19.11.21:047][266]LogActor: Warning: BP_ProjectileCard_C /Game/UEDPIE_0_EmptyLevel.EmptyLevel:PersistentLevel.BP_ProjectileCard_C_3 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2024.06.10-19.11.21:199][275]LogActor: Warning: BP_ProjectileCard_C /Game/UEDPIE_0_EmptyLevel.EmptyLevel:PersistentLevel.BP_ProjectileCard_C_4 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2024.06.10-19.11.21:334][283]LogActor: Warning: BP_ProjectileCard_C /Game/UEDPIE_0_EmptyLevel.EmptyLevel:PersistentLevel.BP_ProjectileCard_C_5 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2024.06.10-19.11.28:642][721]LogTemp: Display: New card set in UI
+[2024.06.10-19.11.28:642][721]LogTemp: Display: New card at index 1
+[2024.06.10-19.11.37:126][229]LogActor: Warning: BP_ExplosionProjectileCard_C /Game/UEDPIE_0_EmptyLevel.EmptyLevel:PersistentLevel.BP_ExplosionProjectileCard_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2024.06.10-19.11.38:903][333]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2024.06.10-19.11.38:903][333]LogWorld: BeginTearingDown for /Game/UEDPIE_0_EmptyLevel
+[2024.06.10-19.11.38:903][333]LogWorld: UWorld::CleanupWorld for EmptyLevel, bSessionEnded=true, bCleanupResources=true
+[2024.06.10-19.11.38:904][333]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.06.10-19.11.38:909][333]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2024.06.10-19.11.38:915][333]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.06.10-19.11.38:933][333]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2024.06.10-19.11.38:934][333]LogAudioMixer: Deinitializing Audio Bus Subsystem for audio device with ID 10
+[2024.06.10-19.11.38:934][333]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=10
+[2024.06.10-19.11.38:936][333]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=10
+[2024.06.10-19.11.38:948][333]LogUObjectHash: Compacting FUObjectHashTables data took   1.79ms
+[2024.06.10-19.11.38:997][334]LogPlayLevel: Display: Destroying online subsystem :Context_18
+[2024.06.10-19.11.41:662][492]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.06.10-19.11.41:836][492]LogUObjectHash: Compacting FUObjectHashTables data took   1.37ms
+[2024.06.10-19.11.41:869][492]LogSavePackage: Moving output files for package: /Game/EmptyLevel
+[2024.06.10-19.11.41:870][492]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/EmptyLevelCFC5CF9045B2854939B68A8FFC0DCE76.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/EmptyLevel.umap'
+[2024.06.10-19.11.41:902][492]LogFileHelpers: Saving map 'EmptyLevel' took 0.138
+[2024.06.10-19.11.41:914][492]LogFileHelpers: InternalPromptForCheckoutAndSave took 252 ms (total: 894 ms)
+[2024.06.10-19.11.41:917][492]AssetCheck: New page: Asset Save: EmptyLevel
+[2024.06.10-19.11.41:917][492]LogContentValidation: Display: Validating /Script/Engine.World /Game/EmptyLevel.EmptyLevel
+[2024.06.10-19.11.43:380][577]LogUObjectHash: Compacting FUObjectHashTables data took   1.15ms
+[2024.06.10-19.11.43:382][577]LogStall: Shutdown...
+[2024.06.10-19.11.43:390][577]LogStall: Shutdown complete.
+[2024.06.10-19.11.43:466][577]LogWorld: UWorld::CleanupWorld for World_6, bSessionEnded=true, bCleanupResources=true
+[2024.06.10-19.11.43:466][577]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.06.10-19.11.43:607][577]LogSlate: Window 'CardslingerPrototype - Unreal Editor' being destroyed
+[2024.06.10-19.11.43:917][578]Cmd: QUIT_EDITOR
+[2024.06.10-19.11.43:917][578]LogCore: Engine exit requested (reason: UUnrealEdEngine::CloseEditor())
+[2024.06.10-19.11.43:929][578]LogCore: Engine exit requested (reason: EngineExit() was called; note: exit was already requested)
+[2024.06.10-19.11.43:930][578]LogStaticMesh: Abandoning remaining async distance field tasks for shutdown
+[2024.06.10-19.11.43:930][578]LogStaticMesh: Abandoning remaining async card representation tasks for shutdown
+[2024.06.10-19.11.43:938][578]LogWorld: UWorld::CleanupWorld for EmptyLevel, bSessionEnded=true, bCleanupResources=true
+[2024.06.10-19.11.43:939][578]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.06.10-19.11.43:989][578]LogLevelSequenceEditor: LevelSequenceEditor subsystem deinitialized.
+[2024.06.10-19.11.44:183][578]LogAudio: Display: Beginning Audio Device Manager Shutdown (Module: AudioMixerXAudio2)...
+[2024.06.10-19.11.44:183][578]LogAudio: Display: Destroying 1 Remaining Audio Device(s)...
+[2024.06.10-19.11.44:183][578]LogAudio: Display: Audio Device unregistered from world 'EmptyLevel'.
+[2024.06.10-19.11.44:183][578]LogAudioMixer: Deinitializing Audio Bus Subsystem for audio device with ID 1
+[2024.06.10-19.11.44:184][578]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=1
+[2024.06.10-19.11.44:188][578]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=1
+[2024.06.10-19.11.44:238][578]LogAudio: Display: Audio Device Manager Shutdown
+[2024.06.10-19.11.44:240][578]LogWindowsTextInputMethodSystem: Activated input method: English (United Kingdom) - (Keyboard).
+[2024.06.10-19.11.44:257][578]LogSlate: Slate User Destroyed.  User Index 0, Is Virtual User: 0
+[2024.06.10-19.11.44:257][578]LogExit: Preparing to exit.
+[2024.06.10-19.11.44:359][578]LogUObjectHash: Compacting FUObjectHashTables data took   2.26ms
+[2024.06.10-19.11.44:372][578]LogPython: Display: Object '/Engine/PythonTypes.add_controls_for_selected_options' was externally referenced when shutting down Python. Forcibly releasing its Python resources!
+[2024.06.10-19.11.44:373][578]LogPython: Display: Object '/Engine/PythonTypes.add_controls_for_selected' was externally referenced when shutting down Python. Forcibly releasing its Python resources!
+[2024.06.10-19.11.44:386][578]LogPython: Display: Object '/Engine/PythonTypes.add_null_above_selected' was externally referenced when shutting down Python. Forcibly releasing its Python resources!
+[2024.06.10-19.11.44:387][578]LogPython: Display: Object '/Engine/PythonTypes.align_translation_rotation' was externally referenced when shutting down Python. Forcibly releasing its Python resources!
+[2024.06.10-19.11.44:389][578]LogPython: Display: Object '/Engine/PythonTypes.align_translation_all' was externally referenced when shutting down Python. Forcibly releasing its Python resources!
+[2024.06.10-19.11.44:389][578]LogPython: Display: Object '/Engine/PythonTypes.align_translation_x' was externally referenced when shutting down Python. Forcibly releasing its Python resources!
+[2024.06.10-19.11.44:389][578]LogPython: Display: Object '/Engine/PythonTypes.align_translation_y' was externally referenced when shutting down Python. Forcibly releasing its Python resources!
+[2024.06.10-19.11.44:389][578]LogPython: Display: Object '/Engine/PythonTypes.align_translation_z' was externally referenced when shutting down Python. Forcibly releasing its Python resources!
+[2024.06.10-19.11.44:389][578]LogPython: Display: Object '/Engine/PythonTypes.align_rotation' was externally referenced when shutting down Python. Forcibly releasing its Python resources!
+[2024.06.10-19.11.44:389][578]LogPython: Display: Object '/Engine/PythonTypes.align_scale' was externally referenced when shutting down Python. Forcibly releasing its Python resources!
+[2024.06.10-19.11.44:389][578]LogPython: Display: Object '/Engine/PythonTypes.search_replace_name_dialog' was externally referenced when shutting down Python. Forcibly releasing its Python resources!
+[2024.06.10-19.11.44:389][578]LogPython: Display: Object '/Engine/PythonTypes.search_replace_entry' was externally referenced when shutting down Python. Forcibly releasing its Python resources!
+[2024.06.10-19.11.44:389][578]LogPython: Display: Object '/Engine/PythonTypes.add_prefix_dialog' was externally referenced when shutting down Python. Forcibly releasing its Python resources!
+[2024.06.10-19.11.44:389][578]LogPython: Display: Object '/Engine/PythonTypes.add_prefix_entry' was externally referenced when shutting down Python. Forcibly releasing its Python resources!
+[2024.06.10-19.11.44:389][578]LogPython: Display: Object '/Engine/PythonTypes.add_suffix_dialog' was externally referenced when shutting down Python. Forcibly releasing its Python resources!
+[2024.06.10-19.11.44:389][578]LogPython: Display: Object '/Engine/PythonTypes.add_suffix_entry' was externally referenced when shutting down Python. Forcibly releasing its Python resources!
+[2024.06.10-19.11.44:390][578]LogPython: Display: Object '/Engine/PythonTypes.do_rename_dialog' was externally referenced when shutting down Python. Forcibly releasing its Python resources!
+[2024.06.10-19.11.44:390][578]LogPython: Display: Object '/Engine/PythonTypes.do_rename_entry' was externally referenced when shutting down Python. Forcibly releasing its Python resources!
+[2024.06.10-19.11.44:391][578]LogPython: Display: Object '/Engine/PythonTypes.set_bone_reference_pose' was externally referenced when shutting down Python. Forcibly releasing its Python resources!
+[2024.06.10-19.11.44:391][578]LogPython: Display: Object '/Engine/PythonTypes.ControlOutputFormat' was externally referenced when shutting down Python. Forcibly releasing its Python resources!
+[2024.06.10-19.11.45:641][578]LogWorld: UWorld::CleanupWorld for World_7, bSessionEnded=true, bCleanupResources=true
+[2024.06.10-19.11.45:644][578]LogWorld: UWorld::CleanupWorld for World_0, bSessionEnded=true, bCleanupResources=true
+[2024.06.10-19.11.45:647][578]LogWorld: UWorld::CleanupWorld for World_1, bSessionEnded=true, bCleanupResources=true
+[2024.06.10-19.11.45:650][578]LogWorld: UWorld::CleanupWorld for World_2, bSessionEnded=true, bCleanupResources=true
+[2024.06.10-19.11.45:653][578]LogWorld: UWorld::CleanupWorld for World_3, bSessionEnded=true, bCleanupResources=true
+[2024.06.10-19.11.45:656][578]LogWorld: UWorld::CleanupWorld for World_4, bSessionEnded=true, bCleanupResources=true
+[2024.06.10-19.11.45:659][578]LogWorld: UWorld::CleanupWorld for World_8, bSessionEnded=true, bCleanupResources=true
+[2024.06.10-19.11.45:921][578]LogDemo: Cleaned up 0 splitscreen connections, owner deletion: enabled
+[2024.06.10-19.11.46:130][578]LogExit: Editor shut down
+[2024.06.10-19.11.46:201][578]LogExit: Transaction tracking system shut down
+[2024.06.10-19.11.49:977][578]LogWindows: Error: === Critical error: ===
+[2024.06.10-19.11.49:977][578]LogWindows: Error: 
+[2024.06.10-19.11.49:977][578]LogWindows: Error: Fatal error!
+[2024.06.10-19.11.49:977][578]LogWindows: Error: 
+[2024.06.10-19.11.49:977][578]LogWindows: Error: Unhandled Exception: EXCEPTION_ACCESS_VIOLATION reading address 0x0000000043800070
+[2024.06.10-19.11.49:977][578]LogWindows: Error: 
+[2024.06.10-19.11.49:977][578]LogWindows: Error: [Callstack] 0x00007ffc0f631a9b UnrealEditor-Core.dll!UnknownFunction []
+[2024.06.10-19.11.49:977][578]LogWindows: Error: [Callstack] 0x00007ffc0efc8821 UnrealEditor-Core.dll!UnknownFunction []
+[2024.06.10-19.11.49:977][578]LogWindows: Error: [Callstack] 0x00007ffb00aab75f UnrealEditor-CardslingerPrototype.patch_5.exe!ASlowTimeProjectileCard::`vector deleting destructor'() []
+[2024.06.10-19.11.49:977][578]LogWindows: Error: [Callstack] 0x00007ffc3e3e25fc UnrealEditor-CoreUObject.dll!UnknownFunction []
+[2024.06.10-19.11.49:977][578]LogWindows: Error: [Callstack] 0x00007ffc3e430972 UnrealEditor-CoreUObject.dll!UnknownFunction []
+[2024.06.10-19.11.49:977][578]LogWindows: Error: [Callstack] 0x00007ffc3e430fae UnrealEditor-CoreUObject.dll!UnknownFunction []
+[2024.06.10-19.11.49:978][578]LogWindows: Error: [Callstack] 0x00007ffc3e57d3b4 UnrealEditor-CoreUObject.dll!UnknownFunction []
+[2024.06.10-19.11.49:978][578]LogWindows: Error: [Callstack] 0x00007ffc3e411f37 UnrealEditor-CoreUObject.dll!UnknownFunction []
+[2024.06.10-19.11.49:978][578]LogWindows: Error: [Callstack] 0x00007ff7394c05e4 UnrealEditor.exe!UnknownFunction []
+[2024.06.10-19.11.49:978][578]LogWindows: Error: [Callstack] 0x00007ff7394bfc92 UnrealEditor.exe!UnknownFunction []
+[2024.06.10-19.11.49:978][578]LogWindows: Error: [Callstack] 0x00007ff7394cbca8 UnrealEditor.exe!UnknownFunction []
+[2024.06.10-19.11.49:978][578]LogWindows: Error: [Callstack] 0x00007ff7394cd31b UnrealEditor.exe!UnknownFunction []
+[2024.06.10-19.11.49:978][578]LogWindows: Error: [Callstack] 0x00007ff7394cd37a UnrealEditor.exe!UnknownFunction []
+[2024.06.10-19.11.49:978][578]LogWindows: Error: [Callstack] 0x00007ff7394d0854 UnrealEditor.exe!UnknownFunction []
+[2024.06.10-19.11.49:978][578]LogWindows: Error: [Callstack] 0x00007ff7394e6984 UnrealEditor.exe!UnknownFunction []
+[2024.06.10-19.11.49:978][578]LogWindows: Error: [Callstack] 0x00007ff7394e9d7a UnrealEditor.exe!UnknownFunction []
+[2024.06.10-19.11.49:978][578]LogWindows: Error: [Callstack] 0x00007ffc5270257d KERNEL32.DLL!UnknownFunction []
+[2024.06.10-19.11.49:978][578]LogWindows: Error: 
+[2024.06.10-19.11.49:990][578]LogExit: Executing StaticShutdownAfterError
+[2024.06.10-19.11.49:997][578]LogWindows: FPlatformMisc::RequestExit(1, LaunchWindowsStartup.ExceptionHandler)
+[2024.06.10-19.11.49:997][578]LogWindows: FPlatformMisc::RequestExitWithStatus(1, 3, LaunchWindowsStartup.ExceptionHandler)
+[2024.06.10-19.11.49:997][578]LogCore: Engine exit requested (reason: Win RequestExit; note: exit was already requested)
