@@ -18,6 +18,10 @@ class CARDSLINGERPROTOTYPE_API ASlowTimeProjectileCard : public AProjectileCard
 
 		virtual void OnHit(UPrimitiveComponent* HitComponent, AActor* OtherActor, UPrimitiveComponent* OtherComponent, FVector NormalImpulse, const FHitResult& Hit) override;
 
+		void SlowTimeSphere();
+
+		TArray<AActor*> FindActorsInRange(UClass* ActorClass, float Radius);
+		
 		UPROPERTY(EditAnywhere)
 		float CardSlowTimeRadius = 300.0f;
 };

@@ -59,6 +59,7 @@ void AProjectileCard::Tick(float DeltaTime)
 /// @brief Destroys the projectile card
 void AProjectileCard::DestroyCard()
 {
+	UE_LOG(LogTemp, Display, TEXT("Card Destroyed"));
 	Destroy();
 }
 
