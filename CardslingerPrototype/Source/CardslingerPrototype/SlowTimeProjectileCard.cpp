@@ -72,4 +72,5 @@ void ASlowTimeProjectileCard::ResetTimeDilation()
         Actor->CustomTimeDilation = 1.0f;
         Cast<ABaseAIClass>(Actor)->EnableSlowEffect(false);
     }
+    DestroyCard();
 }
