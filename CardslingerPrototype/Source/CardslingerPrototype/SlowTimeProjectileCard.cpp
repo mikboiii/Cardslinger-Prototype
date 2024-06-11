@@ -29,6 +29,7 @@ void ASlowTimeProjectileCard::SlowTimeSphere()
     for(AActor* Actor : AffectedEnemies)
     {
         Actor->CustomTimeDilation = CardSlowDilationValue;
+        Cast<ABaseAIClass>(Actor)->EnableSlowEffect(true);
     }
     FTimerHandle TimeResetHandle;
     GetWorldTimerManager().SetTimer(TimeResetHandle, this, &ASlowTimeProjectileCard::ResetTimeDilation, CardSlowDuration);
@@ -69,5 +70,6 @@ void ASlowTimeProjectileCard::ResetTimeDilation()
     for(AActor* Actor : AffectedEnemies)
     {
         Actor->CustomTimeDilation = 1.0f;
+        Cast<ABaseAIClass>(Actor)->EnableSlowEffect(false);
     }
 }

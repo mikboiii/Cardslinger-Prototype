@@ -28,6 +28,8 @@ public:
 
 	float TakeDamage(float DamageAmount, struct FDamageEvent const &DamageEvent, class AController *EventInstigator, AActor* DamageCauser) override;
 
+	void EnableSlowEffect(bool bIsSlow);
+
 	UFUNCTION(BlueprintPure)
 	bool IsDead() const;
 
@@ -52,6 +54,8 @@ private:
 
 	UPROPERTY(EditAnywhere, Category = "Combat")
 	float Damage = 10.0f;
+
+	
 	
 	bool HitTrace(FHitResult& Hit, FVector& ShotDirection);
 };

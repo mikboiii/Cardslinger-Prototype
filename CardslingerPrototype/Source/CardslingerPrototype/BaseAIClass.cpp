@@ -13,6 +13,7 @@
 #include "Engine/DamageEvents.h"
 #include "Engine/World.h"
 #include "Sound/SoundBase.h"
+#include "Components/PostProcessComponent.h"
 
 // Sets default values
 ABaseAIClass::ABaseAIClass()
@@ -108,3 +109,7 @@ void ABaseAIClass::Shoot()
 	}
 }
 
+void ABaseAIClass::EnableSlowEffect(bool bIsSlow)
+{
+	GetComponentByClass<UPostProcessComponent>()->bEnabled = bIsSlow;
+}
