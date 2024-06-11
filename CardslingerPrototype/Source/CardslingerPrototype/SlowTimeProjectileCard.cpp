@@ -24,12 +24,13 @@ void ASlowTimeProjectileCard::OnHit(UPrimitiveComponent* HitComponent, AActor* O
 
 void ASlowTimeProjectileCard::SlowTimeSphere()
 {
-    DrawDebugSphere(GetWorld(), GetActorLocation(), CardSlowTimeRadius, 32, FColor::Blue, true, 100.0f);
+    //DrawDebugSphere(GetWorld(), GetActorLocation(), CardSlowTimeRadius, 32, FColor::Blue, true, 100.0f);
     AffectedEnemies = FindActorsInRange(ABaseAIClass::StaticClass(), CardSlowTimeRadius);
     for(AActor* Actor : AffectedEnemies)
     {
         Actor->CustomTimeDilation = CardSlowDilationValue;
         Cast<ABaseAIClass>(Actor)->EnableSlowEffect(true);
+        Actor->GetComponentByClass<USkeletalMeshComponent>()->SetCustomDepthStencilValue(2);
     }
     FTimerHandle TimeResetHandle;
     GetWorldTimerManager().SetTimer(TimeResetHandle, this, &ASlowTimeProjectileCard::ResetTimeDilation, CardSlowDuration);
@@ -71,6 +72,7 @@ void ASlowTimeProjectileCard::ResetTimeDilation()
     {
         Actor->CustomTimeDilation = 1.0f;
         Cast<ABaseAIClass>(Actor)->EnableSlowEffect(false);
+        Actor->GetComponentByClass<USkeletalMeshComponent>()->SetCustomDepthStencilValue(1);
     }
     DestroyCard();
 }
