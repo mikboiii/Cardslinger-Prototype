@@ -282,6 +282,10 @@ void EmptyLinkFunctionForGeneratedCodeBaseCharacterClass() {}
 #endif
 		static const UECodeGen_Private::FFloatPropertyParams NewProp_ReloadDelay;
 #if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_MaxEnergy_MetaData[];
+#endif
+		static const UECodeGen_Private::FInt8PropertyParams NewProp_MaxEnergy;
+#if WITH_METADATA
 		static const UECodeGen_Private::FMetaDataPairParam NewProp_PlayerHUD_MetaData[];
 #endif
 		static const UECodeGen_Private::FObjectPropertyParams NewProp_PlayerHUD;
@@ -460,6 +464,13 @@ void EmptyLinkFunctionForGeneratedCodeBaseCharacterClass() {}
 #endif
 	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_ReloadDelay = { "ReloadDelay", nullptr, (EPropertyFlags)0x0040000000010001, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ABaseCharacterClass, ReloadDelay), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_ReloadDelay_MetaData), Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_ReloadDelay_MetaData) };
 #if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_MaxEnergy_MetaData[] = {
+		{ "Category", "Combat" },
+		{ "ModuleRelativePath", "BaseCharacterClass.h" },
+	};
+#endif
+	const UECodeGen_Private::FInt8PropertyParams Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_MaxEnergy = { "MaxEnergy", nullptr, (EPropertyFlags)0x0040000000010001, UECodeGen_Private::EPropertyGenFlags::Int8, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ABaseCharacterClass, MaxEnergy), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_MaxEnergy_MetaData), Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_MaxEnergy_MetaData) };
+#if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_PlayerHUD_MetaData[] = {
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "BaseCharacterClass.h" },
@@ -567,6 +578,7 @@ void EmptyLinkFunctionForGeneratedCodeBaseCharacterClass() {}
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_MaxClip,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_CurrentClip,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_ReloadDelay,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_MaxEnergy,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_PlayerHUD,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_CardCooldownDelay,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_CardDeckClass,
@@ -619,9 +631,9 @@ void EmptyLinkFunctionForGeneratedCodeBaseCharacterClass() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_BaseCharacterClass_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_ABaseCharacterClass, ABaseCharacterClass::StaticClass, TEXT("ABaseCharacterClass"), &Z_Registration_Info_UClass_ABaseCharacterClass, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ABaseCharacterClass), 3772102368U) },
+		{ Z_Construct_UClass_ABaseCharacterClass, ABaseCharacterClass::StaticClass, TEXT("ABaseCharacterClass"), &Z_Registration_Info_UClass_ABaseCharacterClass, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ABaseCharacterClass), 3359018148U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_BaseCharacterClass_h_330249823(TEXT("/Script/CardslingerPrototype"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_BaseCharacterClass_h_1410608106(TEXT("/Script/CardslingerPrototype"),
 		Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_BaseCharacterClass_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_BaseCharacterClass_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);

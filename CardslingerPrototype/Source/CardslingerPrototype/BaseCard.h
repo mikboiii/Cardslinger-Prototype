@@ -22,6 +22,9 @@ protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 
+	UPROPERTY(EditAnywhere)
+	int8 EnergyCost = 1.0f;
+
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
@@ -36,4 +39,6 @@ public:
 	UUserWidget* CardWidget;
 
 	virtual void CardEffect(class ACardDeck* CardDeck, FVector Direction, FVector Target, AActor* TargetActor);
+
+	int8 GetCardCost() const;
 };

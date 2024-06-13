@@ -31,3 +31,8 @@ void ABaseCard::CardEffect(ACardDeck* CardDeck, FVector Direction, FVector Targe
 
 }
 
+int8 ABaseCard::GetCardCost() const
+{
+	return EnergyCost;
+}
+
