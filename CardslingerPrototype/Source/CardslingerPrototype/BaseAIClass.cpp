@@ -12,7 +12,10 @@
 #include "Components/SkeletalMeshComponent.h"
 #include "Engine/DamageEvents.h"
 #include "Engine/World.h"
+#include "BehaviorTree/BlackboardComponent.h"
+#include "AIController.h"
 #include "Sound/SoundBase.h"
+#include "Components/PostProcessComponent.h"
 
 // Sets default values
 ABaseAIClass::ABaseAIClass()
@@ -87,7 +90,7 @@ bool ABaseAIClass::HitTrace(FHitResult& Hit, FVector& ShotDirection)
 	FCollisionQueryParams Params;
 	Params.AddIgnoredActor(this);
 	Params.AddIgnoredActor(GetOwner());
-	DrawDebugLine(GetWorld(), ViewLocation, End, FColor::Red, true, 100.0f);
+	//DrawDebugLine(GetWorld(), ViewLocation, End, FColor::Red, true, 100.0f);
 	return GetWorld()->LineTraceSingleByChannel(Hit, ViewLocation, End, ECollisionChannel::ECC_GameTraceChannel1, Params);
 }
 
@@ -108,3 +111,16 @@ void ABaseAIClass::Shoot()
 	}
 }
 
+void ABaseAIClass::EnableSlowEffect(bool bIsSlow)
+{
+	GetComponentByClass<UPostProcessComponent>()->bEnabled = bIsSlow;
+	AAIController* ThisController = Cast<AAIController>(GetController());
+	if(bIsSlow && ThisController)
+	{
+		ThisController->GetBlackboardComponent()->SetValueAsFloat(TEXT("FireCooldown"), FireCooldown / GetActorTimeDilation());
+	}
+	else if(!bIsSlow && ThisController)
+	{
+		ThisController->GetBlackboardComponent()->SetValueAsFloat(TEXT("FireCooldown"), FireCooldown);
+	}
+}

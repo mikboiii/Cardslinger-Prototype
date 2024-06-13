@@ -53,12 +53,13 @@ void AProjectileCard::Tick(float DeltaTime)
 	FVector NewLocation = UKismetMathLibrary::VInterpTo_Constant(GetActorLocation(), CurvedPoint, DeltaTime, CardSpeed);
 	SetActorLocation(NewLocation, true);
 	//if the card meets its location, it gets deleted. used to prevent cards floating in place of a dead enemy.
-	if(FVector::Dist(GetActorLocation(), TargetLocation) == 0) DestroyCard();
+	if(DestroyOnImpact && FVector::Dist(GetActorLocation(), TargetLocation) == 0) DestroyCard();
 }
 
 /// @brief Destroys the projectile card
 void AProjectileCard::DestroyCard()
 {
+	UE_LOG(LogTemp, Display, TEXT("Card Destroyed"));
 	Destroy();
 }
 

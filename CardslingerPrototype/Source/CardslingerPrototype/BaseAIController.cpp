@@ -15,7 +15,11 @@ void ABaseAIController::BeginPlay()
     if(AIBehavior != nullptr)
     {
         RunBehaviorTree(AIBehavior);
-        if(GetPawn()) GetBlackboardComponent()->SetValueAsVector(TEXT("StartLocation"), GetPawn()->GetActorLocation());
+        if(GetPawn()) 
+        {
+            GetBlackboardComponent()->SetValueAsVector(TEXT("StartLocation"), GetPawn()->GetActorLocation());
+            GetBlackboardComponent()->SetValueAsFloat(TEXT("FireCooldown"), 5.0f);
+        }
     }
 }
 

@@ -91,6 +91,9 @@ protected:
 	UPROPERTY(EditAnywhere, Category="Projectile Flight")
 	bool IsHoming;
 
+	UPROPERTY(EditAnywhere)
+	bool DestroyOnImpact;
+
 	//AActor reference to the target enemy
 	AActor* TargetEnemy;
 
