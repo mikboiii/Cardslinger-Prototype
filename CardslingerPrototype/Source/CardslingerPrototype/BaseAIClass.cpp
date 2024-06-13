@@ -117,9 +117,9 @@ void ABaseAIClass::EnableSlowEffect(bool bIsSlow)
 	AAIController* ThisController = Cast<AAIController>(GetController());
 	if(bIsSlow && ThisController)
 	{
-		ThisController->GetBlackboardComponent()->SetValueAsFloat(TEXT("FireCooldown"), FireCooldown * 1.5f);
+		ThisController->GetBlackboardComponent()->SetValueAsFloat(TEXT("FireCooldown"), FireCooldown / GetActorTimeDilation());
 	}
-	else
+	else if(!bIsSlow && ThisController)
 	{
 		ThisController->GetBlackboardComponent()->SetValueAsFloat(TEXT("FireCooldown"), FireCooldown);
 	}
