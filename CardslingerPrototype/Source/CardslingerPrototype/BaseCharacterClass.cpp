@@ -363,3 +363,8 @@ float ABaseCharacterClass::GetHealthPercent() const
 {
 	return Health/MaxHealth;
 }
+
+float ABaseCharacterClass::GetEnergyPercent() const
+{
+	return (float)CurrentEnergy/(float)MaxEnergy;
+}

@@ -64,6 +64,8 @@ public:
 	void Heal(bool IsPercentile, float HealingAmount);
 	UFUNCTION(BlueprintPure)
 	float GetHealthPercent() const;
+	UFUNCTION(BlueprintPure)
+	float GetEnergyPercent() const;
 
 private:
 
