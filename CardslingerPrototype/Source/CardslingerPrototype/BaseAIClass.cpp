@@ -12,6 +12,8 @@
 #include "Components/SkeletalMeshComponent.h"
 #include "Engine/DamageEvents.h"
 #include "Engine/World.h"
+#include "BehaviorTree/BlackboardComponent.h"
+#include "AIController.h"
 #include "Sound/SoundBase.h"
 #include "Components/PostProcessComponent.h"
 
@@ -112,4 +114,13 @@ void ABaseAIClass::Shoot()
 void ABaseAIClass::EnableSlowEffect(bool bIsSlow)
 {
 	GetComponentByClass<UPostProcessComponent>()->bEnabled = bIsSlow;
+	AAIController* ThisController = Cast<AAIController>(GetController());
+	if(bIsSlow && ThisController)
+	{
+		ThisController->GetBlackboardComponent()->SetValueAsFloat(TEXT("FireCooldown"), FireCooldown * 1.5f);
+	}
+	else
+	{
+		ThisController->GetBlackboardComponent()->SetValueAsFloat(TEXT("FireCooldown"), FireCooldown);
+	}
 }
