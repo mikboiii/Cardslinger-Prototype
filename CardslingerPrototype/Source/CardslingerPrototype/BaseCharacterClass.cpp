@@ -66,6 +66,8 @@ void ABaseCharacterClass::BeginPlay()
 	//init health
 	Health = MaxHealth;
 
+	CurrentEnergy = MaxEnergy;
+
 	ACardslingerPlayerController* PC = Cast<ACardslingerPlayerController>(GetController());
 	//get pointer to player hud widget
 	PlayerHUD = PC->GetHUD();
@@ -78,6 +80,11 @@ void ABaseCharacterClass::BeginPlay()
 void ABaseCharacterClass::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
+
+	if(CurrentEnergy < EnergyMinimum)
+	{
+		CurrentEnergy+= (EnergyRegenRate) * DeltaTime;
+	}
 
 }
 
@@ -161,42 +168,51 @@ void ABaseCharacterClass::UseCard(const FInputActionValue& Value)
 	int Index = FMath::Floor(Value.Get<float>())-1;
 	if(!CardHand.IsValidIndex(Index)) return;
 	if(CardHand[Index] == nullptr) return;
-	Cast<UPlayerHUDWidget>(PlayerHUD)->RemoveCard(Index);
-	//hit trace maintained in case specific card effects require hitscan
-	FVector ShotDirection;
-	FHitResult Hit;
-	if(HitTrace(Hit, ShotDirection)) 
+	if(CurrentEnergy < CardHand[Index]->GetCardCost())
 	{
-		ShotDirection = CardDeck->GetActorLocation() - Hit.ImpactPoint;
-		//if the hitscan finds an enemy actor, the card will have their details
-		if(Hit.GetActor()->IsA(ABaseAIClass::StaticClass()))
-		{
-			CardHand[Index]->CardEffect(CardDeck, -ShotDirection, Hit.ImpactPoint, Hit.GetActor());
-		}
-		else
-		{
-			//Has shot direction reversed: shot direction originally made for hit events
-			CardHand[Index]->CardEffect(CardDeck, -ShotDirection, Hit.ImpactPoint, nullptr);
-		}
+		return;
 	}
 
 	else
 	{
-		CardHand[Index]->CardEffect(CardDeck, -ShotDirection, Hit.ImpactPoint, nullptr);
-	}
-	//Sets the array index to nullptr to prevent array resizing
-	CardHand[Index] = nullptr;
-	//Creates a timer delegate to enable the use of parameters in timer function
-	//index reserves spot in player hand
-	FTimerDelegate CardCooldownDelegate = FTimerDelegate::CreateUObject(this, &ABaseCharacterClass::DrawCardTimerFunction, Index);
-	//creates a new timer manager for each card to prevent timer overriding
-	FTimerHandle DrawCardTimeManager;
-	GetWorldTimerManager().SetTimer(DrawCardTimeManager, CardCooldownDelegate ,CardCooldownDelay, false);
+		CurrentEnergy -= CardHand[Index]->GetCardCost();
+		Cast<UPlayerHUDWidget>(PlayerHUD)->RemoveCard(Index);
+		//hit trace maintained in case specific card effects require hitscan
+		FVector ShotDirection;
+		FHitResult Hit;
+		if(HitTrace(Hit, ShotDirection)) 
+		{
+			ShotDirection = CardDeck->GetActorLocation() - Hit.ImpactPoint;
+			//if the hitscan finds an enemy actor, the card will have their details
+			if(Hit.GetActor()->IsA(ABaseAIClass::StaticClass()))
+			{
+				CardHand[Index]->CardEffect(CardDeck, -ShotDirection, Hit.ImpactPoint, Hit.GetActor());
+			}
+			else
+			{
+				//Has shot direction reversed: shot direction originally made for hit events
+				CardHand[Index]->CardEffect(CardDeck, -ShotDirection, Hit.ImpactPoint, nullptr);
+			}
+		}
 
-	//if deck is empty, call function to replenish from discard pile and queue hand replenishing
-	if(CardDeck->IsDeckEmpty() && IsHandEmpty())
-	{
-		GetWorldTimerManager().SetTimer(DrawCardTimeManager, this, &ABaseCharacterClass::ReplenishHandFunction, CardCooldownDelay);
+		else
+		{
+			CardHand[Index]->CardEffect(CardDeck, -ShotDirection, Hit.ImpactPoint, nullptr);
+		}
+		//Sets the array index to nullptr to prevent array resizing
+		CardHand[Index] = nullptr;
+		//Creates a timer delegate to enable the use of parameters in timer function
+		//index reserves spot in player hand
+		FTimerDelegate CardCooldownDelegate = FTimerDelegate::CreateUObject(this, &ABaseCharacterClass::DrawCardTimerFunction, Index);
+		//creates a new timer manager for each card to prevent timer overriding
+		FTimerHandle DrawCardTimeManager;
+		GetWorldTimerManager().SetTimer(DrawCardTimeManager, CardCooldownDelegate ,CardCooldownDelay, false);
+
+		//if deck is empty, call function to replenish from discard pile and queue hand replenishing
+		if(CardDeck->IsDeckEmpty() && IsHandEmpty())
+		{
+			GetWorldTimerManager().SetTimer(DrawCardTimeManager, this, &ABaseCharacterClass::ReplenishHandFunction, CardCooldownDelay);
+		}
 	}
 }
 
@@ -346,9 +362,20 @@ void ABaseCharacterClass::Heal(bool IsPercentile, float HealingValue)
 	if(Health > MaxHealth) Health = MaxHealth;
 }
 
+void ABaseCharacterClass::GiveEnergy(float EnergyValue)
+{
+	CurrentEnergy += EnergyValue;
+	if(CurrentEnergy > MaxEnergy) CurrentEnergy = MaxEnergy;
+}
+
 /// @brief blueprint pure function to return the remaning health percentage of the player
 /// @return the remaining percentage of health the character is left on 
 float ABaseCharacterClass::GetHealthPercent() const
 {
 	return Health/MaxHealth;
+}
+
+float ABaseCharacterClass::GetEnergyPercent() const
+{
+	return CurrentEnergy/MaxEnergy;
 }

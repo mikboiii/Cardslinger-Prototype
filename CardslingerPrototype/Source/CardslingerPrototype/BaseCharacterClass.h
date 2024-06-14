@@ -62,8 +62,13 @@ public:
 	bool IsDead() const;
 
 	void Heal(bool IsPercentile, float HealingAmount);
+	
+	void GiveEnergy(float EnergyValue);
+
 	UFUNCTION(BlueprintPure)
 	float GetHealthPercent() const;
+	UFUNCTION(BlueprintPure)
+	float GetEnergyPercent() const;
 
 private:
 
@@ -90,6 +95,17 @@ private:
 
 	UPROPERTY(EditDefaultsOnly, Category="Combat")
 	float ReloadDelay = 5.0f;
+
+	UPROPERTY(EditDefaultsOnly, Category="Combat")
+	float MaxEnergy = 3.0f;
+
+	UPROPERTY(EditDefaultsOnly, Category="Combat")
+	float EnergyMinimum = 1.0f;
+
+	UPROPERTY(EditDefaultsOnly, Category="Combat")
+	float EnergyRegenRate = 0.1f;
+
+	float CurrentEnergy;
 
 	UPROPERTY()
 	UUserWidget* PlayerHUD;
