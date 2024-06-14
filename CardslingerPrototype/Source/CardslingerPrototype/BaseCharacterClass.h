@@ -62,6 +62,9 @@ public:
 	bool IsDead() const;
 
 	void Heal(bool IsPercentile, float HealingAmount);
+	
+	void GiveEnergy(float EnergyValue);
+	
 	UFUNCTION(BlueprintPure)
 	float GetHealthPercent() const;
 	UFUNCTION(BlueprintPure)

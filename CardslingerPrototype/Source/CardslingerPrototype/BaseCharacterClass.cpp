@@ -81,6 +81,11 @@ void ABaseCharacterClass::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
+	if(CurrentEnergy < MaxEnergy/3.0f)
+	{
+		CurrentEnergy+= (MaxEnergy/80.0f) * DeltaTime;
+	}
+
 }
 
 // Called to bind functionality to input
@@ -355,6 +360,12 @@ void ABaseCharacterClass::Heal(bool IsPercentile, float HealingValue)
 	if(IsPercentile) Health += MaxHealth * HealingValue;
 	else Health += HealingValue;
 	if(Health > MaxHealth) Health = MaxHealth;
+}
+
+void ABaseCharacterClass::GiveEnergy(float EnergyValue)
+{
+	CurrentEnergy += EnergyValue;
+	if(CurrentEnergy > MaxEnergy) CurrentEnergy = MaxEnergy;
 }
 
 /// @brief blueprint pure function to return the remaning health percentage of the player
