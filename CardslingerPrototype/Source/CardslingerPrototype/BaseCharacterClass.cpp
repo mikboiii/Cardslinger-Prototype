@@ -168,15 +168,16 @@ void ABaseCharacterClass::UseCard(const FInputActionValue& Value)
 	int Index = FMath::Floor(Value.Get<float>())-1;
 	if(!CardHand.IsValidIndex(Index)) return;
 	if(CardHand[Index] == nullptr) return;
-	if(CurrentEnergy < CardHand[Index]->GetCardCost())
+	if(CurrentEnergy < CardHand[Index]->GetCardCost() && !InfiniteEnergy)
 	{
 		return;
 	}
 
 	else
 	{
-		CurrentEnergy -= CardHand[Index]->GetCardCost();
+		if(!InfiniteEnergy) CurrentEnergy -= CardHand[Index]->GetCardCost();
 		Cast<UPlayerHUDWidget>(PlayerHUD)->RemoveCard(Index);
+		if(CardBackClass) Cast<UPlayerHUDWidget>(PlayerHUD)->SetCard(Index, CreateWidget<UUserWidget>(GetWorld(), CardBackClass));
 		//hit trace maintained in case specific card effects require hitscan
 		FVector ShotDirection;
 		FHitResult Hit;

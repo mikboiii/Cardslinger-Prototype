@@ -11,15 +11,12 @@
 void UPlayerHUDWidget::NativeConstruct()
 {
     Super::NativeConstruct();
-    UE_LOG(LogTemp, Display, TEXT("UI Constructed"));
     Cards.Init(nullptr, 4);
 }
 
 void UPlayerHUDWidget::SetCard(int32 Index, UUserWidget* NewCard)
 {
-    UE_LOG(LogTemp, Display, TEXT("New card set in UI"));
     UUniformGridSlot* CardOnPanel = CardPanel->AddChildToUniformGrid(NewCard, 1, Index);
-    if(CardOnPanel) UE_LOG(LogTemp, Display, TEXT("New card at index %d"), CardOnPanel->GetColumn());
 }
 
 void UPlayerHUDWidget::RemoveCard(int32 Index)

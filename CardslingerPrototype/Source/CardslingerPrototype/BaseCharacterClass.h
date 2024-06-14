@@ -105,10 +105,16 @@ private:
 	UPROPERTY(EditDefaultsOnly, Category="Combat")
 	float EnergyRegenRate = 0.1f;
 
+	UPROPERTY(EditDefaultsOnly, Category="Combat")
+	bool InfiniteEnergy = false;
+
 	float CurrentEnergy;
 
 	UPROPERTY()
 	UUserWidget* PlayerHUD;
+
+	UPROPERTY(EditDefaultsOnly)
+	TSubclassOf<UUserWidget> CardBackClass;
 
 	UPROPERTY(EditDefaultsOnly, Category="Combat")
 	float CardCooldownDelay = 4.0f;
