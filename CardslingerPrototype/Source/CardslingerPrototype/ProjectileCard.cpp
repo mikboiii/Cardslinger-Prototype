@@ -13,6 +13,7 @@
 #include "BaseAIClass.h"
 #include "DrawDebugHelpers.h"
 #include "TimerManager.h"
+#include "BaseCharacterClass.h"
 
 // Sets default values
 AProjectileCard::AProjectileCard()
@@ -39,6 +40,7 @@ void AProjectileCard::BeginPlay()
 {
 	Super::BeginPlay();
 	GetWorldTimerManager().SetTimer(CardLifetimeManager, this, &AProjectileCard::DestroyCard, CardLifetime);
+	PlayerPawn = Cast<ABaseCharacterClass>(UGameplayStatics::GetPlayerPawn(GetWorld(), 0));
 }
 
 // Called every frame
@@ -74,11 +76,12 @@ void AProjectileCard::OnHit(UPrimitiveComponent* HitComponent, AActor* OtherActo
 	if (OtherActor != this)
     {
         //if the collision is an enemy class actor, apply damage and hit fx
-		if(OtherActor != UGameplayStatics::GetPlayerPawn(GetWorld(), 0) && OtherActor->IsA(ABaseAIClass::StaticClass()))
+		if(OtherActor != PlayerPawn && OtherActor->IsA(ABaseAIClass::StaticClass()))
 		{
 
 			FPointDamageEvent DamageEvent(CardDamage, Hit, -GetActorForwardVector(), nullptr);
-			OtherActor->TakeDamage(CardDamage, DamageEvent, UGameplayStatics::GetPlayerPawn(GetWorld(), 0)->GetController(), this);
+			OtherActor->TakeDamage(CardDamage, DamageEvent, PlayerPawn->GetController(), this);
+			PlayerPawn->GiveEnergy(EnergyOnDamage);
 			if(CardImpact)
 			{
 				UNiagaraFunctionLibrary::SpawnSystemAtLocation(GetWorld(), CardImpact, Hit.ImpactPoint, GetActorForwardVector().Rotation(),FVector(ParticleScale), true, true, ENCPoolMethod::None, true);

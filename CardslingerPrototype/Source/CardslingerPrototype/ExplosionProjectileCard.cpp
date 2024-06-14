@@ -15,7 +15,7 @@ void AExplosionProjectileCard::OnHit(UPrimitiveComponent* HitComponent, AActor* 
         UNiagaraFunctionLibrary::SpawnSystemAtLocation(GetWorld(), CardImpact, Hit.ImpactPoint, GetActorForwardVector().Rotation(), FVector(ParticleScale), true, true, ENCPoolMethod::None, true);
         //create radial damage event and apply damage to all enemy actors within the radius
         UGameplayStatics::ApplyRadialDamage(GetWorld(), CardExplosiveDamage, Hit.ImpactPoint, CardExplosionRadius, 
-        UDamageType::StaticClass(), TArray<AActor*>(), UGameplayStatics::GetPlayerPawn(GetWorld(),0), 
+        UDamageType::StaticClass(), TArray<AActor*>(), PlayerPawn, 
         UGameplayStatics::GetPlayerController(GetWorld(),0), true, ECollisionChannel::ECC_Visibility);
     }
     //destroy the card on impact

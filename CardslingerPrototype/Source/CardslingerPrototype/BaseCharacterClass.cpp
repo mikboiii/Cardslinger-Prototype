@@ -81,9 +81,9 @@ void ABaseCharacterClass::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
-	if(CurrentEnergy < MaxEnergy/3.0f)
+	if(CurrentEnergy < EnergyMinimum)
 	{
-		CurrentEnergy+= (MaxEnergy/80.0f) * DeltaTime;
+		CurrentEnergy+= (EnergyRegenRate) * DeltaTime;
 	}
 
 }

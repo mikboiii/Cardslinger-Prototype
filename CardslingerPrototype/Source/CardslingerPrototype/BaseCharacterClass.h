@@ -64,7 +64,7 @@ public:
 	void Heal(bool IsPercentile, float HealingAmount);
 	
 	void GiveEnergy(float EnergyValue);
-	
+
 	UFUNCTION(BlueprintPure)
 	float GetHealthPercent() const;
 	UFUNCTION(BlueprintPure)
@@ -98,6 +98,12 @@ private:
 
 	UPROPERTY(EditDefaultsOnly, Category="Combat")
 	float MaxEnergy = 3.0f;
+
+	UPROPERTY(EditDefaultsOnly, Category="Combat")
+	float EnergyMinimum = 1.0f;
+
+	UPROPERTY(EditDefaultsOnly, Category="Combat")
+	float EnergyRegenRate = 0.1f;
 
 	float CurrentEnergy;
 

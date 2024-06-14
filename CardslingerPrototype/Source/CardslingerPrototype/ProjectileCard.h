@@ -90,12 +90,16 @@ protected:
 	//determines if the card is homing or not
 	UPROPERTY(EditAnywhere, Category="Projectile Flight")
 	bool IsHoming;
+	UPROPERTY(EditAnywhere, Category="Combat")
+	float EnergyOnDamage = 0.1f;
 
 	UPROPERTY(EditAnywhere)
 	bool DestroyOnImpact;
 
 	//AActor reference to the target enemy
 	AActor* TargetEnemy;
+
+	class ABaseCharacterClass* PlayerPawn;
 
 	UFUNCTION()
 	void CalculateMidPoint();
