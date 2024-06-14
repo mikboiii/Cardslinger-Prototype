@@ -94,9 +94,9 @@ private:
 	float ReloadDelay = 5.0f;
 
 	UPROPERTY(EditDefaultsOnly, Category="Combat")
-	int8 MaxEnergy = 3;
+	float MaxEnergy = 3.0f;
 
-	int8 CurrentEnergy;
+	float CurrentEnergy;
 
 	UPROPERTY()
 	UUserWidget* PlayerHUD;
