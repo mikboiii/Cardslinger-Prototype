@@ -63,6 +63,7 @@ void ABaseCharacterClass::BeginPlay()
 	}
 	Reload();
 
+	MaxHealth = AmountOfSegments * HealthPerSegment;
 	//init health
 	Health = MaxHealth;
 

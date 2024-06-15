@@ -20,6 +20,12 @@ class CARDSLINGERPROTOTYPE_API ABaseCharacterClass : public ACharacter
 public:
 	// Sets default values for this character's properties
 	ABaseCharacterClass();
+	
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Combat")
+	float HealthPerSegment;
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Combat")
+	int32 AmountOfSegments;
 
 protected:
 	// Called when the game starts or when spawned
@@ -118,6 +124,7 @@ private:
 
 	UPROPERTY(EditDefaultsOnly, Category="Combat")
 	float CardCooldownDelay = 4.0f;
+
 	UPROPERTY(EditAnywhere)
 	TSubclassOf<class ACardDeck> CardDeckClass;
 	UPROPERTY(EditAnywhere)
