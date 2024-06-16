@@ -76,6 +76,7 @@ public:
 	UFUNCTION(BlueprintPure)
 	float GetEnergyPercent() const;
 	UFUNCTION(BlueprintPure)
+	float GetHealth() const;
 
 private:
 
