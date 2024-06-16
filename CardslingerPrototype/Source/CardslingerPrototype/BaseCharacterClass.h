@@ -22,10 +22,16 @@ public:
 	ABaseCharacterClass();
 	
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Combat")
-	float HealthPerSegment;
+	float HealthPerSegment = 10.0f;
 
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Combat")
-	int32 AmountOfSegments;
+	int32 AmountOfHealthSegments = 10;
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Combat")
+	int32 AmountOfEnergySegments = 3;
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Combat")
+	float EnergyPerSegment = 1.0f;
 
 protected:
 	// Called when the game starts or when spawned
@@ -77,6 +83,8 @@ public:
 	float GetEnergyPercent() const;
 	UFUNCTION(BlueprintPure)
 	float GetHealth() const;
+	UFUNCTION(BlueprintPure)
+	float GetEnergy() const;
 
 private:
 
@@ -106,6 +114,7 @@ private:
 
 	UPROPERTY(EditDefaultsOnly, Category="Combat")
 	float MaxEnergy = 3.0f;
+
 
 	UPROPERTY(EditDefaultsOnly, Category="Combat")
 	float EnergyMinimum = 1.0f;

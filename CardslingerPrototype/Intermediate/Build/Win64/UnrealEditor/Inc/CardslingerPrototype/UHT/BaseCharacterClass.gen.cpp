@@ -24,6 +24,13 @@ void EmptyLinkFunctionForGeneratedCodeBaseCharacterClass() {}
 	UMG_API UClass* Z_Construct_UClass_UUserWidget_NoRegister();
 	UPackage* Z_Construct_UPackage__Script_CardslingerPrototype();
 // End Cross Module References
+	DEFINE_FUNCTION(ABaseCharacterClass::execGetEnergy)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		*(float*)Z_Param__Result=P_THIS->GetEnergy();
+		P_NATIVE_END;
+	}
 	DEFINE_FUNCTION(ABaseCharacterClass::execGetHealth)
 	{
 		P_FINISH;
@@ -71,6 +78,7 @@ void EmptyLinkFunctionForGeneratedCodeBaseCharacterClass() {}
 		UClass* Class = ABaseCharacterClass::StaticClass();
 		static const FNameNativePtrPair Funcs[] = {
 			{ "GetDeck", &ABaseCharacterClass::execGetDeck },
+			{ "GetEnergy", &ABaseCharacterClass::execGetEnergy },
 			{ "GetEnergyPercent", &ABaseCharacterClass::execGetEnergyPercent },
 			{ "GetHealth", &ABaseCharacterClass::execGetHealth },
 			{ "GetHealthPercent", &ABaseCharacterClass::execGetHealthPercent },
@@ -110,6 +118,40 @@ void EmptyLinkFunctionForGeneratedCodeBaseCharacterClass() {}
 		if (!ReturnFunction)
 		{
 			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_ABaseCharacterClass_GetDeck_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_ABaseCharacterClass_GetEnergy_Statics
+	{
+		struct BaseCharacterClass_eventGetEnergy_Parms
+		{
+			float ReturnValue;
+		};
+		static const UECodeGen_Private::FFloatPropertyParams NewProp_ReturnValue;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_ABaseCharacterClass_GetEnergy_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(BaseCharacterClass_eventGetEnergy_Parms, ReturnValue), METADATA_PARAMS(0, nullptr) };
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_ABaseCharacterClass_GetEnergy_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_ABaseCharacterClass_GetEnergy_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ABaseCharacterClass_GetEnergy_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "BaseCharacterClass.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_ABaseCharacterClass_GetEnergy_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ABaseCharacterClass, nullptr, "GetEnergy", nullptr, nullptr, Z_Construct_UFunction_ABaseCharacterClass_GetEnergy_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_ABaseCharacterClass_GetEnergy_Statics::PropPointers), sizeof(Z_Construct_UFunction_ABaseCharacterClass_GetEnergy_Statics::BaseCharacterClass_eventGetEnergy_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_ABaseCharacterClass_GetEnergy_Statics::Function_MetaDataParams), Z_Construct_UFunction_ABaseCharacterClass_GetEnergy_Statics::Function_MetaDataParams) };
+	static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_ABaseCharacterClass_GetEnergy_Statics::PropPointers) < 2048);
+	static_assert(sizeof(Z_Construct_UFunction_ABaseCharacterClass_GetEnergy_Statics::BaseCharacterClass_eventGetEnergy_Parms) < MAX_uint16);
+	UFunction* Z_Construct_UFunction_ABaseCharacterClass_GetEnergy()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_ABaseCharacterClass_GetEnergy_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -310,9 +352,17 @@ void EmptyLinkFunctionForGeneratedCodeBaseCharacterClass() {}
 #endif
 		static const UECodeGen_Private::FFloatPropertyParams NewProp_HealthPerSegment;
 #if WITH_METADATA
-		static const UECodeGen_Private::FMetaDataPairParam NewProp_AmountOfSegments_MetaData[];
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_AmountOfHealthSegments_MetaData[];
 #endif
-		static const UECodeGen_Private::FIntPropertyParams NewProp_AmountOfSegments;
+		static const UECodeGen_Private::FIntPropertyParams NewProp_AmountOfHealthSegments;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_AmountOfEnergySegments_MetaData[];
+#endif
+		static const UECodeGen_Private::FIntPropertyParams NewProp_AmountOfEnergySegments;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_EnergyPerSegment_MetaData[];
+#endif
+		static const UECodeGen_Private::FFloatPropertyParams NewProp_EnergyPerSegment;
 #if WITH_METADATA
 		static const UECodeGen_Private::FMetaDataPairParam NewProp_InputMapping_MetaData[];
 #endif
@@ -455,6 +505,7 @@ void EmptyLinkFunctionForGeneratedCodeBaseCharacterClass() {}
 	static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_ABaseCharacterClass_Statics::DependentSingletons) < 16);
 	const FClassFunctionLinkInfo Z_Construct_UClass_ABaseCharacterClass_Statics::FuncInfo[] = {
 		{ &Z_Construct_UFunction_ABaseCharacterClass_GetDeck, "GetDeck" }, // 1009825967
+		{ &Z_Construct_UFunction_ABaseCharacterClass_GetEnergy, "GetEnergy" }, // 778582654
 		{ &Z_Construct_UFunction_ABaseCharacterClass_GetEnergyPercent, "GetEnergyPercent" }, // 4177284839
 		{ &Z_Construct_UFunction_ABaseCharacterClass_GetHealth, "GetHealth" }, // 627299627
 		{ &Z_Construct_UFunction_ABaseCharacterClass_GetHealthPercent, "GetHealthPercent" }, // 3232173269
@@ -477,12 +528,26 @@ void EmptyLinkFunctionForGeneratedCodeBaseCharacterClass() {}
 #endif
 	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_HealthPerSegment = { "HealthPerSegment", nullptr, (EPropertyFlags)0x0010000000000015, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ABaseCharacterClass, HealthPerSegment), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_HealthPerSegment_MetaData), Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_HealthPerSegment_MetaData) };
 #if WITH_METADATA
-	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_AmountOfSegments_MetaData[] = {
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_AmountOfHealthSegments_MetaData[] = {
 		{ "Category", "Combat" },
 		{ "ModuleRelativePath", "BaseCharacterClass.h" },
 	};
 #endif
-	const UECodeGen_Private::FIntPropertyParams Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_AmountOfSegments = { "AmountOfSegments", nullptr, (EPropertyFlags)0x0010000000000015, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ABaseCharacterClass, AmountOfSegments), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_AmountOfSegments_MetaData), Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_AmountOfSegments_MetaData) };
+	const UECodeGen_Private::FIntPropertyParams Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_AmountOfHealthSegments = { "AmountOfHealthSegments", nullptr, (EPropertyFlags)0x0010000000000015, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ABaseCharacterClass, AmountOfHealthSegments), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_AmountOfHealthSegments_MetaData), Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_AmountOfHealthSegments_MetaData) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_AmountOfEnergySegments_MetaData[] = {
+		{ "Category", "Combat" },
+		{ "ModuleRelativePath", "BaseCharacterClass.h" },
+	};
+#endif
+	const UECodeGen_Private::FIntPropertyParams Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_AmountOfEnergySegments = { "AmountOfEnergySegments", nullptr, (EPropertyFlags)0x0010000000000015, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ABaseCharacterClass, AmountOfEnergySegments), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_AmountOfEnergySegments_MetaData), Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_AmountOfEnergySegments_MetaData) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_EnergyPerSegment_MetaData[] = {
+		{ "Category", "Combat" },
+		{ "ModuleRelativePath", "BaseCharacterClass.h" },
+	};
+#endif
+	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_EnergyPerSegment = { "EnergyPerSegment", nullptr, (EPropertyFlags)0x0010000000000015, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ABaseCharacterClass, EnergyPerSegment), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_EnergyPerSegment_MetaData), Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_EnergyPerSegment_MetaData) };
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_InputMapping_MetaData[] = {
 		{ "Category", "Input" },
@@ -721,7 +786,9 @@ void EmptyLinkFunctionForGeneratedCodeBaseCharacterClass() {}
 	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_SpringArm2 = { "SpringArm2", nullptr, (EPropertyFlags)0x0042000000080009, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ABaseCharacterClass, SpringArm2), Z_Construct_UClass_USpringArmComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_SpringArm2_MetaData), Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_SpringArm2_MetaData) };
 	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ABaseCharacterClass_Statics::PropPointers[] = {
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_HealthPerSegment,
-		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_AmountOfSegments,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_AmountOfHealthSegments,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_AmountOfEnergySegments,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_EnergyPerSegment,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_InputMapping,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_MoveAction,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_LookAction,
@@ -794,9 +861,9 @@ void EmptyLinkFunctionForGeneratedCodeBaseCharacterClass() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_BaseCharacterClass_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_ABaseCharacterClass, ABaseCharacterClass::StaticClass, TEXT("ABaseCharacterClass"), &Z_Registration_Info_UClass_ABaseCharacterClass, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ABaseCharacterClass), 2832875777U) },
+		{ Z_Construct_UClass_ABaseCharacterClass, ABaseCharacterClass::StaticClass, TEXT("ABaseCharacterClass"), &Z_Registration_Info_UClass_ABaseCharacterClass, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ABaseCharacterClass), 561509716U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_BaseCharacterClass_h_4180288085(TEXT("/Script/CardslingerPrototype"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_BaseCharacterClass_h_460118816(TEXT("/Script/CardslingerPrototype"),
 		Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_BaseCharacterClass_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_BaseCharacterClass_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);

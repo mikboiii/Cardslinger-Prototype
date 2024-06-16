@@ -63,11 +63,13 @@ void ABaseCharacterClass::BeginPlay()
 	}
 	Reload();
 
-	MaxHealth = AmountOfSegments * HealthPerSegment;
+	MaxHealth = AmountOfHealthSegments * HealthPerSegment;
 	//init health
 	Health = MaxHealth;
 
 	CurrentEnergy = MaxEnergy;
+
+	MaxEnergy = AmountOfEnergySegments * EnergyPerSegment;
 
 	ACardslingerPlayerController* PC = Cast<ACardslingerPlayerController>(GetController());
 	//get pointer to player hud widget
@@ -380,6 +382,11 @@ float ABaseCharacterClass::GetHealthPercent() const
 float ABaseCharacterClass::GetHealth() const
 {
 	return Health;
+}
+
+float ABaseCharacterClass::GetEnergy() const
+{
+	return CurrentEnergy;
 }
 
 float ABaseCharacterClass::GetEnergyPercent() const
