@@ -102,7 +102,7 @@ private:
 	float MaxHealth = 100.0f;
 
 	float MaxShield;
-
+	UPROPERTY(VisibleAnywhere, Category = "Combat")
 	float CurrentShield;
 
 	UPROPERTY(EditAnywhere, Category = "Combat")
