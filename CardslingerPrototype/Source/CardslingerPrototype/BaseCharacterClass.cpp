@@ -67,6 +67,10 @@ void ABaseCharacterClass::BeginPlay()
 	//init health
 	Health = MaxHealth;
 
+	MaxShield = MaxHealth;
+
+	CurrentShield = 0.0f;
+
 	CurrentEnergy = MaxEnergy;
 
 	MaxEnergy = AmountOfEnergySegments * EnergyPerSegment;
@@ -143,7 +147,19 @@ void ABaseCharacterClass::Look(const FInputActionValue& Value)
 float ABaseCharacterClass::TakeDamage(float DamageAmount, struct FDamageEvent const &DamageEvent, class AController *EventInstigator, AActor* DamageCauser)
 {
     float DamageToApply = Super::TakeDamage(DamageAmount, DamageEvent, EventInstigator, EventInstigator);
-    Health -= DamageToApply;
+	if(CurrentShield > 0)
+	{
+		CurrentShield -= DamageToApply;
+		if(CurrentShield < 0)
+		{
+			CurrentShield = 0;
+			Health -= FMath::Abs(CurrentShield);
+		}
+	}
+	else
+	{
+    	Health -= DamageToApply;
+	}
 
     if(IsDead())
     {
@@ -366,6 +382,13 @@ void ABaseCharacterClass::Heal(bool IsPercentile, float HealingValue)
 	if(Health > MaxHealth) Health = MaxHealth;
 }
 
+void ABaseCharacterClass::AddShield(bool IsPercentile, float ShieldValue)
+{
+	if(IsPercentile) CurrentShield += MaxShield * ShieldValue;
+	else CurrentShield += ShieldValue;
+	if(CurrentShield > MaxShield) CurrentShield = MaxShield;
+}
+
 void ABaseCharacterClass::GiveEnergy(float EnergyValue)
 {
 	CurrentEnergy += EnergyValue;
@@ -387,6 +410,11 @@ float ABaseCharacterClass::GetHealth() const
 float ABaseCharacterClass::GetEnergy() const
 {
 	return CurrentEnergy;
+}
+
+float ABaseCharacterClass::GetShield() const
+{
+	return CurrentShield;
 }
 
 float ABaseCharacterClass::GetEnergyPercent() const
