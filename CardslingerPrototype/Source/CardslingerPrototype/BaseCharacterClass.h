@@ -74,6 +74,8 @@ public:
 	bool IsDead() const;
 
 	void Heal(bool IsPercentile, float HealingAmount);
+
+	void AddShield(bool IsPercentile, float ShieldValue);
 	
 	void GiveEnergy(float EnergyValue);
 
@@ -85,6 +87,8 @@ public:
 	float GetHealth() const;
 	UFUNCTION(BlueprintPure)
 	float GetEnergy() const;
+	UFUNCTION(BlueprintPure)
+	float GetShield() const;
 
 private:
 
@@ -96,6 +100,10 @@ private:
 
 	UPROPERTY(EditDefaultsOnly, Category = "Combat")
 	float MaxHealth = 100.0f;
+
+	float MaxShield;
+
+	float CurrentShield;
 
 	UPROPERTY(EditAnywhere, Category = "Combat")
 	float MaxRange = 1000.0f;
