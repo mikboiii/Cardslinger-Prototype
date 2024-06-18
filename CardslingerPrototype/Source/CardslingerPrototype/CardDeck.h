@@ -54,6 +54,8 @@ public:
 
 	UFUNCTION(BlueprintPure)
 	bool IsDeckEmpty() const;
+	UFUNCTION(BlueprintPure)
+	int32 DrawCardNum() const;
 
 	UFUNCTION(BlueprintImplementableEvent)
 	void RemoveCardFromDeck(int CardIndex);

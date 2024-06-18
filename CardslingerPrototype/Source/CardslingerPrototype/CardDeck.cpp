@@ -97,3 +97,8 @@ bool ACardDeck::IsDeckEmpty() const
 {
 	return DrawPile.Num() == 0;
 }
+
+int32 ACardDeck::DrawCardNum() const
+{
+	return DrawPile.Num();
+}
