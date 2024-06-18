@@ -24,6 +24,20 @@ void EmptyLinkFunctionForGeneratedCodeBaseCharacterClass() {}
 	UMG_API UClass* Z_Construct_UClass_UUserWidget_NoRegister();
 	UPackage* Z_Construct_UPackage__Script_CardslingerPrototype();
 // End Cross Module References
+	DEFINE_FUNCTION(ABaseCharacterClass::execGetMaxClip)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		*(int32*)Z_Param__Result=P_THIS->GetMaxClip();
+		P_NATIVE_END;
+	}
+	DEFINE_FUNCTION(ABaseCharacterClass::execGetClip)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		*(int32*)Z_Param__Result=P_THIS->GetClip();
+		P_NATIVE_END;
+	}
 	DEFINE_FUNCTION(ABaseCharacterClass::execGetShield)
 	{
 		P_FINISH;
@@ -84,16 +98,52 @@ void EmptyLinkFunctionForGeneratedCodeBaseCharacterClass() {}
 	{
 		UClass* Class = ABaseCharacterClass::StaticClass();
 		static const FNameNativePtrPair Funcs[] = {
+			{ "GetClip", &ABaseCharacterClass::execGetClip },
 			{ "GetDeck", &ABaseCharacterClass::execGetDeck },
 			{ "GetEnergy", &ABaseCharacterClass::execGetEnergy },
 			{ "GetEnergyPercent", &ABaseCharacterClass::execGetEnergyPercent },
 			{ "GetHealth", &ABaseCharacterClass::execGetHealth },
 			{ "GetHealthPercent", &ABaseCharacterClass::execGetHealthPercent },
+			{ "GetMaxClip", &ABaseCharacterClass::execGetMaxClip },
 			{ "GetShield", &ABaseCharacterClass::execGetShield },
 			{ "IsDead", &ABaseCharacterClass::execIsDead },
 			{ "IsHandEmpty", &ABaseCharacterClass::execIsHandEmpty },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
+	}
+	struct Z_Construct_UFunction_ABaseCharacterClass_GetClip_Statics
+	{
+		struct BaseCharacterClass_eventGetClip_Parms
+		{
+			int32 ReturnValue;
+		};
+		static const UECodeGen_Private::FIntPropertyParams NewProp_ReturnValue;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UECodeGen_Private::FIntPropertyParams Z_Construct_UFunction_ABaseCharacterClass_GetClip_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(BaseCharacterClass_eventGetClip_Parms, ReturnValue), METADATA_PARAMS(0, nullptr) };
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_ABaseCharacterClass_GetClip_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_ABaseCharacterClass_GetClip_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ABaseCharacterClass_GetClip_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "BaseCharacterClass.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_ABaseCharacterClass_GetClip_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ABaseCharacterClass, nullptr, "GetClip", nullptr, nullptr, Z_Construct_UFunction_ABaseCharacterClass_GetClip_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_ABaseCharacterClass_GetClip_Statics::PropPointers), sizeof(Z_Construct_UFunction_ABaseCharacterClass_GetClip_Statics::BaseCharacterClass_eventGetClip_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_ABaseCharacterClass_GetClip_Statics::Function_MetaDataParams), Z_Construct_UFunction_ABaseCharacterClass_GetClip_Statics::Function_MetaDataParams) };
+	static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_ABaseCharacterClass_GetClip_Statics::PropPointers) < 2048);
+	static_assert(sizeof(Z_Construct_UFunction_ABaseCharacterClass_GetClip_Statics::BaseCharacterClass_eventGetClip_Parms) < MAX_uint16);
+	UFunction* Z_Construct_UFunction_ABaseCharacterClass_GetClip()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_ABaseCharacterClass_GetClip_Statics::FuncParams);
+		}
+		return ReturnFunction;
 	}
 	struct Z_Construct_UFunction_ABaseCharacterClass_GetDeck_Statics
 	{
@@ -262,6 +312,40 @@ void EmptyLinkFunctionForGeneratedCodeBaseCharacterClass() {}
 		if (!ReturnFunction)
 		{
 			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_ABaseCharacterClass_GetHealthPercent_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_ABaseCharacterClass_GetMaxClip_Statics
+	{
+		struct BaseCharacterClass_eventGetMaxClip_Parms
+		{
+			int32 ReturnValue;
+		};
+		static const UECodeGen_Private::FIntPropertyParams NewProp_ReturnValue;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UECodeGen_Private::FIntPropertyParams Z_Construct_UFunction_ABaseCharacterClass_GetMaxClip_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(BaseCharacterClass_eventGetMaxClip_Parms, ReturnValue), METADATA_PARAMS(0, nullptr) };
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_ABaseCharacterClass_GetMaxClip_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_ABaseCharacterClass_GetMaxClip_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ABaseCharacterClass_GetMaxClip_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "BaseCharacterClass.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_ABaseCharacterClass_GetMaxClip_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ABaseCharacterClass, nullptr, "GetMaxClip", nullptr, nullptr, Z_Construct_UFunction_ABaseCharacterClass_GetMaxClip_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_ABaseCharacterClass_GetMaxClip_Statics::PropPointers), sizeof(Z_Construct_UFunction_ABaseCharacterClass_GetMaxClip_Statics::BaseCharacterClass_eventGetMaxClip_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_ABaseCharacterClass_GetMaxClip_Statics::Function_MetaDataParams), Z_Construct_UFunction_ABaseCharacterClass_GetMaxClip_Statics::Function_MetaDataParams) };
+	static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_ABaseCharacterClass_GetMaxClip_Statics::PropPointers) < 2048);
+	static_assert(sizeof(Z_Construct_UFunction_ABaseCharacterClass_GetMaxClip_Statics::BaseCharacterClass_eventGetMaxClip_Parms) < MAX_uint16);
+	UFunction* Z_Construct_UFunction_ABaseCharacterClass_GetMaxClip()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_ABaseCharacterClass_GetMaxClip_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -460,11 +544,11 @@ void EmptyLinkFunctionForGeneratedCodeBaseCharacterClass() {}
 #if WITH_METADATA
 		static const UECodeGen_Private::FMetaDataPairParam NewProp_MaxClip_MetaData[];
 #endif
-		static const UECodeGen_Private::FInt16PropertyParams NewProp_MaxClip;
+		static const UECodeGen_Private::FIntPropertyParams NewProp_MaxClip;
 #if WITH_METADATA
 		static const UECodeGen_Private::FMetaDataPairParam NewProp_CurrentClip_MetaData[];
 #endif
-		static const UECodeGen_Private::FInt16PropertyParams NewProp_CurrentClip;
+		static const UECodeGen_Private::FIntPropertyParams NewProp_CurrentClip;
 #if WITH_METADATA
 		static const UECodeGen_Private::FMetaDataPairParam NewProp_ReloadDelay_MetaData[];
 #endif
@@ -550,11 +634,13 @@ void EmptyLinkFunctionForGeneratedCodeBaseCharacterClass() {}
 	};
 	static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_ABaseCharacterClass_Statics::DependentSingletons) < 16);
 	const FClassFunctionLinkInfo Z_Construct_UClass_ABaseCharacterClass_Statics::FuncInfo[] = {
+		{ &Z_Construct_UFunction_ABaseCharacterClass_GetClip, "GetClip" }, // 2087343851
 		{ &Z_Construct_UFunction_ABaseCharacterClass_GetDeck, "GetDeck" }, // 1009825967
 		{ &Z_Construct_UFunction_ABaseCharacterClass_GetEnergy, "GetEnergy" }, // 778582654
 		{ &Z_Construct_UFunction_ABaseCharacterClass_GetEnergyPercent, "GetEnergyPercent" }, // 4177284839
 		{ &Z_Construct_UFunction_ABaseCharacterClass_GetHealth, "GetHealth" }, // 627299627
 		{ &Z_Construct_UFunction_ABaseCharacterClass_GetHealthPercent, "GetHealthPercent" }, // 3232173269
+		{ &Z_Construct_UFunction_ABaseCharacterClass_GetMaxClip, "GetMaxClip" }, // 3188914798
 		{ &Z_Construct_UFunction_ABaseCharacterClass_GetShield, "GetShield" }, // 3317352692
 		{ &Z_Construct_UFunction_ABaseCharacterClass_IsDead, "IsDead" }, // 838193405
 		{ &Z_Construct_UFunction_ABaseCharacterClass_IsHandEmpty, "IsHandEmpty" }, // 2204687508
@@ -692,14 +778,14 @@ void EmptyLinkFunctionForGeneratedCodeBaseCharacterClass() {}
 		{ "ModuleRelativePath", "BaseCharacterClass.h" },
 	};
 #endif
-	const UECodeGen_Private::FInt16PropertyParams Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_MaxClip = { "MaxClip", nullptr, (EPropertyFlags)0x0040000000000001, UECodeGen_Private::EPropertyGenFlags::Int16, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ABaseCharacterClass, MaxClip), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_MaxClip_MetaData), Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_MaxClip_MetaData) };
+	const UECodeGen_Private::FIntPropertyParams Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_MaxClip = { "MaxClip", nullptr, (EPropertyFlags)0x0040000000000001, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ABaseCharacterClass, MaxClip), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_MaxClip_MetaData), Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_MaxClip_MetaData) };
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_CurrentClip_MetaData[] = {
 		{ "Category", "Combat" },
 		{ "ModuleRelativePath", "BaseCharacterClass.h" },
 	};
 #endif
-	const UECodeGen_Private::FInt16PropertyParams Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_CurrentClip = { "CurrentClip", nullptr, (EPropertyFlags)0x0040000000020001, UECodeGen_Private::EPropertyGenFlags::Int16, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ABaseCharacterClass, CurrentClip), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_CurrentClip_MetaData), Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_CurrentClip_MetaData) };
+	const UECodeGen_Private::FIntPropertyParams Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_CurrentClip = { "CurrentClip", nullptr, (EPropertyFlags)0x0040000000020001, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ABaseCharacterClass, CurrentClip), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_CurrentClip_MetaData), Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_CurrentClip_MetaData) };
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_ReloadDelay_MetaData[] = {
 		{ "Category", "Combat" },
@@ -916,9 +1002,9 @@ void EmptyLinkFunctionForGeneratedCodeBaseCharacterClass() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_BaseCharacterClass_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_ABaseCharacterClass, ABaseCharacterClass::StaticClass, TEXT("ABaseCharacterClass"), &Z_Registration_Info_UClass_ABaseCharacterClass, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ABaseCharacterClass), 3465807714U) },
+		{ Z_Construct_UClass_ABaseCharacterClass, ABaseCharacterClass::StaticClass, TEXT("ABaseCharacterClass"), &Z_Registration_Info_UClass_ABaseCharacterClass, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ABaseCharacterClass), 4037139895U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_BaseCharacterClass_h_716053117(TEXT("/Script/CardslingerPrototype"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_BaseCharacterClass_h_2045934552(TEXT("/Script/CardslingerPrototype"),
 		Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_BaseCharacterClass_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_BaseCharacterClass_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);

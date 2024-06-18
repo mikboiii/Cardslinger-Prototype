@@ -421,3 +421,13 @@ float ABaseCharacterClass::GetEnergyPercent() const
 {
 	return CurrentEnergy/MaxEnergy;
 }
+
+int32 ABaseCharacterClass::GetClip() const
+{
+	return CurrentClip;
+}
+
+int32 ABaseCharacterClass::GetMaxClip() const
+{
+	return MaxClip;
+}

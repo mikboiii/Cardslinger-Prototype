@@ -89,6 +89,10 @@ public:
 	float GetEnergy() const;
 	UFUNCTION(BlueprintPure)
 	float GetShield() const;
+	UFUNCTION(BlueprintPure)
+	int32 GetClip() const;
+	UFUNCTION(BlueprintPure)
+	int32 GetMaxClip() const;
 
 private:
 
@@ -112,10 +116,10 @@ private:
 	float Damage = 10.0f;
 
 	UPROPERTY(EditAnywhere, Category = "Combat")
-	int16 MaxClip = 52;
+	int32 MaxClip = 52;
 
 	UPROPERTY(VisibleAnywhere, Category = "Combat")
-	int16 CurrentClip;
+	int32 CurrentClip;
 
 	UPROPERTY(EditDefaultsOnly, Category="Combat")
 	float ReloadDelay = 5.0f;
