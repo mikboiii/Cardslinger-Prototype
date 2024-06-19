@@ -20,6 +20,18 @@ class CARDSLINGERPROTOTYPE_API ABaseCharacterClass : public ACharacter
 public:
 	// Sets default values for this character's properties
 	ABaseCharacterClass();
+	
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Combat")
+	float HealthPerSegment = 10.0f;
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Combat")
+	int32 AmountOfHealthSegments = 10;
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Combat")
+	int32 AmountOfEnergySegments = 3;
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Combat")
+	float EnergyPerSegment = 1.0f;
 
 protected:
 	// Called when the game starts or when spawned
@@ -62,6 +74,8 @@ public:
 	bool IsDead() const;
 
 	void Heal(bool IsPercentile, float HealingAmount);
+
+	void AddShield(bool IsPercentile, float ShieldValue);
 	
 	void GiveEnergy(float EnergyValue);
 
@@ -69,6 +83,16 @@ public:
 	float GetHealthPercent() const;
 	UFUNCTION(BlueprintPure)
 	float GetEnergyPercent() const;
+	UFUNCTION(BlueprintPure)
+	float GetHealth() const;
+	UFUNCTION(BlueprintPure)
+	float GetEnergy() const;
+	UFUNCTION(BlueprintPure)
+	float GetShield() const;
+	UFUNCTION(BlueprintPure)
+	int32 GetClip() const;
+	UFUNCTION(BlueprintPure)
+	int32 GetMaxClip() const;
 
 private:
 
@@ -81,6 +105,10 @@ private:
 	UPROPERTY(EditDefaultsOnly, Category = "Combat")
 	float MaxHealth = 100.0f;
 
+	float MaxShield;
+	UPROPERTY(VisibleAnywhere, Category = "Combat")
+	float CurrentShield;
+
 	UPROPERTY(EditAnywhere, Category = "Combat")
 	float MaxRange = 1000.0f;
 
@@ -88,10 +116,10 @@ private:
 	float Damage = 10.0f;
 
 	UPROPERTY(EditAnywhere, Category = "Combat")
-	int16 MaxClip = 52;
+	int32 MaxClip = 52;
 
 	UPROPERTY(VisibleAnywhere, Category = "Combat")
-	int16 CurrentClip;
+	int32 CurrentClip;
 
 	UPROPERTY(EditDefaultsOnly, Category="Combat")
 	float ReloadDelay = 5.0f;
@@ -99,19 +127,27 @@ private:
 	UPROPERTY(EditDefaultsOnly, Category="Combat")
 	float MaxEnergy = 3.0f;
 
+
 	UPROPERTY(EditDefaultsOnly, Category="Combat")
 	float EnergyMinimum = 1.0f;
 
 	UPROPERTY(EditDefaultsOnly, Category="Combat")
 	float EnergyRegenRate = 0.1f;
 
+	UPROPERTY(EditDefaultsOnly, Category="Combat")
+	bool InfiniteEnergy = false;
+
 	float CurrentEnergy;
 
 	UPROPERTY()
 	UUserWidget* PlayerHUD;
 
+	UPROPERTY(EditDefaultsOnly)
+	TSubclassOf<UUserWidget> CardBackClass;
+
 	UPROPERTY(EditDefaultsOnly, Category="Combat")
 	float CardCooldownDelay = 4.0f;
+
 	UPROPERTY(EditAnywhere)
 	TSubclassOf<class ACardDeck> CardDeckClass;
 	UPROPERTY(EditAnywhere)
