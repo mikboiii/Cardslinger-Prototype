@@ -58,6 +58,8 @@ protected:
 
 	void Shoot();
 
+	void ShootMultiple();
+
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
@@ -116,6 +118,9 @@ private:
 
 	UPROPERTY(EditAnywhere, Category = "Combat")
 	float Damage = 10.0f;
+
+	UPROPERTY(EditAnywhere, Category = "Combat")
+	int32 CardsPerShot = 3;
 
 	UPROPERTY(EditAnywhere, Category = "Combat")
 	int32 MaxClip = 52;

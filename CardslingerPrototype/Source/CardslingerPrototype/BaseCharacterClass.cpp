@@ -113,7 +113,7 @@ void ABaseCharacterClass::SetupPlayerInputComponent(UInputComponent* PlayerInput
         EnhancedInputComponent->BindAction(MoveAction, ETriggerEvent::Triggered, this, &ABaseCharacterClass::Move);
         EnhancedInputComponent->BindAction(LookAction, ETriggerEvent::Triggered, this, &ABaseCharacterClass::Look);
         EnhancedInputComponent->BindAction(JumpAction, ETriggerEvent::Triggered, this, &ACharacter::Jump);
-        EnhancedInputComponent->BindAction(ShootAction, ETriggerEvent::Triggered, this, &ABaseCharacterClass::Shoot);
+        EnhancedInputComponent->BindAction(ShootAction, ETriggerEvent::Triggered, this, &ABaseCharacterClass::ShootMultiple);
 		EnhancedInputComponent->BindAction(CardAction, ETriggerEvent::Triggered, this, &ABaseCharacterClass::UseCard);
 		EnhancedInputComponent->BindAction(ReloadAction, ETriggerEvent::Triggered, this, &ABaseCharacterClass::Reload);
     }
@@ -240,7 +240,7 @@ void ABaseCharacterClass::UseCard(const FInputActionValue& Value)
 /// @brief Fires a single basic shot
 void ABaseCharacterClass::Shoot()
 {
-	if(CurrentClip > 0 && CanFire)
+	if(CurrentClip > 0)
 	{
 		FHitResult Hit;
 		FVector ShotDirection;
@@ -261,8 +261,7 @@ void ABaseCharacterClass::Shoot()
 				CardDeck->FireCard(-ShotDirection, BasicCardProjectile, Hit.ImpactPoint, Hit.GetActor());
 				//remove from deck
 				CardDeck->RemoveCardFromDeck(CurrentClip);
-				CanFire = false;
-				GetWorldTimerManager().SetTimer(AutoFireManager, this, &ABaseCharacterClass::FireCooldown, FireDelay);
+
 				return;
 			}
 		}
@@ -270,6 +269,17 @@ void ABaseCharacterClass::Shoot()
 		CardDeck->FireCard(-ShotDirection, BasicCardProjectile, Hit.ImpactPoint, nullptr);
 		//remove from deck
 		CardDeck->RemoveCardFromDeck(CurrentClip);
+
+	}
+}
+void ABaseCharacterClass::ShootMultiple()
+{
+	if(CanFire)
+	{
+		for(int32 i = 0; i < CardsPerShot; i++)
+		{
+			Shoot();
+		}
 		CanFire = false;
 		GetWorldTimerManager().SetTimer(AutoFireManager, this, &ABaseCharacterClass::FireCooldown, FireDelay);
 	}
