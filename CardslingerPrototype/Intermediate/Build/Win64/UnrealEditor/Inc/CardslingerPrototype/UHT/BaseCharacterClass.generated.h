@@ -27,6 +27,7 @@ class ACardDeck;
 	DECLARE_FUNCTION(execGetHealth); \
 	DECLARE_FUNCTION(execGetEnergyPercent); \
 	DECLARE_FUNCTION(execGetHealthPercent); \
+	DECLARE_FUNCTION(execIncrementClip); \
 	DECLARE_FUNCTION(execIsDead); \
 	DECLARE_FUNCTION(execIsHandEmpty); \
 	DECLARE_FUNCTION(execGetDeck);

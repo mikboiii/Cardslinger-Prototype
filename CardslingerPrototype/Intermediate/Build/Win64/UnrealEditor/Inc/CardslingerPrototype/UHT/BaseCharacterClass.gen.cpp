@@ -73,6 +73,13 @@ void EmptyLinkFunctionForGeneratedCodeBaseCharacterClass() {}
 		*(float*)Z_Param__Result=P_THIS->GetHealthPercent();
 		P_NATIVE_END;
 	}
+	DEFINE_FUNCTION(ABaseCharacterClass::execIncrementClip)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->IncrementClip();
+		P_NATIVE_END;
+	}
 	DEFINE_FUNCTION(ABaseCharacterClass::execIsDead)
 	{
 		P_FINISH;
@@ -106,6 +113,7 @@ void EmptyLinkFunctionForGeneratedCodeBaseCharacterClass() {}
 			{ "GetHealthPercent", &ABaseCharacterClass::execGetHealthPercent },
 			{ "GetMaxClip", &ABaseCharacterClass::execGetMaxClip },
 			{ "GetShield", &ABaseCharacterClass::execGetShield },
+			{ "IncrementClip", &ABaseCharacterClass::execIncrementClip },
 			{ "IsDead", &ABaseCharacterClass::execIsDead },
 			{ "IsHandEmpty", &ABaseCharacterClass::execIsHandEmpty },
 		};
@@ -383,6 +391,28 @@ void EmptyLinkFunctionForGeneratedCodeBaseCharacterClass() {}
 		}
 		return ReturnFunction;
 	}
+	struct Z_Construct_UFunction_ABaseCharacterClass_IncrementClip_Statics
+	{
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ABaseCharacterClass_IncrementClip_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "BaseCharacterClass.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_ABaseCharacterClass_IncrementClip_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ABaseCharacterClass, nullptr, "IncrementClip", nullptr, nullptr, nullptr, 0, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_ABaseCharacterClass_IncrementClip_Statics::Function_MetaDataParams), Z_Construct_UFunction_ABaseCharacterClass_IncrementClip_Statics::Function_MetaDataParams) };
+	UFunction* Z_Construct_UFunction_ABaseCharacterClass_IncrementClip()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_ABaseCharacterClass_IncrementClip_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 	struct Z_Construct_UFunction_ABaseCharacterClass_IsDead_Statics
 	{
 		struct BaseCharacterClass_eventIsDead_Parms
@@ -646,6 +676,7 @@ void EmptyLinkFunctionForGeneratedCodeBaseCharacterClass() {}
 		{ &Z_Construct_UFunction_ABaseCharacterClass_GetHealthPercent, "GetHealthPercent" }, // 3232173269
 		{ &Z_Construct_UFunction_ABaseCharacterClass_GetMaxClip, "GetMaxClip" }, // 3188914798
 		{ &Z_Construct_UFunction_ABaseCharacterClass_GetShield, "GetShield" }, // 3317352692
+		{ &Z_Construct_UFunction_ABaseCharacterClass_IncrementClip, "IncrementClip" }, // 1991184494
 		{ &Z_Construct_UFunction_ABaseCharacterClass_IsDead, "IsDead" }, // 838193405
 		{ &Z_Construct_UFunction_ABaseCharacterClass_IsHandEmpty, "IsHandEmpty" }, // 2204687508
 	};
@@ -1014,9 +1045,9 @@ void EmptyLinkFunctionForGeneratedCodeBaseCharacterClass() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_BaseCharacterClass_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_ABaseCharacterClass, ABaseCharacterClass::StaticClass, TEXT("ABaseCharacterClass"), &Z_Registration_Info_UClass_ABaseCharacterClass, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ABaseCharacterClass), 3382248850U) },
+		{ Z_Construct_UClass_ABaseCharacterClass, ABaseCharacterClass::StaticClass, TEXT("ABaseCharacterClass"), &Z_Registration_Info_UClass_ABaseCharacterClass, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ABaseCharacterClass), 3184884368U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_BaseCharacterClass_h_3340648434(TEXT("/Script/CardslingerPrototype"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_BaseCharacterClass_h_3603687652(TEXT("/Script/CardslingerPrototype"),
 		Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_BaseCharacterClass_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_BaseCharacterClass_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);

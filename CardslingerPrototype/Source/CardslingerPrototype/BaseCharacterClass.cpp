@@ -312,6 +312,7 @@ void ABaseCharacterClass::Reload()
 	if(CanReload && CurrentClip != MaxClip)
 	{
 	CanReload = false;
+	CurrentClip = 0;
 	//Starts timer for when weapon restores ammo and re-enables reloading
 	GetWorldTimerManager().SetTimer(ReloadTimeManager, this, &ABaseCharacterClass::ReloadTimerFunction, ReloadDelay);
 	CardDeck->ShuffleDeck();
@@ -440,4 +441,9 @@ int32 ABaseCharacterClass::GetClip() const
 int32 ABaseCharacterClass::GetMaxClip() const
 {
 	return MaxClip;
+}
+
+void ABaseCharacterClass::IncrementClip()
+{
+	CurrentClip += 1;
 }

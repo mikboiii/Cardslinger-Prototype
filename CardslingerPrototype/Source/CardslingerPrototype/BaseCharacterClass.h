@@ -72,6 +72,8 @@ public:
 	bool IsHandEmpty() const;
 	UFUNCTION(BlueprintPure)
 	bool IsDead() const;
+	UFUNCTION(BlueprintCallable)
+	void IncrementClip();
 
 	void Heal(bool IsPercentile, float HealingAmount);
 
