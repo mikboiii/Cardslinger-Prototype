@@ -125,8 +125,12 @@ private:
 	float ReloadDelay = 5.0f;
 
 	UPROPERTY(EditDefaultsOnly, Category="Combat")
+	float FireDelay = 0.5f;
+
+	UPROPERTY(EditDefaultsOnly, Category="Combat")
 	float MaxEnergy = 3.0f;
 
+	bool CanFire = false;
 
 	UPROPERTY(EditDefaultsOnly, Category="Combat")
 	float EnergyMinimum = 1.0f;
@@ -172,7 +176,11 @@ private:
 	FTimerHandle ReloadTimeManager;
 	//FTimerHandle DrawCardTimeManager;
 
+	FTimerHandle AutoFireManager;
+
 	void ReloadTimerFunction();
+
+	void FireCooldown();
 
 	void Reload();
 	UPROPERTY(VisibleAnywhere, Category="Combat")

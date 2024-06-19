@@ -240,7 +240,7 @@ void ABaseCharacterClass::UseCard(const FInputActionValue& Value)
 /// @brief Fires a single basic shot
 void ABaseCharacterClass::Shoot()
 {
-	if(CurrentClip > 0)
+	if(CurrentClip > 0 && CanFire)
 	{
 		FHitResult Hit;
 		FVector ShotDirection;
@@ -261,6 +261,8 @@ void ABaseCharacterClass::Shoot()
 				CardDeck->FireCard(-ShotDirection, BasicCardProjectile, Hit.ImpactPoint, Hit.GetActor());
 				//remove from deck
 				CardDeck->RemoveCardFromDeck(CurrentClip);
+				CanFire = false;
+				GetWorldTimerManager().SetTimer(AutoFireManager, this, &ABaseCharacterClass::FireCooldown, FireDelay);
 				return;
 			}
 		}
@@ -268,6 +270,8 @@ void ABaseCharacterClass::Shoot()
 		CardDeck->FireCard(-ShotDirection, BasicCardProjectile, Hit.ImpactPoint, nullptr);
 		//remove from deck
 		CardDeck->RemoveCardFromDeck(CurrentClip);
+		CanFire = false;
+		GetWorldTimerManager().SetTimer(AutoFireManager, this, &ABaseCharacterClass::FireCooldown, FireDelay);
 	}
 }
 
@@ -319,6 +323,7 @@ void ABaseCharacterClass::ReloadTimerFunction()
 {
 	CanReload = true;
 	CurrentClip = MaxClip;
+	CanFire = true;
 }
 
 ///@brief Returns the CardDeck object that the player is using
@@ -393,6 +398,11 @@ void ABaseCharacterClass::GiveEnergy(float EnergyValue)
 {
 	CurrentEnergy += EnergyValue;
 	if(CurrentEnergy > MaxEnergy) CurrentEnergy = MaxEnergy;
+}
+
+void ABaseCharacterClass::FireCooldown()
+{
+	CanFire = true;
 }
 
 /// @brief blueprint pure function to return the remaning health percentage of the player
