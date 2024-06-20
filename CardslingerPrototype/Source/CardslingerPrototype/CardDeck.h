@@ -34,13 +34,16 @@ private:
 	TSubclassOf<class AProjectileCard> ProjectileCardClass;
 
 	UPROPERTY(EditAnywhere, Category = "Card Types")
-	TSubclassOf<USkeletalMeshComponent> CardSkeletalMeshTemplate;
+	class USkeletalMesh* CardSkeletalMeshTemplate;
 
 	class ABaseCharacterClass* Player;
 	
 	FTimerHandle ReloadHandle;
 	UPROPERTY(EditAnywhere)
 	float ReloadDelayPerCard = 0.05f;
+
+	UPROPERTY(EditAnywhere, Category = "Card Types")
+    TSubclassOf<class UAnimInstance> CardAnimationBlueprint;
 
 protected:
 	// Called when the game starts or when spawned

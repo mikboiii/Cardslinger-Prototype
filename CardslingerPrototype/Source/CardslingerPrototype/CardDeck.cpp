@@ -5,7 +5,9 @@
 #include "BaseCard.h"
 #include "ProjectileCard.h"
 #include "Math/UnrealMathUtility.h"
+#include "Components/SkeletalMeshComponent.h"
 #include "BaseCharacterClass.h"
+#include "Animation/AnimInstance.h"
 #include "Kismet/GameplayStatics.h"
 
 // Sets default values
@@ -120,7 +122,7 @@ void ACardDeck::ReloadCards()
 		}
 	}
 	CardMeshArray.Empty();
-	GetWorldTimerManager().SetTimer(ReloadHandle, this, &ACardDeck::SpawnCard, ReloadDelayPerCard, true, -1.0f);
+	GetWorldTimerManager().SetTimer(ReloadHandle, this, &ACardDeck::SpawnCard, ReloadDelayPerCard, true);
 	
 }
 
@@ -129,16 +131,19 @@ void ACardDeck::SpawnCard()
 	if(Player->GetMaxClip() == CardMeshArray.Num())
 	{
 		GetWorldTimerManager().ClearTimer(ReloadHandle);
+		return;
 	}
-	FVector Translation = FVector(0,0, CardMeshArray.Num() * 0.17);
+	FVector Translation = FVector(0,0, (float)CardMeshArray.Num()-1 * 0.17f);
 	FTransform CardTransform = FTransform(Translation);
-	USkeletalMeshComponent* NewCard = NewObject<USkeletalMeshComponent>(this, USkeletalMeshComponent::StaticClass(), NAME_None, RF_NoFlags, CardSkeletalMeshTemplate);
+	USkeletalMeshComponent* NewCard = NewObject<USkeletalMeshComponent>(this);
 	if(NewCard)
 	{
 	NewCard->SetWorldTransform(CardTransform);
-	NewCard->RegisterComponent();
+	NewCard->AttachToComponent(GetRootComponent(), FAttachmentTransformRules::KeepRelativeTransform);
+	NewCard->RegisterComponent();	
+	NewCard->SetSkeletalMesh(CardSkeletalMeshTemplate);
 	CardMeshArray.Emplace(NewCard);
-	NewCard->GetAnimInstance();
+	NewCard->SetAnimInstanceClass(CardAnimationBlueprint);
 	Player->IncrementClip();
 	}
 }
