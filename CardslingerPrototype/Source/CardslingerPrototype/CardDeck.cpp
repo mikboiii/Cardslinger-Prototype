@@ -133,7 +133,9 @@ void ACardDeck::SpawnCard()
 		GetWorldTimerManager().ClearTimer(ReloadHandle);
 		return;
 	}
-	FVector Translation = FVector(0,0, (float)CardMeshArray.Num()-1 * 0.17f);
+	float CardPos = CardMeshArray.Num()-1;
+	CardPos *= 0.17f;
+	FVector Translation = FVector(0,0, CardPos);
 	FTransform CardTransform = FTransform(Translation);
 	USkeletalMeshComponent* NewCard = NewObject<USkeletalMeshComponent>(this);
 	if(NewCard)
