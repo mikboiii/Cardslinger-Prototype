@@ -63,4 +63,6 @@ public:
 	int32 DrawCardNum() const;
 
 	void RemoveCardFromDeck(int CardIndex);
+
+	void ReloadCards();
 };

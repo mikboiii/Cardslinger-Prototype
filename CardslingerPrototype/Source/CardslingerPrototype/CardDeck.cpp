@@ -108,3 +108,15 @@ void ACardDeck::RemoveCardFromDeck(int CardIndex)
 	CardMeshArray[CardIndex]->DestroyComponent();
 	CardMeshArray.RemoveAt(CardIndex);
 }
+
+void ACardDeck::ReloadCards()
+{
+	for(USkeletalMeshComponent* CardMesh : CardMeshArray)
+	{
+		if(CardMesh)
+		{
+			CardMesh->DestroyComponent();
+		}
+	}
+	CardMeshArray.Empty();
+}
