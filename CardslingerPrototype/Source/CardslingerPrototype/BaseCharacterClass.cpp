@@ -325,7 +325,7 @@ void ABaseCharacterClass::Reload()
 	CurrentClip = 0;
 	//Starts timer for when weapon restores ammo and re-enables reloading
 	GetWorldTimerManager().SetTimer(ReloadTimeManager, this, &ABaseCharacterClass::ReloadTimerFunction, ReloadDelay);
-	CardDeck->ShuffleDeck();
+	CardDeck->ReloadCards();
 	}
 }
 

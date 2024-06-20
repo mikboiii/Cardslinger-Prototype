@@ -5,7 +5,8 @@
 #include "BaseCard.h"
 #include "ProjectileCard.h"
 #include "Math/UnrealMathUtility.h"
-
+#include "BaseCharacterClass.h"
+#include "Kismet/GameplayStatics.h"
 
 // Sets default values
 ACardDeck::ACardDeck()
@@ -19,7 +20,7 @@ ACardDeck::ACardDeck()
 void ACardDeck::BeginPlay()
 {
 	Super::BeginPlay();
-	
+	Player = Cast<ABaseCharacterClass>(UGameplayStatics::GetPlayerPawn(GetWorld(), 0));
 }
 
 // Called every frame
@@ -119,4 +120,25 @@ void ACardDeck::ReloadCards()
 		}
 	}
 	CardMeshArray.Empty();
+	GetWorldTimerManager().SetTimer(ReloadHandle, this, &ACardDeck::SpawnCard, ReloadDelayPerCard, true, -1.0f);
+	
+}
+
+void ACardDeck::SpawnCard()
+{
+	if(Player->GetMaxClip() == CardMeshArray.Num())
+	{
+		GetWorldTimerManager().ClearTimer(ReloadHandle);
+	}
+	FVector Translation = FVector(0,0, CardMeshArray.Num() * 0.17);
+	FTransform CardTransform = FTransform(Translation);
+	USkeletalMeshComponent* NewCard = NewObject<USkeletalMeshComponent>(this, USkeletalMeshComponent::StaticClass(), NAME_None, RF_NoFlags, CardSkeletalMeshTemplate);
+	if(NewCard)
+	{
+	NewCard->SetWorldTransform(CardTransform);
+	NewCard->RegisterComponent();
+	CardMeshArray.Emplace(NewCard);
+	NewCard->GetAnimInstance();
+	Player->IncrementClip();
+	}
 }
