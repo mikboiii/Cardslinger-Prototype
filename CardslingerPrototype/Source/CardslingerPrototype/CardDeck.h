@@ -39,6 +39,11 @@ protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 
+	TArray<USkeletalMeshComponent*> CardMeshArray;
+
+	UPROPERTY(EditAnywhere)
+	USkeletalMeshComponent* CardSkeletalMesh;
+
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
@@ -57,6 +62,5 @@ public:
 	UFUNCTION(BlueprintPure)
 	int32 DrawCardNum() const;
 
-	UFUNCTION(BlueprintImplementableEvent)
 	void RemoveCardFromDeck(int CardIndex);
 };

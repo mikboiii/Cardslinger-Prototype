@@ -260,7 +260,7 @@ void ABaseCharacterClass::Shoot()
 				//launch basic projectile
 				CardDeck->FireCard(-ShotDirection, BasicCardProjectile, Hit.ImpactPoint, Hit.GetActor());
 				//remove from deck
-				CardDeck->RemoveCardFromDeck(CurrentClip);
+				CardDeck->RemoveCardFromDeck(CurrentClip-1);
 
 				return;
 			}

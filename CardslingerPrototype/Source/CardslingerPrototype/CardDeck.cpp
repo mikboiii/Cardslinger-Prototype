@@ -102,3 +102,9 @@ int32 ACardDeck::DrawCardNum() const
 {
 	return DrawPile.Num();
 }
+
+void ACardDeck::RemoveCardFromDeck(int CardIndex)
+{
+	CardMeshArray[CardIndex]->DestroyComponent();
+	CardMeshArray.RemoveAt(CardIndex);
+}

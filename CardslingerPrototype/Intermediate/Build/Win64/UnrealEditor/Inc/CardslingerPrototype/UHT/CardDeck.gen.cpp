@@ -15,6 +15,7 @@ void EmptyLinkFunctionForGeneratedCodeCardDeck() {}
 	CARDSLINGERPROTOTYPE_API UClass* Z_Construct_UClass_AProjectileCard_NoRegister();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
 	ENGINE_API UClass* Z_Construct_UClass_AActor();
+	ENGINE_API UClass* Z_Construct_UClass_USkeletalMeshComponent_NoRegister();
 	UPackage* Z_Construct_UPackage__Script_CardslingerPrototype();
 // End Cross Module References
 	DEFINE_FUNCTION(ACardDeck::execDrawCardNum)
@@ -37,17 +38,6 @@ void EmptyLinkFunctionForGeneratedCodeCardDeck() {}
 		P_NATIVE_BEGIN;
 		P_THIS->ShuffleDeck();
 		P_NATIVE_END;
-	}
-	struct CardDeck_eventRemoveCardFromDeck_Parms
-	{
-		int32 CardIndex;
-	};
-	static FName NAME_ACardDeck_RemoveCardFromDeck = FName(TEXT("RemoveCardFromDeck"));
-	void ACardDeck::RemoveCardFromDeck(int32 CardIndex)
-	{
-		CardDeck_eventRemoveCardFromDeck_Parms Parms;
-		Parms.CardIndex=CardIndex;
-		ProcessEvent(FindFunctionChecked(NAME_ACardDeck_RemoveCardFromDeck),&Parms);
 	}
 	void ACardDeck::StaticRegisterNativesACardDeck()
 	{
@@ -132,36 +122,6 @@ void EmptyLinkFunctionForGeneratedCodeCardDeck() {}
 		}
 		return ReturnFunction;
 	}
-	struct Z_Construct_UFunction_ACardDeck_RemoveCardFromDeck_Statics
-	{
-		static const UECodeGen_Private::FIntPropertyParams NewProp_CardIndex;
-		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
-#if WITH_METADATA
-		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
-#endif
-		static const UECodeGen_Private::FFunctionParams FuncParams;
-	};
-	const UECodeGen_Private::FIntPropertyParams Z_Construct_UFunction_ACardDeck_RemoveCardFromDeck_Statics::NewProp_CardIndex = { "CardIndex", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(CardDeck_eventRemoveCardFromDeck_Parms, CardIndex), METADATA_PARAMS(0, nullptr) };
-	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_ACardDeck_RemoveCardFromDeck_Statics::PropPointers[] = {
-		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_ACardDeck_RemoveCardFromDeck_Statics::NewProp_CardIndex,
-	};
-#if WITH_METADATA
-	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ACardDeck_RemoveCardFromDeck_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "CardDeck.h" },
-	};
-#endif
-	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_ACardDeck_RemoveCardFromDeck_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ACardDeck, nullptr, "RemoveCardFromDeck", nullptr, nullptr, Z_Construct_UFunction_ACardDeck_RemoveCardFromDeck_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_ACardDeck_RemoveCardFromDeck_Statics::PropPointers), sizeof(CardDeck_eventRemoveCardFromDeck_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08020800, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_ACardDeck_RemoveCardFromDeck_Statics::Function_MetaDataParams), Z_Construct_UFunction_ACardDeck_RemoveCardFromDeck_Statics::Function_MetaDataParams) };
-	static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_ACardDeck_RemoveCardFromDeck_Statics::PropPointers) < 2048);
-	static_assert(sizeof(CardDeck_eventRemoveCardFromDeck_Parms) < MAX_uint16);
-	UFunction* Z_Construct_UFunction_ACardDeck_RemoveCardFromDeck()
-	{
-		static UFunction* ReturnFunction = nullptr;
-		if (!ReturnFunction)
-		{
-			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_ACardDeck_RemoveCardFromDeck_Statics::FuncParams);
-		}
-		return ReturnFunction;
-	}
 	struct Z_Construct_UFunction_ACardDeck_ShuffleDeck_Statics
 	{
 #if WITH_METADATA
@@ -210,6 +170,10 @@ void EmptyLinkFunctionForGeneratedCodeCardDeck() {}
 		static const UECodeGen_Private::FMetaDataPairParam NewProp_ProjectileCardClass_MetaData[];
 #endif
 		static const UECodeGen_Private::FClassPropertyParams NewProp_ProjectileCardClass;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_CardSkeletalMesh_MetaData[];
+#endif
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_CardSkeletalMesh;
 		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UECodeGen_Private::FClassParams ClassParams;
@@ -222,7 +186,6 @@ void EmptyLinkFunctionForGeneratedCodeCardDeck() {}
 	const FClassFunctionLinkInfo Z_Construct_UClass_ACardDeck_Statics::FuncInfo[] = {
 		{ &Z_Construct_UFunction_ACardDeck_DrawCardNum, "DrawCardNum" }, // 3267924769
 		{ &Z_Construct_UFunction_ACardDeck_IsDeckEmpty, "IsDeckEmpty" }, // 4039522181
-		{ &Z_Construct_UFunction_ACardDeck_RemoveCardFromDeck, "RemoveCardFromDeck" }, // 1857390685
 		{ &Z_Construct_UFunction_ACardDeck_ShuffleDeck, "ShuffleDeck" }, // 2171445598
 	};
 	static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_ACardDeck_Statics::FuncInfo) < 2048);
@@ -255,12 +218,21 @@ void EmptyLinkFunctionForGeneratedCodeCardDeck() {}
 	};
 #endif
 	const UECodeGen_Private::FClassPropertyParams Z_Construct_UClass_ACardDeck_Statics::NewProp_ProjectileCardClass = { "ProjectileCardClass", nullptr, (EPropertyFlags)0x0044000000000001, UECodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ACardDeck, ProjectileCardClass), Z_Construct_UClass_UClass, Z_Construct_UClass_AProjectileCard_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_ACardDeck_Statics::NewProp_ProjectileCardClass_MetaData), Z_Construct_UClass_ACardDeck_Statics::NewProp_ProjectileCardClass_MetaData) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ACardDeck_Statics::NewProp_CardSkeletalMesh_MetaData[] = {
+		{ "Category", "CardDeck" },
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "CardDeck.h" },
+	};
+#endif
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ACardDeck_Statics::NewProp_CardSkeletalMesh = { "CardSkeletalMesh", nullptr, (EPropertyFlags)0x0020080000080009, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ACardDeck, CardSkeletalMesh), Z_Construct_UClass_USkeletalMeshComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_ACardDeck_Statics::NewProp_CardSkeletalMesh_MetaData), Z_Construct_UClass_ACardDeck_Statics::NewProp_CardSkeletalMesh_MetaData) };
 	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ACardDeck_Statics::PropPointers[] = {
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ACardDeck_Statics::NewProp_DrawPile_Inner,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ACardDeck_Statics::NewProp_DrawPile,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ACardDeck_Statics::NewProp_DiscardPile_Inner,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ACardDeck_Statics::NewProp_DiscardPile,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ACardDeck_Statics::NewProp_ProjectileCardClass,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ACardDeck_Statics::NewProp_CardSkeletalMesh,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_ACardDeck_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<ACardDeck>::IsAbstract,
@@ -300,9 +272,9 @@ void EmptyLinkFunctionForGeneratedCodeCardDeck() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_CardDeck_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_ACardDeck, ACardDeck::StaticClass, TEXT("ACardDeck"), &Z_Registration_Info_UClass_ACardDeck, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ACardDeck), 1033017227U) },
+		{ Z_Construct_UClass_ACardDeck, ACardDeck::StaticClass, TEXT("ACardDeck"), &Z_Registration_Info_UClass_ACardDeck, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ACardDeck), 3853916523U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_CardDeck_h_1470690613(TEXT("/Script/CardslingerPrototype"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_CardDeck_h_1096337880(TEXT("/Script/CardslingerPrototype"),
 		Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_CardDeck_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_CardDeck_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);
