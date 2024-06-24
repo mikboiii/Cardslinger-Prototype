@@ -64,6 +64,8 @@ public:
 
 	void ShuffleDiscard();
 
+	float GetTimeToReload();
+
 	UFUNCTION(BlueprintCallable)
 	void ShuffleDeck();
 

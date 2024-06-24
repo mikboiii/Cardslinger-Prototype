@@ -334,9 +334,11 @@ void ABaseCharacterClass::Reload()
 	if(CanReload && CurrentClip != MaxClip)
 	{
 	CanReload = false;
+	CanFire = false;
 	CurrentClip = 0;
+	//GetWorldTimerManager().SetTimer(ReloadTimeManager, this, &ABaseCharacterClass::ReloadTimerFunction, ReloadDelay);
 	//Starts timer for when weapon restores ammo and re-enables reloading
-	GetWorldTimerManager().SetTimer(ReloadTimeManager, this, &ABaseCharacterClass::ReloadTimerFunction, ReloadDelay);
+	GetWorldTimerManager().SetTimer(ReloadTimeManager, this, &ABaseCharacterClass::ReloadTimerFunction, CardDeck->GetTimeToReload());
 	CardDeck->ReloadCards();
 	}
 }
@@ -425,7 +427,10 @@ void ABaseCharacterClass::GiveEnergy(float EnergyValue)
 
 void ABaseCharacterClass::FireCooldown()
 {
-	CanFire = true;
+	if(!GetWorldTimerManager().IsTimerActive(ReloadTimeManager))
+	{
+		CanFire = true;
+	}
 }
 
 /// @brief blueprint pure function to return the remaning health percentage of the player

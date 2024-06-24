@@ -149,3 +149,8 @@ void ACardDeck::SpawnCard()
 	Player->IncrementClip();
 	}
 }
+
+float ACardDeck::GetTimeToReload()
+{
+	return ReloadDelayPerCard * Player->GetMaxClip();
+}

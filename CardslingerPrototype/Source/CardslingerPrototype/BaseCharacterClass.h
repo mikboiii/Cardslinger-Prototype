@@ -128,8 +128,8 @@ private:
 	UPROPERTY(VisibleAnywhere, Category = "Combat")
 	int32 CurrentClip;
 
-	UPROPERTY(EditDefaultsOnly, Category="Combat")
-	float ReloadDelay = 5.0f;
+	//UPROPERTY(EditDefaultsOnly, Category="Combat")
+	//float ReloadDelay = 5.0f;
 
 	UPROPERTY(EditDefaultsOnly, Category="Combat")
 	float FireDelay = 0.5f;
