@@ -119,7 +119,7 @@ private:
 	UPROPERTY(EditAnywhere, Category = "Combat")
 	float Damage = 10.0f;
 
-	UPROPERTY(EditAnywhere, Category = "Combat")
+	UPROPERTY(EditAnywhere, Category = "Combat", meta=(EditCondition="bIsStaggeredFiring"))
 	int32 CardsPerShot = 3;
 
 	UPROPERTY(EditAnywhere, Category = "Combat")
@@ -134,11 +134,11 @@ private:
 	UPROPERTY(EditDefaultsOnly, Category="Combat")
 	float FireDelay = 0.5f;
 
-	UPROPERTY(EditDefaultsOnly, Category="Combat")
+	UPROPERTY(EditDefaultsOnly, Category="Combat", meta=(EditCondition="bIsStaggeredFiring"))
 	float StaggerDelay = 0.1f;
 
 	UPROPERTY(EditDefaultsOnly, Category = "Combat")
-	bool IsStaggeredFiring;
+	bool bIsStaggeredFiring;
 
 	UPROPERTY(EditDefaultsOnly, Category="Combat")
 	float MaxEnergy = 3.0f;

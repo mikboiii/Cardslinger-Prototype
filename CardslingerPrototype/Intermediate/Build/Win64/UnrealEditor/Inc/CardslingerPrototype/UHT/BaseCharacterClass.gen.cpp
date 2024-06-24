@@ -596,10 +596,10 @@ void EmptyLinkFunctionForGeneratedCodeBaseCharacterClass() {}
 #endif
 		static const UECodeGen_Private::FFloatPropertyParams NewProp_StaggerDelay;
 #if WITH_METADATA
-		static const UECodeGen_Private::FMetaDataPairParam NewProp_IsStaggeredFiring_MetaData[];
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_bIsStaggeredFiring_MetaData[];
 #endif
-		static void NewProp_IsStaggeredFiring_SetBit(void* Obj);
-		static const UECodeGen_Private::FBoolPropertyParams NewProp_IsStaggeredFiring;
+		static void NewProp_bIsStaggeredFiring_SetBit(void* Obj);
+		static const UECodeGen_Private::FBoolPropertyParams NewProp_bIsStaggeredFiring;
 #if WITH_METADATA
 		static const UECodeGen_Private::FMetaDataPairParam NewProp_MaxEnergy_MetaData[];
 #endif
@@ -823,6 +823,7 @@ void EmptyLinkFunctionForGeneratedCodeBaseCharacterClass() {}
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_CardsPerShot_MetaData[] = {
 		{ "Category", "Combat" },
+		{ "EditCondition", "bIsStaggeredFiring" },
 		{ "ModuleRelativePath", "BaseCharacterClass.h" },
 	};
 #endif
@@ -858,21 +859,22 @@ void EmptyLinkFunctionForGeneratedCodeBaseCharacterClass() {}
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_StaggerDelay_MetaData[] = {
 		{ "Category", "Combat" },
+		{ "EditCondition", "bIsStaggeredFiring" },
 		{ "ModuleRelativePath", "BaseCharacterClass.h" },
 	};
 #endif
 	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_StaggerDelay = { "StaggerDelay", nullptr, (EPropertyFlags)0x0040000000010001, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ABaseCharacterClass, StaggerDelay), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_StaggerDelay_MetaData), Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_StaggerDelay_MetaData) };
 #if WITH_METADATA
-	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_IsStaggeredFiring_MetaData[] = {
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_bIsStaggeredFiring_MetaData[] = {
 		{ "Category", "Combat" },
 		{ "ModuleRelativePath", "BaseCharacterClass.h" },
 	};
 #endif
-	void Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_IsStaggeredFiring_SetBit(void* Obj)
+	void Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_bIsStaggeredFiring_SetBit(void* Obj)
 	{
-		((ABaseCharacterClass*)Obj)->IsStaggeredFiring = 1;
+		((ABaseCharacterClass*)Obj)->bIsStaggeredFiring = 1;
 	}
-	const UECodeGen_Private::FBoolPropertyParams Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_IsStaggeredFiring = { "IsStaggeredFiring", nullptr, (EPropertyFlags)0x0040000000010001, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, sizeof(bool), sizeof(ABaseCharacterClass), &Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_IsStaggeredFiring_SetBit, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_IsStaggeredFiring_MetaData), Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_IsStaggeredFiring_MetaData) };
+	const UECodeGen_Private::FBoolPropertyParams Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_bIsStaggeredFiring = { "bIsStaggeredFiring", nullptr, (EPropertyFlags)0x0040000000010001, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, sizeof(bool), sizeof(ABaseCharacterClass), &Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_bIsStaggeredFiring_SetBit, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_bIsStaggeredFiring_MetaData), Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_bIsStaggeredFiring_MetaData) };
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_MaxEnergy_MetaData[] = {
 		{ "Category", "Combat" },
@@ -1028,7 +1030,7 @@ void EmptyLinkFunctionForGeneratedCodeBaseCharacterClass() {}
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_ReloadDelay,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_FireDelay,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_StaggerDelay,
-		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_IsStaggeredFiring,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_bIsStaggeredFiring,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_MaxEnergy,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_EnergyMinimum,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_EnergyRegenRate,
@@ -1086,9 +1088,9 @@ void EmptyLinkFunctionForGeneratedCodeBaseCharacterClass() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_BaseCharacterClass_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_ABaseCharacterClass, ABaseCharacterClass::StaticClass, TEXT("ABaseCharacterClass"), &Z_Registration_Info_UClass_ABaseCharacterClass, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ABaseCharacterClass), 1659248829U) },
+		{ Z_Construct_UClass_ABaseCharacterClass, ABaseCharacterClass::StaticClass, TEXT("ABaseCharacterClass"), &Z_Registration_Info_UClass_ABaseCharacterClass, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ABaseCharacterClass), 2498960615U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_BaseCharacterClass_h_2513572383(TEXT("/Script/CardslingerPrototype"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_BaseCharacterClass_h_3006328429(TEXT("/Script/CardslingerPrototype"),
 		Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_BaseCharacterClass_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_BaseCharacterClass_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);
