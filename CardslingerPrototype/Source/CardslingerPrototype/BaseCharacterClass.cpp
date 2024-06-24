@@ -276,9 +276,21 @@ void ABaseCharacterClass::ShootMultiple()
 {
 	if(CanFire)
 	{
-		for(int32 i = 0; i < CardsPerShot; i++)
+		if(IsStaggeredFiring)
 		{
-			Shoot();
+			CanFire = false;
+			for(int32 i = 0; i <= CardsPerShot; i++)
+			{
+				FTimerHandle StaggerFireHandle;
+				GetWorldTimerManager().SetTimer(StaggerFireHandle, this, &ABaseCharacterClass::Shoot, StaggerDelay * i);
+			}
+		}
+		else
+		{
+			for(int32 i = 0; i <= CardsPerShot; i++)
+			{
+				Shoot();
+			}
 		}
 		CanFire = false;
 		GetWorldTimerManager().SetTimer(AutoFireManager, this, &ABaseCharacterClass::FireCooldown, FireDelay);

@@ -135,6 +135,12 @@ private:
 	float FireDelay = 0.5f;
 
 	UPROPERTY(EditDefaultsOnly, Category="Combat")
+	float StaggerDelay = 0.1f;
+
+	UPROPERTY(EditDefaultsOnly, Category = "Combat")
+	bool IsStaggeredFiring;
+
+	UPROPERTY(EditDefaultsOnly, Category="Combat")
 	float MaxEnergy = 3.0f;
 
 	bool CanFire = false;
