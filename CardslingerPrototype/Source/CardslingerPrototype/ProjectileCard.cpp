@@ -21,7 +21,7 @@ AProjectileCard::AProjectileCard()
  	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
 	CardSkeletalMesh = CreateDefaultSubobject<USkeletalMeshComponent>(TEXT("CardSkeletalMesh"));
-	CardSkeletalMesh->SetupAttachment(RootComponent);
+	SetRootComponent(CardSkeletalMesh);
 	CardCollision = CreateDefaultSubobject<UBoxComponent>(TEXT("CardCollision"));
 	CardCollision->SetupAttachment(CardSkeletalMesh);
 	CardTrail = CreateDefaultSubobject<UNiagaraComponent>(TEXT("CardTrail"));

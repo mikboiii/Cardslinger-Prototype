@@ -116,6 +116,7 @@ void ABaseCharacterClass::SetupPlayerInputComponent(UInputComponent* PlayerInput
         EnhancedInputComponent->BindAction(ShootAction, ETriggerEvent::Triggered, this, &ABaseCharacterClass::ShootMultiple);
 		EnhancedInputComponent->BindAction(CardAction, ETriggerEvent::Triggered, this, &ABaseCharacterClass::UseCard);
 		EnhancedInputComponent->BindAction(ReloadAction, ETriggerEvent::Triggered, this, &ABaseCharacterClass::Reload);
+		EnhancedInputComponent->BindAction(ZoomAction, ETriggerEvent::Triggered, this, &ABaseCharacterClass::Zoom);
     }
 }
 
@@ -249,7 +250,6 @@ void ABaseCharacterClass::Shoot()
 		CurrentClip--;
 		if(HitTrace(Hit, ShotDirection))
 		{
-			FPointDamageEvent DamageEvent(Damage, Hit, ShotDirection, nullptr);
 			//gets pointer to the actor hit by the line trace
 			AActor* HitActor = Hit.GetActor();
 			if(HitActor == nullptr) return;
@@ -431,6 +431,11 @@ void ABaseCharacterClass::FireCooldown()
 	{
 		CanFire = true;
 	}
+}
+
+void ABaseCharacterClass::Zoom()
+{
+	UE_LOG(LogTemp, Display, TEXT("Zoom held"));
 }
 
 /// @brief blueprint pure function to return the remaning health percentage of the player

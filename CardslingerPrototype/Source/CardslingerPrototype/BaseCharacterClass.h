@@ -51,6 +51,8 @@ protected:
 	UInputAction* CardAction;
 	UPROPERTY(EditAnywhere, Category = "Input")
 	UInputAction* ReloadAction;
+	UPROPERTY(EditAnywhere, Category = "Input")
+	UInputAction* ZoomAction;
 
 	void Move(const FInputActionValue& Value);
 	void Look(const FInputActionValue& Value);
@@ -115,9 +117,6 @@ private:
 
 	UPROPERTY(EditAnywhere, Category = "Combat")
 	float MaxRange = 1000.0f;
-
-	UPROPERTY(EditAnywhere, Category = "Combat")
-	float Damage = 10.0f;
 
 	UPROPERTY(EditAnywhere, Category = "Combat", meta=(EditCondition="bIsStaggeredFiring"))
 	int32 CardsPerShot = 3;
@@ -210,6 +209,7 @@ private:
 
 	void DrawCardTimerFunction(int CardIndex);
 
+	void Zoom();
 
 	void ReplenishHandFunction();
 };
