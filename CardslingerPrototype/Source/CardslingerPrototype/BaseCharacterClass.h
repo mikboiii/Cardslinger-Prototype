@@ -57,6 +57,7 @@ protected:
 	void Move(const FInputActionValue& Value);
 	void Look(const FInputActionValue& Value);
 	void UseCard(const FInputActionValue& Value);
+	void Zoom(const FInputActionValue& Value);
 
 	void Shoot();
 
@@ -208,8 +209,6 @@ private:
 	class USpringArmComponent* SpringArm2;
 
 	void DrawCardTimerFunction(int CardIndex);
-
-	void Zoom();
 
 	void ReplenishHandFunction();
 };

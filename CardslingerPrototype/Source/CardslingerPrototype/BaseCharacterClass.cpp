@@ -433,9 +433,10 @@ void ABaseCharacterClass::FireCooldown()
 	}
 }
 
-void ABaseCharacterClass::Zoom()
+void ABaseCharacterClass::Zoom(const FInputActionValue& Value)
 {
-	UE_LOG(LogTemp, Display, TEXT("Zoom held"));
+	if(Value.Get<bool>()) CameraComponent->SetFieldOfView(45);
+	else CameraComponent->SetFieldOfView(90);
 }
 
 /// @brief blueprint pure function to return the remaning health percentage of the player
