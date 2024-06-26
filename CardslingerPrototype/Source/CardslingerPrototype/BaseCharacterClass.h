@@ -132,10 +132,10 @@ private:
 	//float ReloadDelay = 5.0f;
 
 	UPROPERTY(EditDefaultsOnly, Category="Combat")
-	float FireDelay = 0.5f;
+	float FireDelay = 0.1f;
 
 	UPROPERTY(EditDefaultsOnly, Category="Combat", meta=(EditCondition="bIsStaggeredFiring"))
-	float StaggerDelay = 0.1f;
+	float StaggerDelay = 0.05f;
 
 	UPROPERTY(EditDefaultsOnly, Category = "Combat")
 	bool bIsStaggeredFiring;
@@ -157,7 +157,7 @@ private:
 	float CurrentEnergy;
 
 	UPROPERTY(EditDefaultsOnly, Category="Combat")
-	float CardChargeRate = 0.01f;
+	float CardChargeRate = 0.1f;
 
 	UPROPERTY()
 	UUserWidget* PlayerHUD;
@@ -208,6 +208,8 @@ private:
 
 	UPROPERTY(VisibleAnywhere, Category="Combat")
 	int32 CardsCharged;
+	UPROPERTY(EditAnywhere, Category="Combat")
+	int32 MaxCardsCharged = 7;
 	UPROPERTY(VisibleAnywhere, Category="Combat")
 	float CardCharge = 0.0f;
 
