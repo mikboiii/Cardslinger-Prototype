@@ -204,8 +204,11 @@ private:
 
 	bool bIsChargeMode = false;
 
-	float MaxCharge = 1;
+	float ChargeForOneCard = 1.0f;
 
+	UPROPERTY(VisibleAnywhere, Category="Combat")
+	int32 CardsCharged;
+	UPROPERTY(VisibleAnywhere, Category="Combat")
 	float CardCharge = 0.0f;
 
 	UPROPERTY(Instanced, EditAnywhere)

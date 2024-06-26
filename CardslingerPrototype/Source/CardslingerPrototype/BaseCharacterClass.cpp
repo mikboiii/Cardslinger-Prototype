@@ -241,7 +241,7 @@ void ABaseCharacterClass::UseCard(const FInputActionValue& Value)
 /// @brief Fires a single basic shot
 void ABaseCharacterClass::Shoot()
 {
-	if(CurrentClip > 0 && !bIsChargeMode)
+	if(CurrentClip > 0)
 	{
 		FHitResult Hit;
 		FVector ShotDirection;
@@ -276,10 +276,15 @@ void ABaseCharacterClass::ShootMultiple()
 	if(CanFire)
 	{
 		int32 TempFireDelay = FireDelay;
+		int32 CardsToFire {CardsPerShot};
+		if(bIsChargeMode)
+		{
+			CardsToFire = CardsCharged;
+		}
 		if(bIsStaggeredFiring)
 		{
 			CanFire = false;
-			for(int32 i = 0; i <= CardsPerShot; i++)
+			for(int32 i = 0; i <= CardsToFire; i++)
 			{
 				FTimerHandle StaggerFireHandle;
 				GetWorldTimerManager().SetTimer(StaggerFireHandle, this, &ABaseCharacterClass::Shoot, StaggerDelay * i);
@@ -436,14 +441,22 @@ void ABaseCharacterClass::Zoom(const FInputActionValue& Value)
 {
 	if(Value.Get<bool>()) 
 	{
-		CameraComponent->SetFieldOfView(45);
-		Speed = 5.0f;
+		//CameraComponent->SetFieldOfView(45);
+		//Speed = 5.0f;
+		if(CardCharge >= ChargeForOneCard)
+		{
+			CardCharge -= ChargeForOneCard;
+			CardsCharged += 1;
+		}
+		CardCharge += CardChargeRate;
 		bIsChargeMode = true;
 	}
 	else
 	{
-		CameraComponent->SetFieldOfView(90);
-		Speed = 10.0f;
+		//CameraComponent->SetFieldOfView(90);
+		//Speed = 10.0f;
+		CardCharge = 0;
+		CardsCharged = 0;
 		bIsChargeMode = false;
 	}
 }
