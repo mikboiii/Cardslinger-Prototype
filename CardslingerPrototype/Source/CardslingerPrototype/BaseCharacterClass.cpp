@@ -499,7 +499,16 @@ int32 ABaseCharacterClass::GetMaxClip() const
 {
 	return MaxClip;
 }
+int32 ABaseCharacterClass::GetChargedCards()
+{
+	return CardsCharged;
+}
 
+void ABaseCharacterClass::GetCardCharge(float &OutCurrentCharge, float &OutMaxCharge)
+{
+	OutCurrentCharge = CardCharge;
+	OutMaxCharge = ChargeForOneCard;
+}
 void ABaseCharacterClass::IncrementClip()
 {
 	CurrentClip += 1;

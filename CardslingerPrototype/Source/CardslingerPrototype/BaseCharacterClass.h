@@ -100,6 +100,10 @@ public:
 	int32 GetClip() const;
 	UFUNCTION(BlueprintPure)
 	int32 GetMaxClip() const;
+	UFUNCTION(BlueprintPure)
+	int32 GetChargedCards();
+	UFUNCTION(BlueprintPure)
+	void GetCardCharge(float &OutCurrentCharge, float &OutMaxCharge);
 
 private:
 
