@@ -281,6 +281,7 @@ void ABaseCharacterClass::ShootMultiple()
 		{
 			CardsToFire = CardsCharged;
 			CardsCharged = 0;
+			CardCharge = 0.0f;
 		}
 		if(bIsStaggeredFiring)
 		{
@@ -446,7 +447,7 @@ void ABaseCharacterClass::Zoom(const FInputActionValue& Value)
 		//Speed = 5.0f;
 		if(CardCharge >= ChargeForOneCard)
 		{
-			CardCharge -= ChargeForOneCard;
+			if(CardsCharged < MaxCardsCharged) CardCharge -= ChargeForOneCard;
 			CardsCharged += 1;
 			if(CardsCharged > MaxCardsCharged) CardsCharged = MaxCardsCharged;
 		}
