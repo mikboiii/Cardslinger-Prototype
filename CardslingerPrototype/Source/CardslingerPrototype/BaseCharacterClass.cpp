@@ -241,7 +241,7 @@ void ABaseCharacterClass::UseCard(const FInputActionValue& Value)
 /// @brief Fires a single basic shot
 void ABaseCharacterClass::Shoot()
 {
-	if(CurrentClip > 0)
+	if(CurrentClip > 0 && !bIsChargeMode)
 	{
 		FHitResult Hit;
 		FVector ShotDirection;
@@ -269,7 +269,6 @@ void ABaseCharacterClass::Shoot()
 		CardDeck->FireCard(-ShotDirection, BasicCardProjectile, Hit.ImpactPoint, nullptr);
 		//remove from deck
 		CardDeck->RemoveCardFromDeck(CurrentClip);
-
 	}
 }
 void ABaseCharacterClass::ShootMultiple()
@@ -435,8 +434,18 @@ void ABaseCharacterClass::FireCooldown()
 
 void ABaseCharacterClass::Zoom(const FInputActionValue& Value)
 {
-	if(Value.Get<bool>()) CameraComponent->SetFieldOfView(45);
-	else CameraComponent->SetFieldOfView(90);
+	if(Value.Get<bool>()) 
+	{
+		CameraComponent->SetFieldOfView(45);
+		Speed = 5.0f;
+		bIsChargeMode = true;
+	}
+	else
+	{
+		CameraComponent->SetFieldOfView(90);
+		Speed = 10.0f;
+		bIsChargeMode = false;
+	}
 }
 
 /// @brief blueprint pure function to return the remaning health percentage of the player

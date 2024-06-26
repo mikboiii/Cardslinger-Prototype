@@ -156,6 +156,9 @@ private:
 
 	float CurrentEnergy;
 
+	UPROPERTY(EditDefaultsOnly, Category="Combat")
+	float CardChargeRate = 0.01f;
+
 	UPROPERTY()
 	UUserWidget* PlayerHUD;
 
@@ -198,6 +201,12 @@ private:
 	void Reload();
 	UPROPERTY(VisibleAnywhere, Category="Combat")
 	bool CanReload = true;
+
+	bool bIsChargeMode = false;
+
+	float MaxCharge = 1;
+
+	float CardCharge = 0.0f;
 
 	UPROPERTY(Instanced, EditAnywhere)
 	class USceneComponent* CardDeckLocation;
