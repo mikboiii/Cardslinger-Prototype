@@ -34,6 +34,9 @@ public:
 	//the description of what the card does
 	UPROPERTY(EditAnywhere)
 	FString CardDescription;
+
+	UPROPERTY(EditAnywhere)
+	int32 CardID;
 	//stores the widget of the card's ui design
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Instanced)
 	UUserWidget* CardWidget;

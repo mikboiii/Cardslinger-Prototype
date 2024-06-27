@@ -23,6 +23,9 @@ private:
 	// Sets default values for this actor's properties
 	ACardDeck();
 
+
+	TArray<TSubclassOf<ABaseCard>> FullDeck;
+
 	UPROPERTY(EditAnywhere)
 	TArray<TSubclassOf<ABaseCard>> DrawPile;
 
@@ -79,4 +82,8 @@ public:
 	void RemoveCardFromDeck(int CardIndex);
 
 	void ReloadCards();
+	UFUNCTION(BlueprintCallable)
+	void SaveDeck(const FString& SavePath);
+	UFUNCTION(BlueprintCallable)
+	void LoadDeck(const FString& SavePath);
 };

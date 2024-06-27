@@ -7,6 +7,10 @@
 #include "Math/UnrealMathUtility.h"
 #include "Components/SkeletalMeshComponent.h"
 #include "BaseCharacterClass.h"
+#include "Misc/FileHelper.h"
+#include "Misc/Paths.h"
+#include "Serialization/BufferArchive.h"
+#include "Serialization/MemoryReader.h"
 #include "Animation/AnimInstance.h"
 #include "Kismet/GameplayStatics.h"
 
@@ -23,6 +27,7 @@ void ACardDeck::BeginPlay()
 {
 	Super::BeginPlay();
 	Player = Cast<ABaseCharacterClass>(UGameplayStatics::GetPlayerPawn(GetWorld(), 0));
+	FullDeck = DrawPile;
 }
 
 // Called every frame
@@ -153,4 +158,14 @@ void ACardDeck::SpawnCard()
 float ACardDeck::GetTimeToReload()
 {
 	return ReloadDelayPerCard * Player->GetMaxClip();
+}
+
+void ACardDeck::SaveDeck(const FString& SavePath)
+{
+
+}
+
+void ACardDeck::LoadDeck(const FString& SavePath)
+{
+
 }
