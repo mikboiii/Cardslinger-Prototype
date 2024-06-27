@@ -9,7 +9,8 @@
 #include "BaseCharacterClass.h"
 #include "Misc/FileHelper.h"
 #include "Misc/Paths.h"
-#include "Serialization/BufferArchive.h"
+#include "Serialization/ObjectAndNameAsStringProxyArchive.h"
+#include "Serialization/MemoryWriter.h"
 #include "Serialization/MemoryReader.h"
 #include "Animation/AnimInstance.h"
 #include "Kismet/GameplayStatics.h"
@@ -28,6 +29,8 @@ void ACardDeck::BeginPlay()
 	Super::BeginPlay();
 	Player = Cast<ABaseCharacterClass>(UGameplayStatics::GetPlayerPawn(GetWorld(), 0));
 	FullDeck = DrawPile;
+	FString SavePath = FPaths::ProjectSavedDir() / TEXT("CardDeck.sav");
+	SaveDeck(SavePath);
 }
 
 // Called every frame
@@ -162,10 +165,43 @@ float ACardDeck::GetTimeToReload()
 
 void ACardDeck::SaveDeck(const FString& SavePath)
 {
+    // Create a memory writer
+    TArray<uint8> BinaryData;
+    FMemoryWriter MemoryWriter(BinaryData, true);
+    FObjectAndNameAsStringProxyArchive Archive(MemoryWriter, false);
+    Archive.ArIsSaveGame = true;
 
+    Archive << FullDeck;
+
+    // Write to the file
+    if (FFileHelper::SaveArrayToFile(BinaryData, *SavePath))
+    {
+        UE_LOG(LogTemp, Log, TEXT("Save successful!"));
+    }
+    else
+    {
+        UE_LOG(LogTemp, Error, TEXT("Failed to save file."));
+    }
 }
 
 void ACardDeck::LoadDeck(const FString& SavePath)
 {
+    // Load the binary data from the file
+    TArray<uint8> BinaryData;
+    if (FFileHelper::LoadFileToArray(BinaryData, *SavePath))
+    {
+        UE_LOG(LogTemp, Log, TEXT("Load successful!"));
 
+        // Create a memory reader
+        FMemoryReader MemoryReader(BinaryData, true);
+        FObjectAndNameAsStringProxyArchive Archive(MemoryReader, true);
+        Archive.ArIsSaveGame = true;
+
+        // Deserialize the data into the array
+        Archive << FullDeck;
+    }
+    else
+    {
+        UE_LOG(LogTemp, Error, TEXT("Failed to load file."));
+    }
 }
