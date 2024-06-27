@@ -33,11 +33,28 @@ private:
 	UPROPERTY(EditAnywhere, Category = "Card Types")
 	TSubclassOf<class AProjectileCard> ProjectileCardClass;
 
+	UPROPERTY(EditAnywhere, Category = "Card Types")
+	class USkeletalMesh* CardSkeletalMeshTemplate;
+
+	class ABaseCharacterClass* Player;
 	
+	FTimerHandle ReloadHandle;
+	UPROPERTY(EditAnywhere)
+	float ReloadDelayPerCard = 0.05f;
+
+	UPROPERTY(EditAnywhere, Category = "Card Types")
+    TSubclassOf<class UAnimInstance> CardAnimationBlueprint;
 
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
+
+	TArray<USkeletalMeshComponent*> CardMeshArray;
+
+	UPROPERTY(EditAnywhere)
+	USkeletalMeshComponent* CardSkeletalMesh;
+
+	void SpawnCard();
 
 public:	
 	// Called every frame
@@ -46,6 +63,8 @@ public:
 	ABaseCard* DrawCard();
 
 	void ShuffleDiscard();
+
+	float GetTimeToReload();
 
 	UFUNCTION(BlueprintCallable)
 	void ShuffleDeck();
@@ -57,6 +76,7 @@ public:
 	UFUNCTION(BlueprintPure)
 	int32 DrawCardNum() const;
 
-	UFUNCTION(BlueprintImplementableEvent)
 	void RemoveCardFromDeck(int CardIndex);
+
+	void ReloadCards();
 };

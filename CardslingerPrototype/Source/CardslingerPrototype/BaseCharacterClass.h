@@ -51,12 +51,17 @@ protected:
 	UInputAction* CardAction;
 	UPROPERTY(EditAnywhere, Category = "Input")
 	UInputAction* ReloadAction;
+	UPROPERTY(EditAnywhere, Category = "Input")
+	UInputAction* ZoomAction;
 
 	void Move(const FInputActionValue& Value);
 	void Look(const FInputActionValue& Value);
 	void UseCard(const FInputActionValue& Value);
+	void Zoom(const FInputActionValue& Value);
 
 	void Shoot();
+
+	void ShootMultiple();
 
 public:	
 	// Called every frame
@@ -72,6 +77,8 @@ public:
 	bool IsHandEmpty() const;
 	UFUNCTION(BlueprintPure)
 	bool IsDead() const;
+	UFUNCTION(BlueprintCallable)
+	void IncrementClip();
 
 	void Heal(bool IsPercentile, float HealingAmount);
 
@@ -93,6 +100,10 @@ public:
 	int32 GetClip() const;
 	UFUNCTION(BlueprintPure)
 	int32 GetMaxClip() const;
+	UFUNCTION(BlueprintPure)
+	int32 GetChargedCards();
+	UFUNCTION(BlueprintPure)
+	void GetCardCharge(float &OutCurrentCharge, float &OutMaxCharge);
 
 private:
 
@@ -112,8 +123,8 @@ private:
 	UPROPERTY(EditAnywhere, Category = "Combat")
 	float MaxRange = 1000.0f;
 
-	UPROPERTY(EditAnywhere, Category = "Combat")
-	float Damage = 10.0f;
+	UPROPERTY(EditAnywhere, Category = "Combat", meta=(EditCondition="bIsStaggeredFiring"))
+	int32 CardsPerShot = 3;
 
 	UPROPERTY(EditAnywhere, Category = "Combat")
 	int32 MaxClip = 52;
@@ -121,12 +132,22 @@ private:
 	UPROPERTY(VisibleAnywhere, Category = "Combat")
 	int32 CurrentClip;
 
+	//UPROPERTY(EditDefaultsOnly, Category="Combat")
+	//float ReloadDelay = 5.0f;
+
 	UPROPERTY(EditDefaultsOnly, Category="Combat")
-	float ReloadDelay = 5.0f;
+	float FireDelay = 0.1f;
+
+	UPROPERTY(EditDefaultsOnly, Category="Combat", meta=(EditCondition="bIsStaggeredFiring"))
+	float StaggerDelay = 0.05f;
+
+	UPROPERTY(EditDefaultsOnly, Category = "Combat")
+	bool bIsStaggeredFiring;
 
 	UPROPERTY(EditDefaultsOnly, Category="Combat")
 	float MaxEnergy = 3.0f;
 
+	bool CanFire = false;
 
 	UPROPERTY(EditDefaultsOnly, Category="Combat")
 	float EnergyMinimum = 1.0f;
@@ -138,6 +159,9 @@ private:
 	bool InfiniteEnergy = false;
 
 	float CurrentEnergy;
+
+	UPROPERTY(EditDefaultsOnly, Category="Combat")
+	float CardChargeRate = 0.1f;
 
 	UPROPERTY()
 	UUserWidget* PlayerHUD;
@@ -172,11 +196,26 @@ private:
 	FTimerHandle ReloadTimeManager;
 	//FTimerHandle DrawCardTimeManager;
 
+	FTimerHandle AutoFireManager;
+
 	void ReloadTimerFunction();
+
+	void FireCooldown();
 
 	void Reload();
 	UPROPERTY(VisibleAnywhere, Category="Combat")
 	bool CanReload = true;
+
+	bool bIsChargeMode = false;
+
+	float ChargeForOneCard = 1.0f;
+
+	UPROPERTY(VisibleAnywhere, Category="Combat")
+	int32 CardsCharged;
+	UPROPERTY(EditAnywhere, Category="Combat")
+	int32 MaxCardsCharged = 7;
+	UPROPERTY(VisibleAnywhere, Category="Combat")
+	float CardCharge = 0.0f;
 
 	UPROPERTY(Instanced, EditAnywhere)
 	class USceneComponent* CardDeckLocation;
@@ -188,7 +227,6 @@ private:
 	class USpringArmComponent* SpringArm2;
 
 	void DrawCardTimerFunction(int CardIndex);
-
 
 	void ReplenishHandFunction();
 };

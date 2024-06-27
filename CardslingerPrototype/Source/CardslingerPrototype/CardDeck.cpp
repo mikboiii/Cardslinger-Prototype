@@ -5,7 +5,10 @@
 #include "BaseCard.h"
 #include "ProjectileCard.h"
 #include "Math/UnrealMathUtility.h"
-
+#include "Components/SkeletalMeshComponent.h"
+#include "BaseCharacterClass.h"
+#include "Animation/AnimInstance.h"
+#include "Kismet/GameplayStatics.h"
 
 // Sets default values
 ACardDeck::ACardDeck()
@@ -19,7 +22,7 @@ ACardDeck::ACardDeck()
 void ACardDeck::BeginPlay()
 {
 	Super::BeginPlay();
-	
+	Player = Cast<ABaseCharacterClass>(UGameplayStatics::GetPlayerPawn(GetWorld(), 0));
 }
 
 // Called every frame
@@ -101,4 +104,53 @@ bool ACardDeck::IsDeckEmpty() const
 int32 ACardDeck::DrawCardNum() const
 {
 	return DrawPile.Num();
+}
+
+void ACardDeck::RemoveCardFromDeck(int CardIndex)
+{
+	CardMeshArray[CardIndex]->DestroyComponent();
+	CardMeshArray.RemoveAt(CardIndex);
+}
+
+void ACardDeck::ReloadCards()
+{
+	for(USkeletalMeshComponent* CardMesh : CardMeshArray)
+	{
+		if(CardMesh)
+		{
+			CardMesh->DestroyComponent();
+		}
+	}
+	CardMeshArray.Empty();
+	GetWorldTimerManager().SetTimer(ReloadHandle, this, &ACardDeck::SpawnCard, ReloadDelayPerCard, true);
+	
+}
+
+void ACardDeck::SpawnCard()
+{
+	if(Player->GetMaxClip() == CardMeshArray.Num())
+	{
+		GetWorldTimerManager().ClearTimer(ReloadHandle);
+		return;
+	}
+	float CardPos = CardMeshArray.Num()-1;
+	CardPos *= 0.17f;
+	FVector Translation = FVector(0,0, CardPos);
+	FTransform CardTransform = FTransform(Translation);
+	USkeletalMeshComponent* NewCard = NewObject<USkeletalMeshComponent>(this);
+	if(NewCard)
+	{
+	NewCard->SetWorldTransform(CardTransform);
+	NewCard->AttachToComponent(GetRootComponent(), FAttachmentTransformRules::KeepRelativeTransform);
+	NewCard->RegisterComponent();	
+	NewCard->SetSkeletalMesh(CardSkeletalMeshTemplate);
+	CardMeshArray.Emplace(NewCard);
+	NewCard->SetAnimInstanceClass(CardAnimationBlueprint);
+	Player->IncrementClip();
+	}
+}
+
+float ACardDeck::GetTimeToReload()
+{
+	return ReloadDelayPerCard * Player->GetMaxClip();
 }

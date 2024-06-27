@@ -113,9 +113,10 @@ void ABaseCharacterClass::SetupPlayerInputComponent(UInputComponent* PlayerInput
         EnhancedInputComponent->BindAction(MoveAction, ETriggerEvent::Triggered, this, &ABaseCharacterClass::Move);
         EnhancedInputComponent->BindAction(LookAction, ETriggerEvent::Triggered, this, &ABaseCharacterClass::Look);
         EnhancedInputComponent->BindAction(JumpAction, ETriggerEvent::Triggered, this, &ACharacter::Jump);
-        EnhancedInputComponent->BindAction(ShootAction, ETriggerEvent::Triggered, this, &ABaseCharacterClass::Shoot);
+        EnhancedInputComponent->BindAction(ShootAction, ETriggerEvent::Triggered, this, &ABaseCharacterClass::ShootMultiple);
 		EnhancedInputComponent->BindAction(CardAction, ETriggerEvent::Triggered, this, &ABaseCharacterClass::UseCard);
 		EnhancedInputComponent->BindAction(ReloadAction, ETriggerEvent::Triggered, this, &ABaseCharacterClass::Reload);
+		EnhancedInputComponent->BindAction(ZoomAction, ETriggerEvent::Triggered, this, &ABaseCharacterClass::Zoom);
     }
 }
 
@@ -249,7 +250,6 @@ void ABaseCharacterClass::Shoot()
 		CurrentClip--;
 		if(HitTrace(Hit, ShotDirection))
 		{
-			FPointDamageEvent DamageEvent(Damage, Hit, ShotDirection, nullptr);
 			//gets pointer to the actor hit by the line trace
 			AActor* HitActor = Hit.GetActor();
 			if(HitActor == nullptr) return;
@@ -260,7 +260,8 @@ void ABaseCharacterClass::Shoot()
 				//launch basic projectile
 				CardDeck->FireCard(-ShotDirection, BasicCardProjectile, Hit.ImpactPoint, Hit.GetActor());
 				//remove from deck
-				CardDeck->RemoveCardFromDeck(CurrentClip);
+				CardDeck->RemoveCardFromDeck(CurrentClip-1);
+
 				return;
 			}
 		}
@@ -268,6 +269,38 @@ void ABaseCharacterClass::Shoot()
 		CardDeck->FireCard(-ShotDirection, BasicCardProjectile, Hit.ImpactPoint, nullptr);
 		//remove from deck
 		CardDeck->RemoveCardFromDeck(CurrentClip);
+	}
+}
+void ABaseCharacterClass::ShootMultiple()
+{
+	if(CanFire)
+	{
+		int32 TempFireDelay = FireDelay;
+		int32 CardsToFire {CardsPerShot};
+		if(bIsChargeMode)
+		{
+			if(CardsCharged < 1) return;
+			CardsToFire = CardsCharged;
+			CardsCharged = 0;
+			CardCharge = 0.0f;
+		}
+		if(bIsStaggeredFiring)
+		{
+			CanFire = false;
+			for(int32 i = 0; i <= CardsToFire; i++)
+			{
+				FTimerHandle StaggerFireHandle;
+				GetWorldTimerManager().SetTimer(StaggerFireHandle, this, &ABaseCharacterClass::Shoot, StaggerDelay * i);
+				TempFireDelay += StaggerDelay * i;
+			}
+			GetWorldTimerManager().SetTimer(AutoFireManager, this, &ABaseCharacterClass::FireCooldown, FireDelay);
+		}
+		else
+		{
+			Shoot();
+			CanFire = false;
+			GetWorldTimerManager().SetTimer(AutoFireManager, this, &ABaseCharacterClass::FireCooldown, FireDelay);
+		}
 	}
 }
 
@@ -308,9 +341,12 @@ void ABaseCharacterClass::Reload()
 	if(CanReload && CurrentClip != MaxClip)
 	{
 	CanReload = false;
+	CanFire = false;
+	CurrentClip = 0;
+	//GetWorldTimerManager().SetTimer(ReloadTimeManager, this, &ABaseCharacterClass::ReloadTimerFunction, ReloadDelay);
 	//Starts timer for when weapon restores ammo and re-enables reloading
-	GetWorldTimerManager().SetTimer(ReloadTimeManager, this, &ABaseCharacterClass::ReloadTimerFunction, ReloadDelay);
-	CardDeck->ShuffleDeck();
+	GetWorldTimerManager().SetTimer(ReloadTimeManager, this, &ABaseCharacterClass::ReloadTimerFunction, CardDeck->GetTimeToReload());
+	CardDeck->ReloadCards();
 	}
 }
 
@@ -319,6 +355,7 @@ void ABaseCharacterClass::ReloadTimerFunction()
 {
 	CanReload = true;
 	CurrentClip = MaxClip;
+	CanFire = true;
 }
 
 ///@brief Returns the CardDeck object that the player is using
@@ -395,6 +432,39 @@ void ABaseCharacterClass::GiveEnergy(float EnergyValue)
 	if(CurrentEnergy > MaxEnergy) CurrentEnergy = MaxEnergy;
 }
 
+void ABaseCharacterClass::FireCooldown()
+{
+	if(!GetWorldTimerManager().IsTimerActive(ReloadTimeManager))
+	{
+		CanFire = true;
+	}
+}
+
+void ABaseCharacterClass::Zoom(const FInputActionValue& Value)
+{
+	if(Value.Get<bool>()) 
+	{
+		//CameraComponent->SetFieldOfView(45);
+		//Speed = 5.0f;
+		if(CardCharge >= ChargeForOneCard)
+		{
+			if(CardsCharged < MaxCardsCharged) CardCharge -= ChargeForOneCard;
+			CardsCharged += 1;
+			if(CardsCharged > MaxCardsCharged) CardsCharged = MaxCardsCharged;
+		}
+		CardCharge += CardChargeRate;
+		bIsChargeMode = true;
+	}
+	else
+	{
+		//CameraComponent->SetFieldOfView(90);
+		//Speed = 10.0f;
+		CardCharge = 0;
+		CardsCharged = 0;
+		bIsChargeMode = false;
+	}
+}
+
 /// @brief blueprint pure function to return the remaning health percentage of the player
 /// @return the remaining percentage of health the character is left on 
 float ABaseCharacterClass::GetHealthPercent() const
@@ -430,4 +500,18 @@ int32 ABaseCharacterClass::GetClip() const
 int32 ABaseCharacterClass::GetMaxClip() const
 {
 	return MaxClip;
+}
+int32 ABaseCharacterClass::GetChargedCards()
+{
+	return CardsCharged;
+}
+
+void ABaseCharacterClass::GetCardCharge(float &OutCurrentCharge, float &OutMaxCharge)
+{
+	OutCurrentCharge = CardCharge;
+	OutMaxCharge = ChargeForOneCard;
+}
+void ABaseCharacterClass::IncrementClip()
+{
+	CurrentClip += 1;
 }
