@@ -279,6 +279,7 @@ void ABaseCharacterClass::ShootMultiple()
 		int32 CardsToFire {CardsPerShot};
 		if(bIsChargeMode)
 		{
+			if(CardsCharged < 1) return;
 			CardsToFire = CardsCharged;
 			CardsCharged = 0;
 			CardCharge = 0.0f;
