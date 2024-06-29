@@ -29,6 +29,7 @@ void ACardDeck::BeginPlay()
 	Super::BeginPlay();
 	Player = Cast<ABaseCharacterClass>(UGameplayStatics::GetPlayerPawn(GetWorld(), 0));
 	FullDeck = DrawPile;
+	ShuffleDeck();
 	FString SavePath = FPaths::ProjectSavedDir() / TEXT("CardDeck.sav");
 	SaveDeck(SavePath);
 }
@@ -76,7 +77,15 @@ void ACardDeck::ShuffleDiscard()
 /// @brief Shuffles the deck's current cards
 void ACardDeck::ShuffleDeck()
 {
-
+	int32 NumberOfCards = DrawPile.Num();
+	TArray<TSubclassOf<ABaseCard>> TempDeck;
+	for(int32 i = NumberOfCards - 1; i >= 0; --i)
+	{
+		int32 RandomCardIndex = FMath::RandRange(0,i);
+		TempDeck.Emplace(DrawPile[RandomCardIndex]);
+		DrawPile.RemoveAt(RandomCardIndex);
+	}
+	DrawPile = TempDeck;
 }
 
 /// @brief Launches a projectile card
