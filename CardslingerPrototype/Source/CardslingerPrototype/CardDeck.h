@@ -86,4 +86,11 @@ public:
 	void SaveDeck(const FString& SavePath);
 	UFUNCTION(BlueprintCallable)
 	void LoadDeck(const FString& SavePath);
+
+	UFUNCTION(BlueprintCallable)
+	void AddCard(TSubclassOf<ABaseCard> CardToAdd);
+	UFUNCTION(BlueprintCallable)
+	void RemoveCard(TSubclassOf<ABaseCard> CardToRemove);
+	UFUNCTION(BlueprintCallable)
+	void RemoveCardAtIndex(int32 Index);
 };

@@ -214,3 +214,24 @@ void ACardDeck::LoadDeck(const FString& SavePath)
         UE_LOG(LogTemp, Error, TEXT("Failed to load file."));
     }
 }
+
+	void ACardDeck::AddCard(TSubclassOf<ABaseCard> CardToAdd)
+	{
+		DrawPile.Emplace(CardToAdd);
+	}
+
+	void ACardDeck::RemoveCard(TSubclassOf<ABaseCard> CardToRemove)
+	{
+		if(DrawPile.Contains(CardToRemove))
+		{
+			DrawPile.Remove(CardToRemove);
+		}
+	}
+
+	void ACardDeck::RemoveCardAtIndex(int32 Index)
+	{
+		if(DrawPile.IsValidIndex(Index))
+		{
+			DrawPile.RemoveAt(Index);
+		}
+	}

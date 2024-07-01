@@ -20,6 +20,30 @@ void EmptyLinkFunctionForGeneratedCodeCardDeck() {}
 	ENGINE_API UClass* Z_Construct_UClass_USkeletalMeshComponent_NoRegister();
 	UPackage* Z_Construct_UPackage__Script_CardslingerPrototype();
 // End Cross Module References
+	DEFINE_FUNCTION(ACardDeck::execRemoveCardAtIndex)
+	{
+		P_GET_PROPERTY(FIntProperty,Z_Param_Index);
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->RemoveCardAtIndex(Z_Param_Index);
+		P_NATIVE_END;
+	}
+	DEFINE_FUNCTION(ACardDeck::execRemoveCard)
+	{
+		P_GET_OBJECT(UClass,Z_Param_CardToRemove);
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->RemoveCard(Z_Param_CardToRemove);
+		P_NATIVE_END;
+	}
+	DEFINE_FUNCTION(ACardDeck::execAddCard)
+	{
+		P_GET_OBJECT(UClass,Z_Param_CardToAdd);
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->AddCard(Z_Param_CardToAdd);
+		P_NATIVE_END;
+	}
 	DEFINE_FUNCTION(ACardDeck::execLoadDeck)
 	{
 		P_GET_PROPERTY(FStrProperty,Z_Param_SavePath);
@@ -61,13 +85,50 @@ void EmptyLinkFunctionForGeneratedCodeCardDeck() {}
 	{
 		UClass* Class = ACardDeck::StaticClass();
 		static const FNameNativePtrPair Funcs[] = {
+			{ "AddCard", &ACardDeck::execAddCard },
 			{ "DrawCardNum", &ACardDeck::execDrawCardNum },
 			{ "IsDeckEmpty", &ACardDeck::execIsDeckEmpty },
 			{ "LoadDeck", &ACardDeck::execLoadDeck },
+			{ "RemoveCard", &ACardDeck::execRemoveCard },
+			{ "RemoveCardAtIndex", &ACardDeck::execRemoveCardAtIndex },
 			{ "SaveDeck", &ACardDeck::execSaveDeck },
 			{ "ShuffleDeck", &ACardDeck::execShuffleDeck },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
+	}
+	struct Z_Construct_UFunction_ACardDeck_AddCard_Statics
+	{
+		struct CardDeck_eventAddCard_Parms
+		{
+			TSubclassOf<ABaseCard>  CardToAdd;
+		};
+		static const UECodeGen_Private::FClassPropertyParams NewProp_CardToAdd;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UECodeGen_Private::FClassPropertyParams Z_Construct_UFunction_ACardDeck_AddCard_Statics::NewProp_CardToAdd = { "CardToAdd", nullptr, (EPropertyFlags)0x0014000000000080, UECodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(CardDeck_eventAddCard_Parms, CardToAdd), Z_Construct_UClass_UClass, Z_Construct_UClass_ABaseCard_NoRegister, METADATA_PARAMS(0, nullptr) };
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_ACardDeck_AddCard_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_ACardDeck_AddCard_Statics::NewProp_CardToAdd,
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ACardDeck_AddCard_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "CardDeck.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_ACardDeck_AddCard_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ACardDeck, nullptr, "AddCard", nullptr, nullptr, Z_Construct_UFunction_ACardDeck_AddCard_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_ACardDeck_AddCard_Statics::PropPointers), sizeof(Z_Construct_UFunction_ACardDeck_AddCard_Statics::CardDeck_eventAddCard_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_ACardDeck_AddCard_Statics::Function_MetaDataParams), Z_Construct_UFunction_ACardDeck_AddCard_Statics::Function_MetaDataParams) };
+	static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_ACardDeck_AddCard_Statics::PropPointers) < 2048);
+	static_assert(sizeof(Z_Construct_UFunction_ACardDeck_AddCard_Statics::CardDeck_eventAddCard_Parms) < MAX_uint16);
+	UFunction* Z_Construct_UFunction_ACardDeck_AddCard()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_ACardDeck_AddCard_Statics::FuncParams);
+		}
+		return ReturnFunction;
 	}
 	struct Z_Construct_UFunction_ACardDeck_DrawCardNum_Statics
 	{
@@ -181,6 +242,74 @@ void EmptyLinkFunctionForGeneratedCodeCardDeck() {}
 		if (!ReturnFunction)
 		{
 			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_ACardDeck_LoadDeck_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_ACardDeck_RemoveCard_Statics
+	{
+		struct CardDeck_eventRemoveCard_Parms
+		{
+			TSubclassOf<ABaseCard>  CardToRemove;
+		};
+		static const UECodeGen_Private::FClassPropertyParams NewProp_CardToRemove;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UECodeGen_Private::FClassPropertyParams Z_Construct_UFunction_ACardDeck_RemoveCard_Statics::NewProp_CardToRemove = { "CardToRemove", nullptr, (EPropertyFlags)0x0014000000000080, UECodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(CardDeck_eventRemoveCard_Parms, CardToRemove), Z_Construct_UClass_UClass, Z_Construct_UClass_ABaseCard_NoRegister, METADATA_PARAMS(0, nullptr) };
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_ACardDeck_RemoveCard_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_ACardDeck_RemoveCard_Statics::NewProp_CardToRemove,
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ACardDeck_RemoveCard_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "CardDeck.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_ACardDeck_RemoveCard_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ACardDeck, nullptr, "RemoveCard", nullptr, nullptr, Z_Construct_UFunction_ACardDeck_RemoveCard_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_ACardDeck_RemoveCard_Statics::PropPointers), sizeof(Z_Construct_UFunction_ACardDeck_RemoveCard_Statics::CardDeck_eventRemoveCard_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_ACardDeck_RemoveCard_Statics::Function_MetaDataParams), Z_Construct_UFunction_ACardDeck_RemoveCard_Statics::Function_MetaDataParams) };
+	static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_ACardDeck_RemoveCard_Statics::PropPointers) < 2048);
+	static_assert(sizeof(Z_Construct_UFunction_ACardDeck_RemoveCard_Statics::CardDeck_eventRemoveCard_Parms) < MAX_uint16);
+	UFunction* Z_Construct_UFunction_ACardDeck_RemoveCard()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_ACardDeck_RemoveCard_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_ACardDeck_RemoveCardAtIndex_Statics
+	{
+		struct CardDeck_eventRemoveCardAtIndex_Parms
+		{
+			int32 Index;
+		};
+		static const UECodeGen_Private::FIntPropertyParams NewProp_Index;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UECodeGen_Private::FIntPropertyParams Z_Construct_UFunction_ACardDeck_RemoveCardAtIndex_Statics::NewProp_Index = { "Index", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(CardDeck_eventRemoveCardAtIndex_Parms, Index), METADATA_PARAMS(0, nullptr) };
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_ACardDeck_RemoveCardAtIndex_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_ACardDeck_RemoveCardAtIndex_Statics::NewProp_Index,
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ACardDeck_RemoveCardAtIndex_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "CardDeck.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_ACardDeck_RemoveCardAtIndex_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ACardDeck, nullptr, "RemoveCardAtIndex", nullptr, nullptr, Z_Construct_UFunction_ACardDeck_RemoveCardAtIndex_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_ACardDeck_RemoveCardAtIndex_Statics::PropPointers), sizeof(Z_Construct_UFunction_ACardDeck_RemoveCardAtIndex_Statics::CardDeck_eventRemoveCardAtIndex_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_ACardDeck_RemoveCardAtIndex_Statics::Function_MetaDataParams), Z_Construct_UFunction_ACardDeck_RemoveCardAtIndex_Statics::Function_MetaDataParams) };
+	static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_ACardDeck_RemoveCardAtIndex_Statics::PropPointers) < 2048);
+	static_assert(sizeof(Z_Construct_UFunction_ACardDeck_RemoveCardAtIndex_Statics::CardDeck_eventRemoveCardAtIndex_Parms) < MAX_uint16);
+	UFunction* Z_Construct_UFunction_ACardDeck_RemoveCardAtIndex()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_ACardDeck_RemoveCardAtIndex_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -300,9 +429,12 @@ void EmptyLinkFunctionForGeneratedCodeCardDeck() {}
 	};
 	static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_ACardDeck_Statics::DependentSingletons) < 16);
 	const FClassFunctionLinkInfo Z_Construct_UClass_ACardDeck_Statics::FuncInfo[] = {
+		{ &Z_Construct_UFunction_ACardDeck_AddCard, "AddCard" }, // 4015778193
 		{ &Z_Construct_UFunction_ACardDeck_DrawCardNum, "DrawCardNum" }, // 3267924769
 		{ &Z_Construct_UFunction_ACardDeck_IsDeckEmpty, "IsDeckEmpty" }, // 4039522181
 		{ &Z_Construct_UFunction_ACardDeck_LoadDeck, "LoadDeck" }, // 3449240614
+		{ &Z_Construct_UFunction_ACardDeck_RemoveCard, "RemoveCard" }, // 719272986
+		{ &Z_Construct_UFunction_ACardDeck_RemoveCardAtIndex, "RemoveCardAtIndex" }, // 3486899352
 		{ &Z_Construct_UFunction_ACardDeck_SaveDeck, "SaveDeck" }, // 77588520
 		{ &Z_Construct_UFunction_ACardDeck_ShuffleDeck, "ShuffleDeck" }, // 2171445598
 	};
@@ -414,9 +546,9 @@ void EmptyLinkFunctionForGeneratedCodeCardDeck() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_CardDeck_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_ACardDeck, ACardDeck::StaticClass, TEXT("ACardDeck"), &Z_Registration_Info_UClass_ACardDeck, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ACardDeck), 33746940U) },
+		{ Z_Construct_UClass_ACardDeck, ACardDeck::StaticClass, TEXT("ACardDeck"), &Z_Registration_Info_UClass_ACardDeck, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ACardDeck), 48727986U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_CardDeck_h_1811867106(TEXT("/Script/CardslingerPrototype"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_CardDeck_h_3745532752(TEXT("/Script/CardslingerPrototype"),
 		Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_CardDeck_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_CardDeck_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);

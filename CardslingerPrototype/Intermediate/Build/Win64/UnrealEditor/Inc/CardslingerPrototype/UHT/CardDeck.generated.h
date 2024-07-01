@@ -9,6 +9,7 @@
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
+class ABaseCard;
 #ifdef CARDSLINGERPROTOTYPE_CardDeck_generated_h
 #error "CardDeck.generated.h already included, missing '#pragma once' in CardDeck.h"
 #endif
@@ -19,6 +20,9 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #define FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_CardDeck_h_20_EDITOR_ONLY_SPARSE_DATA_PROPERTY_ACCESSORS
 #define FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_CardDeck_h_20_RPC_WRAPPERS_NO_PURE_DECLS \
  \
+	DECLARE_FUNCTION(execRemoveCardAtIndex); \
+	DECLARE_FUNCTION(execRemoveCard); \
+	DECLARE_FUNCTION(execAddCard); \
 	DECLARE_FUNCTION(execLoadDeck); \
 	DECLARE_FUNCTION(execSaveDeck); \
 	DECLARE_FUNCTION(execDrawCardNum); \
