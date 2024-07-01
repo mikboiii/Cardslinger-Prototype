@@ -271,6 +271,8 @@ void ABaseCharacterClass::Shoot()
 		CardDeck->RemoveCardFromDeck(CurrentClip);
 	}
 }
+
+/// @brief Handles all shooting parameters and calls Shoot() as needed
 void ABaseCharacterClass::ShootMultiple()
 {
 	if(CanFire)
@@ -419,6 +421,9 @@ void ABaseCharacterClass::Heal(bool IsPercentile, float HealingValue)
 	if(Health > MaxHealth) Health = MaxHealth;
 }
 
+/// @brief Increases the player's shield bar by the given value
+/// @param IsPercentile If true, the ShieldValue will be treated as a percentage
+/// @param ShieldValue The amount of shield added to the player
 void ABaseCharacterClass::AddShield(bool IsPercentile, float ShieldValue)
 {
 	if(IsPercentile) CurrentShield += MaxShield * ShieldValue;
@@ -426,12 +431,14 @@ void ABaseCharacterClass::AddShield(bool IsPercentile, float ShieldValue)
 	if(CurrentShield > MaxShield) CurrentShield = MaxShield;
 }
 
+/// @brief Adds the parameter value to the player's current energy
 void ABaseCharacterClass::GiveEnergy(float EnergyValue)
 {
 	CurrentEnergy += EnergyValue;
 	if(CurrentEnergy > MaxEnergy) CurrentEnergy = MaxEnergy;
 }
 
+/// @brief Enables firing standard weapon after cooldown
 void ABaseCharacterClass::FireCooldown()
 {
 	if(!GetWorldTimerManager().IsTimerActive(ReloadTimeManager))
@@ -440,6 +447,8 @@ void ABaseCharacterClass::FireCooldown()
 	}
 }
 
+/// @brief Switches firing mode
+/// @param Value Input bool to check if the button is held
 void ABaseCharacterClass::Zoom(const FInputActionValue& Value)
 {
 	if(Value.Get<bool>()) 
@@ -472,45 +481,65 @@ float ABaseCharacterClass::GetHealthPercent() const
 	return Health/MaxHealth;
 }
 
+/// @brief function to get the player's current health
+/// @return the remaining total health the player has remaining
 float ABaseCharacterClass::GetHealth() const
 {
 	return Health;
 }
 
+/// @brief function to get the player's current energy
+/// @return the remaining total energy the player has remaining
 float ABaseCharacterClass::GetEnergy() const
 {
 	return CurrentEnergy;
 }
 
+/// @brief function to get the player's current shield
+/// @return the remaining total shield the player has remaining
 float ABaseCharacterClass::GetShield() const
 {
 	return CurrentShield;
 }
 
+/// @brief function to return the player's remaining energy as a percentage
+/// @return return the percentile value of energy the player has left (0-1)
 float ABaseCharacterClass::GetEnergyPercent() const
 {
 	return CurrentEnergy/MaxEnergy;
 }
 
+/// @brief function to return the player's current clip
+/// @return the discrete number of cards left in the clip
 int32 ABaseCharacterClass::GetClip() const
 {
 	return CurrentClip;
 }
 
+/// @brief function to return the player's maximum clip
+/// @return the discrete number of the clip size
 int32 ABaseCharacterClass::GetMaxClip() const
 {
 	return MaxClip;
 }
+
+/// @brief function to get the player's total amount of cards charged
+/// @return returns the discrete number of cards the player has spooled
 int32 ABaseCharacterClass::GetChargedCards()
 {
 	return CardsCharged;
 }
 
+/// @brief gets the charge until a new card gets spooled
+/// @param OutCurrentCharge The current charge progress until the next card
+/// @param OutMaxCharge The charge required for the next spooled card
 void ABaseCharacterClass::GetCardCharge(float &OutCurrentCharge, float &OutMaxCharge)
 {
 	OutCurrentCharge = CardCharge;
 	OutMaxCharge = ChargeForOneCard;
 }
+
+/// @brief increases the number of cards in the clip by 1
 void ABaseCharacterClass::IncrementClip()
 {
 	CurrentClip += 1;

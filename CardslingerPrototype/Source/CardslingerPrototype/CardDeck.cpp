@@ -119,17 +119,22 @@ bool ACardDeck::IsDeckEmpty() const
 	return DrawPile.Num() == 0;
 }
 
+/// @brief function to get the number of cards remaining in the draw pile
+/// @return the number of cards remaining
 int32 ACardDeck::DrawCardNum() const
 {
 	return DrawPile.Num();
 }
 
+/// @brief FOR USE ONLY IN THE RELOAD ANIMATION
+/// @param CardIndex the index of the card mesh being removed
 void ACardDeck::RemoveCardFromDeck(int CardIndex)
 {
 	CardMeshArray[CardIndex]->DestroyComponent();
 	CardMeshArray.RemoveAt(CardIndex);
 }
 
+/// @brief Triggers the reload animation
 void ACardDeck::ReloadCards()
 {
 	for(USkeletalMeshComponent* CardMesh : CardMeshArray)
@@ -144,6 +149,7 @@ void ACardDeck::ReloadCards()
 	
 }
 
+/// @brief FOR USE ONLY IN THE RELOAD ANIMATION
 void ACardDeck::SpawnCard()
 {
 	if(Player->GetMaxClip() == CardMeshArray.Num())
@@ -168,11 +174,15 @@ void ACardDeck::SpawnCard()
 	}
 }
 
+/// @brief Calculates the time required to play the reload animation
+/// @return returns the time as a float
 float ACardDeck::GetTimeToReload()
 {
 	return ReloadDelayPerCard * Player->GetMaxClip();
 }
 
+/// @brief Saves the deck to a file
+/// @param SavePathRef the save file path
 void ACardDeck::SaveDeck(const FString& SavePathRef)
 {
     // Create a memory writer
@@ -194,6 +204,8 @@ void ACardDeck::SaveDeck(const FString& SavePathRef)
     }
 }
 
+/// @brief Loads the deck from file
+/// @param SavePathRef the save file path
 void ACardDeck::LoadDeck(const FString& SavePathRef)
 {
     // Load the binary data from the file
@@ -216,54 +228,64 @@ void ACardDeck::LoadDeck(const FString& SavePathRef)
     }
 }
 
-	void ACardDeck::AddCard(TSubclassOf<ABaseCard> CardToAdd, bool bAddToDiscard, bool bIsTemporaryCard)
+/// @brief Adds a card to the player's deck
+/// @param CardToAdd The class of card being added
+/// @param bAddToDiscard if true, card will be added to the discard pile instead
+/// @param bIsTemporaryCard if true, card will be added to the draw pile instead
+void ACardDeck::AddCard(TSubclassOf<ABaseCard> CardToAdd, bool bAddToDiscard, bool bIsTemporaryCard)
+{
+	if(bIsTemporaryCard)
 	{
-		if(bIsTemporaryCard)
+		if(!bAddToDiscard) DrawPile.Emplace(CardToAdd);
+		else DiscardPile.Emplace(CardToAdd);
+	}
+	else
+	{
+		FullDeck.Emplace(CardToAdd);
+		SaveDeck(SavePath);
+	}
+}
+
+/// @brief Removes a single copy of a card from the player's deck
+/// @param CardToRemove The class of card being removed
+/// @param bIsPermanent If true, the card will be removed from the saved deck
+void ACardDeck::RemoveCard(TSubclassOf<ABaseCard> CardToRemove, bool bIsPermanent)
+{
+	if(bIsPermanent)
+	{
+		if(FullDeck.Contains(CardToRemove))
 		{
-			if(!bAddToDiscard) DrawPile.Emplace(CardToAdd);
-			else DiscardPile.Emplace(CardToAdd);
-		}
-		else
-		{
-			FullDeck.Emplace(CardToAdd);
+			FullDeck.Remove(CardToRemove);
 			SaveDeck(SavePath);
 		}
 	}
-
-	void ACardDeck::RemoveCard(TSubclassOf<ABaseCard> CardToRemove, bool bIsPermanent)
+	else
 	{
-		if(bIsPermanent)
+		if(DrawPile.Contains(CardToRemove))
 		{
-			if(FullDeck.Contains(CardToRemove))
-			{
-				FullDeck.Remove(CardToRemove);
-				SaveDeck(SavePath);
-			}
-		}
-		else
-		{
-			if(DrawPile.Contains(CardToRemove))
-			{
-				DrawPile.Remove(CardToRemove);
-			}
+			DrawPile.Remove(CardToRemove);
 		}
 	}
+}
 
-	void ACardDeck::RemoveCardAtIndex(int32 Index, bool bIsPermanent)
+/// @brief Removes a single card at the given index
+/// @param Index the index within the deck which will be removed
+/// @param bIsPermanent if true, the card will be removed from the saved deck
+void ACardDeck::RemoveCardAtIndex(int32 Index, bool bIsPermanent)
+{
+	if(bIsPermanent)
 	{
-		if(bIsPermanent)
+		if(FullDeck.IsValidIndex(Index))
 		{
-			if(FullDeck.IsValidIndex(Index))
-			{
-				FullDeck.RemoveAt(Index);
-				SaveDeck(SavePath);
-			}
-		}
-		else
-		{
-			if(DrawPile.IsValidIndex(Index))
-			{
-				DrawPile.RemoveAt(Index);
-			}
+			FullDeck.RemoveAt(Index);
+			SaveDeck(SavePath);
 		}
 	}
+	else
+	{
+		if(DrawPile.IsValidIndex(Index))
+		{
+			DrawPile.RemoveAt(Index);
+		}
+	}
+}
