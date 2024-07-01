@@ -87,7 +87,7 @@ public:
 	UFUNCTION(BlueprintCallable)
 	void SaveDeck(const FString& SavePath);
 	UFUNCTION(BlueprintCallable)
-	void LoadDeck(const FString& SavePath);
+	TArray<TSubclassOf<ABaseCard>> LoadDeck(const FString& SavePath);
 
 	UFUNCTION(BlueprintCallable)
 	void AddCard(TSubclassOf<ABaseCard> CardToAdd, bool bAddToDiscard, bool bIsTemporaryCard);

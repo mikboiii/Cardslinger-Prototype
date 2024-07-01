@@ -29,7 +29,8 @@ void ACardDeck::BeginPlay()
 	Super::BeginPlay();
 	Player = Cast<ABaseCharacterClass>(UGameplayStatics::GetPlayerPawn(GetWorld(), 0));
 	SavePath = FPaths::ProjectSavedDir() / TEXT("CardDeck.sav");
-	LoadDeck(SavePath);
+	UE_LOG(LogTemp, Display, TEXT("%s"),*SavePath);
+	FullDeck = LoadDeck(SavePath);
 	DrawPile = FullDeck;
 	ShuffleDeck();
 	SaveDeck(SavePath);
@@ -206,10 +207,11 @@ void ACardDeck::SaveDeck(const FString& SavePathRef)
 
 /// @brief Loads the deck from file
 /// @param SavePathRef the save file path
-void ACardDeck::LoadDeck(const FString& SavePathRef)
+TArray<TSubclassOf<ABaseCard>> ACardDeck::LoadDeck(const FString& SavePathRef)
 {
     // Load the binary data from the file
     TArray<uint8> BinaryData;
+	TArray<TSubclassOf<ABaseCard>> LoadedCards;
     if (FFileHelper::LoadFileToArray(BinaryData, *SavePathRef))
     {
         UE_LOG(LogTemp, Log, TEXT("Load successful!"));
@@ -220,12 +222,13 @@ void ACardDeck::LoadDeck(const FString& SavePathRef)
         Archive.ArIsSaveGame = true;
 
         // Deserialize the data into the array
-        Archive << FullDeck;
+        Archive << LoadedCards;
     }
     else
     {
         UE_LOG(LogTemp, Error, TEXT("Failed to load file."));
     }
+	return LoadedCards;
 }
 
 /// @brief Adds a card to the player's deck
