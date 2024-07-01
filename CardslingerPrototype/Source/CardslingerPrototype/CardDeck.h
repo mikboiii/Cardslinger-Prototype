@@ -23,7 +23,7 @@ private:
 	// Sets default values for this actor's properties
 	ACardDeck();
 
-
+	UPROPERTY(EditDefaultsOnly)
 	TArray<TSubclassOf<ABaseCard>> FullDeck;
 
 	UPROPERTY(EditAnywhere)

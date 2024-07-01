@@ -30,7 +30,7 @@ void ACardDeck::BeginPlay()
 	Player = Cast<ABaseCharacterClass>(UGameplayStatics::GetPlayerPawn(GetWorld(), 0));
 	SavePath = FPaths::ProjectSavedDir() / TEXT("CardDeck.sav");
 	LoadDeck(SavePath);
-	FullDeck = DrawPile;
+	DrawPile = FullDeck;
 	ShuffleDeck();
 	SaveDeck(SavePath);
 }
@@ -175,7 +175,6 @@ float ACardDeck::GetTimeToReload()
 
 void ACardDeck::SaveDeck(const FString& SavePathRef)
 {
-	ShuffleDiscard();
     // Create a memory writer
     TArray<uint8> BinaryData;
     FMemoryWriter MemoryWriter(BinaryData, true);
