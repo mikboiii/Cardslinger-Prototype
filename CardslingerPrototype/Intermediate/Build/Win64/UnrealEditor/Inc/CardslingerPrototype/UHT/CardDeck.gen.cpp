@@ -23,25 +23,29 @@ void EmptyLinkFunctionForGeneratedCodeCardDeck() {}
 	DEFINE_FUNCTION(ACardDeck::execRemoveCardAtIndex)
 	{
 		P_GET_PROPERTY(FIntProperty,Z_Param_Index);
+		P_GET_UBOOL(Z_Param_bIsPermanent);
 		P_FINISH;
 		P_NATIVE_BEGIN;
-		P_THIS->RemoveCardAtIndex(Z_Param_Index);
+		P_THIS->RemoveCardAtIndex(Z_Param_Index,Z_Param_bIsPermanent);
 		P_NATIVE_END;
 	}
 	DEFINE_FUNCTION(ACardDeck::execRemoveCard)
 	{
 		P_GET_OBJECT(UClass,Z_Param_CardToRemove);
+		P_GET_UBOOL(Z_Param_bIsPermanent);
 		P_FINISH;
 		P_NATIVE_BEGIN;
-		P_THIS->RemoveCard(Z_Param_CardToRemove);
+		P_THIS->RemoveCard(Z_Param_CardToRemove,Z_Param_bIsPermanent);
 		P_NATIVE_END;
 	}
 	DEFINE_FUNCTION(ACardDeck::execAddCard)
 	{
 		P_GET_OBJECT(UClass,Z_Param_CardToAdd);
+		P_GET_UBOOL(Z_Param_bAddToDiscard);
+		P_GET_UBOOL(Z_Param_bIsTemporaryCard);
 		P_FINISH;
 		P_NATIVE_BEGIN;
-		P_THIS->AddCard(Z_Param_CardToAdd);
+		P_THIS->AddCard(Z_Param_CardToAdd,Z_Param_bAddToDiscard,Z_Param_bIsTemporaryCard);
 		P_NATIVE_END;
 	}
 	DEFINE_FUNCTION(ACardDeck::execLoadDeck)
@@ -101,8 +105,14 @@ void EmptyLinkFunctionForGeneratedCodeCardDeck() {}
 		struct CardDeck_eventAddCard_Parms
 		{
 			TSubclassOf<ABaseCard>  CardToAdd;
+			bool bAddToDiscard;
+			bool bIsTemporaryCard;
 		};
 		static const UECodeGen_Private::FClassPropertyParams NewProp_CardToAdd;
+		static void NewProp_bAddToDiscard_SetBit(void* Obj);
+		static const UECodeGen_Private::FBoolPropertyParams NewProp_bAddToDiscard;
+		static void NewProp_bIsTemporaryCard_SetBit(void* Obj);
+		static const UECodeGen_Private::FBoolPropertyParams NewProp_bIsTemporaryCard;
 		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 #if WITH_METADATA
 		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
@@ -110,8 +120,20 @@ void EmptyLinkFunctionForGeneratedCodeCardDeck() {}
 		static const UECodeGen_Private::FFunctionParams FuncParams;
 	};
 	const UECodeGen_Private::FClassPropertyParams Z_Construct_UFunction_ACardDeck_AddCard_Statics::NewProp_CardToAdd = { "CardToAdd", nullptr, (EPropertyFlags)0x0014000000000080, UECodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(CardDeck_eventAddCard_Parms, CardToAdd), Z_Construct_UClass_UClass, Z_Construct_UClass_ABaseCard_NoRegister, METADATA_PARAMS(0, nullptr) };
+	void Z_Construct_UFunction_ACardDeck_AddCard_Statics::NewProp_bAddToDiscard_SetBit(void* Obj)
+	{
+		((CardDeck_eventAddCard_Parms*)Obj)->bAddToDiscard = 1;
+	}
+	const UECodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_ACardDeck_AddCard_Statics::NewProp_bAddToDiscard = { "bAddToDiscard", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, sizeof(bool), sizeof(CardDeck_eventAddCard_Parms), &Z_Construct_UFunction_ACardDeck_AddCard_Statics::NewProp_bAddToDiscard_SetBit, METADATA_PARAMS(0, nullptr) };
+	void Z_Construct_UFunction_ACardDeck_AddCard_Statics::NewProp_bIsTemporaryCard_SetBit(void* Obj)
+	{
+		((CardDeck_eventAddCard_Parms*)Obj)->bIsTemporaryCard = 1;
+	}
+	const UECodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_ACardDeck_AddCard_Statics::NewProp_bIsTemporaryCard = { "bIsTemporaryCard", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, sizeof(bool), sizeof(CardDeck_eventAddCard_Parms), &Z_Construct_UFunction_ACardDeck_AddCard_Statics::NewProp_bIsTemporaryCard_SetBit, METADATA_PARAMS(0, nullptr) };
 	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_ACardDeck_AddCard_Statics::PropPointers[] = {
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_ACardDeck_AddCard_Statics::NewProp_CardToAdd,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_ACardDeck_AddCard_Statics::NewProp_bAddToDiscard,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_ACardDeck_AddCard_Statics::NewProp_bIsTemporaryCard,
 	};
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ACardDeck_AddCard_Statics::Function_MetaDataParams[] = {
@@ -250,8 +272,11 @@ void EmptyLinkFunctionForGeneratedCodeCardDeck() {}
 		struct CardDeck_eventRemoveCard_Parms
 		{
 			TSubclassOf<ABaseCard>  CardToRemove;
+			bool bIsPermanent;
 		};
 		static const UECodeGen_Private::FClassPropertyParams NewProp_CardToRemove;
+		static void NewProp_bIsPermanent_SetBit(void* Obj);
+		static const UECodeGen_Private::FBoolPropertyParams NewProp_bIsPermanent;
 		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 #if WITH_METADATA
 		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
@@ -259,8 +284,14 @@ void EmptyLinkFunctionForGeneratedCodeCardDeck() {}
 		static const UECodeGen_Private::FFunctionParams FuncParams;
 	};
 	const UECodeGen_Private::FClassPropertyParams Z_Construct_UFunction_ACardDeck_RemoveCard_Statics::NewProp_CardToRemove = { "CardToRemove", nullptr, (EPropertyFlags)0x0014000000000080, UECodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(CardDeck_eventRemoveCard_Parms, CardToRemove), Z_Construct_UClass_UClass, Z_Construct_UClass_ABaseCard_NoRegister, METADATA_PARAMS(0, nullptr) };
+	void Z_Construct_UFunction_ACardDeck_RemoveCard_Statics::NewProp_bIsPermanent_SetBit(void* Obj)
+	{
+		((CardDeck_eventRemoveCard_Parms*)Obj)->bIsPermanent = 1;
+	}
+	const UECodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_ACardDeck_RemoveCard_Statics::NewProp_bIsPermanent = { "bIsPermanent", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, sizeof(bool), sizeof(CardDeck_eventRemoveCard_Parms), &Z_Construct_UFunction_ACardDeck_RemoveCard_Statics::NewProp_bIsPermanent_SetBit, METADATA_PARAMS(0, nullptr) };
 	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_ACardDeck_RemoveCard_Statics::PropPointers[] = {
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_ACardDeck_RemoveCard_Statics::NewProp_CardToRemove,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_ACardDeck_RemoveCard_Statics::NewProp_bIsPermanent,
 	};
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ACardDeck_RemoveCard_Statics::Function_MetaDataParams[] = {
@@ -284,8 +315,11 @@ void EmptyLinkFunctionForGeneratedCodeCardDeck() {}
 		struct CardDeck_eventRemoveCardAtIndex_Parms
 		{
 			int32 Index;
+			bool bIsPermanent;
 		};
 		static const UECodeGen_Private::FIntPropertyParams NewProp_Index;
+		static void NewProp_bIsPermanent_SetBit(void* Obj);
+		static const UECodeGen_Private::FBoolPropertyParams NewProp_bIsPermanent;
 		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 #if WITH_METADATA
 		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
@@ -293,8 +327,14 @@ void EmptyLinkFunctionForGeneratedCodeCardDeck() {}
 		static const UECodeGen_Private::FFunctionParams FuncParams;
 	};
 	const UECodeGen_Private::FIntPropertyParams Z_Construct_UFunction_ACardDeck_RemoveCardAtIndex_Statics::NewProp_Index = { "Index", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(CardDeck_eventRemoveCardAtIndex_Parms, Index), METADATA_PARAMS(0, nullptr) };
+	void Z_Construct_UFunction_ACardDeck_RemoveCardAtIndex_Statics::NewProp_bIsPermanent_SetBit(void* Obj)
+	{
+		((CardDeck_eventRemoveCardAtIndex_Parms*)Obj)->bIsPermanent = 1;
+	}
+	const UECodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_ACardDeck_RemoveCardAtIndex_Statics::NewProp_bIsPermanent = { "bIsPermanent", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, sizeof(bool), sizeof(CardDeck_eventRemoveCardAtIndex_Parms), &Z_Construct_UFunction_ACardDeck_RemoveCardAtIndex_Statics::NewProp_bIsPermanent_SetBit, METADATA_PARAMS(0, nullptr) };
 	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_ACardDeck_RemoveCardAtIndex_Statics::PropPointers[] = {
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_ACardDeck_RemoveCardAtIndex_Statics::NewProp_Index,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_ACardDeck_RemoveCardAtIndex_Statics::NewProp_bIsPermanent,
 	};
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ACardDeck_RemoveCardAtIndex_Statics::Function_MetaDataParams[] = {
@@ -429,12 +469,12 @@ void EmptyLinkFunctionForGeneratedCodeCardDeck() {}
 	};
 	static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_ACardDeck_Statics::DependentSingletons) < 16);
 	const FClassFunctionLinkInfo Z_Construct_UClass_ACardDeck_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_ACardDeck_AddCard, "AddCard" }, // 4015778193
+		{ &Z_Construct_UFunction_ACardDeck_AddCard, "AddCard" }, // 1706490072
 		{ &Z_Construct_UFunction_ACardDeck_DrawCardNum, "DrawCardNum" }, // 3267924769
 		{ &Z_Construct_UFunction_ACardDeck_IsDeckEmpty, "IsDeckEmpty" }, // 4039522181
 		{ &Z_Construct_UFunction_ACardDeck_LoadDeck, "LoadDeck" }, // 3449240614
-		{ &Z_Construct_UFunction_ACardDeck_RemoveCard, "RemoveCard" }, // 719272986
-		{ &Z_Construct_UFunction_ACardDeck_RemoveCardAtIndex, "RemoveCardAtIndex" }, // 3486899352
+		{ &Z_Construct_UFunction_ACardDeck_RemoveCard, "RemoveCard" }, // 3629350694
+		{ &Z_Construct_UFunction_ACardDeck_RemoveCardAtIndex, "RemoveCardAtIndex" }, // 184564122
 		{ &Z_Construct_UFunction_ACardDeck_SaveDeck, "SaveDeck" }, // 77588520
 		{ &Z_Construct_UFunction_ACardDeck_ShuffleDeck, "ShuffleDeck" }, // 2171445598
 	};
@@ -546,9 +586,9 @@ void EmptyLinkFunctionForGeneratedCodeCardDeck() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_CardDeck_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_ACardDeck, ACardDeck::StaticClass, TEXT("ACardDeck"), &Z_Registration_Info_UClass_ACardDeck, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ACardDeck), 48727986U) },
+		{ Z_Construct_UClass_ACardDeck, ACardDeck::StaticClass, TEXT("ACardDeck"), &Z_Registration_Info_UClass_ACardDeck, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ACardDeck), 1317148905U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_CardDeck_h_3745532752(TEXT("/Script/CardslingerPrototype"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_CardDeck_h_1325315144(TEXT("/Script/CardslingerPrototype"),
 		Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_CardDeck_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_CardDeck_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);

@@ -52,6 +52,8 @@ protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 
+	FString SavePath;
+
 	TArray<USkeletalMeshComponent*> CardMeshArray;
 
 	UPROPERTY(EditAnywhere)
@@ -88,9 +90,9 @@ public:
 	void LoadDeck(const FString& SavePath);
 
 	UFUNCTION(BlueprintCallable)
-	void AddCard(TSubclassOf<ABaseCard> CardToAdd);
+	void AddCard(TSubclassOf<ABaseCard> CardToAdd, bool bAddToDiscard, bool bIsTemporaryCard);
 	UFUNCTION(BlueprintCallable)
-	void RemoveCard(TSubclassOf<ABaseCard> CardToRemove);
+	void RemoveCard(TSubclassOf<ABaseCard> CardToRemove, bool bIsPermanent);
 	UFUNCTION(BlueprintCallable)
-	void RemoveCardAtIndex(int32 Index);
+	void RemoveCardAtIndex(int32 Index, bool bIsPermanent);
 };

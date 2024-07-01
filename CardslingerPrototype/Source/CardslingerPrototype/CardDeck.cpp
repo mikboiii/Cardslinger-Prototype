@@ -28,9 +28,10 @@ void ACardDeck::BeginPlay()
 {
 	Super::BeginPlay();
 	Player = Cast<ABaseCharacterClass>(UGameplayStatics::GetPlayerPawn(GetWorld(), 0));
+	SavePath = FPaths::ProjectSavedDir() / TEXT("CardDeck.sav");
+	LoadDeck(SavePath);
 	FullDeck = DrawPile;
 	ShuffleDeck();
-	FString SavePath = FPaths::ProjectSavedDir() / TEXT("CardDeck.sav");
 	SaveDeck(SavePath);
 }
 
@@ -172,8 +173,9 @@ float ACardDeck::GetTimeToReload()
 	return ReloadDelayPerCard * Player->GetMaxClip();
 }
 
-void ACardDeck::SaveDeck(const FString& SavePath)
+void ACardDeck::SaveDeck(const FString& SavePathRef)
 {
+	ShuffleDiscard();
     // Create a memory writer
     TArray<uint8> BinaryData;
     FMemoryWriter MemoryWriter(BinaryData, true);
@@ -183,7 +185,7 @@ void ACardDeck::SaveDeck(const FString& SavePath)
     Archive << FullDeck;
 
     // Write to the file
-    if (FFileHelper::SaveArrayToFile(BinaryData, *SavePath))
+    if (FFileHelper::SaveArrayToFile(BinaryData, *SavePathRef))
     {
         UE_LOG(LogTemp, Log, TEXT("Save successful!"));
     }
@@ -193,11 +195,11 @@ void ACardDeck::SaveDeck(const FString& SavePath)
     }
 }
 
-void ACardDeck::LoadDeck(const FString& SavePath)
+void ACardDeck::LoadDeck(const FString& SavePathRef)
 {
     // Load the binary data from the file
     TArray<uint8> BinaryData;
-    if (FFileHelper::LoadFileToArray(BinaryData, *SavePath))
+    if (FFileHelper::LoadFileToArray(BinaryData, *SavePathRef))
     {
         UE_LOG(LogTemp, Log, TEXT("Load successful!"));
 
@@ -215,23 +217,54 @@ void ACardDeck::LoadDeck(const FString& SavePath)
     }
 }
 
-	void ACardDeck::AddCard(TSubclassOf<ABaseCard> CardToAdd)
+	void ACardDeck::AddCard(TSubclassOf<ABaseCard> CardToAdd, bool bAddToDiscard, bool bIsTemporaryCard)
 	{
-		DrawPile.Emplace(CardToAdd);
-	}
-
-	void ACardDeck::RemoveCard(TSubclassOf<ABaseCard> CardToRemove)
-	{
-		if(DrawPile.Contains(CardToRemove))
+		if(bIsTemporaryCard)
 		{
-			DrawPile.Remove(CardToRemove);
+			if(!bAddToDiscard) DrawPile.Emplace(CardToAdd);
+			else DiscardPile.Emplace(CardToAdd);
+		}
+		else
+		{
+			FullDeck.Emplace(CardToAdd);
+			SaveDeck(SavePath);
 		}
 	}
 
-	void ACardDeck::RemoveCardAtIndex(int32 Index)
+	void ACardDeck::RemoveCard(TSubclassOf<ABaseCard> CardToRemove, bool bIsPermanent)
 	{
-		if(DrawPile.IsValidIndex(Index))
+		if(bIsPermanent)
 		{
-			DrawPile.RemoveAt(Index);
+			if(FullDeck.Contains(CardToRemove))
+			{
+				FullDeck.Remove(CardToRemove);
+				SaveDeck(SavePath);
+			}
+		}
+		else
+		{
+			if(DrawPile.Contains(CardToRemove))
+			{
+				DrawPile.Remove(CardToRemove);
+			}
+		}
+	}
+
+	void ACardDeck::RemoveCardAtIndex(int32 Index, bool bIsPermanent)
+	{
+		if(bIsPermanent)
+		{
+			if(FullDeck.IsValidIndex(Index))
+			{
+				FullDeck.RemoveAt(Index);
+				SaveDeck(SavePath);
+			}
+		}
+		else
+		{
+			if(DrawPile.IsValidIndex(Index))
+			{
+				DrawPile.RemoveAt(Index);
+			}
 		}
 	}
