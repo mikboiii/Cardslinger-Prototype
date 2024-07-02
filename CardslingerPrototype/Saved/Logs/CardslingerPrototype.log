@@ -2363,3 +2363,74 @@ LogConfig: Set CVar [[r.Shadow.DetectVertexShaderLayerAtRuntime:1]]
 [2024.07.02-15.57.55:176][518]LogContentValidation: Display: Validating /Script/UMGEditor.WidgetBlueprint /Game/UI/Cards/WBP_NewCardScreen.WBP_NewCardScreen
 [2024.07.02-15.57.55:388][531]BlueprintLog: New page: Compile WBP_NewCardScreen
 [2024.07.02-15.57.55:433][531]LogUObjectHash: Compacting FUObjectHashTables data took   1.74ms
+[2024.07.02-15.58.50:707][ 78]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.07.02-15.58.50:828][ 78]LogSavePackage: Moving output files for package: /Game/UI/Cards/WBP_NewCardWidget
+[2024.07.02-15.58.50:829][ 78]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/WBP_NewCardWidget0A1F93CB43EA01F9F02698B014016BA8.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/UI/Cards/WBP_NewCardWidget.uasset'
+[2024.07.02-15.58.50:840][ 78]LogFileHelpers: InternalPromptForCheckoutAndSave took 133 ms (total: 4.31 sec)
+[2024.07.02-15.58.50:841][ 78]AssetCheck: New page: Asset Save: WBP_NewCardWidget
+[2024.07.02-15.58.50:841][ 78]LogContentValidation: Display: Validating /Script/UMGEditor.WidgetBlueprint /Game/UI/Cards/WBP_NewCardWidget.WBP_NewCardWidget
+[2024.07.02-15.59.01:214][509]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.07.02-15.59.01:348][509]LogSavePackage: Moving output files for package: /Game/UI/Cards/WBP_NewCardWidget
+[2024.07.02-15.59.01:349][509]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/WBP_NewCardWidget02C78938494BD733D845D3A57A6D56AD.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/UI/Cards/WBP_NewCardWidget.uasset'
+[2024.07.02-15.59.01:359][509]LogFileHelpers: InternalPromptForCheckoutAndSave took 144 ms (total: 4.45 sec)
+[2024.07.02-15.59.01:361][509]AssetCheck: New page: Asset Save: WBP_NewCardWidget
+[2024.07.02-15.59.01:362][509]LogContentValidation: Display: Validating /Script/UMGEditor.WidgetBlueprint /Game/UI/Cards/WBP_NewCardWidget.WBP_NewCardWidget
+[2024.07.02-15.59.19:937][548]LogSlateStyle: Warning: Missing Resource from 'NiagaraEditorStyle' Style: 'Unable to find Color 'NiagaraEditor.AssetColors.DataChannel'.'
+[2024.07.02-15.59.42:529][172]LogSlate: Window 'Pick Parent Class' being destroyed
+[2024.07.02-15.59.42:540][172]LogContentBrowser: Deferred new asset file creation: NewBlueprint
+[2024.07.02-15.59.42:552][172]LogContentBrowser: Creating deferred item: NewBlueprint
+[2024.07.02-15.59.42:573][173]LogContentBrowser: Renaming the item being created (Deferred Item: NewBlueprint).
+[2024.07.02-15.59.48:112][500]LogContentBrowser: Attempting asset rename: NewBlueprint -> BP_AllCards
+[2024.07.02-15.59.48:122][500]LogContentBrowser: End creating deferred item NewBlueprint
+[2024.07.02-15.59.48:720][523]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/Cards/BP_AllCards.BP_AllCards
+[2024.07.02-15.59.48:720][523]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.07.02-15.59.48:720][523]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2024.07.02-15.59.48:927][523]LogViewport: Scene viewport resized to 1070x1010, mode Windowed.
+[2024.07.02-15.59.50:017][582]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.07.02-15.59.50:126][582]LogSavePackage: Moving output files for package: /Game/Cards/BP_AllCards
+[2024.07.02-15.59.50:126][582]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/BP_AllCards1AA1C4814CAFE4F276A6E89577DDD093.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/Cards/BP_AllCards.uasset'
+[2024.07.02-15.59.50:140][582]LogFileHelpers: InternalPromptForCheckoutAndSave took 122 ms (total: 4.57 sec)
+[2024.07.02-15.59.50:141][582]AssetCheck: New page: Asset Save: BP_AllCards
+[2024.07.02-15.59.50:141][582]LogContentValidation: Display: Validating /Script/Engine.Blueprint /Game/Cards/BP_AllCards.BP_AllCards
+[2024.07.02-16.00.09:518][711]LogSlate: Took 0.001086 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-BoldCondensedItalic.ttf' (160K)
+[2024.07.02-16.00.26:177][640]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.07.02-16.00.26:283][640]LogSavePackage: Moving output files for package: /Game/Cards/BP_AllCards
+[2024.07.02-16.00.26:284][640]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/BP_AllCards9A0D1E944A6A74F35F9185AD8BD1DE4A.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/Cards/BP_AllCards.uasset'
+[2024.07.02-16.00.26:294][640]LogFileHelpers: InternalPromptForCheckoutAndSave took 115 ms (total: 4.69 sec)
+[2024.07.02-16.00.26:295][640]AssetCheck: New page: Asset Save: BP_AllCards
+[2024.07.02-16.00.26:295][640]LogContentValidation: Display: Validating /Script/Engine.Blueprint /Game/Cards/BP_AllCards.BP_AllCards
+[2024.07.02-16.00.27:893][736]BlueprintLog: New page: Compile BP_AllCards
+[2024.07.02-16.00.27:936][736]LogUObjectHash: Compacting FUObjectHashTables data took   1.83ms
+[2024.07.02-16.00.36:173][217]BlueprintLog: New page: Compile BP_AllCards
+[2024.07.02-16.00.36:211][217]LogUObjectHash: Compacting FUObjectHashTables data took   1.52ms
+[2024.07.02-16.01.03:280][761]BlueprintLog: New page: Compile BP_AllCards
+[2024.07.02-16.01.03:282][761]LogClass: Warning: Type mismatch in CommonCards of BP_AllCards_C - Previous (ArrayProperty) Current(MapProperty) for package:  FObjectReader
+[2024.07.02-16.01.03:310][761]LogUObjectHash: Compacting FUObjectHashTables data took   1.92ms
+[2024.07.02-16.01.13:758][370]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.07.02-16.01.13:882][370]LogSavePackage: Moving output files for package: /Game/Cards/BP_AllCards
+[2024.07.02-16.01.13:884][370]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/BP_AllCardsFAED377F425868C4398DFE907F9DE2EC.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/Cards/BP_AllCards.uasset'
+[2024.07.02-16.01.13:899][370]LogFileHelpers: InternalPromptForCheckoutAndSave took 140 ms (total: 4.83 sec)
+[2024.07.02-16.01.13:901][370]AssetCheck: New page: Asset Save: BP_AllCards
+[2024.07.02-16.01.13:901][370]LogContentValidation: Display: Validating /Script/Engine.Blueprint /Game/Cards/BP_AllCards.BP_AllCards
+[2024.07.02-16.02.23:445][403]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.07.02-16.02.23:554][403]LogSavePackage: Moving output files for package: /Game/Cards/BP_AllCards
+[2024.07.02-16.02.23:556][403]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/BP_AllCards5C8C4A0A4325FEA1F41867AEAB7863DD.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/Cards/BP_AllCards.uasset'
+[2024.07.02-16.02.23:566][403]LogFileHelpers: InternalPromptForCheckoutAndSave took 121 ms (total: 4.95 sec)
+[2024.07.02-16.02.23:568][403]AssetCheck: New page: Asset Save: BP_AllCards
+[2024.07.02-16.02.23:568][403]LogContentValidation: Display: Validating /Script/Engine.Blueprint /Game/Cards/BP_AllCards.BP_AllCards
+[2024.07.02-16.02.34:160][ 20]LogSlate: Vector cache flush requested. Reason: Large atlases out of space; 2/1 Textures; frames since last flush: 18414092503957590417
+[2024.07.02-16.02.34:160][ 20]LogSlate: Warning: Setting the threshold to trigger a flush to 2 non-atlased textures as there is a lot of font data being cached.
+[2024.07.02-16.02.53:244][116]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.07.02-16.02.53:354][116]LogSavePackage: Moving output files for package: /Game/Cards/BP_AllCards
+[2024.07.02-16.02.53:355][116]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/BP_AllCards7A8D79D1457542E5CD3F119AF13E2A87.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/Cards/BP_AllCards.uasset'
+[2024.07.02-16.02.53:364][116]LogFileHelpers: InternalPromptForCheckoutAndSave took 120 ms (total: 5.07 sec)
+[2024.07.02-16.02.53:366][116]AssetCheck: New page: Asset Save: BP_AllCards
+[2024.07.02-16.02.53:366][116]LogContentValidation: Display: Validating /Script/Engine.Blueprint /Game/Cards/BP_AllCards.BP_AllCards
+[2024.07.02-16.03.00:615][538]BlueprintLog: New page: Compile BP_AllCards
+[2024.07.02-16.03.00:647][538]LogUObjectHash: Compacting FUObjectHashTables data took   2.00ms
+[2024.07.02-16.03.02:834][660]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.07.02-16.03.02:941][660]LogSavePackage: Moving output files for package: /Game/Cards/BP_AllCards
+[2024.07.02-16.03.02:942][660]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/BP_AllCards2B797A214721ED25B54701BCC683BA35.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/Cards/BP_AllCards.uasset'
+[2024.07.02-16.03.02:952][660]LogFileHelpers: InternalPromptForCheckoutAndSave took 118 ms (total: 5.19 sec)
+[2024.07.02-16.03.02:954][660]AssetCheck: New page: Asset Save: BP_AllCards
+[2024.07.02-16.03.02:954][660]LogContentValidation: Display: Validating /Script/Engine.Blueprint /Game/Cards/BP_AllCards.BP_AllCards
