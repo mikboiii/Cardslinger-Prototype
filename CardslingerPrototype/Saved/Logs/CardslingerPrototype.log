@@ -1422,3 +1422,851 @@ LogConfig: Set CVar [[r.Shadow.DetectVertexShaderLayerAtRuntime:1]]
 [2024.07.02-11.22.15:371][276]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=2
 [2024.07.02-11.22.15:393][276]LogUObjectHash: Compacting FUObjectHashTables data took   1.96ms
 [2024.07.02-11.22.15:448][277]LogPlayLevel: Display: Destroying online subsystem :Context_17
+[2024.07.02-11.23.53:429][449]BlueprintLog: New page: Compile WBP_DeckScreen
+[2024.07.02-11.23.53:435][449]LogBlueprint: Warning: [AssetLog] C:\Users\Mikolaj\Documents\Unreal Projects\Cardslinger-Prototype\CardslingerPrototype\Content\UI\WBP_DeckScreen.uasset: [Compiler] Could not find a variable named "UniformGridPanel_25" in 'WBP_DeckScreen_C'.
+Make sure 'WBP_DeckScreen_C' has been compiled for  Get UniformGridPanel_25
+[2024.07.02-11.23.53:436][449]LogBlueprint: Error: [AssetLog] C:\Users\Mikolaj\Documents\Unreal Projects\Cardslinger-Prototype\CardslingerPrototype\Content\UI\WBP_DeckScreen.uasset: [Compiler] The property associated with  Uniform Grid Panel 25  could not be found in '/Game/UI/WBP_DeckScreen.WBP_DeckScreen_C'
+[2024.07.02-11.23.53:467][449]LogUObjectHash: Compacting FUObjectHashTables data took   2.28ms
+[2024.07.02-11.23.54:943][526]LogSlate: Window 'Compiler Results' being destroyed
+[2024.07.02-11.23.54:948][526]LogSlate: Window 'Compiler Results' being destroyed
+[2024.07.02-11.24.01:910][916]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.07.02-11.24.02:061][916]LogSavePackage: Moving output files for package: /Game/UI/WBP_DeckScreen
+[2024.07.02-11.24.02:063][916]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/WBP_DeckScreen597B1A3E4D49940EE4ABDD8802CCD8E9.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/UI/WBP_DeckScreen.uasset'
+[2024.07.02-11.24.02:074][916]LogFileHelpers: InternalPromptForCheckoutAndSave took 163 ms (total: 1.01 sec)
+[2024.07.02-11.24.02:076][916]AssetCheck: New page: Asset Save: WBP_DeckScreen
+[2024.07.02-11.24.02:076][916]LogContentValidation: Display: Validating /Script/UMGEditor.WidgetBlueprint /Game/UI/WBP_DeckScreen.WBP_DeckScreen
+[2024.07.02-11.24.02:675][952]BlueprintLog: New page: Compile WBP_DeckScreen
+[2024.07.02-11.24.02:710][952]LogUObjectHash: Compacting FUObjectHashTables data took   2.39ms
+[2024.07.02-11.24.03:816][  6]LogDebuggerCommands: Repeating last play command: Selected Viewport
+[2024.07.02-11.24.03:837][  6]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2024.07.02-11.24.03:838][  6]PIE: New page: PIE session: EmptyLevel (2 Jul 2024, 13:24:03)
+[2024.07.02-11.24.03:838][  6]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_EmptyLevel
+[2024.07.02-11.24.03:847][  6]LogPlayLevel: PIE: StaticDuplicateObject took: (0.008630s)
+[2024.07.02-11.24.03:847][  6]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/EmptyLevel.EmptyLevel to /Game/UEDPIE_0_EmptyLevel.EmptyLevel (0.008711s)
+[2024.07.02-11.24.03:866][  6]LogUObjectHash: Compacting FUObjectHashTables data took   1.90ms
+[2024.07.02-11.24.03:868][  6]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.07.02-11.24.03:868][  6]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2024.07.02-11.24.03:870][  6]LogAIModule: Creating AISystem for world EmptyLevel
+[2024.07.02-11.24.03:870][  6]LogPlayLevel: PIE: World Init took: (0.002027s)
+[2024.07.02-11.24.03:871][  6]LogAudio: Display: Creating Audio Device:                 Id: 3, Scope: Unique, Realtime: True
+[2024.07.02-11.24.03:871][  6]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2024.07.02-11.24.03:871][  6]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2024.07.02-11.24.03:871][  6]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2024.07.02-11.24.03:871][  6]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2024.07.02-11.24.03:871][  6]LogAudioMixer: Display: 	Number of buffers to queue:			  1
+[2024.07.02-11.24.03:871][  6]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2024.07.02-11.24.03:871][  6]LogAudioMixer: Display: 	Number of Async Source Workers:		  4
+[2024.07.02-11.24.03:871][  6]LogAudio: Display: AudioDevice MaxSources: 32
+[2024.07.02-11.24.03:871][  6]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2024.07.02-11.24.03:871][  6]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2024.07.02-11.24.03:871][  6]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2024.07.02-11.24.03:873][  6]LogAudioMixer: Display: Initializing audio mixer using platform API: 'XAudio2'
+[2024.07.02-11.24.03:954][  6]LogAudioMixer: Display: Using Audio Hardware Device Speakers (Realtek(R) Audio)
+[2024.07.02-11.24.03:954][  6]LogAudioMixer: Display: Initializing Sound Submixes...
+[2024.07.02-11.24.03:954][  6]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2024.07.02-11.24.03:954][  6]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2024.07.02-11.24.03:957][  6]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called. InstanceID=3
+[2024.07.02-11.24.03:957][  6]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048, InstanceID=3
+[2024.07.02-11.24.03:960][  6]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=3
+[2024.07.02-11.24.03:960][  6]LogInit: FAudioDevice initialized with ID 3.
+[2024.07.02-11.24.03:960][  6]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time. InstanceID=3
+[2024.07.02-11.24.03:960][  6]LogAudio: Display: Audio Device (ID: 3) registered with world 'EmptyLevel'.
+[2024.07.02-11.24.03:960][  6]LogAudioMixer: Initializing Audio Bus Subsystem for audio device with ID 3
+[2024.07.02-11.24.03:963][  6]LogLoad: Game class is 'BP_CardslingerTestGameMode_C'
+[2024.07.02-11.24.03:969][  6]LogWorld: Bringing World /Game/UEDPIE_0_EmptyLevel.EmptyLevel up for play (max tick rate 60) at 2024.07.02-12.24.03
+[2024.07.02-11.24.03:970][  6]LogWorld: Bringing up level for play took: 0.007147
+[2024.07.02-11.24.03:974][  6]LogOnline: OSS: Created online subsystem instance for: :Context_18
+[2024.07.02-11.24.03:982][  6]LogTemp: Display: ../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/CardDeck.sav
+[2024.07.02-11.24.03:982][  6]LogTemp: Load successful!
+[2024.07.02-11.24.03:986][  6]LogTemp: Save successful!
+[2024.07.02-11.24.03:988][  6]PIE: Server logged in
+[2024.07.02-11.24.03:990][  6]PIE: Play in editor total start time 0.152 seconds.
+[2024.07.02-11.24.04:806][ 48]LogTemp: Load successful!
+[2024.07.02-11.24.04:806][ 48]LogBlueprintUserMessages: [WBP_DeckScreen_C_0] ../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/CardDeck.sav
+[2024.07.02-11.24.05:732][101]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2024.07.02-11.24.05:732][101]LogWorld: BeginTearingDown for /Game/UEDPIE_0_EmptyLevel
+[2024.07.02-11.24.05:732][101]LogWorld: UWorld::CleanupWorld for EmptyLevel, bSessionEnded=true, bCleanupResources=true
+[2024.07.02-11.24.05:734][101]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.07.02-11.24.05:737][101]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2024.07.02-11.24.05:742][101]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.07.02-11.24.05:761][101]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2024.07.02-11.24.05:761][101]LogAudioMixer: Deinitializing Audio Bus Subsystem for audio device with ID 3
+[2024.07.02-11.24.05:761][101]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=3
+[2024.07.02-11.24.05:764][101]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=3
+[2024.07.02-11.24.05:772][101]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2024.07.02-11.24.05:776][101]LogUObjectHash: Compacting FUObjectHashTables data took   1.92ms
+[2024.07.02-11.24.05:814][102]LogPlayLevel: Display: Destroying online subsystem :Context_18
+[2024.07.02-11.24.44:185][330]BlueprintLog: New page: Compile WBP_DeckScreen
+[2024.07.02-11.24.44:190][330]LogBlueprint: Warning: [AssetLog] C:\Users\Mikolaj\Documents\Unreal Projects\Cardslinger-Prototype\CardslingerPrototype\Content\UI\WBP_DeckScreen.uasset: [Compiler] Could not find a variable named "GridPanel_42" in 'WBP_DeckScreen_C'.
+Make sure 'WBP_DeckScreen_C' has been compiled for  Get GridPanel_42
+[2024.07.02-11.24.44:191][330]LogBlueprint: Error: [AssetLog] C:\Users\Mikolaj\Documents\Unreal Projects\Cardslinger-Prototype\CardslingerPrototype\Content\UI\WBP_DeckScreen.uasset: [Compiler] The property associated with  Grid Panel 42  could not be found in '/Game/UI/WBP_DeckScreen.WBP_DeckScreen_C'
+[2024.07.02-11.24.44:223][330]LogUObjectHash: Compacting FUObjectHashTables data took   2.08ms
+[2024.07.02-11.24.59:220][162]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.07.02-11.24.59:356][162]LogSavePackage: Moving output files for package: /Game/UI/WBP_DeckScreen
+[2024.07.02-11.24.59:357][162]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/WBP_DeckScreenB714F9C447AD1376F0BB85BF913088E4.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/UI/WBP_DeckScreen.uasset'
+[2024.07.02-11.24.59:367][162]LogFileHelpers: InternalPromptForCheckoutAndSave took 146 ms (total: 1.16 sec)
+[2024.07.02-11.24.59:370][162]AssetCheck: New page: Asset Save: WBP_DeckScreen
+[2024.07.02-11.24.59:370][162]LogContentValidation: Display: Validating /Script/UMGEditor.WidgetBlueprint /Game/UI/WBP_DeckScreen.WBP_DeckScreen
+[2024.07.02-11.25.29:966][922]LogSlate: Took 0.007117 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-BoldCondensedItalic.ttf' (160K)
+[2024.07.02-11.28.52:830][134]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.07.02-11.28.52:977][134]LogSavePackage: Moving output files for package: /Game/UI/WBP_DeckScreen
+[2024.07.02-11.28.52:979][134]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/WBP_DeckScreen2C6A96EC425CEF89D94E81BC0CCFE2C0.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/UI/WBP_DeckScreen.uasset'
+[2024.07.02-11.28.52:991][134]LogFileHelpers: InternalPromptForCheckoutAndSave took 161 ms (total: 1.32 sec)
+[2024.07.02-11.28.52:994][134]AssetCheck: New page: Asset Save: WBP_DeckScreen
+[2024.07.02-11.28.52:994][134]LogContentValidation: Display: Validating /Script/UMGEditor.WidgetBlueprint /Game/UI/WBP_DeckScreen.WBP_DeckScreen
+[2024.07.02-11.28.53:795][179]BlueprintLog: New page: Compile WBP_DeckScreen
+[2024.07.02-11.28.53:843][179]LogUObjectHash: Compacting FUObjectHashTables data took   1.84ms
+[2024.07.02-11.28.55:486][266]LogDebuggerCommands: Repeating last play command: Selected Viewport
+[2024.07.02-11.28.55:507][266]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2024.07.02-11.28.55:507][266]PIE: New page: PIE session: EmptyLevel (2 Jul 2024, 13:28:55)
+[2024.07.02-11.28.55:507][266]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_EmptyLevel
+[2024.07.02-11.28.55:514][266]LogPlayLevel: PIE: StaticDuplicateObject took: (0.006613s)
+[2024.07.02-11.28.55:514][266]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/EmptyLevel.EmptyLevel to /Game/UEDPIE_0_EmptyLevel.EmptyLevel (0.006666s)
+[2024.07.02-11.28.55:532][266]LogUObjectHash: Compacting FUObjectHashTables data took   1.77ms
+[2024.07.02-11.28.55:537][266]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.07.02-11.28.55:537][266]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2024.07.02-11.28.55:538][266]LogAIModule: Creating AISystem for world EmptyLevel
+[2024.07.02-11.28.55:538][266]LogPlayLevel: PIE: World Init took: (0.001262s)
+[2024.07.02-11.28.55:538][266]LogAudio: Display: Creating Audio Device:                 Id: 4, Scope: Unique, Realtime: True
+[2024.07.02-11.28.55:538][266]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2024.07.02-11.28.55:538][266]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2024.07.02-11.28.55:538][266]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2024.07.02-11.28.55:538][266]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2024.07.02-11.28.55:538][266]LogAudioMixer: Display: 	Number of buffers to queue:			  1
+[2024.07.02-11.28.55:538][266]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2024.07.02-11.28.55:538][266]LogAudioMixer: Display: 	Number of Async Source Workers:		  4
+[2024.07.02-11.28.55:538][266]LogAudio: Display: AudioDevice MaxSources: 32
+[2024.07.02-11.28.55:538][266]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2024.07.02-11.28.55:538][266]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2024.07.02-11.28.55:538][266]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2024.07.02-11.28.55:540][266]LogAudioMixer: Display: Initializing audio mixer using platform API: 'XAudio2'
+[2024.07.02-11.28.55:600][266]LogAudioMixer: Display: Using Audio Hardware Device Speakers (Realtek(R) Audio)
+[2024.07.02-11.28.55:601][266]LogAudioMixer: Display: Initializing Sound Submixes...
+[2024.07.02-11.28.55:601][266]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2024.07.02-11.28.55:601][266]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2024.07.02-11.28.55:602][266]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called. InstanceID=4
+[2024.07.02-11.28.55:602][266]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048, InstanceID=4
+[2024.07.02-11.28.55:604][266]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=4
+[2024.07.02-11.28.55:604][266]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time. InstanceID=4
+[2024.07.02-11.28.55:604][266]LogInit: FAudioDevice initialized with ID 4.
+[2024.07.02-11.28.55:604][266]LogAudio: Display: Audio Device (ID: 4) registered with world 'EmptyLevel'.
+[2024.07.02-11.28.55:604][266]LogAudioMixer: Initializing Audio Bus Subsystem for audio device with ID 4
+[2024.07.02-11.28.55:607][266]LogLoad: Game class is 'BP_CardslingerTestGameMode_C'
+[2024.07.02-11.28.55:613][266]LogWorld: Bringing World /Game/UEDPIE_0_EmptyLevel.EmptyLevel up for play (max tick rate 60) at 2024.07.02-12.28.55
+[2024.07.02-11.28.55:615][266]LogWorld: Bringing up level for play took: 0.007665
+[2024.07.02-11.28.55:618][266]LogOnline: OSS: Created online subsystem instance for: :Context_19
+[2024.07.02-11.28.55:628][266]LogTemp: Display: ../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/CardDeck.sav
+[2024.07.02-11.28.55:628][266]LogTemp: Load successful!
+[2024.07.02-11.28.55:632][266]LogTemp: Save successful!
+[2024.07.02-11.28.55:634][266]PIE: Server logged in
+[2024.07.02-11.28.55:635][266]PIE: Play in editor total start time 0.129 seconds.
+[2024.07.02-11.28.56:480][310]LogTemp: Load successful!
+[2024.07.02-11.28.56:480][310]LogBlueprintUserMessages: [WBP_DeckScreen_C_0] ../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/CardDeck.sav
+[2024.07.02-11.28.59:149][465]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2024.07.02-11.28.59:149][465]LogWorld: BeginTearingDown for /Game/UEDPIE_0_EmptyLevel
+[2024.07.02-11.28.59:149][465]LogWorld: UWorld::CleanupWorld for EmptyLevel, bSessionEnded=true, bCleanupResources=true
+[2024.07.02-11.28.59:151][465]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.07.02-11.28.59:154][465]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2024.07.02-11.28.59:161][465]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.07.02-11.28.59:180][465]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2024.07.02-11.28.59:181][465]LogAudioMixer: Deinitializing Audio Bus Subsystem for audio device with ID 4
+[2024.07.02-11.28.59:181][465]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=4
+[2024.07.02-11.28.59:183][465]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=4
+[2024.07.02-11.28.59:197][465]LogUObjectHash: Compacting FUObjectHashTables data took   1.74ms
+[2024.07.02-11.28.59:239][466]LogPlayLevel: Display: Destroying online subsystem :Context_19
+[2024.07.02-11.29.25:149][919]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.07.02-11.29.25:286][919]LogSavePackage: Moving output files for package: /Game/UI/WBP_DeckScreen
+[2024.07.02-11.29.25:287][919]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/WBP_DeckScreen8FA1D886474068C6013B1A857148EFD1.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/UI/WBP_DeckScreen.uasset'
+[2024.07.02-11.29.25:300][919]LogFileHelpers: InternalPromptForCheckoutAndSave took 151 ms (total: 1.47 sec)
+[2024.07.02-11.29.25:302][919]AssetCheck: New page: Asset Save: WBP_DeckScreen
+[2024.07.02-11.29.25:302][919]LogContentValidation: Display: Validating /Script/UMGEditor.WidgetBlueprint /Game/UI/WBP_DeckScreen.WBP_DeckScreen
+[2024.07.02-11.29.25:971][956]BlueprintLog: New page: Compile WBP_DeckScreen
+[2024.07.02-11.29.26:018][956]LogUObjectHash: Compacting FUObjectHashTables data took   1.67ms
+[2024.07.02-11.29.38:937][684]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.07.02-11.29.39:066][684]LogSavePackage: Moving output files for package: /Game/UI/WBP_DeckScreen
+[2024.07.02-11.29.39:068][684]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/WBP_DeckScreenBE7DBC3445DB4B6B214505A74F539488.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/UI/WBP_DeckScreen.uasset'
+[2024.07.02-11.29.39:078][684]LogFileHelpers: InternalPromptForCheckoutAndSave took 140 ms (total: 1.61 sec)
+[2024.07.02-11.29.39:080][684]AssetCheck: New page: Asset Save: WBP_DeckScreen
+[2024.07.02-11.29.39:080][684]LogContentValidation: Display: Validating /Script/UMGEditor.WidgetBlueprint /Game/UI/WBP_DeckScreen.WBP_DeckScreen
+[2024.07.02-11.29.43:709][948]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.07.02-11.29.43:837][948]LogSavePackage: Moving output files for package: /Game/UI/WBP_DeckScreen
+[2024.07.02-11.29.43:837][948]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/WBP_DeckScreenB144FBC14FDF3A29AA4EBDB02DEAF19D.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/UI/WBP_DeckScreen.uasset'
+[2024.07.02-11.29.43:851][948]LogFileHelpers: InternalPromptForCheckoutAndSave took 142 ms (total: 1.75 sec)
+[2024.07.02-11.29.43:853][948]AssetCheck: New page: Asset Save: WBP_DeckScreen
+[2024.07.02-11.29.43:854][948]LogContentValidation: Display: Validating /Script/UMGEditor.WidgetBlueprint /Game/UI/WBP_DeckScreen.WBP_DeckScreen
+[2024.07.02-11.29.44:770][  1]BlueprintLog: New page: Compile WBP_DeckScreen
+[2024.07.02-11.29.44:807][  1]LogUObjectHash: Compacting FUObjectHashTables data took   1.68ms
+[2024.07.02-11.29.54:253][528]LogDebuggerCommands: Repeating last play command: Selected Viewport
+[2024.07.02-11.29.54:273][528]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2024.07.02-11.29.54:273][528]PIE: New page: PIE session: EmptyLevel (2 Jul 2024, 13:29:54)
+[2024.07.02-11.29.54:273][528]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_EmptyLevel
+[2024.07.02-11.29.54:280][528]LogPlayLevel: PIE: StaticDuplicateObject took: (0.006775s)
+[2024.07.02-11.29.54:280][528]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/EmptyLevel.EmptyLevel to /Game/UEDPIE_0_EmptyLevel.EmptyLevel (0.006827s)
+[2024.07.02-11.29.54:299][528]LogUObjectHash: Compacting FUObjectHashTables data took   2.09ms
+[2024.07.02-11.29.54:302][528]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.07.02-11.29.54:302][528]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2024.07.02-11.29.54:302][528]LogAIModule: Creating AISystem for world EmptyLevel
+[2024.07.02-11.29.54:304][528]LogPlayLevel: PIE: World Init took: (0.001190s)
+[2024.07.02-11.29.54:304][528]LogAudio: Display: Creating Audio Device:                 Id: 5, Scope: Unique, Realtime: True
+[2024.07.02-11.29.54:304][528]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2024.07.02-11.29.54:304][528]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2024.07.02-11.29.54:304][528]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2024.07.02-11.29.54:304][528]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2024.07.02-11.29.54:304][528]LogAudioMixer: Display: 	Number of buffers to queue:			  1
+[2024.07.02-11.29.54:304][528]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2024.07.02-11.29.54:304][528]LogAudioMixer: Display: 	Number of Async Source Workers:		  4
+[2024.07.02-11.29.54:304][528]LogAudio: Display: AudioDevice MaxSources: 32
+[2024.07.02-11.29.54:304][528]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2024.07.02-11.29.54:304][528]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2024.07.02-11.29.54:304][528]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2024.07.02-11.29.54:306][528]LogAudioMixer: Display: Initializing audio mixer using platform API: 'XAudio2'
+[2024.07.02-11.29.54:367][528]LogAudioMixer: Display: Using Audio Hardware Device Speakers (Realtek(R) Audio)
+[2024.07.02-11.29.54:367][528]LogAudioMixer: Display: Initializing Sound Submixes...
+[2024.07.02-11.29.54:367][528]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2024.07.02-11.29.54:367][528]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2024.07.02-11.29.54:367][528]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called. InstanceID=5
+[2024.07.02-11.29.54:369][528]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048, InstanceID=5
+[2024.07.02-11.29.54:371][528]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=5
+[2024.07.02-11.29.54:371][528]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time. InstanceID=5
+[2024.07.02-11.29.54:371][528]LogInit: FAudioDevice initialized with ID 5.
+[2024.07.02-11.29.54:371][528]LogAudio: Display: Audio Device (ID: 5) registered with world 'EmptyLevel'.
+[2024.07.02-11.29.54:371][528]LogAudioMixer: Initializing Audio Bus Subsystem for audio device with ID 5
+[2024.07.02-11.29.54:373][528]LogLoad: Game class is 'BP_CardslingerTestGameMode_C'
+[2024.07.02-11.29.54:379][528]LogWorld: Bringing World /Game/UEDPIE_0_EmptyLevel.EmptyLevel up for play (max tick rate 60) at 2024.07.02-12.29.54
+[2024.07.02-11.29.54:381][528]LogWorld: Bringing up level for play took: 0.007159
+[2024.07.02-11.29.54:384][528]LogOnline: OSS: Created online subsystem instance for: :Context_20
+[2024.07.02-11.29.54:394][528]LogTemp: Display: ../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/CardDeck.sav
+[2024.07.02-11.29.54:394][528]LogTemp: Load successful!
+[2024.07.02-11.29.54:397][528]LogTemp: Save successful!
+[2024.07.02-11.29.54:401][528]PIE: Server logged in
+[2024.07.02-11.29.54:401][528]PIE: Play in editor total start time 0.129 seconds.
+[2024.07.02-11.29.55:254][569]LogTemp: Load successful!
+[2024.07.02-11.29.55:254][569]LogBlueprintUserMessages: [WBP_DeckScreen_C_0] ../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/CardDeck.sav
+[2024.07.02-11.29.59:220][800]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2024.07.02-11.29.59:220][800]LogWorld: BeginTearingDown for /Game/UEDPIE_0_EmptyLevel
+[2024.07.02-11.29.59:221][800]LogWorld: UWorld::CleanupWorld for EmptyLevel, bSessionEnded=true, bCleanupResources=true
+[2024.07.02-11.29.59:222][800]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.07.02-11.29.59:227][800]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2024.07.02-11.29.59:232][800]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.07.02-11.29.59:249][800]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2024.07.02-11.29.59:249][800]LogAudioMixer: Deinitializing Audio Bus Subsystem for audio device with ID 5
+[2024.07.02-11.29.59:250][800]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=5
+[2024.07.02-11.29.59:252][800]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=5
+[2024.07.02-11.29.59:259][800]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2024.07.02-11.29.59:264][800]LogUObjectHash: Compacting FUObjectHashTables data took   1.71ms
+[2024.07.02-11.29.59:317][801]LogPlayLevel: Display: Destroying online subsystem :Context_20
+[2024.07.02-11.30.01:100][899]LogDebuggerCommands: Repeating last play command: Selected Viewport
+[2024.07.02-11.30.01:127][899]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2024.07.02-11.30.01:127][899]PIE: New page: PIE session: EmptyLevel (2 Jul 2024, 13:30:01)
+[2024.07.02-11.30.01:127][899]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_EmptyLevel
+[2024.07.02-11.30.01:134][899]LogPlayLevel: PIE: StaticDuplicateObject took: (0.007503s)
+[2024.07.02-11.30.01:134][899]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/EmptyLevel.EmptyLevel to /Game/UEDPIE_0_EmptyLevel.EmptyLevel (0.007566s)
+[2024.07.02-11.30.01:153][899]LogUObjectHash: Compacting FUObjectHashTables data took   1.91ms
+[2024.07.02-11.30.01:155][899]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.07.02-11.30.01:155][899]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2024.07.02-11.30.01:156][899]LogAIModule: Creating AISystem for world EmptyLevel
+[2024.07.02-11.30.01:156][899]LogPlayLevel: PIE: World Init took: (0.001191s)
+[2024.07.02-11.30.01:156][899]LogAudio: Display: Creating Audio Device:                 Id: 6, Scope: Unique, Realtime: True
+[2024.07.02-11.30.01:156][899]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2024.07.02-11.30.01:156][899]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2024.07.02-11.30.01:156][899]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2024.07.02-11.30.01:156][899]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2024.07.02-11.30.01:156][899]LogAudioMixer: Display: 	Number of buffers to queue:			  1
+[2024.07.02-11.30.01:156][899]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2024.07.02-11.30.01:156][899]LogAudioMixer: Display: 	Number of Async Source Workers:		  4
+[2024.07.02-11.30.01:156][899]LogAudio: Display: AudioDevice MaxSources: 32
+[2024.07.02-11.30.01:156][899]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2024.07.02-11.30.01:157][899]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2024.07.02-11.30.01:157][899]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2024.07.02-11.30.01:159][899]LogAudioMixer: Display: Initializing audio mixer using platform API: 'XAudio2'
+[2024.07.02-11.30.01:226][899]LogAudioMixer: Display: Using Audio Hardware Device Speakers (Realtek(R) Audio)
+[2024.07.02-11.30.01:227][899]LogAudioMixer: Display: Initializing Sound Submixes...
+[2024.07.02-11.30.01:227][899]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2024.07.02-11.30.01:227][899]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2024.07.02-11.30.01:228][899]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called. InstanceID=6
+[2024.07.02-11.30.01:228][899]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048, InstanceID=6
+[2024.07.02-11.30.01:230][899]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=6
+[2024.07.02-11.30.01:230][899]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time. InstanceID=6
+[2024.07.02-11.30.01:230][899]LogInit: FAudioDevice initialized with ID 6.
+[2024.07.02-11.30.01:230][899]LogAudio: Display: Audio Device (ID: 6) registered with world 'EmptyLevel'.
+[2024.07.02-11.30.01:230][899]LogAudioMixer: Initializing Audio Bus Subsystem for audio device with ID 6
+[2024.07.02-11.30.01:233][899]LogLoad: Game class is 'BP_CardslingerTestGameMode_C'
+[2024.07.02-11.30.01:239][899]LogWorld: Bringing World /Game/UEDPIE_0_EmptyLevel.EmptyLevel up for play (max tick rate 60) at 2024.07.02-12.30.01
+[2024.07.02-11.30.01:240][899]LogWorld: Bringing up level for play took: 0.006868
+[2024.07.02-11.30.01:243][899]LogOnline: OSS: Created online subsystem instance for: :Context_21
+[2024.07.02-11.30.01:253][899]LogTemp: Display: ../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/CardDeck.sav
+[2024.07.02-11.30.01:253][899]LogTemp: Load successful!
+[2024.07.02-11.30.01:258][899]LogTemp: Save successful!
+[2024.07.02-11.30.01:260][899]PIE: Server logged in
+[2024.07.02-11.30.01:261][899]PIE: Play in editor total start time 0.134 seconds.
+[2024.07.02-11.30.02:102][939]LogTemp: Load successful!
+[2024.07.02-11.30.02:102][939]LogBlueprintUserMessages: [WBP_DeckScreen_C_0] ../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/CardDeck.sav
+[2024.07.02-11.30.04:711][ 78]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2024.07.02-11.30.04:711][ 78]LogWorld: BeginTearingDown for /Game/UEDPIE_0_EmptyLevel
+[2024.07.02-11.30.04:711][ 78]LogWorld: UWorld::CleanupWorld for EmptyLevel, bSessionEnded=true, bCleanupResources=true
+[2024.07.02-11.30.04:712][ 78]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.07.02-11.30.04:715][ 78]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2024.07.02-11.30.04:721][ 78]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.07.02-11.30.04:737][ 78]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2024.07.02-11.30.04:737][ 78]LogAudioMixer: Deinitializing Audio Bus Subsystem for audio device with ID 6
+[2024.07.02-11.30.04:737][ 78]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=6
+[2024.07.02-11.30.04:740][ 78]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=6
+[2024.07.02-11.30.04:754][ 78]LogUObjectHash: Compacting FUObjectHashTables data took   1.55ms
+[2024.07.02-11.30.04:796][ 79]LogPlayLevel: Display: Destroying online subsystem :Context_21
+[2024.07.02-11.31.15:163][126]LogWorld: UWorld::CleanupWorld for World_4, bSessionEnded=true, bCleanupResources=true
+[2024.07.02-11.31.15:163][126]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.07.02-11.31.15:186][126]LogWorld: UWorld::CleanupWorld for World_3, bSessionEnded=true, bCleanupResources=true
+[2024.07.02-11.31.15:186][126]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.07.02-11.31.16:101][169]LogDebuggerCommands: Repeating last play command: Selected Viewport
+[2024.07.02-11.31.16:122][169]BlueprintLog: New page: Pre-Play auto-recompile
+[2024.07.02-11.31.16:127][169]LogPlayLevel: [PlayLevel] Compiling WBP_DeckScreen before play...
+[2024.07.02-11.31.16:178][169]LogUObjectHash: Compacting FUObjectHashTables data took   2.08ms
+[2024.07.02-11.31.16:182][169]LogPlayLevel: PlayLevel: Blueprint regeneration took 60 ms (1 blueprints)
+[2024.07.02-11.31.16:182][169]PIE: New page: PIE session: EmptyLevel (2 Jul 2024, 13:31:16)
+[2024.07.02-11.31.16:183][169]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_EmptyLevel
+[2024.07.02-11.31.16:190][169]LogPlayLevel: PIE: StaticDuplicateObject took: (0.007122s)
+[2024.07.02-11.31.16:190][169]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/EmptyLevel.EmptyLevel to /Game/UEDPIE_0_EmptyLevel.EmptyLevel (0.007180s)
+[2024.07.02-11.31.16:207][169]LogUObjectHash: Compacting FUObjectHashTables data took   1.45ms
+[2024.07.02-11.31.16:208][169]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.07.02-11.31.16:209][169]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2024.07.02-11.31.16:209][169]LogAIModule: Creating AISystem for world EmptyLevel
+[2024.07.02-11.31.16:210][169]LogPlayLevel: PIE: World Init took: (0.001284s)
+[2024.07.02-11.31.16:210][169]LogAudio: Display: Creating Audio Device:                 Id: 7, Scope: Unique, Realtime: True
+[2024.07.02-11.31.16:210][169]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2024.07.02-11.31.16:210][169]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2024.07.02-11.31.16:210][169]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2024.07.02-11.31.16:210][169]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2024.07.02-11.31.16:210][169]LogAudioMixer: Display: 	Number of buffers to queue:			  1
+[2024.07.02-11.31.16:210][169]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2024.07.02-11.31.16:210][169]LogAudioMixer: Display: 	Number of Async Source Workers:		  4
+[2024.07.02-11.31.16:210][169]LogAudio: Display: AudioDevice MaxSources: 32
+[2024.07.02-11.31.16:210][169]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2024.07.02-11.31.16:210][169]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2024.07.02-11.31.16:210][169]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2024.07.02-11.31.16:213][169]LogAudioMixer: Display: Initializing audio mixer using platform API: 'XAudio2'
+[2024.07.02-11.31.16:278][169]LogAudioMixer: Display: Using Audio Hardware Device Speakers (Realtek(R) Audio)
+[2024.07.02-11.31.16:278][169]LogAudioMixer: Display: Initializing Sound Submixes...
+[2024.07.02-11.31.16:278][169]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2024.07.02-11.31.16:278][169]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2024.07.02-11.31.16:279][169]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called. InstanceID=7
+[2024.07.02-11.31.16:279][169]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048, InstanceID=7
+[2024.07.02-11.31.16:281][169]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=7
+[2024.07.02-11.31.16:281][169]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time. InstanceID=7
+[2024.07.02-11.31.16:281][169]LogInit: FAudioDevice initialized with ID 7.
+[2024.07.02-11.31.16:281][169]LogAudio: Display: Audio Device (ID: 7) registered with world 'EmptyLevel'.
+[2024.07.02-11.31.16:281][169]LogAudioMixer: Initializing Audio Bus Subsystem for audio device with ID 7
+[2024.07.02-11.31.16:284][169]LogLoad: Game class is 'BP_CardslingerTestGameMode_C'
+[2024.07.02-11.31.16:291][169]LogWorld: Bringing World /Game/UEDPIE_0_EmptyLevel.EmptyLevel up for play (max tick rate 60) at 2024.07.02-12.31.16
+[2024.07.02-11.31.16:293][169]LogWorld: Bringing up level for play took: 0.008633
+[2024.07.02-11.31.16:296][169]LogOnline: OSS: Created online subsystem instance for: :Context_22
+[2024.07.02-11.31.16:307][169]LogTemp: Display: ../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/CardDeck.sav
+[2024.07.02-11.31.16:307][169]LogTemp: Load successful!
+[2024.07.02-11.31.16:311][169]LogTemp: Save successful!
+[2024.07.02-11.31.16:313][169]PIE: Server logged in
+[2024.07.02-11.31.16:314][169]PIE: Play in editor total start time 0.192 seconds.
+[2024.07.02-11.31.17:089][206]LogTemp: Load successful!
+[2024.07.02-11.31.17:091][206]LogBlueprintUserMessages: [WBP_DeckScreen_C_0] ../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/CardDeck.sav
+[2024.07.02-11.31.20:093][381]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2024.07.02-11.31.20:093][381]LogWorld: BeginTearingDown for /Game/UEDPIE_0_EmptyLevel
+[2024.07.02-11.31.20:093][381]LogWorld: UWorld::CleanupWorld for EmptyLevel, bSessionEnded=true, bCleanupResources=true
+[2024.07.02-11.31.20:094][381]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.07.02-11.31.20:098][381]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2024.07.02-11.31.20:106][381]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.07.02-11.31.20:122][381]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2024.07.02-11.31.20:123][381]LogAudioMixer: Deinitializing Audio Bus Subsystem for audio device with ID 7
+[2024.07.02-11.31.20:123][381]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=7
+[2024.07.02-11.31.20:126][381]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=7
+[2024.07.02-11.31.20:138][381]LogUObjectHash: Compacting FUObjectHashTables data took   1.50ms
+[2024.07.02-11.31.20:190][382]LogPlayLevel: Display: Destroying online subsystem :Context_22
+[2024.07.02-11.31.22:694][508]LogAssetEditorSubsystem: Opening Asset editor for WidgetBlueprint /Game/UI/WBP_DeckScreen.WBP_DeckScreen
+[2024.07.02-11.31.22:694][508]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.07.02-11.31.22:694][508]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2024.07.02-11.31.22:714][508]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.07.02-11.31.22:714][508]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2024.07.02-11.31.26:932][739]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.07.02-11.31.27:067][739]LogSavePackage: Moving output files for package: /Game/UI/WBP_DeckScreen
+[2024.07.02-11.31.27:068][739]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/WBP_DeckScreen90F46E424AB0B2CEB068388FDC6DBCC6.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/UI/WBP_DeckScreen.uasset'
+[2024.07.02-11.31.27:080][739]LogFileHelpers: InternalPromptForCheckoutAndSave took 148 ms (total: 1.90 sec)
+[2024.07.02-11.31.27:082][739]AssetCheck: New page: Asset Save: WBP_DeckScreen
+[2024.07.02-11.31.27:082][739]LogContentValidation: Display: Validating /Script/UMGEditor.WidgetBlueprint /Game/UI/WBP_DeckScreen.WBP_DeckScreen
+[2024.07.02-11.31.46:438][869]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.07.02-11.31.46:583][869]LogSavePackage: Moving output files for package: /Game/UI/WBP_DeckScreen
+[2024.07.02-11.31.46:584][869]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/WBP_DeckScreen74FF2FAE4AEDDA7073EE72B5C73F9DF1.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/UI/WBP_DeckScreen.uasset'
+[2024.07.02-11.31.46:595][869]LogFileHelpers: InternalPromptForCheckoutAndSave took 158 ms (total: 2.06 sec)
+[2024.07.02-11.31.46:598][869]AssetCheck: New page: Asset Save: WBP_DeckScreen
+[2024.07.02-11.31.46:598][869]LogContentValidation: Display: Validating /Script/UMGEditor.WidgetBlueprint /Game/UI/WBP_DeckScreen.WBP_DeckScreen
+[2024.07.02-11.31.50:967][128]BlueprintLog: New page: Compile WBP_DeckScreen
+[2024.07.02-11.31.51:007][128]LogUObjectHash: Compacting FUObjectHashTables data took   2.27ms
+[2024.07.02-11.31.52:130][184]LogDebuggerCommands: Repeating last play command: Selected Viewport
+[2024.07.02-11.31.52:154][184]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2024.07.02-11.31.52:154][184]PIE: New page: PIE session: EmptyLevel (2 Jul 2024, 13:31:52)
+[2024.07.02-11.31.52:155][184]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_EmptyLevel
+[2024.07.02-11.31.52:162][184]LogPlayLevel: PIE: StaticDuplicateObject took: (0.007169s)
+[2024.07.02-11.31.52:162][184]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/EmptyLevel.EmptyLevel to /Game/UEDPIE_0_EmptyLevel.EmptyLevel (0.007228s)
+[2024.07.02-11.31.52:179][184]LogUObjectHash: Compacting FUObjectHashTables data took   2.14ms
+[2024.07.02-11.31.52:184][184]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.07.02-11.31.52:184][184]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2024.07.02-11.31.52:184][184]LogAIModule: Creating AISystem for world EmptyLevel
+[2024.07.02-11.31.52:184][184]LogPlayLevel: PIE: World Init took: (0.001340s)
+[2024.07.02-11.31.52:184][184]LogAudio: Display: Creating Audio Device:                 Id: 8, Scope: Unique, Realtime: True
+[2024.07.02-11.31.52:184][184]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2024.07.02-11.31.52:184][184]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2024.07.02-11.31.52:184][184]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2024.07.02-11.31.52:185][184]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2024.07.02-11.31.52:185][184]LogAudioMixer: Display: 	Number of buffers to queue:			  1
+[2024.07.02-11.31.52:185][184]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2024.07.02-11.31.52:185][184]LogAudioMixer: Display: 	Number of Async Source Workers:		  4
+[2024.07.02-11.31.52:185][184]LogAudio: Display: AudioDevice MaxSources: 32
+[2024.07.02-11.31.52:185][184]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2024.07.02-11.31.52:185][184]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2024.07.02-11.31.52:185][184]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2024.07.02-11.31.52:188][184]LogAudioMixer: Display: Initializing audio mixer using platform API: 'XAudio2'
+[2024.07.02-11.31.52:248][184]LogAudioMixer: Display: Using Audio Hardware Device Speakers (Realtek(R) Audio)
+[2024.07.02-11.31.52:248][184]LogAudioMixer: Display: Initializing Sound Submixes...
+[2024.07.02-11.31.52:248][184]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2024.07.02-11.31.52:248][184]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2024.07.02-11.31.52:250][184]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called. InstanceID=8
+[2024.07.02-11.31.52:250][184]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048, InstanceID=8
+[2024.07.02-11.31.52:251][184]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=8
+[2024.07.02-11.31.52:252][184]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time. InstanceID=8
+[2024.07.02-11.31.52:252][184]LogInit: FAudioDevice initialized with ID 8.
+[2024.07.02-11.31.52:252][184]LogAudio: Display: Audio Device (ID: 8) registered with world 'EmptyLevel'.
+[2024.07.02-11.31.52:252][184]LogAudioMixer: Initializing Audio Bus Subsystem for audio device with ID 8
+[2024.07.02-11.31.52:254][184]LogLoad: Game class is 'BP_CardslingerTestGameMode_C'
+[2024.07.02-11.31.52:260][184]LogWorld: Bringing World /Game/UEDPIE_0_EmptyLevel.EmptyLevel up for play (max tick rate 60) at 2024.07.02-12.31.52
+[2024.07.02-11.31.52:262][184]LogWorld: Bringing up level for play took: 0.007393
+[2024.07.02-11.31.52:265][184]LogOnline: OSS: Created online subsystem instance for: :Context_25
+[2024.07.02-11.31.52:277][184]LogTemp: Display: ../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/CardDeck.sav
+[2024.07.02-11.31.52:277][184]LogTemp: Load successful!
+[2024.07.02-11.31.52:281][184]LogTemp: Save successful!
+[2024.07.02-11.31.52:284][184]PIE: Server logged in
+[2024.07.02-11.31.52:285][184]PIE: Play in editor total start time 0.131 seconds.
+[2024.07.02-11.31.53:128][226]LogTemp: Load successful!
+[2024.07.02-11.31.53:128][226]LogBlueprintUserMessages: [WBP_DeckScreen_C_0] ../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/CardDeck.sav
+[2024.07.02-11.31.54:744][320]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2024.07.02-11.31.54:744][320]LogWorld: BeginTearingDown for /Game/UEDPIE_0_EmptyLevel
+[2024.07.02-11.31.54:744][320]LogWorld: UWorld::CleanupWorld for EmptyLevel, bSessionEnded=true, bCleanupResources=true
+[2024.07.02-11.31.54:745][320]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.07.02-11.31.54:749][320]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2024.07.02-11.31.54:754][320]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.07.02-11.31.54:771][320]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2024.07.02-11.31.54:772][320]LogAudioMixer: Deinitializing Audio Bus Subsystem for audio device with ID 8
+[2024.07.02-11.31.54:772][320]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=8
+[2024.07.02-11.31.54:774][320]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=8
+[2024.07.02-11.31.54:788][320]LogUObjectHash: Compacting FUObjectHashTables data took   1.63ms
+[2024.07.02-11.31.54:839][321]LogPlayLevel: Display: Destroying online subsystem :Context_25
+[2024.07.02-11.32.12:636][374]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.07.02-11.32.12:776][374]LogSavePackage: Moving output files for package: /Game/UI/WBP_DeckScreen
+[2024.07.02-11.32.12:778][374]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/WBP_DeckScreenDA6395054B3EAFFB6BDC55A2E3350205.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/UI/WBP_DeckScreen.uasset'
+[2024.07.02-11.32.12:790][374]LogFileHelpers: InternalPromptForCheckoutAndSave took 152 ms (total: 2.21 sec)
+[2024.07.02-11.32.12:791][374]AssetCheck: New page: Asset Save: WBP_DeckScreen
+[2024.07.02-11.32.12:791][374]LogContentValidation: Display: Validating /Script/UMGEditor.WidgetBlueprint /Game/UI/WBP_DeckScreen.WBP_DeckScreen
+[2024.07.02-11.32.13:209][396]BlueprintLog: New page: Compile WBP_DeckScreen
+[2024.07.02-11.32.13:247][396]LogUObjectHash: Compacting FUObjectHashTables data took   2.15ms
+[2024.07.02-11.32.14:369][448]LogDebuggerCommands: Repeating last play command: Selected Viewport
+[2024.07.02-11.32.14:383][448]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2024.07.02-11.32.14:383][448]PIE: New page: PIE session: EmptyLevel (2 Jul 2024, 13:32:14)
+[2024.07.02-11.32.14:384][448]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_EmptyLevel
+[2024.07.02-11.32.14:390][448]LogPlayLevel: PIE: StaticDuplicateObject took: (0.006299s)
+[2024.07.02-11.32.14:390][448]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/EmptyLevel.EmptyLevel to /Game/UEDPIE_0_EmptyLevel.EmptyLevel (0.006354s)
+[2024.07.02-11.32.14:408][448]LogUObjectHash: Compacting FUObjectHashTables data took   1.74ms
+[2024.07.02-11.32.14:411][448]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.07.02-11.32.14:411][448]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2024.07.02-11.32.14:411][448]LogAIModule: Creating AISystem for world EmptyLevel
+[2024.07.02-11.32.14:412][448]LogPlayLevel: PIE: World Init took: (0.001370s)
+[2024.07.02-11.32.14:412][448]LogAudio: Display: Creating Audio Device:                 Id: 9, Scope: Unique, Realtime: True
+[2024.07.02-11.32.14:412][448]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2024.07.02-11.32.14:412][448]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2024.07.02-11.32.14:412][448]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2024.07.02-11.32.14:412][448]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2024.07.02-11.32.14:412][448]LogAudioMixer: Display: 	Number of buffers to queue:			  1
+[2024.07.02-11.32.14:412][448]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2024.07.02-11.32.14:412][448]LogAudioMixer: Display: 	Number of Async Source Workers:		  4
+[2024.07.02-11.32.14:412][448]LogAudio: Display: AudioDevice MaxSources: 32
+[2024.07.02-11.32.14:412][448]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2024.07.02-11.32.14:412][448]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2024.07.02-11.32.14:412][448]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2024.07.02-11.32.14:415][448]LogAudioMixer: Display: Initializing audio mixer using platform API: 'XAudio2'
+[2024.07.02-11.32.14:474][448]LogAudioMixer: Display: Using Audio Hardware Device Speakers (Realtek(R) Audio)
+[2024.07.02-11.32.14:474][448]LogAudioMixer: Display: Initializing Sound Submixes...
+[2024.07.02-11.32.14:474][448]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2024.07.02-11.32.14:474][448]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2024.07.02-11.32.14:476][448]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called. InstanceID=9
+[2024.07.02-11.32.14:476][448]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048, InstanceID=9
+[2024.07.02-11.32.14:478][448]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=9
+[2024.07.02-11.32.14:478][448]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time. InstanceID=9
+[2024.07.02-11.32.14:478][448]LogInit: FAudioDevice initialized with ID 9.
+[2024.07.02-11.32.14:478][448]LogAudio: Display: Audio Device (ID: 9) registered with world 'EmptyLevel'.
+[2024.07.02-11.32.14:478][448]LogAudioMixer: Initializing Audio Bus Subsystem for audio device with ID 9
+[2024.07.02-11.32.14:481][448]LogLoad: Game class is 'BP_CardslingerTestGameMode_C'
+[2024.07.02-11.32.14:487][448]LogWorld: Bringing World /Game/UEDPIE_0_EmptyLevel.EmptyLevel up for play (max tick rate 60) at 2024.07.02-12.32.14
+[2024.07.02-11.32.14:488][448]LogWorld: Bringing up level for play took: 0.007412
+[2024.07.02-11.32.14:491][448]LogOnline: OSS: Created online subsystem instance for: :Context_26
+[2024.07.02-11.32.14:503][448]LogTemp: Display: ../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/CardDeck.sav
+[2024.07.02-11.32.14:503][448]LogTemp: Load successful!
+[2024.07.02-11.32.14:508][448]LogTemp: Save successful!
+[2024.07.02-11.32.14:510][448]PIE: Server logged in
+[2024.07.02-11.32.14:511][448]PIE: Play in editor total start time 0.127 seconds.
+[2024.07.02-11.32.15:363][491]LogTemp: Load successful!
+[2024.07.02-11.32.15:363][491]LogBlueprintUserMessages: [WBP_DeckScreen_C_0] ../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/CardDeck.sav
+[2024.07.02-11.32.22:924][937]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2024.07.02-11.32.22:924][937]LogWorld: BeginTearingDown for /Game/UEDPIE_0_EmptyLevel
+[2024.07.02-11.32.22:925][937]LogWorld: UWorld::CleanupWorld for EmptyLevel, bSessionEnded=true, bCleanupResources=true
+[2024.07.02-11.32.22:926][937]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.07.02-11.32.22:929][937]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2024.07.02-11.32.22:935][937]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.07.02-11.32.22:959][937]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2024.07.02-11.32.22:959][937]LogAudioMixer: Deinitializing Audio Bus Subsystem for audio device with ID 9
+[2024.07.02-11.32.22:959][937]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=9
+[2024.07.02-11.32.22:962][937]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=9
+[2024.07.02-11.32.22:968][937]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2024.07.02-11.32.22:975][937]LogUObjectHash: Compacting FUObjectHashTables data took   1.75ms
+[2024.07.02-11.32.23:029][938]LogPlayLevel: Display: Destroying online subsystem :Context_26
+[2024.07.02-11.32.28:769][259]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.07.02-11.32.28:906][259]LogSavePackage: Moving output files for package: /Game/UI/WBP_DeckScreen
+[2024.07.02-11.32.28:907][259]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/WBP_DeckScreen4D468E9C41EB9E6795BF4AAD06904B0E.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/UI/WBP_DeckScreen.uasset'
+[2024.07.02-11.32.28:918][259]LogFileHelpers: InternalPromptForCheckoutAndSave took 149 ms (total: 2.36 sec)
+[2024.07.02-11.32.28:922][259]AssetCheck: New page: Asset Save: WBP_DeckScreen
+[2024.07.02-11.32.28:922][259]LogContentValidation: Display: Validating /Script/UMGEditor.WidgetBlueprint /Game/UI/WBP_DeckScreen.WBP_DeckScreen
+[2024.07.02-11.32.29:621][299]BlueprintLog: New page: Compile WBP_DeckScreen
+[2024.07.02-11.32.29:667][299]LogUObjectHash: Compacting FUObjectHashTables data took   1.60ms
+[2024.07.02-11.32.31:244][379]LogDebuggerCommands: Repeating last play command: Selected Viewport
+[2024.07.02-11.32.31:265][379]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2024.07.02-11.32.31:265][379]PIE: New page: PIE session: EmptyLevel (2 Jul 2024, 13:32:31)
+[2024.07.02-11.32.31:265][379]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_EmptyLevel
+[2024.07.02-11.32.31:271][379]LogPlayLevel: PIE: StaticDuplicateObject took: (0.006343s)
+[2024.07.02-11.32.31:271][379]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/EmptyLevel.EmptyLevel to /Game/UEDPIE_0_EmptyLevel.EmptyLevel (0.006391s)
+[2024.07.02-11.32.31:289][379]LogUObjectHash: Compacting FUObjectHashTables data took   1.84ms
+[2024.07.02-11.32.31:293][379]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.07.02-11.32.31:293][379]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2024.07.02-11.32.31:293][379]LogAIModule: Creating AISystem for world EmptyLevel
+[2024.07.02-11.32.31:293][379]LogPlayLevel: PIE: World Init took: (0.001265s)
+[2024.07.02-11.32.31:293][379]LogAudio: Display: Creating Audio Device:                 Id: 10, Scope: Unique, Realtime: True
+[2024.07.02-11.32.31:293][379]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2024.07.02-11.32.31:293][379]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2024.07.02-11.32.31:293][379]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2024.07.02-11.32.31:293][379]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2024.07.02-11.32.31:293][379]LogAudioMixer: Display: 	Number of buffers to queue:			  1
+[2024.07.02-11.32.31:293][379]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2024.07.02-11.32.31:294][379]LogAudioMixer: Display: 	Number of Async Source Workers:		  4
+[2024.07.02-11.32.31:294][379]LogAudio: Display: AudioDevice MaxSources: 32
+[2024.07.02-11.32.31:294][379]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2024.07.02-11.32.31:294][379]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2024.07.02-11.32.31:294][379]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2024.07.02-11.32.31:296][379]LogAudioMixer: Display: Initializing audio mixer using platform API: 'XAudio2'
+[2024.07.02-11.32.31:357][379]LogAudioMixer: Display: Using Audio Hardware Device Speakers (Realtek(R) Audio)
+[2024.07.02-11.32.31:357][379]LogAudioMixer: Display: Initializing Sound Submixes...
+[2024.07.02-11.32.31:357][379]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2024.07.02-11.32.31:357][379]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2024.07.02-11.32.31:358][379]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called. InstanceID=10
+[2024.07.02-11.32.31:358][379]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048, InstanceID=10
+[2024.07.02-11.32.31:360][379]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=10
+[2024.07.02-11.32.31:360][379]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time. InstanceID=10
+[2024.07.02-11.32.31:360][379]LogInit: FAudioDevice initialized with ID 10.
+[2024.07.02-11.32.31:360][379]LogAudio: Display: Audio Device (ID: 10) registered with world 'EmptyLevel'.
+[2024.07.02-11.32.31:360][379]LogAudioMixer: Initializing Audio Bus Subsystem for audio device with ID 10
+[2024.07.02-11.32.31:363][379]LogLoad: Game class is 'BP_CardslingerTestGameMode_C'
+[2024.07.02-11.32.31:369][379]LogWorld: Bringing World /Game/UEDPIE_0_EmptyLevel.EmptyLevel up for play (max tick rate 60) at 2024.07.02-12.32.31
+[2024.07.02-11.32.31:371][379]LogWorld: Bringing up level for play took: 0.007136
+[2024.07.02-11.32.31:373][379]LogOnline: OSS: Created online subsystem instance for: :Context_27
+[2024.07.02-11.32.31:385][379]LogTemp: Display: ../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/CardDeck.sav
+[2024.07.02-11.32.31:385][379]LogTemp: Load successful!
+[2024.07.02-11.32.31:389][379]LogTemp: Save successful!
+[2024.07.02-11.32.31:392][379]PIE: Server logged in
+[2024.07.02-11.32.31:392][379]PIE: Play in editor total start time 0.127 seconds.
+[2024.07.02-11.32.32:230][422]LogTemp: Load successful!
+[2024.07.02-11.32.32:231][422]LogBlueprintUserMessages: [WBP_DeckScreen_C_0] ../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/CardDeck.sav
+[2024.07.02-11.32.50:155][486]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2024.07.02-11.32.50:155][486]LogWorld: BeginTearingDown for /Game/UEDPIE_0_EmptyLevel
+[2024.07.02-11.32.50:155][486]LogWorld: UWorld::CleanupWorld for EmptyLevel, bSessionEnded=true, bCleanupResources=true
+[2024.07.02-11.32.50:156][486]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.07.02-11.32.50:160][486]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2024.07.02-11.32.50:165][486]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.07.02-11.32.50:182][486]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2024.07.02-11.32.50:182][486]LogAudioMixer: Deinitializing Audio Bus Subsystem for audio device with ID 10
+[2024.07.02-11.32.50:182][486]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=10
+[2024.07.02-11.32.50:184][486]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=10
+[2024.07.02-11.32.50:200][486]LogUObjectHash: Compacting FUObjectHashTables data took   1.95ms
+[2024.07.02-11.32.50:245][487]LogPlayLevel: Display: Destroying online subsystem :Context_27
+[2024.07.02-11.32.56:132][776]LogAssetEditorSubsystem: Opening Asset editor for WidgetBlueprint /Game/UI/Cards/WBP_ExplosiveCard.WBP_ExplosiveCard
+[2024.07.02-11.32.56:133][776]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.07.02-11.32.56:133][776]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2024.07.02-11.32.56:150][776]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.07.02-11.32.56:150][776]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2024.07.02-11.33.07:698][448]LogEditorTransaction: Undo Set Vector Property
+[2024.07.02-11.33.08:499][470]Cmd: TRANSACTION UNDO
+[2024.07.02-11.33.08:499][470]LogEditorTransaction: Undo Set Vector Property
+[2024.07.02-11.33.22:956][318]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.07.02-11.33.23:075][318]LogSavePackage: Moving output files for package: /Game/UI/Cards/WBP_ExplosiveCard
+[2024.07.02-11.33.23:076][318]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/WBP_ExplosiveCard8F1449D8410E16E4D0A3888FD121D531.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/UI/Cards/WBP_ExplosiveCard.uasset'
+[2024.07.02-11.33.23:087][318]LogFileHelpers: InternalPromptForCheckoutAndSave took 130 ms (total: 2.49 sec)
+[2024.07.02-11.33.23:089][318]AssetCheck: New page: Asset Save: WBP_ExplosiveCard
+[2024.07.02-11.33.23:089][318]LogContentValidation: Display: Validating /Script/UMGEditor.WidgetBlueprint /Game/UI/Cards/WBP_ExplosiveCard.WBP_ExplosiveCard
+[2024.07.02-11.33.23:767][359]BlueprintLog: New page: Compile WBP_ExplosiveCard
+[2024.07.02-11.33.23:804][359]LogUObjectHash: Compacting FUObjectHashTables data took   2.14ms
+[2024.07.02-11.33.26:998][541]LogDebuggerCommands: Repeating last play command: Selected Viewport
+[2024.07.02-11.33.27:016][541]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2024.07.02-11.33.27:017][541]PIE: New page: PIE session: EmptyLevel (2 Jul 2024, 13:33:27)
+[2024.07.02-11.33.27:017][541]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_EmptyLevel
+[2024.07.02-11.33.27:026][541]LogPlayLevel: PIE: StaticDuplicateObject took: (0.009344s)
+[2024.07.02-11.33.27:026][541]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/EmptyLevel.EmptyLevel to /Game/UEDPIE_0_EmptyLevel.EmptyLevel (0.009403s)
+[2024.07.02-11.33.27:051][541]LogUObjectHash: Compacting FUObjectHashTables data took   1.75ms
+[2024.07.02-11.33.27:056][541]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.07.02-11.33.27:056][541]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2024.07.02-11.33.27:056][541]LogAIModule: Creating AISystem for world EmptyLevel
+[2024.07.02-11.33.27:057][541]LogPlayLevel: PIE: World Init took: (0.001319s)
+[2024.07.02-11.33.27:057][541]LogAudio: Display: Creating Audio Device:                 Id: 11, Scope: Unique, Realtime: True
+[2024.07.02-11.33.27:057][541]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2024.07.02-11.33.27:057][541]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2024.07.02-11.33.27:057][541]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2024.07.02-11.33.27:057][541]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2024.07.02-11.33.27:057][541]LogAudioMixer: Display: 	Number of buffers to queue:			  1
+[2024.07.02-11.33.27:057][541]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2024.07.02-11.33.27:057][541]LogAudioMixer: Display: 	Number of Async Source Workers:		  4
+[2024.07.02-11.33.27:057][541]LogAudio: Display: AudioDevice MaxSources: 32
+[2024.07.02-11.33.27:058][541]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2024.07.02-11.33.27:058][541]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2024.07.02-11.33.27:058][541]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2024.07.02-11.33.27:060][541]LogAudioMixer: Display: Initializing audio mixer using platform API: 'XAudio2'
+[2024.07.02-11.33.27:117][541]LogAudioMixer: Display: Using Audio Hardware Device Speakers (Realtek(R) Audio)
+[2024.07.02-11.33.27:118][541]LogAudioMixer: Display: Initializing Sound Submixes...
+[2024.07.02-11.33.27:118][541]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2024.07.02-11.33.27:118][541]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2024.07.02-11.33.27:119][541]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called. InstanceID=11
+[2024.07.02-11.33.27:119][541]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048, InstanceID=11
+[2024.07.02-11.33.27:122][541]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=11
+[2024.07.02-11.33.27:122][541]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time. InstanceID=11
+[2024.07.02-11.33.27:122][541]LogInit: FAudioDevice initialized with ID 11.
+[2024.07.02-11.33.27:122][541]LogAudio: Display: Audio Device (ID: 11) registered with world 'EmptyLevel'.
+[2024.07.02-11.33.27:122][541]LogAudioMixer: Initializing Audio Bus Subsystem for audio device with ID 11
+[2024.07.02-11.33.27:126][541]LogLoad: Game class is 'BP_CardslingerTestGameMode_C'
+[2024.07.02-11.33.27:132][541]LogWorld: Bringing World /Game/UEDPIE_0_EmptyLevel.EmptyLevel up for play (max tick rate 60) at 2024.07.02-12.33.27
+[2024.07.02-11.33.27:133][541]LogWorld: Bringing up level for play took: 0.006869
+[2024.07.02-11.33.27:136][541]LogOnline: OSS: Created online subsystem instance for: :Context_30
+[2024.07.02-11.33.27:147][541]LogTemp: Display: ../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/CardDeck.sav
+[2024.07.02-11.33.27:147][541]LogTemp: Load successful!
+[2024.07.02-11.33.27:151][541]LogTemp: Save successful!
+[2024.07.02-11.33.27:153][541]PIE: Server logged in
+[2024.07.02-11.33.27:154][541]PIE: Play in editor total start time 0.137 seconds.
+[2024.07.02-11.33.27:986][554]LogTemp: Load successful!
+[2024.07.02-11.33.27:986][554]LogBlueprintUserMessages: [WBP_DeckScreen_C_0] ../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/CardDeck.sav
+[2024.07.02-11.33.31:156][741]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2024.07.02-11.33.31:156][741]LogWorld: BeginTearingDown for /Game/UEDPIE_0_EmptyLevel
+[2024.07.02-11.33.31:157][741]LogWorld: UWorld::CleanupWorld for EmptyLevel, bSessionEnded=true, bCleanupResources=true
+[2024.07.02-11.33.31:158][741]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.07.02-11.33.31:162][741]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2024.07.02-11.33.31:168][741]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.07.02-11.33.31:188][741]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2024.07.02-11.33.31:188][741]LogAudioMixer: Deinitializing Audio Bus Subsystem for audio device with ID 11
+[2024.07.02-11.33.31:189][741]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=11
+[2024.07.02-11.33.31:191][741]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=11
+[2024.07.02-11.33.31:204][741]LogUObjectHash: Compacting FUObjectHashTables data took   1.60ms
+[2024.07.02-11.33.31:257][742]LogPlayLevel: Display: Destroying online subsystem :Context_30
+[2024.07.02-11.33.49:983][843]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.07.02-11.33.50:105][843]LogSavePackage: Moving output files for package: /Game/UI/Cards/WBP_ExplosiveCard
+[2024.07.02-11.33.50:107][843]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/WBP_ExplosiveCard0E27F46241C3366FFC5289B504563FD9.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/UI/Cards/WBP_ExplosiveCard.uasset'
+[2024.07.02-11.33.50:118][843]LogFileHelpers: InternalPromptForCheckoutAndSave took 134 ms (total: 2.63 sec)
+[2024.07.02-11.33.50:119][843]AssetCheck: New page: Asset Save: WBP_ExplosiveCard
+[2024.07.02-11.33.50:119][843]LogContentValidation: Display: Validating /Script/UMGEditor.WidgetBlueprint /Game/UI/Cards/WBP_ExplosiveCard.WBP_ExplosiveCard
+[2024.07.02-11.33.52:359][973]BlueprintLog: New page: Compile WBP_ExplosiveCard
+[2024.07.02-11.33.52:390][973]LogUObjectHash: Compacting FUObjectHashTables data took   2.14ms
+[2024.07.02-11.35.04:638][585]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.07.02-11.35.04:792][585]LogSavePackage: Moving output files for package: /Game/UI/WBP_DeckScreen
+[2024.07.02-11.35.04:793][585]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/WBP_DeckScreen0F84D91B4C54AB2070401299DF799F26.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/UI/WBP_DeckScreen.uasset'
+[2024.07.02-11.35.04:816][585]LogFileHelpers: InternalPromptForCheckoutAndSave took 178 ms (total: 2.81 sec)
+[2024.07.02-11.35.04:818][585]AssetCheck: New page: Asset Save: WBP_DeckScreen
+[2024.07.02-11.35.04:818][585]LogContentValidation: Display: Validating /Script/UMGEditor.WidgetBlueprint /Game/UI/WBP_DeckScreen.WBP_DeckScreen
+[2024.07.02-11.35.08:935][818]BlueprintLog: New page: Compile WBP_DeckScreen
+[2024.07.02-11.35.08:991][818]LogUObjectHash: Compacting FUObjectHashTables data took   1.57ms
+[2024.07.02-11.35.20:721][478]BlueprintLog: New page: Compile WBP_DeckScreen
+[2024.07.02-11.35.20:778][478]LogUObjectHash: Compacting FUObjectHashTables data took   2.31ms
+[2024.07.02-11.35.21:439][500]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.07.02-11.35.21:578][500]LogSavePackage: Moving output files for package: /Game/UI/WBP_DeckScreen
+[2024.07.02-11.35.21:579][500]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/WBP_DeckScreenC6D1DF42456212A948EA26A1096B24CE.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/UI/WBP_DeckScreen.uasset'
+[2024.07.02-11.35.21:591][500]LogFileHelpers: InternalPromptForCheckoutAndSave took 152 ms (total: 2.96 sec)
+[2024.07.02-11.35.21:593][500]AssetCheck: New page: Asset Save: WBP_DeckScreen
+[2024.07.02-11.35.21:593][500]LogContentValidation: Display: Validating /Script/UMGEditor.WidgetBlueprint /Game/UI/WBP_DeckScreen.WBP_DeckScreen
+[2024.07.02-11.35.23:978][634]LogDebuggerCommands: Repeating last play command: Selected Viewport
+[2024.07.02-11.35.23:998][634]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2024.07.02-11.35.23:998][634]PIE: New page: PIE session: EmptyLevel (2 Jul 2024, 13:35:23)
+[2024.07.02-11.35.23:998][634]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_EmptyLevel
+[2024.07.02-11.35.24:005][634]LogPlayLevel: PIE: StaticDuplicateObject took: (0.006610s)
+[2024.07.02-11.35.24:005][634]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/EmptyLevel.EmptyLevel to /Game/UEDPIE_0_EmptyLevel.EmptyLevel (0.006667s)
+[2024.07.02-11.35.24:023][634]LogUObjectHash: Compacting FUObjectHashTables data took   1.80ms
+[2024.07.02-11.35.24:025][634]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.07.02-11.35.24:025][634]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2024.07.02-11.35.24:025][634]LogAIModule: Creating AISystem for world EmptyLevel
+[2024.07.02-11.35.24:027][634]LogPlayLevel: PIE: World Init took: (0.001138s)
+[2024.07.02-11.35.24:027][634]LogAudio: Display: Creating Audio Device:                 Id: 12, Scope: Unique, Realtime: True
+[2024.07.02-11.35.24:027][634]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2024.07.02-11.35.24:027][634]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2024.07.02-11.35.24:027][634]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2024.07.02-11.35.24:027][634]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2024.07.02-11.35.24:027][634]LogAudioMixer: Display: 	Number of buffers to queue:			  1
+[2024.07.02-11.35.24:027][634]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2024.07.02-11.35.24:027][634]LogAudioMixer: Display: 	Number of Async Source Workers:		  4
+[2024.07.02-11.35.24:027][634]LogAudio: Display: AudioDevice MaxSources: 32
+[2024.07.02-11.35.24:027][634]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2024.07.02-11.35.24:027][634]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2024.07.02-11.35.24:027][634]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2024.07.02-11.35.24:030][634]LogAudioMixer: Display: Initializing audio mixer using platform API: 'XAudio2'
+[2024.07.02-11.35.24:091][634]LogAudioMixer: Display: Using Audio Hardware Device Speakers (Realtek(R) Audio)
+[2024.07.02-11.35.24:091][634]LogAudioMixer: Display: Initializing Sound Submixes...
+[2024.07.02-11.35.24:091][634]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2024.07.02-11.35.24:091][634]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2024.07.02-11.35.24:092][634]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called. InstanceID=12
+[2024.07.02-11.35.24:092][634]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048, InstanceID=12
+[2024.07.02-11.35.24:095][634]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=12
+[2024.07.02-11.35.24:095][634]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time. InstanceID=12
+[2024.07.02-11.35.24:095][634]LogInit: FAudioDevice initialized with ID 12.
+[2024.07.02-11.35.24:095][634]LogAudio: Display: Audio Device (ID: 12) registered with world 'EmptyLevel'.
+[2024.07.02-11.35.24:095][634]LogAudioMixer: Initializing Audio Bus Subsystem for audio device with ID 12
+[2024.07.02-11.35.24:099][634]LogLoad: Game class is 'BP_CardslingerTestGameMode_C'
+[2024.07.02-11.35.24:106][634]LogWorld: Bringing World /Game/UEDPIE_0_EmptyLevel.EmptyLevel up for play (max tick rate 60) at 2024.07.02-12.35.24
+[2024.07.02-11.35.24:107][634]LogWorld: Bringing up level for play took: 0.007684
+[2024.07.02-11.35.24:110][634]LogOnline: OSS: Created online subsystem instance for: :Context_31
+[2024.07.02-11.35.24:121][634]LogTemp: Display: ../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/CardDeck.sav
+[2024.07.02-11.35.24:121][634]LogTemp: Load successful!
+[2024.07.02-11.35.24:125][634]LogTemp: Save successful!
+[2024.07.02-11.35.24:128][634]PIE: Server logged in
+[2024.07.02-11.35.24:129][634]PIE: Play in editor total start time 0.13 seconds.
+[2024.07.02-11.35.24:980][678]LogTemp: Load successful!
+[2024.07.02-11.35.24:980][678]LogBlueprintUserMessages: [WBP_DeckScreen_C_0] ../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/CardDeck.sav
+[2024.07.02-11.35.29:428][940]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2024.07.02-11.35.29:429][940]LogWorld: BeginTearingDown for /Game/UEDPIE_0_EmptyLevel
+[2024.07.02-11.35.29:429][940]LogWorld: UWorld::CleanupWorld for EmptyLevel, bSessionEnded=true, bCleanupResources=true
+[2024.07.02-11.35.29:430][940]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.07.02-11.35.29:434][940]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2024.07.02-11.35.29:440][940]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.07.02-11.35.29:459][940]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2024.07.02-11.35.29:459][940]LogAudioMixer: Deinitializing Audio Bus Subsystem for audio device with ID 12
+[2024.07.02-11.35.29:459][940]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=12
+[2024.07.02-11.35.29:461][940]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=12
+[2024.07.02-11.35.29:469][940]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2024.07.02-11.35.29:473][940]LogUObjectHash: Compacting FUObjectHashTables data took   1.67ms
+[2024.07.02-11.35.29:526][941]LogPlayLevel: Display: Destroying online subsystem :Context_31
+[2024.07.02-11.35.45:777][882]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.07.02-11.35.45:917][882]LogSavePackage: Moving output files for package: /Game/UI/WBP_DeckScreen
+[2024.07.02-11.35.45:918][882]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/WBP_DeckScreenBCF41D8B428CCF5DBD81F581393B368A.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/UI/WBP_DeckScreen.uasset'
+[2024.07.02-11.35.45:930][882]LogFileHelpers: InternalPromptForCheckoutAndSave took 152 ms (total: 3.11 sec)
+[2024.07.02-11.35.45:932][882]AssetCheck: New page: Asset Save: WBP_DeckScreen
+[2024.07.02-11.35.45:932][882]LogContentValidation: Display: Validating /Script/UMGEditor.WidgetBlueprint /Game/UI/WBP_DeckScreen.WBP_DeckScreen
+[2024.07.02-11.35.46:861][938]BlueprintLog: New page: Compile WBP_DeckScreen
+[2024.07.02-11.35.46:901][938]LogUObjectHash: Compacting FUObjectHashTables data took   2.11ms
+[2024.07.02-11.35.48:439][ 12]LogDebuggerCommands: Repeating last play command: Selected Viewport
+[2024.07.02-11.35.48:456][ 12]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2024.07.02-11.35.48:456][ 12]PIE: New page: PIE session: EmptyLevel (2 Jul 2024, 13:35:48)
+[2024.07.02-11.35.48:456][ 12]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_EmptyLevel
+[2024.07.02-11.35.48:464][ 12]LogPlayLevel: PIE: StaticDuplicateObject took: (0.007140s)
+[2024.07.02-11.35.48:464][ 12]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/EmptyLevel.EmptyLevel to /Game/UEDPIE_0_EmptyLevel.EmptyLevel (0.007197s)
+[2024.07.02-11.35.48:480][ 12]LogUObjectHash: Compacting FUObjectHashTables data took   1.57ms
+[2024.07.02-11.35.48:484][ 12]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.07.02-11.35.48:484][ 12]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2024.07.02-11.35.48:484][ 12]LogAIModule: Creating AISystem for world EmptyLevel
+[2024.07.02-11.35.48:485][ 12]LogPlayLevel: PIE: World Init took: (0.001313s)
+[2024.07.02-11.35.48:485][ 12]LogAudio: Display: Creating Audio Device:                 Id: 13, Scope: Unique, Realtime: True
+[2024.07.02-11.35.48:485][ 12]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2024.07.02-11.35.48:485][ 12]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2024.07.02-11.35.48:485][ 12]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2024.07.02-11.35.48:485][ 12]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2024.07.02-11.35.48:485][ 12]LogAudioMixer: Display: 	Number of buffers to queue:			  1
+[2024.07.02-11.35.48:485][ 12]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2024.07.02-11.35.48:485][ 12]LogAudioMixer: Display: 	Number of Async Source Workers:		  4
+[2024.07.02-11.35.48:485][ 12]LogAudio: Display: AudioDevice MaxSources: 32
+[2024.07.02-11.35.48:485][ 12]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2024.07.02-11.35.48:485][ 12]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2024.07.02-11.35.48:485][ 12]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2024.07.02-11.35.48:488][ 12]LogAudioMixer: Display: Initializing audio mixer using platform API: 'XAudio2'
+[2024.07.02-11.35.48:548][ 12]LogAudioMixer: Display: Using Audio Hardware Device Speakers (Realtek(R) Audio)
+[2024.07.02-11.35.48:549][ 12]LogAudioMixer: Display: Initializing Sound Submixes...
+[2024.07.02-11.35.48:549][ 12]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2024.07.02-11.35.48:549][ 12]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2024.07.02-11.35.48:550][ 12]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called. InstanceID=13
+[2024.07.02-11.35.48:550][ 12]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048, InstanceID=13
+[2024.07.02-11.35.48:552][ 12]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=13
+[2024.07.02-11.35.48:552][ 12]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time. InstanceID=13
+[2024.07.02-11.35.48:552][ 12]LogInit: FAudioDevice initialized with ID 13.
+[2024.07.02-11.35.48:552][ 12]LogAudio: Display: Audio Device (ID: 13) registered with world 'EmptyLevel'.
+[2024.07.02-11.35.48:552][ 12]LogAudioMixer: Initializing Audio Bus Subsystem for audio device with ID 13
+[2024.07.02-11.35.48:555][ 12]LogLoad: Game class is 'BP_CardslingerTestGameMode_C'
+[2024.07.02-11.35.48:561][ 12]LogWorld: Bringing World /Game/UEDPIE_0_EmptyLevel.EmptyLevel up for play (max tick rate 60) at 2024.07.02-12.35.48
+[2024.07.02-11.35.48:562][ 12]LogWorld: Bringing up level for play took: 0.007241
+[2024.07.02-11.35.48:565][ 12]LogOnline: OSS: Created online subsystem instance for: :Context_32
+[2024.07.02-11.35.48:577][ 12]LogTemp: Display: ../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/CardDeck.sav
+[2024.07.02-11.35.48:577][ 12]LogTemp: Load successful!
+[2024.07.02-11.35.48:581][ 12]LogTemp: Save successful!
+[2024.07.02-11.35.48:584][ 12]PIE: Server logged in
+[2024.07.02-11.35.48:585][ 12]PIE: Play in editor total start time 0.129 seconds.
+[2024.07.02-11.35.49:441][ 48]LogTemp: Load successful!
+[2024.07.02-11.35.49:441][ 48]LogBlueprintUserMessages: [WBP_DeckScreen_C_0] ../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/CardDeck.sav
+[2024.07.02-11.35.58:920][609]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2024.07.02-11.35.58:920][609]LogWorld: BeginTearingDown for /Game/UEDPIE_0_EmptyLevel
+[2024.07.02-11.35.58:920][609]LogWorld: UWorld::CleanupWorld for EmptyLevel, bSessionEnded=true, bCleanupResources=true
+[2024.07.02-11.35.58:921][609]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.07.02-11.35.58:926][609]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2024.07.02-11.35.58:932][609]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.07.02-11.35.58:949][609]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2024.07.02-11.35.58:949][609]LogAudioMixer: Deinitializing Audio Bus Subsystem for audio device with ID 13
+[2024.07.02-11.35.58:949][609]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=13
+[2024.07.02-11.35.58:951][609]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=13
+[2024.07.02-11.35.58:960][609]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2024.07.02-11.35.58:965][609]LogUObjectHash: Compacting FUObjectHashTables data took   1.85ms
+[2024.07.02-11.35.59:014][610]LogPlayLevel: Display: Destroying online subsystem :Context_32
+[2024.07.02-11.36.00:855][714]LogDebuggerCommands: Repeating last play command: Selected Viewport
+[2024.07.02-11.36.00:875][714]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2024.07.02-11.36.00:875][714]PIE: New page: PIE session: EmptyLevel (2 Jul 2024, 13:36:00)
+[2024.07.02-11.36.00:899][714]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_EmptyLevel
+[2024.07.02-11.36.00:906][714]LogPlayLevel: PIE: StaticDuplicateObject took: (0.007090s)
+[2024.07.02-11.36.00:906][714]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/EmptyLevel.EmptyLevel to /Game/UEDPIE_0_EmptyLevel.EmptyLevel (0.007155s)
+[2024.07.02-11.36.00:923][714]LogUObjectHash: Compacting FUObjectHashTables data took   2.22ms
+[2024.07.02-11.36.00:926][714]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.07.02-11.36.00:926][714]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2024.07.02-11.36.00:926][714]LogAIModule: Creating AISystem for world EmptyLevel
+[2024.07.02-11.36.00:927][714]LogPlayLevel: PIE: World Init took: (0.001347s)
+[2024.07.02-11.36.00:927][714]LogAudio: Display: Creating Audio Device:                 Id: 14, Scope: Unique, Realtime: True
+[2024.07.02-11.36.00:927][714]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2024.07.02-11.36.00:927][714]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2024.07.02-11.36.00:927][714]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2024.07.02-11.36.00:927][714]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2024.07.02-11.36.00:927][714]LogAudioMixer: Display: 	Number of buffers to queue:			  1
+[2024.07.02-11.36.00:927][714]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2024.07.02-11.36.00:927][714]LogAudioMixer: Display: 	Number of Async Source Workers:		  4
+[2024.07.02-11.36.00:927][714]LogAudio: Display: AudioDevice MaxSources: 32
+[2024.07.02-11.36.00:928][714]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2024.07.02-11.36.00:928][714]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2024.07.02-11.36.00:928][714]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2024.07.02-11.36.00:930][714]LogAudioMixer: Display: Initializing audio mixer using platform API: 'XAudio2'
+[2024.07.02-11.36.00:997][714]LogAudioMixer: Display: Using Audio Hardware Device Speakers (Realtek(R) Audio)
+[2024.07.02-11.36.00:997][714]LogAudioMixer: Display: Initializing Sound Submixes...
+[2024.07.02-11.36.00:997][714]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2024.07.02-11.36.00:998][714]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2024.07.02-11.36.00:998][714]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called. InstanceID=14
+[2024.07.02-11.36.00:998][714]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048, InstanceID=14
+[2024.07.02-11.36.01:000][714]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=14
+[2024.07.02-11.36.01:000][714]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time. InstanceID=14
+[2024.07.02-11.36.01:000][714]LogInit: FAudioDevice initialized with ID 14.
+[2024.07.02-11.36.01:000][714]LogAudio: Display: Audio Device (ID: 14) registered with world 'EmptyLevel'.
+[2024.07.02-11.36.01:000][714]LogAudioMixer: Initializing Audio Bus Subsystem for audio device with ID 14
+[2024.07.02-11.36.01:003][714]LogLoad: Game class is 'BP_CardslingerTestGameMode_C'
+[2024.07.02-11.36.01:010][714]LogWorld: Bringing World /Game/UEDPIE_0_EmptyLevel.EmptyLevel up for play (max tick rate 60) at 2024.07.02-12.36.01
+[2024.07.02-11.36.01:012][714]LogWorld: Bringing up level for play took: 0.007662
+[2024.07.02-11.36.01:015][714]LogOnline: OSS: Created online subsystem instance for: :Context_33
+[2024.07.02-11.36.01:026][714]LogTemp: Display: ../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/CardDeck.sav
+[2024.07.02-11.36.01:026][714]LogTemp: Load successful!
+[2024.07.02-11.36.01:031][714]LogTemp: Save successful!
+[2024.07.02-11.36.01:033][714]PIE: Server logged in
+[2024.07.02-11.36.01:034][714]PIE: Play in editor total start time 0.16 seconds.
+[2024.07.02-11.36.01:850][752]LogTemp: Load successful!
+[2024.07.02-11.36.01:850][752]LogBlueprintUserMessages: [WBP_DeckScreen_C_0] ../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/CardDeck.sav
+[2024.07.02-11.36.02:540][788]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2024.07.02-11.36.02:540][788]LogWorld: BeginTearingDown for /Game/UEDPIE_0_EmptyLevel
+[2024.07.02-11.36.02:540][788]LogWorld: UWorld::CleanupWorld for EmptyLevel, bSessionEnded=true, bCleanupResources=true
+[2024.07.02-11.36.02:541][788]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.07.02-11.36.02:545][788]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2024.07.02-11.36.02:551][788]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.07.02-11.36.02:567][788]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2024.07.02-11.36.02:568][788]LogAudioMixer: Deinitializing Audio Bus Subsystem for audio device with ID 14
+[2024.07.02-11.36.02:568][788]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=14
+[2024.07.02-11.36.02:570][788]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=14
+[2024.07.02-11.36.02:582][788]LogUObjectHash: Compacting FUObjectHashTables data took   1.84ms
+[2024.07.02-11.36.02:620][789]LogPlayLevel: Display: Destroying online subsystem :Context_33
