@@ -2200,3 +2200,166 @@ LogConfig: Set CVar [[r.Shadow.DetectVertexShaderLayerAtRuntime:1]]
 [2024.07.02-15.33.24:439][ 87]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=11
 [2024.07.02-15.33.24:451][ 87]LogUObjectHash: Compacting FUObjectHashTables data took   1.64ms
 [2024.07.02-15.33.24:520][ 88]LogPlayLevel: Display: Destroying online subsystem :Context_54
+[2024.07.02-15.37.25:620][480]LogD3D12RHI: Warning: Descriptor cache ran out of sub allocated descriptor blocks! Moving to Context local View heap strategy
+[2024.07.02-15.37.25:621][480]LogD3D12RHI: This should only happen in the Editor where it doesn't matter as much. If it happens in game you should increase the device global heap size!
+[2024.07.02-15.39.05:862][494]LogD3D12RHI: OnlineHeap RollOver Detected. Increase the heap size to prevent creation of additional heaps
+[2024.07.02-15.39.48:007][363]LogSlate: Window 'Pick Parent Class for New Widget Blueprint' being destroyed
+[2024.07.02-15.39.48:018][363]LogContentBrowser: Deferred new asset file creation: NewWidgetBlueprint
+[2024.07.02-15.39.48:028][363]LogContentBrowser: Creating deferred item: NewWidgetBlueprint
+[2024.07.02-15.39.48:045][364]LogContentBrowser: Renaming the item being created (Deferred Item: NewWidgetBlueprint).
+[2024.07.02-15.39.51:744][574]LogContentBrowser: Attempting asset rename: NewWidgetBlueprint -> WBP_NewCardWidget
+[2024.07.02-15.39.51:756][574]LogContentBrowser: End creating deferred item NewWidgetBlueprint
+[2024.07.02-15.39.52:831][636]LogAssetEditorSubsystem: Opening Asset editor for WidgetBlueprint /Game/UI/Cards/WBP_NewCardWidget.WBP_NewCardWidget
+[2024.07.02-15.39.52:831][636]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.07.02-15.39.52:831][636]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2024.07.02-15.39.52:841][636]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.07.02-15.39.52:841][636]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2024.07.02-15.39.53:909][688]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.07.02-15.39.54:041][688]LogSavePackage: Moving output files for package: /Game/UI/Cards/WBP_NewCardWidget
+[2024.07.02-15.39.54:041][688]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/WBP_NewCardWidgetB6A3CEAE407B3DB71948CD9460AFB895.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/UI/Cards/WBP_NewCardWidget.uasset'
+[2024.07.02-15.39.54:054][688]LogFileHelpers: InternalPromptForCheckoutAndSave took 145 ms (total: 2.73 sec)
+[2024.07.02-15.39.54:055][688]AssetCheck: New page: Asset Save: WBP_NewCardWidget
+[2024.07.02-15.39.54:055][688]LogContentValidation: Display: Validating /Script/UMGEditor.WidgetBlueprint /Game/UI/Cards/WBP_NewCardWidget.WBP_NewCardWidget
+[2024.07.02-15.53.06:363][185]LogSlate: Took 0.009827 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/DroidSansFallback.ttf' (3848K)
+[2024.07.02-15.53.12:606][554]BlueprintLog: New page: Compile WBP_NewCardWidget
+[2024.07.02-15.53.12:640][554]LogUObjectHash: Compacting FUObjectHashTables data took   2.92ms
+[2024.07.02-15.53.45:466][466]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.07.02-15.53.45:605][466]LogSavePackage: Moving output files for package: /Game/UI/Cards/WBP_NewCardWidget
+[2024.07.02-15.53.45:606][466]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/WBP_NewCardWidgetEAEE01984F42E8BA973469993A355E58.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/UI/Cards/WBP_NewCardWidget.uasset'
+[2024.07.02-15.53.45:617][466]LogFileHelpers: InternalPromptForCheckoutAndSave took 151 ms (total: 2.88 sec)
+[2024.07.02-15.53.45:620][466]AssetCheck: New page: Asset Save: WBP_NewCardWidget
+[2024.07.02-15.53.45:620][466]LogContentValidation: Display: Validating /Script/UMGEditor.WidgetBlueprint /Game/UI/Cards/WBP_NewCardWidget.WBP_NewCardWidget
+[2024.07.02-15.53.46:329][509]BlueprintLog: New page: Compile WBP_NewCardWidget
+[2024.07.02-15.53.46:359][509]LogUObjectHash: Compacting FUObjectHashTables data took   1.52ms
+[2024.07.02-15.53.51:154][778]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.07.02-15.53.51:317][778]LogSavePackage: Moving output files for package: /Game/UI/Cards/WBP_NewCardWidget
+[2024.07.02-15.53.51:317][778]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/WBP_NewCardWidget6BEE465D4F325705C080EEBD7C648BE0.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/UI/Cards/WBP_NewCardWidget.uasset'
+[2024.07.02-15.53.51:327][778]LogFileHelpers: InternalPromptForCheckoutAndSave took 172 ms (total: 3.06 sec)
+[2024.07.02-15.53.51:330][778]AssetCheck: New page: Asset Save: WBP_NewCardWidget
+[2024.07.02-15.53.51:330][778]LogContentValidation: Display: Validating /Script/UMGEditor.WidgetBlueprint /Game/UI/Cards/WBP_NewCardWidget.WBP_NewCardWidget
+[2024.07.02-15.53.52:862][870]BlueprintLog: New page: Compile WBP_NewCardWidget
+[2024.07.02-15.53.52:891][870]LogUObjectHash: Compacting FUObjectHashTables data took   1.78ms
+[2024.07.02-15.55.02:774][830]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.07.02-15.55.02:905][830]LogSavePackage: Moving output files for package: /Game/UI/Cards/WBP_NewCardWidget
+[2024.07.02-15.55.02:906][830]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/WBP_NewCardWidget460FA24C4D2CC98384353C80BD79231B.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/UI/Cards/WBP_NewCardWidget.uasset'
+[2024.07.02-15.55.02:916][830]LogFileHelpers: InternalPromptForCheckoutAndSave took 141 ms (total: 3.20 sec)
+[2024.07.02-15.55.02:917][830]AssetCheck: New page: Asset Save: WBP_NewCardWidget
+[2024.07.02-15.55.02:917][830]LogContentValidation: Display: Validating /Script/UMGEditor.WidgetBlueprint /Game/UI/Cards/WBP_NewCardWidget.WBP_NewCardWidget
+[2024.07.02-15.55.13:066][411]LogShaderCompilers: Display: ================================================
+[2024.07.02-15.55.13:066][411]LogShaderCompilers: Display: === FShaderJobCache stats ===
+[2024.07.02-15.55.13:066][411]LogShaderCompilers: Display: Total job queries 45, among them cache hits 0 (0.00%)
+[2024.07.02-15.55.13:066][411]LogShaderCompilers: Display: Tracking 45 distinct input hashes that result in 38 distinct outputs (84.44%)
+[2024.07.02-15.55.13:066][411]LogShaderCompilers: Display: RAM used: 1.03 MiB of 819.20 MiB budget. Usage: 0.13%
+[2024.07.02-15.55.13:066][411]LogShaderCompilers: Display: === Shader Compilation stats ===
+[2024.07.02-15.55.13:066][411]LogShaderCompilers: Display: Shaders Compiled: 0
+[2024.07.02-15.55.13:066][411]LogShaderCompilers: Display: Jobs assigned 0, completed 0 (0%)
+[2024.07.02-15.55.13:066][411]LogShaderCompilers: Display: Time at least one job was in flight (either pending or executed): 0.00 s
+[2024.07.02-15.55.13:066][411]LogShaderCompilers: Display: ================================================
+[2024.07.02-15.55.20:234][821]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.07.02-15.55.20:345][821]LogSavePackage: Moving output files for package: /Game/UI/Cards/WBP_NewCardWidget
+[2024.07.02-15.55.20:347][821]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/WBP_NewCardWidget0845D160445553C755F4ABB751F23C38.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/UI/Cards/WBP_NewCardWidget.uasset'
+[2024.07.02-15.55.20:356][821]LogFileHelpers: InternalPromptForCheckoutAndSave took 122 ms (total: 3.32 sec)
+[2024.07.02-15.55.20:359][821]AssetCheck: New page: Asset Save: WBP_NewCardWidget
+[2024.07.02-15.55.20:359][821]LogContentValidation: Display: Validating /Script/UMGEditor.WidgetBlueprint /Game/UI/Cards/WBP_NewCardWidget.WBP_NewCardWidget
+[2024.07.02-15.56.13:557][  2]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.07.02-15.56.13:675][  2]LogSavePackage: Moving output files for package: /Game/UI/Cards/WBP_NewCardWidget
+[2024.07.02-15.56.13:676][  2]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/WBP_NewCardWidget7ED885F3490C025F435E058121512F6A.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/UI/Cards/WBP_NewCardWidget.uasset'
+[2024.07.02-15.56.13:685][  2]LogFileHelpers: InternalPromptForCheckoutAndSave took 128 ms (total: 3.45 sec)
+[2024.07.02-15.56.13:688][  2]AssetCheck: New page: Asset Save: WBP_NewCardWidget
+[2024.07.02-15.56.13:688][  2]LogContentValidation: Display: Validating /Script/UMGEditor.WidgetBlueprint /Game/UI/Cards/WBP_NewCardWidget.WBP_NewCardWidget
+[2024.07.02-15.56.15:194][ 92]BlueprintLog: New page: Compile WBP_NewCardWidget
+[2024.07.02-15.56.15:227][ 92]LogUObjectHash: Compacting FUObjectHashTables data took   1.88ms
+[2024.07.02-15.56.37:129][328]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.07.02-15.56.37:285][328]LogSavePackage: Moving output files for package: /Game/UI/Cards/WBP_NewCardScreen
+[2024.07.02-15.56.37:286][328]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/WBP_NewCardScreenA69DE1C74B9A7C25DCF759B58F8C5E5B.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/UI/Cards/WBP_NewCardScreen.uasset'
+[2024.07.02-15.56.37:295][328]LogFileHelpers: InternalPromptForCheckoutAndSave took 166 ms (total: 3.62 sec)
+[2024.07.02-15.56.37:297][328]AssetCheck: New page: Asset Save: WBP_NewCardScreen
+[2024.07.02-15.56.37:297][328]LogContentValidation: Display: Validating /Script/UMGEditor.WidgetBlueprint /Game/UI/Cards/WBP_NewCardScreen.WBP_NewCardScreen
+[2024.07.02-15.56.37:625][348]BlueprintLog: New page: Compile WBP_NewCardScreen
+[2024.07.02-15.56.37:677][348]LogUObjectHash: Compacting FUObjectHashTables data took   1.79ms
+[2024.07.02-15.56.53:811][245]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.07.02-15.56.53:931][245]LogSavePackage: Moving output files for package: /Game/UI/Cards/WBP_NewCardScreen
+[2024.07.02-15.56.53:933][245]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/WBP_NewCardScreen3C3016C347802FF511A47689A3C7C41B.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/UI/Cards/WBP_NewCardScreen.uasset'
+[2024.07.02-15.56.53:944][245]LogFileHelpers: InternalPromptForCheckoutAndSave took 132 ms (total: 3.75 sec)
+[2024.07.02-15.56.53:945][245]AssetCheck: New page: Asset Save: WBP_NewCardScreen
+[2024.07.02-15.56.53:945][245]LogContentValidation: Display: Validating /Script/UMGEditor.WidgetBlueprint /Game/UI/Cards/WBP_NewCardScreen.WBP_NewCardScreen
+[2024.07.02-15.57.37:054][640]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.07.02-15.57.37:183][640]LogSavePackage: Moving output files for package: /Game/UI/Cards/WBP_NewCardScreen
+[2024.07.02-15.57.37:184][640]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/WBP_NewCardScreen8DF6F52D46E1BF73901400A8ACA495AC.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/UI/Cards/WBP_NewCardScreen.uasset'
+[2024.07.02-15.57.37:195][640]LogFileHelpers: InternalPromptForCheckoutAndSave took 141 ms (total: 3.89 sec)
+[2024.07.02-15.57.37:197][640]AssetCheck: New page: Asset Save: WBP_NewCardScreen
+[2024.07.02-15.57.37:197][640]LogContentValidation: Display: Validating /Script/UMGEditor.WidgetBlueprint /Game/UI/Cards/WBP_NewCardScreen.WBP_NewCardScreen
+[2024.07.02-15.57.40:281][803]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.07.02-15.57.40:407][803]LogSavePackage: Moving output files for package: /Game/UI/Cards/WBP_NewCardScreen
+[2024.07.02-15.57.40:409][803]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/WBP_NewCardScreen0908AE4A46F0D61B56947D82CF271998.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/UI/Cards/WBP_NewCardScreen.uasset'
+[2024.07.02-15.57.40:419][803]LogFileHelpers: InternalPromptForCheckoutAndSave took 138 ms (total: 4.03 sec)
+[2024.07.02-15.57.40:422][803]AssetCheck: New page: Asset Save: WBP_NewCardScreen
+[2024.07.02-15.57.40:422][803]LogContentValidation: Display: Validating /Script/UMGEditor.WidgetBlueprint /Game/UI/Cards/WBP_NewCardScreen.WBP_NewCardScreen
+[2024.07.02-15.57.41:136][846]BlueprintLog: New page: Compile WBP_NewCardScreen
+[2024.07.02-15.57.41:172][846]LogUObjectHash: Compacting FUObjectHashTables data took   2.27ms
+[2024.07.02-15.57.42:524][916]LogDebuggerCommands: Repeating last play command: Selected Viewport
+[2024.07.02-15.57.42:542][916]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2024.07.02-15.57.42:542][916]PIE: New page: PIE session: EmptyLevel (2 Jul 2024, 17:57:42)
+[2024.07.02-15.57.42:542][916]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_EmptyLevel
+[2024.07.02-15.57.42:550][916]LogPlayLevel: PIE: StaticDuplicateObject took: (0.007405s)
+[2024.07.02-15.57.42:550][916]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/EmptyLevel.EmptyLevel to /Game/UEDPIE_0_EmptyLevel.EmptyLevel (0.007463s)
+[2024.07.02-15.57.42:570][916]LogUObjectHash: Compacting FUObjectHashTables data took   1.54ms
+[2024.07.02-15.57.42:573][916]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.07.02-15.57.42:573][916]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2024.07.02-15.57.42:574][916]LogAIModule: Creating AISystem for world EmptyLevel
+[2024.07.02-15.57.42:574][916]LogPlayLevel: PIE: World Init took: (0.001198s)
+[2024.07.02-15.57.42:574][916]LogAudio: Display: Creating Audio Device:                 Id: 12, Scope: Unique, Realtime: True
+[2024.07.02-15.57.42:574][916]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2024.07.02-15.57.42:574][916]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2024.07.02-15.57.42:574][916]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2024.07.02-15.57.42:574][916]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2024.07.02-15.57.42:574][916]LogAudioMixer: Display: 	Number of buffers to queue:			  1
+[2024.07.02-15.57.42:574][916]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2024.07.02-15.57.42:574][916]LogAudioMixer: Display: 	Number of Async Source Workers:		  4
+[2024.07.02-15.57.42:574][916]LogAudio: Display: AudioDevice MaxSources: 32
+[2024.07.02-15.57.42:575][916]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2024.07.02-15.57.42:575][916]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2024.07.02-15.57.42:575][916]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2024.07.02-15.57.42:577][916]LogAudioMixer: Display: Initializing audio mixer using platform API: 'XAudio2'
+[2024.07.02-15.57.42:639][916]LogAudioMixer: Display: Using Audio Hardware Device Speakers (Realtek(R) Audio)
+[2024.07.02-15.57.42:639][916]LogAudioMixer: Display: Initializing Sound Submixes...
+[2024.07.02-15.57.42:639][916]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2024.07.02-15.57.42:639][916]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2024.07.02-15.57.42:641][916]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called. InstanceID=12
+[2024.07.02-15.57.42:641][916]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048, InstanceID=12
+[2024.07.02-15.57.42:642][916]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=12
+[2024.07.02-15.57.42:643][916]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time. InstanceID=12
+[2024.07.02-15.57.42:643][916]LogInit: FAudioDevice initialized with ID 12.
+[2024.07.02-15.57.42:643][916]LogAudio: Display: Audio Device (ID: 12) registered with world 'EmptyLevel'.
+[2024.07.02-15.57.42:643][916]LogAudioMixer: Initializing Audio Bus Subsystem for audio device with ID 12
+[2024.07.02-15.57.42:647][916]LogLoad: Game class is 'BP_CardslingerTestGameMode_C'
+[2024.07.02-15.57.42:653][916]LogWorld: Bringing World /Game/UEDPIE_0_EmptyLevel.EmptyLevel up for play (max tick rate 60) at 2024.07.02-16.57.42
+[2024.07.02-15.57.42:655][916]LogWorld: Bringing up level for play took: 0.007235
+[2024.07.02-15.57.42:658][916]LogOnline: OSS: Created online subsystem instance for: :Context_57
+[2024.07.02-15.57.42:669][916]LogTemp: Display: ../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/CardDeck.sav
+[2024.07.02-15.57.42:669][916]LogTemp: Load successful!
+[2024.07.02-15.57.42:672][916]LogTemp: Save successful!
+[2024.07.02-15.57.42:675][916]PIE: Server logged in
+[2024.07.02-15.57.42:676][916]PIE: Play in editor total start time 0.134 seconds.
+[2024.07.02-15.57.43:510][936]LogViewport: Display: Viewport MouseLockMode Changed, LockOnCapture -> DoNotLock
+[2024.07.02-15.57.43:510][936]LogViewport: Display: Viewport MouseCaptureMode Changed, CapturePermanently_IncludingInitialMouseDown -> NoCapture
+[2024.07.02-15.57.47:341][158]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2024.07.02-15.57.47:341][158]LogWorld: BeginTearingDown for /Game/UEDPIE_0_EmptyLevel
+[2024.07.02-15.57.47:341][158]LogWorld: UWorld::CleanupWorld for EmptyLevel, bSessionEnded=true, bCleanupResources=true
+[2024.07.02-15.57.47:342][158]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.07.02-15.57.47:346][158]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2024.07.02-15.57.47:352][158]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.07.02-15.57.47:369][158]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2024.07.02-15.57.47:370][158]LogAudioMixer: Deinitializing Audio Bus Subsystem for audio device with ID 12
+[2024.07.02-15.57.47:370][158]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=12
+[2024.07.02-15.57.47:372][158]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=12
+[2024.07.02-15.57.47:386][158]LogUObjectHash: Compacting FUObjectHashTables data took   1.72ms
+[2024.07.02-15.57.47:449][159]LogPlayLevel: Display: Destroying online subsystem :Context_57
+[2024.07.02-15.57.55:029][518]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.07.02-15.57.55:150][518]LogSavePackage: Moving output files for package: /Game/UI/Cards/WBP_NewCardScreen
+[2024.07.02-15.57.55:162][518]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/WBP_NewCardScreen5548A93C4B671268739D6984F4C5F94D.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/UI/Cards/WBP_NewCardScreen.uasset'
+[2024.07.02-15.57.55:173][518]LogFileHelpers: InternalPromptForCheckoutAndSave took 144 ms (total: 4.17 sec)
+[2024.07.02-15.57.55:176][518]AssetCheck: New page: Asset Save: WBP_NewCardScreen
+[2024.07.02-15.57.55:176][518]LogContentValidation: Display: Validating /Script/UMGEditor.WidgetBlueprint /Game/UI/Cards/WBP_NewCardScreen.WBP_NewCardScreen
+[2024.07.02-15.57.55:388][531]BlueprintLog: New page: Compile WBP_NewCardScreen
+[2024.07.02-15.57.55:433][531]LogUObjectHash: Compacting FUObjectHashTables data took   1.74ms
