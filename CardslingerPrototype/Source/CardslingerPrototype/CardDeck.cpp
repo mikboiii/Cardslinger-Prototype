@@ -242,6 +242,11 @@ TArray<TSubclassOf<ABaseCard>> ACardDeck::LoadDeck(const FString& SavePathRef)
 	return LoadedCards;
 }
 
+void ACardDeck::ManualLoadDeck()
+{
+	FullDeck = LoadDeck(SavePath);
+}
+
 /// @brief Adds a card to the player's deck
 /// @param CardToAdd The class of card being added
 /// @param bAddToDiscard if true, card will be added to the discard pile instead

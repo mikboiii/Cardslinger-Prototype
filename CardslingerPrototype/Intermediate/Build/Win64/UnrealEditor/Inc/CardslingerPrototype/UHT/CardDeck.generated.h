@@ -23,6 +23,7 @@ class ABaseCard;
 	DECLARE_FUNCTION(execRemoveCardAtIndex); \
 	DECLARE_FUNCTION(execRemoveCard); \
 	DECLARE_FUNCTION(execAddCard); \
+	DECLARE_FUNCTION(execManualLoadDeck); \
 	DECLARE_FUNCTION(execLoadDeck); \
 	DECLARE_FUNCTION(execManualSaveDeck); \
 	DECLARE_FUNCTION(execSaveDeck); \

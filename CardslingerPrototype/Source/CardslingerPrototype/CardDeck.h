@@ -90,6 +90,8 @@ public:
 	void ManualSaveDeck();
 	UFUNCTION(BlueprintCallable)
 	TArray<TSubclassOf<ABaseCard>> LoadDeck(const FString& SavePath);
+	UFUNCTION(BlueprintCallable, CallInEditor, Category="Deck Settings")
+	void ManualLoadDeck();
 
 	UFUNCTION(BlueprintCallable)
 	void AddCard(TSubclassOf<ABaseCard> CardToAdd, bool bAddToDiscard, bool bIsTemporaryCard);
