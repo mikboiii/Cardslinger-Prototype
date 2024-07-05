@@ -21,7 +21,7 @@ void ACardslingerPlayerController::GameHasEnded(AActor *EndGameFocus, bool bIsWi
     if(LoseScreen == nullptr) return;
     LoseScreen->AddToViewport();
     }
-    GetWorldTimerManager().SetTimer(RestartTimer, this, &APlayerController::RestartLevel, RestartDelay);
+    //GetWorldTimerManager().SetTimer(RestartTimer, this, &APlayerController::RestartLevel, RestartDelay);
 
 }
 
@@ -37,5 +37,10 @@ void ACardslingerPlayerController::BeginPlay()
 UUserWidget* ACardslingerPlayerController::GetHUD() const
 {
     return HUD;
+}
+
+void ACardslingerPlayerController::RestartLevelBP()
+{
+    RestartLevel();
 }
 

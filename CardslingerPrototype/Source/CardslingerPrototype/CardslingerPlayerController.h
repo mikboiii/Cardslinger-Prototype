@@ -38,4 +38,7 @@ class CARDSLINGERPROTOTYPE_API ACardslingerPlayerController : public APlayerCont
 
 	public:
 		class UUserWidget* GetHUD() const;
+
+		UFUNCTION(BlueprintCallable)
+		void RestartLevelBP();
 };

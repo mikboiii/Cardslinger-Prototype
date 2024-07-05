@@ -16,8 +16,42 @@ void EmptyLinkFunctionForGeneratedCodeCardslingerPlayerController() {}
 	UMG_API UClass* Z_Construct_UClass_UUserWidget_NoRegister();
 	UPackage* Z_Construct_UPackage__Script_CardslingerPrototype();
 // End Cross Module References
+	DEFINE_FUNCTION(ACardslingerPlayerController::execRestartLevelBP)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->RestartLevelBP();
+		P_NATIVE_END;
+	}
 	void ACardslingerPlayerController::StaticRegisterNativesACardslingerPlayerController()
 	{
+		UClass* Class = ACardslingerPlayerController::StaticClass();
+		static const FNameNativePtrPair Funcs[] = {
+			{ "RestartLevelBP", &ACardslingerPlayerController::execRestartLevelBP },
+		};
+		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
+	}
+	struct Z_Construct_UFunction_ACardslingerPlayerController_RestartLevelBP_Statics
+	{
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ACardslingerPlayerController_RestartLevelBP_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "CardslingerPlayerController.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_ACardslingerPlayerController_RestartLevelBP_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ACardslingerPlayerController, nullptr, "RestartLevelBP", nullptr, nullptr, nullptr, 0, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_ACardslingerPlayerController_RestartLevelBP_Statics::Function_MetaDataParams), Z_Construct_UFunction_ACardslingerPlayerController_RestartLevelBP_Statics::Function_MetaDataParams) };
+	UFunction* Z_Construct_UFunction_ACardslingerPlayerController_RestartLevelBP()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_ACardslingerPlayerController_RestartLevelBP_Statics::FuncParams);
+		}
+		return ReturnFunction;
 	}
 	IMPLEMENT_CLASS_NO_AUTO_REGISTRATION(ACardslingerPlayerController);
 	UClass* Z_Construct_UClass_ACardslingerPlayerController_NoRegister()
@@ -27,6 +61,7 @@ void EmptyLinkFunctionForGeneratedCodeCardslingerPlayerController() {}
 	struct Z_Construct_UClass_ACardslingerPlayerController_Statics
 	{
 		static UObject* (*const DependentSingletons[])();
+		static const FClassFunctionLinkInfo FuncInfo[];
 #if WITH_METADATA
 		static const UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
@@ -55,6 +90,10 @@ void EmptyLinkFunctionForGeneratedCodeCardslingerPlayerController() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_CardslingerPrototype,
 	};
 	static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_ACardslingerPlayerController_Statics::DependentSingletons) < 16);
+	const FClassFunctionLinkInfo Z_Construct_UClass_ACardslingerPlayerController_Statics::FuncInfo[] = {
+		{ &Z_Construct_UFunction_ACardslingerPlayerController_RestartLevelBP, "RestartLevelBP" }, // 1159651991
+	};
+	static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_ACardslingerPlayerController_Statics::FuncInfo) < 2048);
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ACardslingerPlayerController_Statics::Class_MetaDataParams[] = {
 #if !UE_BUILD_SHIPPING
@@ -107,11 +146,11 @@ void EmptyLinkFunctionForGeneratedCodeCardslingerPlayerController() {}
 		"Game",
 		&StaticCppClassTypeInfo,
 		DependentSingletons,
-		nullptr,
+		FuncInfo,
 		Z_Construct_UClass_ACardslingerPlayerController_Statics::PropPointers,
 		nullptr,
 		UE_ARRAY_COUNT(DependentSingletons),
-		0,
+		UE_ARRAY_COUNT(FuncInfo),
 		UE_ARRAY_COUNT(Z_Construct_UClass_ACardslingerPlayerController_Statics::PropPointers),
 		0,
 		0x009002A4u,
@@ -138,9 +177,9 @@ void EmptyLinkFunctionForGeneratedCodeCardslingerPlayerController() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_CardslingerPlayerController_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_ACardslingerPlayerController, ACardslingerPlayerController::StaticClass, TEXT("ACardslingerPlayerController"), &Z_Registration_Info_UClass_ACardslingerPlayerController, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ACardslingerPlayerController), 960935928U) },
+		{ Z_Construct_UClass_ACardslingerPlayerController, ACardslingerPlayerController::StaticClass, TEXT("ACardslingerPlayerController"), &Z_Registration_Info_UClass_ACardslingerPlayerController, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ACardslingerPlayerController), 574067176U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_CardslingerPlayerController_h_2426568546(TEXT("/Script/CardslingerPrototype"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_CardslingerPlayerController_h_2108570836(TEXT("/Script/CardslingerPrototype"),
 		Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_CardslingerPlayerController_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_CardslingerPlayerController_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);
