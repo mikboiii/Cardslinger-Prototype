@@ -65,29 +65,35 @@ ABaseCard* ACardDeck::DrawCard()
 /// @brief Shuffles the discard pile and places it back in the draw pile
 void ACardDeck::ShuffleDiscard()
 {
-	int32 NumberOfCards = DiscardPile.Num();
-	for(int32 i = NumberOfCards - 1; i >= 0; --i)
+	if(DiscardPile.Num() != 0)
 	{
-		int32 RandomCardIndex = FMath::RandRange(0,i);
-		DrawPile.Emplace(DiscardPile[RandomCardIndex]);
-		DiscardPile.RemoveAt(RandomCardIndex);
+		int32 NumberOfCards = DiscardPile.Num();
+		for(int32 i = NumberOfCards - 1; i >= 0; --i)
+		{
+			int32 RandomCardIndex = FMath::RandRange(0,i);
+			DrawPile.Emplace(DiscardPile[RandomCardIndex]);
+			DiscardPile.RemoveAt(RandomCardIndex);
+		}
+		//remove all cards from the discard pile
+		DiscardPile.Empty();
 	}
-	//remove all cards from the discard pile
-	DiscardPile.Empty();
 }
 
 /// @brief Shuffles the deck's current cards
 void ACardDeck::ShuffleDeck()
 {
-	int32 NumberOfCards = DrawPile.Num();
-	TArray<TSubclassOf<ABaseCard>> TempDeck;
-	for(int32 i = NumberOfCards - 1; i >= 0; --i)
+	if(DrawPile.Num() != 0)
 	{
-		int32 RandomCardIndex = FMath::RandRange(0,i);
-		TempDeck.Emplace(DrawPile[RandomCardIndex]);
-		DrawPile.RemoveAt(RandomCardIndex);
+		int32 NumberOfCards = DrawPile.Num();
+		TArray<TSubclassOf<ABaseCard>> TempDeck;
+		for(int32 i = NumberOfCards - 1; i >= 0; --i)
+		{
+			int32 RandomCardIndex = FMath::RandRange(0,i);
+			TempDeck.Emplace(DrawPile[RandomCardIndex]);
+			DrawPile.RemoveAt(RandomCardIndex);
+		}
+		DrawPile = TempDeck;
 	}
-	DrawPile = TempDeck;
 }
 
 /// @brief Launches a projectile card

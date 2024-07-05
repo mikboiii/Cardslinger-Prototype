@@ -396,13 +396,20 @@ void ABaseCharacterClass::ReplenishHandFunction()
 {
 	if(CardDeck->IsDeckEmpty()) CardDeck->ShuffleDiscard();
 	for(int i = 0; i < CardHand.Num(); i++)
-	{
-		CardHand[i] = CardDeck->DrawCard();
-		if(CardHand[i]->CardWidget != nullptr)
 		{
-			Cast<UPlayerHUDWidget>(PlayerHUD)->SetCard(i, CardHand[i]->CardWidget);
+			CardHand[i] = CardDeck->DrawCard();
+			if(CardHand[i] != nullptr)
+			{
+				if(CardHand[i]->CardWidget != nullptr)
+				{
+					Cast<UPlayerHUDWidget>(PlayerHUD)->SetCard(i, CardHand[i]->CardWidget);
+				}
+			}
+			else
+			{
+				Cast<UPlayerHUDWidget>(PlayerHUD)->SetCard(i, CreateWidget<UUserWidget>(GetWorld(), CardBackClass));
+			}
 		}
-	}
 }
 
 ///@brief Returns alive state of the player
