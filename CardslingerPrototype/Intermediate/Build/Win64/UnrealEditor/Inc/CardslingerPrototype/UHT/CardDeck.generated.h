@@ -24,6 +24,7 @@ class ABaseCard;
 	DECLARE_FUNCTION(execRemoveCard); \
 	DECLARE_FUNCTION(execAddCard); \
 	DECLARE_FUNCTION(execLoadDeck); \
+	DECLARE_FUNCTION(execManualSaveDeck); \
 	DECLARE_FUNCTION(execSaveDeck); \
 	DECLARE_FUNCTION(execDrawCardNum); \
 	DECLARE_FUNCTION(execIsDeckEmpty); \

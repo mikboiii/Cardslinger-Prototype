@@ -205,6 +205,11 @@ void ACardDeck::SaveDeck(const FString& SavePathRef)
     }
 }
 
+void ACardDeck::ManualSaveDeck()
+{
+	SaveDeck(SavePath);
+}
+
 /// @brief Loads the deck from file
 /// @param SavePathRef the save file path
 TArray<TSubclassOf<ABaseCard>> ACardDeck::LoadDeck(const FString& SavePathRef)

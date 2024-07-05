@@ -23,7 +23,7 @@ private:
 	// Sets default values for this actor's properties
 	ACardDeck();
 
-	UPROPERTY(EditDefaultsOnly)
+	UPROPERTY(EditAnywhere, Category="Deck Settings")
 	TArray<TSubclassOf<ABaseCard>> FullDeck;
 
 	UPROPERTY(EditAnywhere)
@@ -86,6 +86,8 @@ public:
 	void ReloadCards();
 	UFUNCTION(BlueprintCallable)
 	void SaveDeck(const FString& SavePath);
+	UFUNCTION(BlueprintCallable, CallInEditor, Category="Deck Settings")
+	void ManualSaveDeck();
 	UFUNCTION(BlueprintCallable)
 	TArray<TSubclassOf<ABaseCard>> LoadDeck(const FString& SavePath);
 
