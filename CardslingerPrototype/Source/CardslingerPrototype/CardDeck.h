@@ -81,6 +81,9 @@ public:
 	UFUNCTION(BlueprintPure)
 	int32 DrawCardNum() const;
 
+	UFUNCTION(BlueprintPure)
+	FString GetSavePath() const;
+
 	void RemoveCardFromDeck(int CardIndex);
 
 	void ReloadCards();

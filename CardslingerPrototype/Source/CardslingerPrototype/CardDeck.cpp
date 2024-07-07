@@ -308,3 +308,8 @@ void ACardDeck::RemoveCardAtIndex(int32 Index, bool bIsPermanent)
 		}
 	}
 }
+
+FString ACardDeck::GetSavePath() const
+{
+	return SavePath;
+}
