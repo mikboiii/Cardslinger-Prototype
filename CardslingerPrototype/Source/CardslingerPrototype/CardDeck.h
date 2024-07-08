@@ -23,6 +23,9 @@ private:
 	// Sets default values for this actor's properties
 	ACardDeck();
 
+	UPROPERTY(EditAnywhere, Category="Deck Settings")
+	TArray<TSubclassOf<ABaseCard>> FullDeck;
+
 	UPROPERTY(EditAnywhere)
 	TArray<TSubclassOf<ABaseCard>> DrawPile;
 
@@ -48,6 +51,8 @@ private:
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
+
+	FString SavePath;
 
 	TArray<USkeletalMeshComponent*> CardMeshArray;
 
@@ -76,7 +81,25 @@ public:
 	UFUNCTION(BlueprintPure)
 	int32 DrawCardNum() const;
 
+	UFUNCTION(BlueprintPure)
+	FString GetSavePath() const;
+
 	void RemoveCardFromDeck(int CardIndex);
 
 	void ReloadCards();
+	UFUNCTION(BlueprintCallable)
+	void SaveDeck(const FString& SavePath);
+	UFUNCTION(BlueprintCallable, CallInEditor, Category="Deck Settings")
+	void ManualSaveDeck();
+	UFUNCTION(BlueprintCallable)
+	TArray<TSubclassOf<ABaseCard>> LoadDeck(const FString& SavePath);
+	UFUNCTION(BlueprintCallable, CallInEditor, Category="Deck Settings")
+	void ManualLoadDeck();
+
+	UFUNCTION(BlueprintCallable)
+	void AddCard(TSubclassOf<ABaseCard> CardToAdd, bool bAddToDiscard, bool bIsTemporaryCard);
+	UFUNCTION(BlueprintCallable)
+	void RemoveCard(TSubclassOf<ABaseCard> CardToRemove, bool bIsPermanent);
+	UFUNCTION(BlueprintCallable)
+	void RemoveCardAtIndex(int32 Index, bool bIsPermanent);
 };

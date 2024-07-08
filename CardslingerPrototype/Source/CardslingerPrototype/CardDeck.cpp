@@ -7,6 +7,11 @@
 #include "Math/UnrealMathUtility.h"
 #include "Components/SkeletalMeshComponent.h"
 #include "BaseCharacterClass.h"
+#include "Misc/FileHelper.h"
+#include "Misc/Paths.h"
+#include "Serialization/ObjectAndNameAsStringProxyArchive.h"
+#include "Serialization/MemoryWriter.h"
+#include "Serialization/MemoryReader.h"
 #include "Animation/AnimInstance.h"
 #include "Kismet/GameplayStatics.h"
 
@@ -23,6 +28,12 @@ void ACardDeck::BeginPlay()
 {
 	Super::BeginPlay();
 	Player = Cast<ABaseCharacterClass>(UGameplayStatics::GetPlayerPawn(GetWorld(), 0));
+	SavePath = FPaths::ProjectSavedDir() / TEXT("CardDeck.sav");
+	UE_LOG(LogTemp, Display, TEXT("%s"),*SavePath);
+	FullDeck = LoadDeck(SavePath);
+	DrawPile = FullDeck;
+	ShuffleDeck();
+	SaveDeck(SavePath);
 }
 
 // Called every frame
@@ -54,21 +65,35 @@ ABaseCard* ACardDeck::DrawCard()
 /// @brief Shuffles the discard pile and places it back in the draw pile
 void ACardDeck::ShuffleDiscard()
 {
-	int32 NumberOfCards = DiscardPile.Num();
-	for(int32 i = NumberOfCards - 1; i >= 0; --i)
+	if(DiscardPile.Num() != 0)
 	{
-		int32 RandomCardIndex = FMath::RandRange(0,i);
-		DrawPile.Emplace(DiscardPile[RandomCardIndex]);
-		DiscardPile.RemoveAt(RandomCardIndex);
+		int32 NumberOfCards = DiscardPile.Num();
+		for(int32 i = NumberOfCards - 1; i >= 0; --i)
+		{
+			int32 RandomCardIndex = FMath::RandRange(0,i);
+			DrawPile.Emplace(DiscardPile[RandomCardIndex]);
+			DiscardPile.RemoveAt(RandomCardIndex);
+		}
+		//remove all cards from the discard pile
+		DiscardPile.Empty();
 	}
-	//remove all cards from the discard pile
-	DiscardPile.Empty();
 }
 
 /// @brief Shuffles the deck's current cards
 void ACardDeck::ShuffleDeck()
 {
-
+	if(DrawPile.Num() != 0)
+	{
+		int32 NumberOfCards = DrawPile.Num();
+		TArray<TSubclassOf<ABaseCard>> TempDeck;
+		for(int32 i = NumberOfCards - 1; i >= 0; --i)
+		{
+			int32 RandomCardIndex = FMath::RandRange(0,i);
+			TempDeck.Emplace(DrawPile[RandomCardIndex]);
+			DrawPile.RemoveAt(RandomCardIndex);
+		}
+		DrawPile = TempDeck;
+	}
 }
 
 /// @brief Launches a projectile card
@@ -101,17 +126,22 @@ bool ACardDeck::IsDeckEmpty() const
 	return DrawPile.Num() == 0;
 }
 
+/// @brief function to get the number of cards remaining in the draw pile
+/// @return the number of cards remaining
 int32 ACardDeck::DrawCardNum() const
 {
 	return DrawPile.Num();
 }
 
+/// @brief FOR USE ONLY IN THE RELOAD ANIMATION
+/// @param CardIndex the index of the card mesh being removed
 void ACardDeck::RemoveCardFromDeck(int CardIndex)
 {
 	CardMeshArray[CardIndex]->DestroyComponent();
 	CardMeshArray.RemoveAt(CardIndex);
 }
 
+/// @brief Triggers the reload animation
 void ACardDeck::ReloadCards()
 {
 	for(USkeletalMeshComponent* CardMesh : CardMeshArray)
@@ -126,6 +156,7 @@ void ACardDeck::ReloadCards()
 	
 }
 
+/// @brief FOR USE ONLY IN THE RELOAD ANIMATION
 void ACardDeck::SpawnCard()
 {
 	if(Player->GetMaxClip() == CardMeshArray.Num())
@@ -150,7 +181,137 @@ void ACardDeck::SpawnCard()
 	}
 }
 
+/// @brief Calculates the time required to play the reload animation
+/// @return returns the time as a float
 float ACardDeck::GetTimeToReload()
 {
 	return ReloadDelayPerCard * Player->GetMaxClip();
+}
+
+/// @brief Saves the deck to a file
+/// @param SavePathRef the save file path
+void ACardDeck::SaveDeck(const FString& SavePathRef)
+{
+    // Create a memory writer
+    TArray<uint8> BinaryData;
+    FMemoryWriter MemoryWriter(BinaryData, true);
+    FObjectAndNameAsStringProxyArchive Archive(MemoryWriter, false);
+    Archive.ArIsSaveGame = true;
+
+    Archive << FullDeck;
+
+    // Write to the file
+    if (FFileHelper::SaveArrayToFile(BinaryData, *SavePathRef))
+    {
+        UE_LOG(LogTemp, Log, TEXT("Save successful!"));
+    }
+    else
+    {
+        UE_LOG(LogTemp, Error, TEXT("Failed to save file."));
+    }
+}
+
+void ACardDeck::ManualSaveDeck()
+{
+	SaveDeck(SavePath);
+}
+
+/// @brief Loads the deck from file
+/// @param SavePathRef the save file path
+TArray<TSubclassOf<ABaseCard>> ACardDeck::LoadDeck(const FString& SavePathRef)
+{
+    // Load the binary data from the file
+    TArray<uint8> BinaryData;
+	TArray<TSubclassOf<ABaseCard>> LoadedCards;
+    if (FFileHelper::LoadFileToArray(BinaryData, *SavePathRef))
+    {
+        UE_LOG(LogTemp, Log, TEXT("Load successful!"));
+
+        // Create a memory reader
+        FMemoryReader MemoryReader(BinaryData, true);
+        FObjectAndNameAsStringProxyArchive Archive(MemoryReader, true);
+        Archive.ArIsSaveGame = true;
+
+        // Deserialize the data into the array
+        Archive << LoadedCards;
+    }
+    else
+    {
+        UE_LOG(LogTemp, Error, TEXT("Failed to load file."));
+    }
+	return LoadedCards;
+}
+
+void ACardDeck::ManualLoadDeck()
+{
+	FullDeck = LoadDeck(SavePath);
+}
+
+/// @brief Adds a card to the player's deck
+/// @param CardToAdd The class of card being added
+/// @param bAddToDiscard if true, card will be added to the discard pile instead
+/// @param bIsTemporaryCard if true, card will be added to the draw pile instead
+void ACardDeck::AddCard(TSubclassOf<ABaseCard> CardToAdd, bool bAddToDiscard, bool bIsTemporaryCard)
+{
+	if(bIsTemporaryCard)
+	{
+		if(!bAddToDiscard) DrawPile.Emplace(CardToAdd);
+		else DiscardPile.Emplace(CardToAdd);
+	}
+	else
+	{
+		FullDeck.Emplace(CardToAdd);
+		SaveDeck(SavePath);
+	}
+}
+
+/// @brief Removes a single copy of a card from the player's deck
+/// @param CardToRemove The class of card being removed
+/// @param bIsPermanent If true, the card will be removed from the saved deck
+void ACardDeck::RemoveCard(TSubclassOf<ABaseCard> CardToRemove, bool bIsPermanent)
+{
+	if(bIsPermanent)
+	{
+		UE_LOG(LogTemp, Display, TEXT("Permanent Passed"));
+		if(FullDeck.Contains(CardToRemove))
+		{
+			UE_LOG(LogTemp, Display, TEXT("Array contains passed"));
+			FullDeck.RemoveSingle(CardToRemove);
+			SaveDeck(SavePath);
+		}
+	}
+	else
+	{
+		if(DrawPile.Contains(CardToRemove))
+		{
+			DrawPile.Remove(CardToRemove);
+		}
+	}
+}
+
+/// @brief Removes a single card at the given index
+/// @param Index the index within the deck which will be removed
+/// @param bIsPermanent if true, the card will be removed from the saved deck
+void ACardDeck::RemoveCardAtIndex(int32 Index, bool bIsPermanent)
+{
+	if(bIsPermanent)
+	{
+		if(FullDeck.IsValidIndex(Index))
+		{
+			FullDeck.RemoveAt(Index);
+			SaveDeck(SavePath);
+		}
+	}
+	else
+	{
+		if(DrawPile.IsValidIndex(Index))
+		{
+			DrawPile.RemoveAt(Index);
+		}
+	}
+}
+
+FString ACardDeck::GetSavePath() const
+{
+	return SavePath;
 }

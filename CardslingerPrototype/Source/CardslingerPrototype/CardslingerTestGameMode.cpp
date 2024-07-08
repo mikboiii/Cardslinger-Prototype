@@ -4,7 +4,10 @@
 #include "CardslingerTestGameMode.h"
 #include "EngineUtils.h"
 #include "GameFramework/Controller.h"
+#include "Kismet/GameplayStatics.h"
 #include "BaseAIController.h"
+#include "Engine/DamageEvents.h"
+#include "BaseAIClass.h"
 
 void ACardslingerTestGameMode::PawnKilled(APawn* PawnKilled)
 {
@@ -33,5 +36,18 @@ void ACardslingerTestGameMode::EndGame(bool bIsPlayerWinner)
     {
         bool bIsWinner = Controller->IsPlayerController() == bIsPlayerWinner;
         Controller->GameHasEnded(Controller->GetPawn(), bIsWinner);
+    }
+}
+
+void ACardslingerTestGameMode::NPCKillAll()
+{
+    FHitResult Hit;
+    FPointDamageEvent KillEvent(1000000.0f, Hit, FVector::Zero(), nullptr);
+    AController* DebugController = UGameplayStatics::GetPlayerController(GetWorld(), 0);
+    AActor* DebugPawn = UGameplayStatics::GetPlayerPawn(GetWorld(), 0);
+    for(ABaseAIClass* Enemy : TActorRange<ABaseAIClass>(GetWorld()))
+    {
+        
+        Enemy->TakeDamage(1000000.0f, KillEvent, DebugController, DebugController);
     }
 }

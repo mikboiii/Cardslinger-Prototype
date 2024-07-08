@@ -101,9 +101,9 @@ void EmptyLinkFunctionForGeneratedCodeSlowTimeCard() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_SlowTimeCard_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_ASlowTimeCard, ASlowTimeCard::StaticClass, TEXT("ASlowTimeCard"), &Z_Registration_Info_UClass_ASlowTimeCard, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ASlowTimeCard), 1512454200U) },
+		{ Z_Construct_UClass_ASlowTimeCard, ASlowTimeCard::StaticClass, TEXT("ASlowTimeCard"), &Z_Registration_Info_UClass_ASlowTimeCard, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ASlowTimeCard), 1949932929U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_SlowTimeCard_h_3795204483(TEXT("/Script/CardslingerPrototype"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_SlowTimeCard_h_1546445590(TEXT("/Script/CardslingerPrototype"),
 		Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_SlowTimeCard_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_SlowTimeCard_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);

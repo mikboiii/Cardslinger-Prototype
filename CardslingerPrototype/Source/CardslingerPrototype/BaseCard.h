@@ -29,11 +29,17 @@ public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 	//The name of the card
-	UPROPERTY(EditAnywhere)
+	UPROPERTY(EditAnywhere, BlueprintReadOnly)
 	FString CardName;
 	//the description of what the card does
-	UPROPERTY(EditAnywhere)
+	UPROPERTY(EditAnywhere, BlueprintReadOnly)
 	FString CardDescription;
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly)
+	UMaterial* CardImage;
+
+	UPROPERTY(EditAnywhere)
+	int32 CardID;
 	//stores the widget of the card's ui design
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Instanced)
 	UUserWidget* CardWidget;
