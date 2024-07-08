@@ -272,9 +272,11 @@ void ACardDeck::RemoveCard(TSubclassOf<ABaseCard> CardToRemove, bool bIsPermanen
 {
 	if(bIsPermanent)
 	{
+		UE_LOG(LogTemp, Display, TEXT("Permanent Passed"));
 		if(FullDeck.Contains(CardToRemove))
 		{
-			FullDeck.Remove(CardToRemove);
+			UE_LOG(LogTemp, Display, TEXT("Array contains passed"));
+			FullDeck.RemoveSingle(CardToRemove);
 			SaveDeck(SavePath);
 		}
 	}
