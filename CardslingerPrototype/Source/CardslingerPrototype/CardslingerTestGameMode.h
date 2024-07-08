@@ -17,4 +17,8 @@ class CARDSLINGERPROTOTYPE_API ACardslingerTestGameMode : public AGameModeBase
 		virtual void PawnKilled(class APawn* PawnKilled);
 
 		virtual void EndGame(bool bIsPlayerWinner);
+
+	private:
+		UFUNCTION(Exec, Category="Commands")
+		void NPCKillAll();
 };
