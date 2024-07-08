@@ -11,6 +11,8 @@ void EmptyLinkFunctionForGeneratedCodeBaseAIClass() {}
 // Cross Module References
 	CARDSLINGERPROTOTYPE_API UClass* Z_Construct_UClass_ABaseAIClass();
 	CARDSLINGERPROTOTYPE_API UClass* Z_Construct_UClass_ABaseAIClass_NoRegister();
+	CARDSLINGERPROTOTYPE_API UClass* Z_Construct_UClass_AEnemyProjectile_NoRegister();
+	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
 	ENGINE_API UClass* Z_Construct_UClass_ACharacter();
 	UPackage* Z_Construct_UPackage__Script_CardslingerPrototype();
 // End Cross Module References
@@ -146,6 +148,10 @@ void EmptyLinkFunctionForGeneratedCodeBaseAIClass() {}
 		static const UECodeGen_Private::FMetaDataPairParam NewProp_FireCooldown_MetaData[];
 #endif
 		static const UECodeGen_Private::FFloatPropertyParams NewProp_FireCooldown;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_Bullet_MetaData[];
+#endif
+		static const UECodeGen_Private::FClassPropertyParams NewProp_Bullet;
 		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UECodeGen_Private::FClassParams ClassParams;
@@ -209,6 +215,13 @@ void EmptyLinkFunctionForGeneratedCodeBaseAIClass() {}
 	};
 #endif
 	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ABaseAIClass_Statics::NewProp_FireCooldown = { "FireCooldown", nullptr, (EPropertyFlags)0x0040000000000001, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ABaseAIClass, FireCooldown), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_ABaseAIClass_Statics::NewProp_FireCooldown_MetaData), Z_Construct_UClass_ABaseAIClass_Statics::NewProp_FireCooldown_MetaData) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABaseAIClass_Statics::NewProp_Bullet_MetaData[] = {
+		{ "Category", "Combat" },
+		{ "ModuleRelativePath", "BaseAIClass.h" },
+	};
+#endif
+	const UECodeGen_Private::FClassPropertyParams Z_Construct_UClass_ABaseAIClass_Statics::NewProp_Bullet = { "Bullet", nullptr, (EPropertyFlags)0x0044000000010001, UECodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ABaseAIClass, Bullet), Z_Construct_UClass_UClass, Z_Construct_UClass_AEnemyProjectile_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_ABaseAIClass_Statics::NewProp_Bullet_MetaData), Z_Construct_UClass_ABaseAIClass_Statics::NewProp_Bullet_MetaData) };
 	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ABaseAIClass_Statics::PropPointers[] = {
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABaseAIClass_Statics::NewProp_Speed,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABaseAIClass_Statics::NewProp_Health,
@@ -216,6 +229,7 @@ void EmptyLinkFunctionForGeneratedCodeBaseAIClass() {}
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABaseAIClass_Statics::NewProp_MaxRange,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABaseAIClass_Statics::NewProp_Damage,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABaseAIClass_Statics::NewProp_FireCooldown,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABaseAIClass_Statics::NewProp_Bullet,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_ABaseAIClass_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<ABaseAIClass>::IsAbstract,
@@ -255,9 +269,9 @@ void EmptyLinkFunctionForGeneratedCodeBaseAIClass() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_BaseAIClass_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_ABaseAIClass, ABaseAIClass::StaticClass, TEXT("ABaseAIClass"), &Z_Registration_Info_UClass_ABaseAIClass, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ABaseAIClass), 53408186U) },
+		{ Z_Construct_UClass_ABaseAIClass, ABaseAIClass::StaticClass, TEXT("ABaseAIClass"), &Z_Registration_Info_UClass_ABaseAIClass, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ABaseAIClass), 456990965U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_BaseAIClass_h_2445185129(TEXT("/Script/CardslingerPrototype"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_BaseAIClass_h_272448299(TEXT("/Script/CardslingerPrototype"),
 		Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_BaseAIClass_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_BaseAIClass_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);

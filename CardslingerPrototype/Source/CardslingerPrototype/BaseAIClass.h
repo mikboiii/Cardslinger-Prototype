@@ -58,5 +58,8 @@ private:
 	UPROPERTY(EditAnywhere, Category = "Combat")
 	float FireCooldown = 5.0f;
 	
+	UPROPERTY(EditDefaultsOnly, Category = "Combat")
+	TSubclassOf<class AEnemyProjectile> Bullet;
+
 	bool HitTrace(FHitResult& Hit, FVector& ShotDirection);
 };
