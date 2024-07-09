@@ -43,6 +43,9 @@ private:
 	float BulletLifetime = 100.0f;
 
 	UPROPERTY(EditAnywhere, Category="Combat")
+	float BulletSpeed = 100.0f;
+
+	UPROPERTY(EditAnywhere, Category="Combat")
 	float BulletDamage = 10.0f;
 
 	UFUNCTION()

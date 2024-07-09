@@ -31,8 +31,8 @@ AEnemyProjectile::AEnemyProjectile()
 	if(BulletCollision != nullptr)
 	{
 	//Sets up collision delegates
-	//CardCollision->OnComponentHit.AddDynamic(this, &AProjectileCard::OnHit);
-	//CardSkeletalMesh->OnComponentHit.AddDynamic(this, &AProjectileCard::OnHit);
+	BulletCollision->OnComponentHit.AddDynamic(this, &AEnemyProjectile::OnHit);
+	BulletMesh->OnComponentHit.AddDynamic(this, &AEnemyProjectile::OnHit);
 	}
 
 }
@@ -51,6 +51,8 @@ void AEnemyProjectile::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
+	FVector NextPosition = GetActorLocation() + GetActorForwardVector() * BulletSpeed;
+	SetActorLocation(NextPosition, true);
 }
 
 void AEnemyProjectile::SetOwnerController(AController* NewOwner)
