@@ -108,8 +108,8 @@ void ABaseAIClass::Shoot()
 	//AActor* HitActor = Hit.GetActor();
 	//if(HitActor == nullptr) return;
 	//HitActor->TakeDamage(Damage, DamageEvent, OwnerController, this);
-
-	AEnemyProjectile* Projectile = GetWorld()->SpawnActor<AEnemyProjectile>(Bullet, GetActorLocation(), ShotDirection.Rotation());
+	ShotDirection *= -1;
+	AEnemyProjectile* Projectile = GetWorld()->SpawnActor<AEnemyProjectile>(Bullet, (GetActorLocation() + GetActorForwardVector() * 50), ShotDirection.Rotation());
 	}
 }
 
