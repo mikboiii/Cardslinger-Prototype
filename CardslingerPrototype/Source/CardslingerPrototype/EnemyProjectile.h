@@ -45,12 +45,14 @@ private:
 	float BulletLifetime = 100.0f;
 
 	UPROPERTY(EditAnywhere, Category="Combat")
-	float BaseBulletSpeed = 50.0f;
+	float BaseBulletSpeed = 75.0f;
 
 	float BulletSpeed;
 
 	UPROPERTY(EditAnywhere, Category="Combat")
 	float BulletDamage = 10.0f;
+
+	FTimerHandle BulletLifetimeManager;
 
 	UFUNCTION()
 	virtual void OnHit(UPrimitiveComponent* HitComponent, AActor* OtherActor, UPrimitiveComponent* OtherComponent, FVector NormalImpulse, const FHitResult& Hit);

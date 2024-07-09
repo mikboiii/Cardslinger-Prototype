@@ -44,6 +44,7 @@ void AEnemyProjectile::BeginPlay()
 	UE_LOG(LogTemp, Display, TEXT("Enemy bullet spawned"));
 	PlayerPawn = UGameplayStatics::GetPlayerPawn(GetWorld(), 0);
 	BulletSpeed = BaseBulletSpeed;
+	GetWorldTimerManager().SetTimer(BulletLifetimeManager, this, &AEnemyProjectile::DestroyProjectile, BulletLifetime);
 }
 
 // Called every frame
