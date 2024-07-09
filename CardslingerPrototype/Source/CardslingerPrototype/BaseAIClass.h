@@ -61,5 +61,7 @@ private:
 	UPROPERTY(EditDefaultsOnly, Category = "Combat")
 	TSubclassOf<class AEnemyProjectile> Bullet;
 
+	TArray<class AEnemyProjectile*> ActiveBullets;
+
 	bool HitTrace(FHitResult& Hit, FVector& ShotDirection);
 };

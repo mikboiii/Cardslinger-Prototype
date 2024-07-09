@@ -16,6 +16,7 @@
 #include "AIController.h"
 #include "Sound/SoundBase.h"
 #include "Components/PostProcessComponent.h"
+#include "EnemyProjectile.h"
 
 // Sets default values
 ABaseAIClass::ABaseAIClass()
@@ -110,6 +111,8 @@ void ABaseAIClass::Shoot()
 	//HitActor->TakeDamage(Damage, DamageEvent, OwnerController, this);
 	ShotDirection *= -1;
 	AEnemyProjectile* Projectile = GetWorld()->SpawnActor<AEnemyProjectile>(Bullet, (GetActorLocation() + GetActorForwardVector() * 50), ShotDirection.Rotation());
+	if(GetComponentByClass<UPostProcessComponent>()->bEnabled) Projectile->EnableSlowEffect(true);
+	ActiveBullets.Emplace(Projectile);
 	}
 }
 
@@ -124,5 +127,10 @@ void ABaseAIClass::EnableSlowEffect(bool bIsSlow)
 	else if(!bIsSlow && ThisController)
 	{
 		ThisController->GetBlackboardComponent()->SetValueAsFloat(TEXT("FireCooldown"), FireCooldown);
+	}
+
+	for(AEnemyProjectile* ActiveBullet : ActiveBullets)
+	{
+		ActiveBullet->EnableSlowEffect(bIsSlow);
 	}
 }

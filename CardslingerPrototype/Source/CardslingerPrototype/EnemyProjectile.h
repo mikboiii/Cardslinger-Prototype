@@ -25,6 +25,8 @@ public:
 
 	void SetOwnerController(AController* NewOwner);
 
+	void EnableSlowEffect(bool bIsSlow);
+
 private:
 	UPROPERTY(Instanced, EditAnywhere)
 	class UStaticMeshComponent* BulletMesh;
@@ -43,7 +45,9 @@ private:
 	float BulletLifetime = 100.0f;
 
 	UPROPERTY(EditAnywhere, Category="Combat")
-	float BulletSpeed = 100.0f;
+	float BaseBulletSpeed = 50.0f;
+
+	float BulletSpeed;
 
 	UPROPERTY(EditAnywhere, Category="Combat")
 	float BulletDamage = 10.0f;

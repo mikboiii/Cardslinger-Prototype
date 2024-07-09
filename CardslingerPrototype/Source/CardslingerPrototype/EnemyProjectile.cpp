@@ -43,7 +43,7 @@ void AEnemyProjectile::BeginPlay()
 	Super::BeginPlay();
 	UE_LOG(LogTemp, Display, TEXT("Enemy bullet spawned"));
 	PlayerPawn = UGameplayStatics::GetPlayerPawn(GetWorld(), 0);
-	
+	BulletSpeed = BaseBulletSpeed;
 }
 
 // Called every frame
@@ -81,4 +81,10 @@ void AEnemyProjectile::OnHit(UPrimitiveComponent* HitComponent, AActor* OtherAct
 void AEnemyProjectile::DestroyProjectile()
 {
 	Destroy();
+}
+
+void AEnemyProjectile::EnableSlowEffect(bool bIsSlow)
+{
+	if(bIsSlow) BulletSpeed *= 0.05f;
+	else BulletSpeed = BaseBulletSpeed;
 }
