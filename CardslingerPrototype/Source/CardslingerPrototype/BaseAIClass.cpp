@@ -104,10 +104,12 @@ void ABaseAIClass::Shoot()
 	{
 	//UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), ImpactFlash, Hit.Location, ShotDirection.Rotation());
 	//UGameplayStatics::PlaySoundAtLocation(GetWorld(), ImpactSound, Hit.Location);
-	FPointDamageEvent DamageEvent(Damage, Hit, ShotDirection, nullptr);
-	AActor* HitActor = Hit.GetActor();
-	if(HitActor == nullptr) return;
-	HitActor->TakeDamage(Damage, DamageEvent, OwnerController, this);
+	//FPointDamageEvent DamageEvent(Damage, Hit, ShotDirection, nullptr);
+	//AActor* HitActor = Hit.GetActor();
+	//if(HitActor == nullptr) return;
+	//HitActor->TakeDamage(Damage, DamageEvent, OwnerController, this);
+
+	AEnemyProjectile* Projectile = GetWorld()->SpawnActor<AEnemyProjectile>(Bullet, GetActorLocation(), ShotDirection.Rotation());
 	}
 }
 

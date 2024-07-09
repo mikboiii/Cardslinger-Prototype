@@ -41,7 +41,7 @@ AEnemyProjectile::AEnemyProjectile()
 void AEnemyProjectile::BeginPlay()
 {
 	Super::BeginPlay();
-
+	UE_LOG(LogTemp, Display, TEXT("Enemy bullet spawned"));
 	PlayerPawn = UGameplayStatics::GetPlayerPawn(GetWorld(), 0);
 	
 }
