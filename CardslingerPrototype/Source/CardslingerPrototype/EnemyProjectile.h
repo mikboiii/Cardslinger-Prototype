@@ -23,6 +23,8 @@ public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
+	void SetOwnerController(AController* NewOwner);
+
 private:
 	UPROPERTY(Instanced, EditAnywhere)
 	class UStaticMeshComponent* BulletMesh;
@@ -30,5 +32,22 @@ private:
 	class UBoxComponent* BulletCollision;
 	UPROPERTY(Instanced, EditAnywhere)
 	class UNiagaraComponent* BulletTrail;
+
+	AActor* PlayerPawn;
+
+	AController* OwnerController;
+
+	void DestroyProjectile();
+
+	UPROPERTY(EditAnywhere, Category="Combat")
+	float BulletLifetime = 100.0f;
+
+	UPROPERTY(EditAnywhere, Category="Combat")
+	float BulletDamage = 10.0f;
+
+	UFUNCTION()
+	virtual void OnHit(UPrimitiveComponent* HitComponent, AActor* OtherActor, UPrimitiveComponent* OtherComponent, FVector NormalImpulse, const FHitResult& Hit);
+
+
 
 };

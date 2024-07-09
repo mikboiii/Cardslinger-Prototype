@@ -1452,3 +1452,19 @@ LogConfig: Set CVar [[r.Shadow.DetectVertexShaderLayerAtRuntime:1]]
 [2024.07.09-17.24.30:072][327]LogFileHelpers: InternalPromptForCheckoutAndSave took 284 ms (total: 802 ms)
 [2024.07.09-17.24.30:074][327]AssetCheck: New page: Asset Save: EmptyLevel
 [2024.07.09-17.24.30:075][327]LogContentValidation: Display: Validating /Script/Engine.World /Game/EmptyLevel.EmptyLevel
+[2024.07.09-17.40.46:867][437]LogLiveCoding: Display: Starting Live Coding compile.
+[2024.07.09-17.41.23:684][548]Display: Reload/Re-instancing Complete: No object changes detected
+[2024.07.09-17.41.23:684][548]LogLiveCoding: Error: Live coding failed, please see Live console for more information
+[2024.07.09-17.42.29:718][746]LogLiveCoding: Display: Starting Live Coding compile.
+[2024.07.09-17.42.37:374][769]Display: Reload/Re-instancing Complete: No object changes detected
+[2024.07.09-17.42.37:374][769]LogLiveCoding: Error: Live coding failed, please see Live console for more information
+[2024.07.09-17.43.07:825][860]LogLiveCoding: Display: Starting Live Coding compile.
+[2024.07.09-17.43.27:055][917]LogLiveCoding: Display:    Creating library C:\Users\Mikolaj\Documents\Unreal Projects\Cardslinger-Prototype\CardslingerPrototype\Binaries\Win64\UnrealEditor-CardslingerPrototype.patch_0.lib and object C:\Users\Mikolaj\Documents\Unreal Projects\Cardslinger-Prototype\CardslingerPrototype\Binaries\Win64\UnrealEditor-CardslingerPrototype.patch_0.exp
+[2024.07.09-17.43.27:916][920]LogClass: UPackage /Script/CardslingerPrototype Reload.
+[2024.07.09-17.43.27:916][920]LogClass: UClass EnemyProjectile Reload.
+[2024.07.09-17.43.27:943][920]LogClass: Could not find existing class EnemyProjectile in package /Script/CardslingerPrototype for reload, assuming new or modified class
+[2024.07.09-17.43.27:944][920]LogClass: Function OnHit is new or belongs to a modified class.
+[2024.07.09-17.43.27:988][920]Re-instancing EnemyProjectile after reload.
+[2024.07.09-17.43.28:275][920]LogUObjectHash: Compacting FUObjectHashTables data took   1.76ms
+[2024.07.09-17.43.28:970][921]Display: Reload/Re-instancing Complete: 1 package changed, 1 class changed, 20 classes unchanged, 31 functions remapped
+[2024.07.09-17.43.28:970][921]LogLiveCoding: Warning: Live coding succeeded, data type changes may cause packaging to fail if assets reference the new or updated data types

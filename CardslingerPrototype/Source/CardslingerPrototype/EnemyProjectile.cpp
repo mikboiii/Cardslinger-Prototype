@@ -41,6 +41,8 @@ AEnemyProjectile::AEnemyProjectile()
 void AEnemyProjectile::BeginPlay()
 {
 	Super::BeginPlay();
+
+	PlayerPawn = UGameplayStatics::GetPlayerPawn(GetWorld(), 0);
 	
 }
 
@@ -51,3 +53,30 @@ void AEnemyProjectile::Tick(float DeltaTime)
 
 }
 
+void AEnemyProjectile::SetOwnerController(AController* NewOwner)
+{
+	OwnerController = NewOwner;
+}
+
+
+
+void AEnemyProjectile::OnHit(UPrimitiveComponent* HitComponent, AActor* OtherActor, UPrimitiveComponent* OtherComponent, FVector NormalImpulse, const FHitResult& Hit)
+{
+	if (OtherActor != this)
+    {
+        //if the collision is an enemy class actor, apply damage and hit fx
+		if(OtherActor == PlayerPawn)
+		{
+
+			FPointDamageEvent DamageEvent(BulletDamage, Hit, -GetActorForwardVector(), nullptr);
+			OtherActor->TakeDamage(BulletDamage, DamageEvent, OwnerController, this);
+		}
+    }
+
+    Destroy();
+}
+
+void AEnemyProjectile::DestroyProjectile()
+{
+	Destroy();
+}
