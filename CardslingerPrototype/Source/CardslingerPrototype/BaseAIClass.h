@@ -38,6 +38,8 @@ public:
 
 	void Shoot();
 
+	FVector ShootLocation;
+
 private:
 
 	UPROPERTY(EditAnywhere)

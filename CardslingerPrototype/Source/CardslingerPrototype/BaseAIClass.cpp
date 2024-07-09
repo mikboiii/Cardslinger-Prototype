@@ -110,7 +110,8 @@ void ABaseAIClass::Shoot()
 	//if(HitActor == nullptr) return;
 	//HitActor->TakeDamage(Damage, DamageEvent, OwnerController, this);
 	ShotDirection *= -1;
-	AEnemyProjectile* Projectile = GetWorld()->SpawnActor<AEnemyProjectile>(Bullet, (GetActorLocation() + GetActorForwardVector() * 50), ShotDirection.Rotation());
+	ShootLocation = GetMesh()->GetBoneLocation(TEXT("gun_barrel"), EBoneSpaces::WorldSpace);
+	AEnemyProjectile* Projectile = GetWorld()->SpawnActor<AEnemyProjectile>(Bullet, ShootLocation, ShotDirection.Rotation());
 	if(GetComponentByClass<UPostProcessComponent>()->bEnabled) Projectile->EnableSlowEffect(true);
 	ActiveBullets.Emplace(Projectile);
 	}
