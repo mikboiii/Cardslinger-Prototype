@@ -25,7 +25,7 @@ public:
 
 private:
 	UPROPERTY(Instanced, EditAnywhere)
-	class USkeletalMeshComponent* BulletSkeletalMesh;
+	class UStaticMeshComponent* BulletMesh;
 	UPROPERTY(Instanced, EditAnywhere)
 	class UBoxComponent* BulletCollision;
 	UPROPERTY(Instanced, EditAnywhere)

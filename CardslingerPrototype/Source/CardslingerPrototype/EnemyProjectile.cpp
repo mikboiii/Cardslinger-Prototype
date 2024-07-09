@@ -22,10 +22,10 @@ AEnemyProjectile::AEnemyProjectile()
  	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
 
-	BulletSkeletalMesh = CreateDefaultSubobject<USkeletalMeshComponent>(TEXT("BulletSkeletalMesh"));
-	SetRootComponent(BulletSkeletalMesh);
+	BulletMesh = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("BulletMesh"));
+	SetRootComponent(BulletMesh);
 	BulletCollision = CreateDefaultSubobject<UBoxComponent>(TEXT("BulletCollision"));
-	BulletCollision->SetupAttachment(BulletSkeletalMesh);
+	BulletCollision->SetupAttachment(BulletMesh);
 	BulletTrail = CreateDefaultSubobject<UNiagaraComponent>(TEXT("BulletTrail"));
 	BulletTrail->SetupAttachment(BulletCollision);
 	if(BulletCollision != nullptr)
