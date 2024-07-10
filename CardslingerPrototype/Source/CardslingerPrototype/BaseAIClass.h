@@ -65,7 +65,9 @@ private:
 	UPROPERTY(EditDefaultsOnly, Category = "Combat")
 	TSubclassOf<class AEnemyProjectile> Bullet;
 
-	UPROPERTY(VisibleAnywhere)
+	UPROPERTY(EditAnywhere, Category = "Combat")
+	float AccuracyModifier = 0.1f;
+
 	TArray<class AEnemyProjectile*> ActiveBullets;
 
 	bool HitTrace(FHitResult& Hit, FVector& ShotDirection);
