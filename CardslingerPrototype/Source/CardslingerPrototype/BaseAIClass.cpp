@@ -113,6 +113,8 @@ void ABaseAIClass::Shoot()
 	//HitActor->TakeDamage(Damage, DamageEvent, OwnerController, this);
 	ShotDirection *= -1;
 	ShootLocation = GetMesh()->GetBoneLocation(TEXT("gun_barrel"), EBoneSpaces::WorldSpace);
+	FVector RandomAimOffset = FVector(FMath::RandRange(0.9,1.1), FMath::RandRange(0.9,1.1), FMath::RandRange(0.9,1.1));
+	ShotDirection *= RandomAimOffset;
 	AEnemyProjectile* Projectile = GetWorld()->SpawnActor<AEnemyProjectile>(Bullet, ShootLocation, ShotDirection.Rotation());
 	if(GetComponentByClass<UPostProcessComponent>()->bEnabled) Projectile->EnableSlowEffect(true);
 	ActiveBullets.Emplace(Projectile);
