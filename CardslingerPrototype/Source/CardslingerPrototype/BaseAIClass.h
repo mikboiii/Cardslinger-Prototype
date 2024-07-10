@@ -40,6 +40,8 @@ public:
 
 	FVector ShootLocation;
 
+	float GetFireCooldown();
+
 private:
 
 	UPROPERTY(EditAnywhere)

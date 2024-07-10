@@ -18,9 +18,10 @@ void ABaseAIController::BeginPlay()
         if(GetPawn()) 
         {
             GetBlackboardComponent()->SetValueAsVector(TEXT("StartLocation"), GetPawn()->GetActorLocation());
-            GetBlackboardComponent()->SetValueAsFloat(TEXT("FireCooldown"), 5.0f);
+            GetBlackboardComponent()->SetValueAsFloat(TEXT("FireCooldown"), Cast<ABaseAIClass>(GetPawn())->GetFireCooldown());
         }
     }
+
 }
 
 void ABaseAIController::Tick(float DeltaSeconds)

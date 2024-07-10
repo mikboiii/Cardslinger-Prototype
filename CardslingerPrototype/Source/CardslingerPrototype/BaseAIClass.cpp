@@ -152,3 +152,8 @@ void ABaseAIClass::EnableSlowEffect(bool bIsSlow)
 	}
 
 }
+
+float ABaseAIClass::GetFireCooldown()
+{
+	return FireCooldown;
+}
