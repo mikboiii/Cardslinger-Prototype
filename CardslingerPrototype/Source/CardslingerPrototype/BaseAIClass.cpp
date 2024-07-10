@@ -31,6 +31,8 @@ void ABaseAIClass::BeginPlay()
 {
 	Super::BeginPlay();
 	Health = MaxHealth;
+	ThisController = Cast<AAIController>(GetController());
+	//ThisController->GetBlackboardComponent()->SetValueAsFloat(TEXT("FireCooldown"), FireCooldown);
 	
 }
 
@@ -120,7 +122,15 @@ void ABaseAIClass::Shoot()
 void ABaseAIClass::EnableSlowEffect(bool bIsSlow)
 {
 	GetComponentByClass<UPostProcessComponent>()->bEnabled = bIsSlow;
-	AAIController* ThisController = Cast<AAIController>(GetController());
+	ThisController = Cast<AAIController>(GetController());
+	if(bIsSlow) 
+	{
+		GetMesh()->SetCustomDepthStencilValue(2);
+	}
+	else
+	{ 
+		GetMesh()->SetCustomDepthStencilValue(1);
+	}
 	if(bIsSlow && ThisController)
 	{
 		ThisController->GetBlackboardComponent()->SetValueAsFloat(TEXT("FireCooldown"), FireCooldown / GetActorTimeDilation());
@@ -132,6 +142,7 @@ void ABaseAIClass::EnableSlowEffect(bool bIsSlow)
 
 	for(AEnemyProjectile* ActiveBullet : ActiveBullets)
 	{
-		ActiveBullet->EnableSlowEffect(bIsSlow);
+		if(ActiveBullet) ActiveBullet->EnableSlowEffect(bIsSlow);
 	}
+
 }

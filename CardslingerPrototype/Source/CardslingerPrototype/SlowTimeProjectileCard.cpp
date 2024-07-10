@@ -30,7 +30,6 @@ void ASlowTimeProjectileCard::SlowTimeSphere()
     {
         Actor->CustomTimeDilation = CardSlowDilationValue;
         Cast<ABaseAIClass>(Actor)->EnableSlowEffect(true);
-        Actor->GetComponentByClass<USkeletalMeshComponent>()->SetCustomDepthStencilValue(2);
     }
     FTimerHandle TimeResetHandle;
     GetWorldTimerManager().SetTimer(TimeResetHandle, this, &ASlowTimeProjectileCard::ResetTimeDilation, CardSlowDuration);
@@ -70,9 +69,12 @@ void ASlowTimeProjectileCard::ResetTimeDilation()
 {
     for(AActor* Actor : AffectedEnemies)
     {
+        if(!Actor)
+        {
+            return;
+        }
         Actor->CustomTimeDilation = 1.0f;
         Cast<ABaseAIClass>(Actor)->EnableSlowEffect(false);
-        Actor->GetComponentByClass<USkeletalMeshComponent>()->SetCustomDepthStencilValue(1);
     }
     DestroyCard();
 }

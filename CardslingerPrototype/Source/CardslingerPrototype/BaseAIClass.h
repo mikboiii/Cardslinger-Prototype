@@ -44,6 +44,8 @@ private:
 
 	UPROPERTY(EditAnywhere)
 	float Speed = 10.f;
+
+	class AAIController* ThisController;
 	
 	UPROPERTY(VisibleAnywhere, Category = "Combat")
 	float Health;
@@ -63,6 +65,7 @@ private:
 	UPROPERTY(EditDefaultsOnly, Category = "Combat")
 	TSubclassOf<class AEnemyProjectile> Bullet;
 
+	UPROPERTY(VisibleAnywhere)
 	TArray<class AEnemyProjectile*> ActiveBullets;
 
 	bool HitTrace(FHitResult& Hit, FVector& ShotDirection);

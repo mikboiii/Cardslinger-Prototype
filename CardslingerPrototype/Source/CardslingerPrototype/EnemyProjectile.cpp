@@ -6,6 +6,7 @@
 #include "Components/BoxComponent.h"
 #include "Kismet/KismetMathLibrary.h"
 #include "Components/SkeletalMeshComponent.h"
+#include "Components/StaticMeshComponent.h"
 #include "GameFramework/ProjectileMovementComponent.h"
 #include "Components/SceneComponent.h"
 #include "Engine/DamageEvents.h"
@@ -41,7 +42,6 @@ AEnemyProjectile::AEnemyProjectile()
 void AEnemyProjectile::BeginPlay()
 {
 	Super::BeginPlay();
-	UE_LOG(LogTemp, Display, TEXT("Enemy bullet spawned"));
 	PlayerPawn = UGameplayStatics::GetPlayerPawn(GetWorld(), 0);
 	BulletSpeed = BaseBulletSpeed;
 	GetWorldTimerManager().SetTimer(BulletLifetimeManager, this, &AEnemyProjectile::DestroyProjectile, BulletLifetime);
@@ -89,14 +89,20 @@ void AEnemyProjectile::EnableSlowEffect(bool bIsSlow)
 	if(bIsSlow) BulletSpeed *= 0.05f;
 	else BulletSpeed = BaseBulletSpeed;
 
+	UStaticMeshComponent* Mesh = FindComponentByClass<UStaticMeshComponent>();
+	
+	if(!Mesh)
+	{
+		return;
+	}
 	if(bIsSlow) 
 	{
-		GetComponentByClass<UStaticMeshComponent>()->SetCustomDepthStencilValue(3);
-		BulletTrail->SetCustomDepthStencilValue(3);
+		if(Mesh) Mesh->SetCustomDepthStencilValue(3);
+		if(BulletTrail) BulletTrail->SetCustomDepthStencilValue(3);
 	}
 	else 
 	{
-		GetComponentByClass<UStaticMeshComponent>()->SetCustomDepthStencilValue(1);
-		BulletTrail->SetCustomDepthStencilValue(1);
+		if(Mesh) Mesh->SetCustomDepthStencilValue(1);
+		if(BulletTrail) BulletTrail->SetCustomDepthStencilValue(1);
 	}
 }
