@@ -42,6 +42,8 @@ public:
 
 	float GetFireCooldown();
 
+	void RemoveProjectile(class AEnemyProjectile* Projectile);
+
 private:
 
 	UPROPERTY(EditAnywhere)
@@ -70,6 +72,7 @@ private:
 	UPROPERTY(EditAnywhere, Category = "Combat")
 	float AccuracyModifier = 0.1f;
 
+	UPROPERTY(EditAnywhere, Category="Combat")
 	TArray<class AEnemyProjectile*> ActiveBullets;
 
 	bool HitTrace(FHitResult& Hit, FVector& ShotDirection);

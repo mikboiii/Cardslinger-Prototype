@@ -23,7 +23,7 @@ public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
-	void SetOwnerController(AController* NewOwner);
+	void SetOwnerClass(ABaseAIClass* NewOwner);
 
 	void EnableSlowEffect(bool bIsSlow);
 
@@ -37,7 +37,7 @@ private:
 
 	AActor* PlayerPawn;
 
-	AController* OwnerController;
+	class ABaseAIClass* OwnerAI;
 
 	void DestroyProjectile();
 

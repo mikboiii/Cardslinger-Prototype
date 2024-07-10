@@ -121,6 +121,7 @@ void ABaseAIClass::Shoot()
 	ShotDirection *= RandomAimOffset;
 	AEnemyProjectile* Projectile = GetWorld()->SpawnActor<AEnemyProjectile>(Bullet, ShootLocation, ShotDirection.Rotation());
 	if(GetComponentByClass<UPostProcessComponent>()->bEnabled) Projectile->EnableSlowEffect(true);
+	Projectile->SetOwnerClass(this);
 	ActiveBullets.Emplace(Projectile);
 	}
 }
@@ -149,6 +150,7 @@ void ABaseAIClass::EnableSlowEffect(bool bIsSlow)
 	for(AEnemyProjectile* ActiveBullet : ActiveBullets)
 	{
 		if(ActiveBullet) ActiveBullet->EnableSlowEffect(bIsSlow);
+		else ActiveBullets.Remove(ActiveBullet);
 	}
 
 }
@@ -156,4 +158,9 @@ void ABaseAIClass::EnableSlowEffect(bool bIsSlow)
 float ABaseAIClass::GetFireCooldown()
 {
 	return FireCooldown;
+}
+
+void ABaseAIClass::RemoveProjectile(AEnemyProjectile* Projectile)
+{
+	ActiveBullets.Remove(Projectile);
 }

@@ -56,9 +56,9 @@ void AEnemyProjectile::Tick(float DeltaTime)
 	SetActorLocation(NextPosition, true);
 }
 
-void AEnemyProjectile::SetOwnerController(AController* NewOwner)
+void AEnemyProjectile::SetOwnerClass(ABaseAIClass* NewOwner)
 {
-	OwnerController = NewOwner;
+	OwnerAI = NewOwner;
 }
 
 
@@ -72,15 +72,16 @@ void AEnemyProjectile::OnHit(UPrimitiveComponent* HitComponent, AActor* OtherAct
 		{
 
 			FPointDamageEvent DamageEvent(BulletDamage, Hit, -GetActorForwardVector(), nullptr);
-			OtherActor->TakeDamage(BulletDamage, DamageEvent, OwnerController, this);
+			OtherActor->TakeDamage(BulletDamage, DamageEvent, OwnerAI->GetController(), this);
 		}
     }
 
-    Destroy();
+    DestroyProjectile();
 }
 
 void AEnemyProjectile::DestroyProjectile()
 {
+	OwnerAI->RemoveProjectile(this);
 	Destroy();
 }
 
