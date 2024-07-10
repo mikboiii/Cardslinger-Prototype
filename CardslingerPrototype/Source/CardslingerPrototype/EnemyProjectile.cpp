@@ -88,4 +88,15 @@ void AEnemyProjectile::EnableSlowEffect(bool bIsSlow)
 {
 	if(bIsSlow) BulletSpeed *= 0.05f;
 	else BulletSpeed = BaseBulletSpeed;
+
+	if(bIsSlow) 
+	{
+		GetComponentByClass<UStaticMeshComponent>()->SetCustomDepthStencilValue(3);
+		BulletTrail->SetCustomDepthStencilValue(3);
+	}
+	else 
+	{
+		GetComponentByClass<UStaticMeshComponent>()->SetCustomDepthStencilValue(1);
+		BulletTrail->SetCustomDepthStencilValue(1);
+	}
 }
