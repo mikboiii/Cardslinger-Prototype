@@ -45,6 +45,7 @@ void AEnemyProjectile::BeginPlay()
 	PlayerPawn = UGameplayStatics::GetPlayerPawn(GetWorld(), 0);
 	BulletSpeed = BaseBulletSpeed;
 	GetWorldTimerManager().SetTimer(BulletLifetimeManager, this, &AEnemyProjectile::DestroyProjectile, BulletLifetime);
+	
 }
 
 // Called every frame
@@ -59,6 +60,8 @@ void AEnemyProjectile::Tick(float DeltaTime)
 void AEnemyProjectile::SetOwnerClass(ABaseAIClass* NewOwner)
 {
 	OwnerAI = NewOwner;
+	BulletMesh->IgnoreActorWhenMoving(OwnerAI, true);
+	BulletCollision->IgnoreActorWhenMoving(OwnerAI, true);
 }
 
 
