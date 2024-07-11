@@ -20,6 +20,7 @@ void EmptyLinkFunctionForGeneratedCodeEnemyProjectile() {}
 	ENGINE_API UClass* Z_Construct_UClass_UStaticMeshComponent_NoRegister();
 	ENGINE_API UScriptStruct* Z_Construct_UScriptStruct_FHitResult();
 	NIAGARA_API UClass* Z_Construct_UClass_UNiagaraComponent_NoRegister();
+	NIAGARA_API UClass* Z_Construct_UClass_UNiagaraSystem_NoRegister();
 	UPackage* Z_Construct_UPackage__Script_CardslingerPrototype();
 // End Cross Module References
 	DEFINE_FUNCTION(AEnemyProjectile::execOnHit)
@@ -141,6 +142,10 @@ void EmptyLinkFunctionForGeneratedCodeEnemyProjectile() {}
 #endif
 		static const UECodeGen_Private::FObjectPropertyParams NewProp_BulletTrail;
 #if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_ImpactFX_MetaData[];
+#endif
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_ImpactFX;
+#if WITH_METADATA
 		static const UECodeGen_Private::FMetaDataPairParam NewProp_BulletLifetime_MetaData[];
 #endif
 		static const UECodeGen_Private::FFloatPropertyParams NewProp_BulletLifetime;
@@ -196,6 +201,13 @@ void EmptyLinkFunctionForGeneratedCodeEnemyProjectile() {}
 #endif
 	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AEnemyProjectile_Statics::NewProp_BulletTrail = { "BulletTrail", nullptr, (EPropertyFlags)0x0042000000080009, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AEnemyProjectile, BulletTrail), Z_Construct_UClass_UNiagaraComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_AEnemyProjectile_Statics::NewProp_BulletTrail_MetaData), Z_Construct_UClass_AEnemyProjectile_Statics::NewProp_BulletTrail_MetaData) };
 #if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AEnemyProjectile_Statics::NewProp_ImpactFX_MetaData[] = {
+		{ "Category", "EnemyProjectile" },
+		{ "ModuleRelativePath", "EnemyProjectile.h" },
+	};
+#endif
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AEnemyProjectile_Statics::NewProp_ImpactFX = { "ImpactFX", nullptr, (EPropertyFlags)0x0040000000000001, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AEnemyProjectile, ImpactFX), Z_Construct_UClass_UNiagaraSystem_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_AEnemyProjectile_Statics::NewProp_ImpactFX_MetaData), Z_Construct_UClass_AEnemyProjectile_Statics::NewProp_ImpactFX_MetaData) };
+#if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AEnemyProjectile_Statics::NewProp_BulletLifetime_MetaData[] = {
 		{ "Category", "Combat" },
 		{ "ModuleRelativePath", "EnemyProjectile.h" },
@@ -220,6 +232,7 @@ void EmptyLinkFunctionForGeneratedCodeEnemyProjectile() {}
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AEnemyProjectile_Statics::NewProp_BulletMesh,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AEnemyProjectile_Statics::NewProp_BulletCollision,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AEnemyProjectile_Statics::NewProp_BulletTrail,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AEnemyProjectile_Statics::NewProp_ImpactFX,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AEnemyProjectile_Statics::NewProp_BulletLifetime,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AEnemyProjectile_Statics::NewProp_BaseBulletSpeed,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AEnemyProjectile_Statics::NewProp_BulletDamage,
@@ -262,9 +275,9 @@ void EmptyLinkFunctionForGeneratedCodeEnemyProjectile() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_EnemyProjectile_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_AEnemyProjectile, AEnemyProjectile::StaticClass, TEXT("AEnemyProjectile"), &Z_Registration_Info_UClass_AEnemyProjectile, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AEnemyProjectile), 2339164573U) },
+		{ Z_Construct_UClass_AEnemyProjectile, AEnemyProjectile::StaticClass, TEXT("AEnemyProjectile"), &Z_Registration_Info_UClass_AEnemyProjectile, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AEnemyProjectile), 3800173329U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_EnemyProjectile_h_4090163266(TEXT("/Script/CardslingerPrototype"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_EnemyProjectile_h_1551249121(TEXT("/Script/CardslingerPrototype"),
 		Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_EnemyProjectile_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_EnemyProjectile_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);

@@ -11,6 +11,7 @@
 #include "Components/SceneComponent.h"
 #include "Engine/DamageEvents.h"
 #include "NiagaraComponent.h"
+#include "NiagaraSystem.h"
 #include "NiagaraFunctionLibrary.h"
 #include "BaseAIClass.h"
 #include "DrawDebugHelpers.h"
@@ -78,14 +79,13 @@ void AEnemyProjectile::OnHit(UPrimitiveComponent* HitComponent, AActor* OtherAct
 			OtherActor->TakeDamage(BulletDamage, DamageEvent, OwnerAI->GetController(), this);
 		}
     }
-
+	UNiagaraFunctionLibrary::SpawnSystemAtLocation(GetWorld(), ImpactFX, GetActorLocation(), GetActorForwardVector().Rotation(), FVector::One(), true, true, ENCPoolMethod::None, true);
     DestroyProjectile();
 }
 
 void AEnemyProjectile::DestroyProjectile()
 {
-	OwnerAI->RemoveProjectile(this);
-	Destroy();
+	if(OwnerAI) OwnerAI->RemoveProjectile(this);
 }
 
 void AEnemyProjectile::EnableSlowEffect(bool bIsSlow)

@@ -35,6 +35,9 @@ private:
 	UPROPERTY(Instanced, EditAnywhere)
 	class UNiagaraComponent* BulletTrail;
 
+	UPROPERTY(EditAnywhere)
+	class UNiagaraSystem* ImpactFX;
+
 	AActor* PlayerPawn;
 
 	class ABaseAIClass* OwnerAI;

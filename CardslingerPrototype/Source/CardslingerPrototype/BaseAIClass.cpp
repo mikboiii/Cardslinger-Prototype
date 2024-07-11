@@ -105,7 +105,6 @@ void ABaseAIClass::Shoot()
 	if(OwnerController == nullptr) return;
 	if(HitTrace(Hit, ShotDirection))
 	{
-	//UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), ImpactFlash, Hit.Location, ShotDirection.Rotation());
 	//UGameplayStatics::PlaySoundAtLocation(GetWorld(), ImpactSound, Hit.Location);
 	//FPointDamageEvent DamageEvent(Damage, Hit, ShotDirection, nullptr);
 	//AActor* HitActor = Hit.GetActor();
