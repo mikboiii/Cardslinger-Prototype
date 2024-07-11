@@ -13,6 +13,8 @@
 #include "Engine/DamageEvents.h"
 #include "Engine/World.h"
 #include "BehaviorTree/BlackboardComponent.h"
+#include "NiagaraSystem.h"
+#include "NiagaraFunctionLibrary.h"
 #include "AIController.h"
 #include "Sound/SoundBase.h"
 #include "Components/PostProcessComponent.h"
@@ -122,6 +124,7 @@ void ABaseAIClass::Shoot()
 	if(GetComponentByClass<UPostProcessComponent>()->bEnabled) Projectile->EnableSlowEffect(true);
 	Projectile->SetOwnerClass(this);
 	ActiveBullets.Emplace(Projectile);
+	UNiagaraFunctionLibrary::SpawnSystemAtLocation(GetWorld(), MuzzleFlash, GetMesh()->GetBoneLocation(TEXT("gun_barrel")), ShotDirection.Rotation(), FVector::One(), true, true, ENCPoolMethod::None, true);
 	}
 }
 

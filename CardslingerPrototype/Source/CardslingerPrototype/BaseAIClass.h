@@ -75,7 +75,7 @@ private:
 	UPROPERTY(EditAnywhere, Category="Combat")
 	TArray<class AEnemyProjectile*> ActiveBullets;
 
-	UPROPERTTY(EditAnywhere)
+	UPROPERTY(EditAnywhere)
 	class UNiagaraSystem* MuzzleFlash;
 
 	bool HitTrace(FHitResult& Hit, FVector& ShotDirection);
