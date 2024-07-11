@@ -60,6 +60,6 @@ private:
 	UFUNCTION()
 	virtual void OnHit(UPrimitiveComponent* HitComponent, AActor* OtherActor, UPrimitiveComponent* OtherComponent, FVector NormalImpulse, const FHitResult& Hit);
 
-
+	void DestroyProjectileTimerFunction();
 
 };

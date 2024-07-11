@@ -86,6 +86,17 @@ void AEnemyProjectile::OnHit(UPrimitiveComponent* HitComponent, AActor* OtherAct
 void AEnemyProjectile::DestroyProjectile()
 {
 	if(OwnerAI) OwnerAI->RemoveProjectile(this);
+	BulletSpeed = 0.0f;
+	BulletMesh->SetVisibility(false, false);
+	BulletMesh->SetCollisionEnabled(ECollisionEnabled::NoCollision);
+	BulletCollision->SetCollisionEnabled(ECollisionEnabled::NoCollision);
+	FTimerHandle DeleteTimerHandle;
+	GetWorldTimerManager().SetTimer(DeleteTimerHandle, this, &AEnemyProjectile::DestroyProjectileTimerFunction, 2.0f);
+}
+
+void AEnemyProjectile::DestroyProjectileTimerFunction()
+{
+	Destroy();
 }
 
 void AEnemyProjectile::EnableSlowEffect(bool bIsSlow)
