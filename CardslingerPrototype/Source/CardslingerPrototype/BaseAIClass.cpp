@@ -106,8 +106,8 @@ void ABaseAIClass::ShootMultiple()
 	{
 		FTimerHandle StaggerFireHandle;
 		GetWorldTimerManager().SetTimer(StaggerFireHandle, this, &ABaseAIClass::Shoot, TimePerShot * i);
-		TempFireCooldown += TimePerShot * i;
 	}
+	TempFireCooldown += TimePerShot * NumberOfShots;
 	ThisController->GetBlackboardComponent()->SetValueAsFloat(TEXT("FireCooldown"), TempFireCooldown);
 
 }

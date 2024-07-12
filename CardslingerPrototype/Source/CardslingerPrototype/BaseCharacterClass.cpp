@@ -277,7 +277,7 @@ void ABaseCharacterClass::ShootMultiple()
 {
 	if(CanFire)
 	{
-		int32 TempFireDelay = FireDelay;
+		float TempFireDelay = FireDelay;
 		int32 CardsToFire {CardsPerShot};
 		if(bIsChargeMode)
 		{
@@ -293,9 +293,10 @@ void ABaseCharacterClass::ShootMultiple()
 			{
 				FTimerHandle StaggerFireHandle;
 				GetWorldTimerManager().SetTimer(StaggerFireHandle, this, &ABaseCharacterClass::Shoot, StaggerDelay * i);
-				TempFireDelay += StaggerDelay * i;
 			}
-			GetWorldTimerManager().SetTimer(AutoFireManager, this, &ABaseCharacterClass::FireCooldown, FireDelay);
+			float FloatCardsToFire = CardsToFire;
+			TempFireDelay += StaggerDelay * FloatCardsToFire;
+			GetWorldTimerManager().SetTimer(AutoFireManager, this, &ABaseCharacterClass::FireCooldown, TempFireDelay);
 		}
 		else
 		{
