@@ -34,6 +34,7 @@ void ABaseAIClass::BeginPlay()
 	Super::BeginPlay();
 	Health = MaxHealth;
 	ThisController = Cast<AAIController>(GetController());
+	BaseTimePerShot = TimePerShot;
 	//ThisController->GetBlackboardComponent()->SetValueAsFloat(TEXT("FireCooldown"), FireCooldown);
 	
 }
@@ -156,10 +157,12 @@ void ABaseAIClass::EnableSlowEffect(bool bIsSlow)
 	if(bIsSlow && ThisController)
 	{
 		ThisController->GetBlackboardComponent()->SetValueAsFloat(TEXT("FireCooldown"), FireCooldown / GetActorTimeDilation());
+		TimePerShot /= GetActorTimeDilation();
 	}
 	else if(!bIsSlow && ThisController)
 	{
 		ThisController->GetBlackboardComponent()->SetValueAsFloat(TEXT("FireCooldown"), FireCooldown);
+		TimePerShot = BaseTimePerShot;
 	}
 
 	for(AEnemyProjectile* ActiveBullet : ActiveBullets)

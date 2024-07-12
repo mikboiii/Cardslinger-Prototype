@@ -73,6 +73,8 @@ private:
 
 	UPROPERTY(EditAnywhere, Category = "Combat")
 	float TimePerShot = 0.2f;
+
+	float BaseTimePerShot;
 	
 	UPROPERTY(EditDefaultsOnly, Category = "Combat")
 	TSubclassOf<class AEnemyProjectile> Bullet;
