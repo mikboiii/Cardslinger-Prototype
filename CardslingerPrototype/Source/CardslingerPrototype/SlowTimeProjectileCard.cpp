@@ -22,6 +22,17 @@ void ASlowTimeProjectileCard::OnHit(UPrimitiveComponent* HitComponent, AActor* O
     }
 }
 
+void ASlowTimeProjectileCard::Tick(float DeltaTime)
+{
+    Super::Tick(DeltaTime);
+    if(FVector::Dist(GetActorLocation(), TargetLocation) == 0 && GetActorEnableCollision()) 
+    {
+    SlowTimeSphere();
+    UNiagaraFunctionLibrary::SpawnSystemAtLocation(GetWorld(), CardImpact, GetActorLocation(), GetActorForwardVector().Rotation(), FVector(ParticleScale), true, true, ENCPoolMethod::None, true);
+    SetActorEnableCollision(false);
+    }
+}
+
 void ASlowTimeProjectileCard::SlowTimeSphere()
 {
     //DrawDebugSphere(GetWorld(), GetActorLocation(), CardSlowTimeRadius, 32, FColor::Blue, true, 100.0f);

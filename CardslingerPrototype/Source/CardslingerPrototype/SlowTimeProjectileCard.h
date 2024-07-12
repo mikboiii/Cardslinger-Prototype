@@ -34,4 +34,6 @@ class CARDSLINGERPROTOTYPE_API ASlowTimeProjectileCard : public AProjectileCard
 
 		UPROPERTY(EditAnywhere)
 		float CardSlowDuration = 15.0f;
+	public:
+		void Tick(float DeltaTime) override;
 };
