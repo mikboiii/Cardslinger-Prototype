@@ -101,11 +101,15 @@ bool ABaseAIClass::HitTrace(FHitResult& Hit, FVector& ShotDirection)
 
 void ABaseAIClass::ShootMultiple()
 {
+	float TempFireCooldown = FireCooldown;
 	for(int32 i = 0; i <= NumberOfShots; i++)
 	{
 		FTimerHandle StaggerFireHandle;
 		GetWorldTimerManager().SetTimer(StaggerFireHandle, this, &ABaseAIClass::Shoot, TimePerShot * i);
+		TempFireCooldown += TimePerShot * i;
 	}
+	ThisController->GetBlackboardComponent()->SetValueAsFloat(TEXT("FireCooldown"), TempFireCooldown);
+
 }
 
 void ABaseAIClass::Shoot()
