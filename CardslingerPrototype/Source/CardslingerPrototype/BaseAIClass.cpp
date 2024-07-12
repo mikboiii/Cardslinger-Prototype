@@ -99,6 +99,15 @@ bool ABaseAIClass::HitTrace(FHitResult& Hit, FVector& ShotDirection)
 	return GetWorld()->LineTraceSingleByChannel(Hit, ViewLocation, End, ECollisionChannel::ECC_GameTraceChannel1, Params);
 }
 
+void ABaseAIClass::ShootMultiple()
+{
+	for(int32 i = 0; i <= NumberOfShots; i++)
+	{
+		FTimerHandle StaggerFireHandle;
+		GetWorldTimerManager().SetTimer(StaggerFireHandle, this, &ABaseAIClass::Shoot, TimePerShot * i);
+	}
+}
+
 void ABaseAIClass::Shoot()
 {
 	FHitResult Hit;

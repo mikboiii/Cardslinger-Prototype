@@ -38,6 +38,8 @@ public:
 
 	void Shoot();
 
+	void ShootMultiple();
+
 	FVector ShootLocation;
 
 	float GetFireCooldown();
@@ -65,6 +67,12 @@ private:
 
 	UPROPERTY(EditAnywhere, Category = "Combat")
 	float FireCooldown = 5.0f;
+
+	UPROPERTY(EditAnywhere, Category = "Combat")
+	int32 NumberOfShots = 3;
+
+	UPROPERTY(EditAnywhere, Category = "Combat")
+	float TimePerShot = 0.2f;
 	
 	UPROPERTY(EditDefaultsOnly, Category = "Combat")
 	TSubclassOf<class AEnemyProjectile> Bullet;
