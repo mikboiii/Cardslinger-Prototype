@@ -146,10 +146,11 @@ void ABaseCharacterClass::Dash()
 {
 	if(bCanDash)
 	{
+	UE_LOG(LogTemp, Display, TEXT("Dashed"));
 	FVector UnitVelocity = GetVelocity().GetSafeNormal();
 	// FTimerDelegate DashDelegate = FTimerDelegate::CreateUObject(this, &ABaseCharacterClass::DashTimeFunction, UnitVelocity)
 	// GetWorldTimerManager().SetTimer(DashTimeManager, DashDelegate, )
-	AddMovementInput(UnitVelocity * DashSpeed);
+	LaunchCharacter(UnitVelocity * FVector(DashSpeed, DashSpeed, 0), true, true);
 	bCanDash = false;
 	}
 }
