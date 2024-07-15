@@ -63,6 +63,12 @@ protected:
 
 	void ShootMultiple();
 
+	void Dash();
+
+	void DashTimeFunction(FVector Direction);
+
+	void DashCooldownFunction();
+
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
@@ -108,7 +114,17 @@ public:
 private:
 
 	UPROPERTY(EditAnywhere)
+	float BaseSpeed = 10.0f;
+
 	float Speed = 10.f;
+
+	UPROPERTY(EditAnywhere)
+	float DashSpeed = 50.0f;
+
+	UPROPERTY(EditAnywhere)
+	float DashDuration = 0.3f;
+
+	FTimerHandle DashTimeManager();
 	
 	UPROPERTY(VisibleAnywhere, Category = "Combat")
 	float Health;
@@ -207,6 +223,8 @@ private:
 	bool CanReload = true;
 
 	bool bIsChargeMode = false;
+
+	bool bCanDash = true;
 
 	float ChargeForOneCard = 1.0f;
 

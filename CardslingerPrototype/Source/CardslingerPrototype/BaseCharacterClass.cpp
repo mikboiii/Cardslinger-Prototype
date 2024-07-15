@@ -73,6 +73,8 @@ void ABaseCharacterClass::BeginPlay()
 
 	CurrentEnergy = MaxEnergy;
 
+	Speed = BaseSpeed;
+
 	MaxEnergy = AmountOfEnergySegments * EnergyPerSegment;
 
 	ACardslingerPlayerController* PC = Cast<ACardslingerPlayerController>(GetController());
@@ -137,6 +139,23 @@ void ABaseCharacterClass::Look(const FInputActionValue& Value)
 {
     AddControllerPitchInput(Value.Get<FVector2D>().Y);
     AddControllerYawInput(Value.Get<FVector2D>().X);
+}
+
+void ABaseCharacterClass::Dash()
+{
+	if(bCanDash)
+	{
+	FVector UnitVelocity = GetVelocity().GetSafeNormal();
+	// FTimerDelegate DashDelegate = FTimerDelegate::CreateUObject(this, &ABaseCharacterClass::DashTimeFunction, UnitVelocity)
+	// GetWorldTimerManager().SetTimer(DashTimeManager, DashDelegate, )
+	AddMovementInput(UnitVelocity * DashSpeed);
+	bCanDash = false;
+	}
+}
+
+void ABaseCharacterClass::DashTimeFunction(FVector Direction)
+{
+	AddActorLocalOffset(Direction * DashSpeed);
 }
 
 /// @brief Function used to apply damage to the player and notify game mode in case of death
