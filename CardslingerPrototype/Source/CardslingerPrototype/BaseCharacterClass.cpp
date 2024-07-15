@@ -119,6 +119,7 @@ void ABaseCharacterClass::SetupPlayerInputComponent(UInputComponent* PlayerInput
 		EnhancedInputComponent->BindAction(CardAction, ETriggerEvent::Triggered, this, &ABaseCharacterClass::UseCard);
 		EnhancedInputComponent->BindAction(ReloadAction, ETriggerEvent::Triggered, this, &ABaseCharacterClass::Reload);
 		EnhancedInputComponent->BindAction(ZoomAction, ETriggerEvent::Triggered, this, &ABaseCharacterClass::Zoom);
+		EnhancedInputComponent->BindAction(DashAction, ETriggerEvent::Triggered, this, &ABaseCharacterClass::Dash);
     }
 }
 

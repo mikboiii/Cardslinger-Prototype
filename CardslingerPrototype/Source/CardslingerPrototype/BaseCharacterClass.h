@@ -53,6 +53,8 @@ protected:
 	UInputAction* ReloadAction;
 	UPROPERTY(EditAnywhere, Category = "Input")
 	UInputAction* ZoomAction;
+	UPROPERTY(EditAnywhere, Category = "Input")
+	UInputAction* DashAction;
 
 	void Move(const FInputActionValue& Value);
 	void Look(const FInputActionValue& Value);
