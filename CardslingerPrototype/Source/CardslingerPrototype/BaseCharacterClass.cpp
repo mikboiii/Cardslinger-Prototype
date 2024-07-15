@@ -149,10 +149,9 @@ void ABaseCharacterClass::Look(const FInputActionValue& Value)
 
 void ABaseCharacterClass::Dash()
 {
-	if(bCanDash)
-	{
+	if(bIsDashing || !DashCurve) return;
 
-	}
+	FVector DashDirection = GetVelocity().GetSafeNormal2D();
 }
 
 void ABaseCharacterClass::DashTimeFunction()

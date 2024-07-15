@@ -115,19 +115,22 @@ public:
 
 private:
 
-	UPROPERTY(EditAnywhere)
+	UPROPERTY(EditAnywhere, Category = "Movement")
 	float BaseSpeed = 10.0f;
 
 	float Speed = 10.f;
 
-	UPROPERTY(EditAnywhere)
+	UPROPERTY(EditAnywhere, Category = "Movement")
 	float DashSpeed = 50.0f;
 
-	UPROPERTY(EditAnywhere)
+	UPROPERTY(EditAnywhere, Category = "Movement")
 	float DashDistance = 300.0f;
 
-	UPROPERTY(EditAnywhere)
+	UPROPERTY(EditAnywhere, Category = "Movement")
 	float DashDuration = 0.3f;
+
+	UPROPERTY(EditAnywhere, Category = "Movement")
+    UCurveFloat* DashCurve;
 
 	bool bIsDashing = false;
 
