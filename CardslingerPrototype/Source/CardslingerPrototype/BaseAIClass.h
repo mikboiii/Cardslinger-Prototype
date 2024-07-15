@@ -75,6 +75,8 @@ private:
 
 	UPROPERTY(EditAnywhere, Category = "Combat")
 	float TimePerShot = 0.2f;
+	UPROPERTY(EditAnywhere, Category = "Combat")
+	float BulletSpeed = 3000.0f;
 
 	float BaseTimePerShot;
 	

@@ -27,6 +27,8 @@ public:
 
 	void EnableSlowEffect(bool bIsSlow);
 
+	void SetBulletSpeed(float NewSpeed);
+
 private:
 	UPROPERTY(Instanced, EditAnywhere)
 	class UStaticMeshComponent* BulletMesh;

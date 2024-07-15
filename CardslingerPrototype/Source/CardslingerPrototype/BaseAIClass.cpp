@@ -97,7 +97,7 @@ bool ABaseAIClass::HitTrace(FHitResult& Hit, FVector& ShotDirection)
 	FVector PlayerVelocty = PlayerActor->GetVelocity();
 
 	float Distance = FVector::Dist(ViewLocation, PlayerLocation);
-	float BulletTravelTime = Distance / 3000.0f;
+	float BulletTravelTime = Distance / BulletSpeed;
 
 	FVector PredictedLocation = PlayerLocation + (PlayerVelocty * BulletTravelTime);
 
@@ -146,6 +146,7 @@ void ABaseAIClass::Shoot()
 	FMath::RandRange(LowerBound,UpperBound));
 	ShotDirection *= RandomAimOffset;
 	AEnemyProjectile* Projectile = GetWorld()->SpawnActor<AEnemyProjectile>(Bullet, ShootLocation, ShotDirection.Rotation());
+	Projectile->SetBulletSpeed(BulletSpeed);
 	if(GetComponentByClass<UPostProcessComponent>()->bEnabled) Projectile->EnableSlowEffect(true);
 	Projectile->SetOwnerClass(this);
 	ActiveBullets.Emplace(Projectile);

@@ -121,3 +121,9 @@ void AEnemyProjectile::EnableSlowEffect(bool bIsSlow)
 		if(BulletTrail) BulletTrail->SetCustomDepthStencilValue(1);
 	}
 }
+
+void AEnemyProjectile::SetBulletSpeed(float NewSpeed)
+{
+	BaseBulletSpeed = NewSpeed;
+	BulletSpeed = BaseBulletSpeed;
+}
