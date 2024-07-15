@@ -159,9 +159,10 @@ void ABaseCharacterClass::Look(const FInputActionValue& Value)
 
 void ABaseCharacterClass::Dash()
 {
-	if(bIsDashing || !DashCurve) return;
+	if((bIsDashing && bCanDash) || !DashCurve) return;
 	UE_LOG(LogTemp, Display, TEXT("Dash Called"));
 	bIsDashing = true;
+	bCanDash = false;
 
 	FVector DashDirection = GetVelocity().GetSafeNormal2D();
 
@@ -175,13 +176,14 @@ void ABaseCharacterClass::DashEndFunction()
 {
 	UE_LOG(LogTemp, Display, TEXT("Dash finished"));
 	bIsDashing = false;
+	FTimerHandle DashCooldownHandle;
+	GetWorldTimerManager().SetTimer(DashCooldownHandle, this, &ABaseCharacterClass::DashCooldownFunction, DashCooldown);
 }
 
 void ABaseCharacterClass::UpdateDash(float Value)
 {
 	UE_LOG(LogTemp, Display, TEXT("Dash Updated"));
 	FVector NewLocation = FMath::Lerp(DashStartLocation, DashEndLocation, Value);
-	DrawDebugPoint(GetWorld(), NewLocation, 10.0f, FColor::Red, false, -1, 0);
 	SetActorLocation(NewLocation, true);
 }
 

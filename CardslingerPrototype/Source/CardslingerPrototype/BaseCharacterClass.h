@@ -133,6 +133,9 @@ private:
 
 	UPROPERTY(EditAnywhere, Category = "Movement")
 	float DashDuration = 0.3f;
+	
+	UPROPERTY(EditAnywhere, Category = "Movement")
+	float DashCooldown = 5.0f;
 
 	UPROPERTY(EditAnywhere, Category = "Movement")
     UCurveFloat* DashCurve;
