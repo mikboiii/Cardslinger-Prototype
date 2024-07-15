@@ -65,10 +65,13 @@ protected:
 
 	void ShootMultiple();
 
+	UFUNCTION()
 	void Dash();
 
+	UFUNCTION()
 	void DashEndFunction();
 
+	UFUNCTION()
 	void UpdateDash(float Value);
 
 	void DashCooldownFunction();
@@ -174,7 +177,7 @@ private:
 	UPROPERTY(EditDefaultsOnly, Category = "Combat")
 	bool bIsStaggeredFiring;
 
-	UPROPERTY(Instanced)
+	UPROPERTY(Instanced, EditAnywhere)
     class UTimelineComponent* DashTimeline;
 
 	UPROPERTY(EditDefaultsOnly, Category="Combat")

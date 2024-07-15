@@ -119,10 +119,34 @@ void EmptyLinkFunctionForGeneratedCodeBaseCharacterClass() {}
 		*(ACardDeck**)Z_Param__Result=P_THIS->GetDeck();
 		P_NATIVE_END;
 	}
+	DEFINE_FUNCTION(ABaseCharacterClass::execUpdateDash)
+	{
+		P_GET_PROPERTY(FFloatProperty,Z_Param_Value);
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->UpdateDash(Z_Param_Value);
+		P_NATIVE_END;
+	}
+	DEFINE_FUNCTION(ABaseCharacterClass::execDashEndFunction)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->DashEndFunction();
+		P_NATIVE_END;
+	}
+	DEFINE_FUNCTION(ABaseCharacterClass::execDash)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->Dash();
+		P_NATIVE_END;
+	}
 	void ABaseCharacterClass::StaticRegisterNativesABaseCharacterClass()
 	{
 		UClass* Class = ABaseCharacterClass::StaticClass();
 		static const FNameNativePtrPair Funcs[] = {
+			{ "Dash", &ABaseCharacterClass::execDash },
+			{ "DashEndFunction", &ABaseCharacterClass::execDashEndFunction },
 			{ "GetCardCharge", &ABaseCharacterClass::execGetCardCharge },
 			{ "GetChargedCards", &ABaseCharacterClass::execGetChargedCards },
 			{ "GetClip", &ABaseCharacterClass::execGetClip },
@@ -136,8 +160,53 @@ void EmptyLinkFunctionForGeneratedCodeBaseCharacterClass() {}
 			{ "IncrementClip", &ABaseCharacterClass::execIncrementClip },
 			{ "IsDead", &ABaseCharacterClass::execIsDead },
 			{ "IsHandEmpty", &ABaseCharacterClass::execIsHandEmpty },
+			{ "UpdateDash", &ABaseCharacterClass::execUpdateDash },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
+	}
+	struct Z_Construct_UFunction_ABaseCharacterClass_Dash_Statics
+	{
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ABaseCharacterClass_Dash_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "BaseCharacterClass.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_ABaseCharacterClass_Dash_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ABaseCharacterClass, nullptr, "Dash", nullptr, nullptr, nullptr, 0, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00080401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_ABaseCharacterClass_Dash_Statics::Function_MetaDataParams), Z_Construct_UFunction_ABaseCharacterClass_Dash_Statics::Function_MetaDataParams) };
+	UFunction* Z_Construct_UFunction_ABaseCharacterClass_Dash()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_ABaseCharacterClass_Dash_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_ABaseCharacterClass_DashEndFunction_Statics
+	{
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ABaseCharacterClass_DashEndFunction_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "BaseCharacterClass.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_ABaseCharacterClass_DashEndFunction_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ABaseCharacterClass, nullptr, "DashEndFunction", nullptr, nullptr, nullptr, 0, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00080401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_ABaseCharacterClass_DashEndFunction_Statics::Function_MetaDataParams), Z_Construct_UFunction_ABaseCharacterClass_DashEndFunction_Statics::Function_MetaDataParams) };
+	UFunction* Z_Construct_UFunction_ABaseCharacterClass_DashEndFunction()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_ABaseCharacterClass_DashEndFunction_Statics::FuncParams);
+		}
+		return ReturnFunction;
 	}
 	struct Z_Construct_UFunction_ABaseCharacterClass_GetCardCharge_Statics
 	{
@@ -583,6 +652,40 @@ void EmptyLinkFunctionForGeneratedCodeBaseCharacterClass() {}
 		}
 		return ReturnFunction;
 	}
+	struct Z_Construct_UFunction_ABaseCharacterClass_UpdateDash_Statics
+	{
+		struct BaseCharacterClass_eventUpdateDash_Parms
+		{
+			float Value;
+		};
+		static const UECodeGen_Private::FFloatPropertyParams NewProp_Value;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_ABaseCharacterClass_UpdateDash_Statics::NewProp_Value = { "Value", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(BaseCharacterClass_eventUpdateDash_Parms, Value), METADATA_PARAMS(0, nullptr) };
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_ABaseCharacterClass_UpdateDash_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_ABaseCharacterClass_UpdateDash_Statics::NewProp_Value,
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ABaseCharacterClass_UpdateDash_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "BaseCharacterClass.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_ABaseCharacterClass_UpdateDash_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ABaseCharacterClass, nullptr, "UpdateDash", nullptr, nullptr, Z_Construct_UFunction_ABaseCharacterClass_UpdateDash_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_ABaseCharacterClass_UpdateDash_Statics::PropPointers), sizeof(Z_Construct_UFunction_ABaseCharacterClass_UpdateDash_Statics::BaseCharacterClass_eventUpdateDash_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00080401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_ABaseCharacterClass_UpdateDash_Statics::Function_MetaDataParams), Z_Construct_UFunction_ABaseCharacterClass_UpdateDash_Statics::Function_MetaDataParams) };
+	static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_ABaseCharacterClass_UpdateDash_Statics::PropPointers) < 2048);
+	static_assert(sizeof(Z_Construct_UFunction_ABaseCharacterClass_UpdateDash_Statics::BaseCharacterClass_eventUpdateDash_Parms) < MAX_uint16);
+	UFunction* Z_Construct_UFunction_ABaseCharacterClass_UpdateDash()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_ABaseCharacterClass_UpdateDash_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 	IMPLEMENT_CLASS_NO_AUTO_REGISTRATION(ABaseCharacterClass);
 	UClass* Z_Construct_UClass_ABaseCharacterClass_NoRegister()
 	{
@@ -809,6 +912,8 @@ void EmptyLinkFunctionForGeneratedCodeBaseCharacterClass() {}
 	};
 	static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_ABaseCharacterClass_Statics::DependentSingletons) < 16);
 	const FClassFunctionLinkInfo Z_Construct_UClass_ABaseCharacterClass_Statics::FuncInfo[] = {
+		{ &Z_Construct_UFunction_ABaseCharacterClass_Dash, "Dash" }, // 4032530623
+		{ &Z_Construct_UFunction_ABaseCharacterClass_DashEndFunction, "DashEndFunction" }, // 3739481319
 		{ &Z_Construct_UFunction_ABaseCharacterClass_GetCardCharge, "GetCardCharge" }, // 247495851
 		{ &Z_Construct_UFunction_ABaseCharacterClass_GetChargedCards, "GetChargedCards" }, // 2203554044
 		{ &Z_Construct_UFunction_ABaseCharacterClass_GetClip, "GetClip" }, // 2087343851
@@ -822,6 +927,7 @@ void EmptyLinkFunctionForGeneratedCodeBaseCharacterClass() {}
 		{ &Z_Construct_UFunction_ABaseCharacterClass_IncrementClip, "IncrementClip" }, // 1991184494
 		{ &Z_Construct_UFunction_ABaseCharacterClass_IsDead, "IsDead" }, // 838193405
 		{ &Z_Construct_UFunction_ABaseCharacterClass_IsHandEmpty, "IsHandEmpty" }, // 2204687508
+		{ &Z_Construct_UFunction_ABaseCharacterClass_UpdateDash, "UpdateDash" }, // 560025859
 	};
 	static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_ABaseCharacterClass_Statics::FuncInfo) < 2048);
 #if WITH_METADATA
@@ -1041,11 +1147,12 @@ void EmptyLinkFunctionForGeneratedCodeBaseCharacterClass() {}
 	const UECodeGen_Private::FBoolPropertyParams Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_bIsStaggeredFiring = { "bIsStaggeredFiring", nullptr, (EPropertyFlags)0x0040000000010001, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, sizeof(bool), sizeof(ABaseCharacterClass), &Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_bIsStaggeredFiring_SetBit, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_bIsStaggeredFiring_MetaData), Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_bIsStaggeredFiring_MetaData) };
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_DashTimeline_MetaData[] = {
+		{ "Category", "BaseCharacterClass" },
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "BaseCharacterClass.h" },
 	};
 #endif
-	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_DashTimeline = { "DashTimeline", nullptr, (EPropertyFlags)0x0042000000080008, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ABaseCharacterClass, DashTimeline), Z_Construct_UClass_UTimelineComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_DashTimeline_MetaData), Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_DashTimeline_MetaData) };
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_DashTimeline = { "DashTimeline", nullptr, (EPropertyFlags)0x0042000000080009, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ABaseCharacterClass, DashTimeline), Z_Construct_UClass_UTimelineComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_DashTimeline_MetaData), Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_DashTimeline_MetaData) };
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_MaxEnergy_MetaData[] = {
 		{ "Category", "Combat" },
@@ -1296,9 +1403,9 @@ void EmptyLinkFunctionForGeneratedCodeBaseCharacterClass() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_BaseCharacterClass_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_ABaseCharacterClass, ABaseCharacterClass::StaticClass, TEXT("ABaseCharacterClass"), &Z_Registration_Info_UClass_ABaseCharacterClass, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ABaseCharacterClass), 251577674U) },
+		{ Z_Construct_UClass_ABaseCharacterClass, ABaseCharacterClass::StaticClass, TEXT("ABaseCharacterClass"), &Z_Registration_Info_UClass_ABaseCharacterClass, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ABaseCharacterClass), 533181139U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_BaseCharacterClass_h_3944427871(TEXT("/Script/CardslingerPrototype"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_BaseCharacterClass_h_3046469437(TEXT("/Script/CardslingerPrototype"),
 		Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_BaseCharacterClass_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_BaseCharacterClass_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);

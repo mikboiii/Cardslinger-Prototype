@@ -32,7 +32,10 @@ class ACardDeck;
 	DECLARE_FUNCTION(execIncrementClip); \
 	DECLARE_FUNCTION(execIsDead); \
 	DECLARE_FUNCTION(execIsHandEmpty); \
-	DECLARE_FUNCTION(execGetDeck);
+	DECLARE_FUNCTION(execGetDeck); \
+	DECLARE_FUNCTION(execUpdateDash); \
+	DECLARE_FUNCTION(execDashEndFunction); \
+	DECLARE_FUNCTION(execDash);
 
 
 #define FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_BaseCharacterClass_h_18_ACCESSORS
