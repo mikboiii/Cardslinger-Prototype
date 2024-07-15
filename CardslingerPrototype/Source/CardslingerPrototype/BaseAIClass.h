@@ -38,10 +38,22 @@ public:
 
 	void Shoot();
 
+	void ShootMultiple();
+
+	FVector ShootLocation;
+
+	float GetFireCooldown();
+
+	void RemoveProjectile(class AEnemyProjectile* Projectile);
+
 private:
+
+	AActor* PlayerActor;
 
 	UPROPERTY(EditAnywhere)
 	float Speed = 10.f;
+
+	class AAIController* ThisController;
 	
 	UPROPERTY(VisibleAnywhere, Category = "Combat")
 	float Health;
@@ -57,6 +69,28 @@ private:
 
 	UPROPERTY(EditAnywhere, Category = "Combat")
 	float FireCooldown = 5.0f;
+
+	UPROPERTY(EditAnywhere, Category = "Combat")
+	int32 NumberOfShots = 3;
+
+	UPROPERTY(EditAnywhere, Category = "Combat")
+	float TimePerShot = 0.2f;
+	UPROPERTY(EditAnywhere, Category = "Combat")
+	float BulletSpeed = 3000.0f;
+
+	float BaseTimePerShot;
 	
+	UPROPERTY(EditDefaultsOnly, Category = "Combat")
+	TSubclassOf<class AEnemyProjectile> Bullet;
+
+	UPROPERTY(EditAnywhere, Category = "Combat")
+	float AccuracyModifier = 0.1f;
+
+	UPROPERTY(EditAnywhere, Category="Combat")
+	TArray<class AEnemyProjectile*> ActiveBullets;
+
+	UPROPERTY(EditAnywhere)
+	class UNiagaraSystem* MuzzleFlash;
+
 	bool HitTrace(FHitResult& Hit, FVector& ShotDirection);
 };

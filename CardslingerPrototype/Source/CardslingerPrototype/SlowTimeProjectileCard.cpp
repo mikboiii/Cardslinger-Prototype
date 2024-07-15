@@ -22,6 +22,17 @@ void ASlowTimeProjectileCard::OnHit(UPrimitiveComponent* HitComponent, AActor* O
     }
 }
 
+void ASlowTimeProjectileCard::Tick(float DeltaTime)
+{
+    Super::Tick(DeltaTime);
+    if(FVector::Dist(GetActorLocation(), TargetLocation) == 0 && GetActorEnableCollision()) 
+    {
+    SlowTimeSphere();
+    UNiagaraFunctionLibrary::SpawnSystemAtLocation(GetWorld(), CardImpact, GetActorLocation(), GetActorForwardVector().Rotation(), FVector(ParticleScale), true, true, ENCPoolMethod::None, true);
+    SetActorEnableCollision(false);
+    }
+}
+
 void ASlowTimeProjectileCard::SlowTimeSphere()
 {
     //DrawDebugSphere(GetWorld(), GetActorLocation(), CardSlowTimeRadius, 32, FColor::Blue, true, 100.0f);
@@ -30,7 +41,6 @@ void ASlowTimeProjectileCard::SlowTimeSphere()
     {
         Actor->CustomTimeDilation = CardSlowDilationValue;
         Cast<ABaseAIClass>(Actor)->EnableSlowEffect(true);
-        Actor->GetComponentByClass<USkeletalMeshComponent>()->SetCustomDepthStencilValue(2);
     }
     FTimerHandle TimeResetHandle;
     GetWorldTimerManager().SetTimer(TimeResetHandle, this, &ASlowTimeProjectileCard::ResetTimeDilation, CardSlowDuration);
@@ -70,9 +80,12 @@ void ASlowTimeProjectileCard::ResetTimeDilation()
 {
     for(AActor* Actor : AffectedEnemies)
     {
+        if(!Actor)
+        {
+            return;
+        }
         Actor->CustomTimeDilation = 1.0f;
         Cast<ABaseAIClass>(Actor)->EnableSlowEffect(false);
-        Actor->GetComponentByClass<USkeletalMeshComponent>()->SetCustomDepthStencilValue(1);
     }
     DestroyCard();
 }

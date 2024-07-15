@@ -17,6 +17,6 @@ EBTNodeResult::Type UBTTask_Shoot::ExecuteTask(UBehaviorTreeComponent& OwnerComp
     ABaseAIClass* Character = Cast<ABaseAIClass>(OwnerComp.GetAIOwner()->GetPawn());
     if(Character == nullptr) return EBTNodeResult::Failed;
 
-    Character->Shoot();
+    Character->ShootMultiple();
     return EBTNodeResult::Succeeded;
 }
