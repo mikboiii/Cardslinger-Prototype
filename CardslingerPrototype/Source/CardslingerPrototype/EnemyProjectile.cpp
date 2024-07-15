@@ -54,7 +54,7 @@ void AEnemyProjectile::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
-	FVector NextPosition = GetActorLocation() + (GetActorForwardVector() * BulletSpeed);
+	FVector NextPosition = GetActorLocation() + (GetActorForwardVector() * BulletSpeed * DeltaTime);
 	SetActorLocation(NextPosition, true);
 }
 

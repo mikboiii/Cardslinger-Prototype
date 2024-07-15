@@ -48,6 +48,8 @@ public:
 
 private:
 
+	AActor* PlayerActor;
+
 	UPROPERTY(EditAnywhere)
 	float Speed = 10.f;
 

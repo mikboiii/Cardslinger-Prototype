@@ -35,6 +35,7 @@ void ABaseAIClass::BeginPlay()
 	Health = MaxHealth;
 	ThisController = Cast<AAIController>(GetController());
 	BaseTimePerShot = TimePerShot;
+	PlayerActor = UGameplayStatics::GetPlayerPawn(GetWorld(), 0);
 	//ThisController->GetBlackboardComponent()->SetValueAsFloat(TEXT("FireCooldown"), FireCooldown);
 	
 }
@@ -91,8 +92,18 @@ bool ABaseAIClass::HitTrace(FHitResult& Hit, FVector& ShotDirection)
 	//AController* OwnerController = GetOwnerController();
 	//if(OwnerController == nullptr) return false;
 	GetController()->GetPlayerViewPoint(ViewLocation, ViewRotation);
-	ShotDirection = -ViewRotation.Vector();
-	FVector End = ViewLocation + ViewRotation.Vector() * MaxRange;
+
+	FVector PlayerLocation = PlayerActor->GetActorLocation();
+	FVector PlayerVelocty = PlayerActor->GetVelocity();
+
+	float Distance = FVector::Dist(ViewLocation, PlayerLocation);
+	float BulletTravelTime = Distance / 3000.0f;
+
+	FVector PredictedLocation = PlayerLocation + (PlayerVelocty * BulletTravelTime);
+
+	ShotDirection = (PredictedLocation - ViewLocation).GetSafeNormal();
+	//ShotDirection = ViewRotation.Vector();
+	FVector End = ViewLocation + ShotDirection * MaxRange;
 	FCollisionQueryParams Params;
 	Params.AddIgnoredActor(this);
 	Params.AddIgnoredActor(GetOwner());
@@ -126,7 +137,7 @@ void ABaseAIClass::Shoot()
 	//AActor* HitActor = Hit.GetActor();
 	//if(HitActor == nullptr) return;
 	//HitActor->TakeDamage(Damage, DamageEvent, OwnerController, this);
-	ShotDirection *= -1;
+	//ShotDirection *= -1;
 	ShootLocation = GetMesh()->GetBoneLocation(TEXT("gun_barrel"), EBoneSpaces::WorldSpace);
 	float LowerBound = 1 - AccuracyModifier;
 	float UpperBound = 1 + AccuracyModifier;
