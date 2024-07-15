@@ -67,7 +67,7 @@ protected:
 
 	void Dash();
 
-	void DashTimeFunction(FVector Direction);
+	void DashTimeFunction();
 
 	void DashCooldownFunction();
 
@@ -124,9 +124,13 @@ private:
 	float DashSpeed = 50.0f;
 
 	UPROPERTY(EditAnywhere)
+	float DashDistance = 300.0f;
+
+	UPROPERTY(EditAnywhere)
 	float DashDuration = 0.3f;
 
-	FTimerHandle DashTimeManager();
+	bool bIsDashing = false;
+
 	
 	UPROPERTY(VisibleAnywhere, Category = "Combat")
 	float Health;
@@ -161,6 +165,9 @@ private:
 
 	UPROPERTY(EditDefaultsOnly, Category = "Combat")
 	bool bIsStaggeredFiring;
+
+	UPROPERTY()
+    class UTimelineComponent* DashTimeline;
 
 	UPROPERTY(EditDefaultsOnly, Category="Combat")
 	float MaxEnergy = 3.0f;

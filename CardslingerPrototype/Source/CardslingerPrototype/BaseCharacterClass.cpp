@@ -27,6 +27,8 @@
 #include "Blueprint/UserWidget.h"
 #include "PlayerHUDWidget.h"
 #include "BaseAIClass.h"
+#include "Components/TimelineComponent.h"
+#include "Curves/CurveFloat.h"
 
 
 // Sets default values
@@ -41,7 +43,7 @@ ABaseCharacterClass::ABaseCharacterClass()
 	CameraComponent->SetupAttachment(SpringArm2);
 	CardDeckLocation = CreateDefaultSubobject<USceneComponent>(TEXT("CardLocation"));
 	CardDeckLocation->SetupAttachment(CameraComponent);
-
+	DashTimeline = CreateDefaultSubobject<UTimelineComponent>(TEXT("DashTimeline"));
 
 }
 
@@ -132,8 +134,11 @@ void ABaseCharacterClass::Move(const FInputActionValue& Value)
     FVector DeltaLocation = FVector::ZeroVector;
     DeltaLocation.X += Forward * UGameplayStatics::GetWorldDeltaSeconds(this) * Speed;
 	DeltaLocation.Y += Right * UGameplayStatics::GetWorldDeltaSeconds(this) * Speed;
-    AddMovementInput(GetActorForwardVector() * Forward);
-    AddMovementInput(GetActorRightVector() * Right);
+	if(!bIsDashing)
+	{
+		AddMovementInput(GetActorForwardVector() * Forward);
+		AddMovementInput(GetActorRightVector() * Right);
+	}
 }
 
 void ABaseCharacterClass::Look(const FInputActionValue& Value)
@@ -146,18 +151,18 @@ void ABaseCharacterClass::Dash()
 {
 	if(bCanDash)
 	{
-	UE_LOG(LogTemp, Display, TEXT("Dashed"));
-	FVector UnitVelocity = GetVelocity().GetSafeNormal();
-	// FTimerDelegate DashDelegate = FTimerDelegate::CreateUObject(this, &ABaseCharacterClass::DashTimeFunction, UnitVelocity)
-	// GetWorldTimerManager().SetTimer(DashTimeManager, DashDelegate, )
-	LaunchCharacter(UnitVelocity * FVector(DashSpeed, DashSpeed, 0), true, true);
-	bCanDash = false;
+
 	}
 }
 
-void ABaseCharacterClass::DashTimeFunction(FVector Direction)
+void ABaseCharacterClass::DashTimeFunction()
 {
-	AddActorLocalOffset(Direction * DashSpeed);
+	bIsDashing = false;
+}
+
+void ABaseCharacterClass::DashCooldownFunction()
+{
+	bCanDash = true;
 }
 
 /// @brief Function used to apply damage to the player and notify game mode in case of death
