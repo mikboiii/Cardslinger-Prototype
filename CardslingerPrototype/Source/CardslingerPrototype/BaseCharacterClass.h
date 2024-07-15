@@ -67,7 +67,9 @@ protected:
 
 	void Dash();
 
-	void DashTimeFunction();
+	void DashEndFunction();
+
+	void UpdateDash(float Value);
 
 	void DashCooldownFunction();
 
@@ -134,6 +136,9 @@ private:
 
 	bool bIsDashing = false;
 
+	FVector DashStartLocation;
+	FVector DashEndLocation;
+
 	
 	UPROPERTY(VisibleAnywhere, Category = "Combat")
 	float Health;
@@ -169,7 +174,7 @@ private:
 	UPROPERTY(EditDefaultsOnly, Category = "Combat")
 	bool bIsStaggeredFiring;
 
-	UPROPERTY()
+	UPROPERTY(Instanced)
     class UTimelineComponent* DashTimeline;
 
 	UPROPERTY(EditDefaultsOnly, Category="Combat")

@@ -85,6 +85,19 @@ void ABaseCharacterClass::BeginPlay()
 	
 	//draw initial hands
 	ReplenishHandFunction();
+
+	if(DashCurve)
+	{
+		FOnTimelineFloat ProgressFunction;
+		ProgressFunction.BindUFunction(this, FName("UpdateDash"));
+		DashTimeline->AddInterpFloat(DashCurve, ProgressFunction);
+
+		FOnTimelineEvent FinishFunction;
+		FinishFunction.BindUFunction(this, FName("DashEndFunction"));
+		DashTimeline->SetTimelineFinishedFunc(FinishFunction);
+
+		DashTimeline->SetPlayRate(1.0f / DashDuration);
+	}
 }
 
 // Called every frame
@@ -134,11 +147,8 @@ void ABaseCharacterClass::Move(const FInputActionValue& Value)
     FVector DeltaLocation = FVector::ZeroVector;
     DeltaLocation.X += Forward * UGameplayStatics::GetWorldDeltaSeconds(this) * Speed;
 	DeltaLocation.Y += Right * UGameplayStatics::GetWorldDeltaSeconds(this) * Speed;
-	if(!bIsDashing)
-	{
-		AddMovementInput(GetActorForwardVector() * Forward);
-		AddMovementInput(GetActorRightVector() * Right);
-	}
+	AddMovementInput(GetActorForwardVector() * Forward);
+	AddMovementInput(GetActorRightVector() * Right);
 }
 
 void ABaseCharacterClass::Look(const FInputActionValue& Value)
@@ -150,13 +160,29 @@ void ABaseCharacterClass::Look(const FInputActionValue& Value)
 void ABaseCharacterClass::Dash()
 {
 	if(bIsDashing || !DashCurve) return;
+	UE_LOG(LogTemp, Display, TEXT("Dash Called"));
+	bIsDashing = true;
 
 	FVector DashDirection = GetVelocity().GetSafeNormal2D();
+
+	DashStartLocation = GetActorLocation();
+	DashEndLocation = DashStartLocation + DashDirection * DashDistance;
+
+	DashTimeline->PlayFromStart();
 }
 
-void ABaseCharacterClass::DashTimeFunction()
+void ABaseCharacterClass::DashEndFunction()
 {
+	UE_LOG(LogTemp, Display, TEXT("Dash finished"));
 	bIsDashing = false;
+}
+
+void ABaseCharacterClass::UpdateDash(float Value)
+{
+	UE_LOG(LogTemp, Display, TEXT("Dash Updated"));
+	FVector NewLocation = FMath::Lerp(DashStartLocation, DashEndLocation, Value);
+	DrawDebugPoint(GetWorld(), NewLocation, 10.0f, FColor::Red, false, -1, 0);
+	SetActorLocation(NewLocation, true);
 }
 
 void ABaseCharacterClass::DashCooldownFunction()
