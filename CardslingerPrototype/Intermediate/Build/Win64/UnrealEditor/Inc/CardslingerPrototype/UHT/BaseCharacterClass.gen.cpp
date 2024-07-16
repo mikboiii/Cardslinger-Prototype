@@ -26,6 +26,13 @@ void EmptyLinkFunctionForGeneratedCodeBaseCharacterClass() {}
 	UMG_API UClass* Z_Construct_UClass_UUserWidget_NoRegister();
 	UPackage* Z_Construct_UPackage__Script_CardslingerPrototype();
 // End Cross Module References
+	DEFINE_FUNCTION(ABaseCharacterClass::execGetDashRecharge)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		*(float*)Z_Param__Result=P_THIS->GetDashRecharge();
+		P_NATIVE_END;
+	}
 	DEFINE_FUNCTION(ABaseCharacterClass::execGetCardCharge)
 	{
 		P_GET_PROPERTY_REF(FFloatProperty,Z_Param_Out_OutCurrentCharge);
@@ -150,6 +157,7 @@ void EmptyLinkFunctionForGeneratedCodeBaseCharacterClass() {}
 			{ "GetCardCharge", &ABaseCharacterClass::execGetCardCharge },
 			{ "GetChargedCards", &ABaseCharacterClass::execGetChargedCards },
 			{ "GetClip", &ABaseCharacterClass::execGetClip },
+			{ "GetDashRecharge", &ABaseCharacterClass::execGetDashRecharge },
 			{ "GetDeck", &ABaseCharacterClass::execGetDeck },
 			{ "GetEnergy", &ABaseCharacterClass::execGetEnergy },
 			{ "GetEnergyPercent", &ABaseCharacterClass::execGetEnergyPercent },
@@ -311,6 +319,40 @@ void EmptyLinkFunctionForGeneratedCodeBaseCharacterClass() {}
 		if (!ReturnFunction)
 		{
 			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_ABaseCharacterClass_GetClip_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_ABaseCharacterClass_GetDashRecharge_Statics
+	{
+		struct BaseCharacterClass_eventGetDashRecharge_Parms
+		{
+			float ReturnValue;
+		};
+		static const UECodeGen_Private::FFloatPropertyParams NewProp_ReturnValue;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_ABaseCharacterClass_GetDashRecharge_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(BaseCharacterClass_eventGetDashRecharge_Parms, ReturnValue), METADATA_PARAMS(0, nullptr) };
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_ABaseCharacterClass_GetDashRecharge_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_ABaseCharacterClass_GetDashRecharge_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ABaseCharacterClass_GetDashRecharge_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "BaseCharacterClass.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_ABaseCharacterClass_GetDashRecharge_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ABaseCharacterClass, nullptr, "GetDashRecharge", nullptr, nullptr, Z_Construct_UFunction_ABaseCharacterClass_GetDashRecharge_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_ABaseCharacterClass_GetDashRecharge_Statics::PropPointers), sizeof(Z_Construct_UFunction_ABaseCharacterClass_GetDashRecharge_Statics::BaseCharacterClass_eventGetDashRecharge_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_ABaseCharacterClass_GetDashRecharge_Statics::Function_MetaDataParams), Z_Construct_UFunction_ABaseCharacterClass_GetDashRecharge_Statics::Function_MetaDataParams) };
+	static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_ABaseCharacterClass_GetDashRecharge_Statics::PropPointers) < 2048);
+	static_assert(sizeof(Z_Construct_UFunction_ABaseCharacterClass_GetDashRecharge_Statics::BaseCharacterClass_eventGetDashRecharge_Parms) < MAX_uint16);
+	UFunction* Z_Construct_UFunction_ABaseCharacterClass_GetDashRecharge()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_ABaseCharacterClass_GetDashRecharge_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -921,6 +963,7 @@ void EmptyLinkFunctionForGeneratedCodeBaseCharacterClass() {}
 		{ &Z_Construct_UFunction_ABaseCharacterClass_GetCardCharge, "GetCardCharge" }, // 247495851
 		{ &Z_Construct_UFunction_ABaseCharacterClass_GetChargedCards, "GetChargedCards" }, // 2203554044
 		{ &Z_Construct_UFunction_ABaseCharacterClass_GetClip, "GetClip" }, // 2087343851
+		{ &Z_Construct_UFunction_ABaseCharacterClass_GetDashRecharge, "GetDashRecharge" }, // 1042771399
 		{ &Z_Construct_UFunction_ABaseCharacterClass_GetDeck, "GetDeck" }, // 1009825967
 		{ &Z_Construct_UFunction_ABaseCharacterClass_GetEnergy, "GetEnergy" }, // 778582654
 		{ &Z_Construct_UFunction_ABaseCharacterClass_GetEnergyPercent, "GetEnergyPercent" }, // 4177284839
@@ -1415,9 +1458,9 @@ void EmptyLinkFunctionForGeneratedCodeBaseCharacterClass() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_BaseCharacterClass_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_ABaseCharacterClass, ABaseCharacterClass::StaticClass, TEXT("ABaseCharacterClass"), &Z_Registration_Info_UClass_ABaseCharacterClass, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ABaseCharacterClass), 1280971933U) },
+		{ Z_Construct_UClass_ABaseCharacterClass, ABaseCharacterClass::StaticClass, TEXT("ABaseCharacterClass"), &Z_Registration_Info_UClass_ABaseCharacterClass, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ABaseCharacterClass), 2348050316U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_BaseCharacterClass_h_1057644123(TEXT("/Script/CardslingerPrototype"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_BaseCharacterClass_h_2778693409(TEXT("/Script/CardslingerPrototype"),
 		Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_BaseCharacterClass_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_BaseCharacterClass_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);

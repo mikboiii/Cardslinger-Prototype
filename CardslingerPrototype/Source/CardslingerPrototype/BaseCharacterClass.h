@@ -117,6 +117,8 @@ public:
 	int32 GetChargedCards();
 	UFUNCTION(BlueprintPure)
 	void GetCardCharge(float &OutCurrentCharge, float &OutMaxCharge);
+	UFUNCTION(BlueprintPure)
+	float GetDashRecharge();
 
 private:
 
@@ -136,6 +138,8 @@ private:
 	
 	UPROPERTY(EditAnywhere, Category = "Movement")
 	float DashCooldown = 5.0f;
+
+	float DashRecharge = 0.0f;
 
 	UPROPERTY(EditAnywhere, Category = "Movement")
     UCurveFloat* DashCurve;

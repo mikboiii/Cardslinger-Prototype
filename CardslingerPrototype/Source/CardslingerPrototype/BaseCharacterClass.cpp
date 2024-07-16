@@ -109,6 +109,8 @@ void ABaseCharacterClass::Tick(float DeltaTime)
 	{
 		CurrentEnergy+= (EnergyRegenRate) * DeltaTime;
 	}
+	DashRecharge += DashCooldown * DeltaTime;
+	if(DashRecharge > 1) DashRecharge = 1.0f;
 
 }
 
@@ -178,6 +180,7 @@ void ABaseCharacterClass::DashEndFunction()
 	bIsDashing = false;
 	FTimerHandle DashCooldownHandle;
 	GetWorldTimerManager().SetTimer(DashCooldownHandle, this, &ABaseCharacterClass::DashCooldownFunction, DashCooldown);
+	DashRecharge = 0.0f;
 }
 
 void ABaseCharacterClass::UpdateDash(float Value)
@@ -598,6 +601,11 @@ void ABaseCharacterClass::GetCardCharge(float &OutCurrentCharge, float &OutMaxCh
 {
 	OutCurrentCharge = CardCharge;
 	OutMaxCharge = ChargeForOneCard;
+}
+
+float ABaseCharacterClass::GetDashRecharge()
+{
+	return DashRecharge;
 }
 
 /// @brief increases the number of cards in the clip by 1
