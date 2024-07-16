@@ -8,6 +8,7 @@
 #include "InputActionValue.h"
 #include "Components/InputComponent.h"
 #include "Kismet/GameplayStatics.h"
+#include "Kismet/KismetMathLibrary.h"
 #include "Components/CapsuleComponent.h"
 #include "Components/SkeletalMeshComponent.h"
 #include "Camera/CameraComponent.h"
@@ -112,6 +113,8 @@ void ABaseCharacterClass::Tick(float DeltaTime)
 	DashRecharge += DeltaTime / DashCooldown;
 	if(DashRecharge > 1) DashRecharge = 1.0f;
 
+	LeanCamera(DeltaTime);
+
 }
 
 // Called to bind functionality to input
@@ -151,6 +154,10 @@ void ABaseCharacterClass::Move(const FInputActionValue& Value)
 	DeltaLocation.Y += Right * UGameplayStatics::GetWorldDeltaSeconds(this) * Speed;
 	AddMovementInput(GetActorForwardVector() * Forward);
 	AddMovementInput(GetActorRightVector() * Right);
+
+	CameraLeanValue = Right;
+	if(CameraLeanValue > MaxCameraLeanValue) CameraLeanValue = MaxCameraLeanValue;
+	else if(CameraLeanValue < -MaxCameraLeanValue) CameraLeanValue = -MaxCameraLeanValue;
 }
 
 void ABaseCharacterClass::Look(const FInputActionValue& Value)
@@ -466,6 +473,13 @@ void ABaseCharacterClass::ReplenishHandFunction()
 				Cast<UPlayerHUDWidget>(PlayerHUD)->SetCard(i, CreateWidget<UUserWidget>(GetWorld(), CardBackClass));
 			}
 		}
+}
+
+void ABaseCharacterClass::LeanCamera(float DeltaTime)
+{
+	float CurrentCameraRoll = CameraComponent->GetRelativeRotation().Roll;
+	float CameraRotation = UKismetMathLibrary::FInterpTo(CameraLeanValue, CurrentCameraRoll, DeltaTime, CameraRotateSpeed);
+	CameraComponent->SetRelativeRotation(FRotator(0, 0, CameraRotation));
 }
 
 ///@brief Returns alive state of the player

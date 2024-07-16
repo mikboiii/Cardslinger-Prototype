@@ -126,6 +126,16 @@ private:
 	float BaseSpeed = 10.0f;
 
 	float Speed = 10.f;
+	
+	float CameraLeanValue = 0.0f;
+
+	UPROPERTY(EditAnywhere, Category = "Movement")
+	float MaxCameraLeanValue = 25.0f;
+
+	UPROPERTY(EditAnywhere, Category = "Movement")
+	float CameraRotateSpeed = 1.0f;
+
+	void LeanCamera(float DeltaTime);
 
 	UPROPERTY(EditAnywhere, Category = "Movement")
 	float DashSpeed = 50.0f;
