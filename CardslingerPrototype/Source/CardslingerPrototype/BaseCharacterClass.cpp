@@ -159,7 +159,7 @@ void ABaseCharacterClass::Look(const FInputActionValue& Value)
 
 void ABaseCharacterClass::Dash()
 {
-	if((bIsDashing && bCanDash) || !DashCurve) return;
+	if((bIsDashing || !bCanDash) || !DashCurve) return;
 	UE_LOG(LogTemp, Display, TEXT("Dash Called"));
 	bIsDashing = true;
 	bCanDash = false;
