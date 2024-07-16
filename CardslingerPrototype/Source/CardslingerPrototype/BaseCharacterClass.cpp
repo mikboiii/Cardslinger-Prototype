@@ -109,7 +109,7 @@ void ABaseCharacterClass::Tick(float DeltaTime)
 	{
 		CurrentEnergy+= (EnergyRegenRate) * DeltaTime;
 	}
-	DashRecharge += DashCooldown * DeltaTime;
+	DashRecharge += DeltaTime / DashCooldown;
 	if(DashRecharge > 1) DashRecharge = 1.0f;
 
 }
