@@ -80,6 +80,8 @@ void ABaseCharacterClass::BeginPlay()
 
 	MaxEnergy = AmountOfEnergySegments * EnergyPerSegment;
 
+	DashRecharge = 1.0f;
+
 	ACardslingerPlayerController* PC = Cast<ACardslingerPlayerController>(GetController());
 	//get pointer to player hud widget
 	PlayerHUD = PC->GetHUD();
