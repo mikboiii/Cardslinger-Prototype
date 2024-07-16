@@ -170,7 +170,9 @@ void ABaseCharacterClass::Dash()
 
 	DashStartLocation = GetActorLocation();
 	DashEndLocation = DashStartLocation + DashDirection * DashDistance;
-
+	FTimerHandle DashCooldownHandle;
+	GetWorldTimerManager().SetTimer(DashCooldownHandle, this, &ABaseCharacterClass::DashCooldownFunction, DashCooldown);
+	DashRecharge = 0.0f;
 	DashTimeline->PlayFromStart();
 }
 
@@ -178,9 +180,6 @@ void ABaseCharacterClass::DashEndFunction()
 {
 	UE_LOG(LogTemp, Display, TEXT("Dash finished"));
 	bIsDashing = false;
-	FTimerHandle DashCooldownHandle;
-	GetWorldTimerManager().SetTimer(DashCooldownHandle, this, &ABaseCharacterClass::DashCooldownFunction, DashCooldown);
-	DashRecharge = 0.0f;
 }
 
 void ABaseCharacterClass::UpdateDash(float Value)
