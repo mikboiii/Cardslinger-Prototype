@@ -155,9 +155,9 @@ void ABaseCharacterClass::Move(const FInputActionValue& Value)
 	AddMovementInput(GetActorForwardVector() * Forward);
 	AddMovementInput(GetActorRightVector() * Right);
 
-	CameraLeanValue = Right;
-	if(CameraLeanValue > MaxCameraLeanValue) CameraLeanValue = MaxCameraLeanValue;
-	else if(CameraLeanValue < -MaxCameraLeanValue) CameraLeanValue = -MaxCameraLeanValue;
+	if(Right > 0) CameraLeanValue = MaxCameraLeanValue;
+	else if(Right < 0) CameraLeanValue = -MaxCameraLeanValue;
+	else CameraLeanValue = 0;
 }
 
 void ABaseCharacterClass::Look(const FInputActionValue& Value)
@@ -478,8 +478,9 @@ void ABaseCharacterClass::ReplenishHandFunction()
 void ABaseCharacterClass::LeanCamera(float DeltaTime)
 {
 	float CurrentCameraRoll = CameraComponent->GetRelativeRotation().Roll;
-	float CameraRotation = UKismetMathLibrary::FInterpTo(CameraLeanValue, CurrentCameraRoll, DeltaTime, CameraRotateSpeed);
+	float CameraRotation = UKismetMathLibrary::FInterpTo(CurrentCameraRoll, CameraLeanValue, DeltaTime, CameraRotateSpeed);
 	CameraComponent->SetRelativeRotation(FRotator(0, 0, CameraRotation));
+	UE_LOG(LogTemp, Display, TEXT("CameraRotation is %f"), CameraRotation);
 }
 
 ///@brief Returns alive state of the player
