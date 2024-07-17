@@ -182,7 +182,7 @@ void ABaseCharacterClass::Dash()
 	FTimerHandle DashCooldownHandle;
 	GetWorldTimerManager().SetTimer(DashCooldownHandle, this, &ABaseCharacterClass::DashCooldownFunction, DashCooldown);
 	DashRecharge = 0.0f;
-	//DashTimeline->PlayFromStart();
+	DashTimeline->PlayFromStart();
 }
 
 void ABaseCharacterClass::DashEndFunction()
