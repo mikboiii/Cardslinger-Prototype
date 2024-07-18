@@ -30,6 +30,8 @@
 #include "BaseAIClass.h"
 #include "Components/TimelineComponent.h"
 #include "Curves/CurveFloat.h"
+#include "GameFramework/Character.h"
+#include "GameFramework/CharacterMovementComponent.h"
 
 
 // Sets default values
@@ -137,6 +139,7 @@ void ABaseCharacterClass::SetupPlayerInputComponent(UInputComponent* PlayerInput
         EnhancedInputComponent->BindAction(MoveAction, ETriggerEvent::Triggered, this, &ABaseCharacterClass::Move);
         EnhancedInputComponent->BindAction(LookAction, ETriggerEvent::Triggered, this, &ABaseCharacterClass::Look);
         EnhancedInputComponent->BindAction(JumpAction, ETriggerEvent::Triggered, this, &ACharacter::Jump);
+		EnhancedInputComponent->BindAction(FlyAction, ETriggerEvent::Triggered, this, &ABaseCharacterClass::FlyUp);
         EnhancedInputComponent->BindAction(ShootAction, ETriggerEvent::Triggered, this, &ABaseCharacterClass::ShootMultiple);
 		EnhancedInputComponent->BindAction(CardAction, ETriggerEvent::Triggered, this, &ABaseCharacterClass::UseCard);
 		EnhancedInputComponent->BindAction(ReloadAction, ETriggerEvent::Triggered, this, &ABaseCharacterClass::Reload);
@@ -144,6 +147,15 @@ void ABaseCharacterClass::SetupPlayerInputComponent(UInputComponent* PlayerInput
 		EnhancedInputComponent->BindAction(DashAction, ETriggerEvent::Triggered, this, &ABaseCharacterClass::Dash);
     }
 }
+
+void ABaseCharacterClass::FlyUp(const FInputActionValue& Value)
+{
+	if(bIsCharacterFlying)
+	{
+		AddMovementInput(GetActorUpVector() * Speed * Value.Get<float>());
+	}
+}
+
 
 void ABaseCharacterClass::Move(const FInputActionValue& Value)
 {
@@ -483,6 +495,19 @@ void ABaseCharacterClass::LeanCamera(float DeltaTime)
 	float CameraRotation = UKismetMathLibrary::FInterpTo(CurrentCameraRoll, CameraLeanValue, DeltaTime, CameraRotateSpeed);
 	CameraComponent->SetRelativeRotation(FRotator(0, 0, CameraRotation));
 	UE_LOG(LogTemp, Display, TEXT("CameraRotation is %f"), CameraRotation);
+}
+
+void ABaseCharacterClass::SetFlyMode(bool bIsFlying)
+{
+	bIsCharacterFlying = bIsFlying;
+	if(bIsFlying)
+	{
+		GetCharacterMovement()->SetMovementMode(EMovementMode::MOVE_Flying);
+	}
+	else
+	{
+		GetCharacterMovement()->SetMovementMode(EMovementMode::MOVE_Walking);
+	}
 }
 
 ///@brief Returns alive state of the player

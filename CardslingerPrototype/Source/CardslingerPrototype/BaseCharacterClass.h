@@ -55,8 +55,11 @@ protected:
 	UInputAction* ZoomAction;
 	UPROPERTY(EditAnywhere, Category = "Input")
 	UInputAction* DashAction;
+	UPROPERTY(EditAnywhere, Category = "Input")
+	UInputAction* FlyAction;
 
 	void Move(const FInputActionValue& Value);
+	void FlyUp(const FInputActionValue& Value);
 	void Look(const FInputActionValue& Value);
 	void UseCard(const FInputActionValue& Value);
 	void Zoom(const FInputActionValue& Value);
@@ -93,6 +96,9 @@ public:
 	UFUNCTION(BlueprintCallable)
 	void IncrementClip();
 
+	void SetFlyMode(bool bIsFlying);
+
+
 	void Heal(bool IsPercentile, float HealingAmount);
 
 	void AddShield(bool IsPercentile, float ShieldValue);
@@ -124,6 +130,8 @@ private:
 
 	UPROPERTY(EditAnywhere, Category = "Movement")
 	float BaseSpeed = 10.0f;
+
+	bool bIsCharacterFlying = false;
 
 	float Speed = 10.f;
 	
