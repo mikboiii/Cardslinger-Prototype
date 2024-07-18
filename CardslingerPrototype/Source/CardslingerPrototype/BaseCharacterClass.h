@@ -59,7 +59,7 @@ protected:
 	UInputAction* FlyAction;
 
 	void Move(const FInputActionValue& Value);
-	void FlyUp();
+	void FlyUp(const FInputActionValue& Value);
 	void Look(const FInputActionValue& Value);
 	void UseCard(const FInputActionValue& Value);
 	void Zoom(const FInputActionValue& Value);

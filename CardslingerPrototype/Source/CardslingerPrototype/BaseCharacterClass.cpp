@@ -148,11 +148,11 @@ void ABaseCharacterClass::SetupPlayerInputComponent(UInputComponent* PlayerInput
     }
 }
 
-void ABaseCharacterClass::FlyUp()
+void ABaseCharacterClass::FlyUp(const FInputActionValue& Value)
 {
 	if(bIsCharacterFlying)
 	{
-		AddMovementInput(GetActorUpVector() * Speed);
+		AddMovementInput(GetActorUpVector() * Speed * Value.Get<float>());
 	}
 }
 
