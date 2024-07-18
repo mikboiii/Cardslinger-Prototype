@@ -2,8 +2,13 @@
 
 
 #include "HoverCard.h"
+#include "GameFramework/Character.h"
+#include "GameFramework/CharacterMovementComponent.h"
+#include "Kismet/GameplayStatics.h"
 
 void AHoverCard::CardEffect(class ACardDeck* CardDeck, FVector Direction, FVector Target, AActor* TargetActor)
 {
-    UE_LOG(LogTemp, Display, TEXT("hover card used"));
+    Super::CardEffect(CardDeck, Direction, Target, TargetActor);
+    APawn* PlayerPawn = UGameplayStatics::GetPlayerPawn(GetWorld(), 0);
+    Cast<ACharacter>(PlayerPawn)->GetCharacterMovement()->SetMovementMode(EMovementMode::MOVE_Flying);
 }
