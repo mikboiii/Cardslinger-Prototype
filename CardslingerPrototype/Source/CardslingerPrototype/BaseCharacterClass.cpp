@@ -139,6 +139,7 @@ void ABaseCharacterClass::SetupPlayerInputComponent(UInputComponent* PlayerInput
         EnhancedInputComponent->BindAction(MoveAction, ETriggerEvent::Triggered, this, &ABaseCharacterClass::Move);
         EnhancedInputComponent->BindAction(LookAction, ETriggerEvent::Triggered, this, &ABaseCharacterClass::Look);
         EnhancedInputComponent->BindAction(JumpAction, ETriggerEvent::Triggered, this, &ACharacter::Jump);
+		EnhancedInputComponent->BindAction(FlyAction, ETriggerEvent::Triggered, this, &ABaseCharacterClass::FlyUp);
         EnhancedInputComponent->BindAction(ShootAction, ETriggerEvent::Triggered, this, &ABaseCharacterClass::ShootMultiple);
 		EnhancedInputComponent->BindAction(CardAction, ETriggerEvent::Triggered, this, &ABaseCharacterClass::UseCard);
 		EnhancedInputComponent->BindAction(ReloadAction, ETriggerEvent::Triggered, this, &ABaseCharacterClass::Reload);
@@ -147,15 +148,11 @@ void ABaseCharacterClass::SetupPlayerInputComponent(UInputComponent* PlayerInput
     }
 }
 
-void ABaseCharacterClass::Jump()
+void ABaseCharacterClass::FlyUp()
 {
 	if(bIsCharacterFlying)
 	{
-		//fly up
-	}
-	else
-	{
-		Super::Jump();
+		AddMovementInput(GetActorUpVector() * Speed);
 	}
 }
 

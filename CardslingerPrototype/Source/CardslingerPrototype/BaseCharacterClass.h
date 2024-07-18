@@ -55,9 +55,11 @@ protected:
 	UInputAction* ZoomAction;
 	UPROPERTY(EditAnywhere, Category = "Input")
 	UInputAction* DashAction;
+	UPROPERTY(EditAnywhere, Category = "Input")
+	UInputAction* FlyAction;
 
 	void Move(const FInputActionValue& Value);
-	void Jump() override;
+	void FlyUp();
 	void Look(const FInputActionValue& Value);
 	void UseCard(const FInputActionValue& Value);
 	void Zoom(const FInputActionValue& Value);
