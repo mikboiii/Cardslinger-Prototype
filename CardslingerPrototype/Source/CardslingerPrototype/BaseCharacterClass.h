@@ -57,6 +57,7 @@ protected:
 	UInputAction* DashAction;
 
 	void Move(const FInputActionValue& Value);
+	void Jump() override;
 	void Look(const FInputActionValue& Value);
 	void UseCard(const FInputActionValue& Value);
 	void Zoom(const FInputActionValue& Value);
@@ -95,6 +96,7 @@ public:
 
 	void SetFlyMode(bool bIsFlying);
 
+
 	void Heal(bool IsPercentile, float HealingAmount);
 
 	void AddShield(bool IsPercentile, float ShieldValue);
@@ -126,6 +128,8 @@ private:
 
 	UPROPERTY(EditAnywhere, Category = "Movement")
 	float BaseSpeed = 10.0f;
+
+	bool bIsCharacterFlying = false;
 
 	float Speed = 10.f;
 	

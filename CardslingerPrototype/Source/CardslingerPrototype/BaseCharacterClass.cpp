@@ -147,6 +147,19 @@ void ABaseCharacterClass::SetupPlayerInputComponent(UInputComponent* PlayerInput
     }
 }
 
+void ABaseCharacterClass::Jump()
+{
+	if(bIsCharacterFlying)
+	{
+		//fly up
+	}
+	else
+	{
+		Super::Jump();
+	}
+}
+
+
 void ABaseCharacterClass::Move(const FInputActionValue& Value)
 {
 	// Get the axis value from the input action value
@@ -489,6 +502,7 @@ void ABaseCharacterClass::LeanCamera(float DeltaTime)
 
 void ABaseCharacterClass::SetFlyMode(bool bIsFlying)
 {
+	bIsCharacterFlying = bIsFlying;
 	if(bIsFlying)
 	{
 		GetCharacterMovement()->SetMovementMode(EMovementMode::MOVE_Flying);
