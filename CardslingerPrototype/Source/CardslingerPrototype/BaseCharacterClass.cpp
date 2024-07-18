@@ -30,6 +30,8 @@
 #include "BaseAIClass.h"
 #include "Components/TimelineComponent.h"
 #include "Curves/CurveFloat.h"
+#include "GameFramework/Character.h"
+#include "GameFramework/CharacterMovementComponent.h"
 
 
 // Sets default values
@@ -483,6 +485,18 @@ void ABaseCharacterClass::LeanCamera(float DeltaTime)
 	float CameraRotation = UKismetMathLibrary::FInterpTo(CurrentCameraRoll, CameraLeanValue, DeltaTime, CameraRotateSpeed);
 	CameraComponent->SetRelativeRotation(FRotator(0, 0, CameraRotation));
 	UE_LOG(LogTemp, Display, TEXT("CameraRotation is %f"), CameraRotation);
+}
+
+void ABaseCharacterClass::SetFlyMode(bool bIsFlying)
+{
+	if(bIsFlying)
+	{
+		GetCharacterMovement()->SetMovementMode(EMovementMode::MOVE_Flying);
+	}
+	else
+	{
+		GetCharacterMovement()->SetMovementMode(EMovementMode::MOVE_Walking);
+	}
 }
 
 ///@brief Returns alive state of the player

@@ -93,6 +93,8 @@ public:
 	UFUNCTION(BlueprintCallable)
 	void IncrementClip();
 
+	void SetFlyMode(bool bIsFlying);
+
 	void Heal(bool IsPercentile, float HealingAmount);
 
 	void AddShield(bool IsPercentile, float ShieldValue);
