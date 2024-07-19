@@ -32,6 +32,7 @@
 #include "Curves/CurveFloat.h"
 #include "GameFramework/Character.h"
 #include "GameFramework/CharacterMovementComponent.h"
+#include "NiagaraComponent.h"
 
 
 // Sets default values
@@ -47,6 +48,8 @@ ABaseCharacterClass::ABaseCharacterClass()
 	CardDeckLocation = CreateDefaultSubobject<USceneComponent>(TEXT("CardLocation"));
 	CardDeckLocation->SetupAttachment(CameraComponent);
 	DashTimeline = CreateDefaultSubobject<UTimelineComponent>(TEXT("DashTimeline"));
+	DashEmitter = CreateDefaultSubobject<UNiagaraComponent>(TEXT("DashEmitter"));
+	DashEmitter->SetupAttachment(CameraComponent);
 
 }
 

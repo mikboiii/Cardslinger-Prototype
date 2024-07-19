@@ -23,6 +23,7 @@ void EmptyLinkFunctionForGeneratedCodeBaseCharacterClass() {}
 	ENGINE_API UClass* Z_Construct_UClass_UTimelineComponent_NoRegister();
 	ENHANCEDINPUT_API UClass* Z_Construct_UClass_UInputAction_NoRegister();
 	ENHANCEDINPUT_API UClass* Z_Construct_UClass_UInputMappingContext_NoRegister();
+	NIAGARA_API UClass* Z_Construct_UClass_UNiagaraComponent_NoRegister();
 	UMG_API UClass* Z_Construct_UClass_UUserWidget_NoRegister();
 	UPackage* Z_Construct_UPackage__Script_CardslingerPrototype();
 // End Cross Module References
@@ -957,6 +958,10 @@ void EmptyLinkFunctionForGeneratedCodeBaseCharacterClass() {}
 #endif
 		static const UECodeGen_Private::FObjectPropertyParams NewProp_CameraComponent;
 #if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_DashEmitter_MetaData[];
+#endif
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_DashEmitter;
+#if WITH_METADATA
 		static const UECodeGen_Private::FMetaDataPairParam NewProp_SpringArm2_MetaData[];
 #endif
 		static const UECodeGen_Private::FObjectPropertyParams NewProp_SpringArm2;
@@ -1392,6 +1397,14 @@ void EmptyLinkFunctionForGeneratedCodeBaseCharacterClass() {}
 #endif
 	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_CameraComponent = { "CameraComponent", nullptr, (EPropertyFlags)0x0042000000080009, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ABaseCharacterClass, CameraComponent), Z_Construct_UClass_UCameraComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_CameraComponent_MetaData), Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_CameraComponent_MetaData) };
 #if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_DashEmitter_MetaData[] = {
+		{ "Category", "BaseCharacterClass" },
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "BaseCharacterClass.h" },
+	};
+#endif
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_DashEmitter = { "DashEmitter", nullptr, (EPropertyFlags)0x0042000000080009, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ABaseCharacterClass, DashEmitter), Z_Construct_UClass_UNiagaraComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_DashEmitter_MetaData), Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_DashEmitter_MetaData) };
+#if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_SpringArm2_MetaData[] = {
 		{ "Category", "BaseCharacterClass" },
 		{ "EditInline", "true" },
@@ -1454,6 +1467,7 @@ void EmptyLinkFunctionForGeneratedCodeBaseCharacterClass() {}
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_CardCharge,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_CardDeckLocation,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_CameraComponent,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_DashEmitter,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_SpringArm2,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_ABaseCharacterClass_Statics::StaticCppClassTypeInfo = {
@@ -1494,9 +1508,9 @@ void EmptyLinkFunctionForGeneratedCodeBaseCharacterClass() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_BaseCharacterClass_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_ABaseCharacterClass, ABaseCharacterClass::StaticClass, TEXT("ABaseCharacterClass"), &Z_Registration_Info_UClass_ABaseCharacterClass, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ABaseCharacterClass), 3796178894U) },
+		{ Z_Construct_UClass_ABaseCharacterClass, ABaseCharacterClass::StaticClass, TEXT("ABaseCharacterClass"), &Z_Registration_Info_UClass_ABaseCharacterClass, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ABaseCharacterClass), 2825185179U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_BaseCharacterClass_h_240361642(TEXT("/Script/CardslingerPrototype"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_BaseCharacterClass_h_1386826366(TEXT("/Script/CardslingerPrototype"),
 		Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_BaseCharacterClass_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_BaseCharacterClass_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);

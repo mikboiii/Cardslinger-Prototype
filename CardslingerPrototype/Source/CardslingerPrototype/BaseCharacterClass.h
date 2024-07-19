@@ -286,6 +286,9 @@ private:
 	UPROPERTY(Instanced, EditAnywhere)
 	class UCameraComponent* CameraComponent;
 
+	UPROPERTY(Instanced, EditAnywhere)
+	class UNiagaraComponent* DashEmitter;
+
 	UPROPERTY(EditAnywhere, Instanced)
 	class USpringArmComponent* SpringArm2;
 
