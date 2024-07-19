@@ -130,7 +130,7 @@ void ABaseAIClass::Shoot()
 	FVector ShotDirection;
 	AController* OwnerController = GetController();
 	if(OwnerController == nullptr) return;
-	if(HitTrace(Hit, ShotDirection))
+	if(HitTrace(Hit, ShotDirection) || bIsPredictiveAiming)
 	{
 	//UGameplayStatics::PlaySoundAtLocation(GetWorld(), ImpactSound, Hit.Location);
 	//FPointDamageEvent DamageEvent(Damage, Hit, ShotDirection, nullptr);
