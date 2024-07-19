@@ -65,6 +65,9 @@ private:
 	float MaxRange = 1000.0f;
 
 	UPROPERTY(EditAnywhere, Category = "Combat")
+	bool bIsPredictiveAiming = false;
+
+	UPROPERTY(EditAnywhere, Category = "Combat")
 	float Damage = 10.0f;
 
 	UPROPERTY(EditAnywhere, Category = "Combat")

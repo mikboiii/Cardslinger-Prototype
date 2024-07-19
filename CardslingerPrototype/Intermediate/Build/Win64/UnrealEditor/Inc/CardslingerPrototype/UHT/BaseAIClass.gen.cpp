@@ -142,6 +142,11 @@ void EmptyLinkFunctionForGeneratedCodeBaseAIClass() {}
 #endif
 		static const UECodeGen_Private::FFloatPropertyParams NewProp_MaxRange;
 #if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_bIsPredictiveAiming_MetaData[];
+#endif
+		static void NewProp_bIsPredictiveAiming_SetBit(void* Obj);
+		static const UECodeGen_Private::FBoolPropertyParams NewProp_bIsPredictiveAiming;
+#if WITH_METADATA
 		static const UECodeGen_Private::FMetaDataPairParam NewProp_Damage_MetaData[];
 #endif
 		static const UECodeGen_Private::FFloatPropertyParams NewProp_Damage;
@@ -228,6 +233,17 @@ void EmptyLinkFunctionForGeneratedCodeBaseAIClass() {}
 #endif
 	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ABaseAIClass_Statics::NewProp_MaxRange = { "MaxRange", nullptr, (EPropertyFlags)0x0040000000000001, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ABaseAIClass, MaxRange), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_ABaseAIClass_Statics::NewProp_MaxRange_MetaData), Z_Construct_UClass_ABaseAIClass_Statics::NewProp_MaxRange_MetaData) };
 #if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABaseAIClass_Statics::NewProp_bIsPredictiveAiming_MetaData[] = {
+		{ "Category", "Combat" },
+		{ "ModuleRelativePath", "BaseAIClass.h" },
+	};
+#endif
+	void Z_Construct_UClass_ABaseAIClass_Statics::NewProp_bIsPredictiveAiming_SetBit(void* Obj)
+	{
+		((ABaseAIClass*)Obj)->bIsPredictiveAiming = 1;
+	}
+	const UECodeGen_Private::FBoolPropertyParams Z_Construct_UClass_ABaseAIClass_Statics::NewProp_bIsPredictiveAiming = { "bIsPredictiveAiming", nullptr, (EPropertyFlags)0x0040000000000001, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, sizeof(bool), sizeof(ABaseAIClass), &Z_Construct_UClass_ABaseAIClass_Statics::NewProp_bIsPredictiveAiming_SetBit, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_ABaseAIClass_Statics::NewProp_bIsPredictiveAiming_MetaData), Z_Construct_UClass_ABaseAIClass_Statics::NewProp_bIsPredictiveAiming_MetaData) };
+#if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABaseAIClass_Statics::NewProp_Damage_MetaData[] = {
 		{ "Category", "Combat" },
 		{ "ModuleRelativePath", "BaseAIClass.h" },
@@ -296,6 +312,7 @@ void EmptyLinkFunctionForGeneratedCodeBaseAIClass() {}
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABaseAIClass_Statics::NewProp_Health,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABaseAIClass_Statics::NewProp_MaxHealth,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABaseAIClass_Statics::NewProp_MaxRange,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABaseAIClass_Statics::NewProp_bIsPredictiveAiming,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABaseAIClass_Statics::NewProp_Damage,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABaseAIClass_Statics::NewProp_FireCooldown,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABaseAIClass_Statics::NewProp_NumberOfShots,
@@ -345,9 +362,9 @@ void EmptyLinkFunctionForGeneratedCodeBaseAIClass() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_BaseAIClass_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_ABaseAIClass, ABaseAIClass::StaticClass, TEXT("ABaseAIClass"), &Z_Registration_Info_UClass_ABaseAIClass, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ABaseAIClass), 2751649619U) },
+		{ Z_Construct_UClass_ABaseAIClass, ABaseAIClass::StaticClass, TEXT("ABaseAIClass"), &Z_Registration_Info_UClass_ABaseAIClass, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ABaseAIClass), 2502256422U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_BaseAIClass_h_395387614(TEXT("/Script/CardslingerPrototype"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_BaseAIClass_h_1293579903(TEXT("/Script/CardslingerPrototype"),
 		Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_BaseAIClass_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_BaseAIClass_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);
