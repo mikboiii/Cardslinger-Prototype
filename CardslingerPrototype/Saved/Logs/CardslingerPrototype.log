@@ -1248,3 +1248,2121 @@ LogConfig: Set CVar [[r.Shadow.DetectVertexShaderLayerAtRuntime:1]]
 [2024.07.19-20.21.27:489][271]LogSlate: Warning: The command 'BlueprintEditorSpawnNodes.AddActorRefAction->CommandInfo' has the same default chord as 'BlueprintEditorSpawnNodes.(Class=/Script/BlueprintGraph.K2Node_Knot Key=R Shift=false Ctrl=false Alt=false)' [R]
 [2024.07.19-20.21.28:765][271]LogSlate: Took 0.001066 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-BoldCondensed.ttf' (158K)
 [2024.07.19-20.21.29:322][277]50829_FX_DashLines_MessageLog: System successfully compiled.
+[2024.07.19-20.22.17:011][543]LogDerivedDataCache: C:/Users/Mikolaj/AppData/Local/UnrealEngine/Common/DerivedDataCache: Maintenance finished in +00:00:04.561 and deleted 0 files with total size 0 MiB and 0 empty folders. Scanned 2668 files in 3758 folders with total size 252 MiB.
+[2024.07.19-20.22.49:732][641]LogLiveCoding: Display: Starting Live Coding compile.
+[2024.07.19-20.23.48:315][842]LogLiveCoding: Display:    Creating library C:\Users\Mikolaj\Documents\Unreal Projects\Cardslinger-Prototype\CardslingerPrototype\Binaries\Win64\UnrealEditor-CardslingerPrototype.patch_0.lib and object C:\Users\Mikolaj\Documents\Unreal Projects\Cardslinger-Prototype\CardslingerPrototype\Binaries\Win64\UnrealEditor-CardslingerPrototype.patch_0.exp
+[2024.07.19-20.23.49:988][846]LogUObjectHash: Compacting FUObjectHashTables data took   1.61ms
+[2024.07.19-20.23.50:693][847]Display: Reload/Re-instancing Complete: 1 package changed, 22 classes unchanged, 36 functions remapped
+[2024.07.19-20.23.50:693][847]LogLiveCoding: Display: Live coding succeeded
+[2024.07.19-20.24.10:306][207]LogDebuggerCommands: Repeating last play command: Selected Viewport
+[2024.07.19-20.24.10:328][207]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2024.07.19-20.24.10:341][207]PIE: New page: PIE session: MovementLevel (19 Jul 2024, 22:24:10)
+[2024.07.19-20.24.10:349][207]LogOnline: OSS: Created online subsystem instance for: NULL
+[2024.07.19-20.24.10:350][207]LogOnline: OSS: TryLoadSubsystemAndSetDefault: Loaded subsystem for type [NULL]
+[2024.07.19-20.24.10:352][207]LogPlayLevel: Creating play world package: /Game/Levels/UEDPIE_0_MovementLevel
+[2024.07.19-20.24.10:361][207]LogPlayLevel: PIE: StaticDuplicateObject took: (0.009076s)
+[2024.07.19-20.24.10:361][207]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Levels/MovementLevel.MovementLevel to /Game/Levels/UEDPIE_0_MovementLevel.MovementLevel (0.009356s)
+[2024.07.19-20.24.10:426][207]LogUObjectHash: Compacting FUObjectHashTables data took   2.28ms
+[2024.07.19-20.24.10:430][207]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.07.19-20.24.10:431][207]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2024.07.19-20.24.10:432][207]LogAIModule: Creating AISystem for world MovementLevel
+[2024.07.19-20.24.10:433][207]LogPlayLevel: PIE: World Init took: (0.003539s)
+[2024.07.19-20.24.10:434][207]LogAudio: Display: Creating Audio Device:                 Id: 2, Scope: Unique, Realtime: True
+[2024.07.19-20.24.10:434][207]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2024.07.19-20.24.10:434][207]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2024.07.19-20.24.10:434][207]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2024.07.19-20.24.10:434][207]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2024.07.19-20.24.10:434][207]LogAudioMixer: Display: 	Number of buffers to queue:			  1
+[2024.07.19-20.24.10:434][207]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2024.07.19-20.24.10:434][207]LogAudioMixer: Display: 	Number of Async Source Workers:		  4
+[2024.07.19-20.24.10:434][207]LogAudio: Display: AudioDevice MaxSources: 32
+[2024.07.19-20.24.10:435][207]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2024.07.19-20.24.10:435][207]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2024.07.19-20.24.10:435][207]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2024.07.19-20.24.10:438][207]LogAudioMixer: Display: Initializing audio mixer using platform API: 'XAudio2'
+[2024.07.19-20.24.10:493][207]LogAudioMixer: Display: Using Audio Hardware Device Speakers (Realtek(R) Audio)
+[2024.07.19-20.24.10:494][207]LogAudioMixer: Display: Initializing Sound Submixes...
+[2024.07.19-20.24.10:494][207]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2024.07.19-20.24.10:494][207]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2024.07.19-20.24.10:495][207]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called. InstanceID=2
+[2024.07.19-20.24.10:495][207]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048, InstanceID=2
+[2024.07.19-20.24.10:497][207]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=2
+[2024.07.19-20.24.10:497][207]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time. InstanceID=2
+[2024.07.19-20.24.10:497][207]LogInit: FAudioDevice initialized with ID 2.
+[2024.07.19-20.24.10:497][207]LogAudio: Display: Audio Device (ID: 2) registered with world 'MovementLevel'.
+[2024.07.19-20.24.10:497][207]LogAudioMixer: Initializing Audio Bus Subsystem for audio device with ID 2
+[2024.07.19-20.24.10:694][207]LogLoad: Game class is 'BP_CardslingerTestGameMode_C'
+[2024.07.19-20.24.10:700][207]LogWorld: Bringing World /Game/Levels/UEDPIE_0_MovementLevel.MovementLevel up for play (max tick rate 60) at 2024.07.19-21.24.10
+[2024.07.19-20.24.10:718][207]LogWorld: Bringing up level for play took: 0.022815
+[2024.07.19-20.24.10:721][207]LogOnline: OSS: Created online subsystem instance for: :Context_6
+[2024.07.19-20.24.10:779][207]LogTemp: Display: ../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/CardDeck.sav
+[2024.07.19-20.24.10:780][207]LogTemp: Load successful!
+[2024.07.19-20.24.10:785][207]LogTemp: Save successful!
+[2024.07.19-20.24.10:788][207]PIE: Server logged in
+[2024.07.19-20.24.10:789][207]PIE: Play in editor total start time 0.466 seconds.
+[2024.07.19-20.24.10:799][207]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.10:880][208]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.10:908][209]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.10:944][210]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.10:960][211]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.10:976][212]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.10:994][213]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.11:015][214]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.11:028][215]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.11:045][216]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.11:062][217]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.11:079][218]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.11:096][219]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.11:113][220]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.11:128][221]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.11:144][222]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.11:161][223]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.11:179][224]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.11:196][225]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.11:213][226]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.11:229][227]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.11:247][228]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.11:263][229]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.11:283][230]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.11:300][231]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.11:315][232]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.11:332][233]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.11:348][234]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.11:365][235]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.11:382][236]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.11:399][237]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.11:416][238]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.11:433][239]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.11:448][240]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.11:466][241]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.11:481][242]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.11:498][243]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.11:515][244]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.11:533][245]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.11:548][246]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.11:565][247]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.11:582][248]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.11:600][249]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.11:616][250]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.11:632][251]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.11:649][252]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.11:667][253]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.11:682][254]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.11:699][255]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.11:717][256]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.11:732][257]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.11:748][258]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.11:766][259]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.11:783][260]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.11:799][261]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.11:816][262]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.11:832][263]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.11:853][264]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.11:870][265]LogTemp: Display: CameraRotation is -0.100001
+[2024.07.19-20.24.11:886][266]LogTemp: Display: CameraRotation is -0.195002
+[2024.07.19-20.24.11:905][267]LogTemp: Display: CameraRotation is -0.285253
+[2024.07.19-20.24.11:920][268]LogTemp: Display: CameraRotation is -0.370992
+[2024.07.19-20.24.11:936][269]LogTemp: Display: CameraRotation is -0.452443
+[2024.07.19-20.24.11:952][270]LogTemp: Display: CameraRotation is -0.529823
+[2024.07.19-20.24.11:970][271]LogTemp: Display: CameraRotation is -0.603333
+[2024.07.19-20.24.11:987][272]LogTemp: Display: CameraRotation is -0.673167
+[2024.07.19-20.24.12:004][273]LogTemp: Display: CameraRotation is -0.739510
+[2024.07.19-20.24.12:021][274]LogTemp: Display: CameraRotation is -0.802535
+[2024.07.19-20.24.12:037][275]LogTemp: Display: CameraRotation is -0.862409
+[2024.07.19-20.24.12:053][276]LogTemp: Display: CameraRotation is -0.919290
+[2024.07.19-20.24.12:069][277]LogTemp: Display: CameraRotation is -0.973325
+[2024.07.19-20.24.12:087][278]LogTemp: Display: CameraRotation is -0.924659
+[2024.07.19-20.24.12:103][279]LogTemp: Display: CameraRotation is -0.878426
+[2024.07.19-20.24.12:122][280]LogTemp: Display: CameraRotation is -0.834505
+[2024.07.19-20.24.12:137][281]LogTemp: Display: CameraRotation is -0.792121
+[2024.07.19-20.24.12:154][282]LogTemp: Display: CameraRotation is -0.752515
+[2024.07.19-20.24.12:170][283]LogTemp: Display: CameraRotation is -0.714889
+[2024.07.19-20.24.12:188][284]LogTemp: Display: CameraRotation is -0.679144
+[2024.07.19-20.24.12:203][285]LogTemp: Display: CameraRotation is -0.645186
+[2024.07.19-20.24.12:220][286]LogTemp: Display: CameraRotation is -0.612926
+[2024.07.19-20.24.12:236][287]LogTemp: Display: CameraRotation is -0.582280
+[2024.07.19-20.24.12:254][288]LogTemp: Display: CameraRotation is -0.553165
+[2024.07.19-20.24.12:270][289]LogTemp: Display: CameraRotation is -0.525507
+[2024.07.19-20.24.12:287][290]LogTemp: Display: CameraRotation is -0.499231
+[2024.07.19-20.24.12:304][291]LogTemp: Display: CameraRotation is -0.474269
+[2024.07.19-20.24.12:322][292]LogTemp: Display: CameraRotation is -0.450555
+[2024.07.19-20.24.12:336][293]LogTemp: Display: CameraRotation is -0.428027
+[2024.07.19-20.24.12:353][294]LogTemp: Display: CameraRotation is -0.406626
+[2024.07.19-20.24.12:370][295]LogTemp: Display: CameraRotation is -0.386294
+[2024.07.19-20.24.12:388][296]LogTemp: Display: CameraRotation is -0.366979
+[2024.07.19-20.24.12:404][297]LogTemp: Display: CameraRotation is -0.348630
+[2024.07.19-20.24.12:421][298]LogTemp: Display: CameraRotation is -0.331198
+[2024.07.19-20.24.12:438][299]LogTemp: Display: CameraRotation is -0.314638
+[2024.07.19-20.24.12:454][300]LogTemp: Display: CameraRotation is -0.298906
+[2024.07.19-20.24.12:470][301]LogTemp: Display: CameraRotation is -0.283961
+[2024.07.19-20.24.12:487][302]LogTemp: Display: CameraRotation is -0.269763
+[2024.07.19-20.24.12:503][303]LogTemp: Display: CameraRotation is -0.256274
+[2024.07.19-20.24.12:520][304]LogTemp: Display: CameraRotation is -0.243461
+[2024.07.19-20.24.12:537][305]LogTemp: Display: CameraRotation is -0.231287
+[2024.07.19-20.24.12:552][306]LogTemp: Display: Dash Called
+[2024.07.19-20.24.12:552][306]LogTemp: Display: Dash Updated
+[2024.07.19-20.24.12:554][306]LogTemp: Display: CameraRotation is -0.219723
+[2024.07.19-20.24.12:555][306]LogTemp: Display: Dash Updated
+[2024.07.19-20.24.12:570][307]LogTemp: Display: Dash Updated
+[2024.07.19-20.24.12:570][307]LogTemp: Display: CameraRotation is -0.208737
+[2024.07.19-20.24.12:587][308]LogTemp: Display: Dash Updated
+[2024.07.19-20.24.12:587][308]LogTemp: Display: CameraRotation is -0.198300
+[2024.07.19-20.24.12:603][309]LogTemp: Display: Dash Updated
+[2024.07.19-20.24.12:603][309]LogTemp: Display: CameraRotation is -0.188385
+[2024.07.19-20.24.12:620][310]LogTemp: Display: Dash Updated
+[2024.07.19-20.24.12:620][310]LogTemp: Display: CameraRotation is -0.178965
+[2024.07.19-20.24.12:636][311]LogTemp: Display: Dash Updated
+[2024.07.19-20.24.12:637][311]LogTemp: Display: CameraRotation is -0.170017
+[2024.07.19-20.24.12:653][312]LogTemp: Display: Dash Updated
+[2024.07.19-20.24.12:654][312]LogTemp: Display: CameraRotation is -0.161516
+[2024.07.19-20.24.12:671][313]LogTemp: Display: Dash Updated
+[2024.07.19-20.24.12:671][313]LogTemp: Display: CameraRotation is -0.153440
+[2024.07.19-20.24.12:688][314]LogTemp: Display: Dash Updated
+[2024.07.19-20.24.12:688][314]LogTemp: Display: Dash finished
+[2024.07.19-20.24.12:688][314]LogTemp: Display: CameraRotation is -0.145768
+[2024.07.19-20.24.12:703][315]LogTemp: Display: CameraRotation is -0.138479
+[2024.07.19-20.24.12:721][316]LogTemp: Display: CameraRotation is -0.131555
+[2024.07.19-20.24.12:737][317]LogTemp: Display: CameraRotation is -0.124976
+[2024.07.19-20.24.12:754][318]LogTemp: Display: CameraRotation is -0.118727
+[2024.07.19-20.24.12:770][319]LogTemp: Display: CameraRotation is -0.112791
+[2024.07.19-20.24.12:787][320]LogTemp: Display: CameraRotation is -0.107151
+[2024.07.19-20.24.12:803][321]LogTemp: Display: CameraRotation is -0.101793
+[2024.07.19-20.24.12:819][322]LogTemp: Display: CameraRotation is -0.096704
+[2024.07.19-20.24.12:837][323]LogTemp: Display: CameraRotation is -0.091868
+[2024.07.19-20.24.12:854][324]LogTemp: Display: CameraRotation is -0.087275
+[2024.07.19-20.24.12:871][325]LogTemp: Display: CameraRotation is -0.082911
+[2024.07.19-20.24.12:888][326]LogTemp: Display: CameraRotation is -0.078765
+[2024.07.19-20.24.12:903][327]LogTemp: Display: CameraRotation is -0.074827
+[2024.07.19-20.24.12:921][328]LogTemp: Display: CameraRotation is -0.071086
+[2024.07.19-20.24.12:937][329]LogTemp: Display: CameraRotation is -0.067531
+[2024.07.19-20.24.12:953][330]LogTemp: Display: CameraRotation is -0.064155
+[2024.07.19-20.24.12:971][331]LogTemp: Display: CameraRotation is -0.060947
+[2024.07.19-20.24.12:987][332]LogTemp: Display: CameraRotation is -0.057900
+[2024.07.19-20.24.13:004][333]LogTemp: Display: CameraRotation is -0.055005
+[2024.07.19-20.24.13:020][334]LogTemp: Display: CameraRotation is -0.052254
+[2024.07.19-20.24.13:038][335]LogTemp: Display: CameraRotation is -0.049642
+[2024.07.19-20.24.13:054][336]LogTemp: Display: CameraRotation is -0.047159
+[2024.07.19-20.24.13:071][337]LogTemp: Display: CameraRotation is -0.044801
+[2024.07.19-20.24.13:090][338]LogTemp: Display: CameraRotation is -0.042561
+[2024.07.19-20.24.13:108][339]LogTemp: Display: CameraRotation is -0.040042
+[2024.07.19-20.24.13:123][340]LogTemp: Display: CameraRotation is -0.038040
+[2024.07.19-20.24.13:139][341]LogTemp: Display: CameraRotation is -0.036113
+[2024.07.19-20.24.13:158][342]LogTemp: Display: CameraRotation is -0.034307
+[2024.07.19-20.24.13:173][343]LogTemp: Display: CameraRotation is -0.032592
+[2024.07.19-20.24.13:190][344]LogTemp: Display: CameraRotation is -0.030962
+[2024.07.19-20.24.13:208][345]LogTemp: Display: CameraRotation is -0.029414
+[2024.07.19-20.24.13:223][346]LogTemp: Display: CameraRotation is -0.027943
+[2024.07.19-20.24.13:241][347]LogTemp: Display: CameraRotation is -0.026546
+[2024.07.19-20.24.13:258][348]LogTemp: Display: CameraRotation is -0.025219
+[2024.07.19-20.24.13:274][349]LogTemp: Display: CameraRotation is -0.023958
+[2024.07.19-20.24.13:291][350]LogTemp: Display: CameraRotation is -0.022760
+[2024.07.19-20.24.13:306][351]LogTemp: Display: CameraRotation is -0.021622
+[2024.07.19-20.24.13:324][352]LogTemp: Display: CameraRotation is -0.020541
+[2024.07.19-20.24.13:340][353]LogTemp: Display: CameraRotation is -0.019514
+[2024.07.19-20.24.13:358][354]LogTemp: Display: CameraRotation is -0.018538
+[2024.07.19-20.24.13:374][355]LogTemp: Display: CameraRotation is -0.017591
+[2024.07.19-20.24.13:391][356]LogTemp: Display: CameraRotation is -0.016711
+[2024.07.19-20.24.13:408][357]LogTemp: Display: CameraRotation is -0.015876
+[2024.07.19-20.24.13:423][358]LogTemp: Display: CameraRotation is -0.015076
+[2024.07.19-20.24.13:441][359]LogTemp: Display: CameraRotation is -0.014322
+[2024.07.19-20.24.13:458][360]LogTemp: Display: CameraRotation is -0.013606
+[2024.07.19-20.24.13:475][361]LogTemp: Display: CameraRotation is -0.012926
+[2024.07.19-20.24.13:491][362]LogTemp: Display: CameraRotation is -0.012280
+[2024.07.19-20.24.13:509][363]LogTemp: Display: CameraRotation is -0.011666
+[2024.07.19-20.24.13:524][364]LogTemp: Display: CameraRotation is -0.011082
+[2024.07.19-20.24.13:541][365]LogTemp: Display: CameraRotation is -0.010528
+[2024.07.19-20.24.13:558][366]LogTemp: Display: CameraRotation is -0.010002
+[2024.07.19-20.24.13:574][367]LogTemp: Display: CameraRotation is -0.009502
+[2024.07.19-20.24.13:593][368]LogTemp: Display: CameraRotation is -0.009027
+[2024.07.19-20.24.13:608][369]LogTemp: Display: CameraRotation is -0.008575
+[2024.07.19-20.24.13:624][370]LogTemp: Display: CameraRotation is -0.008146
+[2024.07.19-20.24.13:641][371]LogTemp: Display: CameraRotation is -0.007739
+[2024.07.19-20.24.13:658][372]LogTemp: Display: CameraRotation is -0.007352
+[2024.07.19-20.24.13:674][373]LogTemp: Display: CameraRotation is -0.006985
+[2024.07.19-20.24.13:692][374]LogTemp: Display: CameraRotation is -0.006617
+[2024.07.19-20.24.13:709][375]LogTemp: Display: CameraRotation is -0.006286
+[2024.07.19-20.24.13:725][376]LogTemp: Display: CameraRotation is -0.005972
+[2024.07.19-20.24.13:742][377]LogTemp: Display: CameraRotation is -0.005673
+[2024.07.19-20.24.13:761][378]LogTemp: Display: CameraRotation is -0.005390
+[2024.07.19-20.24.13:775][379]LogTemp: Display: CameraRotation is -0.005120
+[2024.07.19-20.24.13:793][380]LogTemp: Display: CameraRotation is -0.004864
+[2024.07.19-20.24.13:810][381]LogTemp: Display: CameraRotation is -0.004621
+[2024.07.19-20.24.13:826][382]LogTemp: Display: CameraRotation is -0.004390
+[2024.07.19-20.24.13:842][383]LogTemp: Display: CameraRotation is -0.004170
+[2024.07.19-20.24.13:858][384]LogTemp: Display: CameraRotation is -0.003962
+[2024.07.19-20.24.13:876][385]LogTemp: Display: CameraRotation is -0.003764
+[2024.07.19-20.24.13:892][386]LogTemp: Display: CameraRotation is -0.003576
+[2024.07.19-20.24.13:908][387]LogTemp: Display: CameraRotation is -0.003397
+[2024.07.19-20.24.13:925][388]LogTemp: Display: CameraRotation is -0.003227
+[2024.07.19-20.24.13:943][389]LogTemp: Display: CameraRotation is -0.003066
+[2024.07.19-20.24.13:958][390]LogTemp: Display: CameraRotation is -0.002912
+[2024.07.19-20.24.13:975][391]LogTemp: Display: CameraRotation is -0.002767
+[2024.07.19-20.24.13:992][392]LogTemp: Display: CameraRotation is -0.002628
+[2024.07.19-20.24.14:010][393]LogTemp: Display: CameraRotation is -0.002497
+[2024.07.19-20.24.14:025][394]LogTemp: Display: CameraRotation is -0.002372
+[2024.07.19-20.24.14:043][395]LogTemp: Display: CameraRotation is -0.002253
+[2024.07.19-20.24.14:060][396]LogTemp: Display: CameraRotation is -0.002140
+[2024.07.19-20.24.14:075][397]LogTemp: Display: CameraRotation is -0.002033
+[2024.07.19-20.24.14:093][398]LogTemp: Display: CameraRotation is -0.001932
+[2024.07.19-20.24.14:108][399]LogTemp: Display: CameraRotation is -0.001835
+[2024.07.19-20.24.14:125][400]LogTemp: Display: CameraRotation is -0.001835
+[2024.07.19-20.24.14:140][401]LogTemp: Display: Dash Called
+[2024.07.19-20.24.14:140][401]LogTemp: Display: Dash Updated
+[2024.07.19-20.24.14:142][401]LogTemp: Display: CameraRotation is -0.001835
+[2024.07.19-20.24.14:143][401]LogTemp: Display: Dash Updated
+[2024.07.19-20.24.14:159][402]LogTemp: Display: Dash Updated
+[2024.07.19-20.24.14:159][402]LogTemp: Display: CameraRotation is -0.001835
+[2024.07.19-20.24.14:177][403]LogTemp: Display: Dash Updated
+[2024.07.19-20.24.14:177][403]LogTemp: Display: CameraRotation is -0.001825
+[2024.07.19-20.24.14:195][404]LogTemp: Display: Dash Updated
+[2024.07.19-20.24.14:195][404]LogTemp: Display: CameraRotation is -0.001734
+[2024.07.19-20.24.14:210][405]LogTemp: Display: Dash Updated
+[2024.07.19-20.24.14:210][405]LogTemp: Display: CameraRotation is -0.001734
+[2024.07.19-20.24.14:227][406]LogTemp: Display: Dash Updated
+[2024.07.19-20.24.14:227][406]LogTemp: Display: CameraRotation is -0.001734
+[2024.07.19-20.24.14:244][407]LogTemp: Display: Dash Updated
+[2024.07.19-20.24.14:244][407]LogTemp: Display: CameraRotation is -0.001734
+[2024.07.19-20.24.14:260][408]LogTemp: Display: Dash Updated
+[2024.07.19-20.24.14:260][408]LogTemp: Display: CameraRotation is -0.001734
+[2024.07.19-20.24.14:277][409]LogTemp: Display: Dash Updated
+[2024.07.19-20.24.14:277][409]LogTemp: Display: Dash finished
+[2024.07.19-20.24.14:277][409]LogTemp: Display: CameraRotation is -0.001734
+[2024.07.19-20.24.14:294][410]LogTemp: Display: CameraRotation is -0.001734
+[2024.07.19-20.24.14:310][411]LogTemp: Display: CameraRotation is -0.001734
+[2024.07.19-20.24.14:327][412]LogTemp: Display: CameraRotation is -0.001734
+[2024.07.19-20.24.14:343][413]LogTemp: Display: CameraRotation is -0.001734
+[2024.07.19-20.24.14:361][414]LogTemp: Display: CameraRotation is -0.001734
+[2024.07.19-20.24.14:377][415]LogTemp: Display: CameraRotation is -0.001734
+[2024.07.19-20.24.14:394][416]LogTemp: Display: CameraRotation is -0.001734
+[2024.07.19-20.24.14:410][417]LogTemp: Display: CameraRotation is -0.001734
+[2024.07.19-20.24.14:427][418]LogTemp: Display: CameraRotation is -0.001734
+[2024.07.19-20.24.14:443][419]LogTemp: Display: CameraRotation is -0.001734
+[2024.07.19-20.24.14:461][420]LogTemp: Display: CameraRotation is -0.001734
+[2024.07.19-20.24.14:477][421]LogTemp: Display: CameraRotation is -0.001734
+[2024.07.19-20.24.14:494][422]LogTemp: Display: CameraRotation is -0.001734
+[2024.07.19-20.24.14:510][423]LogTemp: Display: CameraRotation is -0.001734
+[2024.07.19-20.24.14:527][424]LogTemp: Display: CameraRotation is -0.001734
+[2024.07.19-20.24.14:544][425]LogTemp: Display: CameraRotation is -0.001734
+[2024.07.19-20.24.14:560][426]LogTemp: Display: CameraRotation is -0.001734
+[2024.07.19-20.24.14:578][427]LogTemp: Display: CameraRotation is -0.001734
+[2024.07.19-20.24.14:593][428]LogTemp: Display: CameraRotation is -0.001734
+[2024.07.19-20.24.14:610][429]LogTemp: Display: CameraRotation is -0.001734
+[2024.07.19-20.24.14:627][430]LogTemp: Display: CameraRotation is -0.001734
+[2024.07.19-20.24.14:644][431]LogTemp: Display: CameraRotation is -0.001734
+[2024.07.19-20.24.14:662][432]LogTemp: Display: CameraRotation is -0.001734
+[2024.07.19-20.24.14:678][433]LogTemp: Display: CameraRotation is -0.001734
+[2024.07.19-20.24.14:695][434]LogTemp: Display: CameraRotation is -0.001734
+[2024.07.19-20.24.14:711][435]LogTemp: Display: CameraRotation is -0.001734
+[2024.07.19-20.24.14:727][436]LogTemp: Display: CameraRotation is -0.001734
+[2024.07.19-20.24.14:744][437]LogTemp: Display: CameraRotation is -0.001734
+[2024.07.19-20.24.14:760][438]LogTemp: Display: CameraRotation is -0.001734
+[2024.07.19-20.24.14:777][439]LogTemp: Display: CameraRotation is -0.001734
+[2024.07.19-20.24.14:794][440]LogTemp: Display: CameraRotation is -0.001734
+[2024.07.19-20.24.14:810][441]LogTemp: Display: CameraRotation is -0.001734
+[2024.07.19-20.24.14:828][442]LogTemp: Display: CameraRotation is -0.001734
+[2024.07.19-20.24.14:844][443]LogTemp: Display: CameraRotation is -0.001734
+[2024.07.19-20.24.14:861][444]LogTemp: Display: CameraRotation is -0.001734
+[2024.07.19-20.24.14:877][445]LogTemp: Display: CameraRotation is -0.001734
+[2024.07.19-20.24.14:894][446]LogTemp: Display: CameraRotation is -0.001734
+[2024.07.19-20.24.14:911][447]LogTemp: Display: CameraRotation is -0.001734
+[2024.07.19-20.24.14:928][448]LogTemp: Display: CameraRotation is -0.001734
+[2024.07.19-20.24.14:944][449]LogTemp: Display: CameraRotation is -0.001734
+[2024.07.19-20.24.14:960][450]LogTemp: Display: CameraRotation is -0.001734
+[2024.07.19-20.24.14:977][451]LogTemp: Display: CameraRotation is -0.001734
+[2024.07.19-20.24.14:994][452]LogTemp: Display: CameraRotation is -0.001734
+[2024.07.19-20.24.15:011][453]LogTemp: Display: CameraRotation is -0.001734
+[2024.07.19-20.24.15:027][454]LogTemp: Display: CameraRotation is -0.001734
+[2024.07.19-20.24.15:044][455]LogTemp: Display: CameraRotation is -0.001734
+[2024.07.19-20.24.15:061][456]LogTemp: Display: CameraRotation is -0.001734
+[2024.07.19-20.24.15:076][457]LogTemp: Display: CameraRotation is -0.001734
+[2024.07.19-20.24.15:094][458]LogTemp: Display: CameraRotation is -0.001734
+[2024.07.19-20.24.15:110][459]LogTemp: Display: CameraRotation is -0.001734
+[2024.07.19-20.24.15:128][460]LogTemp: Display: CameraRotation is -0.001734
+[2024.07.19-20.24.15:145][461]LogTemp: Display: CameraRotation is -0.001734
+[2024.07.19-20.24.15:161][462]LogTemp: Display: CameraRotation is -0.001734
+[2024.07.19-20.24.15:177][463]LogTemp: Display: CameraRotation is -0.001734
+[2024.07.19-20.24.15:194][464]LogTemp: Display: CameraRotation is -0.001734
+[2024.07.19-20.24.15:212][465]LogTemp: Display: CameraRotation is -0.001734
+[2024.07.19-20.24.15:279][465]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2024.07.19-20.24.15:279][465]LogWorld: BeginTearingDown for /Game/Levels/UEDPIE_0_MovementLevel
+[2024.07.19-20.24.15:281][465]LogWorld: UWorld::CleanupWorld for MovementLevel, bSessionEnded=true, bCleanupResources=true
+[2024.07.19-20.24.15:283][465]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.07.19-20.24.15:291][465]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2024.07.19-20.24.15:297][465]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.07.19-20.24.15:312][465]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2024.07.19-20.24.15:316][465]LogAudioMixer: Deinitializing Audio Bus Subsystem for audio device with ID 2
+[2024.07.19-20.24.15:318][465]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=2
+[2024.07.19-20.24.15:321][465]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=2
+[2024.07.19-20.24.15:354][465]LogUObjectHash: Compacting FUObjectHashTables data took   2.49ms
+[2024.07.19-20.24.15:418][466]LogPlayLevel: Display: Destroying online subsystem :Context_6
+[2024.07.19-20.24.16:074][503]LogViewport: Scene viewport resized to 632x619, mode Windowed.
+[2024.07.19-20.24.16:084][503]LogSlate: Took 0.001353 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
+[2024.07.19-20.24.16:105][503]LogSlate: Took 0.002010 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
+[2024.07.19-20.24.33:660][518]BlueprintLog: New page: Compile BP_BaseCharacterClass
+[2024.07.19-20.24.33:720][518]LogUObjectHash: Compacting FUObjectHashTables data took   1.69ms
+[2024.07.19-20.24.35:464][616]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.07.19-20.24.35:591][616]LogPackageLocalizationCache: Processed 46 localized package path(s) for 1 prioritized culture(s) in 0.013574 seconds
+[2024.07.19-20.24.35:610][616]LogSavePackage: Moving output files for package: /Game/Player/BP_BaseCharacterClass
+[2024.07.19-20.24.35:612][616]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/BP_BaseCharacterClass904166734B5630E2C05DBF81DC868E1B.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/Player/BP_BaseCharacterClass.uasset'
+[2024.07.19-20.24.35:627][616]LogFileHelpers: InternalPromptForCheckoutAndSave took 162 ms
+[2024.07.19-20.24.35:631][616]AssetCheck: New page: Asset Save: BP_BaseCharacterClass
+[2024.07.19-20.24.35:631][616]LogContentValidation: Display: Validating /Script/Engine.Blueprint /Game/Player/BP_BaseCharacterClass.BP_BaseCharacterClass
+[2024.07.19-20.24.36:851][689]LogDebuggerCommands: Repeating last play command: Selected Viewport
+[2024.07.19-20.24.36:867][689]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2024.07.19-20.24.36:867][689]PIE: New page: PIE session: MovementLevel (19 Jul 2024, 22:24:36)
+[2024.07.19-20.24.36:867][689]LogPlayLevel: Creating play world package: /Game/Levels/UEDPIE_0_MovementLevel
+[2024.07.19-20.24.36:871][689]LogPlayLevel: PIE: StaticDuplicateObject took: (0.003343s)
+[2024.07.19-20.24.36:871][689]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Levels/MovementLevel.MovementLevel to /Game/Levels/UEDPIE_0_MovementLevel.MovementLevel (0.003403s)
+[2024.07.19-20.24.36:887][689]LogUObjectHash: Compacting FUObjectHashTables data took   1.76ms
+[2024.07.19-20.24.36:890][689]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.07.19-20.24.36:890][689]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2024.07.19-20.24.36:891][689]LogAIModule: Creating AISystem for world MovementLevel
+[2024.07.19-20.24.36:891][689]LogPlayLevel: PIE: World Init took: (0.001156s)
+[2024.07.19-20.24.36:891][689]LogAudio: Display: Creating Audio Device:                 Id: 3, Scope: Unique, Realtime: True
+[2024.07.19-20.24.36:891][689]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2024.07.19-20.24.36:891][689]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2024.07.19-20.24.36:891][689]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2024.07.19-20.24.36:891][689]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2024.07.19-20.24.36:891][689]LogAudioMixer: Display: 	Number of buffers to queue:			  1
+[2024.07.19-20.24.36:891][689]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2024.07.19-20.24.36:892][689]LogAudioMixer: Display: 	Number of Async Source Workers:		  4
+[2024.07.19-20.24.36:892][689]LogAudio: Display: AudioDevice MaxSources: 32
+[2024.07.19-20.24.36:892][689]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2024.07.19-20.24.36:892][689]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2024.07.19-20.24.36:892][689]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2024.07.19-20.24.36:894][689]LogAudioMixer: Display: Initializing audio mixer using platform API: 'XAudio2'
+[2024.07.19-20.24.36:957][689]LogAudioMixer: Display: Using Audio Hardware Device Speakers (Realtek(R) Audio)
+[2024.07.19-20.24.36:958][689]LogAudioMixer: Display: Initializing Sound Submixes...
+[2024.07.19-20.24.36:958][689]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2024.07.19-20.24.36:958][689]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2024.07.19-20.24.36:962][689]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called. InstanceID=3
+[2024.07.19-20.24.36:962][689]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048, InstanceID=3
+[2024.07.19-20.24.36:964][689]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=3
+[2024.07.19-20.24.36:964][689]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time. InstanceID=3
+[2024.07.19-20.24.36:964][689]LogInit: FAudioDevice initialized with ID 3.
+[2024.07.19-20.24.36:964][689]LogAudio: Display: Audio Device (ID: 3) registered with world 'MovementLevel'.
+[2024.07.19-20.24.36:964][689]LogAudioMixer: Initializing Audio Bus Subsystem for audio device with ID 3
+[2024.07.19-20.24.36:968][689]LogLoad: Game class is 'BP_CardslingerTestGameMode_C'
+[2024.07.19-20.24.36:970][689]LogWorld: Bringing World /Game/Levels/UEDPIE_0_MovementLevel.MovementLevel up for play (max tick rate 60) at 2024.07.19-21.24.36
+[2024.07.19-20.24.36:971][689]LogWorld: Bringing up level for play took: 0.002575
+[2024.07.19-20.24.36:974][689]LogOnline: OSS: Created online subsystem instance for: :Context_7
+[2024.07.19-20.24.36:981][689]LogTemp: Display: ../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/CardDeck.sav
+[2024.07.19-20.24.36:981][689]LogTemp: Load successful!
+[2024.07.19-20.24.36:986][689]LogTemp: Save successful!
+[2024.07.19-20.24.36:988][689]PIE: Server logged in
+[2024.07.19-20.24.36:988][689]PIE: Play in editor total start time 0.121 seconds.
+[2024.07.19-20.24.36:989][689]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.37:023][690]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.37:041][691]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.37:058][692]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.37:074][693]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.37:091][694]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.37:107][695]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.37:124][696]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.37:141][697]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.37:158][698]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.37:175][699]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.37:190][700]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.37:208][701]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.37:224][702]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.37:240][703]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.37:257][704]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.37:275][705]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.37:291][706]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.37:308][707]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.37:324][708]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.37:341][709]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.37:358][710]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.37:375][711]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.37:392][712]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.37:408][713]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.37:424][714]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.37:441][715]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.37:458][716]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.37:476][717]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.37:492][718]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.37:510][719]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.37:531][720]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.37:548][721]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.37:565][722]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.37:583][723]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.37:601][724]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.37:619][725]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.37:637][726]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.37:652][727]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.37:669][728]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.37:688][729]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.37:704][730]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.37:722][731]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.37:738][732]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.37:754][733]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.37:771][734]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.37:789][735]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.37:804][736]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.37:822][737]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.37:839][738]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.37:854][739]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.37:871][740]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.37:889][741]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.37:904][742]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.37:922][743]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.37:938][744]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.37:955][745]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.37:971][746]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.37:989][747]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.38:004][748]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.38:023][749]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.38:038][750]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.38:058][751]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.38:071][752]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.38:089][753]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.38:105][754]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.38:122][755]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.38:138][756]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.38:156][757]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.38:173][758]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.38:189][759]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.38:207][760]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.38:222][761]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.38:240][762]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.38:257][763]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.38:272][764]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.38:288][765]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.38:306][766]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.38:323][767]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.38:339][768]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.38:356][769]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.38:373][770]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.38:389][771]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.38:405][772]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.38:422][773]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.38:439][774]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.38:458][775]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.38:474][776]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.38:492][777]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.38:508][778]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.38:525][779]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.38:542][780]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.38:559][781]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.38:575][782]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.38:591][783]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.38:608][784]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.38:624][785]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.38:641][786]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.38:659][787]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.38:676][788]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.38:692][789]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.38:708][790]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.38:725][791]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.38:741][792]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.38:756][793]LogTemp: Display: Dash Called
+[2024.07.19-20.24.38:756][793]LogTemp: Display: Dash Updated
+[2024.07.19-20.24.38:758][793]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.38:759][793]LogTemp: Display: Dash Updated
+[2024.07.19-20.24.38:775][794]LogTemp: Display: Dash Updated
+[2024.07.19-20.24.38:775][794]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.38:791][795]LogTemp: Display: Dash Updated
+[2024.07.19-20.24.38:791][795]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.38:808][796]LogTemp: Display: Dash Updated
+[2024.07.19-20.24.38:808][796]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.38:824][797]LogTemp: Display: Dash Updated
+[2024.07.19-20.24.38:824][797]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.38:842][798]LogTemp: Display: Dash Updated
+[2024.07.19-20.24.38:842][798]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.38:860][799]LogTemp: Display: Dash Updated
+[2024.07.19-20.24.38:860][799]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.38:876][800]LogTemp: Display: Dash Updated
+[2024.07.19-20.24.38:876][800]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.38:891][801]LogTemp: Display: Dash Updated
+[2024.07.19-20.24.38:891][801]LogTemp: Display: Dash finished
+[2024.07.19-20.24.38:891][801]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.38:907][802]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.38:924][803]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.38:942][804]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.38:958][805]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.38:974][806]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.38:992][807]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.39:009][808]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.39:025][809]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.39:041][810]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.39:059][811]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.39:074][812]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.39:091][813]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.39:108][814]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.39:125][815]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.39:142][816]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.39:158][817]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.39:176][818]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.39:192][819]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.39:209][820]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.39:224][821]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.39:242][822]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.39:258][823]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.39:276][824]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.39:292][825]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.39:309][826]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.39:325][827]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.39:342][828]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.39:358][829]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.39:375][830]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.39:392][831]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.39:409][832]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.39:425][833]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.39:442][834]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.39:459][835]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.39:478][836]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.39:495][837]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.39:511][838]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.39:528][839]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.39:544][840]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.39:561][841]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.39:579][842]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.39:593][843]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.39:612][844]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.39:630][845]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.39:644][846]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.39:661][847]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.39:678][848]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.39:695][849]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.39:712][850]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.39:728][851]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.39:745][852]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.39:762][853]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.39:779][854]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.39:794][855]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.39:812][856]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.39:828][857]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.39:845][858]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.39:861][859]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.39:879][860]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.24.39:896][861]LogTemp: Display: CameraRotation is 0.100001
+[2024.07.19-20.24.39:912][862]LogTemp: Display: CameraRotation is 0.195002
+[2024.07.19-20.24.39:928][863]LogTemp: Display: CameraRotation is 0.285252
+[2024.07.19-20.24.39:945][864]LogTemp: Display: CameraRotation is 0.371084
+[2024.07.19-20.24.39:962][865]LogTemp: Display: CameraRotation is 0.452530
+[2024.07.19-20.24.39:978][866]LogTemp: Display: CameraRotation is 0.529904
+[2024.07.19-20.24.39:996][867]LogTemp: Display: CameraRotation is 0.603410
+[2024.07.19-20.24.40:011][868]LogTemp: Display: CameraRotation is 0.673240
+[2024.07.19-20.24.40:029][869]LogTemp: Display: CameraRotation is 0.739578
+[2024.07.19-20.24.40:045][870]LogTemp: Display: CameraRotation is 0.802600
+[2024.07.19-20.24.40:063][871]LogTemp: Display: CameraRotation is 0.865014
+[2024.07.19-20.24.40:079][872]LogTemp: Display: CameraRotation is 0.921764
+[2024.07.19-20.24.40:097][873]LogTemp: Display: CameraRotation is 0.975678
+[2024.07.19-20.24.40:116][874]LogTemp: Display: CameraRotation is 1.033789
+[2024.07.19-20.24.40:135][875]LogTemp: Display: CameraRotation is 1.094323
+[2024.07.19-20.24.40:154][876]LogTemp: Display: CameraRotation is 1.143453
+[2024.07.19-20.24.40:171][877]LogTemp: Display: CameraRotation is 1.186281
+[2024.07.19-20.24.40:189][878]LogTemp: Display: CameraRotation is 1.229385
+[2024.07.19-20.24.40:207][879]LogTemp: Display: CameraRotation is 1.267916
+[2024.07.19-20.24.40:224][880]LogTemp: Display: CameraRotation is 1.198650
+[2024.07.19-20.24.40:240][881]LogTemp: Display: CameraRotation is 1.138717
+[2024.07.19-20.24.40:257][882]LogTemp: Display: CameraRotation is 1.081781
+[2024.07.19-20.24.40:273][883]LogTemp: Display: CameraRotation is 1.027690
+[2024.07.19-20.24.40:290][884]LogTemp: Display: CameraRotation is 0.976305
+[2024.07.19-20.24.40:307][885]LogTemp: Display: CameraRotation is 0.927490
+[2024.07.19-20.24.40:323][886]LogTemp: Display: CameraRotation is 0.881115
+[2024.07.19-20.24.40:341][887]LogTemp: Display: CameraRotation is 0.837059
+[2024.07.19-20.24.40:359][888]LogTemp: Display: CameraRotation is 0.793485
+[2024.07.19-20.24.40:376][889]LogTemp: Display: CameraRotation is 0.753036
+[2024.07.19-20.24.40:393][890]LogTemp: Display: CameraRotation is 0.714963
+[2024.07.19-20.24.40:410][891]LogTemp: Display: CameraRotation is 0.675876
+[2024.07.19-20.24.40:426][892]LogTemp: Display: CameraRotation is 0.641553
+[2024.07.19-20.24.40:443][893]LogTemp: Display: CameraRotation is 0.609475
+[2024.07.19-20.24.40:462][894]LogTemp: Display: CameraRotation is 0.579001
+[2024.07.19-20.24.40:479][895]LogTemp: Display: CameraRotation is 0.433653
+[2024.07.19-20.24.40:497][896]LogTemp: Display: CameraRotation is 0.311969
+[2024.07.19-20.24.40:513][897]LogTemp: Display: CameraRotation is 0.191995
+[2024.07.19-20.24.40:530][898]LogTemp: Display: CameraRotation is 0.082394
+[2024.07.19-20.24.40:547][899]LogTemp: Display: CameraRotation is -0.027133
+[2024.07.19-20.24.40:563][900]LogTemp: Display: CameraRotation is -0.125777
+[2024.07.19-20.24.40:579][901]LogTemp: Display: CameraRotation is -0.219489
+[2024.07.19-20.24.40:597][902]LogTemp: Display: CameraRotation is -0.308516
+[2024.07.19-20.24.40:613][903]LogTemp: Display: CameraRotation is -0.393091
+[2024.07.19-20.24.40:631][904]LogTemp: Display: CameraRotation is -0.473436
+[2024.07.19-20.24.40:647][905]LogTemp: Display: CameraRotation is -0.449764
+[2024.07.19-20.24.40:664][906]LogTemp: Display: CameraRotation is -0.427236
+[2024.07.19-20.24.40:681][907]LogTemp: Display: CameraRotation is -0.405874
+[2024.07.19-20.24.40:697][908]LogTemp: Display: CameraRotation is -0.385377
+[2024.07.19-20.24.40:714][909]LogTemp: Display: CameraRotation is -0.366107
+[2024.07.19-20.24.40:732][910]LogTemp: Display: CameraRotation is -0.346946
+[2024.07.19-20.24.40:750][911]LogTemp: Display: CameraRotation is -0.328155
+[2024.07.19-20.24.40:767][912]LogTemp: Display: CameraRotation is -0.311747
+[2024.07.19-20.24.40:784][913]LogTemp: Display: CameraRotation is -0.295276
+[2024.07.19-20.24.40:801][914]LogTemp: Display: CameraRotation is -0.280387
+[2024.07.19-20.24.40:820][915]LogTemp: Display: CameraRotation is -0.265639
+[2024.07.19-20.24.40:838][916]LogTemp: Display: CameraRotation is -0.251138
+[2024.07.19-20.24.40:859][917]LogTemp: Display: CameraRotation is -0.236627
+[2024.07.19-20.24.40:876][918]LogTemp: Display: CameraRotation is -0.223546
+[2024.07.19-20.24.40:893][919]LogTemp: Display: CameraRotation is -0.210889
+[2024.07.19-20.24.40:913][920]LogTemp: Display: CameraRotation is -0.198851
+[2024.07.19-20.24.40:928][921]LogTemp: Display: Dash Called
+[2024.07.19-20.24.40:929][921]LogTemp: Display: Dash Updated
+[2024.07.19-20.24.40:931][921]LogTemp: Display: CameraRotation is -0.188389
+[2024.07.19-20.24.40:932][921]LogTemp: Display: Dash Updated
+[2024.07.19-20.24.40:948][922]LogTemp: Display: Dash Updated
+[2024.07.19-20.24.40:948][922]LogTemp: Display: CameraRotation is -0.178196
+[2024.07.19-20.24.40:969][923]LogTemp: Display: Dash Updated
+[2024.07.19-20.24.40:970][923]LogTemp: Display: CameraRotation is -0.167738
+[2024.07.19-20.24.40:985][924]LogTemp: Display: Dash Updated
+[2024.07.19-20.24.40:986][924]LogTemp: Display: CameraRotation is -0.158547
+[2024.07.19-20.24.41:003][925]LogTemp: Display: Dash Updated
+[2024.07.19-20.24.41:003][925]LogTemp: Display: CameraRotation is -0.150213
+[2024.07.19-20.24.41:019][926]LogTemp: Display: Dash Updated
+[2024.07.19-20.24.41:020][926]LogTemp: Display: CameraRotation is -0.142600
+[2024.07.19-20.24.41:037][927]LogTemp: Display: Dash Updated
+[2024.07.19-20.24.41:038][927]LogTemp: Display: CameraRotation is -0.135063
+[2024.07.19-20.24.41:057][928]LogTemp: Display: Dash Updated
+[2024.07.19-20.24.41:058][928]LogTemp: Display: CameraRotation is -0.127072
+[2024.07.19-20.24.41:075][929]LogTemp: Display: Dash Updated
+[2024.07.19-20.24.41:075][929]LogTemp: Display: Dash finished
+[2024.07.19-20.24.41:075][929]LogTemp: Display: CameraRotation is -0.120516
+[2024.07.19-20.24.41:093][930]LogTemp: Display: CameraRotation is -0.114147
+[2024.07.19-20.24.41:110][931]LogTemp: Display: CameraRotation is -0.108265
+[2024.07.19-20.24.41:127][932]LogTemp: Display: CameraRotation is -0.102794
+[2024.07.19-20.24.41:149][933]LogTemp: Display: CameraRotation is -0.096821
+[2024.07.19-20.24.41:165][934]LogTemp: Display: CameraRotation is -0.091267
+[2024.07.19-20.24.41:183][935]LogTemp: Display: CameraRotation is -0.086343
+[2024.07.19-20.24.41:202][936]LogTemp: Display: CameraRotation is -0.081906
+[2024.07.19-20.24.41:219][937]LogTemp: Display: CameraRotation is -0.077293
+[2024.07.19-20.24.41:238][938]LogTemp: Display: CameraRotation is -0.073098
+[2024.07.19-20.24.41:257][939]LogTemp: Display: CameraRotation is -0.068821
+[2024.07.19-20.24.41:275][940]LogTemp: Display: CameraRotation is -0.065165
+[2024.07.19-20.24.41:294][941]LogTemp: Display: CameraRotation is -0.061508
+[2024.07.19-20.24.41:310][942]LogTemp: Display: CameraRotation is -0.058287
+[2024.07.19-20.24.41:329][943]LogTemp: Display: CameraRotation is -0.055298
+[2024.07.19-20.24.41:346][944]LogTemp: Display: CameraRotation is -0.052282
+[2024.07.19-20.24.41:362][945]LogTemp: Display: CameraRotation is -0.049668
+[2024.07.19-20.24.41:381][946]LogTemp: Display: CameraRotation is -0.047184
+[2024.07.19-20.24.41:401][947]LogTemp: Display: CameraRotation is -0.044404
+[2024.07.19-20.24.41:420][948]LogTemp: Display: CameraRotation is -0.041814
+[2024.07.19-20.24.41:439][949]LogTemp: Display: CameraRotation is -0.039420
+[2024.07.19-20.24.41:457][950]LogTemp: Display: CameraRotation is -0.037131
+[2024.07.19-20.24.41:475][951]LogTemp: Display: CameraRotation is -0.035195
+[2024.07.19-20.24.41:495][952]LogTemp: Display: CameraRotation is -0.033070
+[2024.07.19-20.24.41:514][953]LogTemp: Display: CameraRotation is -0.031119
+[2024.07.19-20.24.41:532][954]LogTemp: Display: CameraRotation is -0.029475
+[2024.07.19-20.24.41:550][955]LogTemp: Display: CameraRotation is -0.027866
+[2024.07.19-20.24.41:567][956]LogTemp: Display: CameraRotation is 0.080331
+[2024.07.19-20.24.41:587][957]LogTemp: Display: CameraRotation is 0.184708
+[2024.07.19-20.24.41:603][958]LogTemp: Display: CameraRotation is 0.278616
+[2024.07.19-20.24.41:621][959]LogTemp: Display: CameraRotation is 0.370414
+[2024.07.19-20.24.41:639][960]LogTemp: Display: CameraRotation is 0.457600
+[2024.07.19-20.24.41:657][961]LogTemp: Display: CameraRotation is 0.543726
+[2024.07.19-20.24.41:675][962]LogTemp: Display: CameraRotation is 0.619532
+[2024.07.19-20.24.41:692][963]LogTemp: Display: CameraRotation is 0.694459
+[2024.07.19-20.24.41:708][964]LogTemp: Display: CameraRotation is 0.759817
+[2024.07.19-20.24.41:724][965]LogTemp: Display: CameraRotation is 0.821826
+[2024.07.19-20.24.41:743][966]LogTemp: Display: CameraRotation is 0.883951
+[2024.07.19-20.24.41:761][967]LogTemp: Display: CameraRotation is 0.945101
+[2024.07.19-20.24.41:778][968]LogTemp: Display: CameraRotation is 0.997846
+[2024.07.19-20.24.41:794][969]LogTemp: Display: CameraRotation is 1.047954
+[2024.07.19-20.24.41:810][970]LogTemp: Display: CameraRotation is 1.095556
+[2024.07.19-20.24.41:829][971]LogTemp: Display: CameraRotation is 1.140780
+[2024.07.19-20.24.41:845][972]LogTemp: Display: CameraRotation is 1.183780
+[2024.07.19-20.24.41:862][973]LogTemp: Display: CameraRotation is 1.227975
+[2024.07.19-20.24.41:879][974]LogTemp: Display: CameraRotation is 1.266576
+[2024.07.19-20.24.41:896][975]LogTemp: Display: CameraRotation is 1.303909
+[2024.07.19-20.24.41:915][976]LogTemp: Display: CameraRotation is 1.343577
+[2024.07.19-20.24.41:934][977]LogTemp: Display: CameraRotation is 1.381497
+[2024.07.19-20.24.41:950][978]LogTemp: Display: CameraRotation is 1.412637
+[2024.07.19-20.24.41:967][979]LogTemp: Display: CameraRotation is 1.342004
+[2024.07.19-20.24.41:987][980]LogTemp: Display: CameraRotation is 1.265649
+[2024.07.19-20.24.42:003][981]LogTemp: Display: CameraRotation is 1.199604
+[2024.07.19-20.24.42:021][982]LogTemp: Display: CameraRotation is 1.139624
+[2024.07.19-20.24.42:038][983]LogTemp: Display: CameraRotation is 1.082643
+[2024.07.19-20.24.42:053][984]LogTemp: Display: CameraRotation is 1.028118
+[2024.07.19-20.24.42:070][985]LogTemp: Display: CameraRotation is 0.976712
+[2024.07.19-20.24.42:087][986]LogTemp: Display: CameraRotation is 0.927828
+[2024.07.19-20.24.42:104][987]LogTemp: Display: CameraRotation is 0.881436
+[2024.07.19-20.24.42:122][988]LogTemp: Display: CameraRotation is 0.834863
+[2024.07.19-20.24.42:139][989]LogTemp: Display: CameraRotation is 0.791587
+[2024.07.19-20.24.42:156][990]LogTemp: Display: CameraRotation is 0.750482
+[2024.07.19-20.24.42:173][991]LogTemp: Display: CameraRotation is 0.712958
+[2024.07.19-20.24.42:191][992]LogTemp: Display: CameraRotation is 0.673792
+[2024.07.19-20.24.42:208][993]LogTemp: Display: CameraRotation is 0.638851
+[2024.07.19-20.24.42:224][994]LogTemp: Display: CameraRotation is 0.606908
+[2024.07.19-20.24.42:241][995]LogTemp: Display: CameraRotation is 0.576537
+[2024.07.19-20.24.42:259][996]LogTemp: Display: CameraRotation is 0.547710
+[2024.07.19-20.24.42:279][997]LogTemp: Display: CameraRotation is 0.514290
+[2024.07.19-20.24.42:295][998]LogTemp: Display: CameraRotation is 0.488574
+[2024.07.19-20.24.42:313][999]LogTemp: Display: CameraRotation is 0.462213
+[2024.07.19-20.24.42:330][  0]LogTemp: Display: CameraRotation is 0.439102
+[2024.07.19-20.24.42:346][  1]LogTemp: Display: CameraRotation is 0.417147
+[2024.07.19-20.24.42:363][  2]LogTemp: Display: CameraRotation is 0.396289
+[2024.07.19-20.24.42:380][  3]LogTemp: Display: CameraRotation is 0.375908
+[2024.07.19-20.24.42:396][  4]LogTemp: Display: CameraRotation is 0.357112
+[2024.07.19-20.24.42:413][  5]LogTemp: Display: CameraRotation is 0.339256
+[2024.07.19-20.24.42:431][  6]LogTemp: Display: CameraRotation is 0.322293
+[2024.07.19-20.24.42:447][  7]LogTemp: Display: CameraRotation is 0.306178
+[2024.07.19-20.24.42:463][  8]LogTemp: Display: CameraRotation is 0.290869
+[2024.07.19-20.24.42:481][  9]LogTemp: Display: CameraRotation is 0.276325
+[2024.07.19-20.24.42:497][ 10]LogTemp: Display: CameraRotation is 0.261765
+[2024.07.19-20.24.42:514][ 11]LogTemp: Display: CameraRotation is 0.248677
+[2024.07.19-20.24.42:532][ 12]LogTemp: Display: CameraRotation is 0.236243
+[2024.07.19-20.24.42:548][ 13]LogTemp: Display: CameraRotation is 0.224431
+[2024.07.19-20.24.42:565][ 14]LogTemp: Display: CameraRotation is 0.213209
+[2024.07.19-20.24.42:581][ 15]LogTemp: Display: CameraRotation is 0.202548
+[2024.07.19-20.24.42:597][ 16]LogTemp: Display: CameraRotation is 0.192421
+[2024.07.19-20.24.42:614][ 17]LogTemp: Display: CameraRotation is 0.182800
+[2024.07.19-20.24.42:631][ 18]LogTemp: Display: CameraRotation is 0.173659
+[2024.07.19-20.24.42:647][ 19]LogTemp: Display: CameraRotation is 0.164969
+[2024.07.19-20.24.42:664][ 20]LogTemp: Display: CameraRotation is 0.156720
+[2024.07.19-20.24.42:681][ 21]LogTemp: Display: CameraRotation is 0.148884
+[2024.07.19-20.24.42:698][ 22]LogTemp: Display: CameraRotation is 0.141440
+[2024.07.19-20.24.42:714][ 23]LogTemp: Display: CameraRotation is 0.134368
+[2024.07.19-20.24.42:732][ 24]LogTemp: Display: CameraRotation is 0.127214
+[2024.07.19-20.24.42:749][ 25]LogTemp: Display: CameraRotation is 0.120853
+[2024.07.19-20.24.42:766][ 26]LogTemp: Display: CameraRotation is 0.114810
+[2024.07.19-20.24.42:783][ 27]LogTemp: Display: CameraRotation is 0.109070
+[2024.07.19-20.24.42:799][ 28]LogTemp: Display: CameraRotation is 0.103616
+[2024.07.19-20.24.42:815][ 29]LogTemp: Display: CameraRotation is 0.098435
+[2024.07.19-20.24.42:832][ 30]LogTemp: Display: CameraRotation is 0.093513
+[2024.07.19-20.24.42:848][ 31]LogTemp: Display: CameraRotation is 0.088838
+[2024.07.19-20.24.42:866][ 32]LogTemp: Display: CameraRotation is 0.084396
+[2024.07.19-20.24.42:883][ 33]LogTemp: Display: CameraRotation is 0.080176
+[2024.07.19-20.24.42:900][ 34]LogTemp: Display: CameraRotation is 0.076167
+[2024.07.19-20.24.42:916][ 35]LogTemp: Display: CameraRotation is 0.072351
+[2024.07.19-20.24.42:932][ 36]LogTemp: Display: CameraRotation is 0.068733
+[2024.07.19-20.24.42:949][ 37]LogTemp: Display: CameraRotation is 0.065234
+[2024.07.19-20.24.42:967][ 38]LogTemp: Display: CameraRotation is 0.061972
+[2024.07.19-20.24.42:983][ 39]LogTemp: Display: CameraRotation is 0.058874
+[2024.07.19-20.24.43:000][ 40]LogTemp: Display: CameraRotation is 0.055930
+[2024.07.19-20.24.43:017][ 41]LogTemp: Display: CameraRotation is 0.053133
+[2024.07.19-20.24.43:033][ 42]LogTemp: Display: CameraRotation is 0.050477
+[2024.07.19-20.24.43:049][ 43]LogTemp: Display: CameraRotation is 0.047953
+[2024.07.19-20.24.43:066][ 44]LogTemp: Display: CameraRotation is 0.045555
+[2024.07.19-20.24.43:084][ 45]LogTemp: Display: CameraRotation is 0.143279
+[2024.07.19-20.24.43:101][ 46]LogTemp: Display: CameraRotation is 0.247774
+[2024.07.19-20.24.43:119][ 47]LogTemp: Display: CameraRotation is 0.337155
+[2024.07.19-20.24.43:135][ 48]LogTemp: Display: CameraRotation is 0.420299
+[2024.07.19-20.24.43:152][ 49]LogTemp: Display: CameraRotation is 0.499284
+[2024.07.19-20.24.43:169][ 50]LogTemp: Display: CameraRotation is 0.574320
+[2024.07.19-20.24.43:186][ 51]LogTemp: Display: CameraRotation is 0.647673
+[2024.07.19-20.24.43:203][ 52]LogTemp: Display: CameraRotation is 0.715358
+[2024.07.19-20.24.43:220][ 53]LogTemp: Display: CameraRotation is 0.783709
+[2024.07.19-20.24.43:237][ 54]LogTemp: Display: CameraRotation is 0.844524
+[2024.07.19-20.24.43:254][ 55]LogTemp: Display: CameraRotation is 0.902299
+[2024.07.19-20.24.43:271][ 56]LogTemp: Display: CameraRotation is 0.957184
+[2024.07.19-20.24.43:287][ 57]LogTemp: Display: CameraRotation is 1.009326
+[2024.07.19-20.24.43:305][ 58]LogTemp: Display: CameraRotation is 1.064657
+[2024.07.19-20.24.43:323][ 59]LogTemp: Display: CameraRotation is 1.111424
+[2024.07.19-20.24.43:338][ 60]LogTemp: Display: CameraRotation is 1.155854
+[2024.07.19-20.24.43:354][ 61]LogTemp: Display: CameraRotation is 1.198061
+[2024.07.19-20.24.43:373][ 62]LogTemp: Display: CameraRotation is 1.239734
+[2024.07.19-20.24.43:391][ 63]LogTemp: Display: CameraRotation is 1.280422
+[2024.07.19-20.24.43:408][ 64]LogTemp: Display: CameraRotation is 1.316401
+[2024.07.19-20.24.43:424][ 65]LogTemp: Display: CameraRotation is 1.350582
+[2024.07.19-20.24.43:441][ 66]LogTemp: Display: CameraRotation is 1.383053
+[2024.07.19-20.24.43:457][ 67]LogTemp: Display: CameraRotation is 1.413901
+[2024.07.19-20.24.43:474][ 68]LogTemp: Display: CameraRotation is 1.443206
+[2024.07.19-20.24.43:491][ 69]LogTemp: Display: CameraRotation is 1.471046
+[2024.07.19-20.24.43:512][ 70]LogTemp: Display: CameraRotation is 1.506178
+[2024.07.19-20.24.43:530][ 71]LogTemp: Display: CameraRotation is 1.530869
+[2024.07.19-20.24.43:546][ 72]LogTemp: Display: CameraRotation is 1.554325
+[2024.07.19-20.24.43:563][ 73]LogTemp: Display: CameraRotation is 1.576609
+[2024.07.19-20.24.43:580][ 74]LogTemp: Display: CameraRotation is 1.598193
+[2024.07.19-20.24.43:599][ 75]LogTemp: Display: CameraRotation is 1.621167
+[2024.07.19-20.24.43:616][ 76]LogTemp: Display: CameraRotation is 1.640429
+[2024.07.19-20.24.43:633][ 77]LogTemp: Display: CameraRotation is 1.658408
+[2024.07.19-20.24.43:652][ 78]LogTemp: Display: CameraRotation is 1.676032
+[2024.07.19-20.24.43:670][ 79]LogTemp: Display: CameraRotation is 1.694691
+[2024.07.19-20.24.43:689][ 80]LogTemp: Display: CameraRotation is 1.711768
+[2024.07.19-20.24.43:707][ 81]LogTemp: Display: CameraRotation is 1.728079
+[2024.07.19-20.24.43:724][ 82]LogTemp: Display: CameraRotation is 1.742254
+[2024.07.19-20.24.43:743][ 83]LogTemp: Display: CameraRotation is 1.755836
+[2024.07.19-20.24.43:759][ 84]LogTemp: Display: CameraRotation is 1.768699
+[2024.07.19-20.24.43:779][ 85]LogTemp: Display: CameraRotation is 1.668283
+[2024.07.19-20.24.43:796][ 86]LogTemp: Display: CameraRotation is 1.578634
+[2024.07.19-20.24.43:813][ 87]LogTemp: Display: CameraRotation is 1.499701
+[2024.07.19-20.24.43:830][ 88]LogTemp: Display: CameraRotation is 1.424716
+[2024.07.19-20.24.43:847][ 89]LogTemp: Display: CameraRotation is 1.345372
+[2024.07.19-20.24.43:864][ 90]LogTemp: Display: CameraRotation is 1.278104
+[2024.07.19-20.24.43:883][ 91]LogTemp: Display: CameraRotation is 1.206761
+[2024.07.19-20.24.43:900][ 92]LogTemp: Display: CameraRotation is 1.146422
+[2024.07.19-20.24.43:916][ 93]LogTemp: Display: CameraRotation is 1.089100
+[2024.07.19-20.24.43:934][ 94]LogTemp: Display: CameraRotation is 1.031443
+[2024.07.19-20.24.43:952][ 95]LogTemp: Display: CameraRotation is 0.977625
+[2024.07.19-20.24.43:968][ 96]LogTemp: Display: CameraRotation is 0.928737
+[2024.07.19-20.24.43:984][ 97]LogTemp: Display: CameraRotation is 0.882299
+[2024.07.19-20.24.44:001][ 98]LogTemp: Display: CameraRotation is 0.838184
+[2024.07.19-20.24.44:019][ 99]LogTemp: Display: CameraRotation is 0.796275
+[2024.07.19-20.24.44:034][100]LogTemp: Display: CameraRotation is 0.756247
+[2024.07.19-20.24.44:050][101]LogTemp: Display: CameraRotation is 0.718434
+[2024.07.19-20.24.44:068][102]LogTemp: Display: CameraRotation is 0.680074
+[2024.07.19-20.24.44:086][103]LogTemp: Display: CameraRotation is 0.645046
+[2024.07.19-20.24.44:103][104]LogTemp: Display: CameraRotation is 0.612793
+[2024.07.19-20.24.44:120][105]LogTemp: Display: CameraRotation is 0.582153
+[2024.07.19-20.24.44:136][106]LogTemp: Display: CameraRotation is 0.553045
+[2024.07.19-20.24.44:152][107]LogTemp: Display: CameraRotation is 0.525393
+[2024.07.19-20.24.44:169][108]LogTemp: Display: CameraRotation is 0.499122
+[2024.07.19-20.24.44:186][109]LogTemp: Display: CameraRotation is 0.474165
+[2024.07.19-20.24.44:203][110]LogTemp: Display: CameraRotation is 0.449317
+[2024.07.19-20.24.44:223][111]LogTemp: Display: CameraRotation is 0.422665
+[2024.07.19-20.24.44:240][112]LogTemp: Display: CameraRotation is 0.400988
+[2024.07.19-20.24.44:256][113]LogTemp: Display: CameraRotation is 0.380939
+[2024.07.19-20.24.44:273][114]LogTemp: Display: CameraRotation is 0.361892
+[2024.07.19-20.24.44:291][115]LogTemp: Display: CameraRotation is 0.343797
+[2024.07.19-20.24.44:306][116]LogTemp: Display: CameraRotation is 0.326607
+[2024.07.19-20.24.44:323][117]LogTemp: Display: CameraRotation is 0.310276
+[2024.07.19-20.24.44:340][118]LogTemp: Display: CameraRotation is 0.294762
+[2024.07.19-20.24.44:357][119]LogTemp: Display: CameraRotation is 0.280024
+[2024.07.19-20.24.44:374][120]LogTemp: Display: CameraRotation is 0.266023
+[2024.07.19-20.24.44:390][121]LogTemp: Display: CameraRotation is 0.252721
+[2024.07.19-20.24.44:407][122]LogTemp: Display: CameraRotation is 0.240085
+[2024.07.19-20.24.44:423][123]LogTemp: Display: CameraRotation is 0.228081
+[2024.07.19-20.24.44:440][124]LogTemp: Display: CameraRotation is 0.216676
+[2024.07.19-20.24.44:457][125]LogTemp: Display: CameraRotation is 0.205842
+[2024.07.19-20.24.44:473][126]LogTemp: Display: CameraRotation is 0.195550
+[2024.07.19-20.24.44:490][127]LogTemp: Display: CameraRotation is 0.185773
+[2024.07.19-20.24.44:507][128]LogTemp: Display: CameraRotation is 0.176484
+[2024.07.19-20.24.44:523][129]LogTemp: Display: CameraRotation is 0.167659
+[2024.07.19-20.24.44:541][130]LogTemp: Display: CameraRotation is 0.159276
+[2024.07.19-20.24.44:557][131]LogTemp: Display: CameraRotation is 0.151312
+[2024.07.19-20.24.44:574][132]LogTemp: Display: CameraRotation is 0.143746
+[2024.07.19-20.24.44:590][133]LogTemp: Display: CameraRotation is 0.136554
+[2024.07.19-20.24.44:606][134]LogTemp: Display: CameraRotation is 0.129727
+[2024.07.19-20.24.44:623][135]LogTemp: Display: CameraRotation is 0.123240
+[2024.07.19-20.24.44:640][136]LogTemp: Display: CameraRotation is 0.117078
+[2024.07.19-20.24.44:657][137]LogTemp: Display: CameraRotation is 0.111224
+[2024.07.19-20.24.44:673][138]LogTemp: Display: CameraRotation is 0.105663
+[2024.07.19-20.24.44:691][139]LogTemp: Display: CameraRotation is 0.100380
+[2024.07.19-20.24.44:707][140]LogTemp: Display: CameraRotation is 0.095360
+[2024.07.19-20.24.44:724][141]LogTemp: Display: CameraRotation is 0.090357
+[2024.07.19-20.24.44:741][142]LogTemp: Display: CameraRotation is 0.085839
+[2024.07.19-20.24.44:757][143]LogTemp: Display: CameraRotation is 0.081547
+[2024.07.19-20.24.44:775][144]LogTemp: Display: CameraRotation is 0.077470
+[2024.07.19-20.24.44:791][145]LogTemp: Display: CameraRotation is 0.073596
+[2024.07.19-20.24.44:809][146]LogTemp: Display: CameraRotation is 0.069916
+[2024.07.19-20.24.44:825][147]LogTemp: Display: CameraRotation is 0.066421
+[2024.07.19-20.24.44:838][148]LogTemp: Display: Dash Called
+[2024.07.19-20.24.44:839][148]LogTemp: Display: Dash Updated
+[2024.07.19-20.24.44:841][148]LogTemp: Display: CameraRotation is 0.063100
+[2024.07.19-20.24.44:842][148]LogTemp: Display: Dash Updated
+[2024.07.19-20.24.44:858][149]LogTemp: Display: Dash Updated
+[2024.07.19-20.24.44:858][149]LogTemp: Display: CameraRotation is 0.059945
+[2024.07.19-20.24.44:874][150]LogTemp: Display: Dash Updated
+[2024.07.19-20.24.44:875][150]LogTemp: Display: CameraRotation is 0.056947
+[2024.07.19-20.24.44:890][151]LogTemp: Display: Dash Updated
+[2024.07.19-20.24.44:891][151]LogTemp: Display: CameraRotation is 0.054100
+[2024.07.19-20.24.44:907][152]LogTemp: Display: Dash Updated
+[2024.07.19-20.24.44:908][152]LogTemp: Display: CameraRotation is 0.051395
+[2024.07.19-20.24.44:925][153]LogTemp: Display: Dash Updated
+[2024.07.19-20.24.44:925][153]LogTemp: Display: CameraRotation is 0.048825
+[2024.07.19-20.24.44:941][154]LogTemp: Display: Dash Updated
+[2024.07.19-20.24.44:941][154]LogTemp: Display: CameraRotation is 0.046384
+[2024.07.19-20.24.44:957][155]LogTemp: Display: Dash Updated
+[2024.07.19-20.24.44:957][155]LogTemp: Display: CameraRotation is 0.044065
+[2024.07.19-20.24.44:974][156]LogTemp: Display: Dash Updated
+[2024.07.19-20.24.44:974][156]LogTemp: Display: Dash finished
+[2024.07.19-20.24.44:974][156]LogTemp: Display: CameraRotation is 0.041861
+[2024.07.19-20.24.44:991][157]LogTemp: Display: CameraRotation is 0.039768
+[2024.07.19-20.24.45:009][158]LogTemp: Display: CameraRotation is 0.037780
+[2024.07.19-20.24.45:025][159]LogTemp: Display: CameraRotation is 0.035891
+[2024.07.19-20.24.45:042][160]LogTemp: Display: CameraRotation is 0.034096
+[2024.07.19-20.24.45:058][161]LogTemp: Display: CameraRotation is 0.032388
+[2024.07.19-20.24.45:075][162]LogTemp: Display: CameraRotation is 0.030666
+[2024.07.19-20.24.45:093][163]LogTemp: Display: CameraRotation is 0.029132
+[2024.07.19-20.24.45:108][164]LogTemp: Display: CameraRotation is 0.027676
+[2024.07.19-20.24.45:126][165]LogTemp: Display: CameraRotation is 0.026292
+[2024.07.19-20.24.45:141][166]LogTemp: Display: CameraRotation is 0.024977
+[2024.07.19-20.24.45:160][167]LogTemp: Display: CameraRotation is 0.023728
+[2024.07.19-20.24.45:175][168]LogTemp: Display: CameraRotation is 0.022542
+[2024.07.19-20.24.45:192][169]LogTemp: Display: CameraRotation is 0.021415
+[2024.07.19-20.24.45:209][170]LogTemp: Display: CameraRotation is 0.020344
+[2024.07.19-20.24.45:225][171]LogTemp: Display: CameraRotation is 0.019327
+[2024.07.19-20.24.45:242][172]LogTemp: Display: CameraRotation is 0.018361
+[2024.07.19-20.24.45:258][173]LogTemp: Display: CameraRotation is 0.017442
+[2024.07.19-20.24.45:276][174]LogTemp: Display: CameraRotation is 0.016570
+[2024.07.19-20.24.45:293][175]LogTemp: Display: CameraRotation is 0.015742
+[2024.07.19-20.24.45:308][176]LogTemp: Display: CameraRotation is 0.014955
+[2024.07.19-20.24.45:326][177]LogTemp: Display: CameraRotation is 0.014207
+[2024.07.19-20.24.45:342][178]LogTemp: Display: CameraRotation is 0.013497
+[2024.07.19-20.24.45:359][179]LogTemp: Display: CameraRotation is 0.012822
+[2024.07.19-20.24.45:375][180]LogTemp: Display: CameraRotation is 0.012181
+[2024.07.19-20.24.45:392][181]LogTemp: Display: CameraRotation is 0.011572
+[2024.07.19-20.24.45:409][182]LogTemp: Display: CameraRotation is 0.010993
+[2024.07.19-20.24.45:426][183]LogTemp: Display: CameraRotation is 0.010443
+[2024.07.19-20.24.45:442][184]LogTemp: Display: CameraRotation is 0.009921
+[2024.07.19-20.24.45:459][185]LogTemp: Display: CameraRotation is 0.009425
+[2024.07.19-20.24.45:475][186]LogTemp: Display: CameraRotation is 0.008954
+[2024.07.19-20.24.45:493][187]LogTemp: Display: CameraRotation is 0.008506
+[2024.07.19-20.24.45:509][188]LogTemp: Display: CameraRotation is 0.008081
+[2024.07.19-20.24.45:525][189]LogTemp: Display: CameraRotation is 0.007677
+[2024.07.19-20.24.45:542][190]LogTemp: Display: CameraRotation is 0.007293
+[2024.07.19-20.24.45:558][191]LogTemp: Display: CameraRotation is 0.006928
+[2024.07.19-20.24.45:575][192]LogTemp: Display: CameraRotation is 0.006582
+[2024.07.19-20.24.45:593][193]LogTemp: Display: CameraRotation is 0.006253
+[2024.07.19-20.24.45:609][194]LogTemp: Display: CameraRotation is 0.005940
+[2024.07.19-20.24.45:625][195]LogTemp: Display: CameraRotation is 0.005643
+[2024.07.19-20.24.45:642][196]LogTemp: Display: CameraRotation is 0.005361
+[2024.07.19-20.24.45:660][197]LogTemp: Display: CameraRotation is 0.005093
+[2024.07.19-20.24.45:675][198]LogTemp: Display: CameraRotation is 0.004838
+[2024.07.19-20.24.45:692][199]LogTemp: Display: CameraRotation is 0.004596
+[2024.07.19-20.24.45:710][200]LogTemp: Display: CameraRotation is 0.004367
+[2024.07.19-20.24.45:726][201]LogTemp: Display: CameraRotation is 0.004148
+[2024.07.19-20.24.45:743][202]LogTemp: Display: CameraRotation is 0.003941
+[2024.07.19-20.24.45:759][203]LogTemp: Display: CameraRotation is 0.003744
+[2024.07.19-20.24.45:776][204]LogTemp: Display: CameraRotation is 0.003557
+[2024.07.19-20.24.45:791][205]LogTemp: Display: CameraRotation is 0.003379
+[2024.07.19-20.24.45:808][206]LogTemp: Display: CameraRotation is 0.003210
+[2024.07.19-20.24.45:826][207]LogTemp: Display: CameraRotation is 0.003049
+[2024.07.19-20.24.45:842][208]LogTemp: Display: CameraRotation is 0.002897
+[2024.07.19-20.24.45:858][209]LogTemp: Display: CameraRotation is 0.002752
+[2024.07.19-20.24.45:876][210]LogTemp: Display: CameraRotation is 0.002614
+[2024.07.19-20.24.45:893][211]LogTemp: Display: CameraRotation is 0.002484
+[2024.07.19-20.24.45:908][212]LogTemp: Display: CameraRotation is 0.002359
+[2024.07.19-20.24.45:926][213]LogTemp: Display: CameraRotation is 0.002242
+[2024.07.19-20.24.45:942][214]LogTemp: Display: CameraRotation is 0.002129
+[2024.07.19-20.24.45:959][215]LogTemp: Display: CameraRotation is 0.002023
+[2024.07.19-20.24.45:976][216]LogTemp: Display: CameraRotation is 0.001922
+[2024.07.19-20.24.45:993][217]LogTemp: Display: CameraRotation is 0.001826
+[2024.07.19-20.24.46:009][218]LogTemp: Display: CameraRotation is 0.001826
+[2024.07.19-20.24.46:025][219]LogTemp: Display: CameraRotation is 0.001826
+[2024.07.19-20.24.46:043][220]LogTemp: Display: CameraRotation is 0.001826
+[2024.07.19-20.24.46:059][221]LogTemp: Display: CameraRotation is 0.001826
+[2024.07.19-20.24.46:075][222]LogTemp: Display: CameraRotation is 0.001826
+[2024.07.19-20.24.46:092][223]LogTemp: Display: CameraRotation is 0.001826
+[2024.07.19-20.24.46:109][224]LogTemp: Display: CameraRotation is 0.001826
+[2024.07.19-20.24.46:125][225]LogTemp: Display: CameraRotation is 0.001826
+[2024.07.19-20.24.46:142][226]LogTemp: Display: CameraRotation is 0.001826
+[2024.07.19-20.24.46:159][227]LogTemp: Display: CameraRotation is 0.001826
+[2024.07.19-20.24.46:176][228]LogTemp: Display: CameraRotation is 0.001826
+[2024.07.19-20.24.46:191][229]LogTemp: Display: CameraRotation is 0.001826
+[2024.07.19-20.24.46:208][230]LogTemp: Display: CameraRotation is 0.001826
+[2024.07.19-20.24.46:226][231]LogTemp: Display: CameraRotation is 0.001826
+[2024.07.19-20.24.46:242][232]LogTemp: Display: CameraRotation is 0.001826
+[2024.07.19-20.24.46:259][233]LogTemp: Display: CameraRotation is 0.001826
+[2024.07.19-20.24.46:275][234]LogTemp: Display: CameraRotation is 0.001826
+[2024.07.19-20.24.46:292][235]LogTemp: Display: CameraRotation is 0.001826
+[2024.07.19-20.24.46:309][236]LogTemp: Display: CameraRotation is 0.001826
+[2024.07.19-20.24.46:325][237]LogTemp: Display: CameraRotation is 0.001826
+[2024.07.19-20.24.46:342][238]LogTemp: Display: CameraRotation is 0.001826
+[2024.07.19-20.24.46:357][239]LogTemp: Display: Dash Called
+[2024.07.19-20.24.46:357][239]LogTemp: Display: Dash Updated
+[2024.07.19-20.24.46:359][239]LogTemp: Display: CameraRotation is 0.001826
+[2024.07.19-20.24.46:359][239]LogTemp: Display: Dash Updated
+[2024.07.19-20.24.46:375][240]LogTemp: Display: Dash Updated
+[2024.07.19-20.24.46:375][240]LogTemp: Display: CameraRotation is 0.001826
+[2024.07.19-20.24.46:391][241]LogTemp: Display: Dash Updated
+[2024.07.19-20.24.46:392][241]LogTemp: Display: CameraRotation is 0.001826
+[2024.07.19-20.24.46:409][242]LogTemp: Display: Dash Updated
+[2024.07.19-20.24.46:410][242]LogTemp: Display: CameraRotation is 0.001826
+[2024.07.19-20.24.46:425][243]LogTemp: Display: Dash Updated
+[2024.07.19-20.24.46:425][243]LogTemp: Display: CameraRotation is 0.001826
+[2024.07.19-20.24.46:442][244]LogTemp: Display: Dash Updated
+[2024.07.19-20.24.46:442][244]LogTemp: Display: CameraRotation is 0.001826
+[2024.07.19-20.24.46:458][245]LogTemp: Display: Dash Updated
+[2024.07.19-20.24.46:458][245]LogTemp: Display: CameraRotation is 0.001826
+[2024.07.19-20.24.46:475][246]LogTemp: Display: Dash Updated
+[2024.07.19-20.24.46:475][246]LogTemp: Display: CameraRotation is 0.001826
+[2024.07.19-20.24.46:492][247]LogTemp: Display: Dash Updated
+[2024.07.19-20.24.46:492][247]LogTemp: Display: Dash finished
+[2024.07.19-20.24.46:492][247]LogTemp: Display: CameraRotation is 0.001826
+[2024.07.19-20.24.46:509][248]LogTemp: Display: CameraRotation is 0.001826
+[2024.07.19-20.24.46:525][249]LogTemp: Display: CameraRotation is 0.001826
+[2024.07.19-20.24.46:542][250]LogTemp: Display: CameraRotation is 0.001826
+[2024.07.19-20.24.46:559][251]LogTemp: Display: CameraRotation is 0.001826
+[2024.07.19-20.24.46:576][252]LogTemp: Display: CameraRotation is 0.001826
+[2024.07.19-20.24.46:592][253]LogTemp: Display: CameraRotation is 0.001826
+[2024.07.19-20.24.46:608][254]LogTemp: Display: CameraRotation is 0.001826
+[2024.07.19-20.24.46:625][255]LogTemp: Display: CameraRotation is 0.001826
+[2024.07.19-20.24.46:643][256]LogTemp: Display: CameraRotation is 0.001826
+[2024.07.19-20.24.46:658][257]LogTemp: Display: CameraRotation is 0.001826
+[2024.07.19-20.24.46:676][258]LogTemp: Display: CameraRotation is 0.001826
+[2024.07.19-20.24.46:692][259]LogTemp: Display: CameraRotation is 0.001826
+[2024.07.19-20.24.46:710][260]LogTemp: Display: CameraRotation is 0.001826
+[2024.07.19-20.24.46:726][261]LogTemp: Display: CameraRotation is 0.001826
+[2024.07.19-20.24.46:743][262]LogTemp: Display: CameraRotation is 0.001826
+[2024.07.19-20.24.46:759][263]LogTemp: Display: CameraRotation is 0.001826
+[2024.07.19-20.24.46:775][264]LogTemp: Display: CameraRotation is 0.001826
+[2024.07.19-20.24.46:793][265]LogTemp: Display: CameraRotation is 0.001826
+[2024.07.19-20.24.46:810][266]LogTemp: Display: CameraRotation is 0.001826
+[2024.07.19-20.24.46:824][267]LogTemp: Display: CameraRotation is 0.001826
+[2024.07.19-20.24.46:842][268]LogTemp: Display: CameraRotation is 0.001826
+[2024.07.19-20.24.46:858][269]LogTemp: Display: CameraRotation is 0.001826
+[2024.07.19-20.24.46:876][270]LogTemp: Display: CameraRotation is 0.001826
+[2024.07.19-20.24.46:892][271]LogTemp: Display: CameraRotation is 0.001826
+[2024.07.19-20.24.46:909][272]LogTemp: Display: CameraRotation is 0.001826
+[2024.07.19-20.24.46:925][273]LogTemp: Display: CameraRotation is 0.001826
+[2024.07.19-20.24.46:943][274]LogTemp: Display: CameraRotation is 0.001826
+[2024.07.19-20.24.46:958][275]LogTemp: Display: CameraRotation is 0.001826
+[2024.07.19-20.24.46:976][276]LogTemp: Display: CameraRotation is 0.001826
+[2024.07.19-20.24.46:993][277]LogTemp: Display: CameraRotation is 0.001826
+[2024.07.19-20.24.47:009][278]LogTemp: Display: CameraRotation is 0.001826
+[2024.07.19-20.24.47:026][279]LogTemp: Display: CameraRotation is 0.101827
+[2024.07.19-20.24.47:043][280]LogTemp: Display: CameraRotation is 0.196737
+[2024.07.19-20.24.47:059][281]LogTemp: Display: CameraRotation is 0.286902
+[2024.07.19-20.24.47:076][282]LogTemp: Display: CameraRotation is 0.372557
+[2024.07.19-20.24.47:093][283]LogTemp: Display: CameraRotation is 0.453930
+[2024.07.19-20.24.47:108][284]LogTemp: Display: CameraRotation is 0.531234
+[2024.07.19-20.24.47:126][285]LogTemp: Display: CameraRotation is 0.604672
+[2024.07.19-20.24.47:142][286]LogTemp: Display: CameraRotation is 0.674439
+[2024.07.19-20.24.47:159][287]LogTemp: Display: CameraRotation is 0.740718
+[2024.07.19-20.24.47:176][288]LogTemp: Display: CameraRotation is 0.803682
+[2024.07.19-20.24.47:193][289]LogTemp: Display: CameraRotation is 0.863500
+[2024.07.19-20.24.47:209][290]LogTemp: Display: CameraRotation is 0.920325
+[2024.07.19-20.24.47:225][291]LogTemp: Display: CameraRotation is 0.974310
+[2024.07.19-20.24.47:243][292]LogTemp: Display: CameraRotation is 1.025595
+[2024.07.19-20.24.47:259][293]LogTemp: Display: CameraRotation is 1.074316
+[2024.07.19-20.24.47:276][294]LogTemp: Display: CameraRotation is 1.120601
+[2024.07.19-20.24.47:291][295]LogTemp: Display: CameraRotation is 1.164571
+[2024.07.19-20.24.47:309][296]LogTemp: Display: CameraRotation is 1.206343
+[2024.07.19-20.24.47:327][297]LogTemp: Display: CameraRotation is 1.246026
+[2024.07.19-20.24.47:342][298]LogTemp: Display: CameraRotation is 1.283725
+[2024.07.19-20.24.47:359][299]LogTemp: Display: CameraRotation is 1.319539
+[2024.07.19-20.24.47:375][300]LogTemp: Display: CameraRotation is 1.353562
+[2024.07.19-20.24.47:393][301]LogTemp: Display: CameraRotation is 1.385885
+[2024.07.19-20.24.47:408][302]LogTemp: Display: CameraRotation is 1.416591
+[2024.07.19-20.24.47:426][303]LogTemp: Display: CameraRotation is 1.445762
+[2024.07.19-20.24.47:442][304]LogTemp: Display: CameraRotation is 1.473474
+[2024.07.19-20.24.47:459][305]LogTemp: Display: CameraRotation is 1.499801
+[2024.07.19-20.24.47:476][306]LogTemp: Display: CameraRotation is 1.524811
+[2024.07.19-20.24.47:491][307]LogTemp: Display: CameraRotation is 1.548571
+[2024.07.19-20.24.47:509][308]LogTemp: Display: CameraRotation is 1.571143
+[2024.07.19-20.24.47:526][309]LogTemp: Display: CameraRotation is 1.592586
+[2024.07.19-20.24.47:542][310]LogTemp: Display: CameraRotation is 1.612957
+[2024.07.19-20.24.47:559][311]LogTemp: Display: CameraRotation is 1.632309
+[2024.07.19-20.24.47:575][312]LogTemp: Display: CameraRotation is 1.650694
+[2024.07.19-20.24.47:592][313]LogTemp: Display: CameraRotation is 1.668160
+[2024.07.19-20.24.47:609][314]LogTemp: Display: CameraRotation is 1.684752
+[2024.07.19-20.24.47:626][315]LogTemp: Display: CameraRotation is 1.700515
+[2024.07.19-20.24.47:642][316]LogTemp: Display: CameraRotation is 1.715489
+[2024.07.19-20.24.47:659][317]LogTemp: Display: CameraRotation is 1.629712
+[2024.07.19-20.24.47:675][318]LogTemp: Display: CameraRotation is 1.548226
+[2024.07.19-20.24.47:693][319]LogTemp: Display: CameraRotation is 1.470813
+[2024.07.19-20.24.47:708][320]LogTemp: Display: CameraRotation is 1.397272
+[2024.07.19-20.24.47:726][321]LogTemp: Display: CameraRotation is 1.327408
+[2024.07.19-20.24.47:742][322]LogTemp: Display: CameraRotation is 1.261037
+[2024.07.19-20.24.47:759][323]LogTemp: Display: CameraRotation is 1.197984
+[2024.07.19-20.24.47:776][324]LogTemp: Display: CameraRotation is 1.138084
+[2024.07.19-20.24.47:793][325]LogTemp: Display: CameraRotation is 1.081180
+[2024.07.19-20.24.47:809][326]LogTemp: Display: CameraRotation is 1.027120
+[2024.07.19-20.24.47:825][327]LogTemp: Display: CameraRotation is 0.875761
+[2024.07.19-20.24.47:843][328]LogTemp: Display: CameraRotation is 0.731971
+[2024.07.19-20.24.47:859][329]LogTemp: Display: CameraRotation is 0.595370
+[2024.07.19-20.24.47:875][330]LogTemp: Display: CameraRotation is 0.465599
+[2024.07.19-20.24.47:893][331]LogTemp: Display: CameraRotation is 0.342317
+[2024.07.19-20.24.47:909][332]LogTemp: Display: CameraRotation is 0.225199
+[2024.07.19-20.24.47:926][333]LogTemp: Display: CameraRotation is 0.113937
+[2024.07.19-20.24.47:943][334]LogTemp: Display: CameraRotation is 0.008240
+[2024.07.19-20.24.47:958][335]LogTemp: Display: CameraRotation is -0.092173
+[2024.07.19-20.24.47:975][336]LogTemp: Display: CameraRotation is -0.187565
+[2024.07.19-20.24.47:992][337]LogTemp: Display: CameraRotation is -0.278187
+[2024.07.19-20.24.48:009][338]LogTemp: Display: CameraRotation is -0.364280
+[2024.07.19-20.24.48:026][339]LogTemp: Display: CameraRotation is -0.446067
+[2024.07.19-20.24.48:043][340]LogTemp: Display: CameraRotation is -0.523764
+[2024.07.19-20.24.48:060][341]LogTemp: Display: CameraRotation is -0.497576
+[2024.07.19-20.24.48:075][342]LogTemp: Display: CameraRotation is -0.472696
+[2024.07.19-20.24.48:092][343]LogTemp: Display: CameraRotation is -0.449061
+[2024.07.19-20.24.48:110][344]LogTemp: Display: CameraRotation is -0.426608
+[2024.07.19-20.24.48:125][345]LogTemp: Display: CameraRotation is -0.405277
+[2024.07.19-20.24.48:142][346]LogTemp: Display: CameraRotation is -0.385013
+[2024.07.19-20.24.48:157][347]LogTemp: Display: CameraRotation is -0.365762
+[2024.07.19-20.24.48:176][348]LogTemp: Display: CameraRotation is -0.347473
+[2024.07.19-20.24.48:192][349]LogTemp: Display: CameraRotation is -0.330099
+[2024.07.19-20.24.48:207][350]LogTemp: Display: Dash Called
+[2024.07.19-20.24.48:207][350]LogTemp: Display: Dash Updated
+[2024.07.19-20.24.48:209][350]LogTemp: Display: CameraRotation is -0.313594
+[2024.07.19-20.24.48:210][350]LogTemp: Display: Dash Updated
+[2024.07.19-20.24.48:225][351]LogTemp: Display: Dash Updated
+[2024.07.19-20.24.48:225][351]LogTemp: Display: CameraRotation is -0.297915
+[2024.07.19-20.24.48:242][352]LogTemp: Display: Dash Updated
+[2024.07.19-20.24.48:242][352]LogTemp: Display: CameraRotation is -0.283018
+[2024.07.19-20.24.48:258][353]LogTemp: Display: Dash Updated
+[2024.07.19-20.24.48:259][353]LogTemp: Display: CameraRotation is -0.268867
+[2024.07.19-20.24.48:275][354]LogTemp: Display: Dash Updated
+[2024.07.19-20.24.48:276][354]LogTemp: Display: CameraRotation is -0.255424
+[2024.07.19-20.24.48:292][355]LogTemp: Display: Dash Updated
+[2024.07.19-20.24.48:293][355]LogTemp: Display: CameraRotation is -0.242652
+[2024.07.19-20.24.48:308][356]LogTemp: Display: Dash Updated
+[2024.07.19-20.24.48:309][356]LogTemp: Display: CameraRotation is -0.230520
+[2024.07.19-20.24.48:325][357]LogTemp: Display: Dash Updated
+[2024.07.19-20.24.48:326][357]LogTemp: Display: CameraRotation is -0.218993
+[2024.07.19-20.24.48:341][358]LogTemp: Display: Dash Updated
+[2024.07.19-20.24.48:342][358]LogTemp: Display: Dash finished
+[2024.07.19-20.24.48:342][358]LogTemp: Display: CameraRotation is -0.208044
+[2024.07.19-20.24.48:359][359]LogTemp: Display: CameraRotation is -0.197641
+[2024.07.19-20.24.48:375][360]LogTemp: Display: CameraRotation is -0.187759
+[2024.07.19-20.24.48:392][361]LogTemp: Display: CameraRotation is -0.178371
+[2024.07.19-20.24.48:409][362]LogTemp: Display: CameraRotation is -0.169452
+[2024.07.19-20.24.48:425][363]LogTemp: Display: CameraRotation is -0.160980
+[2024.07.19-20.24.48:442][364]LogTemp: Display: CameraRotation is -0.152931
+[2024.07.19-20.24.48:459][365]LogTemp: Display: CameraRotation is -0.145284
+[2024.07.19-20.24.48:475][366]LogTemp: Display: CameraRotation is -0.138020
+[2024.07.19-20.24.48:493][367]LogTemp: Display: CameraRotation is -0.131119
+[2024.07.19-20.24.48:508][368]LogTemp: Display: CameraRotation is -0.124563
+[2024.07.19-20.24.48:526][369]LogTemp: Display: CameraRotation is -0.118334
+[2024.07.19-20.24.48:542][370]LogTemp: Display: CameraRotation is -0.112418
+[2024.07.19-20.24.48:559][371]LogTemp: Display: CameraRotation is -0.106797
+[2024.07.19-20.24.48:575][372]LogTemp: Display: CameraRotation is -0.101457
+[2024.07.19-20.24.48:592][373]LogTemp: Display: CameraRotation is -0.096384
+[2024.07.19-20.24.48:610][374]LogTemp: Display: CameraRotation is -0.191567
+[2024.07.19-20.24.48:626][375]LogTemp: Display: CameraRotation is -0.281989
+[2024.07.19-20.24.48:642][376]LogTemp: Display: CameraRotation is -0.367891
+[2024.07.19-20.24.48:660][377]LogTemp: Display: CameraRotation is -0.449497
+[2024.07.19-20.24.48:675][378]LogTemp: Display: CameraRotation is -0.527024
+[2024.07.19-20.24.48:692][379]LogTemp: Display: CameraRotation is -0.600673
+[2024.07.19-20.24.48:709][380]LogTemp: Display: CameraRotation is -0.670640
+[2024.07.19-20.24.48:726][381]LogTemp: Display: CameraRotation is -0.737109
+[2024.07.19-20.24.48:743][382]LogTemp: Display: CameraRotation is -0.800254
+[2024.07.19-20.24.48:759][383]LogTemp: Display: CameraRotation is -0.860242
+[2024.07.19-20.24.48:775][384]LogTemp: Display: CameraRotation is -0.917230
+[2024.07.19-20.24.48:792][385]LogTemp: Display: CameraRotation is -0.971370
+[2024.07.19-20.24.48:809][386]LogTemp: Display: CameraRotation is -1.022802
+[2024.07.19-20.24.48:825][387]LogTemp: Display: CameraRotation is -1.071662
+[2024.07.19-20.24.48:842][388]LogTemp: Display: CameraRotation is -1.118080
+[2024.07.19-20.24.48:859][389]LogTemp: Display: CameraRotation is -1.162176
+[2024.07.19-20.24.48:875][390]LogTemp: Display: CameraRotation is -1.204068
+[2024.07.19-20.24.48:892][391]LogTemp: Display: CameraRotation is -1.243865
+[2024.07.19-20.24.48:909][392]LogTemp: Display: CameraRotation is -1.281672
+[2024.07.19-20.24.48:926][393]LogTemp: Display: CameraRotation is -1.317589
+[2024.07.19-20.24.48:942][394]LogTemp: Display: CameraRotation is -1.351710
+[2024.07.19-20.24.48:958][395]LogTemp: Display: CameraRotation is -1.384125
+[2024.07.19-20.24.48:975][396]LogTemp: Display: CameraRotation is -1.414919
+[2024.07.19-20.24.48:992][397]LogTemp: Display: CameraRotation is -1.444173
+[2024.07.19-20.24.49:009][398]LogTemp: Display: CameraRotation is -1.471965
+[2024.07.19-20.24.49:026][399]LogTemp: Display: CameraRotation is -1.498367
+[2024.07.19-20.24.49:043][400]LogTemp: Display: CameraRotation is -1.423448
+[2024.07.19-20.24.49:059][401]LogTemp: Display: CameraRotation is -1.352275
+[2024.07.19-20.24.49:075][402]LogTemp: Display: CameraRotation is -1.284661
+[2024.07.19-20.24.49:093][403]LogTemp: Display: CameraRotation is -1.220428
+[2024.07.19-20.24.49:108][404]LogTemp: Display: CameraRotation is -1.159406
+[2024.07.19-20.24.49:126][405]LogTemp: Display: CameraRotation is -1.101435
+[2024.07.19-20.24.49:143][406]LogTemp: Display: CameraRotation is -1.046363
+[2024.07.19-20.24.49:160][407]LogTemp: Display: CameraRotation is -0.994044
+[2024.07.19-20.24.49:176][408]LogTemp: Display: CameraRotation is -0.944341
+[2024.07.19-20.24.49:195][409]LogTemp: Display: CameraRotation is -0.891451
+[2024.07.19-20.24.49:211][410]LogTemp: Display: CameraRotation is -0.846878
+[2024.07.19-20.24.49:229][411]LogTemp: Display: CameraRotation is -0.804534
+[2024.07.19-20.24.49:245][412]LogTemp: Display: CameraRotation is -0.764306
+[2024.07.19-20.24.49:262][413]LogTemp: Display: CameraRotation is -0.726091
+[2024.07.19-20.24.49:279][414]LogTemp: Display: CameraRotation is -0.688813
+[2024.07.19-20.24.49:294][415]LogTemp: Display: CameraRotation is -0.654372
+[2024.07.19-20.24.49:311][416]LogTemp: Display: CameraRotation is -0.621653
+[2024.07.19-20.24.49:329][417]LogTemp: Display: CameraRotation is -0.590570
+[2024.07.19-20.24.49:345][418]LogTemp: Display: CameraRotation is -0.561041
+[2024.07.19-20.24.49:361][419]LogTemp: Display: CameraRotation is -0.532989
+[2024.07.19-20.24.49:378][420]LogTemp: Display: CameraRotation is -0.506339
+[2024.07.19-20.24.49:394][421]LogTemp: Display: CameraRotation is -0.481022
+[2024.07.19-20.24.49:412][422]LogTemp: Display: CameraRotation is -0.456971
+[2024.07.19-20.24.49:429][423]LogTemp: Display: CameraRotation is -0.434122
+[2024.07.19-20.24.49:446][424]LogTemp: Display: CameraRotation is -0.412416
+[2024.07.19-20.24.49:462][425]LogTemp: Display: CameraRotation is -0.391795
+[2024.07.19-20.24.49:479][426]LogTemp: Display: CameraRotation is -0.371571
+[2024.07.19-20.24.49:496][427]LogTemp: Display: CameraRotation is -0.352269
+[2024.07.19-20.24.49:513][428]LogTemp: Display: CameraRotation is -0.334655
+[2024.07.19-20.24.49:531][429]LogTemp: Display: CameraRotation is -0.317922
+[2024.07.19-20.24.49:546][430]LogTemp: Display: CameraRotation is -0.302026
+[2024.07.19-20.24.49:564][431]LogTemp: Display: CameraRotation is -0.286924
+[2024.07.19-20.24.49:580][432]LogTemp: Display: CameraRotation is -0.272578
+[2024.07.19-20.24.49:597][433]LogTemp: Display: CameraRotation is -0.258949
+[2024.07.19-20.24.49:613][434]LogTemp: Display: CameraRotation is -0.246001
+[2024.07.19-20.24.49:629][435]LogTemp: Display: CameraRotation is -0.233701
+[2024.07.19-20.24.49:646][436]LogTemp: Display: CameraRotation is -0.222016
+[2024.07.19-20.24.49:663][437]LogTemp: Display: CameraRotation is -0.210915
+[2024.07.19-20.24.49:680][438]LogTemp: Display: CameraRotation is -0.200369
+[2024.07.19-20.24.49:696][439]LogTemp: Display: CameraRotation is -0.190351
+[2024.07.19-20.24.49:713][440]LogTemp: Display: CameraRotation is -0.180833
+[2024.07.19-20.24.49:730][441]LogTemp: Display: CameraRotation is -0.171791
+[2024.07.19-20.24.49:747][442]LogTemp: Display: CameraRotation is -0.163202
+[2024.07.19-20.24.49:763][443]LogTemp: Display: CameraRotation is -0.155041
+[2024.07.19-20.24.49:780][444]LogTemp: Display: CameraRotation is -0.147289
+[2024.07.19-20.24.49:796][445]LogTemp: Display: CameraRotation is -0.139925
+[2024.07.19-20.24.49:813][446]LogTemp: Display: CameraRotation is -0.132928
+[2024.07.19-20.24.49:829][447]LogTemp: Display: CameraRotation is -0.126282
+[2024.07.19-20.24.49:846][448]LogTemp: Display: CameraRotation is -0.119968
+[2024.07.19-20.24.49:863][449]LogTemp: Display: CameraRotation is -0.113969
+[2024.07.19-20.24.49:881][450]LogTemp: Display: CameraRotation is -0.108271
+[2024.07.19-20.24.49:896][451]LogTemp: Display: CameraRotation is -0.102820
+[2024.07.19-20.24.49:913][452]LogTemp: Display: CameraRotation is -0.097679
+[2024.07.19-20.24.49:930][453]LogTemp: Display: CameraRotation is -0.092795
+[2024.07.19-20.24.49:947][454]LogTemp: Display: CameraRotation is -0.088155
+[2024.07.19-20.24.49:963][455]LogTemp: Display: CameraRotation is -0.083747
+[2024.07.19-20.24.49:980][456]LogTemp: Display: CameraRotation is -0.079560
+[2024.07.19-20.24.49:997][457]LogTemp: Display: CameraRotation is -0.075582
+[2024.07.19-20.24.50:012][458]LogTemp: Display: CameraRotation is -0.071803
+[2024.07.19-20.24.50:028][459]LogTemp: Display: Dash Called
+[2024.07.19-20.24.50:028][459]LogTemp: Display: Dash Updated
+[2024.07.19-20.24.50:031][459]LogTemp: Display: CameraRotation is -0.068213
+[2024.07.19-20.24.50:031][459]LogTemp: Display: Dash Updated
+[2024.07.19-20.24.50:046][460]LogTemp: Display: Dash Updated
+[2024.07.19-20.24.50:046][460]LogTemp: Display: CameraRotation is -0.064802
+[2024.07.19-20.24.50:063][461]LogTemp: Display: Dash Updated
+[2024.07.19-20.24.50:063][461]LogTemp: Display: CameraRotation is -0.061562
+[2024.07.19-20.24.50:080][462]LogTemp: Display: Dash Updated
+[2024.07.19-20.24.50:080][462]LogTemp: Display: CameraRotation is -0.058484
+[2024.07.19-20.24.50:096][463]LogTemp: Display: Dash Updated
+[2024.07.19-20.24.50:096][463]LogTemp: Display: CameraRotation is -0.055559
+[2024.07.19-20.24.50:112][464]LogTemp: Display: Dash Updated
+[2024.07.19-20.24.50:112][464]LogTemp: Display: CameraRotation is -0.052781
+[2024.07.19-20.24.50:130][465]LogTemp: Display: Dash Updated
+[2024.07.19-20.24.50:130][465]LogTemp: Display: CameraRotation is -0.050142
+[2024.07.19-20.24.50:146][466]LogTemp: Display: Dash Updated
+[2024.07.19-20.24.50:146][466]LogTemp: Display: CameraRotation is -0.047635
+[2024.07.19-20.24.50:162][467]LogTemp: Display: Dash Updated
+[2024.07.19-20.24.50:162][467]LogTemp: Display: Dash finished
+[2024.07.19-20.24.50:162][467]LogTemp: Display: CameraRotation is -0.045253
+[2024.07.19-20.24.50:180][468]LogTemp: Display: CameraRotation is -0.042991
+[2024.07.19-20.24.50:196][469]LogTemp: Display: CameraRotation is -0.040841
+[2024.07.19-20.24.50:213][470]LogTemp: Display: CameraRotation is -0.038799
+[2024.07.19-20.24.50:230][471]LogTemp: Display: CameraRotation is -0.036859
+[2024.07.19-20.24.50:247][472]LogTemp: Display: CameraRotation is -0.035016
+[2024.07.19-20.24.50:263][473]LogTemp: Display: CameraRotation is -0.033265
+[2024.07.19-20.24.50:279][474]LogTemp: Display: CameraRotation is -0.031602
+[2024.07.19-20.24.50:296][475]LogTemp: Display: CameraRotation is -0.030022
+[2024.07.19-20.24.50:312][476]LogTemp: Display: CameraRotation is -0.028521
+[2024.07.19-20.24.50:330][477]LogTemp: Display: CameraRotation is -0.027095
+[2024.07.19-20.24.50:346][478]LogTemp: Display: CameraRotation is -0.025740
+[2024.07.19-20.24.50:362][479]LogTemp: Display: CameraRotation is -0.024453
+[2024.07.19-20.24.50:379][480]LogTemp: Display: CameraRotation is -0.023230
+[2024.07.19-20.24.50:396][481]LogTemp: Display: CameraRotation is -0.022069
+[2024.07.19-20.24.50:413][482]LogTemp: Display: CameraRotation is -0.020965
+[2024.07.19-20.24.50:429][483]LogTemp: Display: CameraRotation is -0.019917
+[2024.07.19-20.24.50:446][484]LogTemp: Display: CameraRotation is -0.018921
+[2024.07.19-20.24.50:462][485]LogTemp: Display: CameraRotation is -0.017975
+[2024.07.19-20.24.50:480][486]LogTemp: Display: CameraRotation is -0.017076
+[2024.07.19-20.24.50:496][487]LogTemp: Display: CameraRotation is -0.016222
+[2024.07.19-20.24.50:512][488]LogTemp: Display: CameraRotation is -0.015411
+[2024.07.19-20.24.50:529][489]LogTemp: Display: CameraRotation is -0.014641
+[2024.07.19-20.24.50:545][490]LogTemp: Display: CameraRotation is -0.013909
+[2024.07.19-20.24.50:562][491]LogTemp: Display: CameraRotation is -0.013213
+[2024.07.19-20.24.50:580][492]LogTemp: Display: CameraRotation is -0.012553
+[2024.07.19-20.24.50:597][493]LogTemp: Display: CameraRotation is -0.011925
+[2024.07.19-20.24.50:638][493]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2024.07.19-20.24.50:638][493]LogWorld: BeginTearingDown for /Game/Levels/UEDPIE_0_MovementLevel
+[2024.07.19-20.24.50:638][493]LogWorld: UWorld::CleanupWorld for MovementLevel, bSessionEnded=true, bCleanupResources=true
+[2024.07.19-20.24.50:639][493]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.07.19-20.24.50:643][493]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2024.07.19-20.24.50:649][493]LogNiagaraEditor: onPieEnd
+[2024.07.19-20.24.50:654][493]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.07.19-20.24.50:671][493]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2024.07.19-20.24.50:672][493]LogAudioMixer: Deinitializing Audio Bus Subsystem for audio device with ID 3
+[2024.07.19-20.24.50:672][493]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=3
+[2024.07.19-20.24.50:674][493]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=3
+[2024.07.19-20.24.50:682][493]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2024.07.19-20.24.50:688][493]LogUObjectHash: Compacting FUObjectHashTables data took   1.87ms
+[2024.07.19-20.24.50:742][494]LogPlayLevel: Display: Destroying online subsystem :Context_7
+[2024.07.19-20.24.54:676][726]LogViewport: Scene viewport resized to 1070x1010, mode Windowed.
+[2024.07.19-20.24.59:397][997]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.07.19-20.24.59:505][997]LogSavePackage: Moving output files for package: /Game/Player/BP_BaseCharacterClass
+[2024.07.19-20.24.59:507][997]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/BP_BaseCharacterClass9BA210B94C5B966E6C95A086751EBA77.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/Player/BP_BaseCharacterClass.uasset'
+[2024.07.19-20.24.59:517][997]LogFileHelpers: InternalPromptForCheckoutAndSave took 121 ms (total: 283 ms)
+[2024.07.19-20.24.59:520][997]AssetCheck: New page: Asset Save: BP_BaseCharacterClass
+[2024.07.19-20.24.59:520][997]LogContentValidation: Display: Validating /Script/Engine.Blueprint /Game/Player/BP_BaseCharacterClass.BP_BaseCharacterClass
+[2024.07.19-20.25.00:135][ 33]BlueprintLog: New page: Compile BP_BaseCharacterClass
+[2024.07.19-20.25.00:194][ 33]LogUObjectHash: Compacting FUObjectHashTables data took   1.54ms
+[2024.07.19-20.25.01:718][119]LogDebuggerCommands: Repeating last play command: Selected Viewport
+[2024.07.19-20.25.01:732][119]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2024.07.19-20.25.01:732][119]PIE: New page: PIE session: MovementLevel (19 Jul 2024, 22:25:01)
+[2024.07.19-20.25.01:732][119]LogPlayLevel: Creating play world package: /Game/Levels/UEDPIE_0_MovementLevel
+[2024.07.19-20.25.01:735][119]LogPlayLevel: PIE: StaticDuplicateObject took: (0.003061s)
+[2024.07.19-20.25.01:735][119]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Levels/MovementLevel.MovementLevel to /Game/Levels/UEDPIE_0_MovementLevel.MovementLevel (0.003105s)
+[2024.07.19-20.25.01:754][119]LogUObjectHash: Compacting FUObjectHashTables data took   1.88ms
+[2024.07.19-20.25.01:757][119]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.07.19-20.25.01:757][119]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2024.07.19-20.25.01:757][119]LogAIModule: Creating AISystem for world MovementLevel
+[2024.07.19-20.25.01:757][119]LogPlayLevel: PIE: World Init took: (0.001069s)
+[2024.07.19-20.25.01:757][119]LogAudio: Display: Creating Audio Device:                 Id: 4, Scope: Unique, Realtime: True
+[2024.07.19-20.25.01:757][119]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2024.07.19-20.25.01:757][119]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2024.07.19-20.25.01:757][119]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2024.07.19-20.25.01:757][119]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2024.07.19-20.25.01:759][119]LogAudioMixer: Display: 	Number of buffers to queue:			  1
+[2024.07.19-20.25.01:759][119]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2024.07.19-20.25.01:759][119]LogAudioMixer: Display: 	Number of Async Source Workers:		  4
+[2024.07.19-20.25.01:759][119]LogAudio: Display: AudioDevice MaxSources: 32
+[2024.07.19-20.25.01:759][119]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2024.07.19-20.25.01:759][119]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2024.07.19-20.25.01:759][119]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2024.07.19-20.25.01:762][119]LogAudioMixer: Display: Initializing audio mixer using platform API: 'XAudio2'
+[2024.07.19-20.25.01:821][119]LogAudioMixer: Display: Using Audio Hardware Device Speakers (Realtek(R) Audio)
+[2024.07.19-20.25.01:821][119]LogAudioMixer: Display: Initializing Sound Submixes...
+[2024.07.19-20.25.01:821][119]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2024.07.19-20.25.01:821][119]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2024.07.19-20.25.01:822][119]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called. InstanceID=4
+[2024.07.19-20.25.01:822][119]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048, InstanceID=4
+[2024.07.19-20.25.01:824][119]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=4
+[2024.07.19-20.25.01:824][119]LogInit: FAudioDevice initialized with ID 4.
+[2024.07.19-20.25.01:824][119]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time. InstanceID=4
+[2024.07.19-20.25.01:824][119]LogAudio: Display: Audio Device (ID: 4) registered with world 'MovementLevel'.
+[2024.07.19-20.25.01:824][119]LogAudioMixer: Initializing Audio Bus Subsystem for audio device with ID 4
+[2024.07.19-20.25.01:827][119]LogLoad: Game class is 'BP_CardslingerTestGameMode_C'
+[2024.07.19-20.25.01:830][119]LogWorld: Bringing World /Game/Levels/UEDPIE_0_MovementLevel.MovementLevel up for play (max tick rate 60) at 2024.07.19-21.25.01
+[2024.07.19-20.25.01:830][119]LogWorld: Bringing up level for play took: 0.002835
+[2024.07.19-20.25.01:833][119]LogOnline: OSS: Created online subsystem instance for: :Context_8
+[2024.07.19-20.25.01:840][119]LogTemp: Display: ../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/CardDeck.sav
+[2024.07.19-20.25.01:840][119]LogTemp: Load successful!
+[2024.07.19-20.25.01:845][119]LogTemp: Save successful!
+[2024.07.19-20.25.01:847][119]PIE: Server logged in
+[2024.07.19-20.25.01:848][119]PIE: Play in editor total start time 0.116 seconds.
+[2024.07.19-20.25.01:848][119]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.01:882][120]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.01:901][121]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.01:918][122]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.01:935][123]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.01:952][124]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.01:968][125]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.01:985][126]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.02:002][127]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.02:018][128]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.02:035][129]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.02:052][130]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.02:069][131]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.02:085][132]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.02:102][133]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.02:118][134]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.02:135][135]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.02:152][136]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.02:168][137]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.02:185][138]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.02:202][139]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.02:220][140]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.02:235][141]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.02:252][142]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.02:268][143]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.02:285][144]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.02:301][145]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.02:319][146]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.02:335][147]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.02:353][148]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.02:370][149]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.02:385][150]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.02:403][151]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.02:420][152]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.02:437][153]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.02:453][154]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.02:470][155]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.02:486][156]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.02:502][157]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.02:519][158]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.02:537][159]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.02:553][160]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.02:570][161]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.02:585][162]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.02:603][163]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.02:620][164]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.02:637][165]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.02:652][166]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.02:670][167]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.02:687][168]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.02:703][169]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.02:720][170]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.02:735][171]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.02:753][172]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.02:769][173]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.02:785][174]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.02:802][175]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.02:819][176]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.02:836][177]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.02:852][178]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.02:871][179]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.02:888][180]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.02:905][181]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.02:922][182]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.02:939][183]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.02:954][184]LogTemp: Display: Dash Called
+[2024.07.19-20.25.02:954][184]LogTemp: Display: Dash Updated
+[2024.07.19-20.25.02:955][184]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.02:956][184]LogTemp: Display: Dash Updated
+[2024.07.19-20.25.02:971][185]LogTemp: Display: Dash Updated
+[2024.07.19-20.25.02:972][185]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.02:989][186]LogTemp: Display: Dash Updated
+[2024.07.19-20.25.02:989][186]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.03:005][187]LogTemp: Display: Dash Updated
+[2024.07.19-20.25.03:005][187]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.03:022][188]LogTemp: Display: Dash Updated
+[2024.07.19-20.25.03:022][188]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.03:039][189]LogTemp: Display: Dash Updated
+[2024.07.19-20.25.03:039][189]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.03:056][190]LogTemp: Display: Dash Updated
+[2024.07.19-20.25.03:056][190]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.03:072][191]LogTemp: Display: Dash Updated
+[2024.07.19-20.25.03:072][191]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.03:090][192]LogTemp: Display: Dash Updated
+[2024.07.19-20.25.03:090][192]LogTemp: Display: Dash finished
+[2024.07.19-20.25.03:090][192]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.03:106][193]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.03:122][194]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.03:139][195]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.03:156][196]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.03:172][197]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.03:190][198]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.03:206][199]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.03:223][200]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.03:240][201]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.03:259][202]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.03:275][203]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.03:292][204]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.03:308][205]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.03:325][206]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.03:343][207]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.03:359][208]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.03:376][209]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.03:393][210]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.03:410][211]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.03:427][212]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.03:444][213]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.03:462][214]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.03:479][215]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.03:496][216]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.03:513][217]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.03:529][218]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.03:546][219]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.03:563][220]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.03:581][221]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.03:596][222]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.03:614][223]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.03:631][224]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.03:648][225]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.03:662][226]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.03:681][227]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.03:697][228]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.03:714][229]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.03:730][230]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.03:746][231]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.03:763][232]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.03:780][233]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.03:797][234]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.03:814][235]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.03:831][236]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.03:848][237]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.03:864][238]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.03:880][239]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.03:898][240]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.03:915][241]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.03:938][241]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2024.07.19-20.25.03:939][241]LogWorld: BeginTearingDown for /Game/Levels/UEDPIE_0_MovementLevel
+[2024.07.19-20.25.03:939][241]LogWorld: UWorld::CleanupWorld for MovementLevel, bSessionEnded=true, bCleanupResources=true
+[2024.07.19-20.25.03:940][241]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.07.19-20.25.03:943][241]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2024.07.19-20.25.03:944][241]LogNiagaraEditor: onPieEnd
+[2024.07.19-20.25.03:949][241]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.07.19-20.25.03:968][241]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2024.07.19-20.25.03:969][241]LogAudioMixer: Deinitializing Audio Bus Subsystem for audio device with ID 4
+[2024.07.19-20.25.03:969][241]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=4
+[2024.07.19-20.25.03:971][241]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=4
+[2024.07.19-20.25.03:978][241]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2024.07.19-20.25.03:982][241]LogUObjectHash: Compacting FUObjectHashTables data took   1.82ms
+[2024.07.19-20.25.04:038][242]LogPlayLevel: Display: Destroying online subsystem :Context_8
+[2024.07.19-20.25.07:942][467]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.07.19-20.25.08:059][467]LogSavePackage: Moving output files for package: /Game/Player/BP_BaseCharacterClass
+[2024.07.19-20.25.08:060][467]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/BP_BaseCharacterClass0D0A23794BF37172DEB72DAC3FEBD5AD.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/Player/BP_BaseCharacterClass.uasset'
+[2024.07.19-20.25.08:072][467]LogFileHelpers: InternalPromptForCheckoutAndSave took 129 ms (total: 413 ms)
+[2024.07.19-20.25.08:074][467]AssetCheck: New page: Asset Save: BP_BaseCharacterClass
+[2024.07.19-20.25.08:074][467]LogContentValidation: Display: Validating /Script/Engine.Blueprint /Game/Player/BP_BaseCharacterClass.BP_BaseCharacterClass
+[2024.07.19-20.25.09:385][541]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.07.19-20.25.09:518][541]LogSavePackage: Moving output files for package: /Game/Player/BP_BaseCharacterClass
+[2024.07.19-20.25.09:519][541]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/BP_BaseCharacterClass8ECF7D5A480F3D389C0F62A52EDA13B8.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/Player/BP_BaseCharacterClass.uasset'
+[2024.07.19-20.25.09:533][541]LogFileHelpers: InternalPromptForCheckoutAndSave took 147 ms (total: 561 ms)
+[2024.07.19-20.25.09:534][541]AssetCheck: New page: Asset Save: BP_BaseCharacterClass
+[2024.07.19-20.25.09:534][541]LogContentValidation: Display: Validating /Script/Engine.Blueprint /Game/Player/BP_BaseCharacterClass.BP_BaseCharacterClass
+[2024.07.19-20.25.10:875][621]BlueprintLog: New page: Compile BP_BaseCharacterClass
+[2024.07.19-20.25.10:941][621]LogUObjectHash: Compacting FUObjectHashTables data took   1.74ms
+[2024.07.19-20.25.11:931][669]LogDebuggerCommands: Repeating last play command: Selected Viewport
+[2024.07.19-20.25.11:947][669]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2024.07.19-20.25.11:947][669]PIE: New page: PIE session: MovementLevel (19 Jul 2024, 22:25:11)
+[2024.07.19-20.25.11:947][669]LogPlayLevel: Creating play world package: /Game/Levels/UEDPIE_0_MovementLevel
+[2024.07.19-20.25.11:950][669]LogPlayLevel: PIE: StaticDuplicateObject took: (0.003635s)
+[2024.07.19-20.25.11:950][669]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Levels/MovementLevel.MovementLevel to /Game/Levels/UEDPIE_0_MovementLevel.MovementLevel (0.003686s)
+[2024.07.19-20.25.11:970][669]LogUObjectHash: Compacting FUObjectHashTables data took   2.22ms
+[2024.07.19-20.25.11:974][669]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.07.19-20.25.11:975][669]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2024.07.19-20.25.11:975][669]LogAIModule: Creating AISystem for world MovementLevel
+[2024.07.19-20.25.11:975][669]LogPlayLevel: PIE: World Init took: (0.001573s)
+[2024.07.19-20.25.11:975][669]LogAudio: Display: Creating Audio Device:                 Id: 5, Scope: Unique, Realtime: True
+[2024.07.19-20.25.11:977][669]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2024.07.19-20.25.11:977][669]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2024.07.19-20.25.11:977][669]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2024.07.19-20.25.11:977][669]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2024.07.19-20.25.11:977][669]LogAudioMixer: Display: 	Number of buffers to queue:			  1
+[2024.07.19-20.25.11:977][669]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2024.07.19-20.25.11:977][669]LogAudioMixer: Display: 	Number of Async Source Workers:		  4
+[2024.07.19-20.25.11:977][669]LogAudio: Display: AudioDevice MaxSources: 32
+[2024.07.19-20.25.11:977][669]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2024.07.19-20.25.11:977][669]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2024.07.19-20.25.11:977][669]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2024.07.19-20.25.11:980][669]LogAudioMixer: Display: Initializing audio mixer using platform API: 'XAudio2'
+[2024.07.19-20.25.12:061][669]LogAudioMixer: Display: Using Audio Hardware Device Speakers (Realtek(R) Audio)
+[2024.07.19-20.25.12:061][669]LogAudioMixer: Display: Initializing Sound Submixes...
+[2024.07.19-20.25.12:061][669]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2024.07.19-20.25.12:061][669]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2024.07.19-20.25.12:063][669]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called. InstanceID=5
+[2024.07.19-20.25.12:064][669]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048, InstanceID=5
+[2024.07.19-20.25.12:065][669]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=5
+[2024.07.19-20.25.12:065][669]LogInit: FAudioDevice initialized with ID 5.
+[2024.07.19-20.25.12:065][669]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time. InstanceID=5
+[2024.07.19-20.25.12:065][669]LogAudio: Display: Audio Device (ID: 5) registered with world 'MovementLevel'.
+[2024.07.19-20.25.12:065][669]LogAudioMixer: Initializing Audio Bus Subsystem for audio device with ID 5
+[2024.07.19-20.25.12:070][669]LogLoad: Game class is 'BP_CardslingerTestGameMode_C'
+[2024.07.19-20.25.12:073][669]LogWorld: Bringing World /Game/Levels/UEDPIE_0_MovementLevel.MovementLevel up for play (max tick rate 60) at 2024.07.19-21.25.12
+[2024.07.19-20.25.12:073][669]LogWorld: Bringing up level for play took: 0.002955
+[2024.07.19-20.25.12:077][669]LogOnline: OSS: Created online subsystem instance for: :Context_9
+[2024.07.19-20.25.12:083][669]LogTemp: Display: ../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/CardDeck.sav
+[2024.07.19-20.25.12:083][669]LogTemp: Load successful!
+[2024.07.19-20.25.12:089][669]LogTemp: Save successful!
+[2024.07.19-20.25.12:092][669]PIE: Server logged in
+[2024.07.19-20.25.12:093][669]PIE: Play in editor total start time 0.147 seconds.
+[2024.07.19-20.25.12:095][669]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.12:129][670]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.12:148][671]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.12:163][672]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.12:181][673]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.12:203][674]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.12:220][675]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.12:235][676]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.12:254][677]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.12:270][678]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.12:286][679]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.12:303][680]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.12:320][681]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.12:337][682]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.12:354][683]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.12:369][684]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.12:386][685]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.12:404][686]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.12:420][687]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.12:437][688]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.12:453][689]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.12:470][690]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.12:487][691]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.12:503][692]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.12:520][693]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.12:541][694]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.12:554][695]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.12:571][696]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.12:588][697]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.12:604][698]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.12:623][699]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.12:638][700]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.12:654][701]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.12:672][702]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.12:689][703]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.12:705][704]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.12:722][705]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.12:739][706]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.12:755][707]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.12:773][708]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.12:789][709]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.12:807][710]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.12:823][711]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.12:839][712]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.12:856][713]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.12:872][714]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.12:889][715]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.12:906][716]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.12:923][717]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.12:939][718]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.12:956][719]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.12:973][720]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.12:989][721]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.13:006][722]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.13:024][723]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.13:041][724]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.13:055][725]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.13:073][726]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.13:090][727]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.13:107][728]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.13:124][729]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.13:141][730]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.13:156][731]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.13:174][732]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.13:190][733]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.13:205][734]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.13:223][735]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.13:240][736]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.13:255][737]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.13:273][738]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.13:290][739]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.13:306][740]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.13:324][741]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.13:340][742]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.13:357][743]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.13:374][744]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.13:390][745]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.13:407][746]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.13:423][747]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.13:439][748]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.13:456][749]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.13:473][750]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.13:489][751]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.13:505][752]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.13:523][753]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.13:538][754]LogTemp: Display: Dash Called
+[2024.07.19-20.25.13:538][754]LogTemp: Display: Dash Updated
+[2024.07.19-20.25.13:540][754]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.13:540][754]LogTemp: Display: Dash Updated
+[2024.07.19-20.25.13:557][755]LogTemp: Display: Dash Updated
+[2024.07.19-20.25.13:557][755]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.13:573][756]LogTemp: Display: Dash Updated
+[2024.07.19-20.25.13:573][756]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.13:590][757]LogTemp: Display: Dash Updated
+[2024.07.19-20.25.13:590][757]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.13:608][758]LogTemp: Display: Dash Updated
+[2024.07.19-20.25.13:608][758]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.13:622][759]LogTemp: Display: Dash Updated
+[2024.07.19-20.25.13:622][759]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.13:639][760]LogTemp: Display: Dash Updated
+[2024.07.19-20.25.13:639][760]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.13:656][761]LogTemp: Display: Dash Updated
+[2024.07.19-20.25.13:656][761]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.13:673][762]LogTemp: Display: Dash Updated
+[2024.07.19-20.25.13:673][762]LogTemp: Display: Dash finished
+[2024.07.19-20.25.13:673][762]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.13:690][763]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.13:705][764]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.13:723][765]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.13:739][766]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.13:757][767]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.13:773][768]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.13:789][769]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.13:807][770]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.13:824][771]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.13:840][772]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.13:855][773]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.13:873][774]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.13:891][775]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.13:906][776]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.13:923][777]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.13:941][778]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.13:956][779]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.13:972][780]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.13:989][781]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.14:007][782]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.14:024][783]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.14:040][784]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.14:057][785]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.14:073][786]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.14:091][787]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.19-20.25.14:107][788]LogTemp: Display: CameraRotation is 0.100002
+[2024.07.19-20.25.14:124][789]LogTemp: Display: CameraRotation is 0.195003
+[2024.07.19-20.25.14:140][790]LogTemp: Display: CameraRotation is 0.285254
+[2024.07.19-20.25.14:156][791]LogTemp: Display: CameraRotation is 0.370992
+[2024.07.19-20.25.14:173][792]LogTemp: Display: CameraRotation is 0.452443
+[2024.07.19-20.25.14:190][793]LogTemp: Display: CameraRotation is 0.529821
+[2024.07.19-20.25.14:207][794]LogTemp: Display: CameraRotation is 0.606314
+[2024.07.19-20.25.14:224][795]LogTemp: Display: CameraRotation is 0.676147
+[2024.07.19-20.25.14:240][796]LogTemp: Display: CameraRotation is 0.742339
+[2024.07.19-20.25.14:257][797]LogTemp: Display: CameraRotation is 0.805224
+[2024.07.19-20.25.14:274][798]LogTemp: Display: CameraRotation is 0.864963
+[2024.07.19-20.25.14:291][799]LogTemp: Display: CameraRotation is 0.921716
+[2024.07.19-20.25.14:308][800]LogTemp: Display: CameraRotation is 0.976165
+[2024.07.19-20.25.14:325][801]LogTemp: Display: CameraRotation is 1.029654
+[2024.07.19-20.25.14:342][802]LogTemp: Display: CameraRotation is 1.078172
+[2024.07.19-20.25.14:358][803]LogTemp: Display: CameraRotation is 1.124263
+[2024.07.19-20.25.14:375][804]LogTemp: Display: CameraRotation is 1.168051
+[2024.07.19-20.25.14:391][805]LogTemp: Display: CameraRotation is 1.209649
+[2024.07.19-20.25.14:408][806]LogTemp: Display: CameraRotation is 1.249168
+[2024.07.19-20.25.14:426][807]LogTemp: Display: CameraRotation is 1.286710
+[2024.07.19-20.25.14:442][808]LogTemp: Display: CameraRotation is 1.322375
+[2024.07.19-20.25.14:458][809]LogTemp: Display: CameraRotation is 1.356304
+[2024.07.19-20.25.14:475][810]LogTemp: Display: CameraRotation is 1.388489
+[2024.07.19-20.25.14:492][811]LogTemp: Display: CameraRotation is 1.419066
+[2024.07.19-20.25.14:508][812]LogTemp: Display: CameraRotation is 1.448133
+[2024.07.19-20.25.14:525][813]LogTemp: Display: CameraRotation is 1.475727
+[2024.07.19-20.25.14:543][814]LogTemp: Display: CameraRotation is 1.501941
+[2024.07.19-20.25.14:558][815]LogTemp: Display: CameraRotation is 1.526844
+[2024.07.19-20.25.14:576][816]LogTemp: Display: CameraRotation is 1.550502
+[2024.07.19-20.25.14:592][817]LogTemp: Display: CameraRotation is 1.472976
+[2024.07.19-20.25.14:609][818]LogTemp: Display: CameraRotation is 1.399327
+[2024.07.19-20.25.14:625][819]LogTemp: Display: CameraRotation is 1.329359
+[2024.07.19-20.25.14:642][820]LogTemp: Display: CameraRotation is 1.262890
+[2024.07.19-20.25.14:658][821]LogTemp: Display: CameraRotation is 1.199745
+[2024.07.19-20.25.14:675][822]LogTemp: Display: CameraRotation is 1.139756
+[2024.07.19-20.25.14:693][823]LogTemp: Display: CameraRotation is 1.078813
+[2024.07.19-20.25.14:709][824]LogTemp: Display: CameraRotation is 1.024872
+[2024.07.19-20.25.14:725][825]LogTemp: Display: CameraRotation is 0.973628
+[2024.07.19-20.25.14:743][826]LogTemp: Display: CameraRotation is 0.924946
+[2024.07.19-20.25.14:761][827]LogTemp: Display: CameraRotation is 0.878698
+[2024.07.19-20.25.14:777][828]LogTemp: Display: CameraRotation is 0.834761
+[2024.07.19-20.25.14:794][829]LogTemp: Display: CameraRotation is 0.793023
+[2024.07.19-20.25.14:811][830]LogTemp: Display: CameraRotation is 0.753371
+[2024.07.19-20.25.14:826][831]LogTemp: Display: CameraRotation is 0.715371
+[2024.07.19-20.25.14:843][832]LogTemp: Display: CameraRotation is 0.679602
+[2024.07.19-20.25.14:859][833]LogTemp: Display: CameraRotation is 0.645622
+[2024.07.19-20.25.14:875][834]LogTemp: Display: CameraRotation is 0.613340
+[2024.07.19-20.25.14:893][835]LogTemp: Display: CameraRotation is 0.582673
+[2024.07.19-20.25.14:912][836]LogTemp: Display: CameraRotation is 0.550228
+[2024.07.19-20.25.14:928][837]LogTemp: Display: CameraRotation is 0.522716
+[2024.07.19-20.25.14:944][838]LogTemp: Display: CameraRotation is 0.496580
+[2024.07.19-20.25.14:963][839]LogTemp: Display: CameraRotation is 0.471751
+[2024.07.19-20.25.14:980][840]LogTemp: Display: CameraRotation is 0.448163
+[2024.07.19-20.25.14:995][841]LogTemp: Display: CameraRotation is 0.425755
+[2024.07.19-20.25.15:011][842]LogTemp: Display: CameraRotation is 0.404467
+[2024.07.19-20.25.15:029][843]LogTemp: Display: CameraRotation is 0.384243
+[2024.07.19-20.25.15:045][844]LogTemp: Display: CameraRotation is 0.365031
+[2024.07.19-20.25.15:062][845]LogTemp: Display: CameraRotation is 0.346779
+[2024.07.19-20.25.15:079][846]LogTemp: Display: CameraRotation is 0.329440
+[2024.07.19-20.25.15:096][847]LogTemp: Display: CameraRotation is 0.312852
+[2024.07.19-20.25.15:113][848]LogTemp: Display: CameraRotation is 0.296063
+[2024.07.19-20.25.15:130][849]LogTemp: Display: CameraRotation is 0.281260
+[2024.07.19-20.25.15:148][850]LogTemp: Display: CameraRotation is 0.267197
+[2024.07.19-20.25.15:164][851]LogTemp: Display: CameraRotation is 0.253837
+[2024.07.19-20.25.15:181][852]LogTemp: Display: CameraRotation is 0.241145
+[2024.07.19-20.25.15:197][853]LogTemp: Display: CameraRotation is 0.229087
+[2024.07.19-20.25.15:213][854]LogTemp: Display: CameraRotation is 0.217633
+[2024.07.19-20.25.15:230][855]LogTemp: Display: CameraRotation is 0.206751
+[2024.07.19-20.25.15:245][856]LogTemp: Display: CameraRotation is 0.196413
+[2024.07.19-20.25.15:263][857]LogTemp: Display: CameraRotation is 0.186593
+[2024.07.19-20.25.15:280][858]LogTemp: Display: CameraRotation is 0.177263
+[2024.07.19-20.25.15:295][859]LogTemp: Display: CameraRotation is 0.168400
+[2024.07.19-20.25.15:313][860]LogTemp: Display: CameraRotation is 0.159980
+[2024.07.19-20.25.15:329][861]LogTemp: Display: CameraRotation is 0.151980
+[2024.07.19-20.25.15:346][862]LogTemp: Display: CameraRotation is 0.144381
+[2024.07.19-20.25.15:363][863]LogTemp: Display: CameraRotation is 0.137162
+[2024.07.19-20.25.15:380][864]LogTemp: Display: CameraRotation is 0.130304
+[2024.07.19-20.25.15:397][865]LogTemp: Display: CameraRotation is 0.123789
+[2024.07.19-20.25.15:413][866]LogTemp: Display: CameraRotation is 0.117599
+[2024.07.19-20.25.15:430][867]LogTemp: Display: CameraRotation is 0.111719
+[2024.07.19-20.25.15:448][868]LogTemp: Display: CameraRotation is 0.106133
+[2024.07.19-20.25.15:463][869]LogTemp: Display: CameraRotation is 0.100826
+[2024.07.19-20.25.15:479][870]LogTemp: Display: CameraRotation is 0.095785
+[2024.07.19-20.25.15:496][871]LogTemp: Display: CameraRotation is 0.090996
+[2024.07.19-20.25.15:514][872]LogTemp: Display: CameraRotation is 0.186448
+[2024.07.19-20.25.15:531][873]LogTemp: Display: CameraRotation is 0.277127
+[2024.07.19-20.25.15:545][874]LogTemp: Display: CameraRotation is 0.363271
+[2024.07.19-20.25.15:563][875]LogTemp: Display: CameraRotation is 0.445109
+[2024.07.19-20.25.15:580][876]LogTemp: Display: CameraRotation is 0.522854
+[2024.07.19-20.25.15:597][877]LogTemp: Display: CameraRotation is 0.596712
+[2024.07.19-20.25.15:612][878]LogTemp: Display: CameraRotation is 0.667919
+[2024.07.19-20.25.15:630][879]LogTemp: Display: CameraRotation is 0.734523
+[2024.07.19-20.25.15:647][880]LogTemp: Display: CameraRotation is 0.797797
+[2024.07.19-20.25.15:663][881]LogTemp: Display: CameraRotation is 0.858503
+[2024.07.19-20.25.15:680][882]LogTemp: Display: CameraRotation is 0.915869
+[2024.07.19-20.25.15:697][883]LogTemp: Display: CameraRotation is 0.869758
+[2024.07.19-20.25.15:713][884]LogTemp: Display: CameraRotation is 0.826269
+[2024.07.19-20.25.15:732][885]LogTemp: Display: CameraRotation is 0.784955
+[2024.07.19-20.25.15:749][886]LogTemp: Display: CameraRotation is 0.743838
+[2024.07.19-20.25.15:769][887]LogTemp: Display: CameraRotation is 0.701596
+[2024.07.19-20.25.15:787][888]LogTemp: Display: CameraRotation is 0.659978
+[2024.07.19-20.25.15:803][889]LogTemp: Display: CameraRotation is 0.626979
+[2024.07.19-20.25.15:821][890]LogTemp: Display: CameraRotation is 0.593976
+[2024.07.19-20.25.15:840][891]LogTemp: Display: CameraRotation is 0.562032
+[2024.07.19-20.25.15:857][892]LogTemp: Display: CameraRotation is 0.532342
+[2024.07.19-20.25.15:874][893]LogTemp: Display: CameraRotation is 0.504999
+[2024.07.19-20.25.15:891][894]LogTemp: Display: CameraRotation is 0.477764
+[2024.07.19-20.25.15:908][895]LogTemp: Display: CameraRotation is 0.453875
+[2024.07.19-20.25.15:930][896]LogTemp: Display: CameraRotation is 0.424759
+[2024.07.19-20.25.15:949][897]LogTemp: Display: CameraRotation is 0.400383
+[2024.07.19-20.25.15:966][898]LogTemp: Display: CameraRotation is 0.380189
+[2024.07.19-20.25.15:983][899]LogTemp: Display: CameraRotation is 0.360848
+[2024.07.19-20.25.16:003][900]LogTemp: Display: CameraRotation is 0.340648
+[2024.07.19-20.25.16:029][901]LogTemp: Display: CameraRotation is 0.314224
+[2024.07.19-20.25.16:050][902]LogTemp: Display: CameraRotation is 0.293650
+[2024.07.19-20.25.16:067][903]LogTemp: Display: Dash Called
+[2024.07.19-20.25.16:067][903]LogTemp: Display: Dash Updated
+[2024.07.19-20.25.16:071][903]LogTemp: Display: CameraRotation is 0.276368
+[2024.07.19-20.25.16:071][903]LogTemp: Display: Dash Updated
+[2024.07.19-20.25.16:088][904]LogTemp: Display: Dash Updated
+[2024.07.19-20.25.16:089][904]LogTemp: Display: CameraRotation is 0.259598
+[2024.07.19-20.25.16:106][905]LogTemp: Display: Dash Updated
+[2024.07.19-20.25.16:106][905]LogTemp: Display: CameraRotation is 0.245801
+[2024.07.19-20.25.16:124][906]LogTemp: Display: Dash Updated
+[2024.07.19-20.25.16:124][906]LogTemp: Display: CameraRotation is 0.232739
+[2024.07.19-20.25.16:141][907]LogTemp: Display: Dash Updated
+[2024.07.19-20.25.16:142][907]LogTemp: Display: CameraRotation is 0.220582
+[2024.07.19-20.25.16:159][908]LogTemp: Display: Dash Updated
+[2024.07.19-20.25.16:159][908]LogTemp: Display: CameraRotation is 0.208953
+[2024.07.19-20.25.16:175][909]LogTemp: Display: Dash Updated
+[2024.07.19-20.25.16:175][909]LogTemp: Display: CameraRotation is 0.198263
+[2024.07.19-20.25.16:194][910]LogTemp: Display: Dash Updated
+[2024.07.19-20.25.16:194][910]LogTemp: Display: CameraRotation is 0.188075
+[2024.07.19-20.25.16:210][911]LogTemp: Display: Dash Updated
+[2024.07.19-20.25.16:210][911]LogTemp: Display: Dash finished
+[2024.07.19-20.25.16:210][911]LogTemp: Display: CameraRotation is 0.178671
+[2024.07.19-20.25.16:226][912]LogTemp: Display: CameraRotation is 0.169738
+[2024.07.19-20.25.16:244][913]LogTemp: Display: CameraRotation is 0.161034
+[2024.07.19-20.25.16:260][914]LogTemp: Display: CameraRotation is 0.152982
+[2024.07.19-20.25.16:277][915]LogTemp: Display: CameraRotation is 0.145333
+[2024.07.19-20.25.16:294][916]LogTemp: Display: CameraRotation is 0.138066
+[2024.07.19-20.25.16:313][917]LogTemp: Display: CameraRotation is 0.130310
+[2024.07.19-20.25.16:329][918]LogTemp: Display: CameraRotation is 0.123795
+[2024.07.19-20.25.16:345][919]LogTemp: Display: CameraRotation is 0.117605
+[2024.07.19-20.25.16:362][920]LogTemp: Display: CameraRotation is 0.111725
+[2024.07.19-20.25.16:379][921]LogTemp: Display: CameraRotation is 0.105970
+[2024.07.19-20.25.16:396][922]LogTemp: Display: CameraRotation is 0.100567
+[2024.07.19-20.25.16:413][923]LogTemp: Display: CameraRotation is 0.095538
+[2024.07.19-20.25.16:430][924]LogTemp: Display: CameraRotation is 0.090761
+[2024.07.19-20.25.16:447][925]LogTemp: Display: CameraRotation is 0.086131
+[2024.07.19-20.25.16:464][926]LogTemp: Display: CameraRotation is 0.081824
+[2024.07.19-20.25.16:482][927]LogTemp: Display: CameraRotation is 0.077306
+[2024.07.19-20.25.16:498][928]LogTemp: Display: CameraRotation is 0.073398
+[2024.07.19-20.25.16:515][929]LogTemp: Display: CameraRotation is 0.069728
+[2024.07.19-20.25.16:532][930]LogTemp: Display: CameraRotation is 0.066148
+[2024.07.19-20.25.16:549][931]LogTemp: Display: CameraRotation is 0.062840
+[2024.07.19-20.25.16:566][932]LogTemp: Display: CameraRotation is 0.059698
+[2024.07.19-20.25.16:582][933]LogTemp: Display: CameraRotation is 0.056713
+[2024.07.19-20.25.16:600][934]LogTemp: Display: CameraRotation is 0.053877
+[2024.07.19-20.25.16:616][935]LogTemp: Display: CameraRotation is 0.051183
+[2024.07.19-20.25.16:633][936]LogTemp: Display: CameraRotation is 0.048527
+[2024.07.19-20.25.16:650][937]LogTemp: Display: CameraRotation is 0.046061
+[2024.07.19-20.25.16:668][938]LogTemp: Display: CameraRotation is 0.043581
+[2024.07.19-20.25.16:684][939]LogTemp: Display: CameraRotation is 0.041402
+[2024.07.19-20.25.16:702][940]LogTemp: Display: CameraRotation is 0.039332
+[2024.07.19-20.25.16:718][941]LogTemp: Display: CameraRotation is 0.037365
+[2024.07.19-20.25.16:735][942]LogTemp: Display: CameraRotation is 0.035445
+[2024.07.19-20.25.16:752][943]LogTemp: Display: CameraRotation is 0.033667
+[2024.07.19-20.25.16:772][944]LogTemp: Display: CameraRotation is 0.031712
+[2024.07.19-20.25.16:788][945]LogTemp: Display: CameraRotation is 0.030058
+[2024.07.19-20.25.16:806][946]LogTemp: Display: CameraRotation is 0.028555
+[2024.07.19-20.25.16:822][947]LogTemp: Display: CameraRotation is 0.027127
+[2024.07.19-20.25.16:838][948]LogTemp: Display: CameraRotation is 0.025771
+[2024.07.19-20.25.16:856][949]LogTemp: Display: CameraRotation is 0.024482
+[2024.07.19-20.25.16:873][950]LogTemp: Display: CameraRotation is 0.023258
+[2024.07.19-20.25.16:888][951]LogTemp: Display: CameraRotation is 0.022094
+[2024.07.19-20.25.16:905][952]LogTemp: Display: CameraRotation is 0.020989
+[2024.07.19-20.25.16:923][953]LogTemp: Display: CameraRotation is 0.019940
+[2024.07.19-20.25.16:940][954]LogTemp: Display: CameraRotation is 0.018821
+[2024.07.19-20.25.16:957][955]LogTemp: Display: CameraRotation is 0.017880
+[2024.07.19-20.25.16:974][956]LogTemp: Display: CameraRotation is 0.016986
+[2024.07.19-20.25.16:992][957]LogTemp: Display: CameraRotation is 0.016136
+[2024.07.19-20.25.17:008][958]LogTemp: Display: CameraRotation is 0.015265
+[2024.07.19-20.25.17:025][959]LogTemp: Display: CameraRotation is 0.014487
+[2024.07.19-20.25.17:043][960]LogTemp: Display: CameraRotation is 0.013763
+[2024.07.19-20.25.17:059][961]LogTemp: Display: CameraRotation is 0.013075
+[2024.07.19-20.25.17:076][962]LogTemp: Display: CameraRotation is 0.012421
+[2024.07.19-20.25.17:092][963]LogTemp: Display: CameraRotation is 0.011800
+[2024.07.19-20.25.17:110][964]LogTemp: Display: CameraRotation is 0.011210
+[2024.07.19-20.25.17:125][965]LogTemp: Display: CameraRotation is 0.010649
+[2024.07.19-20.25.17:141][966]LogTemp: Display: CameraRotation is 0.010117
+[2024.07.19-20.25.17:162][967]LogTemp: Display: CameraRotation is 0.009531
+[2024.07.19-20.25.17:181][968]LogTemp: Display: CameraRotation is 0.008974
+[2024.07.19-20.25.17:198][969]LogTemp: Display: CameraRotation is 0.008525
+[2024.07.19-20.25.17:214][970]LogTemp: Display: CameraRotation is 0.008099
+[2024.07.19-20.25.17:231][971]LogTemp: Display: CameraRotation is 0.007694
+[2024.07.19-20.25.17:248][972]LogTemp: Display: CameraRotation is 0.007309
+[2024.07.19-20.25.17:266][973]LogTemp: Display: CameraRotation is 0.006943
+[2024.07.19-20.25.17:281][974]LogTemp: Display: CameraRotation is 0.006596
+[2024.07.19-20.25.17:298][975]LogTemp: Display: CameraRotation is 0.006266
+[2024.07.19-20.25.17:314][976]LogTemp: Display: CameraRotation is 0.005953
+[2024.07.19-20.25.17:330][977]LogTemp: Display: CameraRotation is 0.005655
+[2024.07.19-20.25.17:348][978]LogTemp: Display: CameraRotation is 0.005372
+[2024.07.19-20.25.17:364][979]LogTemp: Display: CameraRotation is 0.005104
+[2024.07.19-20.25.17:381][980]LogTemp: Display: CameraRotation is 0.004849
+[2024.07.19-20.25.17:399][981]LogTemp: Display: CameraRotation is 0.004606
+[2024.07.19-20.25.17:414][982]LogTemp: Display: CameraRotation is 0.004376
+[2024.07.19-20.25.17:431][983]LogTemp: Display: CameraRotation is 0.004157
+[2024.07.19-20.25.17:447][984]LogTemp: Display: CameraRotation is 0.003949
+[2024.07.19-20.25.17:464][985]LogTemp: Display: CameraRotation is 0.003752
+[2024.07.19-20.25.17:481][986]LogTemp: Display: CameraRotation is 0.003564
+[2024.07.19-20.25.17:497][987]LogTemp: Display: CameraRotation is 0.003386
+[2024.07.19-20.25.17:515][988]LogTemp: Display: CameraRotation is 0.003213
+[2024.07.19-20.25.17:532][989]LogTemp: Display: CameraRotation is 0.003052
+[2024.07.19-20.25.17:548][990]LogTemp: Display: CameraRotation is 0.002900
+[2024.07.19-20.25.17:566][991]LogTemp: Display: CameraRotation is 0.002744
+[2024.07.19-20.25.17:584][992]LogTemp: Display: CameraRotation is 0.002597
+[2024.07.19-20.25.17:598][993]LogTemp: Display: Dash Called
+[2024.07.19-20.25.17:598][993]LogTemp: Display: Dash Updated
+[2024.07.19-20.25.17:600][993]LogTemp: Display: CameraRotation is 0.002467
+[2024.07.19-20.25.17:600][993]LogTemp: Display: Dash Updated
+[2024.07.19-20.25.17:617][994]LogTemp: Display: Dash Updated
+[2024.07.19-20.25.17:617][994]LogTemp: Display: CameraRotation is 0.002344
+[2024.07.19-20.25.17:634][995]LogTemp: Display: Dash Updated
+[2024.07.19-20.25.17:634][995]LogTemp: Display: CameraRotation is 0.002227
+[2024.07.19-20.25.17:649][996]LogTemp: Display: Dash Updated
+[2024.07.19-20.25.17:651][996]LogTemp: Display: CameraRotation is 0.002116
+[2024.07.19-20.25.17:667][997]LogTemp: Display: Dash Updated
+[2024.07.19-20.25.17:667][997]LogTemp: Display: CameraRotation is 0.002010
+[2024.07.19-20.25.17:683][998]LogTemp: Display: Dash Updated
+[2024.07.19-20.25.17:684][998]LogTemp: Display: CameraRotation is 0.001909
+[2024.07.19-20.25.17:702][999]LogTemp: Display: Dash Updated
+[2024.07.19-20.25.17:702][999]LogTemp: Display: CameraRotation is 0.001813
+[2024.07.19-20.25.17:717][  0]LogTemp: Display: Dash Updated
+[2024.07.19-20.25.17:717][  0]LogTemp: Display: CameraRotation is 0.001814
+[2024.07.19-20.25.17:734][  1]LogTemp: Display: Dash Updated
+[2024.07.19-20.25.17:734][  1]LogTemp: Display: Dash finished
+[2024.07.19-20.25.17:734][  1]LogTemp: Display: CameraRotation is 0.001814
+[2024.07.19-20.25.17:750][  2]LogTemp: Display: CameraRotation is 0.001814
+[2024.07.19-20.25.17:767][  3]LogTemp: Display: CameraRotation is 0.001814
+[2024.07.19-20.25.17:784][  4]LogTemp: Display: CameraRotation is 0.001814
+[2024.07.19-20.25.17:800][  5]LogTemp: Display: CameraRotation is 0.001814
+[2024.07.19-20.25.17:818][  6]LogTemp: Display: CameraRotation is 0.001813
+[2024.07.19-20.25.17:834][  7]LogTemp: Display: CameraRotation is 0.001812
+[2024.07.19-20.25.17:851][  8]LogTemp: Display: CameraRotation is 0.001813
+[2024.07.19-20.25.17:868][  9]LogTemp: Display: CameraRotation is 0.001814
+[2024.07.19-20.25.17:885][ 10]LogTemp: Display: CameraRotation is 0.001814
+[2024.07.19-20.25.17:900][ 11]LogTemp: Display: CameraRotation is 0.001813
+[2024.07.19-20.25.17:917][ 12]LogTemp: Display: CameraRotation is 0.001814
+[2024.07.19-20.25.17:935][ 13]LogTemp: Display: CameraRotation is 0.001814
+[2024.07.19-20.25.17:951][ 14]LogTemp: Display: CameraRotation is 0.001812
+[2024.07.19-20.25.17:968][ 15]LogTemp: Display: CameraRotation is 0.001814
+[2024.07.19-20.25.17:985][ 16]LogTemp: Display: CameraRotation is 0.001814
+[2024.07.19-20.25.18:002][ 17]LogTemp: Display: CameraRotation is 0.001814
+[2024.07.19-20.25.18:019][ 18]LogTemp: Display: CameraRotation is 0.001814
+[2024.07.19-20.25.18:036][ 19]LogTemp: Display: CameraRotation is 0.001814
+[2024.07.19-20.25.18:051][ 20]LogTemp: Display: CameraRotation is 0.001814
+[2024.07.19-20.25.18:069][ 21]LogTemp: Display: CameraRotation is 0.001814
+[2024.07.19-20.25.18:085][ 22]LogTemp: Display: CameraRotation is 0.001814
+[2024.07.19-20.25.18:102][ 23]LogTemp: Display: CameraRotation is 0.001814
+[2024.07.19-20.25.18:118][ 24]LogTemp: Display: CameraRotation is 0.001814
+[2024.07.19-20.25.18:135][ 25]LogTemp: Display: CameraRotation is 0.001814
+[2024.07.19-20.25.18:152][ 26]LogTemp: Display: CameraRotation is 0.001814
+[2024.07.19-20.25.18:169][ 27]LogTemp: Display: CameraRotation is 0.001814
+[2024.07.19-20.25.18:185][ 28]LogTemp: Display: CameraRotation is 0.001814
+[2024.07.19-20.25.18:201][ 29]LogTemp: Display: CameraRotation is 0.001814
+[2024.07.19-20.25.18:218][ 30]LogTemp: Display: CameraRotation is 0.001814
+[2024.07.19-20.25.18:236][ 31]LogTemp: Display: CameraRotation is 0.001814
+[2024.07.19-20.25.18:251][ 32]LogTemp: Display: CameraRotation is 0.001814
+[2024.07.19-20.25.18:269][ 33]LogTemp: Display: CameraRotation is 0.001814
+[2024.07.19-20.25.18:285][ 34]LogTemp: Display: CameraRotation is 0.001814
+[2024.07.19-20.25.18:302][ 35]LogTemp: Display: CameraRotation is 0.001814
+[2024.07.19-20.25.18:318][ 36]LogTemp: Display: CameraRotation is 0.001814
+[2024.07.19-20.25.18:335][ 37]LogTemp: Display: CameraRotation is 0.001814
+[2024.07.19-20.25.18:353][ 38]LogTemp: Display: CameraRotation is 0.001814
+[2024.07.19-20.25.18:370][ 39]LogTemp: Display: CameraRotation is 0.001814
+[2024.07.19-20.25.18:387][ 40]LogTemp: Display: CameraRotation is 0.001814
+[2024.07.19-20.25.18:403][ 41]LogTemp: Display: CameraRotation is 0.001814
+[2024.07.19-20.25.18:419][ 42]LogTemp: Display: CameraRotation is 0.001814
+[2024.07.19-20.25.18:436][ 43]LogTemp: Display: CameraRotation is 0.001814
+[2024.07.19-20.25.18:453][ 44]LogTemp: Display: CameraRotation is 0.001814
+[2024.07.19-20.25.18:469][ 45]LogTemp: Display: CameraRotation is 0.001814
+[2024.07.19-20.25.18:485][ 46]LogTemp: Display: CameraRotation is 0.001814
+[2024.07.19-20.25.18:503][ 47]LogTemp: Display: CameraRotation is 0.101815
+[2024.07.19-20.25.18:519][ 48]LogTemp: Display: CameraRotation is 0.196726
+[2024.07.19-20.25.18:536][ 49]LogTemp: Display: CameraRotation is 0.286890
+[2024.07.19-20.25.18:553][ 50]LogTemp: Display: CameraRotation is 0.372547
+[2024.07.19-20.25.18:568][ 51]LogTemp: Display: CameraRotation is 0.453921
+[2024.07.19-20.25.18:586][ 52]LogTemp: Display: CameraRotation is 0.531226
+[2024.07.19-20.25.18:602][ 53]LogTemp: Display: CameraRotation is 0.604666
+[2024.07.19-20.25.18:619][ 54]LogTemp: Display: CameraRotation is 0.674434
+[2024.07.19-20.25.18:635][ 55]LogTemp: Display: CameraRotation is 0.740713
+[2024.07.19-20.25.18:653][ 56]LogTemp: Display: CameraRotation is 0.803679
+[2024.07.19-20.25.18:668][ 57]LogTemp: Display: CameraRotation is 0.863496
+[2024.07.19-20.25.18:684][ 58]LogTemp: Display: CameraRotation is 0.920360
+[2024.07.19-20.25.18:701][ 59]LogTemp: Display: CameraRotation is 0.974342
+[2024.07.19-20.25.18:719][ 60]LogTemp: Display: CameraRotation is 1.025626
+[2024.07.19-20.25.18:734][ 61]LogTemp: Display: CameraRotation is 1.074345
+[2024.07.19-20.25.18:752][ 62]LogTemp: Display: CameraRotation is 1.120628
+[2024.07.19-20.25.18:768][ 63]LogTemp: Display: CameraRotation is 1.164597
+[2024.07.19-20.25.18:785][ 64]LogTemp: Display: CameraRotation is 1.206368
+[2024.07.19-20.25.18:803][ 65]LogTemp: Display: CameraRotation is 1.246050
+[2024.07.19-20.25.18:818][ 66]LogTemp: Display: CameraRotation is 1.283748
+[2024.07.19-20.25.18:835][ 67]LogTemp: Display: CameraRotation is 1.319594
+[2024.07.19-20.25.18:852][ 68]LogTemp: Display: CameraRotation is 1.353615
+[2024.07.19-20.25.18:868][ 69]LogTemp: Display: CameraRotation is 1.385935
+[2024.07.19-20.25.18:885][ 70]LogTemp: Display: CameraRotation is 1.416639
+[2024.07.19-20.25.18:902][ 71]LogTemp: Display: CameraRotation is 1.445807
+[2024.07.19-20.25.18:918][ 72]LogTemp: Display: CameraRotation is 1.473517
+[2024.07.19-20.25.18:935][ 73]LogTemp: Display: CameraRotation is 1.499842
+[2024.07.19-20.25.18:951][ 74]LogTemp: Display: CameraRotation is 1.524850
+[2024.07.19-20.25.18:968][ 75]LogTemp: Display: CameraRotation is 1.548608
+[2024.07.19-20.25.18:985][ 76]LogTemp: Display: CameraRotation is 1.571184
+[2024.07.19-20.25.19:002][ 77]LogTemp: Display: CameraRotation is 1.592625
+[2024.07.19-20.25.19:019][ 78]LogTemp: Display: CameraRotation is 1.612994
+[2024.07.19-20.25.19:036][ 79]LogTemp: Display: CameraRotation is 1.632344
+[2024.07.19-20.25.19:052][ 80]LogTemp: Display: CameraRotation is 1.650784
+[2024.07.19-20.25.19:070][ 81]LogTemp: Display: CameraRotation is 1.668244
+[2024.07.19-20.25.19:085][ 82]LogTemp: Display: CameraRotation is 1.684833
+[2024.07.19-20.25.19:102][ 83]LogTemp: Display: CameraRotation is 1.700591
+[2024.07.19-20.25.19:119][ 84]LogTemp: Display: CameraRotation is 1.715562
+[2024.07.19-20.25.19:136][ 85]LogTemp: Display: CameraRotation is 1.729784
+[2024.07.19-20.25.19:152][ 86]LogTemp: Display: CameraRotation is 1.743295
+[2024.07.19-20.25.19:168][ 87]LogTemp: Display: CameraRotation is 1.756130
+[2024.07.19-20.25.19:185][ 88]LogTemp: Display: CameraRotation is 1.768324
+[2024.07.19-20.25.19:202][ 89]LogTemp: Display: CameraRotation is 1.779908
+[2024.07.19-20.25.19:218][ 90]LogTemp: Display: CameraRotation is 1.790913
+[2024.07.19-20.25.19:236][ 91]LogTemp: Display: CameraRotation is 1.801367
+[2024.07.19-20.25.19:253][ 92]LogTemp: Display: CameraRotation is 1.811299
+[2024.07.19-20.25.19:268][ 93]LogTemp: Display: CameraRotation is 1.820734
+[2024.07.19-20.25.19:286][ 94]LogTemp: Display: CameraRotation is 1.829698
+[2024.07.19-20.25.19:302][ 95]LogTemp: Display: CameraRotation is 1.838213
+[2024.07.19-20.25.19:319][ 96]LogTemp: Display: CameraRotation is 1.846302
+[2024.07.19-20.25.19:336][ 97]LogTemp: Display: CameraRotation is 1.853987
+[2024.07.19-20.25.19:354][ 98]LogTemp: Display: CameraRotation is 1.861292
+[2024.07.19-20.25.19:370][ 99]LogTemp: Display: CameraRotation is 1.763378
+[2024.07.19-20.25.19:387][100]LogTemp: Display: CameraRotation is 1.675207
+[2024.07.19-20.25.19:404][101]LogTemp: Display: CameraRotation is 1.587732
+[2024.07.19-20.25.19:421][102]LogTemp: Display: CameraRotation is 1.508346
+[2024.07.19-20.25.19:438][103]LogTemp: Display: CameraRotation is 1.432928
+[2024.07.19-20.25.19:454][104]LogTemp: Display: CameraRotation is 1.361280
+[2024.07.19-20.25.19:471][105]LogTemp: Display: CameraRotation is 1.293214
+[2024.07.19-20.25.19:487][106]LogTemp: Display: CameraRotation is 1.227338
+[2024.07.19-20.25.19:504][107]LogTemp: Display: CameraRotation is 1.165971
+[2024.07.19-20.25.19:522][108]LogTemp: Display: CameraRotation is 1.107671
+[2024.07.19-20.25.19:538][109]LogTemp: Display: CameraRotation is 1.052287
+[2024.07.19-20.25.19:554][110]LogTemp: Display: CameraRotation is 0.999671
+[2024.07.19-20.25.19:571][111]LogTemp: Display: CameraRotation is 0.949687
+[2024.07.19-20.25.19:587][112]LogTemp: Display: CameraRotation is 0.902202
+[2024.07.19-20.25.19:603][113]LogTemp: Display: CameraRotation is 0.857092
+[2024.07.19-20.25.19:620][114]LogTemp: Display: CameraRotation is 0.814236
+[2024.07.19-20.25.19:637][115]LogTemp: Display: CameraRotation is 0.773524
+[2024.07.19-20.25.19:653][116]LogTemp: Display: CameraRotation is 0.734848
+[2024.07.19-20.25.19:670][117]LogTemp: Display: CameraRotation is 0.698106
+[2024.07.19-20.25.19:687][118]LogTemp: Display: CameraRotation is 0.663200
+[2024.07.19-20.25.19:704][119]LogTemp: Display: CameraRotation is 0.630039
+[2024.07.19-20.25.19:721][120]LogTemp: Display: CameraRotation is 0.598537
+[2024.07.19-20.25.19:737][121]LogTemp: Display: CameraRotation is 0.568609
+[2024.07.19-20.25.19:753][122]LogTemp: Display: CameraRotation is 0.540178
+[2024.07.19-20.25.19:772][123]LogTemp: Display: CameraRotation is 0.513169
+[2024.07.19-20.25.19:788][124]LogTemp: Display: CameraRotation is 0.487510
+[2024.07.19-20.25.19:803][125]LogTemp: Display: CameraRotation is 0.463135
+[2024.07.19-20.25.19:820][126]LogTemp: Display: CameraRotation is 0.439978
+[2024.07.19-20.25.19:837][127]LogTemp: Display: CameraRotation is 0.417978
+[2024.07.19-20.25.19:853][128]LogTemp: Display: CameraRotation is 0.397079
+[2024.07.19-20.25.19:871][129]LogTemp: Display: CameraRotation is 0.377225
+[2024.07.19-20.25.19:888][130]LogTemp: Display: CameraRotation is 0.358363
+[2024.07.19-20.25.19:904][131]LogTemp: Display: CameraRotation is 0.340445
+[2024.07.19-20.25.19:920][132]LogTemp: Display: CameraRotation is 0.323423
+[2024.07.19-20.25.19:937][133]LogTemp: Display: CameraRotation is 0.307252
+[2024.07.19-20.25.19:954][134]LogTemp: Display: CameraRotation is 0.291889
+[2024.07.19-20.25.19:970][135]LogTemp: Display: CameraRotation is 0.277294
+[2024.07.19-20.25.19:985][136]LogTemp: Display: Dash Called
+[2024.07.19-20.25.19:985][136]LogTemp: Display: Dash Updated
+[2024.07.19-20.25.19:988][136]LogTemp: Display: CameraRotation is 0.263429
+[2024.07.19-20.25.19:988][136]LogTemp: Display: Dash Updated
+[2024.07.19-20.25.20:004][137]LogTemp: Display: Dash Updated
+[2024.07.19-20.25.20:004][137]LogTemp: Display: CameraRotation is 0.250258
+[2024.07.19-20.25.20:020][138]LogTemp: Display: Dash Updated
+[2024.07.19-20.25.20:020][138]LogTemp: Display: CameraRotation is 0.237745
+[2024.07.19-20.25.20:037][139]LogTemp: Display: Dash Updated
+[2024.07.19-20.25.20:037][139]LogTemp: Display: CameraRotation is 0.225857
+[2024.07.19-20.25.20:054][140]LogTemp: Display: Dash Updated
+[2024.07.19-20.25.20:054][140]LogTemp: Display: CameraRotation is 0.214557
+[2024.07.19-20.25.20:070][141]LogTemp: Display: Dash Updated
+[2024.07.19-20.25.20:070][141]LogTemp: Display: CameraRotation is 0.203829
+[2024.07.19-20.25.20:087][142]LogTemp: Display: Dash Updated
+[2024.07.19-20.25.20:087][142]LogTemp: Display: CameraRotation is 0.193637
+[2024.07.19-20.25.20:105][143]LogTemp: Display: Dash Updated
+[2024.07.19-20.25.20:105][143]LogTemp: Display: CameraRotation is 0.183955
+[2024.07.19-20.25.20:121][144]LogTemp: Display: Dash Updated
+[2024.07.19-20.25.20:121][144]LogTemp: Display: Dash finished
+[2024.07.19-20.25.20:121][144]LogTemp: Display: CameraRotation is 0.174758
+[2024.07.19-20.25.20:137][145]LogTemp: Display: CameraRotation is 0.166020
+[2024.07.19-20.25.20:155][146]LogTemp: Display: CameraRotation is 0.157719
+[2024.07.19-20.25.20:171][147]LogTemp: Display: CameraRotation is 0.149832
+[2024.07.19-20.25.20:188][148]LogTemp: Display: CameraRotation is 0.142341
+[2024.07.19-20.25.20:204][149]LogTemp: Display: CameraRotation is 0.135224
+[2024.07.19-20.25.20:221][150]LogTemp: Display: CameraRotation is 0.128462
+[2024.07.19-20.25.20:237][151]LogTemp: Display: CameraRotation is 0.122036
+[2024.07.19-20.25.20:254][152]LogTemp: Display: CameraRotation is 0.115934
+[2024.07.19-20.25.20:271][153]LogTemp: Display: CameraRotation is 0.110137
+[2024.07.19-20.25.20:287][154]LogTemp: Display: CameraRotation is 0.104630
+[2024.07.19-20.25.20:304][155]LogTemp: Display: CameraRotation is 0.099399
+[2024.07.19-20.25.20:320][156]LogTemp: Display: CameraRotation is 0.094429
+[2024.07.19-20.25.20:338][157]LogTemp: Display: CameraRotation is 0.089707
+[2024.07.19-20.25.20:354][158]LogTemp: Display: CameraRotation is 0.085222
+[2024.07.19-20.25.20:370][159]LogTemp: Display: CameraRotation is 0.080961
+[2024.07.19-20.25.20:388][160]LogTemp: Display: CameraRotation is 0.076913
+[2024.07.19-20.25.20:403][161]LogTemp: Display: CameraRotation is 0.073067
+[2024.07.19-20.25.20:421][162]LogTemp: Display: CameraRotation is 0.069414
+[2024.07.19-20.25.20:438][163]LogTemp: Display: CameraRotation is 0.065943
+[2024.07.19-20.25.20:454][164]LogTemp: Display: CameraRotation is 0.062646
+[2024.07.19-20.25.20:471][165]LogTemp: Display: CameraRotation is 0.059513
+[2024.07.19-20.25.20:487][166]LogTemp: Display: CameraRotation is 0.056538
+[2024.07.19-20.25.20:504][167]LogTemp: Display: CameraRotation is 0.053661
+[2024.07.19-20.25.20:521][168]LogTemp: Display: CameraRotation is 0.050978
+[2024.07.19-20.25.20:537][169]LogTemp: Display: CameraRotation is 0.048429
+[2024.07.19-20.25.20:556][170]LogTemp: Display: CameraRotation is 0.046008
+[2024.07.19-20.25.20:598][170]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2024.07.19-20.25.20:599][170]LogWorld: BeginTearingDown for /Game/Levels/UEDPIE_0_MovementLevel
+[2024.07.19-20.25.20:599][170]LogWorld: UWorld::CleanupWorld for MovementLevel, bSessionEnded=true, bCleanupResources=true
+[2024.07.19-20.25.20:600][170]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.07.19-20.25.20:605][170]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2024.07.19-20.25.20:605][170]LogNiagaraEditor: onPieEnd
+[2024.07.19-20.25.20:609][170]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.07.19-20.25.20:626][170]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2024.07.19-20.25.20:627][170]LogAudioMixer: Deinitializing Audio Bus Subsystem for audio device with ID 5
+[2024.07.19-20.25.20:627][170]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=5
+[2024.07.19-20.25.20:629][170]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=5
+[2024.07.19-20.25.20:637][170]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2024.07.19-20.25.20:643][170]LogUObjectHash: Compacting FUObjectHashTables data took   1.82ms
+[2024.07.19-20.25.20:697][171]LogPlayLevel: Display: Destroying online subsystem :Context_9
