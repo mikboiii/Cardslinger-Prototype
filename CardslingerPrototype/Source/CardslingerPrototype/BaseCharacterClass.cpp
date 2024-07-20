@@ -191,7 +191,7 @@ void ABaseCharacterClass::Dash()
 	bIsDashing = true;
 	bCanDash = false;
 
-	FVector DashDirection = GetVelocity().GetSafeNormal2D();
+	FVector DashDirection = GetLastMovementInputVector().GetSafeNormal2D();
 
 	DashStartLocation = GetActorLocation();
 	DashEndLocation = DashStartLocation + DashDirection * DashDistance;
