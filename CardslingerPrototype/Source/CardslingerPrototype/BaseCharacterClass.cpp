@@ -33,6 +33,8 @@
 #include "GameFramework/Character.h"
 #include "GameFramework/CharacterMovementComponent.h"
 #include "NiagaraComponent.h"
+#include "Camera/CameraShakeBase.h"
+#include "Camera/CameraShakeSourceComponent.h"
 
 
 // Sets default values
@@ -52,6 +54,8 @@ ABaseCharacterClass::ABaseCharacterClass()
 	DashSpringArm->SetupAttachment(CameraComponent);
 	DashEmitter = CreateDefaultSubobject<UNiagaraComponent>(TEXT("DashEmitter"));
 	DashEmitter->SetupAttachment(DashSpringArm);
+	PlayerCameraShakeSource = CreateDefaultSubobject<UCameraShakeSourceComponent>(TEXT("CharacterCameraShakeSource"));
+	PlayerCameraShakeSource->SetupAttachment(CameraComponent);
 
 }
 
@@ -202,6 +206,7 @@ void ABaseCharacterClass::Dash()
 	DashDirection *= -1;
 	DashSpringArm->SetWorldRotation(DashDirection.Rotation());
 	DashEmitter->Activate();
+	if(DashShake) PlayerCameraShakeSource->StartCameraShake(DashShake);
 	GetMovementComponent()->Velocity = DashDirection * -DashSpeed;
 }
 

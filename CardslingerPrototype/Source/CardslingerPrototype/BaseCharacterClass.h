@@ -147,6 +147,8 @@ private:
 
 	UPROPERTY(EditAnywhere, Category = "Movement")
 	float DashSpeed = 50.0f;
+	UPROPERTY(EditAnywhere, Category = "Movement")
+	TSubclassOf<class UCameraShakeBase> DashShake;
 
 	UPROPERTY(EditAnywhere, Category = "Movement")
 	float DashDistance = 300.0f;
@@ -294,6 +296,9 @@ private:
 
 	UPROPERTY(EditAnywhere, Instanced)
 	class USpringArmComponent* DashSpringArm;
+
+	UPROPERTY(EditAnywhere, Instanced)
+	class UCameraShakeSourceComponent* PlayerCameraShakeSource;
 
 	void DrawCardTimerFunction(int CardIndex);
 
