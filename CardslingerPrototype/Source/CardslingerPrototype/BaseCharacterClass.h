@@ -292,6 +292,9 @@ private:
 	UPROPERTY(EditAnywhere, Instanced)
 	class USpringArmComponent* SpringArm2;
 
+	UPROPERTY(EditAnywhere, Instanced)
+	class USpringArmComponent* DashSpringArm;
+
 	void DrawCardTimerFunction(int CardIndex);
 
 	void ReplenishHandFunction();

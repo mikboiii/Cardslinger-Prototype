@@ -48,8 +48,10 @@ ABaseCharacterClass::ABaseCharacterClass()
 	CardDeckLocation = CreateDefaultSubobject<USceneComponent>(TEXT("CardLocation"));
 	CardDeckLocation->SetupAttachment(CameraComponent);
 	DashTimeline = CreateDefaultSubobject<UTimelineComponent>(TEXT("DashTimeline"));
+	DashSpringArm = CreateDefaultSubobject<USpringArmComponent>(TEXT("EmitterSpringArm"));
+	DashSpringArm->SetupAttachment(CameraComponent);
 	DashEmitter = CreateDefaultSubobject<UNiagaraComponent>(TEXT("DashEmitter"));
-	DashEmitter->SetupAttachment(CameraComponent);
+	DashEmitter->SetupAttachment(DashSpringArm);
 
 }
 
