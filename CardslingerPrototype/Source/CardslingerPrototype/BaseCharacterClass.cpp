@@ -202,6 +202,7 @@ void ABaseCharacterClass::Dash()
 	DashDirection *= -1;
 	DashSpringArm->SetWorldRotation(DashDirection.Rotation());
 	DashEmitter->Activate();
+	GetMovementComponent()->Velocity = DashDirection * -DashSpeed;
 }
 
 void ABaseCharacterClass::DashEndFunction()
