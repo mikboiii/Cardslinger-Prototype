@@ -36,8 +36,3 @@ void UPlayerHUDWidget::RemoveCard(int32 Index)
         }
     }
 }
-
-void UPlayerHUDWidget::FlashDamageVignette()
-{
-    
-}
