@@ -27,4 +27,6 @@ protected:
 public:
 	void SetCard(int32 Index, class UUserWidget* NewCard);
 	void RemoveCard(int32 Index);
+
+	void FlashDamageVignette();
 };
