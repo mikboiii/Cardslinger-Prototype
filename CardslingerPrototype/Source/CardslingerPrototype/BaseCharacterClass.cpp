@@ -238,6 +238,7 @@ float ABaseCharacterClass::TakeDamage(float DamageAmount, struct FDamageEvent co
 	if(CurrentShield > 0)
 	{
 		CurrentShield -= DamageToApply;
+		PlayerHUD->FlashShieldVignetteBP();
 		if(CurrentShield < 0)
 		{
 			CurrentShield = 0;
@@ -537,6 +538,7 @@ void ABaseCharacterClass::Heal(bool IsPercentile, float HealingValue)
 	if(IsPercentile) Health += MaxHealth * HealingValue;
 	else Health += HealingValue;
 	if(Health > MaxHealth) Health = MaxHealth;
+	PlayerHUD->FlashHealVignetteBP();
 }
 
 /// @brief Increases the player's shield bar by the given value
@@ -547,6 +549,7 @@ void ABaseCharacterClass::AddShield(bool IsPercentile, float ShieldValue)
 	if(IsPercentile) CurrentShield += MaxShield * ShieldValue;
 	else CurrentShield += ShieldValue;
 	if(CurrentShield > MaxShield) CurrentShield = MaxShield;
+	PlayerHUD->FlashShieldVignetteBP();
 }
 
 /// @brief Adds the parameter value to the player's current energy
