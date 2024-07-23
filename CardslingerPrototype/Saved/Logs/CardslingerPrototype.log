@@ -5267,3 +5267,2034 @@ LogConfig: Set CVar [[r.Shadow.DetectVertexShaderLayerAtRuntime:1]]
 [2024.07.23-15.36.24:918][369]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
 [2024.07.23-15.36.24:923][369]LogUObjectHash: Compacting FUObjectHashTables data took   1.50ms
 [2024.07.23-15.36.24:980][370]LogPlayLevel: Display: Destroying online subsystem :Context_13
+[2024.07.23-15.39.02:088][ 27]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.07.23-15.39.02:118][ 28]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.07.23-15.39.14:355][745]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.07.23-15.39.14:403][746]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.07.23-15.39.14:435][747]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.07.23-15.39.22:290][203]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.07.23-15.39.22:312][204]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.07.23-15.39.22:343][205]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.07.23-15.39.59:634][369]LogAssetEditorSubsystem: Opening Asset editor for Material /Game/Levels/PlatformMaterial.PlatformMaterial
+[2024.07.23-15.39.59:691][369]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.07.23-15.39.59:691][369]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2024.07.23-15.40.00:011][369]MaterialEditorStats: Texture samplers: 0/16
+[2024.07.23-15.40.00:011][369]MaterialEditorStats: Texture Lookups (Est.): VS(3), PS(0)
+[2024.07.23-15.40.00:011][369]MaterialEditorStats: User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2024.07.23-15.40.00:011][369]MaterialEditorStats: Shader Count: 0
+[2024.07.23-15.40.00:022][369]LogViewport: Scene viewport resized to 578x657, mode Windowed.
+[2024.07.23-15.40.00:113][370]LogShaderCompilers: Display: ================================================
+[2024.07.23-15.40.00:113][370]LogShaderCompilers: Display: === FShaderJobCache stats ===
+[2024.07.23-15.40.00:113][370]LogShaderCompilers: Display: Total job queries 33, among them cache hits 5 (15.15%)
+[2024.07.23-15.40.00:113][370]LogShaderCompilers: Display: Tracking 28 distinct input hashes that result in 28 distinct outputs (100.00%)
+[2024.07.23-15.40.00:113][370]LogShaderCompilers: Display: RAM used: 687.78 KiB of 819.20 MiB budget. Usage: 0.08%
+[2024.07.23-15.40.00:113][370]LogShaderCompilers: Display: === Shader Compilation stats ===
+[2024.07.23-15.40.00:113][370]LogShaderCompilers: Display: Shaders Compiled: 0
+[2024.07.23-15.40.00:113][370]LogShaderCompilers: Display: Jobs assigned 0, completed 0 (0%)
+[2024.07.23-15.40.00:113][370]LogShaderCompilers: Display: Time at least one job was in flight (either pending or executed): 0.00 s
+[2024.07.23-15.40.00:113][370]LogShaderCompilers: Display: ================================================
+[2024.07.23-15.40.00:153][371]MaterialEditorStats: Base pass shader: 203 instructions
+[2024.07.23-15.40.00:153][371]MaterialEditorStats: Base pass vertex shader: 137 instructions
+[2024.07.23-15.40.00:153][371]MaterialEditorStats: Texture samplers: 2/16
+[2024.07.23-15.40.00:153][371]MaterialEditorStats: Texture Lookups (Est.): VS(3), PS(0)
+[2024.07.23-15.40.00:153][371]MaterialEditorStats: User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2024.07.23-15.40.00:153][371]MaterialEditorStats: Shader Count: 4
+[2024.07.23-15.40.23:219][727]LogContentBrowser: Deferred new asset file creation: PlatformMaterial1
+[2024.07.23-15.40.23:228][727]LogContentBrowser: Creating deferred item: PlatformMaterial1
+[2024.07.23-15.40.23:246][728]LogContentBrowser: Renaming the item being created (Deferred Item: PlatformMaterial1).
+[2024.07.23-15.40.27:975][ 12]LogContentBrowser: Attempting asset rename: PlatformMaterial1 -> M_TestVignette
+[2024.07.23-15.40.27:989][ 12]LogContentBrowser: End creating deferred item PlatformMaterial1
+[2024.07.23-15.40.29:258][ 85]LogAssetEditorSubsystem: Opening Asset editor for Material /Game/Levels/M_TestVignette.M_TestVignette
+[2024.07.23-15.40.29:263][ 85]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.07.23-15.40.29:265][ 85]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2024.07.23-15.40.29:493][ 85]MaterialEditorStats: Texture samplers: 0/16
+[2024.07.23-15.40.29:493][ 85]MaterialEditorStats: Texture Lookups (Est.): VS(3), PS(0)
+[2024.07.23-15.40.29:493][ 85]MaterialEditorStats: User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2024.07.23-15.40.29:493][ 85]MaterialEditorStats: Shader Count: 0
+[2024.07.23-15.40.29:497][ 85]LogViewport: Scene viewport resized to 578x657, mode Windowed.
+[2024.07.23-15.40.29:597][ 87]MaterialEditorStats: Base pass shader: 203 instructions
+[2024.07.23-15.40.29:597][ 87]MaterialEditorStats: Base pass vertex shader: 137 instructions
+[2024.07.23-15.40.29:597][ 87]MaterialEditorStats: Texture samplers: 2/16
+[2024.07.23-15.40.29:597][ 87]MaterialEditorStats: Texture Lookups (Est.): VS(3), PS(0)
+[2024.07.23-15.40.29:597][ 87]MaterialEditorStats: User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2024.07.23-15.40.29:597][ 87]MaterialEditorStats: Shader Count: 4
+[2024.07.23-15.40.30:805][157]LogMaterialEditor: Saving and Compiling material M_TestVignette
+[2024.07.23-15.40.30:809][157]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.07.23-15.40.30:974][157]LogSavePackage: Moving output files for package: /Game/Levels/M_TestVignette
+[2024.07.23-15.40.30:974][157]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/M_TestVignetteEE16F21944A2B7C770FF10A736E0C58D.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/Levels/M_TestVignette.uasset'
+[2024.07.23-15.40.30:989][157]LogFileHelpers: InternalPromptForCheckoutAndSave took 179 ms (total: 2.52 sec)
+[2024.07.23-15.40.30:990][157]AssetCheck: New page: Asset Save: M_TestVignette
+[2024.07.23-15.40.30:990][157]LogContentValidation: Display: Validating /Script/Engine.Material /Game/Levels/M_TestVignette.M_TestVignette
+[2024.07.23-15.40.34:977][385]MaterialEditorStats: Texture samplers: 0/16
+[2024.07.23-15.40.34:977][385]MaterialEditorStats: Texture Lookups (Est.): VS(3), PS(0)
+[2024.07.23-15.40.34:977][385]MaterialEditorStats: User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2024.07.23-15.40.34:977][385]MaterialEditorStats: Shader Count: 0
+[2024.07.23-15.40.36:309][457]LogSlate: Window 'Color Picker' being destroyed
+[2024.07.23-15.40.36:796][482]MaterialEditorStats: Base pass shader: 205 instructions
+[2024.07.23-15.40.36:796][482]MaterialEditorStats: Base pass vertex shader: 137 instructions
+[2024.07.23-15.40.36:796][482]MaterialEditorStats: Texture samplers: 2/16
+[2024.07.23-15.40.36:796][482]MaterialEditorStats: Texture Lookups (Est.): VS(3), PS(0)
+[2024.07.23-15.40.36:796][482]MaterialEditorStats: User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2024.07.23-15.40.36:796][482]MaterialEditorStats: Shader Count: 4
+[2024.07.23-15.40.40:907][724]MaterialEditorStats: Texture samplers: 0/16
+[2024.07.23-15.40.40:907][724]MaterialEditorStats: Texture Lookups (Est.): VS(3), PS(0)
+[2024.07.23-15.40.40:907][724]MaterialEditorStats: User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2024.07.23-15.40.40:907][724]MaterialEditorStats: Shader Count: 0
+[2024.07.23-15.40.40:935][726]MaterialEditorStats: Base pass shader: 205 instructions
+[2024.07.23-15.40.40:935][726]MaterialEditorStats: Base pass vertex shader: 137 instructions
+[2024.07.23-15.40.40:935][726]MaterialEditorStats: Texture samplers: 2/16
+[2024.07.23-15.40.40:935][726]MaterialEditorStats: Texture Lookups (Est.): VS(3), PS(0)
+[2024.07.23-15.40.40:935][726]MaterialEditorStats: User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2024.07.23-15.40.40:935][726]MaterialEditorStats: Shader Count: 4
+[2024.07.23-15.40.46:713][ 72]MaterialEditorStats: Texture samplers: 0/16
+[2024.07.23-15.40.46:713][ 72]MaterialEditorStats: Texture Lookups (Est.): VS(3), PS(0)
+[2024.07.23-15.40.46:713][ 72]MaterialEditorStats: User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2024.07.23-15.40.46:713][ 72]MaterialEditorStats: Shader Count: 0
+[2024.07.23-15.40.46:742][ 74]MaterialEditorStats: Base pass shader: 205 instructions
+[2024.07.23-15.40.46:742][ 74]MaterialEditorStats: Base pass vertex shader: 137 instructions
+[2024.07.23-15.40.46:742][ 74]MaterialEditorStats: Texture samplers: 2/16
+[2024.07.23-15.40.46:742][ 74]MaterialEditorStats: Texture Lookups (Est.): VS(3), PS(0)
+[2024.07.23-15.40.46:742][ 74]MaterialEditorStats: User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2024.07.23-15.40.46:742][ 74]MaterialEditorStats: Shader Count: 4
+[2024.07.23-15.40.51:822][370]MaterialEditorStats: Texture samplers: 0/16
+[2024.07.23-15.40.51:822][370]MaterialEditorStats: Texture Lookups (Est.): VS(3), PS(0)
+[2024.07.23-15.40.51:822][370]MaterialEditorStats: User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2024.07.23-15.40.51:822][370]MaterialEditorStats: Shader Count: 0
+[2024.07.23-15.40.52:482][408]MaterialEditorStats: Base pass shader: 205 instructions
+[2024.07.23-15.40.52:482][408]MaterialEditorStats: Base pass vertex shader: 137 instructions
+[2024.07.23-15.40.52:482][408]MaterialEditorStats: Texture samplers: 2/16
+[2024.07.23-15.40.52:482][408]MaterialEditorStats: Texture Lookups (Est.): VS(3), PS(0)
+[2024.07.23-15.40.52:482][408]MaterialEditorStats: User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2024.07.23-15.40.52:482][408]MaterialEditorStats: Shader Count: 4
+[2024.07.23-15.40.53:430][462]MaterialEditorStats: Texture samplers: 0/16
+[2024.07.23-15.40.53:430][462]MaterialEditorStats: Texture Lookups (Est.): VS(3), PS(0)
+[2024.07.23-15.40.53:430][462]MaterialEditorStats: User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2024.07.23-15.40.53:430][462]MaterialEditorStats: Shader Count: 0
+[2024.07.23-15.40.55:057][550]MaterialEditorStats: Base pass shader: 192 instructions
+[2024.07.23-15.40.55:057][550]MaterialEditorStats: Base pass vertex shader: 137 instructions
+[2024.07.23-15.40.55:057][550]MaterialEditorStats: Texture samplers: 2/16
+[2024.07.23-15.40.55:057][550]MaterialEditorStats: Texture Lookups (Est.): VS(3), PS(0)
+[2024.07.23-15.40.55:057][550]MaterialEditorStats: User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2024.07.23-15.40.55:057][550]MaterialEditorStats: Shader Count: 4
+[2024.07.23-15.40.55:613][581]MaterialEditorStats: Texture samplers: 0/16
+[2024.07.23-15.40.55:613][581]MaterialEditorStats: Texture Lookups (Est.): VS(3), PS(0)
+[2024.07.23-15.40.55:613][581]MaterialEditorStats: User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2024.07.23-15.40.55:613][581]MaterialEditorStats: Shader Count: 0
+[2024.07.23-15.40.56:302][621]MaterialEditorStats: Base pass shader: 203 instructions
+[2024.07.23-15.40.56:302][621]MaterialEditorStats: Base pass vertex shader: 137 instructions
+[2024.07.23-15.40.56:302][621]MaterialEditorStats: Texture samplers: 2/16
+[2024.07.23-15.40.56:302][621]MaterialEditorStats: Texture Lookups (Est.): VS(3), PS(0)
+[2024.07.23-15.40.56:302][621]MaterialEditorStats: User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2024.07.23-15.40.56:302][621]MaterialEditorStats: Shader Count: 4
+[2024.07.23-15.40.56:402][625]LogSlate: Window 'Color Picker' being destroyed
+[2024.07.23-15.40.56:422][625]MaterialEditorStats: Texture samplers: 0/16
+[2024.07.23-15.40.56:422][625]MaterialEditorStats: Texture Lookups (Est.): VS(3), PS(0)
+[2024.07.23-15.40.56:422][625]MaterialEditorStats: User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2024.07.23-15.40.56:422][625]MaterialEditorStats: Shader Count: 0
+[2024.07.23-15.40.56:463][627]MaterialEditorStats: Base pass shader: 203 instructions
+[2024.07.23-15.40.56:464][627]MaterialEditorStats: Base pass vertex shader: 137 instructions
+[2024.07.23-15.40.56:464][627]MaterialEditorStats: Texture samplers: 2/16
+[2024.07.23-15.40.56:464][627]MaterialEditorStats: Texture Lookups (Est.): VS(3), PS(0)
+[2024.07.23-15.40.56:464][627]MaterialEditorStats: User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2024.07.23-15.40.56:464][627]MaterialEditorStats: Shader Count: 4
+[2024.07.23-15.41.05:826][186]MaterialEditorStats: Texture samplers: 0/16
+[2024.07.23-15.41.05:826][186]MaterialEditorStats: Texture Lookups (Est.): VS(3), PS(0)
+[2024.07.23-15.41.05:826][186]MaterialEditorStats: User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2024.07.23-15.41.05:826][186]MaterialEditorStats: Shader Count: 0
+[2024.07.23-15.41.05:855][188]MaterialEditorStats: Base pass shader: 203 instructions
+[2024.07.23-15.41.05:855][188]MaterialEditorStats: Base pass vertex shader: 137 instructions
+[2024.07.23-15.41.05:855][188]MaterialEditorStats: Texture samplers: 2/16
+[2024.07.23-15.41.05:855][188]MaterialEditorStats: Texture Lookups (Est.): VS(3), PS(0)
+[2024.07.23-15.41.05:855][188]MaterialEditorStats: User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2024.07.23-15.41.05:855][188]MaterialEditorStats: Shader Count: 4
+[2024.07.23-15.41.07:614][293]LogMaterialEditor: Saving and Compiling material M_TestVignette
+[2024.07.23-15.41.07:777][293]LogUObjectHash: Compacting FUObjectHashTables data took   1.98ms
+[2024.07.23-15.41.08:315][293]LogUObjectHash: Compacting FUObjectHashTables data took   0.76ms
+[2024.07.23-15.41.08:332][293]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.07.23-15.41.09:306][293]LogSavePackage: Moving output files for package: /Game/Levels/M_TestVignette
+[2024.07.23-15.41.09:307][293]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/M_TestVignette69B2E3C249F157FF888DC19F96B31152.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/Levels/M_TestVignette.uasset'
+[2024.07.23-15.41.09:319][293]LogFileHelpers: InternalPromptForCheckoutAndSave took 988 ms (total: 3.50 sec)
+[2024.07.23-15.41.09:321][293]AssetCheck: New page: Asset Save: M_TestVignette
+[2024.07.23-15.41.09:321][293]LogContentValidation: Display: Validating /Script/Engine.Material /Game/Levels/M_TestVignette.M_TestVignette
+[2024.07.23-15.41.09:324][293]MaterialEditorStats: Base pass shader: 203 instructions
+[2024.07.23-15.41.09:325][293]MaterialEditorStats: Base pass vertex shader: 137 instructions
+[2024.07.23-15.41.09:325][293]MaterialEditorStats: MaxSampler: 251 instructions
+[2024.07.23-15.41.09:325][293]MaterialEditorStats: Texture samplers: 3/16
+[2024.07.23-15.41.09:325][293]MaterialEditorStats: Texture Lookups (Est.): VS(3), PS(0)
+[2024.07.23-15.41.09:325][293]MaterialEditorStats: User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2024.07.23-15.41.09:325][293]MaterialEditorStats: Shader Count: 16
+[2024.07.23-15.41.24:924][216]LogSlate: Window 'Color Picker' being destroyed
+[2024.07.23-15.41.24:934][216]MaterialEditorStats: Texture samplers: 0/16
+[2024.07.23-15.41.24:934][216]MaterialEditorStats: Texture Lookups (Est.): VS(3), PS(0)
+[2024.07.23-15.41.24:935][216]MaterialEditorStats: User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2024.07.23-15.41.24:935][216]MaterialEditorStats: Shader Count: 0
+[2024.07.23-15.41.24:967][218]MaterialEditorStats: Base pass shader: 203 instructions
+[2024.07.23-15.41.24:967][218]MaterialEditorStats: Base pass vertex shader: 137 instructions
+[2024.07.23-15.41.24:967][218]MaterialEditorStats: Texture samplers: 2/16
+[2024.07.23-15.41.24:967][218]MaterialEditorStats: Texture Lookups (Est.): VS(3), PS(0)
+[2024.07.23-15.41.24:967][218]MaterialEditorStats: User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2024.07.23-15.41.24:967][218]MaterialEditorStats: Shader Count: 4
+[2024.07.23-15.41.35:956][874]MaterialEditorStats: Texture samplers: 0/16
+[2024.07.23-15.41.35:956][874]MaterialEditorStats: Texture Lookups (Est.): VS(3), PS(0)
+[2024.07.23-15.41.35:956][874]MaterialEditorStats: User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2024.07.23-15.41.35:956][874]MaterialEditorStats: Shader Count: 0
+[2024.07.23-15.41.35:988][876]MaterialEditorStats: Base pass shader: 203 instructions
+[2024.07.23-15.41.35:988][876]MaterialEditorStats: Base pass vertex shader: 137 instructions
+[2024.07.23-15.41.35:988][876]MaterialEditorStats: Texture samplers: 2/16
+[2024.07.23-15.41.35:988][876]MaterialEditorStats: Texture Lookups (Est.): VS(3), PS(0)
+[2024.07.23-15.41.35:988][876]MaterialEditorStats: User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2024.07.23-15.41.35:988][876]MaterialEditorStats: Shader Count: 4
+[2024.07.23-15.41.36:209][888]MaterialEditorStats: Texture samplers: 0/16
+[2024.07.23-15.41.36:209][888]MaterialEditorStats: Texture Lookups (Est.): VS(3), PS(0)
+[2024.07.23-15.41.36:209][888]MaterialEditorStats: User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2024.07.23-15.41.36:209][888]MaterialEditorStats: Shader Count: 0
+[2024.07.23-15.41.36:240][890]MaterialEditorStats: Base pass shader: 203 instructions
+[2024.07.23-15.41.36:240][890]MaterialEditorStats: Base pass vertex shader: 137 instructions
+[2024.07.23-15.41.36:240][890]MaterialEditorStats: Texture samplers: 2/16
+[2024.07.23-15.41.36:240][890]MaterialEditorStats: Texture Lookups (Est.): VS(3), PS(0)
+[2024.07.23-15.41.36:240][890]MaterialEditorStats: User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2024.07.23-15.41.36:240][890]MaterialEditorStats: Shader Count: 4
+[2024.07.23-15.41.38:286][  7]MaterialEditorStats: Texture samplers: 0/16
+[2024.07.23-15.41.38:286][  7]MaterialEditorStats: Texture Lookups (Est.): VS(3), PS(0)
+[2024.07.23-15.41.38:286][  7]MaterialEditorStats: User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2024.07.23-15.41.38:286][  7]MaterialEditorStats: Shader Count: 0
+[2024.07.23-15.41.38:317][  9]MaterialEditorStats: Base pass shader: 203 instructions
+[2024.07.23-15.41.38:317][  9]MaterialEditorStats: Base pass vertex shader: 137 instructions
+[2024.07.23-15.41.38:317][  9]MaterialEditorStats: Texture samplers: 2/16
+[2024.07.23-15.41.38:317][  9]MaterialEditorStats: Texture Lookups (Est.): VS(3), PS(0)
+[2024.07.23-15.41.38:317][  9]MaterialEditorStats: User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2024.07.23-15.41.38:317][  9]MaterialEditorStats: Shader Count: 4
+[2024.07.23-15.41.39:679][ 89]MaterialEditorStats: Texture samplers: 0/16
+[2024.07.23-15.41.39:679][ 89]MaterialEditorStats: Texture Lookups (Est.): VS(3), PS(0)
+[2024.07.23-15.41.39:679][ 89]MaterialEditorStats: User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2024.07.23-15.41.39:679][ 89]MaterialEditorStats: Shader Count: 0
+[2024.07.23-15.41.39:710][ 91]MaterialEditorStats: Base pass shader: 203 instructions
+[2024.07.23-15.41.39:710][ 91]MaterialEditorStats: Base pass vertex shader: 137 instructions
+[2024.07.23-15.41.39:710][ 91]MaterialEditorStats: Texture samplers: 2/16
+[2024.07.23-15.41.39:710][ 91]MaterialEditorStats: Texture Lookups (Est.): VS(3), PS(0)
+[2024.07.23-15.41.39:710][ 91]MaterialEditorStats: User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2024.07.23-15.41.39:710][ 91]MaterialEditorStats: Shader Count: 4
+[2024.07.23-15.41.41:410][184]MaterialEditorStats: Default UI Pixel Shader: 0 instructions
+[2024.07.23-15.41.41:410][184]MaterialEditorStats: Default UI Vertex Shader: 0 instructions
+[2024.07.23-15.41.41:410][184]MaterialEditorStats: Instanced UI Vertex Shader: 0 instructions
+[2024.07.23-15.41.41:410][184]MaterialEditorStats: Texture samplers: 0/16
+[2024.07.23-15.41.41:410][184]MaterialEditorStats: Texture Lookups (Est.): VS(3), PS(0)
+[2024.07.23-15.41.41:410][184]MaterialEditorStats: User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2024.07.23-15.41.41:410][184]MaterialEditorStats: Shader Count: 0
+[2024.07.23-15.41.41:882][209]MaterialEditorStats: Default UI Pixel Shader: 0 instructions
+[2024.07.23-15.41.41:882][209]MaterialEditorStats: Default UI Vertex Shader: 47 instructions
+[2024.07.23-15.41.41:882][209]MaterialEditorStats: Instanced UI Vertex Shader: 0 instructions
+[2024.07.23-15.41.41:882][209]MaterialEditorStats: Texture samplers: 0/16
+[2024.07.23-15.41.41:882][209]MaterialEditorStats: Texture Lookups (Est.): VS(3), PS(0)
+[2024.07.23-15.41.41:882][209]MaterialEditorStats: User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2024.07.23-15.41.41:882][209]MaterialEditorStats: Shader Count: 1
+[2024.07.23-15.41.41:990][215]MaterialEditorStats: Default UI Pixel Shader: 53 instructions
+[2024.07.23-15.41.41:990][215]MaterialEditorStats: Default UI Vertex Shader: 47 instructions
+[2024.07.23-15.41.41:990][215]MaterialEditorStats: Instanced UI Vertex Shader: 0 instructions
+[2024.07.23-15.41.41:990][215]MaterialEditorStats: Texture samplers: 0/16
+[2024.07.23-15.41.41:990][215]MaterialEditorStats: Texture Lookups (Est.): VS(3), PS(0)
+[2024.07.23-15.41.41:990][215]MaterialEditorStats: User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2024.07.23-15.41.41:990][215]MaterialEditorStats: Shader Count: 2
+[2024.07.23-15.41.44:593][371]LogMaterialEditor: Saving and Compiling material M_TestVignette
+[2024.07.23-15.41.44:691][371]LogUObjectHash: Compacting FUObjectHashTables data took   2.15ms
+[2024.07.23-15.41.44:835][371]LogUObjectHash: Compacting FUObjectHashTables data took   0.72ms
+[2024.07.23-15.41.44:848][371]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.07.23-15.41.45:712][371]LogSavePackage: Moving output files for package: /Game/Levels/M_TestVignette
+[2024.07.23-15.41.45:714][371]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/M_TestVignette50A7CEB54D6FD6FA9244BF9E9A480A2E.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/Levels/M_TestVignette.uasset'
+[2024.07.23-15.41.45:727][371]LogFileHelpers: InternalPromptForCheckoutAndSave took 877 ms (total: 4.38 sec)
+[2024.07.23-15.41.45:729][371]AssetCheck: New page: Asset Save: M_TestVignette
+[2024.07.23-15.41.45:729][371]LogContentValidation: Display: Validating /Script/Engine.Material /Game/Levels/M_TestVignette.M_TestVignette
+[2024.07.23-15.41.45:731][371]MaterialEditorStats: Default UI Pixel Shader: 53 instructions
+[2024.07.23-15.41.45:731][371]MaterialEditorStats: Default UI Vertex Shader: 47 instructions
+[2024.07.23-15.41.45:731][371]MaterialEditorStats: Instanced UI Vertex Shader: 47 instructions
+[2024.07.23-15.41.45:731][371]MaterialEditorStats: Texture samplers: 1/16
+[2024.07.23-15.41.45:731][371]MaterialEditorStats: Texture Lookups (Est.): VS(3), PS(0)
+[2024.07.23-15.41.45:731][371]MaterialEditorStats: User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2024.07.23-15.41.45:731][371]MaterialEditorStats: Shader Count: 11
+[2024.07.23-15.41.52:954][788]LogSlate: Took 0.000761 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
+[2024.07.23-15.42.02:991][335]MaterialEditorStats: Default UI Pixel Shader: 0 instructions
+[2024.07.23-15.42.02:991][335]MaterialEditorStats: Default UI Vertex Shader: 0 instructions
+[2024.07.23-15.42.02:991][335]MaterialEditorStats: Instanced UI Vertex Shader: 0 instructions
+[2024.07.23-15.42.02:991][335]MaterialEditorStats: Texture samplers: 0/16
+[2024.07.23-15.42.02:991][335]MaterialEditorStats: Texture Lookups (Est.): VS(3), PS(0)
+[2024.07.23-15.42.02:991][335]MaterialEditorStats: User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2024.07.23-15.42.02:991][335]MaterialEditorStats: Shader Count: 0
+[2024.07.23-15.42.03:056][337]MaterialEditorStats: Default UI Pixel Shader: 53 instructions
+[2024.07.23-15.42.03:056][337]MaterialEditorStats: Default UI Vertex Shader: 47 instructions
+[2024.07.23-15.42.03:056][337]MaterialEditorStats: Instanced UI Vertex Shader: 0 instructions
+[2024.07.23-15.42.03:057][337]MaterialEditorStats: Texture samplers: 0/16
+[2024.07.23-15.42.03:057][337]MaterialEditorStats: Texture Lookups (Est.): VS(3), PS(0)
+[2024.07.23-15.42.03:057][337]MaterialEditorStats: User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2024.07.23-15.42.03:057][337]MaterialEditorStats: Shader Count: 2
+[2024.07.23-15.42.05:448][479]MaterialEditorStats: Default UI Pixel Shader: 0 instructions
+[2024.07.23-15.42.05:448][479]MaterialEditorStats: Default UI Vertex Shader: 0 instructions
+[2024.07.23-15.42.05:448][479]MaterialEditorStats: Instanced UI Vertex Shader: 0 instructions
+[2024.07.23-15.42.05:448][479]MaterialEditorStats: Texture samplers: 0/16
+[2024.07.23-15.42.05:448][479]MaterialEditorStats: Texture Lookups (Est.): VS(3), PS(0)
+[2024.07.23-15.42.05:448][479]MaterialEditorStats: User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2024.07.23-15.42.05:448][479]MaterialEditorStats: Shader Count: 0
+[2024.07.23-15.42.05:863][501]MaterialEditorStats: Default UI Pixel Shader: 51 instructions
+[2024.07.23-15.42.05:863][501]MaterialEditorStats: Default UI Vertex Shader: 0 instructions
+[2024.07.23-15.42.05:863][501]MaterialEditorStats: Instanced UI Vertex Shader: 0 instructions
+[2024.07.23-15.42.05:863][501]MaterialEditorStats: Texture samplers: 0/16
+[2024.07.23-15.42.05:863][501]MaterialEditorStats: Texture Lookups (Est.): VS(3), PS(0)
+[2024.07.23-15.42.05:863][501]MaterialEditorStats: User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2024.07.23-15.42.05:863][501]MaterialEditorStats: Shader Count: 1
+[2024.07.23-15.42.06:055][504]MaterialEditorStats: Default UI Pixel Shader: 51 instructions
+[2024.07.23-15.42.06:056][504]MaterialEditorStats: Default UI Vertex Shader: 47 instructions
+[2024.07.23-15.42.06:056][504]MaterialEditorStats: Instanced UI Vertex Shader: 0 instructions
+[2024.07.23-15.42.06:056][504]MaterialEditorStats: Texture samplers: 0/16
+[2024.07.23-15.42.06:056][504]MaterialEditorStats: Texture Lookups (Est.): VS(3), PS(0)
+[2024.07.23-15.42.06:056][504]MaterialEditorStats: User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2024.07.23-15.42.06:056][504]MaterialEditorStats: Shader Count: 2
+[2024.07.23-15.42.07:495][590]MaterialEditorStats: Default UI Pixel Shader: 0 instructions
+[2024.07.23-15.42.07:495][590]MaterialEditorStats: Default UI Vertex Shader: 0 instructions
+[2024.07.23-15.42.07:495][590]MaterialEditorStats: Instanced UI Vertex Shader: 0 instructions
+[2024.07.23-15.42.07:495][590]MaterialEditorStats: Texture samplers: 0/16
+[2024.07.23-15.42.07:495][590]MaterialEditorStats: Texture Lookups (Est.): VS(3), PS(0)
+[2024.07.23-15.42.07:495][590]MaterialEditorStats: User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2024.07.23-15.42.07:495][590]MaterialEditorStats: Shader Count: 0
+[2024.07.23-15.42.07:522][592]MaterialEditorStats: Default UI Pixel Shader: 51 instructions
+[2024.07.23-15.42.07:522][592]MaterialEditorStats: Default UI Vertex Shader: 47 instructions
+[2024.07.23-15.42.07:522][592]MaterialEditorStats: Instanced UI Vertex Shader: 0 instructions
+[2024.07.23-15.42.07:522][592]MaterialEditorStats: Texture samplers: 0/16
+[2024.07.23-15.42.07:522][592]MaterialEditorStats: Texture Lookups (Est.): VS(3), PS(0)
+[2024.07.23-15.42.07:522][592]MaterialEditorStats: User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2024.07.23-15.42.07:522][592]MaterialEditorStats: Shader Count: 2
+[2024.07.23-15.42.07:913][615]LogSlate: Window 'Color Picker' being destroyed
+[2024.07.23-15.42.07:923][615]MaterialEditorStats: Default UI Pixel Shader: 0 instructions
+[2024.07.23-15.42.07:923][615]MaterialEditorStats: Default UI Vertex Shader: 0 instructions
+[2024.07.23-15.42.07:923][615]MaterialEditorStats: Instanced UI Vertex Shader: 0 instructions
+[2024.07.23-15.42.07:923][615]MaterialEditorStats: Texture samplers: 0/16
+[2024.07.23-15.42.07:923][615]MaterialEditorStats: Texture Lookups (Est.): VS(3), PS(0)
+[2024.07.23-15.42.07:923][615]MaterialEditorStats: User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2024.07.23-15.42.07:923][615]MaterialEditorStats: Shader Count: 0
+[2024.07.23-15.42.07:951][617]MaterialEditorStats: Default UI Pixel Shader: 51 instructions
+[2024.07.23-15.42.07:951][617]MaterialEditorStats: Default UI Vertex Shader: 47 instructions
+[2024.07.23-15.42.07:951][617]MaterialEditorStats: Instanced UI Vertex Shader: 0 instructions
+[2024.07.23-15.42.07:951][617]MaterialEditorStats: Texture samplers: 0/16
+[2024.07.23-15.42.07:951][617]MaterialEditorStats: Texture Lookups (Est.): VS(3), PS(0)
+[2024.07.23-15.42.07:951][617]MaterialEditorStats: User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2024.07.23-15.42.07:951][617]MaterialEditorStats: Shader Count: 2
+[2024.07.23-15.42.10:279][750]LogMaterial: Warning: [AssetLog] /Engine/Transient.M_TestVignette: Failed to compile Material for platform PCD3D_SM6, Default Material will be used in game.
+	(Node LinearInterpolate) Arithmetic between types float4 and float3 are undefined
+
+[2024.07.23-15.42.10:289][750]MaterialEditorStats: Error: [SM6] (Node LinearInterpolate) Arithmetic between types float4 and float3 are undefined
+[2024.07.23-15.42.13:199][920]MaterialEditorStats: Default UI Pixel Shader: 0 instructions
+[2024.07.23-15.42.13:199][920]MaterialEditorStats: Default UI Vertex Shader: 0 instructions
+[2024.07.23-15.42.13:199][920]MaterialEditorStats: Instanced UI Vertex Shader: 0 instructions
+[2024.07.23-15.42.13:199][920]MaterialEditorStats: Texture samplers: 0/16
+[2024.07.23-15.42.13:199][920]MaterialEditorStats: Texture Lookups (Est.): VS(3), PS(0)
+[2024.07.23-15.42.13:199][920]MaterialEditorStats: User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2024.07.23-15.42.13:199][920]MaterialEditorStats: Shader Count: 0
+[2024.07.23-15.42.13:422][931]MaterialEditorStats: Default UI Pixel Shader: 0 instructions
+[2024.07.23-15.42.13:422][931]MaterialEditorStats: Default UI Vertex Shader: 47 instructions
+[2024.07.23-15.42.13:422][931]MaterialEditorStats: Instanced UI Vertex Shader: 0 instructions
+[2024.07.23-15.42.13:422][931]MaterialEditorStats: Texture samplers: 0/16
+[2024.07.23-15.42.13:422][931]MaterialEditorStats: Texture Lookups (Est.): VS(3), PS(0)
+[2024.07.23-15.42.13:422][931]MaterialEditorStats: User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2024.07.23-15.42.13:422][931]MaterialEditorStats: Shader Count: 1
+[2024.07.23-15.42.13:529][937]MaterialEditorStats: Default UI Pixel Shader: 41 instructions
+[2024.07.23-15.42.13:529][937]MaterialEditorStats: Default UI Vertex Shader: 47 instructions
+[2024.07.23-15.42.13:529][937]MaterialEditorStats: Instanced UI Vertex Shader: 0 instructions
+[2024.07.23-15.42.13:529][937]MaterialEditorStats: Texture samplers: 0/16
+[2024.07.23-15.42.13:529][937]MaterialEditorStats: Texture Lookups (Est.): VS(3), PS(0)
+[2024.07.23-15.42.13:529][937]MaterialEditorStats: User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2024.07.23-15.42.13:529][937]MaterialEditorStats: Shader Count: 2
+[2024.07.23-15.42.14:187][976]MaterialEditorStats: Default UI Pixel Shader: 0 instructions
+[2024.07.23-15.42.14:187][976]MaterialEditorStats: Default UI Vertex Shader: 0 instructions
+[2024.07.23-15.42.14:187][976]MaterialEditorStats: Instanced UI Vertex Shader: 0 instructions
+[2024.07.23-15.42.14:187][976]MaterialEditorStats: Texture samplers: 0/16
+[2024.07.23-15.42.14:187][976]MaterialEditorStats: Texture Lookups (Est.): VS(3), PS(0)
+[2024.07.23-15.42.14:187][976]MaterialEditorStats: User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2024.07.23-15.42.14:187][976]MaterialEditorStats: Shader Count: 0
+[2024.07.23-15.42.14:243][978]MaterialEditorStats: Default UI Pixel Shader: 41 instructions
+[2024.07.23-15.42.14:243][978]MaterialEditorStats: Default UI Vertex Shader: 47 instructions
+[2024.07.23-15.42.14:243][978]MaterialEditorStats: Instanced UI Vertex Shader: 0 instructions
+[2024.07.23-15.42.14:243][978]MaterialEditorStats: Texture samplers: 0/16
+[2024.07.23-15.42.14:243][978]MaterialEditorStats: Texture Lookups (Est.): VS(3), PS(0)
+[2024.07.23-15.42.14:243][978]MaterialEditorStats: User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2024.07.23-15.42.14:243][978]MaterialEditorStats: Shader Count: 2
+[2024.07.23-15.42.16:077][ 82]MaterialEditorStats: Default UI Pixel Shader: 0 instructions
+[2024.07.23-15.42.16:077][ 82]MaterialEditorStats: Default UI Vertex Shader: 0 instructions
+[2024.07.23-15.42.16:077][ 82]MaterialEditorStats: Instanced UI Vertex Shader: 0 instructions
+[2024.07.23-15.42.16:077][ 82]MaterialEditorStats: Texture samplers: 0/16
+[2024.07.23-15.42.16:077][ 82]MaterialEditorStats: Texture Lookups (Est.): VS(3), PS(0)
+[2024.07.23-15.42.16:077][ 82]MaterialEditorStats: User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2024.07.23-15.42.16:077][ 82]MaterialEditorStats: Shader Count: 0
+[2024.07.23-15.42.16:313][ 96]MaterialEditorStats: Default UI Pixel Shader: 0 instructions
+[2024.07.23-15.42.16:313][ 96]MaterialEditorStats: Default UI Vertex Shader: 47 instructions
+[2024.07.23-15.42.16:313][ 96]MaterialEditorStats: Instanced UI Vertex Shader: 0 instructions
+[2024.07.23-15.42.16:313][ 96]MaterialEditorStats: Texture samplers: 0/16
+[2024.07.23-15.42.16:313][ 96]MaterialEditorStats: Texture Lookups (Est.): VS(3), PS(0)
+[2024.07.23-15.42.16:313][ 96]MaterialEditorStats: User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2024.07.23-15.42.16:313][ 96]MaterialEditorStats: Shader Count: 1
+[2024.07.23-15.42.16:422][102]MaterialEditorStats: Default UI Pixel Shader: 52 instructions
+[2024.07.23-15.42.16:422][102]MaterialEditorStats: Default UI Vertex Shader: 47 instructions
+[2024.07.23-15.42.16:422][102]MaterialEditorStats: Instanced UI Vertex Shader: 0 instructions
+[2024.07.23-15.42.16:422][102]MaterialEditorStats: Texture samplers: 0/16
+[2024.07.23-15.42.16:422][102]MaterialEditorStats: Texture Lookups (Est.): VS(3), PS(0)
+[2024.07.23-15.42.16:422][102]MaterialEditorStats: User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2024.07.23-15.42.16:422][102]MaterialEditorStats: Shader Count: 2
+[2024.07.23-15.42.18:072][192]MaterialEditorStats: Default UI Pixel Shader: 0 instructions
+[2024.07.23-15.42.18:072][192]MaterialEditorStats: Default UI Vertex Shader: 0 instructions
+[2024.07.23-15.42.18:072][192]MaterialEditorStats: Instanced UI Vertex Shader: 0 instructions
+[2024.07.23-15.42.18:072][192]MaterialEditorStats: Texture samplers: 0/16
+[2024.07.23-15.42.18:072][192]MaterialEditorStats: Texture Lookups (Est.): VS(3), PS(0)
+[2024.07.23-15.42.18:072][192]MaterialEditorStats: User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2024.07.23-15.42.18:072][192]MaterialEditorStats: Shader Count: 0
+[2024.07.23-15.42.18:332][208]MaterialEditorStats: Default UI Pixel Shader: 0 instructions
+[2024.07.23-15.42.18:332][208]MaterialEditorStats: Default UI Vertex Shader: 47 instructions
+[2024.07.23-15.42.18:332][208]MaterialEditorStats: Instanced UI Vertex Shader: 0 instructions
+[2024.07.23-15.42.18:332][208]MaterialEditorStats: Texture samplers: 0/16
+[2024.07.23-15.42.18:332][208]MaterialEditorStats: Texture Lookups (Est.): VS(3), PS(0)
+[2024.07.23-15.42.18:332][208]MaterialEditorStats: User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2024.07.23-15.42.18:332][208]MaterialEditorStats: Shader Count: 1
+[2024.07.23-15.42.18:451][215]MaterialEditorStats: Default UI Pixel Shader: 53 instructions
+[2024.07.23-15.42.18:451][215]MaterialEditorStats: Default UI Vertex Shader: 47 instructions
+[2024.07.23-15.42.18:451][215]MaterialEditorStats: Instanced UI Vertex Shader: 0 instructions
+[2024.07.23-15.42.18:451][215]MaterialEditorStats: Texture samplers: 0/16
+[2024.07.23-15.42.18:451][215]MaterialEditorStats: Texture Lookups (Est.): VS(3), PS(0)
+[2024.07.23-15.42.18:451][215]MaterialEditorStats: User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2024.07.23-15.42.18:451][215]MaterialEditorStats: Shader Count: 2
+[2024.07.23-15.42.18:694][229]LogSlate: Window 'Color Picker' being destroyed
+[2024.07.23-15.42.18:705][229]MaterialEditorStats: Default UI Pixel Shader: 0 instructions
+[2024.07.23-15.42.18:705][229]MaterialEditorStats: Default UI Vertex Shader: 0 instructions
+[2024.07.23-15.42.18:705][229]MaterialEditorStats: Instanced UI Vertex Shader: 0 instructions
+[2024.07.23-15.42.18:705][229]MaterialEditorStats: Texture samplers: 0/16
+[2024.07.23-15.42.18:705][229]MaterialEditorStats: Texture Lookups (Est.): VS(3), PS(0)
+[2024.07.23-15.42.18:705][229]MaterialEditorStats: User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2024.07.23-15.42.18:705][229]MaterialEditorStats: Shader Count: 0
+[2024.07.23-15.42.18:733][231]MaterialEditorStats: Default UI Pixel Shader: 53 instructions
+[2024.07.23-15.42.18:735][231]MaterialEditorStats: Default UI Vertex Shader: 47 instructions
+[2024.07.23-15.42.18:735][231]MaterialEditorStats: Instanced UI Vertex Shader: 0 instructions
+[2024.07.23-15.42.18:735][231]MaterialEditorStats: Texture samplers: 0/16
+[2024.07.23-15.42.18:735][231]MaterialEditorStats: Texture Lookups (Est.): VS(3), PS(0)
+[2024.07.23-15.42.18:735][231]MaterialEditorStats: User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2024.07.23-15.42.18:735][231]MaterialEditorStats: Shader Count: 2
+[2024.07.23-15.42.20:689][339]MaterialEditorStats: Default UI Pixel Shader: 0 instructions
+[2024.07.23-15.42.20:689][339]MaterialEditorStats: Default UI Vertex Shader: 0 instructions
+[2024.07.23-15.42.20:689][339]MaterialEditorStats: Instanced UI Vertex Shader: 0 instructions
+[2024.07.23-15.42.20:689][339]MaterialEditorStats: Texture samplers: 0/16
+[2024.07.23-15.42.20:689][339]MaterialEditorStats: Texture Lookups (Est.): VS(3), PS(0)
+[2024.07.23-15.42.20:689][339]MaterialEditorStats: User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2024.07.23-15.42.20:689][339]MaterialEditorStats: Shader Count: 0
+[2024.07.23-15.42.20:718][341]MaterialEditorStats: Default UI Pixel Shader: 53 instructions
+[2024.07.23-15.42.20:718][341]MaterialEditorStats: Default UI Vertex Shader: 47 instructions
+[2024.07.23-15.42.20:718][341]MaterialEditorStats: Instanced UI Vertex Shader: 0 instructions
+[2024.07.23-15.42.20:718][341]MaterialEditorStats: Texture samplers: 0/16
+[2024.07.23-15.42.20:718][341]MaterialEditorStats: Texture Lookups (Est.): VS(3), PS(0)
+[2024.07.23-15.42.20:718][341]MaterialEditorStats: User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2024.07.23-15.42.20:718][341]MaterialEditorStats: Shader Count: 2
+[2024.07.23-15.42.21:260][373]LogSlate: Window 'Color Picker' being destroyed
+[2024.07.23-15.42.21:270][373]MaterialEditorStats: Default UI Pixel Shader: 0 instructions
+[2024.07.23-15.42.21:270][373]MaterialEditorStats: Default UI Vertex Shader: 0 instructions
+[2024.07.23-15.42.21:270][373]MaterialEditorStats: Instanced UI Vertex Shader: 0 instructions
+[2024.07.23-15.42.21:270][373]MaterialEditorStats: Texture samplers: 0/16
+[2024.07.23-15.42.21:270][373]MaterialEditorStats: Texture Lookups (Est.): VS(3), PS(0)
+[2024.07.23-15.42.21:270][373]MaterialEditorStats: User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2024.07.23-15.42.21:270][373]MaterialEditorStats: Shader Count: 0
+[2024.07.23-15.42.21:297][375]MaterialEditorStats: Default UI Pixel Shader: 53 instructions
+[2024.07.23-15.42.21:297][375]MaterialEditorStats: Default UI Vertex Shader: 47 instructions
+[2024.07.23-15.42.21:297][375]MaterialEditorStats: Instanced UI Vertex Shader: 0 instructions
+[2024.07.23-15.42.21:297][375]MaterialEditorStats: Texture samplers: 0/16
+[2024.07.23-15.42.21:297][375]MaterialEditorStats: Texture Lookups (Est.): VS(3), PS(0)
+[2024.07.23-15.42.21:297][375]MaterialEditorStats: User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2024.07.23-15.42.21:297][375]MaterialEditorStats: Shader Count: 2
+[2024.07.23-15.42.23:052][479]LogMaterialEditor: Saving and Compiling material M_TestVignette
+[2024.07.23-15.42.23:132][479]LogUObjectHash: Compacting FUObjectHashTables data took   1.43ms
+[2024.07.23-15.42.23:257][479]LogUObjectHash: Compacting FUObjectHashTables data took   0.69ms
+[2024.07.23-15.42.23:270][479]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.07.23-15.42.24:249][479]LogSavePackage: Moving output files for package: /Game/Levels/M_TestVignette
+[2024.07.23-15.42.24:251][479]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/M_TestVignette299ED5EF4521DCF865FBE9BB9B9BFA8F.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/Levels/M_TestVignette.uasset'
+[2024.07.23-15.42.24:276][479]LogFileHelpers: InternalPromptForCheckoutAndSave took 1.00 sec (total: 5.39 sec)
+[2024.07.23-15.42.24:278][479]AssetCheck: New page: Asset Save: M_TestVignette
+[2024.07.23-15.42.24:278][479]LogContentValidation: Display: Validating /Script/Engine.Material /Game/Levels/M_TestVignette.M_TestVignette
+[2024.07.23-15.42.24:280][479]MaterialEditorStats: Default UI Pixel Shader: 53 instructions
+[2024.07.23-15.42.24:280][479]MaterialEditorStats: Default UI Vertex Shader: 47 instructions
+[2024.07.23-15.42.24:280][479]MaterialEditorStats: Instanced UI Vertex Shader: 47 instructions
+[2024.07.23-15.42.24:280][479]MaterialEditorStats: Texture samplers: 1/16
+[2024.07.23-15.42.24:281][479]MaterialEditorStats: Texture Lookups (Est.): VS(3), PS(0)
+[2024.07.23-15.42.24:281][479]MaterialEditorStats: User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2024.07.23-15.42.24:281][479]MaterialEditorStats: Shader Count: 11
+[2024.07.23-15.42.30:087][822]MaterialEditorStats: Default UI Pixel Shader: 0 instructions
+[2024.07.23-15.42.30:088][822]MaterialEditorStats: Default UI Vertex Shader: 0 instructions
+[2024.07.23-15.42.30:088][822]MaterialEditorStats: Instanced UI Vertex Shader: 0 instructions
+[2024.07.23-15.42.30:088][822]MaterialEditorStats: Texture samplers: 0/16
+[2024.07.23-15.42.30:088][822]MaterialEditorStats: Texture Lookups (Est.): VS(3), PS(0)
+[2024.07.23-15.42.30:088][822]MaterialEditorStats: User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2024.07.23-15.42.30:088][822]MaterialEditorStats: Shader Count: 0
+[2024.07.23-15.42.30:189][824]MaterialEditorStats: Default UI Pixel Shader: 53 instructions
+[2024.07.23-15.42.30:189][824]MaterialEditorStats: Default UI Vertex Shader: 47 instructions
+[2024.07.23-15.42.30:189][824]MaterialEditorStats: Instanced UI Vertex Shader: 0 instructions
+[2024.07.23-15.42.30:190][824]MaterialEditorStats: Texture samplers: 0/16
+[2024.07.23-15.42.30:190][824]MaterialEditorStats: Texture Lookups (Est.): VS(3), PS(0)
+[2024.07.23-15.42.30:190][824]MaterialEditorStats: User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2024.07.23-15.42.30:190][824]MaterialEditorStats: Shader Count: 2
+[2024.07.23-15.42.32:838][976]MaterialEditorStats: Default UI Pixel Shader: 0 instructions
+[2024.07.23-15.42.32:839][976]MaterialEditorStats: Default UI Vertex Shader: 0 instructions
+[2024.07.23-15.42.32:839][976]MaterialEditorStats: Instanced UI Vertex Shader: 0 instructions
+[2024.07.23-15.42.32:839][976]MaterialEditorStats: Texture samplers: 0/16
+[2024.07.23-15.42.32:839][976]MaterialEditorStats: Texture Lookups (Est.): VS(3), PS(0)
+[2024.07.23-15.42.32:839][976]MaterialEditorStats: User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2024.07.23-15.42.32:839][976]MaterialEditorStats: Shader Count: 0
+[2024.07.23-15.42.32:872][978]MaterialEditorStats: Default UI Pixel Shader: 53 instructions
+[2024.07.23-15.42.32:872][978]MaterialEditorStats: Default UI Vertex Shader: 47 instructions
+[2024.07.23-15.42.32:872][978]MaterialEditorStats: Instanced UI Vertex Shader: 0 instructions
+[2024.07.23-15.42.32:872][978]MaterialEditorStats: Texture samplers: 0/16
+[2024.07.23-15.42.32:872][978]MaterialEditorStats: Texture Lookups (Est.): VS(3), PS(0)
+[2024.07.23-15.42.32:872][978]MaterialEditorStats: User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2024.07.23-15.42.32:872][978]MaterialEditorStats: Shader Count: 2
+[2024.07.23-15.42.34:389][ 62]MaterialEditorStats: Default UI Pixel Shader: 0 instructions
+[2024.07.23-15.42.34:389][ 62]MaterialEditorStats: Default UI Vertex Shader: 0 instructions
+[2024.07.23-15.42.34:389][ 62]MaterialEditorStats: Instanced UI Vertex Shader: 0 instructions
+[2024.07.23-15.42.34:389][ 62]MaterialEditorStats: Texture samplers: 0/16
+[2024.07.23-15.42.34:389][ 62]MaterialEditorStats: Texture Lookups (Est.): VS(3), PS(0)
+[2024.07.23-15.42.34:389][ 62]MaterialEditorStats: User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2024.07.23-15.42.34:389][ 62]MaterialEditorStats: Shader Count: 0
+[2024.07.23-15.42.34:418][ 64]MaterialEditorStats: Default UI Pixel Shader: 53 instructions
+[2024.07.23-15.42.34:418][ 64]MaterialEditorStats: Default UI Vertex Shader: 47 instructions
+[2024.07.23-15.42.34:420][ 64]MaterialEditorStats: Instanced UI Vertex Shader: 0 instructions
+[2024.07.23-15.42.34:420][ 64]MaterialEditorStats: Texture samplers: 0/16
+[2024.07.23-15.42.34:420][ 64]MaterialEditorStats: Texture Lookups (Est.): VS(3), PS(0)
+[2024.07.23-15.42.34:420][ 64]MaterialEditorStats: User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2024.07.23-15.42.34:420][ 64]MaterialEditorStats: Shader Count: 2
+[2024.07.23-15.42.36:701][193]MaterialEditorStats: Default UI Pixel Shader: 0 instructions
+[2024.07.23-15.42.36:701][193]MaterialEditorStats: Default UI Vertex Shader: 0 instructions
+[2024.07.23-15.42.36:701][193]MaterialEditorStats: Instanced UI Vertex Shader: 0 instructions
+[2024.07.23-15.42.36:701][193]MaterialEditorStats: Texture samplers: 0/16
+[2024.07.23-15.42.36:701][193]MaterialEditorStats: Texture Lookups (Est.): VS(3), PS(0)
+[2024.07.23-15.42.36:701][193]MaterialEditorStats: User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2024.07.23-15.42.36:701][193]MaterialEditorStats: Shader Count: 0
+[2024.07.23-15.42.36:730][195]MaterialEditorStats: Default UI Pixel Shader: 53 instructions
+[2024.07.23-15.42.36:730][195]MaterialEditorStats: Default UI Vertex Shader: 47 instructions
+[2024.07.23-15.42.36:730][195]MaterialEditorStats: Instanced UI Vertex Shader: 0 instructions
+[2024.07.23-15.42.36:730][195]MaterialEditorStats: Texture samplers: 0/16
+[2024.07.23-15.42.36:730][195]MaterialEditorStats: Texture Lookups (Est.): VS(3), PS(0)
+[2024.07.23-15.42.36:730][195]MaterialEditorStats: User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2024.07.23-15.42.36:730][195]MaterialEditorStats: Shader Count: 2
+[2024.07.23-15.42.38:598][300]MaterialEditorStats: Default UI Pixel Shader: 0 instructions
+[2024.07.23-15.42.38:598][300]MaterialEditorStats: Default UI Vertex Shader: 0 instructions
+[2024.07.23-15.42.38:598][300]MaterialEditorStats: Instanced UI Vertex Shader: 0 instructions
+[2024.07.23-15.42.38:598][300]MaterialEditorStats: Texture samplers: 0/16
+[2024.07.23-15.42.38:598][300]MaterialEditorStats: Texture Lookups (Est.): VS(3), PS(0)
+[2024.07.23-15.42.38:598][300]MaterialEditorStats: User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2024.07.23-15.42.38:598][300]MaterialEditorStats: Shader Count: 0
+[2024.07.23-15.42.38:633][302]MaterialEditorStats: Default UI Pixel Shader: 53 instructions
+[2024.07.23-15.42.38:633][302]MaterialEditorStats: Default UI Vertex Shader: 47 instructions
+[2024.07.23-15.42.38:633][302]MaterialEditorStats: Instanced UI Vertex Shader: 0 instructions
+[2024.07.23-15.42.38:633][302]MaterialEditorStats: Texture samplers: 0/16
+[2024.07.23-15.42.38:633][302]MaterialEditorStats: Texture Lookups (Est.): VS(3), PS(0)
+[2024.07.23-15.42.38:633][302]MaterialEditorStats: User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2024.07.23-15.42.38:633][302]MaterialEditorStats: Shader Count: 2
+[2024.07.23-15.42.40:151][383]MaterialEditorStats: Default UI Pixel Shader: 0 instructions
+[2024.07.23-15.42.40:151][383]MaterialEditorStats: Default UI Vertex Shader: 0 instructions
+[2024.07.23-15.42.40:151][383]MaterialEditorStats: Instanced UI Vertex Shader: 0 instructions
+[2024.07.23-15.42.40:151][383]MaterialEditorStats: Texture samplers: 0/16
+[2024.07.23-15.42.40:151][383]MaterialEditorStats: Texture Lookups (Est.): VS(3), PS(0)
+[2024.07.23-15.42.40:151][383]MaterialEditorStats: User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2024.07.23-15.42.40:151][383]MaterialEditorStats: Shader Count: 0
+[2024.07.23-15.42.40:369][396]MaterialEditorStats: Default UI Pixel Shader: 0 instructions
+[2024.07.23-15.42.40:369][396]MaterialEditorStats: Default UI Vertex Shader: 47 instructions
+[2024.07.23-15.42.40:369][396]MaterialEditorStats: Instanced UI Vertex Shader: 0 instructions
+[2024.07.23-15.42.40:369][396]MaterialEditorStats: Texture samplers: 0/16
+[2024.07.23-15.42.40:369][396]MaterialEditorStats: Texture Lookups (Est.): VS(3), PS(0)
+[2024.07.23-15.42.40:369][396]MaterialEditorStats: User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2024.07.23-15.42.40:369][396]MaterialEditorStats: Shader Count: 1
+[2024.07.23-15.42.40:487][402]MaterialEditorStats: Default UI Pixel Shader: 51 instructions
+[2024.07.23-15.42.40:487][402]MaterialEditorStats: Default UI Vertex Shader: 47 instructions
+[2024.07.23-15.42.40:487][402]MaterialEditorStats: Instanced UI Vertex Shader: 0 instructions
+[2024.07.23-15.42.40:487][402]MaterialEditorStats: Texture samplers: 0/16
+[2024.07.23-15.42.40:487][402]MaterialEditorStats: Texture Lookups (Est.): VS(3), PS(0)
+[2024.07.23-15.42.40:487][402]MaterialEditorStats: User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2024.07.23-15.42.40:487][402]MaterialEditorStats: Shader Count: 2
+[2024.07.23-15.42.40:750][418]LogMaterialEditor: Saving and Compiling material M_TestVignette
+[2024.07.23-15.42.40:828][418]LogUObjectHash: Compacting FUObjectHashTables data took   1.80ms
+[2024.07.23-15.42.40:950][418]LogUObjectHash: Compacting FUObjectHashTables data took   0.79ms
+[2024.07.23-15.42.40:965][418]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.07.23-15.42.41:696][418]LogSavePackage: Moving output files for package: /Game/Levels/M_TestVignette
+[2024.07.23-15.42.41:697][418]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/M_TestVignette5AC016A4474C632A401064BB71636331.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/Levels/M_TestVignette.uasset'
+[2024.07.23-15.42.41:723][418]LogFileHelpers: InternalPromptForCheckoutAndSave took 757 ms (total: 6.15 sec)
+[2024.07.23-15.42.41:725][418]AssetCheck: New page: Asset Save: M_TestVignette
+[2024.07.23-15.42.41:725][418]LogContentValidation: Display: Validating /Script/Engine.Material /Game/Levels/M_TestVignette.M_TestVignette
+[2024.07.23-15.42.41:727][418]MaterialEditorStats: Default UI Pixel Shader: 51 instructions
+[2024.07.23-15.42.41:727][418]MaterialEditorStats: Default UI Vertex Shader: 47 instructions
+[2024.07.23-15.42.41:727][418]MaterialEditorStats: Instanced UI Vertex Shader: 47 instructions
+[2024.07.23-15.42.41:727][418]MaterialEditorStats: Texture samplers: 1/16
+[2024.07.23-15.42.41:727][418]MaterialEditorStats: Texture Lookups (Est.): VS(3), PS(0)
+[2024.07.23-15.42.41:727][418]MaterialEditorStats: User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2024.07.23-15.42.41:727][418]MaterialEditorStats: Shader Count: 11
+[2024.07.23-15.42.51:425][988]MaterialEditorStats: Default UI Pixel Shader: 0 instructions
+[2024.07.23-15.42.51:425][988]MaterialEditorStats: Default UI Vertex Shader: 0 instructions
+[2024.07.23-15.42.51:425][988]MaterialEditorStats: Instanced UI Vertex Shader: 0 instructions
+[2024.07.23-15.42.51:425][988]MaterialEditorStats: Texture samplers: 0/16
+[2024.07.23-15.42.51:425][988]MaterialEditorStats: Texture Lookups (Est.): VS(0), PS(3)
+[2024.07.23-15.42.51:425][988]MaterialEditorStats: Shader Count: 0
+[2024.07.23-15.42.51:718][  3]MaterialEditorStats: Default UI Pixel Shader: 0 instructions
+[2024.07.23-15.42.51:718][  3]MaterialEditorStats: Default UI Vertex Shader: 47 instructions
+[2024.07.23-15.42.51:718][  3]MaterialEditorStats: Instanced UI Vertex Shader: 0 instructions
+[2024.07.23-15.42.51:718][  3]MaterialEditorStats: Texture samplers: 0/16
+[2024.07.23-15.42.51:718][  3]MaterialEditorStats: Texture Lookups (Est.): VS(0), PS(3)
+[2024.07.23-15.42.51:718][  3]MaterialEditorStats: Shader Count: 1
+[2024.07.23-15.42.51:825][  9]MaterialEditorStats: Default UI Pixel Shader: 38 instructions
+[2024.07.23-15.42.51:825][  9]MaterialEditorStats: Default UI Vertex Shader: 47 instructions
+[2024.07.23-15.42.51:825][  9]MaterialEditorStats: Instanced UI Vertex Shader: 0 instructions
+[2024.07.23-15.42.51:825][  9]MaterialEditorStats: Texture samplers: 0/16
+[2024.07.23-15.42.51:825][  9]MaterialEditorStats: Texture Lookups (Est.): VS(0), PS(3)
+[2024.07.23-15.42.51:825][  9]MaterialEditorStats: Shader Count: 2
+[2024.07.23-15.42.55:595][228]MaterialEditorStats: Default UI Pixel Shader: 0 instructions
+[2024.07.23-15.42.55:595][228]MaterialEditorStats: Default UI Vertex Shader: 0 instructions
+[2024.07.23-15.42.55:595][228]MaterialEditorStats: Instanced UI Vertex Shader: 0 instructions
+[2024.07.23-15.42.55:595][228]MaterialEditorStats: Texture samplers: 0/16
+[2024.07.23-15.42.55:595][228]MaterialEditorStats: Texture Lookups (Est.): VS(0), PS(3)
+[2024.07.23-15.42.55:595][228]MaterialEditorStats: Shader Count: 0
+[2024.07.23-15.42.55:663][230]MaterialEditorStats: Default UI Pixel Shader: 38 instructions
+[2024.07.23-15.42.55:663][230]MaterialEditorStats: Default UI Vertex Shader: 47 instructions
+[2024.07.23-15.42.55:663][230]MaterialEditorStats: Instanced UI Vertex Shader: 0 instructions
+[2024.07.23-15.42.55:663][230]MaterialEditorStats: Texture samplers: 0/16
+[2024.07.23-15.42.55:663][230]MaterialEditorStats: Texture Lookups (Est.): VS(0), PS(3)
+[2024.07.23-15.42.55:663][230]MaterialEditorStats: Shader Count: 2
+[2024.07.23-15.42.59:067][427]MaterialEditorStats: Default UI Pixel Shader: 0 instructions
+[2024.07.23-15.42.59:067][427]MaterialEditorStats: Default UI Vertex Shader: 0 instructions
+[2024.07.23-15.42.59:067][427]MaterialEditorStats: Instanced UI Vertex Shader: 0 instructions
+[2024.07.23-15.42.59:067][427]MaterialEditorStats: Texture samplers: 0/16
+[2024.07.23-15.42.59:067][427]MaterialEditorStats: Texture Lookups (Est.): VS(0), PS(3)
+[2024.07.23-15.42.59:067][427]MaterialEditorStats: Shader Count: 0
+[2024.07.23-15.42.59:098][429]MaterialEditorStats: Default UI Pixel Shader: 38 instructions
+[2024.07.23-15.42.59:098][429]MaterialEditorStats: Default UI Vertex Shader: 47 instructions
+[2024.07.23-15.42.59:098][429]MaterialEditorStats: Instanced UI Vertex Shader: 0 instructions
+[2024.07.23-15.42.59:098][429]MaterialEditorStats: Texture samplers: 0/16
+[2024.07.23-15.42.59:098][429]MaterialEditorStats: Texture Lookups (Est.): VS(0), PS(3)
+[2024.07.23-15.42.59:098][429]MaterialEditorStats: Shader Count: 2
+[2024.07.23-15.43.01:899][585]LogShaderCompilers: Display: ================================================
+[2024.07.23-15.43.01:899][585]LogShaderCompilers: Display: === FShaderJobCache stats ===
+[2024.07.23-15.43.01:899][585]LogShaderCompilers: Display: Total job queries 394, among them cache hits 197 (50.00%)
+[2024.07.23-15.43.01:899][585]LogShaderCompilers: Display: Tracking 188 distinct input hashes that result in 127 distinct outputs (67.55%)
+[2024.07.23-15.43.01:899][585]LogShaderCompilers: Display: RAM used: 3.64 MiB of 819.20 MiB budget. Usage: 0.44%
+[2024.07.23-15.43.01:899][585]LogShaderCompilers: Display: === Shader Compilation stats ===
+[2024.07.23-15.43.01:899][585]LogShaderCompilers: Display: Shaders Compiled: 90
+[2024.07.23-15.43.01:899][585]LogShaderCompilers: Display: Jobs assigned 91, completed 90 (98.90%)
+[2024.07.23-15.43.01:899][585]LogShaderCompilers: Display: Average time worker was idle: 11.66 s
+[2024.07.23-15.43.01:899][585]LogShaderCompilers: Display: Time job spent in pending queue: average 0.08 s, longest 0.59 s
+[2024.07.23-15.43.01:899][585]LogShaderCompilers: Display: Job execution time: average 0.52 s, max 1.71 s
+[2024.07.23-15.43.01:899][585]LogShaderCompilers: Display: Job life time (pending + execution): average 0.60 s, max 1.79
+[2024.07.23-15.43.01:899][585]LogShaderCompilers: Display: Shader code size: average 26.553 KiB, min 5.555 KiB, max 61.059 KiB
+[2024.07.23-15.43.01:899][585]LogShaderCompilers: Display: Time at least one job was in flight (either pending or executed): 11.05 s
+[2024.07.23-15.43.01:899][585]LogShaderCompilers: Display: Jobs were issued in 91 batches (only local compilation was used), average 1.00 jobs/batch
+[2024.07.23-15.43.01:899][585]LogShaderCompilers: Display: Average processing rate: 8.15 jobs/sec
+[2024.07.23-15.43.01:899][585]LogShaderCompilers: Display: Total thread time: 28.257 s
+[2024.07.23-15.43.01:899][585]LogShaderCompilers: Display: Total thread preprocess time: 4.151 s
+[2024.07.23-15.43.01:899][585]LogShaderCompilers: Display: Percentage time preprocessing: 14.69%
+[2024.07.23-15.43.01:899][585]LogShaderCompilers: Display: Effective parallelization: 2.56 (times faster than compiling all shaders on one thread). Compare with number of workers: 8
+[2024.07.23-15.43.01:899][585]LogShaderCompilers: Display: Top 5 most expensive shader types by average time:
+[2024.07.23-15.43.01:899][585]LogShaderCompilers: Display:                                                 FLumenCardVS (compiled    6 times, average 0.50 sec, max 0.64 sec, min 0.45 sec)
+[2024.07.23-15.43.01:899][585]LogShaderCompilers: Display:        TBasePassPSFCachedPointIndirectLightingPolicySkylight (compiled    1 times, average 0.49 sec, max 0.49 sec, min 0.49 sec)
+[2024.07.23-15.43.01:899][585]LogShaderCompilers: Display:       TBasePassPSFCachedVolumeIndirectLightingPolicySkylight (compiled    1 times, average 0.47 sec, max 0.47 sec, min 0.47 sec)
+[2024.07.23-15.43.01:899][585]LogShaderCompilers: Display: TBasePassPSFPrecomputedVolumetricLightmapLightingPolicySkylight (compiled    1 times, average 0.47 sec, max 0.47 sec, min 0.47 sec)
+[2024.07.23-15.43.01:899][585]LogShaderCompilers: Display:                TBasePassPSFCachedPointIndirectLightingPolicy (compiled    1 times, average 0.46 sec, max 0.46 sec, min 0.46 sec)
+[2024.07.23-15.43.01:899][585]LogShaderCompilers: Display: Top 5 shader types by total compile time:
+[2024.07.23-15.43.01:899][585]LogShaderCompilers: Display:                                 TBasePassPSFNoLightMapPolicy - 25.24% of total time (compiled   16 times, average 0.45 sec, max 0.67 sec, min 0.27 sec)
+[2024.07.23-15.43.01:899][585]LogShaderCompilers: Display:                                 TBasePassVSFNoLightMapPolicy - 24.29% of total time (compiled   15 times, average 0.46 sec, max 0.64 sec, min 0.33 sec)
+[2024.07.23-15.43.01:899][585]LogShaderCompilers: Display:                                                 FLumenCardVS - 10.60% of total time (compiled    6 times, average 0.50 sec, max 0.64 sec, min 0.45 sec)
+[2024.07.23-15.43.01:899][585]LogShaderCompilers: Display:                                          FLumenCardPS<false> - 4.79% of total time (compiled    6 times, average 0.23 sec, max 0.37 sec, min 0.18 sec)
+[2024.07.23-15.43.01:899][585]LogShaderCompilers: Display:                                             FDebugViewModeVS - 4.61% of total time (compiled    4 times, average 0.33 sec, max 0.41 sec, min 0.24 sec)
+[2024.07.23-15.43.01:899][585]LogShaderCompilers: Display: ================================================
+[2024.07.23-15.43.03:180][654]MaterialEditorStats: Default UI Pixel Shader: 0 instructions
+[2024.07.23-15.43.03:180][654]MaterialEditorStats: Default UI Vertex Shader: 0 instructions
+[2024.07.23-15.43.03:180][654]MaterialEditorStats: Instanced UI Vertex Shader: 0 instructions
+[2024.07.23-15.43.03:180][654]MaterialEditorStats: Texture samplers: 0/16
+[2024.07.23-15.43.03:180][654]MaterialEditorStats: Texture Lookups (Est.): VS(0), PS(3)
+[2024.07.23-15.43.03:180][654]MaterialEditorStats: Shader Count: 0
+[2024.07.23-15.43.03:213][656]MaterialEditorStats: Default UI Pixel Shader: 38 instructions
+[2024.07.23-15.43.03:213][656]MaterialEditorStats: Default UI Vertex Shader: 47 instructions
+[2024.07.23-15.43.03:213][656]MaterialEditorStats: Instanced UI Vertex Shader: 0 instructions
+[2024.07.23-15.43.03:213][656]MaterialEditorStats: Texture samplers: 0/16
+[2024.07.23-15.43.03:213][656]MaterialEditorStats: Texture Lookups (Est.): VS(0), PS(3)
+[2024.07.23-15.43.03:213][656]MaterialEditorStats: Shader Count: 2
+[2024.07.23-15.43.04:774][742]MaterialEditorStats: Default UI Pixel Shader: 0 instructions
+[2024.07.23-15.43.04:774][742]MaterialEditorStats: Default UI Vertex Shader: 0 instructions
+[2024.07.23-15.43.04:774][742]MaterialEditorStats: Instanced UI Vertex Shader: 0 instructions
+[2024.07.23-15.43.04:774][742]MaterialEditorStats: Texture samplers: 0/16
+[2024.07.23-15.43.04:774][742]MaterialEditorStats: Texture Lookups (Est.): VS(0), PS(3)
+[2024.07.23-15.43.04:774][742]MaterialEditorStats: Shader Count: 0
+[2024.07.23-15.43.04:812][744]MaterialEditorStats: Default UI Pixel Shader: 38 instructions
+[2024.07.23-15.43.04:813][744]MaterialEditorStats: Default UI Vertex Shader: 47 instructions
+[2024.07.23-15.43.04:813][744]MaterialEditorStats: Instanced UI Vertex Shader: 0 instructions
+[2024.07.23-15.43.04:813][744]MaterialEditorStats: Texture samplers: 0/16
+[2024.07.23-15.43.04:813][744]MaterialEditorStats: Texture Lookups (Est.): VS(0), PS(3)
+[2024.07.23-15.43.04:813][744]MaterialEditorStats: Shader Count: 2
+[2024.07.23-15.43.13:606][263]MaterialEditorStats: Default UI Pixel Shader: 0 instructions
+[2024.07.23-15.43.13:606][263]MaterialEditorStats: Default UI Vertex Shader: 0 instructions
+[2024.07.23-15.43.13:606][263]MaterialEditorStats: Instanced UI Vertex Shader: 0 instructions
+[2024.07.23-15.43.13:606][263]MaterialEditorStats: Texture samplers: 0/16
+[2024.07.23-15.43.13:606][263]MaterialEditorStats: Texture Lookups (Est.): VS(0), PS(3)
+[2024.07.23-15.43.13:606][263]MaterialEditorStats: Shader Count: 0
+[2024.07.23-15.43.13:636][265]MaterialEditorStats: Default UI Pixel Shader: 38 instructions
+[2024.07.23-15.43.13:636][265]MaterialEditorStats: Default UI Vertex Shader: 47 instructions
+[2024.07.23-15.43.13:636][265]MaterialEditorStats: Instanced UI Vertex Shader: 0 instructions
+[2024.07.23-15.43.13:637][265]MaterialEditorStats: Texture samplers: 0/16
+[2024.07.23-15.43.13:637][265]MaterialEditorStats: Texture Lookups (Est.): VS(0), PS(3)
+[2024.07.23-15.43.13:637][265]MaterialEditorStats: Shader Count: 2
+[2024.07.23-15.43.17:809][508]MaterialEditorStats: Default UI Pixel Shader: 0 instructions
+[2024.07.23-15.43.17:809][508]MaterialEditorStats: Default UI Vertex Shader: 0 instructions
+[2024.07.23-15.43.17:809][508]MaterialEditorStats: Instanced UI Vertex Shader: 0 instructions
+[2024.07.23-15.43.17:809][508]MaterialEditorStats: Texture samplers: 0/16
+[2024.07.23-15.43.17:809][508]MaterialEditorStats: Texture Lookups (Est.): VS(3), PS(0)
+[2024.07.23-15.43.17:809][508]MaterialEditorStats: User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2024.07.23-15.43.17:809][508]MaterialEditorStats: Shader Count: 0
+[2024.07.23-15.43.18:041][522]MaterialEditorStats: Default UI Pixel Shader: 0 instructions
+[2024.07.23-15.43.18:041][522]MaterialEditorStats: Default UI Vertex Shader: 47 instructions
+[2024.07.23-15.43.18:041][522]MaterialEditorStats: Instanced UI Vertex Shader: 0 instructions
+[2024.07.23-15.43.18:041][522]MaterialEditorStats: Texture samplers: 0/16
+[2024.07.23-15.43.18:041][522]MaterialEditorStats: Texture Lookups (Est.): VS(3), PS(0)
+[2024.07.23-15.43.18:041][522]MaterialEditorStats: User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2024.07.23-15.43.18:041][522]MaterialEditorStats: Shader Count: 1
+[2024.07.23-15.43.18:156][528]MaterialEditorStats: Default UI Pixel Shader: 51 instructions
+[2024.07.23-15.43.18:156][528]MaterialEditorStats: Default UI Vertex Shader: 47 instructions
+[2024.07.23-15.43.18:156][528]MaterialEditorStats: Instanced UI Vertex Shader: 0 instructions
+[2024.07.23-15.43.18:156][528]MaterialEditorStats: Texture samplers: 0/16
+[2024.07.23-15.43.18:156][528]MaterialEditorStats: Texture Lookups (Est.): VS(3), PS(0)
+[2024.07.23-15.43.18:156][528]MaterialEditorStats: User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2024.07.23-15.43.18:156][528]MaterialEditorStats: Shader Count: 2
+[2024.07.23-15.43.18:762][564]LogMaterialEditor: Saving and Compiling material M_TestVignette
+[2024.07.23-15.43.18:851][564]LogUObjectHash: Compacting FUObjectHashTables data took   1.54ms
+[2024.07.23-15.43.18:986][564]LogUObjectHash: Compacting FUObjectHashTables data took   0.71ms
+[2024.07.23-15.43.19:000][564]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.07.23-15.43.19:887][564]LogSavePackage: Moving output files for package: /Game/Levels/M_TestVignette
+[2024.07.23-15.43.19:889][564]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/M_TestVignette809C9AF14E1F98B30B11009DA40611C6.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/Levels/M_TestVignette.uasset'
+[2024.07.23-15.43.19:913][564]LogFileHelpers: InternalPromptForCheckoutAndSave took 914 ms (total: 7.06 sec)
+[2024.07.23-15.43.19:915][564]AssetCheck: New page: Asset Save: M_TestVignette
+[2024.07.23-15.43.19:916][564]LogContentValidation: Display: Validating /Script/Engine.Material /Game/Levels/M_TestVignette.M_TestVignette
+[2024.07.23-15.43.19:917][564]MaterialEditorStats: Default UI Pixel Shader: 51 instructions
+[2024.07.23-15.43.19:918][564]MaterialEditorStats: Default UI Vertex Shader: 47 instructions
+[2024.07.23-15.43.19:918][564]MaterialEditorStats: Instanced UI Vertex Shader: 47 instructions
+[2024.07.23-15.43.19:918][564]MaterialEditorStats: Texture samplers: 1/16
+[2024.07.23-15.43.19:918][564]MaterialEditorStats: Texture Lookups (Est.): VS(3), PS(0)
+[2024.07.23-15.43.19:918][564]MaterialEditorStats: User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2024.07.23-15.43.19:918][564]MaterialEditorStats: Shader Count: 11
+[2024.07.23-15.43.38:265][597]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.07.23-15.43.38:396][597]LogSavePackage: Moving output files for package: /Game/UI/WBP_HurtScreen
+[2024.07.23-15.43.38:398][597]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/WBP_HurtScreen8D7014D04E4197DFB8B57D906602AC41.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/UI/WBP_HurtScreen.uasset'
+[2024.07.23-15.43.38:410][597]LogFileHelpers: InternalPromptForCheckoutAndSave took 146 ms (total: 7.21 sec)
+[2024.07.23-15.43.38:413][597]AssetCheck: New page: Asset Save: WBP_HurtScreen
+[2024.07.23-15.43.38:413][597]LogContentValidation: Display: Validating /Script/UMGEditor.WidgetBlueprint /Game/UI/WBP_HurtScreen.WBP_HurtScreen
+[2024.07.23-15.43.39:323][649]BlueprintLog: New page: Compile WBP_HurtScreen
+[2024.07.23-15.43.39:374][649]LogUObjectHash: Compacting FUObjectHashTables data took   1.56ms
+[2024.07.23-15.44.01:455][932]MaterialEditorStats: Default UI Pixel Shader: 0 instructions
+[2024.07.23-15.44.01:455][932]MaterialEditorStats: Default UI Vertex Shader: 0 instructions
+[2024.07.23-15.44.01:455][932]MaterialEditorStats: Instanced UI Vertex Shader: 0 instructions
+[2024.07.23-15.44.01:455][932]MaterialEditorStats: Texture samplers: 0/16
+[2024.07.23-15.44.01:455][932]MaterialEditorStats: Texture Lookups (Est.): VS(3), PS(0)
+[2024.07.23-15.44.01:455][932]MaterialEditorStats: User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2024.07.23-15.44.01:455][932]MaterialEditorStats: Shader Count: 0
+[2024.07.23-15.44.01:489][934]MaterialEditorStats: Default UI Pixel Shader: 53 instructions
+[2024.07.23-15.44.01:489][934]MaterialEditorStats: Default UI Vertex Shader: 47 instructions
+[2024.07.23-15.44.01:489][934]MaterialEditorStats: Instanced UI Vertex Shader: 0 instructions
+[2024.07.23-15.44.01:489][934]MaterialEditorStats: Texture samplers: 0/16
+[2024.07.23-15.44.01:489][934]MaterialEditorStats: Texture Lookups (Est.): VS(3), PS(0)
+[2024.07.23-15.44.01:489][934]MaterialEditorStats: User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2024.07.23-15.44.01:489][934]MaterialEditorStats: Shader Count: 2
+[2024.07.23-15.44.03:261][ 39]LogMaterialEditor: Saving and Compiling material M_TestVignette
+[2024.07.23-15.44.03:346][ 39]LogUObjectHash: Compacting FUObjectHashTables data took   1.80ms
+[2024.07.23-15.44.03:472][ 39]LogUObjectHash: Compacting FUObjectHashTables data took   0.97ms
+[2024.07.23-15.44.03:486][ 39]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.07.23-15.44.03:658][ 39]LogSavePackage: Moving output files for package: /Game/Levels/M_TestVignette
+[2024.07.23-15.44.03:660][ 39]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/M_TestVignette6F3A49AB4A20403F6F4F26BB68715548.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/Levels/M_TestVignette.uasset'
+[2024.07.23-15.44.03:682][ 39]LogFileHelpers: InternalPromptForCheckoutAndSave took 197 ms (total: 7.40 sec)
+[2024.07.23-15.44.03:684][ 39]AssetCheck: New page: Asset Save: M_TestVignette
+[2024.07.23-15.44.03:684][ 39]LogContentValidation: Display: Validating /Script/Engine.Material /Game/Levels/M_TestVignette.M_TestVignette
+[2024.07.23-15.44.03:687][ 39]MaterialEditorStats: Default UI Pixel Shader: 53 instructions
+[2024.07.23-15.44.03:687][ 39]MaterialEditorStats: Default UI Vertex Shader: 47 instructions
+[2024.07.23-15.44.03:687][ 39]MaterialEditorStats: Instanced UI Vertex Shader: 47 instructions
+[2024.07.23-15.44.03:687][ 39]MaterialEditorStats: Texture samplers: 1/16
+[2024.07.23-15.44.03:687][ 39]MaterialEditorStats: Texture Lookups (Est.): VS(3), PS(0)
+[2024.07.23-15.44.03:687][ 39]MaterialEditorStats: User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2024.07.23-15.44.03:687][ 39]MaterialEditorStats: Shader Count: 11
+[2024.07.23-15.44.18:928][935]MaterialEditorStats: Default UI Pixel Shader: 0 instructions
+[2024.07.23-15.44.18:928][935]MaterialEditorStats: Default UI Vertex Shader: 0 instructions
+[2024.07.23-15.44.18:928][935]MaterialEditorStats: Instanced UI Vertex Shader: 0 instructions
+[2024.07.23-15.44.18:928][935]MaterialEditorStats: Texture samplers: 0/16
+[2024.07.23-15.44.18:928][935]MaterialEditorStats: Texture Lookups (Est.): VS(3), PS(0)
+[2024.07.23-15.44.18:928][935]MaterialEditorStats: User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2024.07.23-15.44.18:928][935]MaterialEditorStats: Shader Count: 0
+[2024.07.23-15.44.19:382][961]MaterialEditorStats: Default UI Pixel Shader: 0 instructions
+[2024.07.23-15.44.19:382][961]MaterialEditorStats: Default UI Vertex Shader: 47 instructions
+[2024.07.23-15.44.19:382][961]MaterialEditorStats: Instanced UI Vertex Shader: 0 instructions
+[2024.07.23-15.44.19:382][961]MaterialEditorStats: Texture samplers: 0/16
+[2024.07.23-15.44.19:382][961]MaterialEditorStats: Texture Lookups (Est.): VS(3), PS(0)
+[2024.07.23-15.44.19:382][961]MaterialEditorStats: User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2024.07.23-15.44.19:382][961]MaterialEditorStats: Shader Count: 1
+[2024.07.23-15.44.19:490][967]MaterialEditorStats: Default UI Pixel Shader: 53 instructions
+[2024.07.23-15.44.19:490][967]MaterialEditorStats: Default UI Vertex Shader: 47 instructions
+[2024.07.23-15.44.19:490][967]MaterialEditorStats: Instanced UI Vertex Shader: 0 instructions
+[2024.07.23-15.44.19:490][967]MaterialEditorStats: Texture samplers: 0/16
+[2024.07.23-15.44.19:490][967]MaterialEditorStats: Texture Lookups (Est.): VS(3), PS(0)
+[2024.07.23-15.44.19:490][967]MaterialEditorStats: User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2024.07.23-15.44.19:490][967]MaterialEditorStats: Shader Count: 2
+[2024.07.23-15.44.21:697][ 99]LogMaterialEditor: Saving and Compiling material M_TestVignette
+[2024.07.23-15.44.21:780][ 99]LogUObjectHash: Compacting FUObjectHashTables data took   1.51ms
+[2024.07.23-15.44.21:905][ 99]LogUObjectHash: Compacting FUObjectHashTables data took   0.70ms
+[2024.07.23-15.44.21:919][ 99]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.07.23-15.44.23:001][ 99]LogSavePackage: Moving output files for package: /Game/Levels/M_TestVignette
+[2024.07.23-15.44.23:002][ 99]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/M_TestVignetteFEFC406E4D7113E4ADCDFC9798D5B320.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/Levels/M_TestVignette.uasset'
+[2024.07.23-15.44.23:013][ 99]LogFileHelpers: InternalPromptForCheckoutAndSave took 1.09 sec (total: 8.50 sec)
+[2024.07.23-15.44.23:016][ 99]AssetCheck: New page: Asset Save: M_TestVignette
+[2024.07.23-15.44.23:016][ 99]LogContentValidation: Display: Validating /Script/Engine.Material /Game/Levels/M_TestVignette.M_TestVignette
+[2024.07.23-15.44.23:018][ 99]MaterialEditorStats: Default UI Pixel Shader: 53 instructions
+[2024.07.23-15.44.23:018][ 99]MaterialEditorStats: Default UI Vertex Shader: 47 instructions
+[2024.07.23-15.44.23:018][ 99]MaterialEditorStats: Instanced UI Vertex Shader: 47 instructions
+[2024.07.23-15.44.23:018][ 99]MaterialEditorStats: Texture samplers: 3/16
+[2024.07.23-15.44.23:018][ 99]MaterialEditorStats: Texture Lookups (Est.): VS(3), PS(0)
+[2024.07.23-15.44.23:018][ 99]MaterialEditorStats: User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2024.07.23-15.44.23:018][ 99]MaterialEditorStats: Shader Count: 12
+[2024.07.23-15.44.24:874][202]MaterialEditorStats: Default UI Pixel Shader: 0 instructions
+[2024.07.23-15.44.24:874][202]MaterialEditorStats: Default UI Vertex Shader: 0 instructions
+[2024.07.23-15.44.24:874][202]MaterialEditorStats: Instanced UI Vertex Shader: 0 instructions
+[2024.07.23-15.44.24:874][202]MaterialEditorStats: Texture samplers: 0/16
+[2024.07.23-15.44.24:874][202]MaterialEditorStats: Texture Lookups (Est.): VS(3), PS(0)
+[2024.07.23-15.44.24:874][202]MaterialEditorStats: User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2024.07.23-15.44.24:874][202]MaterialEditorStats: Shader Count: 0
+[2024.07.23-15.44.24:943][204]MaterialEditorStats: Default UI Pixel Shader: 53 instructions
+[2024.07.23-15.44.24:943][204]MaterialEditorStats: Default UI Vertex Shader: 47 instructions
+[2024.07.23-15.44.24:943][204]MaterialEditorStats: Instanced UI Vertex Shader: 0 instructions
+[2024.07.23-15.44.24:943][204]MaterialEditorStats: Texture samplers: 0/16
+[2024.07.23-15.44.24:943][204]MaterialEditorStats: Texture Lookups (Est.): VS(3), PS(0)
+[2024.07.23-15.44.24:943][204]MaterialEditorStats: User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2024.07.23-15.44.24:943][204]MaterialEditorStats: Shader Count: 2
+[2024.07.23-15.44.27:389][342]MaterialEditorStats: Default UI Pixel Shader: 0 instructions
+[2024.07.23-15.44.27:389][342]MaterialEditorStats: Default UI Vertex Shader: 0 instructions
+[2024.07.23-15.44.27:389][342]MaterialEditorStats: Instanced UI Vertex Shader: 0 instructions
+[2024.07.23-15.44.27:389][342]MaterialEditorStats: Texture samplers: 0/16
+[2024.07.23-15.44.27:389][342]MaterialEditorStats: Texture Lookups (Est.): VS(3), PS(0)
+[2024.07.23-15.44.27:389][342]MaterialEditorStats: User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2024.07.23-15.44.27:389][342]MaterialEditorStats: Shader Count: 0
+[2024.07.23-15.44.27:419][344]MaterialEditorStats: Default UI Pixel Shader: 53 instructions
+[2024.07.23-15.44.27:419][344]MaterialEditorStats: Default UI Vertex Shader: 47 instructions
+[2024.07.23-15.44.27:419][344]MaterialEditorStats: Instanced UI Vertex Shader: 0 instructions
+[2024.07.23-15.44.27:420][344]MaterialEditorStats: Texture samplers: 0/16
+[2024.07.23-15.44.27:420][344]MaterialEditorStats: Texture Lookups (Est.): VS(3), PS(0)
+[2024.07.23-15.44.27:420][344]MaterialEditorStats: User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2024.07.23-15.44.27:420][344]MaterialEditorStats: Shader Count: 2
+[2024.07.23-15.44.28:818][418]MaterialEditorStats: Default UI Pixel Shader: 0 instructions
+[2024.07.23-15.44.28:818][418]MaterialEditorStats: Default UI Vertex Shader: 0 instructions
+[2024.07.23-15.44.28:818][418]MaterialEditorStats: Instanced UI Vertex Shader: 0 instructions
+[2024.07.23-15.44.28:818][418]MaterialEditorStats: Texture samplers: 0/16
+[2024.07.23-15.44.28:818][418]MaterialEditorStats: Texture Lookups (Est.): VS(3), PS(0)
+[2024.07.23-15.44.28:818][418]MaterialEditorStats: User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2024.07.23-15.44.28:818][418]MaterialEditorStats: Shader Count: 0
+[2024.07.23-15.44.28:851][420]MaterialEditorStats: Default UI Pixel Shader: 53 instructions
+[2024.07.23-15.44.28:851][420]MaterialEditorStats: Default UI Vertex Shader: 47 instructions
+[2024.07.23-15.44.28:851][420]MaterialEditorStats: Instanced UI Vertex Shader: 0 instructions
+[2024.07.23-15.44.28:851][420]MaterialEditorStats: Texture samplers: 0/16
+[2024.07.23-15.44.28:851][420]MaterialEditorStats: Texture Lookups (Est.): VS(3), PS(0)
+[2024.07.23-15.44.28:851][420]MaterialEditorStats: User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2024.07.23-15.44.28:851][420]MaterialEditorStats: Shader Count: 2
+[2024.07.23-15.44.30:025][481]MaterialEditorStats: Default UI Pixel Shader: 0 instructions
+[2024.07.23-15.44.30:025][481]MaterialEditorStats: Default UI Vertex Shader: 0 instructions
+[2024.07.23-15.44.30:025][481]MaterialEditorStats: Instanced UI Vertex Shader: 0 instructions
+[2024.07.23-15.44.30:025][481]MaterialEditorStats: Texture samplers: 0/16
+[2024.07.23-15.44.30:025][481]MaterialEditorStats: Texture Lookups (Est.): VS(3), PS(0)
+[2024.07.23-15.44.30:025][481]MaterialEditorStats: User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2024.07.23-15.44.30:025][481]MaterialEditorStats: Shader Count: 0
+[2024.07.23-15.44.30:060][483]MaterialEditorStats: Default UI Pixel Shader: 53 instructions
+[2024.07.23-15.44.30:060][483]MaterialEditorStats: Default UI Vertex Shader: 47 instructions
+[2024.07.23-15.44.30:060][483]MaterialEditorStats: Instanced UI Vertex Shader: 0 instructions
+[2024.07.23-15.44.30:060][483]MaterialEditorStats: Texture samplers: 0/16
+[2024.07.23-15.44.30:060][483]MaterialEditorStats: Texture Lookups (Est.): VS(3), PS(0)
+[2024.07.23-15.44.30:060][483]MaterialEditorStats: User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2024.07.23-15.44.30:060][483]MaterialEditorStats: Shader Count: 2
+[2024.07.23-15.44.31:325][547]MaterialEditorStats: Default UI Pixel Shader: 0 instructions
+[2024.07.23-15.44.31:325][547]MaterialEditorStats: Default UI Vertex Shader: 0 instructions
+[2024.07.23-15.44.31:325][547]MaterialEditorStats: Instanced UI Vertex Shader: 0 instructions
+[2024.07.23-15.44.31:325][547]MaterialEditorStats: Texture samplers: 0/16
+[2024.07.23-15.44.31:325][547]MaterialEditorStats: Texture Lookups (Est.): VS(3), PS(0)
+[2024.07.23-15.44.31:325][547]MaterialEditorStats: User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2024.07.23-15.44.31:325][547]MaterialEditorStats: Shader Count: 0
+[2024.07.23-15.44.31:565][557]MaterialEditorStats: Default UI Pixel Shader: 0 instructions
+[2024.07.23-15.44.31:565][557]MaterialEditorStats: Default UI Vertex Shader: 47 instructions
+[2024.07.23-15.44.31:565][557]MaterialEditorStats: Instanced UI Vertex Shader: 0 instructions
+[2024.07.23-15.44.31:565][557]MaterialEditorStats: Texture samplers: 0/16
+[2024.07.23-15.44.31:565][557]MaterialEditorStats: Texture Lookups (Est.): VS(3), PS(0)
+[2024.07.23-15.44.31:565][557]MaterialEditorStats: User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2024.07.23-15.44.31:565][557]MaterialEditorStats: Shader Count: 1
+[2024.07.23-15.44.31:673][563]MaterialEditorStats: Default UI Pixel Shader: 53 instructions
+[2024.07.23-15.44.31:673][563]MaterialEditorStats: Default UI Vertex Shader: 47 instructions
+[2024.07.23-15.44.31:673][563]MaterialEditorStats: Instanced UI Vertex Shader: 0 instructions
+[2024.07.23-15.44.31:673][563]MaterialEditorStats: Texture samplers: 0/16
+[2024.07.23-15.44.31:673][563]MaterialEditorStats: Texture Lookups (Est.): VS(3), PS(0)
+[2024.07.23-15.44.31:673][563]MaterialEditorStats: User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2024.07.23-15.44.31:673][563]MaterialEditorStats: Shader Count: 2
+[2024.07.23-15.44.32:475][611]LogMaterialEditor: Saving and Compiling material M_TestVignette
+[2024.07.23-15.44.32:551][611]LogUObjectHash: Compacting FUObjectHashTables data took   2.68ms
+[2024.07.23-15.44.32:677][611]LogUObjectHash: Compacting FUObjectHashTables data took   0.67ms
+[2024.07.23-15.44.32:690][611]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.07.23-15.44.33:350][611]LogSavePackage: Moving output files for package: /Game/Levels/M_TestVignette
+[2024.07.23-15.44.33:352][611]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/M_TestVignetteE2CCFADF4FBE34235D603C87DC1B28CC.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/Levels/M_TestVignette.uasset'
+[2024.07.23-15.44.33:364][611]LogFileHelpers: InternalPromptForCheckoutAndSave took 673 ms (total: 9.17 sec)
+[2024.07.23-15.44.33:366][611]AssetCheck: New page: Asset Save: M_TestVignette
+[2024.07.23-15.44.33:366][611]LogContentValidation: Display: Validating /Script/Engine.Material /Game/Levels/M_TestVignette.M_TestVignette
+[2024.07.23-15.44.33:369][611]MaterialEditorStats: Default UI Pixel Shader: 53 instructions
+[2024.07.23-15.44.33:369][611]MaterialEditorStats: Default UI Vertex Shader: 47 instructions
+[2024.07.23-15.44.33:369][611]MaterialEditorStats: Instanced UI Vertex Shader: 47 instructions
+[2024.07.23-15.44.33:369][611]MaterialEditorStats: Texture samplers: 3/16
+[2024.07.23-15.44.33:369][611]MaterialEditorStats: Texture Lookups (Est.): VS(3), PS(0)
+[2024.07.23-15.44.33:369][611]MaterialEditorStats: User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2024.07.23-15.44.33:369][611]MaterialEditorStats: Shader Count: 12
+[2024.07.23-15.44.36:503][799]LogMaterialEditor: Saving and Compiling material M_TestVignette
+[2024.07.23-15.44.36:506][799]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.07.23-15.44.36:657][799]LogSavePackage: Moving output files for package: /Game/Levels/M_TestVignette
+[2024.07.23-15.44.36:659][799]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/M_TestVignetteEC17B170451E54EA850CC691911F4692.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/Levels/M_TestVignette.uasset'
+[2024.07.23-15.44.36:673][799]LogFileHelpers: InternalPromptForCheckoutAndSave took 166 ms (total: 9.34 sec)
+[2024.07.23-15.44.36:676][799]AssetCheck: New page: Asset Save: M_TestVignette
+[2024.07.23-15.44.36:676][799]LogContentValidation: Display: Validating /Script/Engine.Material /Game/Levels/M_TestVignette.M_TestVignette
+[2024.07.23-15.44.41:140][ 49]MaterialEditorStats: Default UI Pixel Shader: 0 instructions
+[2024.07.23-15.44.41:140][ 49]MaterialEditorStats: Default UI Vertex Shader: 0 instructions
+[2024.07.23-15.44.41:140][ 49]MaterialEditorStats: Instanced UI Vertex Shader: 0 instructions
+[2024.07.23-15.44.41:140][ 49]MaterialEditorStats: Texture samplers: 0/16
+[2024.07.23-15.44.41:140][ 49]MaterialEditorStats: Texture Lookups (Est.): VS(3), PS(0)
+[2024.07.23-15.44.41:140][ 49]MaterialEditorStats: User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2024.07.23-15.44.41:140][ 49]MaterialEditorStats: Shader Count: 0
+[2024.07.23-15.44.41:368][ 63]MaterialEditorStats: Default UI Pixel Shader: 0 instructions
+[2024.07.23-15.44.41:368][ 63]MaterialEditorStats: Default UI Vertex Shader: 47 instructions
+[2024.07.23-15.44.41:368][ 63]MaterialEditorStats: Instanced UI Vertex Shader: 0 instructions
+[2024.07.23-15.44.41:368][ 63]MaterialEditorStats: Texture samplers: 0/16
+[2024.07.23-15.44.41:368][ 63]MaterialEditorStats: Texture Lookups (Est.): VS(3), PS(0)
+[2024.07.23-15.44.41:368][ 63]MaterialEditorStats: User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2024.07.23-15.44.41:368][ 63]MaterialEditorStats: Shader Count: 1
+[2024.07.23-15.44.41:468][ 69]MaterialEditorStats: Default UI Pixel Shader: 52 instructions
+[2024.07.23-15.44.41:468][ 69]MaterialEditorStats: Default UI Vertex Shader: 47 instructions
+[2024.07.23-15.44.41:468][ 69]MaterialEditorStats: Instanced UI Vertex Shader: 0 instructions
+[2024.07.23-15.44.41:468][ 69]MaterialEditorStats: Texture samplers: 0/16
+[2024.07.23-15.44.41:468][ 69]MaterialEditorStats: Texture Lookups (Est.): VS(3), PS(0)
+[2024.07.23-15.44.41:468][ 69]MaterialEditorStats: User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2024.07.23-15.44.41:468][ 69]MaterialEditorStats: Shader Count: 2
+[2024.07.23-15.44.41:788][ 87]LogSlate: Window 'Color Picker' being destroyed
+[2024.07.23-15.44.41:799][ 87]MaterialEditorStats: Default UI Pixel Shader: 0 instructions
+[2024.07.23-15.44.41:799][ 87]MaterialEditorStats: Default UI Vertex Shader: 0 instructions
+[2024.07.23-15.44.41:799][ 87]MaterialEditorStats: Instanced UI Vertex Shader: 0 instructions
+[2024.07.23-15.44.41:799][ 87]MaterialEditorStats: Texture samplers: 0/16
+[2024.07.23-15.44.41:799][ 87]MaterialEditorStats: Texture Lookups (Est.): VS(3), PS(0)
+[2024.07.23-15.44.41:799][ 87]MaterialEditorStats: User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2024.07.23-15.44.41:799][ 87]MaterialEditorStats: Shader Count: 0
+[2024.07.23-15.44.41:828][ 89]MaterialEditorStats: Default UI Pixel Shader: 52 instructions
+[2024.07.23-15.44.41:828][ 89]MaterialEditorStats: Default UI Vertex Shader: 47 instructions
+[2024.07.23-15.44.41:828][ 89]MaterialEditorStats: Instanced UI Vertex Shader: 0 instructions
+[2024.07.23-15.44.41:828][ 89]MaterialEditorStats: Texture samplers: 0/16
+[2024.07.23-15.44.41:828][ 89]MaterialEditorStats: Texture Lookups (Est.): VS(3), PS(0)
+[2024.07.23-15.44.41:828][ 89]MaterialEditorStats: User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2024.07.23-15.44.41:828][ 89]MaterialEditorStats: Shader Count: 2
+[2024.07.23-15.44.42:645][137]LogMaterialEditor: Saving and Compiling material M_TestVignette
+[2024.07.23-15.44.42:725][137]LogUObjectHash: Compacting FUObjectHashTables data took   1.39ms
+[2024.07.23-15.44.42:857][137]LogUObjectHash: Compacting FUObjectHashTables data took   0.73ms
+[2024.07.23-15.44.42:871][137]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.07.23-15.44.43:671][137]LogSavePackage: Moving output files for package: /Game/Levels/M_TestVignette
+[2024.07.23-15.44.43:672][137]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/M_TestVignetteDD324BE4409EA1821B8B2DA52EB9CC86.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/Levels/M_TestVignette.uasset'
+[2024.07.23-15.44.43:686][137]LogFileHelpers: InternalPromptForCheckoutAndSave took 814 ms (total: 10.1 sec)
+[2024.07.23-15.44.43:688][137]AssetCheck: New page: Asset Save: M_TestVignette
+[2024.07.23-15.44.43:688][137]LogContentValidation: Display: Validating /Script/Engine.Material /Game/Levels/M_TestVignette.M_TestVignette
+[2024.07.23-15.44.43:689][137]MaterialEditorStats: Default UI Pixel Shader: 52 instructions
+[2024.07.23-15.44.43:689][137]MaterialEditorStats: Default UI Vertex Shader: 47 instructions
+[2024.07.23-15.44.43:689][137]MaterialEditorStats: Instanced UI Vertex Shader: 47 instructions
+[2024.07.23-15.44.43:689][137]MaterialEditorStats: Texture samplers: 3/16
+[2024.07.23-15.44.43:689][137]MaterialEditorStats: Texture Lookups (Est.): VS(3), PS(0)
+[2024.07.23-15.44.43:689][137]MaterialEditorStats: User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2024.07.23-15.44.43:689][137]MaterialEditorStats: Shader Count: 12
+[2024.07.23-15.44.45:200][228]LogMaterialEditor: Saving and Compiling material M_TestVignette
+[2024.07.23-15.44.45:204][228]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.07.23-15.44.45:357][228]LogSavePackage: Moving output files for package: /Game/Levels/M_TestVignette
+[2024.07.23-15.44.45:358][228]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/M_TestVignette72502AB244EFDF4039467E8CAA25B1A8.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/Levels/M_TestVignette.uasset'
+[2024.07.23-15.44.45:369][228]LogFileHelpers: InternalPromptForCheckoutAndSave took 165 ms (total: 10.3 sec)
+[2024.07.23-15.44.45:372][228]AssetCheck: New page: Asset Save: M_TestVignette
+[2024.07.23-15.44.45:372][228]LogContentValidation: Display: Validating /Script/Engine.Material /Game/Levels/M_TestVignette.M_TestVignette
+[2024.07.23-15.44.56:923][697]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.07.23-15.44.57:042][697]LogSavePackage: Moving output files for package: /Game/UI/WBP_HurtScreen
+[2024.07.23-15.44.57:044][697]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/WBP_HurtScreen001FC0C346BAA9765FA6F590229F2BE9.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/UI/WBP_HurtScreen.uasset'
+[2024.07.23-15.44.57:057][697]LogFileHelpers: InternalPromptForCheckoutAndSave took 134 ms (total: 10.4 sec)
+[2024.07.23-15.44.57:059][697]AssetCheck: New page: Asset Save: WBP_HurtScreen
+[2024.07.23-15.44.57:059][697]LogContentValidation: Display: Validating /Script/UMGEditor.WidgetBlueprint /Game/UI/WBP_HurtScreen.WBP_HurtScreen
+[2024.07.23-15.45.02:935][ 45]MaterialEditorStats: Default UI Pixel Shader: 0 instructions
+[2024.07.23-15.45.02:935][ 45]MaterialEditorStats: Default UI Vertex Shader: 0 instructions
+[2024.07.23-15.45.02:935][ 45]MaterialEditorStats: Instanced UI Vertex Shader: 0 instructions
+[2024.07.23-15.45.02:935][ 45]MaterialEditorStats: Texture samplers: 0/16
+[2024.07.23-15.45.02:935][ 45]MaterialEditorStats: Texture Lookups (Est.): VS(3), PS(0)
+[2024.07.23-15.45.02:935][ 45]MaterialEditorStats: User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2024.07.23-15.45.02:935][ 45]MaterialEditorStats: Shader Count: 0
+[2024.07.23-15.45.02:964][ 47]MaterialEditorStats: Default UI Pixel Shader: 52 instructions
+[2024.07.23-15.45.02:964][ 47]MaterialEditorStats: Default UI Vertex Shader: 47 instructions
+[2024.07.23-15.45.02:964][ 47]MaterialEditorStats: Instanced UI Vertex Shader: 0 instructions
+[2024.07.23-15.45.02:964][ 47]MaterialEditorStats: Texture samplers: 0/16
+[2024.07.23-15.45.02:964][ 47]MaterialEditorStats: Texture Lookups (Est.): VS(3), PS(0)
+[2024.07.23-15.45.02:964][ 47]MaterialEditorStats: User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2024.07.23-15.45.02:964][ 47]MaterialEditorStats: Shader Count: 2
+[2024.07.23-15.45.06:527][258]MaterialEditorStats: Default UI Pixel Shader: 0 instructions
+[2024.07.23-15.45.06:527][258]MaterialEditorStats: Default UI Vertex Shader: 0 instructions
+[2024.07.23-15.45.06:527][258]MaterialEditorStats: Instanced UI Vertex Shader: 0 instructions
+[2024.07.23-15.45.06:527][258]MaterialEditorStats: Texture samplers: 0/16
+[2024.07.23-15.45.06:527][258]MaterialEditorStats: Texture Lookups (Est.): VS(3), PS(0)
+[2024.07.23-15.45.06:528][258]MaterialEditorStats: User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2024.07.23-15.45.06:528][258]MaterialEditorStats: Shader Count: 0
+[2024.07.23-15.45.06:554][260]MaterialEditorStats: Default UI Pixel Shader: 52 instructions
+[2024.07.23-15.45.06:554][260]MaterialEditorStats: Default UI Vertex Shader: 47 instructions
+[2024.07.23-15.45.06:554][260]MaterialEditorStats: Instanced UI Vertex Shader: 0 instructions
+[2024.07.23-15.45.06:554][260]MaterialEditorStats: Texture samplers: 0/16
+[2024.07.23-15.45.06:554][260]MaterialEditorStats: Texture Lookups (Est.): VS(3), PS(0)
+[2024.07.23-15.45.06:554][260]MaterialEditorStats: User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2024.07.23-15.45.06:555][260]MaterialEditorStats: Shader Count: 2
+[2024.07.23-15.45.07:831][336]LogMaterialEditor: Saving and Compiling material M_TestVignette
+[2024.07.23-15.45.07:916][336]LogUObjectHash: Compacting FUObjectHashTables data took   1.54ms
+[2024.07.23-15.45.08:036][336]LogUObjectHash: Compacting FUObjectHashTables data took   0.77ms
+[2024.07.23-15.45.08:051][336]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.07.23-15.45.08:222][336]LogSavePackage: Moving output files for package: /Game/Levels/M_TestVignette
+[2024.07.23-15.45.08:223][336]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/M_TestVignetteE59D82524DE40531C222F987C806C20B.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/Levels/M_TestVignette.uasset'
+[2024.07.23-15.45.08:235][336]LogFileHelpers: InternalPromptForCheckoutAndSave took 184 ms (total: 10.6 sec)
+[2024.07.23-15.45.08:237][336]AssetCheck: New page: Asset Save: M_TestVignette
+[2024.07.23-15.45.08:237][336]LogContentValidation: Display: Validating /Script/Engine.Material /Game/Levels/M_TestVignette.M_TestVignette
+[2024.07.23-15.45.08:240][336]MaterialEditorStats: Default UI Pixel Shader: 52 instructions
+[2024.07.23-15.45.08:240][336]MaterialEditorStats: Default UI Vertex Shader: 47 instructions
+[2024.07.23-15.45.08:240][336]MaterialEditorStats: Instanced UI Vertex Shader: 47 instructions
+[2024.07.23-15.45.08:240][336]MaterialEditorStats: Texture samplers: 3/16
+[2024.07.23-15.45.08:240][336]MaterialEditorStats: Texture Lookups (Est.): VS(3), PS(0)
+[2024.07.23-15.45.08:240][336]MaterialEditorStats: User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2024.07.23-15.45.08:240][336]MaterialEditorStats: Shader Count: 12
+[2024.07.23-15.45.12:469][587]MaterialEditorStats: Default UI Pixel Shader: 0 instructions
+[2024.07.23-15.45.12:469][587]MaterialEditorStats: Default UI Vertex Shader: 0 instructions
+[2024.07.23-15.45.12:469][587]MaterialEditorStats: Instanced UI Vertex Shader: 0 instructions
+[2024.07.23-15.45.12:470][587]MaterialEditorStats: Texture samplers: 0/16
+[2024.07.23-15.45.12:470][587]MaterialEditorStats: Texture Lookups (Est.): VS(3), PS(0)
+[2024.07.23-15.45.12:470][587]MaterialEditorStats: User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2024.07.23-15.45.12:470][587]MaterialEditorStats: Shader Count: 0
+[2024.07.23-15.45.12:496][589]MaterialEditorStats: Default UI Pixel Shader: 52 instructions
+[2024.07.23-15.45.12:496][589]MaterialEditorStats: Default UI Vertex Shader: 47 instructions
+[2024.07.23-15.45.12:496][589]MaterialEditorStats: Instanced UI Vertex Shader: 0 instructions
+[2024.07.23-15.45.12:496][589]MaterialEditorStats: Texture samplers: 0/16
+[2024.07.23-15.45.12:496][589]MaterialEditorStats: Texture Lookups (Est.): VS(3), PS(0)
+[2024.07.23-15.45.12:496][589]MaterialEditorStats: User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2024.07.23-15.45.12:496][589]MaterialEditorStats: Shader Count: 2
+[2024.07.23-15.45.14:169][688]MaterialEditorStats: Default UI Pixel Shader: 0 instructions
+[2024.07.23-15.45.14:169][688]MaterialEditorStats: Default UI Vertex Shader: 0 instructions
+[2024.07.23-15.45.14:169][688]MaterialEditorStats: Instanced UI Vertex Shader: 0 instructions
+[2024.07.23-15.45.14:169][688]MaterialEditorStats: Texture samplers: 0/16
+[2024.07.23-15.45.14:169][688]MaterialEditorStats: Texture Lookups (Est.): VS(3), PS(0)
+[2024.07.23-15.45.14:169][688]MaterialEditorStats: User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2024.07.23-15.45.14:169][688]MaterialEditorStats: Shader Count: 0
+[2024.07.23-15.45.14:217][691]MaterialEditorStats: Default UI Pixel Shader: 52 instructions
+[2024.07.23-15.45.14:217][691]MaterialEditorStats: Default UI Vertex Shader: 47 instructions
+[2024.07.23-15.45.14:217][691]MaterialEditorStats: Instanced UI Vertex Shader: 0 instructions
+[2024.07.23-15.45.14:217][691]MaterialEditorStats: Texture samplers: 0/16
+[2024.07.23-15.45.14:217][691]MaterialEditorStats: Texture Lookups (Est.): VS(3), PS(0)
+[2024.07.23-15.45.14:217][691]MaterialEditorStats: User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2024.07.23-15.45.14:217][691]MaterialEditorStats: Shader Count: 2
+[2024.07.23-15.45.14:927][734]LogMaterialEditor: Saving and Compiling material M_TestVignette
+[2024.07.23-15.45.15:002][734]LogUObjectHash: Compacting FUObjectHashTables data took   1.46ms
+[2024.07.23-15.45.15:127][734]LogUObjectHash: Compacting FUObjectHashTables data took   0.67ms
+[2024.07.23-15.45.15:141][734]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.07.23-15.45.15:313][734]LogSavePackage: Moving output files for package: /Game/Levels/M_TestVignette
+[2024.07.23-15.45.15:314][734]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/M_TestVignette0D93772C45678587DDCFCCA1A3C6DDD6.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/Levels/M_TestVignette.uasset'
+[2024.07.23-15.45.15:328][734]LogFileHelpers: InternalPromptForCheckoutAndSave took 187 ms (total: 10.8 sec)
+[2024.07.23-15.45.15:330][734]AssetCheck: New page: Asset Save: M_TestVignette
+[2024.07.23-15.45.15:330][734]LogContentValidation: Display: Validating /Script/Engine.Material /Game/Levels/M_TestVignette.M_TestVignette
+[2024.07.23-15.45.15:332][734]MaterialEditorStats: Default UI Pixel Shader: 52 instructions
+[2024.07.23-15.45.15:332][734]MaterialEditorStats: Default UI Vertex Shader: 47 instructions
+[2024.07.23-15.45.15:332][734]MaterialEditorStats: Instanced UI Vertex Shader: 47 instructions
+[2024.07.23-15.45.15:332][734]MaterialEditorStats: Texture samplers: 3/16
+[2024.07.23-15.45.15:332][734]MaterialEditorStats: Texture Lookups (Est.): VS(3), PS(0)
+[2024.07.23-15.45.15:332][734]MaterialEditorStats: User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2024.07.23-15.45.15:332][734]MaterialEditorStats: Shader Count: 12
+[2024.07.23-15.45.20:570][ 43]MaterialEditorStats: Default UI Pixel Shader: 0 instructions
+[2024.07.23-15.45.20:570][ 43]MaterialEditorStats: Default UI Vertex Shader: 0 instructions
+[2024.07.23-15.45.20:570][ 43]MaterialEditorStats: Instanced UI Vertex Shader: 0 instructions
+[2024.07.23-15.45.20:570][ 43]MaterialEditorStats: Texture samplers: 0/16
+[2024.07.23-15.45.20:570][ 43]MaterialEditorStats: Texture Lookups (Est.): VS(3), PS(0)
+[2024.07.23-15.45.20:570][ 43]MaterialEditorStats: User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2024.07.23-15.45.20:570][ 43]MaterialEditorStats: Shader Count: 0
+[2024.07.23-15.45.20:595][ 45]MaterialEditorStats: Default UI Pixel Shader: 52 instructions
+[2024.07.23-15.45.20:597][ 45]MaterialEditorStats: Default UI Vertex Shader: 47 instructions
+[2024.07.23-15.45.20:597][ 45]MaterialEditorStats: Instanced UI Vertex Shader: 0 instructions
+[2024.07.23-15.45.20:597][ 45]MaterialEditorStats: Texture samplers: 0/16
+[2024.07.23-15.45.20:597][ 45]MaterialEditorStats: Texture Lookups (Est.): VS(3), PS(0)
+[2024.07.23-15.45.20:597][ 45]MaterialEditorStats: User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2024.07.23-15.45.20:597][ 45]MaterialEditorStats: Shader Count: 2
+[2024.07.23-15.45.21:950][125]MaterialEditorStats: Default UI Pixel Shader: 0 instructions
+[2024.07.23-15.45.21:950][125]MaterialEditorStats: Default UI Vertex Shader: 0 instructions
+[2024.07.23-15.45.21:950][125]MaterialEditorStats: Instanced UI Vertex Shader: 0 instructions
+[2024.07.23-15.45.21:950][125]MaterialEditorStats: Texture samplers: 0/16
+[2024.07.23-15.45.21:950][125]MaterialEditorStats: Texture Lookups (Est.): VS(3), PS(0)
+[2024.07.23-15.45.21:950][125]MaterialEditorStats: User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2024.07.23-15.45.21:950][125]MaterialEditorStats: Shader Count: 0
+[2024.07.23-15.45.21:999][128]MaterialEditorStats: Default UI Pixel Shader: 52 instructions
+[2024.07.23-15.45.21:999][128]MaterialEditorStats: Default UI Vertex Shader: 47 instructions
+[2024.07.23-15.45.21:999][128]MaterialEditorStats: Instanced UI Vertex Shader: 0 instructions
+[2024.07.23-15.45.21:999][128]MaterialEditorStats: Texture samplers: 0/16
+[2024.07.23-15.45.21:999][128]MaterialEditorStats: Texture Lookups (Est.): VS(3), PS(0)
+[2024.07.23-15.45.22:000][128]MaterialEditorStats: User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2024.07.23-15.45.22:000][128]MaterialEditorStats: Shader Count: 2
+[2024.07.23-15.45.26:483][394]MaterialEditorStats: Default UI Pixel Shader: 0 instructions
+[2024.07.23-15.45.26:483][394]MaterialEditorStats: Default UI Vertex Shader: 0 instructions
+[2024.07.23-15.45.26:483][394]MaterialEditorStats: Instanced UI Vertex Shader: 0 instructions
+[2024.07.23-15.45.26:483][394]MaterialEditorStats: Texture samplers: 0/16
+[2024.07.23-15.45.26:483][394]MaterialEditorStats: Texture Lookups (Est.): VS(3), PS(0)
+[2024.07.23-15.45.26:483][394]MaterialEditorStats: User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2024.07.23-15.45.26:483][394]MaterialEditorStats: Shader Count: 0
+[2024.07.23-15.45.26:510][396]MaterialEditorStats: Default UI Pixel Shader: 52 instructions
+[2024.07.23-15.45.26:510][396]MaterialEditorStats: Default UI Vertex Shader: 47 instructions
+[2024.07.23-15.45.26:510][396]MaterialEditorStats: Instanced UI Vertex Shader: 0 instructions
+[2024.07.23-15.45.26:510][396]MaterialEditorStats: Texture samplers: 0/16
+[2024.07.23-15.45.26:511][396]MaterialEditorStats: Texture Lookups (Est.): VS(3), PS(0)
+[2024.07.23-15.45.26:511][396]MaterialEditorStats: User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2024.07.23-15.45.26:511][396]MaterialEditorStats: Shader Count: 2
+[2024.07.23-15.45.27:444][451]MaterialEditorStats: Default UI Pixel Shader: 0 instructions
+[2024.07.23-15.45.27:444][451]MaterialEditorStats: Default UI Vertex Shader: 0 instructions
+[2024.07.23-15.45.27:444][451]MaterialEditorStats: Instanced UI Vertex Shader: 0 instructions
+[2024.07.23-15.45.27:444][451]MaterialEditorStats: Texture samplers: 0/16
+[2024.07.23-15.45.27:444][451]MaterialEditorStats: Texture Lookups (Est.): VS(3), PS(0)
+[2024.07.23-15.45.27:444][451]MaterialEditorStats: User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2024.07.23-15.45.27:444][451]MaterialEditorStats: Shader Count: 0
+[2024.07.23-15.45.27:473][453]MaterialEditorStats: Default UI Pixel Shader: 52 instructions
+[2024.07.23-15.45.27:473][453]MaterialEditorStats: Default UI Vertex Shader: 47 instructions
+[2024.07.23-15.45.27:473][453]MaterialEditorStats: Instanced UI Vertex Shader: 0 instructions
+[2024.07.23-15.45.27:473][453]MaterialEditorStats: Texture samplers: 0/16
+[2024.07.23-15.45.27:473][453]MaterialEditorStats: Texture Lookups (Est.): VS(3), PS(0)
+[2024.07.23-15.45.27:473][453]MaterialEditorStats: User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2024.07.23-15.45.27:473][453]MaterialEditorStats: Shader Count: 2
+[2024.07.23-15.45.29:755][588]MaterialEditorStats: Default UI Pixel Shader: 0 instructions
+[2024.07.23-15.45.29:755][588]MaterialEditorStats: Default UI Vertex Shader: 0 instructions
+[2024.07.23-15.45.29:755][588]MaterialEditorStats: Instanced UI Vertex Shader: 0 instructions
+[2024.07.23-15.45.29:755][588]MaterialEditorStats: Texture samplers: 0/16
+[2024.07.23-15.45.29:755][588]MaterialEditorStats: Texture Lookups (Est.): VS(3), PS(0)
+[2024.07.23-15.45.29:755][588]MaterialEditorStats: User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2024.07.23-15.45.29:755][588]MaterialEditorStats: Shader Count: 0
+[2024.07.23-15.45.29:781][590]MaterialEditorStats: Default UI Pixel Shader: 52 instructions
+[2024.07.23-15.45.29:781][590]MaterialEditorStats: Default UI Vertex Shader: 47 instructions
+[2024.07.23-15.45.29:781][590]MaterialEditorStats: Instanced UI Vertex Shader: 0 instructions
+[2024.07.23-15.45.29:781][590]MaterialEditorStats: Texture samplers: 0/16
+[2024.07.23-15.45.29:781][590]MaterialEditorStats: Texture Lookups (Est.): VS(3), PS(0)
+[2024.07.23-15.45.29:781][590]MaterialEditorStats: User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2024.07.23-15.45.29:781][590]MaterialEditorStats: Shader Count: 2
+[2024.07.23-15.45.30:832][652]MaterialEditorStats: Default UI Pixel Shader: 0 instructions
+[2024.07.23-15.45.30:832][652]MaterialEditorStats: Default UI Vertex Shader: 0 instructions
+[2024.07.23-15.45.30:832][652]MaterialEditorStats: Instanced UI Vertex Shader: 0 instructions
+[2024.07.23-15.45.30:832][652]MaterialEditorStats: Texture samplers: 0/16
+[2024.07.23-15.45.30:832][652]MaterialEditorStats: Texture Lookups (Est.): VS(3), PS(0)
+[2024.07.23-15.45.30:832][652]MaterialEditorStats: User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2024.07.23-15.45.30:832][652]MaterialEditorStats: Shader Count: 0
+[2024.07.23-15.45.30:882][655]MaterialEditorStats: Default UI Pixel Shader: 52 instructions
+[2024.07.23-15.45.30:882][655]MaterialEditorStats: Default UI Vertex Shader: 47 instructions
+[2024.07.23-15.45.30:882][655]MaterialEditorStats: Instanced UI Vertex Shader: 0 instructions
+[2024.07.23-15.45.30:882][655]MaterialEditorStats: Texture samplers: 0/16
+[2024.07.23-15.45.30:882][655]MaterialEditorStats: Texture Lookups (Est.): VS(3), PS(0)
+[2024.07.23-15.45.30:882][655]MaterialEditorStats: User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2024.07.23-15.45.30:882][655]MaterialEditorStats: Shader Count: 2
+[2024.07.23-15.45.32:165][731]MaterialEditorStats: Default UI Pixel Shader: 0 instructions
+[2024.07.23-15.45.32:166][731]MaterialEditorStats: Default UI Vertex Shader: 0 instructions
+[2024.07.23-15.45.32:166][731]MaterialEditorStats: Instanced UI Vertex Shader: 0 instructions
+[2024.07.23-15.45.32:166][731]MaterialEditorStats: Texture samplers: 0/16
+[2024.07.23-15.45.32:166][731]MaterialEditorStats: Texture Lookups (Est.): VS(3), PS(0)
+[2024.07.23-15.45.32:166][731]MaterialEditorStats: User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2024.07.23-15.45.32:166][731]MaterialEditorStats: Shader Count: 0
+[2024.07.23-15.45.32:192][733]MaterialEditorStats: Default UI Pixel Shader: 52 instructions
+[2024.07.23-15.45.32:192][733]MaterialEditorStats: Default UI Vertex Shader: 47 instructions
+[2024.07.23-15.45.32:192][733]MaterialEditorStats: Instanced UI Vertex Shader: 0 instructions
+[2024.07.23-15.45.32:192][733]MaterialEditorStats: Texture samplers: 0/16
+[2024.07.23-15.45.32:192][733]MaterialEditorStats: Texture Lookups (Est.): VS(3), PS(0)
+[2024.07.23-15.45.32:192][733]MaterialEditorStats: User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2024.07.23-15.45.32:192][733]MaterialEditorStats: Shader Count: 2
+[2024.07.23-15.45.36:592][994]MaterialEditorStats: Default UI Pixel Shader: 0 instructions
+[2024.07.23-15.45.36:592][994]MaterialEditorStats: Default UI Vertex Shader: 0 instructions
+[2024.07.23-15.45.36:592][994]MaterialEditorStats: Instanced UI Vertex Shader: 0 instructions
+[2024.07.23-15.45.36:592][994]MaterialEditorStats: Texture samplers: 0/16
+[2024.07.23-15.45.36:592][994]MaterialEditorStats: Texture Lookups (Est.): VS(3), PS(0)
+[2024.07.23-15.45.36:592][994]MaterialEditorStats: User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2024.07.23-15.45.36:592][994]MaterialEditorStats: Shader Count: 0
+[2024.07.23-15.45.36:619][996]MaterialEditorStats: Default UI Pixel Shader: 52 instructions
+[2024.07.23-15.45.36:619][996]MaterialEditorStats: Default UI Vertex Shader: 47 instructions
+[2024.07.23-15.45.36:619][996]MaterialEditorStats: Instanced UI Vertex Shader: 0 instructions
+[2024.07.23-15.45.36:619][996]MaterialEditorStats: Texture samplers: 0/16
+[2024.07.23-15.45.36:619][996]MaterialEditorStats: Texture Lookups (Est.): VS(3), PS(0)
+[2024.07.23-15.45.36:619][996]MaterialEditorStats: User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2024.07.23-15.45.36:619][996]MaterialEditorStats: Shader Count: 2
+[2024.07.23-15.45.39:285][154]MaterialEditorStats: Default UI Pixel Shader: 0 instructions
+[2024.07.23-15.45.39:285][154]MaterialEditorStats: Default UI Vertex Shader: 0 instructions
+[2024.07.23-15.45.39:285][154]MaterialEditorStats: Instanced UI Vertex Shader: 0 instructions
+[2024.07.23-15.45.39:285][154]MaterialEditorStats: Texture samplers: 0/16
+[2024.07.23-15.45.39:285][154]MaterialEditorStats: Texture Lookups (Est.): VS(3), PS(0)
+[2024.07.23-15.45.39:285][154]MaterialEditorStats: User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2024.07.23-15.45.39:285][154]MaterialEditorStats: Shader Count: 0
+[2024.07.23-15.45.39:311][156]MaterialEditorStats: Default UI Pixel Shader: 52 instructions
+[2024.07.23-15.45.39:311][156]MaterialEditorStats: Default UI Vertex Shader: 47 instructions
+[2024.07.23-15.45.39:311][156]MaterialEditorStats: Instanced UI Vertex Shader: 0 instructions
+[2024.07.23-15.45.39:311][156]MaterialEditorStats: Texture samplers: 0/16
+[2024.07.23-15.45.39:311][156]MaterialEditorStats: Texture Lookups (Est.): VS(3), PS(0)
+[2024.07.23-15.45.39:311][156]MaterialEditorStats: User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2024.07.23-15.45.39:311][156]MaterialEditorStats: Shader Count: 2
+[2024.07.23-15.45.42:857][366]MaterialEditorStats: Default UI Pixel Shader: 0 instructions
+[2024.07.23-15.45.42:857][366]MaterialEditorStats: Default UI Vertex Shader: 0 instructions
+[2024.07.23-15.45.42:857][366]MaterialEditorStats: Instanced UI Vertex Shader: 0 instructions
+[2024.07.23-15.45.42:857][366]MaterialEditorStats: Texture samplers: 0/16
+[2024.07.23-15.45.42:857][366]MaterialEditorStats: Texture Lookups (Est.): VS(3), PS(0)
+[2024.07.23-15.45.42:857][366]MaterialEditorStats: User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2024.07.23-15.45.42:857][366]MaterialEditorStats: Shader Count: 0
+[2024.07.23-15.45.42:886][368]MaterialEditorStats: Default UI Pixel Shader: 52 instructions
+[2024.07.23-15.45.42:886][368]MaterialEditorStats: Default UI Vertex Shader: 47 instructions
+[2024.07.23-15.45.42:886][368]MaterialEditorStats: Instanced UI Vertex Shader: 0 instructions
+[2024.07.23-15.45.42:886][368]MaterialEditorStats: Texture samplers: 0/16
+[2024.07.23-15.45.42:886][368]MaterialEditorStats: Texture Lookups (Est.): VS(3), PS(0)
+[2024.07.23-15.45.42:887][368]MaterialEditorStats: User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2024.07.23-15.45.42:887][368]MaterialEditorStats: Shader Count: 2
+[2024.07.23-15.45.44:155][443]MaterialEditorStats: Default UI Pixel Shader: 0 instructions
+[2024.07.23-15.45.44:155][443]MaterialEditorStats: Default UI Vertex Shader: 0 instructions
+[2024.07.23-15.45.44:155][443]MaterialEditorStats: Instanced UI Vertex Shader: 0 instructions
+[2024.07.23-15.45.44:155][443]MaterialEditorStats: Texture samplers: 0/16
+[2024.07.23-15.45.44:155][443]MaterialEditorStats: Texture Lookups (Est.): VS(3), PS(0)
+[2024.07.23-15.45.44:155][443]MaterialEditorStats: User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2024.07.23-15.45.44:155][443]MaterialEditorStats: Shader Count: 0
+[2024.07.23-15.45.44:182][445]MaterialEditorStats: Default UI Pixel Shader: 52 instructions
+[2024.07.23-15.45.44:182][445]MaterialEditorStats: Default UI Vertex Shader: 47 instructions
+[2024.07.23-15.45.44:182][445]MaterialEditorStats: Instanced UI Vertex Shader: 0 instructions
+[2024.07.23-15.45.44:182][445]MaterialEditorStats: Texture samplers: 0/16
+[2024.07.23-15.45.44:182][445]MaterialEditorStats: Texture Lookups (Est.): VS(3), PS(0)
+[2024.07.23-15.45.44:182][445]MaterialEditorStats: User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2024.07.23-15.45.44:182][445]MaterialEditorStats: Shader Count: 2
+[2024.07.23-15.45.44:831][483]MaterialEditorStats: Default UI Pixel Shader: 0 instructions
+[2024.07.23-15.45.44:831][483]MaterialEditorStats: Default UI Vertex Shader: 0 instructions
+[2024.07.23-15.45.44:831][483]MaterialEditorStats: Instanced UI Vertex Shader: 0 instructions
+[2024.07.23-15.45.44:831][483]MaterialEditorStats: Texture samplers: 0/16
+[2024.07.23-15.45.44:831][483]MaterialEditorStats: Texture Lookups (Est.): VS(3), PS(0)
+[2024.07.23-15.45.44:831][483]MaterialEditorStats: User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2024.07.23-15.45.44:831][483]MaterialEditorStats: Shader Count: 0
+[2024.07.23-15.45.44:881][486]MaterialEditorStats: Default UI Pixel Shader: 52 instructions
+[2024.07.23-15.45.44:881][486]MaterialEditorStats: Default UI Vertex Shader: 47 instructions
+[2024.07.23-15.45.44:881][486]MaterialEditorStats: Instanced UI Vertex Shader: 0 instructions
+[2024.07.23-15.45.44:881][486]MaterialEditorStats: Texture samplers: 0/16
+[2024.07.23-15.45.44:881][486]MaterialEditorStats: Texture Lookups (Est.): VS(3), PS(0)
+[2024.07.23-15.45.44:881][486]MaterialEditorStats: User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2024.07.23-15.45.44:881][486]MaterialEditorStats: Shader Count: 2
+[2024.07.23-15.45.45:882][545]MaterialEditorStats: Default UI Pixel Shader: 0 instructions
+[2024.07.23-15.45.45:882][545]MaterialEditorStats: Default UI Vertex Shader: 0 instructions
+[2024.07.23-15.45.45:882][545]MaterialEditorStats: Instanced UI Vertex Shader: 0 instructions
+[2024.07.23-15.45.45:882][545]MaterialEditorStats: Texture samplers: 0/16
+[2024.07.23-15.45.45:882][545]MaterialEditorStats: Texture Lookups (Est.): VS(3), PS(0)
+[2024.07.23-15.45.45:882][545]MaterialEditorStats: User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2024.07.23-15.45.45:882][545]MaterialEditorStats: Shader Count: 0
+[2024.07.23-15.45.45:909][547]MaterialEditorStats: Default UI Pixel Shader: 52 instructions
+[2024.07.23-15.45.45:909][547]MaterialEditorStats: Default UI Vertex Shader: 47 instructions
+[2024.07.23-15.45.45:909][547]MaterialEditorStats: Instanced UI Vertex Shader: 0 instructions
+[2024.07.23-15.45.45:909][547]MaterialEditorStats: Texture samplers: 0/16
+[2024.07.23-15.45.45:909][547]MaterialEditorStats: Texture Lookups (Est.): VS(3), PS(0)
+[2024.07.23-15.45.45:909][547]MaterialEditorStats: User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2024.07.23-15.45.45:909][547]MaterialEditorStats: Shader Count: 2
+[2024.07.23-15.45.46:741][597]LogMaterialEditor: Saving and Compiling material M_TestVignette
+[2024.07.23-15.45.46:822][597]LogUObjectHash: Compacting FUObjectHashTables data took   1.41ms
+[2024.07.23-15.45.46:946][597]LogUObjectHash: Compacting FUObjectHashTables data took   0.69ms
+[2024.07.23-15.45.46:960][597]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.07.23-15.45.47:127][597]LogSavePackage: Moving output files for package: /Game/Levels/M_TestVignette
+[2024.07.23-15.45.47:128][597]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/M_TestVignette032DB48142FA93FA89BC6990BD694C1C.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/Levels/M_TestVignette.uasset'
+[2024.07.23-15.45.47:141][597]LogFileHelpers: InternalPromptForCheckoutAndSave took 181 ms (total: 11.0 sec)
+[2024.07.23-15.45.47:143][597]AssetCheck: New page: Asset Save: M_TestVignette
+[2024.07.23-15.45.47:143][597]LogContentValidation: Display: Validating /Script/Engine.Material /Game/Levels/M_TestVignette.M_TestVignette
+[2024.07.23-15.45.47:146][597]MaterialEditorStats: Default UI Pixel Shader: 52 instructions
+[2024.07.23-15.45.47:146][597]MaterialEditorStats: Default UI Vertex Shader: 47 instructions
+[2024.07.23-15.45.47:146][597]MaterialEditorStats: Instanced UI Vertex Shader: 47 instructions
+[2024.07.23-15.45.47:146][597]MaterialEditorStats: Texture samplers: 3/16
+[2024.07.23-15.45.47:146][597]MaterialEditorStats: Texture Lookups (Est.): VS(3), PS(0)
+[2024.07.23-15.45.47:146][597]MaterialEditorStats: User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2024.07.23-15.45.47:146][597]MaterialEditorStats: Shader Count: 12
+[2024.07.23-15.45.48:926][704]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.07.23-15.45.49:080][704]LogSavePackage: Moving output files for package: /Game/UI/WBP_HurtScreen
+[2024.07.23-15.45.49:081][704]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/WBP_HurtScreen271EEBBE4715C86CD721D4BBF7205569.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/UI/WBP_HurtScreen.uasset'
+[2024.07.23-15.45.49:092][704]LogFileHelpers: InternalPromptForCheckoutAndSave took 165 ms (total: 11.1 sec)
+[2024.07.23-15.45.49:093][704]AssetCheck: New page: Asset Save: WBP_HurtScreen
+[2024.07.23-15.45.49:093][704]LogContentValidation: Display: Validating /Script/UMGEditor.WidgetBlueprint /Game/UI/WBP_HurtScreen.WBP_HurtScreen
+[2024.07.23-15.45.49:533][731]BlueprintLog: New page: Compile WBP_HurtScreen
+[2024.07.23-15.45.49:566][731]LogUObjectHash: Compacting FUObjectHashTables data took   1.44ms
+[2024.07.23-15.45.52:030][872]LogDebuggerCommands: Repeating last play command: Selected Viewport
+[2024.07.23-15.45.52:046][872]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2024.07.23-15.45.52:046][872]PIE: New page: PIE session: MovementLevel (23 Jul 2024, 17:45:52)
+[2024.07.23-15.45.52:046][872]LogPlayLevel: Creating play world package: /Game/Levels/UEDPIE_0_MovementLevel
+[2024.07.23-15.45.52:048][872]LogPlayLevel: PIE: StaticDuplicateObject took: (0.003462s)
+[2024.07.23-15.45.52:048][872]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Levels/MovementLevel.MovementLevel to /Game/Levels/UEDPIE_0_MovementLevel.MovementLevel (0.003517s)
+[2024.07.23-15.45.52:066][872]LogUObjectHash: Compacting FUObjectHashTables data took   1.48ms
+[2024.07.23-15.45.52:069][872]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.07.23-15.45.52:070][872]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2024.07.23-15.45.52:070][872]LogAIModule: Creating AISystem for world MovementLevel
+[2024.07.23-15.45.52:070][872]LogPlayLevel: PIE: World Init took: (0.001183s)
+[2024.07.23-15.45.52:071][872]LogAudio: Display: Creating Audio Device:                 Id: 10, Scope: Unique, Realtime: True
+[2024.07.23-15.45.52:071][872]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2024.07.23-15.45.52:071][872]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2024.07.23-15.45.52:071][872]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2024.07.23-15.45.52:071][872]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2024.07.23-15.45.52:071][872]LogAudioMixer: Display: 	Number of buffers to queue:			  1
+[2024.07.23-15.45.52:071][872]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2024.07.23-15.45.52:071][872]LogAudioMixer: Display: 	Number of Async Source Workers:		  4
+[2024.07.23-15.45.52:071][872]LogAudio: Display: AudioDevice MaxSources: 32
+[2024.07.23-15.45.52:071][872]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2024.07.23-15.45.52:071][872]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2024.07.23-15.45.52:071][872]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2024.07.23-15.45.52:073][872]LogAudioMixer: Display: Initializing audio mixer using platform API: 'XAudio2'
+[2024.07.23-15.45.52:137][872]LogAudioMixer: Display: Using Audio Hardware Device Speakers (Realtek(R) Audio)
+[2024.07.23-15.45.52:138][872]LogAudioMixer: Display: Initializing Sound Submixes...
+[2024.07.23-15.45.52:138][872]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2024.07.23-15.45.52:138][872]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2024.07.23-15.45.52:139][872]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called. InstanceID=10
+[2024.07.23-15.45.52:139][872]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048, InstanceID=10
+[2024.07.23-15.45.52:141][872]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=10
+[2024.07.23-15.45.52:141][872]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time. InstanceID=10
+[2024.07.23-15.45.52:141][872]LogInit: FAudioDevice initialized with ID 10.
+[2024.07.23-15.45.52:141][872]LogAudio: Display: Audio Device (ID: 10) registered with world 'MovementLevel'.
+[2024.07.23-15.45.52:141][872]LogAudioMixer: Initializing Audio Bus Subsystem for audio device with ID 10
+[2024.07.23-15.45.52:145][872]LogLoad: Game class is 'BP_CardslingerTestGameMode_C'
+[2024.07.23-15.45.52:147][872]LogWorld: Bringing World /Game/Levels/UEDPIE_0_MovementLevel.MovementLevel up for play (max tick rate 60) at 2024.07.23-16.45.52
+[2024.07.23-15.45.52:147][872]LogWorld: Bringing up level for play took: 0.002847
+[2024.07.23-15.45.52:151][872]LogOnline: OSS: Created online subsystem instance for: :Context_24
+[2024.07.23-15.45.52:158][872]LogTemp: Display: ../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/CardDeck.sav
+[2024.07.23-15.45.52:159][872]LogTemp: Load successful!
+[2024.07.23-15.45.52:162][872]LogTemp: Save successful!
+[2024.07.23-15.45.52:164][872]PIE: Server logged in
+[2024.07.23-15.45.52:166][872]PIE: Play in editor total start time 0.12 seconds.
+[2024.07.23-15.45.52:167][872]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.23-15.45.52:198][873]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.23-15.45.52:219][874]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.23-15.45.52:237][875]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.23-15.45.52:253][876]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.23-15.45.52:270][877]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.23-15.45.52:287][878]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.23-15.45.52:303][879]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.23-15.45.52:320][880]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.23-15.45.52:337][881]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.23-15.45.52:353][882]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.23-15.45.52:370][883]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.23-15.45.52:386][884]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.23-15.45.52:403][885]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.23-15.45.52:420][886]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.23-15.45.52:437][887]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.23-15.45.52:453][888]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.23-15.45.52:470][889]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.23-15.45.52:486][890]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.23-15.45.52:503][891]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.23-15.45.52:521][892]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.23-15.45.52:537][893]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.23-15.45.52:554][894]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.23-15.45.52:570][895]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.23-15.45.52:587][896]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.23-15.45.52:604][897]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.23-15.45.52:621][898]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.23-15.45.52:636][899]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.23-15.45.52:653][900]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.23-15.45.52:670][901]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.23-15.45.52:686][902]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.23-15.45.52:703][903]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.23-15.45.52:720][904]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.23-15.45.52:737][905]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.23-15.45.52:754][906]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.23-15.45.52:770][907]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.23-15.45.52:787][908]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.23-15.45.52:804][909]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.23-15.45.52:821][910]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.23-15.45.52:836][911]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.23-15.45.52:854][912]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.23-15.45.52:870][913]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.23-15.45.52:887][914]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.23-15.45.52:904][915]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.23-15.45.52:920][916]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.23-15.45.52:937][917]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.23-15.45.52:954][918]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.23-15.45.52:971][919]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.23-15.45.52:987][920]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.23-15.45.53:003][921]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.23-15.45.53:020][922]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.23-15.45.53:037][923]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.23-15.45.53:071][924]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.23-15.45.53:083][925]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.23-15.45.53:101][926]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.23-15.45.53:117][927]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.23-15.45.53:136][928]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.23-15.45.53:150][929]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.23-15.45.53:167][930]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.23-15.45.53:184][931]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.23-15.45.53:201][932]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.23-15.45.53:218][933]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.23-15.45.53:234][934]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.23-15.45.53:251][935]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.23-15.45.53:267][936]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.23-15.45.53:284][937]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.23-15.45.53:301][938]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.23-15.45.53:318][939]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.23-15.45.53:334][940]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.23-15.45.53:351][941]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.23-15.45.53:367][942]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.23-15.45.53:384][943]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.23-15.45.53:401][944]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.23-15.45.53:417][945]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.23-15.45.53:434][946]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.23-15.45.53:450][947]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.23-15.45.53:467][948]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.23-15.45.53:484][949]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.23-15.45.53:500][950]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.23-15.45.53:517][951]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.23-15.45.53:535][952]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.23-15.45.53:551][953]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.23-15.45.53:567][954]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.23-15.45.53:584][955]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.23-15.45.53:601][956]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.23-15.45.53:618][957]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.23-15.45.53:634][958]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.23-15.45.53:651][959]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.23-15.45.53:668][960]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.23-15.45.53:684][961]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.23-15.45.53:701][962]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.23-15.45.53:718][963]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.23-15.45.53:735][964]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.23-15.45.53:752][965]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.23-15.45.53:769][966]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.23-15.45.53:784][967]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.23-15.45.53:802][968]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.23-15.45.53:818][969]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.23-15.45.53:835][970]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.23-15.45.53:851][971]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.23-15.45.53:867][972]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.23-15.45.53:884][973]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.23-15.45.53:904][974]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.23-15.45.53:917][975]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.23-15.45.53:934][976]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.23-15.45.53:951][977]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.23-15.45.53:968][978]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.23-15.45.53:985][979]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.23-15.45.54:001][980]LogTemp: Display: CameraRotation is 0.000000
+[2024.07.23-15.45.54:018][981]LogTemp: Display: CameraRotation is -0.100001
+[2024.07.23-15.45.54:035][982]LogTemp: Display: CameraRotation is -0.195002
+[2024.07.23-15.45.54:051][983]LogTemp: Display: CameraRotation is -0.285253
+[2024.07.23-15.45.54:069][984]LogTemp: Display: CameraRotation is -0.370992
+[2024.07.23-15.45.54:086][985]LogTemp: Display: CameraRotation is -0.452443
+[2024.07.23-15.45.54:102][986]LogTemp: Display: CameraRotation is -0.529822
+[2024.07.23-15.45.54:118][987]LogTemp: Display: CameraRotation is -0.603332
+[2024.07.23-15.45.54:135][988]LogTemp: Display: CameraRotation is -0.673165
+[2024.07.23-15.45.54:152][989]LogTemp: Display: CameraRotation is -0.739507
+[2024.07.23-15.45.54:168][990]LogTemp: Display: CameraRotation is -0.802533
+[2024.07.23-15.45.54:185][991]LogTemp: Display: CameraRotation is -0.862407
+[2024.07.23-15.45.54:202][992]LogTemp: Display: CameraRotation is -0.919287
+[2024.07.23-15.45.54:218][993]LogTemp: Display: CameraRotation is -0.973324
+[2024.07.23-15.45.54:236][994]LogTemp: Display: CameraRotation is -1.024659
+[2024.07.23-15.45.54:252][995]LogTemp: Display: CameraRotation is -1.073426
+[2024.07.23-15.45.54:269][996]LogTemp: Display: CameraRotation is -1.119755
+[2024.07.23-15.45.54:286][997]LogTemp: Display: CameraRotation is -1.163768
+[2024.07.23-15.45.54:302][998]LogTemp: Display: CameraRotation is -1.205580
+[2024.07.23-15.45.54:318][999]LogTemp: Display: CameraRotation is -1.245302
+[2024.07.23-15.45.54:335][  0]LogTemp: Display: CameraRotation is -1.283037
+[2024.07.23-15.45.54:351][  1]LogTemp: Display: CameraRotation is -1.318885
+[2024.07.23-15.45.54:368][  2]LogTemp: Display: CameraRotation is -1.352942
+[2024.07.23-15.45.54:385][  3]LogTemp: Display: CameraRotation is -1.385295
+[2024.07.23-15.45.54:401][  4]LogTemp: Display: CameraRotation is -1.416031
+[2024.07.23-15.45.54:418][  5]LogTemp: Display: CameraRotation is -1.445230
+[2024.07.23-15.45.54:434][  6]LogTemp: Display: CameraRotation is -1.472968
+[2024.07.23-15.45.54:451][  7]LogTemp: Display: CameraRotation is -1.499320
+[2024.07.23-15.45.54:468][  8]LogTemp: Display: CameraRotation is -1.524355
+[2024.07.23-15.45.54:485][  9]LogTemp: Display: CameraRotation is -1.548137
+[2024.07.23-15.45.54:501][ 10]LogTemp: Display: CameraRotation is -1.570731
+[2024.07.23-15.45.54:518][ 11]LogTemp: Display: CameraRotation is -1.592194
+[2024.07.23-15.45.54:534][ 12]LogTemp: Display: CameraRotation is -1.612585
+[2024.07.23-15.45.54:551][ 13]LogTemp: Display: CameraRotation is -1.631956
+[2024.07.23-15.45.54:569][ 14]LogTemp: Display: CameraRotation is -1.650358
+[2024.07.23-15.45.54:584][ 15]LogTemp: Display: CameraRotation is -1.667841
+[2024.07.23-15.45.54:602][ 16]LogTemp: Display: CameraRotation is -1.684449
+[2024.07.23-15.45.54:619][ 17]LogTemp: Display: CameraRotation is -1.700227
+[2024.07.23-15.45.54:635][ 18]LogTemp: Display: CameraRotation is -1.615213
+[2024.07.23-15.45.54:651][ 19]LogTemp: Display: CameraRotation is -1.534452
+[2024.07.23-15.45.54:669][ 20]LogTemp: Display: CameraRotation is -1.557730
+[2024.07.23-15.45.54:685][ 21]LogTemp: Display: CameraRotation is -1.579844
+[2024.07.23-15.45.54:702][ 22]LogTemp: Display: CameraRotation is -1.600852
+[2024.07.23-15.45.54:718][ 23]LogTemp: Display: CameraRotation is -1.620810
+[2024.07.23-15.45.54:735][ 24]LogTemp: Display: CameraRotation is -1.639769
+[2024.07.23-15.45.54:751][ 25]LogTemp: Display: CameraRotation is -1.657781
+[2024.07.23-15.45.54:768][ 26]LogTemp: Display: CameraRotation is -1.674892
+[2024.07.23-15.45.54:785][ 27]LogTemp: Display: CameraRotation is -1.691147
+[2024.07.23-15.45.54:801][ 28]LogTemp: Display: CameraRotation is -1.706590
+[2024.07.23-15.45.54:818][ 29]LogTemp: Display: CameraRotation is -1.721261
+[2024.07.23-15.45.54:834][ 30]LogTemp: Display: CameraRotation is -1.735198
+[2024.07.23-15.45.54:852][ 31]LogTemp: Display: CameraRotation is -1.748438
+[2024.07.23-15.45.54:867][ 32]LogTemp: Display: CameraRotation is -1.761016
+[2024.07.23-15.45.54:885][ 33]LogTemp: Display: CameraRotation is -1.772966
+[2024.07.23-15.45.54:901][ 34]LogTemp: Display: CameraRotation is -1.784317
+[2024.07.23-15.45.54:918][ 35]LogTemp: Display: CameraRotation is -1.795102
+[2024.07.23-15.45.54:934][ 36]LogTemp: Display: CameraRotation is -1.805347
+[2024.07.23-15.45.54:952][ 37]LogTemp: Display: CameraRotation is -1.815080
+[2024.07.23-15.45.54:968][ 38]LogTemp: Display: CameraRotation is -1.824326
+[2024.07.23-15.45.54:984][ 39]LogTemp: Display: CameraRotation is -1.833109
+[2024.07.23-15.45.55:001][ 40]LogTemp: Display: CameraRotation is -1.841454
+[2024.07.23-15.45.55:018][ 41]LogTemp: Display: CameraRotation is -1.849381
+[2024.07.23-15.45.55:034][ 42]LogTemp: Display: CameraRotation is -1.856912
+[2024.07.23-15.45.55:051][ 43]LogTemp: Display: CameraRotation is -1.864067
+[2024.07.23-15.45.55:068][ 44]LogTemp: Display: CameraRotation is -1.870864
+[2024.07.23-15.45.55:085][ 45]LogTemp: Display: CameraRotation is -1.877321
+[2024.07.23-15.45.55:102][ 46]LogTemp: Display: CameraRotation is -1.883455
+[2024.07.23-15.45.55:118][ 47]LogTemp: Display: CameraRotation is -1.889282
+[2024.07.23-15.45.55:135][ 48]LogTemp: Display: CameraRotation is -1.894818
+[2024.07.23-15.45.55:151][ 49]LogTemp: Display: CameraRotation is -1.900077
+[2024.07.23-15.45.55:169][ 50]LogTemp: Display: CameraRotation is -1.905074
+[2024.07.23-15.45.55:185][ 51]LogTemp: Display: CameraRotation is -1.909820
+[2024.07.23-15.45.55:201][ 52]LogTemp: Display: CameraRotation is -1.914329
+[2024.07.23-15.45.55:219][ 53]LogTemp: Display: CameraRotation is -1.918613
+[2024.07.23-15.45.55:235][ 54]LogTemp: Display: CameraRotation is -1.922682
+[2024.07.23-15.45.55:251][ 55]LogTemp: Display: CameraRotation is -1.926548
+[2024.07.23-15.45.55:269][ 56]LogTemp: Display: CameraRotation is -1.930221
+[2024.07.23-15.45.55:285][ 57]LogTemp: Display: CameraRotation is -1.933710
+[2024.07.23-15.45.55:302][ 58]LogTemp: Display: CameraRotation is -1.937024
+[2024.07.23-15.45.55:318][ 59]LogTemp: Display: CameraRotation is -1.940173
+[2024.07.23-15.45.55:335][ 60]LogTemp: Display: CameraRotation is -1.943165
+[2024.07.23-15.45.55:352][ 61]LogTemp: Display: CameraRotation is -1.946006
+[2024.07.23-15.45.55:369][ 62]LogTemp: Display: CameraRotation is -1.948706
+[2024.07.23-15.45.55:385][ 63]LogTemp: Display: CameraRotation is -1.951271
+[2024.07.23-15.45.55:402][ 64]LogTemp: Display: CameraRotation is -1.953807
+[2024.07.23-15.45.55:419][ 65]LogTemp: Display: CameraRotation is -1.956117
+[2024.07.23-15.45.55:436][ 66]LogTemp: Display: CameraRotation is -1.958311
+[2024.07.23-15.45.55:452][ 67]LogTemp: Display: CameraRotation is -1.960395
+[2024.07.23-15.45.55:469][ 68]LogTemp: Display: CameraRotation is -1.962376
+[2024.07.23-15.45.55:486][ 69]LogTemp: Display: CameraRotation is -1.964257
+[2024.07.23-15.45.55:502][ 70]LogTemp: Display: CameraRotation is -1.966044
+[2024.07.23-15.45.55:518][ 71]LogTemp: Display: CameraRotation is -1.967742
+[2024.07.23-15.45.55:536][ 72]LogTemp: Display: CameraRotation is -1.969355
+[2024.07.23-15.45.55:552][ 73]LogTemp: Display: CameraRotation is -1.970887
+[2024.07.23-15.45.55:570][ 74]LogTemp: Display: CameraRotation is -1.972343
+[2024.07.23-15.45.55:585][ 75]LogTemp: Display: CameraRotation is -1.973726
+[2024.07.23-15.45.55:603][ 76]LogTemp: Display: CameraRotation is -1.975039
+[2024.07.23-15.45.55:619][ 77]LogTemp: Display: CameraRotation is -1.976287
+[2024.07.23-15.45.55:636][ 78]LogTemp: Display: CameraRotation is -1.977473
+[2024.07.23-15.45.55:653][ 79]LogTemp: Display: CameraRotation is -1.978599
+[2024.07.23-15.45.55:670][ 80]LogTemp: Display: CameraRotation is -1.979669
+[2024.07.23-15.45.55:686][ 81]LogTemp: Display: CameraRotation is -1.980686
+[2024.07.23-15.45.55:703][ 82]LogTemp: Display: CameraRotation is -1.981652
+[2024.07.23-15.45.55:719][ 83]LogTemp: Display: CameraRotation is -1.982569
+[2024.07.23-15.45.55:737][ 84]LogTemp: Display: CameraRotation is -1.983441
+[2024.07.23-15.45.55:753][ 85]LogTemp: Display: CameraRotation is -1.984269
+[2024.07.23-15.45.55:770][ 86]LogTemp: Display: CameraRotation is -1.985055
+[2024.07.23-15.45.55:786][ 87]LogTemp: Display: CameraRotation is -1.985802
+[2024.07.23-15.45.55:802][ 88]LogTemp: Display: CameraRotation is -1.986512
+[2024.07.23-15.45.55:819][ 89]LogTemp: Display: CameraRotation is -1.987187
+[2024.07.23-15.45.55:836][ 90]LogTemp: Display: CameraRotation is -1.987827
+[2024.07.23-15.45.55:852][ 91]LogTemp: Display: CameraRotation is -1.988436
+[2024.07.23-15.45.55:870][ 92]LogTemp: Display: CameraRotation is -1.989014
+[2024.07.23-15.45.55:886][ 93]LogTemp: Display: CameraRotation is -1.989563
+[2024.07.23-15.45.55:903][ 94]LogTemp: Display: CameraRotation is -1.990085
+[2024.07.23-15.45.55:920][ 95]LogTemp: Display: CameraRotation is -1.990581
+[2024.07.23-15.45.55:936][ 96]LogTemp: Display: CameraRotation is -1.991052
+[2024.07.23-15.45.55:953][ 97]LogTemp: Display: CameraRotation is -1.991499
+[2024.07.23-15.45.55:968][ 98]LogTemp: Display: CameraRotation is -1.991924
+[2024.07.23-15.45.55:986][ 99]LogTemp: Display: CameraRotation is -1.992328
+[2024.07.23-15.45.56:002][100]LogTemp: Display: CameraRotation is -1.992712
+[2024.07.23-15.45.56:018][101]LogTemp: Display: CameraRotation is -1.993076
+[2024.07.23-15.45.56:036][102]LogTemp: Display: CameraRotation is -1.993422
+[2024.07.23-15.45.56:053][103]LogTemp: Display: CameraRotation is -1.993751
+[2024.07.23-15.45.56:068][104]LogTemp: Display: CameraRotation is -1.994064
+[2024.07.23-15.45.56:085][105]LogTemp: Display: CameraRotation is -1.994360
+[2024.07.23-15.45.56:102][106]LogTemp: Display: CameraRotation is -1.994642
+[2024.07.23-15.45.56:123][107]LogTemp: Display: CameraRotation is -1.994979
+[2024.07.23-15.45.56:140][108]LogTemp: Display: CameraRotation is -1.995230
+[2024.07.23-15.45.56:156][109]LogTemp: Display: CameraRotation is -1.995468
+[2024.07.23-15.45.56:174][110]LogTemp: Display: CameraRotation is -1.995695
+[2024.07.23-15.45.56:190][111]LogTemp: Display: CameraRotation is -1.995910
+[2024.07.23-15.45.56:206][112]LogTemp: Display: CameraRotation is -1.996115
+[2024.07.23-15.45.56:223][113]LogTemp: Display: CameraRotation is -1.996309
+[2024.07.23-15.45.56:240][114]LogTemp: Display: CameraRotation is -1.996494
+[2024.07.23-15.45.56:257][115]LogTemp: Display: CameraRotation is -1.996669
+[2024.07.23-15.45.56:273][116]LogTemp: Display: CameraRotation is -1.996835
+[2024.07.23-15.45.56:290][117]LogTemp: Display: CameraRotation is -1.996994
+[2024.07.23-15.45.56:306][118]LogTemp: Display: CameraRotation is -1.997144
+[2024.07.23-15.45.56:324][119]LogTemp: Display: CameraRotation is -1.997287
+[2024.07.23-15.45.56:340][120]LogTemp: Display: CameraRotation is -1.997422
+[2024.07.23-15.45.56:357][121]LogTemp: Display: CameraRotation is -1.997551
+[2024.07.23-15.45.56:374][122]LogTemp: Display: CameraRotation is -1.997674
+[2024.07.23-15.45.56:390][123]LogTemp: Display: CameraRotation is -1.997790
+[2024.07.23-15.45.56:407][124]LogTemp: Display: CameraRotation is -1.997901
+[2024.07.23-15.45.56:423][125]LogTemp: Display: CameraRotation is -1.998006
+[2024.07.23-15.45.56:440][126]LogTemp: Display: CameraRotation is -1.998105
+[2024.07.23-15.45.56:456][127]LogTemp: Display: CameraRotation is -1.998105
+[2024.07.23-15.45.56:473][128]LogTemp: Display: CameraRotation is -1.998105
+[2024.07.23-15.45.56:490][129]LogTemp: Display: CameraRotation is -1.998105
+[2024.07.23-15.45.56:507][130]LogTemp: Display: CameraRotation is -1.998105
+[2024.07.23-15.45.56:523][131]LogTemp: Display: CameraRotation is -1.998105
+[2024.07.23-15.45.56:540][132]LogTemp: Display: CameraRotation is -1.998105
+[2024.07.23-15.45.56:557][133]LogTemp: Display: CameraRotation is -1.998105
+[2024.07.23-15.45.56:573][134]LogTemp: Display: CameraRotation is -1.998105
+[2024.07.23-15.45.56:590][135]LogTemp: Display: CameraRotation is -1.998105
+[2024.07.23-15.45.56:607][136]LogTemp: Display: CameraRotation is -1.898104
+[2024.07.23-15.45.56:623][137]LogTemp: Display: CameraRotation is -1.803197
+[2024.07.23-15.45.56:640][138]LogTemp: Display: CameraRotation is -1.713036
+[2024.07.23-15.45.56:657][139]LogTemp: Display: CameraRotation is -1.627383
+[2024.07.23-15.45.56:673][140]LogTemp: Display: CameraRotation is -1.546013
+[2024.07.23-15.45.56:690][141]LogTemp: Display: CameraRotation is -1.468711
+[2024.07.23-15.45.56:707][142]LogTemp: Display: CameraRotation is -1.395275
+[2024.07.23-15.45.56:724][143]LogTemp: Display: CameraRotation is -1.325510
+[2024.07.23-15.45.56:741][144]LogTemp: Display: CameraRotation is -1.259234
+[2024.07.23-15.45.56:757][145]LogTemp: Display: CameraRotation is -1.096272
+[2024.07.23-15.45.56:773][146]LogTemp: Display: CameraRotation is -0.941455
+[2024.07.23-15.45.56:790][147]LogTemp: Display: CameraRotation is -0.794380
+[2024.07.23-15.45.56:807][148]LogTemp: Display: CameraRotation is -0.654660
+[2024.07.23-15.45.56:823][149]LogTemp: Display: CameraRotation is -0.521925
+[2024.07.23-15.45.56:840][150]LogTemp: Display: CameraRotation is -0.395828
+[2024.07.23-15.45.56:857][151]LogTemp: Display: CameraRotation is -0.276035
+[2024.07.23-15.45.56:874][152]LogTemp: Display: CameraRotation is -0.162233
+[2024.07.23-15.45.56:890][153]LogTemp: Display: CameraRotation is -0.054120
+[2024.07.23-15.45.56:907][154]LogTemp: Display: CameraRotation is 0.048586
+[2024.07.23-15.45.56:924][155]LogTemp: Display: CameraRotation is 0.146540
+[2024.07.23-15.45.56:940][156]LogTemp: Display: CameraRotation is 0.239214
+[2024.07.23-15.45.56:957][157]LogTemp: Display: CameraRotation is 0.327255
+[2024.07.23-15.45.56:974][158]LogTemp: Display: CameraRotation is 0.410893
+[2024.07.23-15.45.56:991][159]LogTemp: Display: CameraRotation is 0.490350
+[2024.07.23-15.45.57:007][160]LogTemp: Display: CameraRotation is 0.565833
+[2024.07.23-15.45.57:024][161]LogTemp: Display: CameraRotation is 0.537541
+[2024.07.23-15.45.57:041][162]LogTemp: Display: CameraRotation is 0.510190
+[2024.07.23-15.45.57:058][163]LogTemp: Display: CameraRotation is 0.484681
+[2024.07.23-15.45.57:074][164]LogTemp: Display: CameraRotation is 0.460447
+[2024.07.23-15.45.57:091][165]LogTemp: Display: CameraRotation is 0.437416
+[2024.07.23-15.45.57:109][166]LogTemp: Display: CameraRotation is 0.415545
+[2024.07.23-15.45.57:125][167]LogTemp: Display: CameraRotation is 0.394141
+[2024.07.23-15.45.57:141][168]LogTemp: Display: CameraRotation is 0.374434
+[2024.07.23-15.45.57:158][169]LogTemp: Display: CameraRotation is 0.355706
+[2024.07.23-15.45.57:175][170]LogTemp: Display: CameraRotation is 0.337921
+[2024.07.23-15.45.57:192][171]LogTemp: Display: CameraRotation is 0.321025
+[2024.07.23-15.45.57:208][172]LogTemp: Display: CameraRotation is 0.304973
+[2024.07.23-15.45.57:225][173]LogTemp: Display: CameraRotation is 0.289724
+[2024.07.23-15.45.57:242][174]LogTemp: Display: CameraRotation is 0.274683
+[2024.07.23-15.45.57:258][175]LogTemp: Display: CameraRotation is 0.260949
+[2024.07.23-15.45.57:275][176]LogTemp: Display: CameraRotation is 0.247901
+[2024.07.23-15.45.57:292][177]LogTemp: Display: CameraRotation is 0.235506
+[2024.07.23-15.45.57:309][178]LogTemp: Display: CameraRotation is 0.223731
+[2024.07.23-15.45.57:326][179]LogTemp: Display: CameraRotation is 0.212005
+[2024.07.23-15.45.57:343][180]LogTemp: Display: CameraRotation is 0.201405
+[2024.07.23-15.45.57:360][181]LogTemp: Display: CameraRotation is 0.191335
+[2024.07.23-15.45.57:376][182]LogTemp: Display: CameraRotation is 0.181768
+[2024.07.23-15.45.57:393][183]LogTemp: Display: CameraRotation is 0.172679
+[2024.07.23-15.45.57:410][184]LogTemp: Display: CameraRotation is 0.164045
+[2024.07.23-15.45.57:426][185]LogTemp: Display: CameraRotation is 0.155828
+[2024.07.23-15.45.57:443][186]LogTemp: Display: CameraRotation is 0.147731
+[2024.07.23-15.45.57:463][187]LogTemp: Display: CameraRotation is 0.139798
+[2024.07.23-15.45.57:479][188]LogTemp: Display: CameraRotation is 0.132583
+[2024.07.23-15.45.57:496][189]LogTemp: Display: CameraRotation is 0.225956
+[2024.07.23-15.45.57:512][190]LogTemp: Display: CameraRotation is 0.314658
+[2024.07.23-15.45.57:528][191]LogTemp: Display: CameraRotation is 0.398927
+[2024.07.23-15.45.57:546][192]LogTemp: Display: CameraRotation is 0.478981
+[2024.07.23-15.45.57:562][193]LogTemp: Display: CameraRotation is 0.555033
+[2024.07.23-15.45.57:578][194]LogTemp: Display: CameraRotation is 0.627282
+[2024.07.23-15.45.57:594][195]LogTemp: Display: CameraRotation is 0.695918
+[2024.07.23-15.45.57:612][196]LogTemp: Display: CameraRotation is 0.761122
+[2024.07.23-15.45.57:628][197]LogTemp: Display: CameraRotation is 0.823067
+[2024.07.23-15.45.57:645][198]LogTemp: Display: CameraRotation is 0.883225
+[2024.07.23-15.45.57:662][199]LogTemp: Display: CameraRotation is 0.939064
+[2024.07.23-15.45.57:679][200]LogTemp: Display: CameraRotation is 0.992111
+[2024.07.23-15.45.57:695][201]LogTemp: Display: CameraRotation is 1.042507
+[2024.07.23-15.45.57:712][202]LogTemp: Display: CameraRotation is 1.090381
+[2024.07.23-15.45.57:728][203]LogTemp: Display: CameraRotation is 1.135863
+[2024.07.23-15.45.57:746][204]LogTemp: Display: CameraRotation is 1.079069
+[2024.07.23-15.45.57:762][205]LogTemp: Display: CameraRotation is 1.025115
+[2024.07.23-15.45.57:779][206]LogTemp: Display: CameraRotation is 0.973859
+[2024.07.23-15.45.57:796][207]LogTemp: Display: CameraRotation is 0.925166
+[2024.07.23-15.45.57:813][208]LogTemp: Display: CameraRotation is 0.778905
+[2024.07.23-15.45.57:829][209]LogTemp: Display: CameraRotation is 0.639957
+[2024.07.23-15.45.57:845][210]LogTemp: Display: CameraRotation is 0.507956
+[2024.07.23-15.45.57:862][211]LogTemp: Display: CameraRotation is 0.382557
+[2024.07.23-15.45.57:879][212]LogTemp: Display: CameraRotation is 0.263427
+[2024.07.23-15.45.57:895][213]LogTemp: Display: CameraRotation is 0.150254
+[2024.07.23-15.45.57:912][214]LogTemp: Display: CameraRotation is 0.042739
+[2024.07.23-15.45.57:928][215]LogTemp: Display: CameraRotation is -0.059400
+[2024.07.23-15.45.57:945][216]LogTemp: Display: CameraRotation is -0.156430
+[2024.07.23-15.45.57:962][217]LogTemp: Display: CameraRotation is -0.248610
+[2024.07.23-15.45.57:978][218]LogTemp: Display: CameraRotation is -0.336182
+[2024.07.23-15.45.57:995][219]LogTemp: Display: CameraRotation is -0.419374
+[2024.07.23-15.45.58:012][220]LogTemp: Display: CameraRotation is -0.498405
+[2024.07.23-15.45.58:028][221]LogTemp: Display: CameraRotation is -0.573485
+[2024.07.23-15.45.58:045][222]LogTemp: Display: CameraRotation is -0.644812
+[2024.07.23-15.45.58:062][223]LogTemp: Display: CameraRotation is -0.712572
+[2024.07.23-15.45.58:080][224]LogTemp: Display: CameraRotation is -0.776944
+[2024.07.23-15.45.58:096][225]LogTemp: Display: CameraRotation is -0.838097
+[2024.07.23-15.45.58:113][226]LogTemp: Display: CameraRotation is -0.795446
+[2024.07.23-15.45.58:130][227]LogTemp: Display: CameraRotation is -0.755674
+[2024.07.23-15.45.58:146][228]LogTemp: Display: CameraRotation is -0.717889
+[2024.07.23-15.45.58:163][229]LogTemp: Display: CameraRotation is -0.681994
+[2024.07.23-15.45.58:179][230]LogTemp: Display: CameraRotation is -0.647894
+[2024.07.23-15.45.58:195][231]LogTemp: Display: CameraRotation is -0.615499
+[2024.07.23-15.45.58:213][232]LogTemp: Display: CameraRotation is -0.584723
+[2024.07.23-15.45.58:228][233]LogTemp: Display: CameraRotation is -0.555487
+[2024.07.23-15.45.58:246][234]LogTemp: Display: CameraRotation is -0.526808
+[2024.07.23-15.45.58:263][235]LogTemp: Display: CameraRotation is -0.500467
+[2024.07.23-15.45.58:279][236]LogTemp: Display: CameraRotation is -0.475444
+[2024.07.23-15.45.58:296][237]LogTemp: Display: CameraRotation is -0.451671
+[2024.07.23-15.45.58:313][238]LogTemp: Display: CameraRotation is -0.429088
+[2024.07.23-15.45.58:329][239]LogTemp: Display: CameraRotation is -0.407633
+[2024.07.23-15.45.58:346][240]LogTemp: Display: CameraRotation is -0.387251
+[2024.07.23-15.45.58:362][241]LogTemp: Display: CameraRotation is -0.367889
+[2024.07.23-15.45.58:380][242]LogTemp: Display: CameraRotation is -0.349494
+[2024.07.23-15.45.58:395][243]LogTemp: Display: CameraRotation is -0.331653
+[2024.07.23-15.45.58:413][244]LogTemp: Display: CameraRotation is -0.315071
+[2024.07.23-15.45.58:430][245]LogTemp: Display: CameraRotation is -0.299317
+[2024.07.23-15.45.58:447][246]LogTemp: Display: CameraRotation is -0.283385
+[2024.07.23-15.45.58:464][247]LogTemp: Display: CameraRotation is -0.269216
+[2024.07.23-15.45.58:481][248]LogTemp: Display: CameraRotation is -0.255755
+[2024.07.23-15.45.58:497][249]LogTemp: Display: CameraRotation is -0.242967
+[2024.07.23-15.45.58:515][250]LogTemp: Display: CameraRotation is -0.230819
+[2024.07.23-15.45.58:531][251]LogTemp: Display: CameraRotation is -0.219278
+[2024.07.23-15.45.58:547][252]LogTemp: Display: CameraRotation is -0.208314
+[2024.07.23-15.45.58:567][253]LogTemp: Display: CameraRotation is -0.196196
+[2024.07.23-15.45.58:583][254]LogTemp: Display: CameraRotation is -0.186386
+[2024.07.23-15.45.58:601][255]LogTemp: Display: CameraRotation is -0.177067
+[2024.07.23-15.45.58:616][256]LogTemp: Display: CameraRotation is -0.168213
+[2024.07.23-15.45.58:634][257]LogTemp: Display: CameraRotation is -0.159803
+[2024.07.23-15.45.58:651][258]LogTemp: Display: CameraRotation is -0.151813
+[2024.07.23-15.45.58:667][259]LogTemp: Display: CameraRotation is -0.144079
+[2024.07.23-15.45.58:684][260]LogTemp: Display: CameraRotation is -0.136875
+[2024.07.23-15.45.58:701][261]LogTemp: Display: CameraRotation is -0.130031
+[2024.07.23-15.45.58:717][262]LogTemp: Display: CameraRotation is -0.123530
+[2024.07.23-15.45.58:734][263]LogTemp: Display: CameraRotation is -0.117353
+[2024.07.23-15.45.58:751][264]LogTemp: Display: CameraRotation is -0.111485
+[2024.07.23-15.45.58:767][265]LogTemp: Display: CameraRotation is -0.105868
+[2024.07.23-15.45.58:784][266]LogTemp: Display: CameraRotation is -0.000574
+[2024.07.23-15.45.58:801][267]LogTemp: Display: CameraRotation is 0.100534
+[2024.07.23-15.45.58:817][268]LogTemp: Display: CameraRotation is 0.195508
+[2024.07.23-15.45.58:835][269]LogTemp: Display: CameraRotation is 0.285733
+[2024.07.23-15.45.58:851][270]LogTemp: Display: CameraRotation is 0.371448
+[2024.07.23-15.45.58:868][271]LogTemp: Display: CameraRotation is 0.452877
+[2024.07.23-15.45.58:885][272]LogTemp: Display: CameraRotation is 0.530235
+[2024.07.23-15.45.58:901][273]LogTemp: Display: CameraRotation is 0.603724
+[2024.07.23-15.45.58:917][274]LogTemp: Display: CameraRotation is 0.673538
+[2024.07.23-15.45.58:934][275]LogTemp: Display: CameraRotation is 0.739863
+[2024.07.23-15.45.58:951][276]LogTemp: Display: CameraRotation is 0.802871
+[2024.07.23-15.45.58:967][277]LogTemp: Display: CameraRotation is 0.862728
+[2024.07.23-15.45.58:984][278]LogTemp: Display: CameraRotation is 0.919592
+[2024.07.23-15.45.59:002][279]LogTemp: Display: CameraRotation is 0.973613
+[2024.07.23-15.45.59:018][280]LogTemp: Display: CameraRotation is 0.924932
+[2024.07.23-15.45.59:034][281]LogTemp: Display: CameraRotation is 0.878685
+[2024.07.23-15.45.59:051][282]LogTemp: Display: CameraRotation is 0.834750
+[2024.07.23-15.45.59:068][283]LogTemp: Display: CameraRotation is 0.793012
+[2024.07.23-15.45.59:084][284]LogTemp: Display: CameraRotation is 0.753361
+[2024.07.23-15.45.59:101][285]LogTemp: Display: CameraRotation is 0.715692
+[2024.07.23-15.45.59:117][286]LogTemp: Display: CameraRotation is 0.679906
+[2024.07.23-15.45.59:134][287]LogTemp: Display: CameraRotation is 0.645911
+[2024.07.23-15.45.59:150][288]LogTemp: Display: CameraRotation is 0.613615
+[2024.07.23-15.45.59:168][289]LogTemp: Display: CameraRotation is 0.582429
+[2024.07.23-15.45.59:185][290]LogTemp: Display: CameraRotation is 0.553307
+[2024.07.23-15.45.59:201][291]LogTemp: Display: CameraRotation is 0.525641
+[2024.07.23-15.45.59:217][292]LogTemp: Display: CameraRotation is 0.499350
+[2024.07.23-15.45.59:234][293]LogTemp: Display: CameraRotation is 0.474382
+[2024.07.23-15.45.59:251][294]LogTemp: Display: CameraRotation is 0.450663
+[2024.07.23-15.45.59:268][295]LogTemp: Display: CameraRotation is 0.428129
+[2024.07.23-15.45.59:284][296]LogTemp: Display: CameraRotation is 0.406723
+[2024.07.23-15.45.59:301][297]LogTemp: Display: CameraRotation is 0.386386
+[2024.07.23-15.45.59:318][298]LogTemp: Display: CameraRotation is 0.367067
+[2024.07.23-15.45.59:334][299]LogTemp: Display: CameraRotation is 0.348713
+[2024.07.23-15.45.59:351][300]LogTemp: Display: CameraRotation is 0.331277
+[2024.07.23-15.45.59:367][301]LogTemp: Display: CameraRotation is 0.314713
+[2024.07.23-15.45.59:384][302]LogTemp: Display: CameraRotation is 0.298977
+[2024.07.23-15.45.59:401][303]LogTemp: Display: CameraRotation is 0.284029
+[2024.07.23-15.45.59:418][304]LogTemp: Display: CameraRotation is 0.269827
+[2024.07.23-15.45.59:434][305]LogTemp: Display: CameraRotation is 0.256336
+[2024.07.23-15.45.59:451][306]LogTemp: Display: CameraRotation is 0.243519
+[2024.07.23-15.45.59:468][307]LogTemp: Display: CameraRotation is 0.231343
+[2024.07.23-15.45.59:485][308]LogTemp: Display: CameraRotation is 0.115874
+[2024.07.23-15.45.59:501][309]LogTemp: Display: CameraRotation is 0.010080
+[2024.07.23-15.45.59:518][310]LogTemp: Display: CameraRotation is -0.090425
+[2024.07.23-15.45.59:535][311]LogTemp: Display: CameraRotation is -0.185904
+[2024.07.23-15.45.59:551][312]LogTemp: Display: CameraRotation is -0.276609
+[2024.07.23-15.45.59:569][313]LogTemp: Display: CameraRotation is -0.367270
+[2024.07.23-15.45.59:586][314]LogTemp: Display: CameraRotation is -0.448907
+[2024.07.23-15.45.59:603][315]LogTemp: Display: CameraRotation is -0.526463
+[2024.07.23-15.45.59:618][316]LogTemp: Display: CameraRotation is -0.600141
+[2024.07.23-15.45.59:636][317]LogTemp: Display: CameraRotation is -0.670135
+[2024.07.23-15.45.59:654][318]LogTemp: Display: CameraRotation is -0.736629
+[2024.07.23-15.45.59:669][319]LogTemp: Display: CameraRotation is -0.799798
+[2024.07.23-15.45.59:687][320]LogTemp: Display: CameraRotation is -0.864342
+[2024.07.23-15.45.59:704][321]LogTemp: Display: CameraRotation is -0.921126
+[2024.07.23-15.45.59:721][322]LogTemp: Display: CameraRotation is -0.975070
+[2024.07.23-15.45.59:737][323]LogTemp: Display: CameraRotation is -1.026317
+[2024.07.23-15.45.59:755][324]LogTemp: Display: CameraRotation is -1.075002
+[2024.07.23-15.45.59:771][325]LogTemp: Display: CameraRotation is -1.121252
+[2024.07.23-15.45.59:787][326]LogTemp: Display: CameraRotation is -1.165190
+[2024.07.23-15.45.59:805][327]LogTemp: Display: CameraRotation is -1.106930
+[2024.07.23-15.45.59:822][328]LogTemp: Display: CameraRotation is -0.940130
+[2024.07.23-15.45.59:838][329]LogTemp: Display: CameraRotation is -0.793123
+[2024.07.23-15.45.59:855][330]LogTemp: Display: CameraRotation is -0.653467
+[2024.07.23-15.45.59:871][331]LogTemp: Display: CameraRotation is -0.520791
+[2024.07.23-15.45.59:889][332]LogTemp: Display: CameraRotation is -0.394751
+[2024.07.23-15.45.59:905][333]LogTemp: Display: CameraRotation is -0.275013
+[2024.07.23-15.45.59:922][334]LogTemp: Display: CameraRotation is -0.161262
+[2024.07.23-15.45.59:939][335]LogTemp: Display: CameraRotation is -0.053197
+[2024.07.23-15.45.59:956][336]LogTemp: Display: CameraRotation is 0.049464
+[2024.07.23-15.45.59:972][337]LogTemp: Display: CameraRotation is 0.146991
+[2024.07.23-15.45.59:989][338]LogTemp: Display: CameraRotation is 0.239643
+[2024.07.23-15.46.00:006][339]LogTemp: Display: CameraRotation is 0.327662
+[2024.07.23-15.46.00:022][340]LogTemp: Display: CameraRotation is 0.416256
+[2024.07.23-15.46.00:040][341]LogTemp: Display: CameraRotation is 0.495445
+[2024.07.23-15.46.00:057][342]LogTemp: Display: CameraRotation is 0.570673
+[2024.07.23-15.46.00:073][343]LogTemp: Display: CameraRotation is 0.642140
+[2024.07.23-15.46.00:088][344]LogTemp: Display: CameraRotation is 0.710034
+[2024.07.23-15.46.00:106][345]LogTemp: Display: CameraRotation is 0.774534
+[2024.07.23-15.46.00:123][346]LogTemp: Display: CameraRotation is 0.835808
+[2024.07.23-15.46.00:140][347]LogTemp: Display: CameraRotation is 0.794016
+[2024.07.23-15.46.00:156][348]LogTemp: Display: CameraRotation is 0.754315
+[2024.07.23-15.46.00:174][349]LogTemp: Display: CameraRotation is 0.716599
+[2024.07.23-15.46.00:190][350]LogTemp: Display: CameraRotation is 0.680768
+[2024.07.23-15.46.00:207][351]LogTemp: Display: CameraRotation is 0.646730
+[2024.07.23-15.46.00:224][352]LogTemp: Display: CameraRotation is 0.614393
+[2024.07.23-15.46.00:240][353]LogTemp: Display: CameraRotation is 0.583673
+[2024.07.23-15.46.00:256][354]LogTemp: Display: CameraRotation is 0.554489
+[2024.07.23-15.46.00:273][355]LogTemp: Display: CameraRotation is 0.526530
+[2024.07.23-15.46.00:290][356]LogTemp: Display: CameraRotation is 0.499298
+[2024.07.23-15.46.00:306][357]LogTemp: Display: CameraRotation is 0.474333
+[2024.07.23-15.46.00:323][358]LogTemp: Display: CameraRotation is 0.450616
+[2024.07.23-15.46.00:341][359]LogTemp: Display: CameraRotation is 0.428085
+[2024.07.23-15.46.00:357][360]LogTemp: Display: CameraRotation is 0.406681
+[2024.07.23-15.46.00:374][361]LogTemp: Display: CameraRotation is 0.386347
+[2024.07.23-15.46.00:390][362]LogTemp: Display: CameraRotation is 0.367029
+[2024.07.23-15.46.00:406][363]LogTemp: Display: CameraRotation is 0.348678
+[2024.07.23-15.46.00:423][364]LogTemp: Display: CameraRotation is 0.331244
+[2024.07.23-15.46.00:440][365]LogTemp: Display: CameraRotation is 0.314681
+[2024.07.23-15.46.00:457][366]LogTemp: Display: CameraRotation is 0.298947
+[2024.07.23-15.46.00:473][367]LogTemp: Display: CameraRotation is 0.283999
+[2024.07.23-15.46.00:490][368]LogTemp: Display: CameraRotation is 0.269797
+[2024.07.23-15.46.00:507][369]LogTemp: Display: CameraRotation is 0.256306
+[2024.07.23-15.46.00:523][370]LogTemp: Display: CameraRotation is 0.243491
+[2024.07.23-15.46.00:540][371]LogTemp: Display: CameraRotation is 0.231316
+[2024.07.23-15.46.00:556][372]LogTemp: Display: CameraRotation is 0.219750
+[2024.07.23-15.46.00:575][373]LogTemp: Display: CameraRotation is 0.208763
+[2024.07.23-15.46.00:590][374]LogTemp: Display: CameraRotation is 0.198324
+[2024.07.23-15.46.00:606][375]LogTemp: Display: CameraRotation is 0.188228
+[2024.07.23-15.46.00:624][376]LogTemp: Display: CameraRotation is 0.178816
+[2024.07.23-15.46.00:641][377]LogTemp: Display: CameraRotation is 0.169875
+[2024.07.23-15.46.00:657][378]LogTemp: Display: CameraRotation is 0.161381
+[2024.07.23-15.46.00:673][379]LogTemp: Display: CameraRotation is 0.153312
+[2024.07.23-15.46.00:691][380]LogTemp: Display: CameraRotation is 0.145201
+[2024.07.23-15.46.00:708][381]LogTemp: Display: CameraRotation is 0.137941
+[2024.07.23-15.46.00:725][382]LogTemp: Display: CameraRotation is 0.131044
+[2024.07.23-15.46.00:741][383]LogTemp: Display: CameraRotation is 0.124491
+[2024.07.23-15.46.00:758][384]LogTemp: Display: CameraRotation is 0.118267
+[2024.07.23-15.46.00:775][385]LogTemp: Display: CameraRotation is 0.112353
+[2024.07.23-15.46.00:791][386]LogTemp: Display: CameraRotation is 0.106736
+[2024.07.23-15.46.00:808][387]LogTemp: Display: CameraRotation is 0.101399
+[2024.07.23-15.46.00:824][388]LogTemp: Display: CameraRotation is 0.096329
+[2024.07.23-15.46.00:842][389]LogTemp: Display: CameraRotation is 0.091274
+[2024.07.23-15.46.00:859][390]LogTemp: Display: CameraRotation is 0.086711
+[2024.07.23-15.46.00:876][391]LogTemp: Display: CameraRotation is 0.082375
+[2024.07.23-15.46.00:892][392]LogTemp: Display: CameraRotation is 0.078256
+[2024.07.23-15.46.00:908][393]LogTemp: Display: CameraRotation is 0.074343
+[2024.07.23-15.46.00:926][394]LogTemp: Display: CameraRotation is 0.070626
+[2024.07.23-15.46.00:943][395]LogTemp: Display: CameraRotation is 0.067095
+[2024.07.23-15.46.00:959][396]LogTemp: Display: CameraRotation is 0.063740
+[2024.07.23-15.46.00:975][397]LogTemp: Display: CameraRotation is 0.060534
+[2024.07.23-15.46.00:992][398]LogTemp: Display: CameraRotation is 0.057507
+[2024.07.23-15.46.01:010][399]LogTemp: Display: CameraRotation is 0.054442
+[2024.07.23-15.46.01:027][400]LogTemp: Display: CameraRotation is 0.051720
+[2024.07.23-15.46.01:043][401]LogTemp: Display: CameraRotation is 0.049134
+[2024.07.23-15.46.01:060][402]LogTemp: Display: CameraRotation is 0.046677
+[2024.07.23-15.46.01:077][403]LogTemp: Display: CameraRotation is 0.044343
+[2024.07.23-15.46.01:095][404]LogTemp: Display: CameraRotation is 0.042081
+[2024.07.23-15.46.01:110][405]LogTemp: Display: CameraRotation is 0.039977
+[2024.07.23-15.46.01:127][406]LogTemp: Display: CameraRotation is 0.037978
+[2024.07.23-15.46.01:143][407]LogTemp: Display: CameraRotation is 0.036079
+[2024.07.23-15.46.01:162][408]LogTemp: Display: CameraRotation is 0.034276
+[2024.07.23-15.46.01:176][409]LogTemp: Display: CameraRotation is 0.032562
+[2024.07.23-15.46.01:194][410]LogTemp: Display: CameraRotation is 0.030888
+[2024.07.23-15.46.01:211][411]LogTemp: Display: CameraRotation is 0.029344
+[2024.07.23-15.46.01:228][412]LogTemp: Display: CameraRotation is 0.027877
+[2024.07.23-15.46.01:244][413]LogTemp: Display: CameraRotation is 0.026483
+[2024.07.23-15.46.01:260][414]LogTemp: Display: CameraRotation is 0.025159
+[2024.07.23-15.46.01:278][415]LogTemp: Display: CameraRotation is 0.023901
+[2024.07.23-15.46.01:294][416]LogTemp: Display: CameraRotation is 0.022706
+[2024.07.23-15.46.01:312][417]LogTemp: Display: CameraRotation is 0.021570
+[2024.07.23-15.46.01:327][418]LogTemp: Display: CameraRotation is 0.020492
+[2024.07.23-15.46.01:345][419]LogTemp: Display: CameraRotation is 0.019467
+[2024.07.23-15.46.01:361][420]LogTemp: Display: CameraRotation is 0.018494
+[2024.07.23-15.46.01:379][421]LogTemp: Display: CameraRotation is 0.017569
+[2024.07.23-15.46.01:394][422]LogTemp: Display: CameraRotation is 0.016691
+[2024.07.23-15.46.01:411][423]LogTemp: Display: CameraRotation is 0.015856
+[2024.07.23-15.46.01:428][424]LogTemp: Display: CameraRotation is 0.015063
+[2024.07.23-15.46.01:444][425]LogTemp: Display: CameraRotation is 0.014310
+[2024.07.23-15.46.01:461][426]LogTemp: Display: CameraRotation is 0.013595
+[2024.07.23-15.46.01:478][427]LogTemp: Display: CameraRotation is 0.012915
+[2024.07.23-15.46.01:494][428]LogTemp: Display: CameraRotation is 0.012269
+[2024.07.23-15.46.01:511][429]LogTemp: Display: CameraRotation is 0.011656
+[2024.07.23-15.46.01:528][430]LogTemp: Display: CameraRotation is 0.011073
+[2024.07.23-15.46.01:544][431]LogTemp: Display: CameraRotation is 0.010519
+[2024.07.23-15.46.01:561][432]LogTemp: Display: CameraRotation is 0.009993
+[2024.07.23-15.46.01:577][433]LogTemp: Display: CameraRotation is 0.009494
+[2024.07.23-15.46.01:594][434]LogTemp: Display: CameraRotation is 0.009019
+[2024.07.23-15.46.01:611][435]LogTemp: Display: CameraRotation is 0.008544
+[2024.07.23-15.46.01:628][436]LogTemp: Display: CameraRotation is 0.008117
+[2024.07.23-15.46.01:645][437]LogTemp: Display: CameraRotation is 0.007711
+[2024.07.23-15.46.01:662][438]LogTemp: Display: CameraRotation is 0.007326
+[2024.07.23-15.46.01:679][439]LogTemp: Display: CameraRotation is 0.006959
+[2024.07.23-15.46.01:695][440]LogTemp: Display: CameraRotation is 0.006611
+[2024.07.23-15.46.01:711][441]LogTemp: Display: CameraRotation is 0.006281
+[2024.07.23-15.46.01:728][442]LogTemp: Display: CameraRotation is 0.005964
+[2024.07.23-15.46.01:746][443]LogTemp: Display: CameraRotation is 0.005666
+[2024.07.23-15.46.01:762][444]LogTemp: Display: CameraRotation is 0.005383
+[2024.07.23-15.46.01:778][445]LogTemp: Display: CameraRotation is 0.005114
+[2024.07.23-15.46.01:795][446]LogTemp: Display: CameraRotation is 0.004858
+[2024.07.23-15.46.01:812][447]LogTemp: Display: CameraRotation is 0.004608
+[2024.07.23-15.46.01:829][448]LogTemp: Display: CameraRotation is 0.004378
+[2024.07.23-15.46.01:846][449]LogTemp: Display: CameraRotation is 0.004159
+[2024.07.23-15.46.01:863][450]LogTemp: Display: CameraRotation is 0.003951
+[2024.07.23-15.46.01:879][451]LogTemp: Display: CameraRotation is 0.003754
+[2024.07.23-15.46.01:896][452]LogTemp: Display: CameraRotation is 0.003566
+[2024.07.23-15.46.01:912][453]LogTemp: Display: CameraRotation is 0.003388
+[2024.07.23-15.46.01:929][454]LogTemp: Display: CameraRotation is 0.003218
+[2024.07.23-15.46.01:946][455]LogTemp: Display: CameraRotation is 0.003057
+[2024.07.23-15.46.01:962][456]LogTemp: Display: CameraRotation is 0.002904
+[2024.07.23-15.46.01:980][457]LogTemp: Display: CameraRotation is 0.002759
+[2024.07.23-15.46.01:995][458]LogTemp: Display: CameraRotation is 0.002621
+[2024.07.23-15.46.02:012][459]LogTemp: Display: CameraRotation is 0.002490
+[2024.07.23-15.46.02:029][460]LogTemp: Display: CameraRotation is 0.002366
+[2024.07.23-15.46.02:045][461]LogTemp: Display: CameraRotation is 0.002247
+[2024.07.23-15.46.02:063][462]LogTemp: Display: CameraRotation is 0.002135
+[2024.07.23-15.46.02:079][463]LogTemp: Display: CameraRotation is 0.002028
+[2024.07.23-15.46.02:095][464]LogTemp: Display: CameraRotation is 0.001927
+[2024.07.23-15.46.02:112][465]LogTemp: Display: CameraRotation is 0.001830
+[2024.07.23-15.46.02:129][466]LogTemp: Display: CameraRotation is 0.001830
+[2024.07.23-15.46.02:145][467]LogTemp: Display: CameraRotation is 0.001830
+[2024.07.23-15.46.02:163][468]LogTemp: Display: CameraRotation is 0.001830
+[2024.07.23-15.46.02:179][469]LogTemp: Display: CameraRotation is 0.001830
+[2024.07.23-15.46.02:195][470]LogTemp: Display: CameraRotation is 0.001830
+[2024.07.23-15.46.02:213][471]LogTemp: Display: CameraRotation is 0.001830
+[2024.07.23-15.46.02:229][472]LogTemp: Display: CameraRotation is 0.001830
+[2024.07.23-15.46.02:245][473]LogTemp: Display: CameraRotation is 0.001830
+[2024.07.23-15.46.02:262][474]LogTemp: Display: CameraRotation is 0.001830
+[2024.07.23-15.46.02:280][475]LogTemp: Display: CameraRotation is 0.001830
+[2024.07.23-15.46.02:295][476]LogTemp: Display: CameraRotation is 0.001830
+[2024.07.23-15.46.02:312][477]LogTemp: Display: CameraRotation is 0.001830
+[2024.07.23-15.46.02:328][478]LogTemp: Display: CameraRotation is 0.001830
+[2024.07.23-15.46.02:345][479]LogTemp: Display: CameraRotation is 0.001830
+[2024.07.23-15.46.02:363][480]LogTemp: Display: CameraRotation is 0.001830
+[2024.07.23-15.46.02:379][481]LogTemp: Display: CameraRotation is 0.001830
+[2024.07.23-15.46.02:396][482]LogTemp: Display: CameraRotation is 0.001830
+[2024.07.23-15.46.02:412][483]LogTemp: Display: CameraRotation is 0.001830
+[2024.07.23-15.46.02:430][484]LogTemp: Display: CameraRotation is 0.001830
+[2024.07.23-15.46.02:445][485]LogTemp: Display: CameraRotation is 0.001830
+[2024.07.23-15.46.02:463][486]LogTemp: Display: CameraRotation is 0.001830
+[2024.07.23-15.46.02:478][487]LogTemp: Display: CameraRotation is 0.001830
+[2024.07.23-15.46.02:496][488]LogTemp: Display: CameraRotation is 0.001830
+[2024.07.23-15.46.02:512][489]LogTemp: Display: CameraRotation is 0.001830
+[2024.07.23-15.46.02:529][490]LogTemp: Display: CameraRotation is 0.001830
+[2024.07.23-15.46.02:545][491]LogTemp: Display: CameraRotation is 0.001830
+[2024.07.23-15.46.02:563][492]LogTemp: Display: CameraRotation is 0.001830
+[2024.07.23-15.46.02:579][493]LogTemp: Display: CameraRotation is 0.001830
+[2024.07.23-15.46.02:596][494]LogTemp: Display: CameraRotation is 0.001830
+[2024.07.23-15.46.02:612][495]LogTemp: Display: CameraRotation is 0.001830
+[2024.07.23-15.46.02:629][496]LogTemp: Display: CameraRotation is 0.001830
+[2024.07.23-15.46.02:645][497]LogTemp: Display: CameraRotation is 0.001830
+[2024.07.23-15.46.02:662][498]LogTemp: Display: CameraRotation is 0.001830
+[2024.07.23-15.46.02:678][499]LogTemp: Display: CameraRotation is 0.001830
+[2024.07.23-15.46.02:697][500]LogTemp: Display: CameraRotation is 0.001830
+[2024.07.23-15.46.02:711][501]LogTemp: Display: CameraRotation is 0.001830
+[2024.07.23-15.46.02:729][502]LogTemp: Display: CameraRotation is 0.001830
+[2024.07.23-15.46.02:746][503]LogTemp: Display: CameraRotation is 0.001830
+[2024.07.23-15.46.02:762][504]LogTemp: Display: CameraRotation is 0.001830
+[2024.07.23-15.46.02:779][505]LogTemp: Display: CameraRotation is 0.001830
+[2024.07.23-15.46.02:796][506]LogTemp: Display: CameraRotation is 0.001830
+[2024.07.23-15.46.02:813][507]LogTemp: Display: CameraRotation is 0.001830
+[2024.07.23-15.46.02:828][508]LogTemp: Display: CameraRotation is 0.001830
+[2024.07.23-15.46.02:846][509]LogTemp: Display: CameraRotation is 0.001830
+[2024.07.23-15.46.02:862][510]LogTemp: Display: CameraRotation is 0.001830
+[2024.07.23-15.46.02:879][511]LogTemp: Display: CameraRotation is 0.001830
+[2024.07.23-15.46.02:895][512]LogTemp: Display: CameraRotation is 0.001830
+[2024.07.23-15.46.02:912][513]LogTemp: Display: CameraRotation is 0.001830
+[2024.07.23-15.46.02:929][514]LogTemp: Display: CameraRotation is 0.001830
+[2024.07.23-15.46.02:947][515]LogTemp: Display: CameraRotation is 0.001830
+[2024.07.23-15.46.02:962][516]LogTemp: Display: CameraRotation is 0.001830
+[2024.07.23-15.46.02:978][517]LogTemp: Display: CameraRotation is 0.001830
+[2024.07.23-15.46.02:995][518]LogTemp: Display: CameraRotation is 0.001830
+[2024.07.23-15.46.03:012][519]LogTemp: Display: CameraRotation is 0.001830
+[2024.07.23-15.46.03:029][520]LogTemp: Display: CameraRotation is 0.001830
+[2024.07.23-15.46.03:045][521]LogTemp: Display: CameraRotation is 0.001827
+[2024.07.23-15.46.03:063][522]LogTemp: Display: CameraRotation is 0.001830
+[2024.07.23-15.46.03:079][523]LogTemp: Display: CameraRotation is 0.001830
+[2024.07.23-15.46.03:096][524]LogTemp: Display: CameraRotation is 0.001830
+[2024.07.23-15.46.03:113][525]LogTemp: Display: CameraRotation is 0.001830
+[2024.07.23-15.46.03:130][526]LogTemp: Display: CameraRotation is 0.001830
+[2024.07.23-15.46.03:147][527]LogTemp: Display: CameraRotation is 0.001830
+[2024.07.23-15.46.03:163][528]LogTemp: Display: CameraRotation is 0.001830
+[2024.07.23-15.46.03:180][529]LogTemp: Display: CameraRotation is 0.001830
+[2024.07.23-15.46.03:196][530]LogTemp: Display: CameraRotation is 0.001830
+[2024.07.23-15.46.03:213][531]LogTemp: Display: CameraRotation is 0.001830
+[2024.07.23-15.46.03:229][532]LogTemp: Display: CameraRotation is 0.001830
+[2024.07.23-15.46.03:246][533]LogTemp: Display: CameraRotation is 0.001830
+[2024.07.23-15.46.03:263][534]LogTemp: Display: CameraRotation is 0.001830
+[2024.07.23-15.46.03:280][535]LogTemp: Display: CameraRotation is 0.001830
+[2024.07.23-15.46.03:296][536]LogTemp: Display: CameraRotation is 0.001830
+[2024.07.23-15.46.03:313][537]LogTemp: Display: CameraRotation is 0.001830
+[2024.07.23-15.46.03:330][538]LogTemp: Display: CameraRotation is 0.001830
+[2024.07.23-15.46.03:346][539]LogTemp: Display: CameraRotation is 0.001830
+[2024.07.23-15.46.03:363][540]LogTemp: Display: CameraRotation is 0.001830
+[2024.07.23-15.46.03:380][541]LogTemp: Display: CameraRotation is 0.001830
+[2024.07.23-15.46.03:396][542]LogTemp: Display: CameraRotation is 0.001830
+[2024.07.23-15.46.03:413][543]LogTemp: Display: CameraRotation is 0.001830
+[2024.07.23-15.46.03:430][544]LogTemp: Display: CameraRotation is 0.001830
+[2024.07.23-15.46.03:446][545]LogTemp: Display: CameraRotation is 0.001830
+[2024.07.23-15.46.03:463][546]LogTemp: Display: CameraRotation is 0.001830
+[2024.07.23-15.46.03:479][547]LogTemp: Display: CameraRotation is 0.001830
+[2024.07.23-15.46.03:495][548]LogTemp: Display: CameraRotation is 0.001830
+[2024.07.23-15.46.03:513][549]LogTemp: Display: CameraRotation is 0.001830
+[2024.07.23-15.46.03:529][550]LogTemp: Display: CameraRotation is 0.001830
+[2024.07.23-15.46.03:546][551]LogTemp: Display: CameraRotation is 0.001830
+[2024.07.23-15.46.03:564][552]LogTemp: Display: CameraRotation is 0.001830
+[2024.07.23-15.46.03:579][553]LogTemp: Display: CameraRotation is 0.001830
+[2024.07.23-15.46.03:597][554]LogTemp: Display: CameraRotation is 0.001830
+[2024.07.23-15.46.03:614][555]LogTemp: Display: CameraRotation is 0.001830
+[2024.07.23-15.46.03:629][556]LogTemp: Display: CameraRotation is 0.001830
+[2024.07.23-15.46.03:646][557]LogTemp: Display: CameraRotation is 0.001827
+[2024.07.23-15.46.03:664][558]LogTemp: Display: CameraRotation is 0.001830
+[2024.07.23-15.46.03:680][559]LogTemp: Display: CameraRotation is 0.001830
+[2024.07.23-15.46.03:697][560]LogTemp: Display: CameraRotation is 0.001830
+[2024.07.23-15.46.03:713][561]LogTemp: Display: CameraRotation is 0.001830
+[2024.07.23-15.46.03:731][562]LogTemp: Display: CameraRotation is 0.001830
+[2024.07.23-15.46.03:747][563]LogTemp: Display: CameraRotation is 0.001830
+[2024.07.23-15.46.03:763][564]LogTemp: Display: CameraRotation is 0.001830
+[2024.07.23-15.46.03:781][565]LogTemp: Display: CameraRotation is 0.001830
+[2024.07.23-15.46.03:797][566]LogTemp: Display: CameraRotation is 0.001830
+[2024.07.23-15.46.03:813][567]LogTemp: Display: CameraRotation is 0.001830
+[2024.07.23-15.46.03:830][568]LogTemp: Display: CameraRotation is 0.001830
+[2024.07.23-15.46.03:846][569]LogTemp: Display: CameraRotation is 0.001830
+[2024.07.23-15.46.03:863][570]LogTemp: Display: CameraRotation is 0.001830
+[2024.07.23-15.46.03:880][571]LogTemp: Display: CameraRotation is 0.001830
+[2024.07.23-15.46.03:896][572]LogTemp: Display: CameraRotation is 0.001830
+[2024.07.23-15.46.03:915][573]LogTemp: Display: CameraRotation is 0.001830
+[2024.07.23-15.46.03:930][574]LogTemp: Display: CameraRotation is 0.001830
+[2024.07.23-15.46.03:948][575]LogTemp: Display: CameraRotation is 0.001830
+[2024.07.23-15.46.03:964][576]LogTemp: Display: CameraRotation is 0.001823
+[2024.07.23-15.46.03:981][577]LogTemp: Display: CameraRotation is 0.001731
+[2024.07.23-15.46.03:998][578]LogTemp: Display: CameraRotation is 0.001731
+[2024.07.23-15.46.04:016][579]LogTemp: Display: CameraRotation is 0.001731
+[2024.07.23-15.46.04:031][580]LogTemp: Display: CameraRotation is 0.001731
+[2024.07.23-15.46.04:048][581]LogTemp: Display: CameraRotation is 0.001731
+[2024.07.23-15.46.04:064][582]LogTemp: Display: CameraRotation is 0.001731
+[2024.07.23-15.46.04:081][583]LogTemp: Display: CameraRotation is 0.001730
+[2024.07.23-15.46.04:099][584]LogTemp: Display: CameraRotation is 0.001731
+[2024.07.23-15.46.04:115][585]LogTemp: Display: CameraRotation is 0.001731
+[2024.07.23-15.46.04:133][586]LogTemp: Display: CameraRotation is 0.001731
+[2024.07.23-15.46.04:148][587]LogTemp: Display: CameraRotation is 0.001731
+[2024.07.23-15.46.04:166][588]LogTemp: Display: CameraRotation is 0.001727
+[2024.07.23-15.46.04:182][589]LogTemp: Display: CameraRotation is 0.001731
+[2024.07.23-15.46.04:199][590]LogTemp: Display: CameraRotation is 0.001731
+[2024.07.23-15.46.04:216][591]LogTemp: Display: CameraRotation is 0.001731
+[2024.07.23-15.46.04:232][592]LogTemp: Display: CameraRotation is 0.001731
+[2024.07.23-15.46.04:249][593]LogTemp: Display: CameraRotation is 0.001731
+[2024.07.23-15.46.04:266][594]LogTemp: Display: CameraRotation is 0.001731
+[2024.07.23-15.46.04:282][595]LogTemp: Display: CameraRotation is 0.001731
+[2024.07.23-15.46.04:300][596]LogTemp: Display: CameraRotation is 0.001731
+[2024.07.23-15.46.04:316][597]LogTemp: Display: CameraRotation is 0.001731
+[2024.07.23-15.46.04:334][598]LogTemp: Display: CameraRotation is 0.001731
+[2024.07.23-15.46.04:349][599]LogTemp: Display: CameraRotation is 0.001731
+[2024.07.23-15.46.04:367][600]LogTemp: Display: CameraRotation is 0.001727
+[2024.07.23-15.46.04:383][601]LogTemp: Display: CameraRotation is 0.001731
+[2024.07.23-15.46.04:400][602]LogTemp: Display: CameraRotation is 0.001731
+[2024.07.23-15.46.04:417][603]LogTemp: Display: CameraRotation is 0.001731
+[2024.07.23-15.46.04:434][604]LogTemp: Display: CameraRotation is 0.001731
+[2024.07.23-15.46.04:481][604]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2024.07.23-15.46.04:481][604]LogWorld: BeginTearingDown for /Game/Levels/UEDPIE_0_MovementLevel
+[2024.07.23-15.46.04:482][604]LogWorld: UWorld::CleanupWorld for MovementLevel, bSessionEnded=true, bCleanupResources=true
+[2024.07.23-15.46.04:483][604]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.07.23-15.46.04:487][604]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2024.07.23-15.46.04:493][604]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.07.23-15.46.04:514][604]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2024.07.23-15.46.04:514][604]LogAudioMixer: Deinitializing Audio Bus Subsystem for audio device with ID 10
+[2024.07.23-15.46.04:514][604]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=10
+[2024.07.23-15.46.04:516][604]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=10
+[2024.07.23-15.46.04:524][604]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2024.07.23-15.46.04:530][604]LogUObjectHash: Compacting FUObjectHashTables data took   2.13ms
+[2024.07.23-15.46.04:636][605]LogPlayLevel: Display: Destroying online subsystem :Context_24
+[2024.07.23-15.46.13:185][104]LogSlate: Window 'Widget Reflector' being destroyed
+[2024.07.23-15.46.13:191][104]LogSlate: Window 'Widget Reflector' being destroyed
