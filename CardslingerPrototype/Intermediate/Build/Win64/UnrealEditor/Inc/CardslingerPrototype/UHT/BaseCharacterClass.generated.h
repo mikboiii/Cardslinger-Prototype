@@ -20,6 +20,7 @@ class ACardDeck;
 #define FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_BaseCharacterClass_h_18_EDITOR_ONLY_SPARSE_DATA_PROPERTY_ACCESSORS
 #define FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_BaseCharacterClass_h_18_RPC_WRAPPERS_NO_PURE_DECLS \
  \
+	DECLARE_FUNCTION(execGetDashRecharge); \
 	DECLARE_FUNCTION(execGetCardCharge); \
 	DECLARE_FUNCTION(execGetChargedCards); \
 	DECLARE_FUNCTION(execGetMaxClip); \
@@ -32,7 +33,10 @@ class ACardDeck;
 	DECLARE_FUNCTION(execIncrementClip); \
 	DECLARE_FUNCTION(execIsDead); \
 	DECLARE_FUNCTION(execIsHandEmpty); \
-	DECLARE_FUNCTION(execGetDeck);
+	DECLARE_FUNCTION(execGetDeck); \
+	DECLARE_FUNCTION(execUpdateDash); \
+	DECLARE_FUNCTION(execDashEndFunction); \
+	DECLARE_FUNCTION(execDash);
 
 
 #define FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_BaseCharacterClass_h_18_ACCESSORS

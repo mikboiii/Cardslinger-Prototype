@@ -17,13 +17,25 @@ void EmptyLinkFunctionForGeneratedCodeBaseCharacterClass() {}
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
 	ENGINE_API UClass* Z_Construct_UClass_ACharacter();
 	ENGINE_API UClass* Z_Construct_UClass_UCameraComponent_NoRegister();
+	ENGINE_API UClass* Z_Construct_UClass_UCameraShakeBase_NoRegister();
+	ENGINE_API UClass* Z_Construct_UClass_UCameraShakeSourceComponent_NoRegister();
+	ENGINE_API UClass* Z_Construct_UClass_UCurveFloat_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_USceneComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_USpringArmComponent_NoRegister();
+	ENGINE_API UClass* Z_Construct_UClass_UTimelineComponent_NoRegister();
 	ENHANCEDINPUT_API UClass* Z_Construct_UClass_UInputAction_NoRegister();
 	ENHANCEDINPUT_API UClass* Z_Construct_UClass_UInputMappingContext_NoRegister();
+	NIAGARA_API UClass* Z_Construct_UClass_UNiagaraComponent_NoRegister();
 	UMG_API UClass* Z_Construct_UClass_UUserWidget_NoRegister();
 	UPackage* Z_Construct_UPackage__Script_CardslingerPrototype();
 // End Cross Module References
+	DEFINE_FUNCTION(ABaseCharacterClass::execGetDashRecharge)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		*(float*)Z_Param__Result=P_THIS->GetDashRecharge();
+		P_NATIVE_END;
+	}
 	DEFINE_FUNCTION(ABaseCharacterClass::execGetCardCharge)
 	{
 		P_GET_PROPERTY_REF(FFloatProperty,Z_Param_Out_OutCurrentCharge);
@@ -117,13 +129,38 @@ void EmptyLinkFunctionForGeneratedCodeBaseCharacterClass() {}
 		*(ACardDeck**)Z_Param__Result=P_THIS->GetDeck();
 		P_NATIVE_END;
 	}
+	DEFINE_FUNCTION(ABaseCharacterClass::execUpdateDash)
+	{
+		P_GET_PROPERTY(FFloatProperty,Z_Param_Value);
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->UpdateDash(Z_Param_Value);
+		P_NATIVE_END;
+	}
+	DEFINE_FUNCTION(ABaseCharacterClass::execDashEndFunction)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->DashEndFunction();
+		P_NATIVE_END;
+	}
+	DEFINE_FUNCTION(ABaseCharacterClass::execDash)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->Dash();
+		P_NATIVE_END;
+	}
 	void ABaseCharacterClass::StaticRegisterNativesABaseCharacterClass()
 	{
 		UClass* Class = ABaseCharacterClass::StaticClass();
 		static const FNameNativePtrPair Funcs[] = {
+			{ "Dash", &ABaseCharacterClass::execDash },
+			{ "DashEndFunction", &ABaseCharacterClass::execDashEndFunction },
 			{ "GetCardCharge", &ABaseCharacterClass::execGetCardCharge },
 			{ "GetChargedCards", &ABaseCharacterClass::execGetChargedCards },
 			{ "GetClip", &ABaseCharacterClass::execGetClip },
+			{ "GetDashRecharge", &ABaseCharacterClass::execGetDashRecharge },
 			{ "GetDeck", &ABaseCharacterClass::execGetDeck },
 			{ "GetEnergy", &ABaseCharacterClass::execGetEnergy },
 			{ "GetEnergyPercent", &ABaseCharacterClass::execGetEnergyPercent },
@@ -134,8 +171,53 @@ void EmptyLinkFunctionForGeneratedCodeBaseCharacterClass() {}
 			{ "IncrementClip", &ABaseCharacterClass::execIncrementClip },
 			{ "IsDead", &ABaseCharacterClass::execIsDead },
 			{ "IsHandEmpty", &ABaseCharacterClass::execIsHandEmpty },
+			{ "UpdateDash", &ABaseCharacterClass::execUpdateDash },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
+	}
+	struct Z_Construct_UFunction_ABaseCharacterClass_Dash_Statics
+	{
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ABaseCharacterClass_Dash_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "BaseCharacterClass.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_ABaseCharacterClass_Dash_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ABaseCharacterClass, nullptr, "Dash", nullptr, nullptr, nullptr, 0, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00080401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_ABaseCharacterClass_Dash_Statics::Function_MetaDataParams), Z_Construct_UFunction_ABaseCharacterClass_Dash_Statics::Function_MetaDataParams) };
+	UFunction* Z_Construct_UFunction_ABaseCharacterClass_Dash()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_ABaseCharacterClass_Dash_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_ABaseCharacterClass_DashEndFunction_Statics
+	{
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ABaseCharacterClass_DashEndFunction_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "BaseCharacterClass.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_ABaseCharacterClass_DashEndFunction_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ABaseCharacterClass, nullptr, "DashEndFunction", nullptr, nullptr, nullptr, 0, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00080401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_ABaseCharacterClass_DashEndFunction_Statics::Function_MetaDataParams), Z_Construct_UFunction_ABaseCharacterClass_DashEndFunction_Statics::Function_MetaDataParams) };
+	UFunction* Z_Construct_UFunction_ABaseCharacterClass_DashEndFunction()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_ABaseCharacterClass_DashEndFunction_Statics::FuncParams);
+		}
+		return ReturnFunction;
 	}
 	struct Z_Construct_UFunction_ABaseCharacterClass_GetCardCharge_Statics
 	{
@@ -240,6 +322,40 @@ void EmptyLinkFunctionForGeneratedCodeBaseCharacterClass() {}
 		if (!ReturnFunction)
 		{
 			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_ABaseCharacterClass_GetClip_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_ABaseCharacterClass_GetDashRecharge_Statics
+	{
+		struct BaseCharacterClass_eventGetDashRecharge_Parms
+		{
+			float ReturnValue;
+		};
+		static const UECodeGen_Private::FFloatPropertyParams NewProp_ReturnValue;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_ABaseCharacterClass_GetDashRecharge_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(BaseCharacterClass_eventGetDashRecharge_Parms, ReturnValue), METADATA_PARAMS(0, nullptr) };
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_ABaseCharacterClass_GetDashRecharge_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_ABaseCharacterClass_GetDashRecharge_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ABaseCharacterClass_GetDashRecharge_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "BaseCharacterClass.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_ABaseCharacterClass_GetDashRecharge_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ABaseCharacterClass, nullptr, "GetDashRecharge", nullptr, nullptr, Z_Construct_UFunction_ABaseCharacterClass_GetDashRecharge_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_ABaseCharacterClass_GetDashRecharge_Statics::PropPointers), sizeof(Z_Construct_UFunction_ABaseCharacterClass_GetDashRecharge_Statics::BaseCharacterClass_eventGetDashRecharge_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_ABaseCharacterClass_GetDashRecharge_Statics::Function_MetaDataParams), Z_Construct_UFunction_ABaseCharacterClass_GetDashRecharge_Statics::Function_MetaDataParams) };
+	static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_ABaseCharacterClass_GetDashRecharge_Statics::PropPointers) < 2048);
+	static_assert(sizeof(Z_Construct_UFunction_ABaseCharacterClass_GetDashRecharge_Statics::BaseCharacterClass_eventGetDashRecharge_Parms) < MAX_uint16);
+	UFunction* Z_Construct_UFunction_ABaseCharacterClass_GetDashRecharge()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_ABaseCharacterClass_GetDashRecharge_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -581,6 +697,40 @@ void EmptyLinkFunctionForGeneratedCodeBaseCharacterClass() {}
 		}
 		return ReturnFunction;
 	}
+	struct Z_Construct_UFunction_ABaseCharacterClass_UpdateDash_Statics
+	{
+		struct BaseCharacterClass_eventUpdateDash_Parms
+		{
+			float Value;
+		};
+		static const UECodeGen_Private::FFloatPropertyParams NewProp_Value;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_ABaseCharacterClass_UpdateDash_Statics::NewProp_Value = { "Value", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(BaseCharacterClass_eventUpdateDash_Parms, Value), METADATA_PARAMS(0, nullptr) };
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_ABaseCharacterClass_UpdateDash_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_ABaseCharacterClass_UpdateDash_Statics::NewProp_Value,
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ABaseCharacterClass_UpdateDash_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "BaseCharacterClass.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_ABaseCharacterClass_UpdateDash_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ABaseCharacterClass, nullptr, "UpdateDash", nullptr, nullptr, Z_Construct_UFunction_ABaseCharacterClass_UpdateDash_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_ABaseCharacterClass_UpdateDash_Statics::PropPointers), sizeof(Z_Construct_UFunction_ABaseCharacterClass_UpdateDash_Statics::BaseCharacterClass_eventUpdateDash_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00080401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_ABaseCharacterClass_UpdateDash_Statics::Function_MetaDataParams), Z_Construct_UFunction_ABaseCharacterClass_UpdateDash_Statics::Function_MetaDataParams) };
+	static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_ABaseCharacterClass_UpdateDash_Statics::PropPointers) < 2048);
+	static_assert(sizeof(Z_Construct_UFunction_ABaseCharacterClass_UpdateDash_Statics::BaseCharacterClass_eventUpdateDash_Parms) < MAX_uint16);
+	UFunction* Z_Construct_UFunction_ABaseCharacterClass_UpdateDash()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_ABaseCharacterClass_UpdateDash_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 	IMPLEMENT_CLASS_NO_AUTO_REGISTRATION(ABaseCharacterClass);
 	UClass* Z_Construct_UClass_ABaseCharacterClass_NoRegister()
 	{
@@ -642,9 +792,49 @@ void EmptyLinkFunctionForGeneratedCodeBaseCharacterClass() {}
 #endif
 		static const UECodeGen_Private::FObjectPropertyParams NewProp_ZoomAction;
 #if WITH_METADATA
-		static const UECodeGen_Private::FMetaDataPairParam NewProp_Speed_MetaData[];
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_DashAction_MetaData[];
 #endif
-		static const UECodeGen_Private::FFloatPropertyParams NewProp_Speed;
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_DashAction;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_FlyAction_MetaData[];
+#endif
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_FlyAction;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_BaseSpeed_MetaData[];
+#endif
+		static const UECodeGen_Private::FFloatPropertyParams NewProp_BaseSpeed;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_MaxCameraLeanValue_MetaData[];
+#endif
+		static const UECodeGen_Private::FFloatPropertyParams NewProp_MaxCameraLeanValue;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_CameraRotateSpeed_MetaData[];
+#endif
+		static const UECodeGen_Private::FFloatPropertyParams NewProp_CameraRotateSpeed;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_DashSpeed_MetaData[];
+#endif
+		static const UECodeGen_Private::FFloatPropertyParams NewProp_DashSpeed;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_DashShake_MetaData[];
+#endif
+		static const UECodeGen_Private::FClassPropertyParams NewProp_DashShake;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_DashDistance_MetaData[];
+#endif
+		static const UECodeGen_Private::FFloatPropertyParams NewProp_DashDistance;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_DashDuration_MetaData[];
+#endif
+		static const UECodeGen_Private::FFloatPropertyParams NewProp_DashDuration;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_DashCooldown_MetaData[];
+#endif
+		static const UECodeGen_Private::FFloatPropertyParams NewProp_DashCooldown;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_DashCurve_MetaData[];
+#endif
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_DashCurve;
 #if WITH_METADATA
 		static const UECodeGen_Private::FMetaDataPairParam NewProp_Health_MetaData[];
 #endif
@@ -686,6 +876,10 @@ void EmptyLinkFunctionForGeneratedCodeBaseCharacterClass() {}
 #endif
 		static void NewProp_bIsStaggeredFiring_SetBit(void* Obj);
 		static const UECodeGen_Private::FBoolPropertyParams NewProp_bIsStaggeredFiring;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_DashTimeline_MetaData[];
+#endif
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_DashTimeline;
 #if WITH_METADATA
 		static const UECodeGen_Private::FMetaDataPairParam NewProp_MaxEnergy_MetaData[];
 #endif
@@ -770,9 +964,21 @@ void EmptyLinkFunctionForGeneratedCodeBaseCharacterClass() {}
 #endif
 		static const UECodeGen_Private::FObjectPropertyParams NewProp_CameraComponent;
 #if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_DashEmitter_MetaData[];
+#endif
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_DashEmitter;
+#if WITH_METADATA
 		static const UECodeGen_Private::FMetaDataPairParam NewProp_SpringArm2_MetaData[];
 #endif
 		static const UECodeGen_Private::FObjectPropertyParams NewProp_SpringArm2;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_DashSpringArm_MetaData[];
+#endif
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_DashSpringArm;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_PlayerCameraShakeSource_MetaData[];
+#endif
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_PlayerCameraShakeSource;
 		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UECodeGen_Private::FClassParams ClassParams;
@@ -783,9 +989,12 @@ void EmptyLinkFunctionForGeneratedCodeBaseCharacterClass() {}
 	};
 	static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_ABaseCharacterClass_Statics::DependentSingletons) < 16);
 	const FClassFunctionLinkInfo Z_Construct_UClass_ABaseCharacterClass_Statics::FuncInfo[] = {
+		{ &Z_Construct_UFunction_ABaseCharacterClass_Dash, "Dash" }, // 4032530623
+		{ &Z_Construct_UFunction_ABaseCharacterClass_DashEndFunction, "DashEndFunction" }, // 3739481319
 		{ &Z_Construct_UFunction_ABaseCharacterClass_GetCardCharge, "GetCardCharge" }, // 247495851
 		{ &Z_Construct_UFunction_ABaseCharacterClass_GetChargedCards, "GetChargedCards" }, // 2203554044
 		{ &Z_Construct_UFunction_ABaseCharacterClass_GetClip, "GetClip" }, // 2087343851
+		{ &Z_Construct_UFunction_ABaseCharacterClass_GetDashRecharge, "GetDashRecharge" }, // 1042771399
 		{ &Z_Construct_UFunction_ABaseCharacterClass_GetDeck, "GetDeck" }, // 1009825967
 		{ &Z_Construct_UFunction_ABaseCharacterClass_GetEnergy, "GetEnergy" }, // 778582654
 		{ &Z_Construct_UFunction_ABaseCharacterClass_GetEnergyPercent, "GetEnergyPercent" }, // 4177284839
@@ -796,6 +1005,7 @@ void EmptyLinkFunctionForGeneratedCodeBaseCharacterClass() {}
 		{ &Z_Construct_UFunction_ABaseCharacterClass_IncrementClip, "IncrementClip" }, // 1991184494
 		{ &Z_Construct_UFunction_ABaseCharacterClass_IsDead, "IsDead" }, // 838193405
 		{ &Z_Construct_UFunction_ABaseCharacterClass_IsHandEmpty, "IsHandEmpty" }, // 2204687508
+		{ &Z_Construct_UFunction_ABaseCharacterClass_UpdateDash, "UpdateDash" }, // 560025859
 	};
 	static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_ABaseCharacterClass_Statics::FuncInfo) < 2048);
 #if WITH_METADATA
@@ -890,12 +1100,82 @@ void EmptyLinkFunctionForGeneratedCodeBaseCharacterClass() {}
 #endif
 	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_ZoomAction = { "ZoomAction", nullptr, (EPropertyFlags)0x0020080000000001, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ABaseCharacterClass, ZoomAction), Z_Construct_UClass_UInputAction_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_ZoomAction_MetaData), Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_ZoomAction_MetaData) };
 #if WITH_METADATA
-	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_Speed_MetaData[] = {
-		{ "Category", "BaseCharacterClass" },
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_DashAction_MetaData[] = {
+		{ "Category", "Input" },
 		{ "ModuleRelativePath", "BaseCharacterClass.h" },
 	};
 #endif
-	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_Speed = { "Speed", nullptr, (EPropertyFlags)0x0040000000000001, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ABaseCharacterClass, Speed), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_Speed_MetaData), Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_Speed_MetaData) };
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_DashAction = { "DashAction", nullptr, (EPropertyFlags)0x0020080000000001, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ABaseCharacterClass, DashAction), Z_Construct_UClass_UInputAction_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_DashAction_MetaData), Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_DashAction_MetaData) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_FlyAction_MetaData[] = {
+		{ "Category", "Input" },
+		{ "ModuleRelativePath", "BaseCharacterClass.h" },
+	};
+#endif
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_FlyAction = { "FlyAction", nullptr, (EPropertyFlags)0x0020080000000001, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ABaseCharacterClass, FlyAction), Z_Construct_UClass_UInputAction_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_FlyAction_MetaData), Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_FlyAction_MetaData) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_BaseSpeed_MetaData[] = {
+		{ "Category", "Movement" },
+		{ "ModuleRelativePath", "BaseCharacterClass.h" },
+	};
+#endif
+	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_BaseSpeed = { "BaseSpeed", nullptr, (EPropertyFlags)0x0040000000000001, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ABaseCharacterClass, BaseSpeed), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_BaseSpeed_MetaData), Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_BaseSpeed_MetaData) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_MaxCameraLeanValue_MetaData[] = {
+		{ "Category", "Movement" },
+		{ "ModuleRelativePath", "BaseCharacterClass.h" },
+	};
+#endif
+	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_MaxCameraLeanValue = { "MaxCameraLeanValue", nullptr, (EPropertyFlags)0x0040000000000001, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ABaseCharacterClass, MaxCameraLeanValue), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_MaxCameraLeanValue_MetaData), Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_MaxCameraLeanValue_MetaData) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_CameraRotateSpeed_MetaData[] = {
+		{ "Category", "Movement" },
+		{ "ModuleRelativePath", "BaseCharacterClass.h" },
+	};
+#endif
+	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_CameraRotateSpeed = { "CameraRotateSpeed", nullptr, (EPropertyFlags)0x0040000000000001, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ABaseCharacterClass, CameraRotateSpeed), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_CameraRotateSpeed_MetaData), Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_CameraRotateSpeed_MetaData) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_DashSpeed_MetaData[] = {
+		{ "Category", "Movement" },
+		{ "ModuleRelativePath", "BaseCharacterClass.h" },
+	};
+#endif
+	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_DashSpeed = { "DashSpeed", nullptr, (EPropertyFlags)0x0040000000000001, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ABaseCharacterClass, DashSpeed), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_DashSpeed_MetaData), Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_DashSpeed_MetaData) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_DashShake_MetaData[] = {
+		{ "Category", "Movement" },
+		{ "ModuleRelativePath", "BaseCharacterClass.h" },
+	};
+#endif
+	const UECodeGen_Private::FClassPropertyParams Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_DashShake = { "DashShake", nullptr, (EPropertyFlags)0x0044000000000001, UECodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ABaseCharacterClass, DashShake), Z_Construct_UClass_UClass, Z_Construct_UClass_UCameraShakeBase_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_DashShake_MetaData), Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_DashShake_MetaData) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_DashDistance_MetaData[] = {
+		{ "Category", "Movement" },
+		{ "ModuleRelativePath", "BaseCharacterClass.h" },
+	};
+#endif
+	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_DashDistance = { "DashDistance", nullptr, (EPropertyFlags)0x0040000000000001, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ABaseCharacterClass, DashDistance), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_DashDistance_MetaData), Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_DashDistance_MetaData) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_DashDuration_MetaData[] = {
+		{ "Category", "Movement" },
+		{ "ModuleRelativePath", "BaseCharacterClass.h" },
+	};
+#endif
+	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_DashDuration = { "DashDuration", nullptr, (EPropertyFlags)0x0040000000000001, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ABaseCharacterClass, DashDuration), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_DashDuration_MetaData), Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_DashDuration_MetaData) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_DashCooldown_MetaData[] = {
+		{ "Category", "Movement" },
+		{ "ModuleRelativePath", "BaseCharacterClass.h" },
+	};
+#endif
+	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_DashCooldown = { "DashCooldown", nullptr, (EPropertyFlags)0x0040000000000001, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ABaseCharacterClass, DashCooldown), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_DashCooldown_MetaData), Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_DashCooldown_MetaData) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_DashCurve_MetaData[] = {
+		{ "Category", "Movement" },
+		{ "ModuleRelativePath", "BaseCharacterClass.h" },
+	};
+#endif
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_DashCurve = { "DashCurve", nullptr, (EPropertyFlags)0x0040000000000001, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ABaseCharacterClass, DashCurve), Z_Construct_UClass_UCurveFloat_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_DashCurve_MetaData), Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_DashCurve_MetaData) };
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_Health_MetaData[] = {
 		{ "Category", "Combat" },
@@ -978,6 +1258,14 @@ void EmptyLinkFunctionForGeneratedCodeBaseCharacterClass() {}
 		((ABaseCharacterClass*)Obj)->bIsStaggeredFiring = 1;
 	}
 	const UECodeGen_Private::FBoolPropertyParams Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_bIsStaggeredFiring = { "bIsStaggeredFiring", nullptr, (EPropertyFlags)0x0040000000010001, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, sizeof(bool), sizeof(ABaseCharacterClass), &Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_bIsStaggeredFiring_SetBit, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_bIsStaggeredFiring_MetaData), Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_bIsStaggeredFiring_MetaData) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_DashTimeline_MetaData[] = {
+		{ "Category", "BaseCharacterClass" },
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "BaseCharacterClass.h" },
+	};
+#endif
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_DashTimeline = { "DashTimeline", nullptr, (EPropertyFlags)0x0042000000080009, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ABaseCharacterClass, DashTimeline), Z_Construct_UClass_UTimelineComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_DashTimeline_MetaData), Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_DashTimeline_MetaData) };
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_MaxEnergy_MetaData[] = {
 		{ "Category", "Combat" },
@@ -1130,6 +1418,14 @@ void EmptyLinkFunctionForGeneratedCodeBaseCharacterClass() {}
 #endif
 	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_CameraComponent = { "CameraComponent", nullptr, (EPropertyFlags)0x0042000000080009, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ABaseCharacterClass, CameraComponent), Z_Construct_UClass_UCameraComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_CameraComponent_MetaData), Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_CameraComponent_MetaData) };
 #if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_DashEmitter_MetaData[] = {
+		{ "Category", "BaseCharacterClass" },
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "BaseCharacterClass.h" },
+	};
+#endif
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_DashEmitter = { "DashEmitter", nullptr, (EPropertyFlags)0x0042000000080009, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ABaseCharacterClass, DashEmitter), Z_Construct_UClass_UNiagaraComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_DashEmitter_MetaData), Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_DashEmitter_MetaData) };
+#if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_SpringArm2_MetaData[] = {
 		{ "Category", "BaseCharacterClass" },
 		{ "EditInline", "true" },
@@ -1137,6 +1433,22 @@ void EmptyLinkFunctionForGeneratedCodeBaseCharacterClass() {}
 	};
 #endif
 	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_SpringArm2 = { "SpringArm2", nullptr, (EPropertyFlags)0x0042000000080009, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ABaseCharacterClass, SpringArm2), Z_Construct_UClass_USpringArmComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_SpringArm2_MetaData), Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_SpringArm2_MetaData) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_DashSpringArm_MetaData[] = {
+		{ "Category", "BaseCharacterClass" },
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "BaseCharacterClass.h" },
+	};
+#endif
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_DashSpringArm = { "DashSpringArm", nullptr, (EPropertyFlags)0x0042000000080009, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ABaseCharacterClass, DashSpringArm), Z_Construct_UClass_USpringArmComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_DashSpringArm_MetaData), Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_DashSpringArm_MetaData) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_PlayerCameraShakeSource_MetaData[] = {
+		{ "Category", "BaseCharacterClass" },
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "BaseCharacterClass.h" },
+	};
+#endif
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_PlayerCameraShakeSource = { "PlayerCameraShakeSource", nullptr, (EPropertyFlags)0x0042000000080009, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ABaseCharacterClass, PlayerCameraShakeSource), Z_Construct_UClass_UCameraShakeSourceComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_PlayerCameraShakeSource_MetaData), Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_PlayerCameraShakeSource_MetaData) };
 	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ABaseCharacterClass_Statics::PropPointers[] = {
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_HealthPerSegment,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_AmountOfHealthSegments,
@@ -1150,7 +1462,17 @@ void EmptyLinkFunctionForGeneratedCodeBaseCharacterClass() {}
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_CardAction,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_ReloadAction,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_ZoomAction,
-		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_Speed,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_DashAction,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_FlyAction,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_BaseSpeed,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_MaxCameraLeanValue,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_CameraRotateSpeed,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_DashSpeed,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_DashShake,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_DashDistance,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_DashDuration,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_DashCooldown,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_DashCurve,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_Health,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_MaxHealth,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_CurrentShield,
@@ -1161,6 +1483,7 @@ void EmptyLinkFunctionForGeneratedCodeBaseCharacterClass() {}
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_FireDelay,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_StaggerDelay,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_bIsStaggeredFiring,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_DashTimeline,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_MaxEnergy,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_EnergyMinimum,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_EnergyRegenRate,
@@ -1182,7 +1505,10 @@ void EmptyLinkFunctionForGeneratedCodeBaseCharacterClass() {}
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_CardCharge,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_CardDeckLocation,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_CameraComponent,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_DashEmitter,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_SpringArm2,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_DashSpringArm,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABaseCharacterClass_Statics::NewProp_PlayerCameraShakeSource,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_ABaseCharacterClass_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<ABaseCharacterClass>::IsAbstract,
@@ -1222,9 +1548,9 @@ void EmptyLinkFunctionForGeneratedCodeBaseCharacterClass() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_BaseCharacterClass_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_ABaseCharacterClass, ABaseCharacterClass::StaticClass, TEXT("ABaseCharacterClass"), &Z_Registration_Info_UClass_ABaseCharacterClass, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ABaseCharacterClass), 4197043845U) },
+		{ Z_Construct_UClass_ABaseCharacterClass, ABaseCharacterClass::StaticClass, TEXT("ABaseCharacterClass"), &Z_Registration_Info_UClass_ABaseCharacterClass, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ABaseCharacterClass), 2722233950U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_BaseCharacterClass_h_1247367446(TEXT("/Script/CardslingerPrototype"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_BaseCharacterClass_h_905477301(TEXT("/Script/CardslingerPrototype"),
 		Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_BaseCharacterClass_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_BaseCharacterClass_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);

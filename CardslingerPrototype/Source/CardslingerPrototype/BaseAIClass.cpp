@@ -101,8 +101,8 @@ bool ABaseAIClass::HitTrace(FHitResult& Hit, FVector& ShotDirection)
 
 	FVector PredictedLocation = PlayerLocation + (PlayerVelocty * BulletTravelTime);
 
-	ShotDirection = (PredictedLocation - ViewLocation).GetSafeNormal();
-	//ShotDirection = ViewRotation.Vector();
+	if(bIsPredictiveAiming) ShotDirection = (PredictedLocation - ViewLocation).GetSafeNormal();
+	else ShotDirection = ViewRotation.Vector();
 	FVector End = ViewLocation + ShotDirection * MaxRange;
 	FCollisionQueryParams Params;
 	Params.AddIgnoredActor(this);
@@ -130,7 +130,7 @@ void ABaseAIClass::Shoot()
 	FVector ShotDirection;
 	AController* OwnerController = GetController();
 	if(OwnerController == nullptr) return;
-	if(HitTrace(Hit, ShotDirection))
+	if(HitTrace(Hit, ShotDirection) || bIsPredictiveAiming)
 	{
 	//UGameplayStatics::PlaySoundAtLocation(GetWorld(), ImpactSound, Hit.Location);
 	//FPointDamageEvent DamageEvent(Damage, Hit, ShotDirection, nullptr);

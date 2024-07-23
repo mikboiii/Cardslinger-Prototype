@@ -8,6 +8,7 @@
 #include "InputActionValue.h"
 #include "Components/InputComponent.h"
 #include "Kismet/GameplayStatics.h"
+#include "Kismet/KismetMathLibrary.h"
 #include "Components/CapsuleComponent.h"
 #include "Components/SkeletalMeshComponent.h"
 #include "Camera/CameraComponent.h"
@@ -27,6 +28,13 @@
 #include "Blueprint/UserWidget.h"
 #include "PlayerHUDWidget.h"
 #include "BaseAIClass.h"
+#include "Components/TimelineComponent.h"
+#include "Curves/CurveFloat.h"
+#include "GameFramework/Character.h"
+#include "GameFramework/CharacterMovementComponent.h"
+#include "NiagaraComponent.h"
+#include "Camera/CameraShakeBase.h"
+#include "Camera/CameraShakeSourceComponent.h"
 
 
 // Sets default values
@@ -41,7 +49,13 @@ ABaseCharacterClass::ABaseCharacterClass()
 	CameraComponent->SetupAttachment(SpringArm2);
 	CardDeckLocation = CreateDefaultSubobject<USceneComponent>(TEXT("CardLocation"));
 	CardDeckLocation->SetupAttachment(CameraComponent);
-
+	DashTimeline = CreateDefaultSubobject<UTimelineComponent>(TEXT("DashTimeline"));
+	DashSpringArm = CreateDefaultSubobject<USpringArmComponent>(TEXT("EmitterSpringArm"));
+	DashSpringArm->SetupAttachment(CameraComponent);
+	DashEmitter = CreateDefaultSubobject<UNiagaraComponent>(TEXT("DashEmitter"));
+	DashEmitter->SetupAttachment(DashSpringArm);
+	PlayerCameraShakeSource = CreateDefaultSubobject<UCameraShakeSourceComponent>(TEXT("CharacterCameraShakeSource"));
+	PlayerCameraShakeSource->SetupAttachment(CameraComponent);
 
 }
 
@@ -73,7 +87,11 @@ void ABaseCharacterClass::BeginPlay()
 
 	CurrentEnergy = MaxEnergy;
 
+	Speed = BaseSpeed;
+
 	MaxEnergy = AmountOfEnergySegments * EnergyPerSegment;
+
+	DashRecharge = 1.0f;
 
 	ACardslingerPlayerController* PC = Cast<ACardslingerPlayerController>(GetController());
 	//get pointer to player hud widget
@@ -81,6 +99,19 @@ void ABaseCharacterClass::BeginPlay()
 	
 	//draw initial hands
 	ReplenishHandFunction();
+
+	if(DashCurve)
+	{
+		FOnTimelineFloat ProgressFunction;
+		ProgressFunction.BindUFunction(this, FName("UpdateDash"));
+		DashTimeline->AddInterpFloat(DashCurve, ProgressFunction);
+
+		FOnTimelineEvent FinishFunction;
+		FinishFunction.BindUFunction(this, FName("DashEndFunction"));
+		DashTimeline->SetTimelineFinishedFunc(FinishFunction);
+
+		DashTimeline->SetPlayRate(1.0f / DashDuration);
+	}
 }
 
 // Called every frame
@@ -92,6 +123,10 @@ void ABaseCharacterClass::Tick(float DeltaTime)
 	{
 		CurrentEnergy+= (EnergyRegenRate) * DeltaTime;
 	}
+	DashRecharge += DeltaTime / DashCooldown;
+	if(DashRecharge > 1) DashRecharge = 1.0f;
+
+	LeanCamera(DeltaTime);
 
 }
 
@@ -113,12 +148,23 @@ void ABaseCharacterClass::SetupPlayerInputComponent(UInputComponent* PlayerInput
         EnhancedInputComponent->BindAction(MoveAction, ETriggerEvent::Triggered, this, &ABaseCharacterClass::Move);
         EnhancedInputComponent->BindAction(LookAction, ETriggerEvent::Triggered, this, &ABaseCharacterClass::Look);
         EnhancedInputComponent->BindAction(JumpAction, ETriggerEvent::Triggered, this, &ACharacter::Jump);
+		EnhancedInputComponent->BindAction(FlyAction, ETriggerEvent::Triggered, this, &ABaseCharacterClass::FlyUp);
         EnhancedInputComponent->BindAction(ShootAction, ETriggerEvent::Triggered, this, &ABaseCharacterClass::ShootMultiple);
 		EnhancedInputComponent->BindAction(CardAction, ETriggerEvent::Triggered, this, &ABaseCharacterClass::UseCard);
 		EnhancedInputComponent->BindAction(ReloadAction, ETriggerEvent::Triggered, this, &ABaseCharacterClass::Reload);
 		EnhancedInputComponent->BindAction(ZoomAction, ETriggerEvent::Triggered, this, &ABaseCharacterClass::Zoom);
+		EnhancedInputComponent->BindAction(DashAction, ETriggerEvent::Triggered, this, &ABaseCharacterClass::Dash);
     }
 }
+
+void ABaseCharacterClass::FlyUp(const FInputActionValue& Value)
+{
+	if(bIsCharacterFlying)
+	{
+		AddMovementInput(GetActorUpVector() * Speed * Value.Get<float>());
+	}
+}
+
 
 void ABaseCharacterClass::Move(const FInputActionValue& Value)
 {
@@ -129,14 +175,55 @@ void ABaseCharacterClass::Move(const FInputActionValue& Value)
     FVector DeltaLocation = FVector::ZeroVector;
     DeltaLocation.X += Forward * UGameplayStatics::GetWorldDeltaSeconds(this) * Speed;
 	DeltaLocation.Y += Right * UGameplayStatics::GetWorldDeltaSeconds(this) * Speed;
-    AddMovementInput(GetActorForwardVector() * Forward);
-    AddMovementInput(GetActorRightVector() * Right);
+	AddMovementInput(GetActorForwardVector() * Forward);
+	AddMovementInput(GetActorRightVector() * Right);
+
+	if(Right > 0) CameraLeanValue = MaxCameraLeanValue;
+	else if(Right < 0) CameraLeanValue = -MaxCameraLeanValue;
+	else CameraLeanValue = 0;
 }
 
 void ABaseCharacterClass::Look(const FInputActionValue& Value)
 {
     AddControllerPitchInput(Value.Get<FVector2D>().Y);
     AddControllerYawInput(Value.Get<FVector2D>().X);
+}
+
+void ABaseCharacterClass::Dash()
+{
+	if((bIsDashing || !bCanDash) || !DashCurve) return;
+	bIsDashing = true;
+	bCanDash = false;
+
+	FVector DashDirection = GetLastMovementInputVector().GetSafeNormal2D();
+
+	DashStartLocation = GetActorLocation();
+	DashEndLocation = DashStartLocation + DashDirection * DashDistance;
+	FTimerHandle DashCooldownHandle;
+	GetWorldTimerManager().SetTimer(DashCooldownHandle, this, &ABaseCharacterClass::DashCooldownFunction, DashCooldown);
+	DashRecharge = 0.0f;
+	DashTimeline->PlayFromStart();
+	DashDirection *= -1;
+	DashSpringArm->SetWorldRotation(DashDirection.Rotation());
+	DashEmitter->Activate();
+	if(DashShake) PlayerCameraShakeSource->StartCameraShake(DashShake);
+	GetMovementComponent()->Velocity = DashDirection * -DashSpeed;
+}
+
+void ABaseCharacterClass::DashEndFunction()
+{
+	bIsDashing = false;
+}
+
+void ABaseCharacterClass::UpdateDash(float Value)
+{
+	FVector NewLocation = FMath::Lerp(DashStartLocation, DashEndLocation, Value);
+	SetActorLocation(NewLocation, true);
+}
+
+void ABaseCharacterClass::DashCooldownFunction()
+{
+	bCanDash = true;
 }
 
 /// @brief Function used to apply damage to the player and notify game mode in case of death
@@ -413,6 +500,27 @@ void ABaseCharacterClass::ReplenishHandFunction()
 		}
 }
 
+void ABaseCharacterClass::LeanCamera(float DeltaTime)
+{
+	float CurrentCameraRoll = CameraComponent->GetRelativeRotation().Roll;
+	float CameraRotation = UKismetMathLibrary::FInterpTo(CurrentCameraRoll, CameraLeanValue, DeltaTime, CameraRotateSpeed);
+	CameraComponent->SetRelativeRotation(FRotator(0, 0, CameraRotation));
+	UE_LOG(LogTemp, Display, TEXT("CameraRotation is %f"), CameraRotation);
+}
+
+void ABaseCharacterClass::SetFlyMode(bool bIsFlying)
+{
+	bIsCharacterFlying = bIsFlying;
+	if(bIsFlying)
+	{
+		GetCharacterMovement()->SetMovementMode(EMovementMode::MOVE_Flying);
+	}
+	else
+	{
+		GetCharacterMovement()->SetMovementMode(EMovementMode::MOVE_Walking);
+	}
+}
+
 ///@brief Returns alive state of the player
 bool ABaseCharacterClass::IsDead() const
 {
@@ -545,6 +653,11 @@ void ABaseCharacterClass::GetCardCharge(float &OutCurrentCharge, float &OutMaxCh
 {
 	OutCurrentCharge = CardCharge;
 	OutMaxCharge = ChargeForOneCard;
+}
+
+float ABaseCharacterClass::GetDashRecharge()
+{
+	return DashRecharge;
 }
 
 /// @brief increases the number of cards in the clip by 1

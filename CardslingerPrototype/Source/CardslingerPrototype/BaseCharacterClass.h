@@ -53,8 +53,13 @@ protected:
 	UInputAction* ReloadAction;
 	UPROPERTY(EditAnywhere, Category = "Input")
 	UInputAction* ZoomAction;
+	UPROPERTY(EditAnywhere, Category = "Input")
+	UInputAction* DashAction;
+	UPROPERTY(EditAnywhere, Category = "Input")
+	UInputAction* FlyAction;
 
 	void Move(const FInputActionValue& Value);
+	void FlyUp(const FInputActionValue& Value);
 	void Look(const FInputActionValue& Value);
 	void UseCard(const FInputActionValue& Value);
 	void Zoom(const FInputActionValue& Value);
@@ -62,6 +67,17 @@ protected:
 	void Shoot();
 
 	void ShootMultiple();
+
+	UFUNCTION()
+	void Dash();
+
+	UFUNCTION()
+	void DashEndFunction();
+
+	UFUNCTION()
+	void UpdateDash(float Value);
+
+	void DashCooldownFunction();
 
 public:	
 	// Called every frame
@@ -79,6 +95,9 @@ public:
 	bool IsDead() const;
 	UFUNCTION(BlueprintCallable)
 	void IncrementClip();
+
+	void SetFlyMode(bool bIsFlying);
+
 
 	void Heal(bool IsPercentile, float HealingAmount);
 
@@ -104,11 +123,52 @@ public:
 	int32 GetChargedCards();
 	UFUNCTION(BlueprintPure)
 	void GetCardCharge(float &OutCurrentCharge, float &OutMaxCharge);
+	UFUNCTION(BlueprintPure)
+	float GetDashRecharge();
 
 private:
 
-	UPROPERTY(EditAnywhere)
+	UPROPERTY(EditAnywhere, Category = "Movement")
+	float BaseSpeed = 10.0f;
+
+	bool bIsCharacterFlying = false;
+
 	float Speed = 10.f;
+	
+	float CameraLeanValue = 0.0f;
+
+	UPROPERTY(EditAnywhere, Category = "Movement")
+	float MaxCameraLeanValue = 25.0f;
+
+	UPROPERTY(EditAnywhere, Category = "Movement")
+	float CameraRotateSpeed = 1.0f;
+
+	void LeanCamera(float DeltaTime);
+
+	UPROPERTY(EditAnywhere, Category = "Movement")
+	float DashSpeed = 50.0f;
+	UPROPERTY(EditAnywhere, Category = "Movement")
+	TSubclassOf<class UCameraShakeBase> DashShake;
+
+	UPROPERTY(EditAnywhere, Category = "Movement")
+	float DashDistance = 300.0f;
+
+	UPROPERTY(EditAnywhere, Category = "Movement")
+	float DashDuration = 0.3f;
+	
+	UPROPERTY(EditAnywhere, Category = "Movement")
+	float DashCooldown = 5.0f;
+
+	float DashRecharge = 0.0f;
+
+	UPROPERTY(EditAnywhere, Category = "Movement")
+    UCurveFloat* DashCurve;
+
+	bool bIsDashing = false;
+
+	FVector DashStartLocation;
+	FVector DashEndLocation;
+
 	
 	UPROPERTY(VisibleAnywhere, Category = "Combat")
 	float Health;
@@ -143,6 +203,9 @@ private:
 
 	UPROPERTY(EditDefaultsOnly, Category = "Combat")
 	bool bIsStaggeredFiring;
+
+	UPROPERTY(Instanced, EditAnywhere)
+    class UTimelineComponent* DashTimeline;
 
 	UPROPERTY(EditDefaultsOnly, Category="Combat")
 	float MaxEnergy = 3.0f;
@@ -208,6 +271,8 @@ private:
 
 	bool bIsChargeMode = false;
 
+	bool bCanDash = true;
+
 	float ChargeForOneCard = 1.0f;
 
 	UPROPERTY(VisibleAnywhere, Category="Combat")
@@ -223,8 +288,17 @@ private:
 	UPROPERTY(Instanced, EditAnywhere)
 	class UCameraComponent* CameraComponent;
 
+	UPROPERTY(Instanced, EditAnywhere)
+	class UNiagaraComponent* DashEmitter;
+
 	UPROPERTY(EditAnywhere, Instanced)
 	class USpringArmComponent* SpringArm2;
+
+	UPROPERTY(EditAnywhere, Instanced)
+	class USpringArmComponent* DashSpringArm;
+
+	UPROPERTY(EditAnywhere, Instanced)
+	class UCameraShakeSourceComponent* PlayerCameraShakeSource;
 
 	void DrawCardTimerFunction(int CardIndex);
 
