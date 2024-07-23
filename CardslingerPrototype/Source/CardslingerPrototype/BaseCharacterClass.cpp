@@ -95,7 +95,7 @@ void ABaseCharacterClass::BeginPlay()
 
 	ACardslingerPlayerController* PC = Cast<ACardslingerPlayerController>(GetController());
 	//get pointer to player hud widget
-	PlayerHUD = PC->GetHUD();
+	PlayerHUD = Cast<UPlayerHUDWidget>(PC->GetHUD());
 	
 	//draw initial hands
 	ReplenishHandFunction();
@@ -242,11 +242,13 @@ float ABaseCharacterClass::TakeDamage(float DamageAmount, struct FDamageEvent co
 		{
 			CurrentShield = 0;
 			Health -= FMath::Abs(CurrentShield);
+			PlayerHUD->FlashDamageVignetteBP();
 		}
 	}
 	else
 	{
     	Health -= DamageToApply;
+		PlayerHUD->FlashDamageVignetteBP();
 	}
 
     if(IsDead())
@@ -283,8 +285,8 @@ void ABaseCharacterClass::UseCard(const FInputActionValue& Value)
 	else
 	{
 		if(!InfiniteEnergy) CurrentEnergy -= CardHand[Index]->GetCardCost();
-		Cast<UPlayerHUDWidget>(PlayerHUD)->RemoveCard(Index);
-		if(CardBackClass) Cast<UPlayerHUDWidget>(PlayerHUD)->SetCard(Index, CreateWidget<UUserWidget>(GetWorld(), CardBackClass));
+		PlayerHUD->RemoveCard(Index);
+		if(CardBackClass) PlayerHUD->SetCard(Index, CreateWidget<UUserWidget>(GetWorld(), CardBackClass));
 		//hit trace maintained in case specific card effects require hitscan
 		FVector ShotDirection;
 		FHitResult Hit;
@@ -475,7 +477,7 @@ void ABaseCharacterClass::DrawCardTimerFunction(int CardIndex)
 	else
 	{
 		CardHand[CardIndex] = CardDeck->DrawCard();
-		Cast<UPlayerHUDWidget>(PlayerHUD)->SetCard(CardIndex, CardHand[CardIndex]->CardWidget);
+		PlayerHUD->SetCard(CardIndex, CardHand[CardIndex]->CardWidget);
 	}
 }
 
@@ -490,12 +492,12 @@ void ABaseCharacterClass::ReplenishHandFunction()
 			{
 				if(CardHand[i]->CardWidget != nullptr)
 				{
-					Cast<UPlayerHUDWidget>(PlayerHUD)->SetCard(i, CardHand[i]->CardWidget);
+					PlayerHUD->SetCard(i, CardHand[i]->CardWidget);
 				}
 			}
 			else
 			{
-				Cast<UPlayerHUDWidget>(PlayerHUD)->SetCard(i, CreateWidget<UUserWidget>(GetWorld(), CardBackClass));
+				PlayerHUD->SetCard(i, CreateWidget<UUserWidget>(GetWorld(), CardBackClass));
 			}
 		}
 }

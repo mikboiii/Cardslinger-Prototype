@@ -227,7 +227,7 @@ private:
 	float CardChargeRate = 0.1f;
 
 	UPROPERTY()
-	UUserWidget* PlayerHUD;
+	class UPlayerHUDWidget* PlayerHUD;
 
 	UPROPERTY(EditDefaultsOnly)
 	TSubclassOf<UUserWidget> CardBackClass;
