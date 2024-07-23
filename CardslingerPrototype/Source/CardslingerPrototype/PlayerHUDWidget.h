@@ -30,4 +30,10 @@ public:
 
 	UFUNCTION(BlueprintImplementableEvent)
 	void FlashDamageVignetteBP();
+
+	UFUNCTION(BlueprintImplementableEvent)
+	void FlashHealVignetteBP();
+
+	UFUNCTION(BlueprintImplementableEvent)
+	void FlashShieldVignetteBP();
 };
