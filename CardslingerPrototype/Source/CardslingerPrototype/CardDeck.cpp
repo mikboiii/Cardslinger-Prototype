@@ -115,7 +115,7 @@ AProjectileCard* ACardDeck::FireCard(FVector Direction, TSubclassOf<class AProje
 		Projectile->SetBoneTarget(TargetBone);
 	}
 	//sets the card's homing target
-	else Projectile->SetHomingTarget(Target, TargetActor);
+	Projectile->SetHomingTarget(Target, TargetActor);
 	//returns the card actor
 	return Projectile;
 	}

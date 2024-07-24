@@ -349,7 +349,7 @@ void ABaseCharacterClass::Shoot()
 			{
 				USkeletalMeshComponent* TargetMesh = Cast<USkeletalMeshComponent>(Cast<ABaseAIClass>(HitActor)->GetMesh());
 				FName BoneName = TargetMesh->FindClosestBone(Hit.ImpactPoint);
-				UE_LOG(LogTemp, Display, TEXT("Bone name: %s"), BoneName);
+				UE_LOG(LogTemp, Display, TEXT("Bone name: %s"), *BoneName.ToString());
 				//launch basic projectile
 				CardDeck->FireCard(-ShotDirection, BasicCardProjectile, Hit.ImpactPoint, Hit.GetActor(), BoneName);
 				//remove from deck
@@ -511,7 +511,6 @@ void ABaseCharacterClass::LeanCamera(float DeltaTime)
 	float CurrentCameraRoll = CameraComponent->GetRelativeRotation().Roll;
 	float CameraRotation = UKismetMathLibrary::FInterpTo(CurrentCameraRoll, CameraLeanValue, DeltaTime, CameraRotateSpeed);
 	CameraComponent->SetRelativeRotation(FRotator(0, 0, CameraRotation));
-	UE_LOG(LogTemp, Display, TEXT("CameraRotation is %f"), CameraRotation);
 }
 
 void ABaseCharacterClass::SetFlyMode(bool bIsFlying)
