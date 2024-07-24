@@ -14,6 +14,7 @@
 #include "DrawDebugHelpers.h"
 #include "TimerManager.h"
 #include "BaseCharacterClass.h"
+#include "BaseAIClass.h"
 
 // Sets default values
 AProjectileCard::AProjectileCard()
@@ -81,14 +82,20 @@ void AProjectileCard::OnHit(UPrimitiveComponent* HitComponent, AActor* OtherActo
 			FPointDamageEvent DamageEvent(CardDamage, Hit, -GetActorForwardVector(), nullptr);
 			OtherActor->TakeDamage(CardDamage, DamageEvent, PlayerPawn->GetController(), this);
 			PlayerPawn->GiveEnergy(EnergyOnDamage);
+			USkeletalMeshComponent* TargetMesh = Cast<USkeletalMeshComponent>(Cast<ABaseAIClass>(OtherActor)->GetMesh());
+			FName BoneName = TargetMesh->FindClosestBone(GetActorLocation());
+			if(BoneName != NAME_None)
+			{
+				AttachToComponent(TargetMesh, FAttachmentTransformRules::KeepRelativeTransform, BoneName);
+			}
 			if(CardImpact)
 			{
 				UNiagaraFunctionLibrary::SpawnSystemAtLocation(GetWorld(), CardImpact, Hit.ImpactPoint, GetActorForwardVector().Rotation(),FVector(ParticleScale), true, true, ENCPoolMethod::None, true);
 			}
+			return;
 		}
+		Destroy();
     }
-
-    Destroy();
 }
 
 /// @brief This sets the card's homing location to an FVector location
