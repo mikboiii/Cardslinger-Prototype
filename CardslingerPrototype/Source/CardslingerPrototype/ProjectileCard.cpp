@@ -93,7 +93,9 @@ void AProjectileCard::OnHit(UPrimitiveComponent* HitComponent, AActor* OtherActo
 			{
 				AttachToComponent(TargetMesh, FAttachmentTransformRules::KeepWorldTransform, BoneName);
 				SetActorEnableCollision(false);
+				CardTrail->Deactivate();
 				bIsAttached = true;
+				CardSkeletalMesh->Stop();
 			}
 			if(CardImpact)
 			{
@@ -117,7 +119,6 @@ void AProjectileCard::SetHomingTarget(FVector Target)
 void AProjectileCard::SetBoneTarget(FName BoneName)
 {
 	BoneTarget = BoneName;
-	UE_LOG(LogTemp, Display, TEXT("Bone target set"));
 }
 
 /// @brief This sets the card's homing location to an FVector location and also sets the AActor target
@@ -130,7 +131,6 @@ void AProjectileCard::SetHomingTarget(FVector Target, AActor* TargetActor)
 	if(BoneTarget != NAME_None) 
 	{
 		TargetLocation = Cast<USkeletalMeshComponent>((Cast<ABaseAIClass>(TargetActor)->GetMesh()))->GetBoneLocation(BoneTarget);
-		UE_LOG(LogTemp, Display, TEXT("Target location is %s, at location %s"), *BoneTarget.ToString(), *TargetLocation.ToString());
 	}
 	CalculateMidPoint();
 	CalculateCurveControlPoint();
