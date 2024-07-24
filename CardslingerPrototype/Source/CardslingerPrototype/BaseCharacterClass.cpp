@@ -347,8 +347,11 @@ void ABaseCharacterClass::Shoot()
 			//if the line trace hits an enemy actor, have the card home in on them
 			if(Hit.GetActor()->IsA(ABaseAIClass::StaticClass()))
 			{
+				USkeletalMeshComponent* TargetMesh = Cast<USkeletalMeshComponent>(Cast<ABaseAIClass>(HitActor)->GetMesh());
+				FName BoneName = TargetMesh->FindClosestBone(Hit.ImpactPoint);
+				UE_LOG(LogTemp, Display, TEXT("Bone name: %s"), BoneName);
 				//launch basic projectile
-				CardDeck->FireCard(-ShotDirection, BasicCardProjectile, Hit.ImpactPoint, Hit.GetActor());
+				CardDeck->FireCard(-ShotDirection, BasicCardProjectile, Hit.ImpactPoint, Hit.GetActor(), BoneName);
 				//remove from deck
 				CardDeck->RemoveCardFromDeck(CurrentClip);
 
