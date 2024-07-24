@@ -101,6 +101,8 @@ protected:
 
 	class ABaseCharacterClass* PlayerPawn;
 
+	bool bIsAttached = false;
+
 	UFUNCTION()
 	void CalculateMidPoint();
 	UFUNCTION()

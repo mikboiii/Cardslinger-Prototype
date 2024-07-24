@@ -54,7 +54,7 @@ void AProjectileCard::Tick(float DeltaTime)
 	CurvedPoint = UKismetMathLibrary::VInterpTo_Constant(CurvedPoint, TargetLocation, DeltaTime, CardSpeed);
 	//finds the new location for the card based on the projected path
 	FVector NewLocation = UKismetMathLibrary::VInterpTo_Constant(GetActorLocation(), CurvedPoint, DeltaTime, CardSpeed);
-	SetActorLocation(NewLocation, true);
+	if(!bIsAttached) SetActorLocation(NewLocation, true);
 	//if the card meets its location, it gets deleted. used to prevent cards floating in place of a dead enemy.
 	if(DestroyOnImpact && FVector::Dist(GetActorLocation(), TargetLocation) == 0) DestroyCard();
 }
@@ -86,7 +86,9 @@ void AProjectileCard::OnHit(UPrimitiveComponent* HitComponent, AActor* OtherActo
 			FName BoneName = TargetMesh->FindClosestBone(GetActorLocation());
 			if(BoneName != NAME_None)
 			{
-				AttachToComponent(TargetMesh, FAttachmentTransformRules::KeepRelativeTransform, BoneName);
+				AttachToComponent(TargetMesh, FAttachmentTransformRules::KeepWorldTransform, BoneName);
+				SetActorEnableCollision(false);
+				bIsAttached = true;
 			}
 			if(CardImpact)
 			{
