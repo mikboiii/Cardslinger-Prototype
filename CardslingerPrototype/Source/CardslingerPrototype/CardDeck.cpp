@@ -102,7 +102,7 @@ void ACardDeck::ShuffleDeck()
 /// @param Target The FVector location in the world space that the card will fly to
 /// @param TargetActor The AActor the card will fly towards
 /// @return Returns a pointer to the card that was just launched
-AProjectileCard* ACardDeck::FireCard(FVector Direction, TSubclassOf<class AProjectileCard> CardClass, FVector Target, AActor* TargetActor)
+AProjectileCard* ACardDeck::FireCard(FVector Direction, TSubclassOf<class AProjectileCard> CardClass, FVector Target, AActor* TargetActor, FName TargetBone)
 {
 	if(CardClass != nullptr)
 	{
@@ -110,8 +110,12 @@ AProjectileCard* ACardDeck::FireCard(FVector Direction, TSubclassOf<class AProje
 	AProjectileCard* Projectile = GetWorld()->SpawnActor<AProjectileCard>(CardClass, GetActorLocation(), Direction.Rotation());
 	//sets the deck as the owner of the card in the hierarchy
 	Projectile->SetOwner(this);
+	if(TargetBone != NAME_None)
+	{
+		Projectile->SetBoneTarget(TargetBone);
+	}
 	//sets the card's homing target
-	Projectile->SetHomingTarget(Target, TargetActor);
+	else Projectile->SetHomingTarget(Target, TargetActor);
 	//returns the card actor
 	return Projectile;
 	}

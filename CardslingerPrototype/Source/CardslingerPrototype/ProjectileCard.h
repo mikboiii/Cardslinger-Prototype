@@ -26,6 +26,8 @@ public:
 
 	void SetHomingTarget(FVector Target, AActor* TargetActor);
 
+	void SetBoneTarget(FName BoneName);
+
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
@@ -102,6 +104,8 @@ protected:
 	class ABaseCharacterClass* PlayerPawn;
 
 	bool bIsAttached = false;
+
+	FName BoneTarget = NAME_None;
 
 	UFUNCTION()
 	void CalculateMidPoint();

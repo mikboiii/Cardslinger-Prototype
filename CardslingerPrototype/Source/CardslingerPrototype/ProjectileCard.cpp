@@ -104,10 +104,14 @@ void AProjectileCard::OnHit(UPrimitiveComponent* HitComponent, AActor* OtherActo
 /// @param Target This is the location in world space that the card will home in on
 void AProjectileCard::SetHomingTarget(FVector Target)
 {
-
 	TargetLocation = Target;
 	CalculateMidPoint();
 	CalculateCurveControlPoint();
+}
+
+void AProjectileCard::SetBoneTarget(FName BoneName)
+{
+	BoneTarget = BoneName;
 }
 
 /// @brief This sets the card's homing location to an FVector location and also sets the AActor target
@@ -117,6 +121,7 @@ void AProjectileCard::SetHomingTarget(FVector Target, AActor* TargetActor)
 {
 	TargetLocation = Target;
 	TargetEnemy = TargetActor;
+	if(BoneTarget != NAME_None) TargetLocation = Cast<USkeletalMeshComponent>((Cast<ABaseAIClass>(TargetActor)->GetMesh()))->GetBoneLocation(BoneTarget);
 	CalculateMidPoint();
 	CalculateCurveControlPoint();
 }
