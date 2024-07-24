@@ -2289,3 +2289,116 @@ LogConfig: Set CVar [[r.Shadow.DetectVertexShaderLayerAtRuntime:1]]
 [2024.07.24-15.31.40:872][170]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
 [2024.07.24-15.31.40:877][170]LogUObjectHash: Compacting FUObjectHashTables data took   1.96ms
 [2024.07.24-15.31.40:937][171]LogPlayLevel: Display: Destroying online subsystem :Context_15
+[2024.07.24-15.33.54:839][619]LogLiveCoding: Display: Starting Live Coding compile.
+[2024.07.24-15.34.28:827][721]Display: Reload/Re-instancing Complete: No object changes detected
+[2024.07.24-15.34.28:827][721]LogLiveCoding: Error: Live coding canceled
+[2024.07.24-15.34.29:339][722]LogLiveCoding: Display: Starting Live Coding compile.
+[2024.07.24-15.35.11:170][539]LogLiveCoding: Display:    Creating library C:\Users\Mikolaj\Documents\Unreal Projects\Cardslinger-Prototype\CardslingerPrototype\Binaries\Win64\UnrealEditor-CardslingerPrototype.patch_5.lib and object C:\Users\Mikolaj\Documents\Unreal Projects\Cardslinger-Prototype\CardslingerPrototype\Binaries\Win64\UnrealEditor-CardslingerPrototype.patch_5.exp
+[2024.07.24-15.35.12:239][573]LogUObjectHash: Compacting FUObjectHashTables data took   1.85ms
+[2024.07.24-15.35.12:843][574]Display: Reload/Re-instancing Complete: 1 package changed, 22 classes unchanged, 36 functions remapped
+[2024.07.24-15.35.12:843][574]LogLiveCoding: Display: Live coding succeeded
+[2024.07.24-15.35.39:339][999]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.07.24-15.35.39:517][999]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.07.24-15.35.39:588][999]LogPackageLocalizationCache: Processed 46 localized package path(s) for 1 prioritized culture(s) in 0.034003 seconds
+[2024.07.24-15.35.39:643][999]LogSavePackage: Moving output files for package: /Game/AI/BP_BaseAIClass
+[2024.07.24-15.35.39:644][999]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/BP_BaseAIClass122F9BB54EA882D5C5A1EFB45E8E7A1C.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/AI/BP_BaseAIClass.uasset'
+[2024.07.24-15.35.39:671][999]LogFileHelpers: InternalPromptForCheckoutAndSave took 331 ms
+[2024.07.24-15.35.39:684][999]AssetCheck: New page: Asset Save: BP_BaseAIClass
+[2024.07.24-15.35.39:684][999]LogContentValidation: Display: Validating /Script/Engine.Blueprint /Game/AI/BP_BaseAIClass.BP_BaseAIClass
+[2024.07.24-15.35.40:441][ 44]BlueprintLog: New page: Compile BP_BaseAIClass
+[2024.07.24-15.35.40:674][ 44]LogUObjectHash: Compacting FUObjectHashTables data took   3.21ms
+[2024.07.24-15.36.06:007][139]LogUObjectHash: Compacting FUObjectHashTables data took   4.59ms
+[2024.07.24-15.36.06:042][139]LogSavePackage: Moving output files for package: /Temp/Autosaves/Game/Levels/MovementLevel_Auto1
+[2024.07.24-15.36.06:043][139]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/MovementLevel_Auto12FFB217F472FBFCA54C3BF80472AA2BE.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/Autosaves/Game/Levels/MovementLevel_Auto1.umap'
+[2024.07.24-15.36.06:051][139]LogAssetRegistry: Warning: ScanPathsSynchronous: ../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/Autosaves/Game/Levels/MovementLevel_Auto1.umap is in the /Temp path, will not scan.
+[2024.07.24-15.36.06:052][139]LogFileHelpers: Editor autosave (incl. external actors) for '/Game/Levels/MovementLevel' took 0.101
+[2024.07.24-15.36.06:052][139]LogFileHelpers: Editor autosave (incl. sublevels & external actors) for all levels took 0.101
+[2024.07.24-15.36.24:191][314]LogEditorViewport: Clicking Background
+[2024.07.24-15.36.24:326][321]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.07.24-15.36.24:535][321]LogUObjectHash: Compacting FUObjectHashTables data took   0.69ms
+[2024.07.24-15.36.24:560][321]LogSavePackage: Moving output files for package: /Game/Levels/MovementLevel
+[2024.07.24-15.36.24:561][321]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/MovementLevel150C62BE40679EADAFD6C193C990A4B5.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/Levels/MovementLevel.umap'
+[2024.07.24-15.36.24:589][321]LogFileHelpers: Saving map 'MovementLevel' took 0.127
+[2024.07.24-15.36.24:601][321]LogFileHelpers: InternalPromptForCheckoutAndSave took 274 ms (total: 605 ms)
+[2024.07.24-15.36.24:603][321]AssetCheck: New page: Asset Save: MovementLevel
+[2024.07.24-15.36.24:603][321]LogContentValidation: Display: Validating /Script/Engine.World /Game/Levels/MovementLevel.MovementLevel
+[2024.07.24-15.36.25:882][395]LogDebuggerCommands: Repeating last play command: Selected Viewport
+[2024.07.24-15.36.25:903][395]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2024.07.24-15.36.25:903][395]PIE: New page: PIE session: MovementLevel (24 Jul 2024, 17:36:25)
+[2024.07.24-15.36.25:903][395]LogPlayLevel: Creating play world package: /Game/Levels/UEDPIE_0_MovementLevel
+[2024.07.24-15.36.25:906][395]LogPlayLevel: PIE: StaticDuplicateObject took: (0.003617s)
+[2024.07.24-15.36.25:907][395]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Levels/MovementLevel.MovementLevel to /Game/Levels/UEDPIE_0_MovementLevel.MovementLevel (0.003673s)
+[2024.07.24-15.36.25:925][395]LogUObjectHash: Compacting FUObjectHashTables data took   1.72ms
+[2024.07.24-15.36.25:928][395]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.07.24-15.36.25:929][395]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2024.07.24-15.36.25:929][395]LogAIModule: Creating AISystem for world MovementLevel
+[2024.07.24-15.36.25:930][395]LogPlayLevel: PIE: World Init took: (0.001332s)
+[2024.07.24-15.36.25:930][395]LogAudio: Display: Creating Audio Device:                 Id: 8, Scope: Unique, Realtime: True
+[2024.07.24-15.36.25:930][395]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2024.07.24-15.36.25:930][395]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2024.07.24-15.36.25:930][395]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2024.07.24-15.36.25:930][395]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2024.07.24-15.36.25:930][395]LogAudioMixer: Display: 	Number of buffers to queue:			  1
+[2024.07.24-15.36.25:930][395]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2024.07.24-15.36.25:930][395]LogAudioMixer: Display: 	Number of Async Source Workers:		  4
+[2024.07.24-15.36.25:930][395]LogAudio: Display: AudioDevice MaxSources: 32
+[2024.07.24-15.36.25:930][395]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2024.07.24-15.36.25:930][395]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2024.07.24-15.36.25:930][395]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2024.07.24-15.36.25:933][395]LogAudioMixer: Display: Initializing audio mixer using platform API: 'XAudio2'
+[2024.07.24-15.36.25:997][395]LogAudioMixer: Display: Using Audio Hardware Device Speakers (Realtek(R) Audio)
+[2024.07.24-15.36.25:999][395]LogAudioMixer: Display: Initializing Sound Submixes...
+[2024.07.24-15.36.25:999][395]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2024.07.24-15.36.25:999][395]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2024.07.24-15.36.26:000][395]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called. InstanceID=8
+[2024.07.24-15.36.26:000][395]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048, InstanceID=8
+[2024.07.24-15.36.26:002][395]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=8
+[2024.07.24-15.36.26:003][395]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time. InstanceID=8
+[2024.07.24-15.36.26:003][395]LogInit: FAudioDevice initialized with ID 8.
+[2024.07.24-15.36.26:003][395]LogAudio: Display: Audio Device (ID: 8) registered with world 'MovementLevel'.
+[2024.07.24-15.36.26:003][395]LogAudioMixer: Initializing Audio Bus Subsystem for audio device with ID 8
+[2024.07.24-15.36.26:005][395]LogLoad: Game class is 'BP_CardslingerTestGameMode_C'
+[2024.07.24-15.36.26:008][395]LogWorld: Bringing World /Game/Levels/UEDPIE_0_MovementLevel.MovementLevel up for play (max tick rate 60) at 2024.07.24-16.36.26
+[2024.07.24-15.36.26:008][395]LogWorld: Bringing up level for play took: 0.002810
+[2024.07.24-15.36.26:012][395]LogOnline: OSS: Created online subsystem instance for: :Context_17
+[2024.07.24-15.36.26:019][395]LogTemp: Display: ../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/CardDeck.sav
+[2024.07.24-15.36.26:020][395]LogTemp: Load successful!
+[2024.07.24-15.36.26:023][395]LogTemp: Save successful!
+[2024.07.24-15.36.26:025][395]PIE: Server logged in
+[2024.07.24-15.36.26:026][395]PIE: Play in editor total start time 0.127 seconds.
+[2024.07.24-15.36.31:882][742]LogTemp: Display: Bone name: gun_scope_lens
+[2024.07.24-15.36.31:884][742]LogTemp: Display: Bone target set
+[2024.07.24-15.36.31:884][742]LogTemp: Display: Target location is gun_scope_lens, at location X=4155.249 Y=141.029 Z=-124.572
+[2024.07.24-15.36.36:164][998]LogTemp: Display: Bone name: upperarm_twist_02_l
+[2024.07.24-15.36.36:165][998]LogTemp: Display: Bone target set
+[2024.07.24-15.36.36:166][998]LogTemp: Display: Target location is upperarm_twist_02_l, at location X=4146.141 Y=191.797 Z=-150.228
+[2024.07.24-15.36.37:530][ 80]LogTemp: Display: Bone name: calf_l
+[2024.07.24-15.36.37:532][ 80]LogTemp: Display: Bone target set
+[2024.07.24-15.36.37:532][ 80]LogTemp: Display: Target location is calf_l, at location X=4150.939 Y=199.092 Z=-226.075
+[2024.07.24-15.36.46:433][614]LogTemp: Display: Bone name: knee_pad_l
+[2024.07.24-15.36.46:435][614]LogTemp: Display: Bone target set
+[2024.07.24-15.36.46:435][614]LogTemp: Display: Target location is knee_pad_l, at location X=3908.986 Y=-1025.824 Z=-231.463
+[2024.07.24-15.36.47:435][674]LogTemp: Display: Bone name: knee_pad_l
+[2024.07.24-15.36.47:437][674]LogTemp: Display: Bone target set
+[2024.07.24-15.36.47:437][674]LogTemp: Display: Target location is knee_pad_l, at location X=3908.986 Y=-1025.824 Z=-231.463
+[2024.07.24-15.36.48:434][734]LogTemp: Display: Bone name: foot_l
+[2024.07.24-15.36.48:437][734]LogTemp: Display: Bone target set
+[2024.07.24-15.36.48:437][734]LogTemp: Display: Target location is foot_l, at location X=3917.452 Y=-1010.910 Z=-272.254
+[2024.07.24-15.36.49:085][773]LogTemp: Display: Bone name: foot_panel_l
+[2024.07.24-15.36.49:087][773]LogTemp: Display: Bone target set
+[2024.07.24-15.36.49:087][773]LogTemp: Display: Target location is foot_panel_l, at location X=3921.564 Y=-1025.517 Z=-272.934
+[2024.07.24-15.36.49:487][797]LogTemp: Display: Bone name: calf_twist_01_l
+[2024.07.24-15.36.49:488][797]LogTemp: Display: Bone target set
+[2024.07.24-15.36.49:488][797]LogTemp: Display: Target location is calf_twist_01_l, at location X=3920.711 Y=-1038.283 Z=-237.649
+[2024.07.24-15.37.10:040][ 27]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2024.07.24-15.37.10:040][ 27]LogWorld: BeginTearingDown for /Game/Levels/UEDPIE_0_MovementLevel
+[2024.07.24-15.37.10:041][ 27]LogWorld: UWorld::CleanupWorld for MovementLevel, bSessionEnded=true, bCleanupResources=true
+[2024.07.24-15.37.10:041][ 27]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.07.24-15.37.10:046][ 27]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2024.07.24-15.37.10:052][ 27]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.07.24-15.37.10:071][ 27]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2024.07.24-15.37.10:071][ 27]LogAudioMixer: Deinitializing Audio Bus Subsystem for audio device with ID 8
+[2024.07.24-15.37.10:071][ 27]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=8
+[2024.07.24-15.37.10:073][ 27]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=8
+[2024.07.24-15.37.10:086][ 27]LogUObjectHash: Compacting FUObjectHashTables data took   1.94ms
+[2024.07.24-15.37.10:141][ 28]LogPlayLevel: Display: Destroying online subsystem :Context_17

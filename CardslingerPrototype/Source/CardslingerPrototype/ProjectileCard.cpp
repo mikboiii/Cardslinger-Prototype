@@ -49,7 +49,12 @@ void AProjectileCard::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 	//if the card is homing and the hitscan detects an enemy, the card will seek the actor
-	if(IsHoming && TargetEnemy != nullptr) TargetLocation = TargetEnemy->GetActorLocation();
+	if(IsHoming && TargetEnemy != nullptr) 
+	{
+		if(BoneTarget != NAME_None) TargetLocation = Cast<USkeletalMeshComponent>((Cast<ABaseAIClass>(TargetEnemy)->GetMesh()))->GetBoneLocation(BoneTarget);
+		else TargetLocation = TargetEnemy->GetActorLocation();
+	}
+
 	//updates the curve point on the card's trajectory
 	CurvedPoint = UKismetMathLibrary::VInterpTo_Constant(CurvedPoint, TargetLocation, DeltaTime, CardSpeed);
 	//finds the new location for the card based on the projected path
