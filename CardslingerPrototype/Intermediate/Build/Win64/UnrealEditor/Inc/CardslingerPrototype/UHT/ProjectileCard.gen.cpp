@@ -275,6 +275,11 @@ void EmptyLinkFunctionForGeneratedCodeProjectileCard() {}
 #endif
 		static void NewProp_DestroyOnImpact_SetBit(void* Obj);
 		static const UECodeGen_Private::FBoolPropertyParams NewProp_DestroyOnImpact;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_bIsAttached_MetaData[];
+#endif
+		static void NewProp_bIsAttached_SetBit(void* Obj);
+		static const UECodeGen_Private::FBoolPropertyParams NewProp_bIsAttached;
 		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UECodeGen_Private::FClassParams ClassParams;
@@ -529,6 +534,17 @@ void EmptyLinkFunctionForGeneratedCodeProjectileCard() {}
 		((AProjectileCard*)Obj)->DestroyOnImpact = 1;
 	}
 	const UECodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AProjectileCard_Statics::NewProp_DestroyOnImpact = { "DestroyOnImpact", nullptr, (EPropertyFlags)0x0020080000000001, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, sizeof(bool), sizeof(AProjectileCard), &Z_Construct_UClass_AProjectileCard_Statics::NewProp_DestroyOnImpact_SetBit, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_AProjectileCard_Statics::NewProp_DestroyOnImpact_MetaData), Z_Construct_UClass_AProjectileCard_Statics::NewProp_DestroyOnImpact_MetaData) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AProjectileCard_Statics::NewProp_bIsAttached_MetaData[] = {
+		{ "Category", "ProjectileCard" },
+		{ "ModuleRelativePath", "ProjectileCard.h" },
+	};
+#endif
+	void Z_Construct_UClass_AProjectileCard_Statics::NewProp_bIsAttached_SetBit(void* Obj)
+	{
+		((AProjectileCard*)Obj)->bIsAttached = 1;
+	}
+	const UECodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AProjectileCard_Statics::NewProp_bIsAttached = { "bIsAttached", nullptr, (EPropertyFlags)0x0020080000020001, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, sizeof(bool), sizeof(AProjectileCard), &Z_Construct_UClass_AProjectileCard_Statics::NewProp_bIsAttached_SetBit, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_AProjectileCard_Statics::NewProp_bIsAttached_MetaData), Z_Construct_UClass_AProjectileCard_Statics::NewProp_bIsAttached_MetaData) };
 	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AProjectileCard_Statics::PropPointers[] = {
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AProjectileCard_Statics::NewProp_CardLifetime,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AProjectileCard_Statics::NewProp_ParticleScale,
@@ -551,6 +567,7 @@ void EmptyLinkFunctionForGeneratedCodeProjectileCard() {}
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AProjectileCard_Statics::NewProp_IsHoming,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AProjectileCard_Statics::NewProp_EnergyOnDamage,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AProjectileCard_Statics::NewProp_DestroyOnImpact,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AProjectileCard_Statics::NewProp_bIsAttached,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_AProjectileCard_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<AProjectileCard>::IsAbstract,
@@ -590,9 +607,9 @@ void EmptyLinkFunctionForGeneratedCodeProjectileCard() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_ProjectileCard_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_AProjectileCard, AProjectileCard::StaticClass, TEXT("AProjectileCard"), &Z_Registration_Info_UClass_AProjectileCard, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AProjectileCard), 3781049936U) },
+		{ Z_Construct_UClass_AProjectileCard, AProjectileCard::StaticClass, TEXT("AProjectileCard"), &Z_Registration_Info_UClass_AProjectileCard, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AProjectileCard), 3774337670U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_ProjectileCard_h_3809812799(TEXT("/Script/CardslingerPrototype"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_ProjectileCard_h_270289565(TEXT("/Script/CardslingerPrototype"),
 		Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_ProjectileCard_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_ProjectileCard_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);

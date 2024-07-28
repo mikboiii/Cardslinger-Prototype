@@ -80,6 +80,7 @@ void AProjectileCard::OnHit(UPrimitiveComponent* HitComponent, AActor* OtherActo
 {
 	if (OtherActor != this)
     {
+		UE_LOG(LogTemp, Display, TEXT("Card Impact"));
         //if the collision is an enemy class actor, apply damage and hit fx
 		if(OtherActor != PlayerPawn && OtherActor->IsA(ABaseAIClass::StaticClass()))
 		{

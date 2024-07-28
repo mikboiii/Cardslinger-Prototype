@@ -103,6 +103,7 @@ protected:
 
 	class ABaseCharacterClass* PlayerPawn;
 
+	UPROPERTY(VisibleAnywhere)
 	bool bIsAttached = false;
 
 	FName BoneTarget = NAME_None;
