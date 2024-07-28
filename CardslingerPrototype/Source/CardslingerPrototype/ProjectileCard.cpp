@@ -89,7 +89,8 @@ void AProjectileCard::OnHit(UPrimitiveComponent* HitComponent, AActor* OtherActo
 			OtherActor->TakeDamage(CardDamage, DamageEvent, PlayerPawn->GetController(), this);
 			PlayerPawn->GiveEnergy(EnergyOnDamage);
 			USkeletalMeshComponent* TargetMesh = Cast<USkeletalMeshComponent>(Cast<ABaseAIClass>(OtherActor)->GetMesh());
-			FName BoneName = TargetMesh->FindClosestBone(GetActorLocation());
+			FVector* BoneLocation = new FVector(0.0f, 0.0f, 0.0f);
+			FName BoneName = TargetMesh->FindClosestBone(GetActorLocation(), BoneLocation, 0.0f, true);
 			if(CardImpact)
 			{
 				UNiagaraFunctionLibrary::SpawnSystemAtLocation(GetWorld(), CardImpact, Hit.ImpactPoint, GetActorForwardVector().Rotation(),FVector(ParticleScale), true, true, ENCPoolMethod::None, true);
