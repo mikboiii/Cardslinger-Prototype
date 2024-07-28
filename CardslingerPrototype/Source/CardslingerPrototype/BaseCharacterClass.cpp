@@ -348,7 +348,8 @@ void ABaseCharacterClass::Shoot()
 			if(Hit.GetActor()->IsA(ABaseAIClass::StaticClass()))
 			{
 				USkeletalMeshComponent* TargetMesh = Cast<USkeletalMeshComponent>(Cast<ABaseAIClass>(HitActor)->GetMesh());
-				FName BoneName = TargetMesh->FindClosestBone(Hit.ImpactPoint);
+				FVector* BoneLocation = new FVector(0.0f,0.0f,0.0f);
+				FName BoneName = TargetMesh->FindClosestBone(Hit.ImpactPoint, BoneLocation, 0.0f, true);
 				UE_LOG(LogTemp, Display, TEXT("Bone name: %s"), *BoneName.ToString());
 				//launch basic projectile
 				CardDeck->FireCard(-ShotDirection, BasicCardProjectile, Hit.ImpactPoint, Hit.GetActor(), BoneName);
