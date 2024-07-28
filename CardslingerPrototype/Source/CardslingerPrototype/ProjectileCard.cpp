@@ -61,7 +61,7 @@ void AProjectileCard::Tick(float DeltaTime)
 	FVector NewLocation = UKismetMathLibrary::VInterpTo_Constant(GetActorLocation(), CurvedPoint, DeltaTime, CardSpeed);
 	if(!bIsAttached) SetActorLocation(NewLocation, true);
 	//if the card meets its location, it gets deleted. used to prevent cards floating in place of a dead enemy.
-	if(DestroyOnImpact && FVector::Dist(GetActorLocation(), TargetLocation) == 0) DestroyCard();
+	if(DestroyOnImpact && FVector::Dist(GetActorLocation(), TargetLocation) == 0 && !bIsAttached) DestroyCard();
 }
 
 /// @brief Destroys the projectile card
@@ -89,6 +89,10 @@ void AProjectileCard::OnHit(UPrimitiveComponent* HitComponent, AActor* OtherActo
 			PlayerPawn->GiveEnergy(EnergyOnDamage);
 			USkeletalMeshComponent* TargetMesh = Cast<USkeletalMeshComponent>(Cast<ABaseAIClass>(OtherActor)->GetMesh());
 			FName BoneName = TargetMesh->FindClosestBone(GetActorLocation());
+			if(CardImpact)
+			{
+				UNiagaraFunctionLibrary::SpawnSystemAtLocation(GetWorld(), CardImpact, Hit.ImpactPoint, GetActorForwardVector().Rotation(),FVector(ParticleScale), true, true, ENCPoolMethod::None, true);
+			}
 			if(BoneName != NAME_None)
 			{
 				AttachToComponent(TargetMesh, FAttachmentTransformRules::KeepWorldTransform, BoneName);
@@ -96,12 +100,8 @@ void AProjectileCard::OnHit(UPrimitiveComponent* HitComponent, AActor* OtherActo
 				CardTrail->Deactivate();
 				bIsAttached = true;
 				CardSkeletalMesh->Stop();
+				return;
 			}
-			if(CardImpact)
-			{
-				UNiagaraFunctionLibrary::SpawnSystemAtLocation(GetWorld(), CardImpact, Hit.ImpactPoint, GetActorForwardVector().Rotation(),FVector(ParticleScale), true, true, ENCPoolMethod::None, true);
-			}
-			return;
 		}
 		Destroy();
     }
