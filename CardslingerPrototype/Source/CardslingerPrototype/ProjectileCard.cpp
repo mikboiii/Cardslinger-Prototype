@@ -68,6 +68,16 @@ void AProjectileCard::Tick(float DeltaTime)
 /// @brief Destroys the projectile card
 void AProjectileCard::DestroyCard()
 {
+	CardVelocity = 0.0f;
+	CardSkeletalMesh->SetVisibility(false, false);
+	CardSkeletalMesh->SetCollisionEnabled(ECollisionEnabled::NoCollision);
+	CardCollision->SetCollisionEnabled(ECollisionEnabled::NoCollision);
+	FTimerHandle DeleteTimerHandle;
+	GetWorldTimerManager().SetTimer(DeleteTimerHandle, this, &AProjectileCard::DestroyCardTimerFunction, 2.0f);
+}
+
+void AProjectileCard::DestroyCardTimerFunction()
+{
 	Destroy();
 }
 
@@ -108,7 +118,7 @@ void AProjectileCard::OnHit(UPrimitiveComponent* HitComponent, AActor* OtherActo
 				return;
 			}
 		}
-		Destroy();
+		DestroyCard();
     }
 }
 

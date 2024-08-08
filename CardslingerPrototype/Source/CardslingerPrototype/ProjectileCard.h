@@ -33,6 +33,8 @@ protected:
 	virtual void BeginPlay() override;
 
 	void DestroyCard();
+
+	void DestroyCardTimerFunction();	
 	//timer handle to handle card decay
 	FTimerHandle CardLifetimeManager;
 	//the amount of time (in seconds) that a card will last for before naturally deleting itself
