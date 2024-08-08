@@ -26,11 +26,15 @@ public:
 
 	void SetHomingTarget(FVector Target, AActor* TargetActor);
 
+	void SetBoneTarget(FName BoneName);
+
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 
 	void DestroyCard();
+
+	void DestroyCardTimerFunction();	
 	//timer handle to handle card decay
 	FTimerHandle CardLifetimeManager;
 	//the amount of time (in seconds) that a card will last for before naturally deleting itself
@@ -51,6 +55,10 @@ protected:
 	//the card's particle impact system
 	UPROPERTY(EditAnywhere)
 	class UNiagaraSystem* CardImpact;
+
+	UPROPERTY(EditAnywhere)
+	class UNiagaraSystem* CardImpactUniversal;
+
 	//the card's velocity
 	UPROPERTY(EditAnywhere)
 	float CardSpeed;
@@ -100,6 +108,11 @@ protected:
 	AActor* TargetEnemy;
 
 	class ABaseCharacterClass* PlayerPawn;
+
+	UPROPERTY(VisibleAnywhere)
+	bool bIsAttached = false;
+
+	FName BoneTarget = NAME_None;
 
 	UFUNCTION()
 	void CalculateMidPoint();

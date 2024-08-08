@@ -16,8 +16,89 @@ void EmptyLinkFunctionForGeneratedCodePlayerHUDWidget() {}
 	UMG_API UClass* Z_Construct_UClass_UUserWidget_NoRegister();
 	UPackage* Z_Construct_UPackage__Script_CardslingerPrototype();
 // End Cross Module References
+	static FName NAME_UPlayerHUDWidget_FlashDamageVignetteBP = FName(TEXT("FlashDamageVignetteBP"));
+	void UPlayerHUDWidget::FlashDamageVignetteBP()
+	{
+		ProcessEvent(FindFunctionChecked(NAME_UPlayerHUDWidget_FlashDamageVignetteBP),NULL);
+	}
+	static FName NAME_UPlayerHUDWidget_FlashHealVignetteBP = FName(TEXT("FlashHealVignetteBP"));
+	void UPlayerHUDWidget::FlashHealVignetteBP()
+	{
+		ProcessEvent(FindFunctionChecked(NAME_UPlayerHUDWidget_FlashHealVignetteBP),NULL);
+	}
+	static FName NAME_UPlayerHUDWidget_FlashShieldVignetteBP = FName(TEXT("FlashShieldVignetteBP"));
+	void UPlayerHUDWidget::FlashShieldVignetteBP()
+	{
+		ProcessEvent(FindFunctionChecked(NAME_UPlayerHUDWidget_FlashShieldVignetteBP),NULL);
+	}
 	void UPlayerHUDWidget::StaticRegisterNativesUPlayerHUDWidget()
 	{
+	}
+	struct Z_Construct_UFunction_UPlayerHUDWidget_FlashDamageVignetteBP_Statics
+	{
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UPlayerHUDWidget_FlashDamageVignetteBP_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "PlayerHUDWidget.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UPlayerHUDWidget_FlashDamageVignetteBP_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UPlayerHUDWidget, nullptr, "FlashDamageVignetteBP", nullptr, nullptr, nullptr, 0, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08020800, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UPlayerHUDWidget_FlashDamageVignetteBP_Statics::Function_MetaDataParams), Z_Construct_UFunction_UPlayerHUDWidget_FlashDamageVignetteBP_Statics::Function_MetaDataParams) };
+	UFunction* Z_Construct_UFunction_UPlayerHUDWidget_FlashDamageVignetteBP()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UPlayerHUDWidget_FlashDamageVignetteBP_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_UPlayerHUDWidget_FlashHealVignetteBP_Statics
+	{
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UPlayerHUDWidget_FlashHealVignetteBP_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "PlayerHUDWidget.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UPlayerHUDWidget_FlashHealVignetteBP_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UPlayerHUDWidget, nullptr, "FlashHealVignetteBP", nullptr, nullptr, nullptr, 0, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08020800, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UPlayerHUDWidget_FlashHealVignetteBP_Statics::Function_MetaDataParams), Z_Construct_UFunction_UPlayerHUDWidget_FlashHealVignetteBP_Statics::Function_MetaDataParams) };
+	UFunction* Z_Construct_UFunction_UPlayerHUDWidget_FlashHealVignetteBP()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UPlayerHUDWidget_FlashHealVignetteBP_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_UPlayerHUDWidget_FlashShieldVignetteBP_Statics
+	{
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UPlayerHUDWidget_FlashShieldVignetteBP_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "PlayerHUDWidget.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UPlayerHUDWidget_FlashShieldVignetteBP_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UPlayerHUDWidget, nullptr, "FlashShieldVignetteBP", nullptr, nullptr, nullptr, 0, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08020800, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UPlayerHUDWidget_FlashShieldVignetteBP_Statics::Function_MetaDataParams), Z_Construct_UFunction_UPlayerHUDWidget_FlashShieldVignetteBP_Statics::Function_MetaDataParams) };
+	UFunction* Z_Construct_UFunction_UPlayerHUDWidget_FlashShieldVignetteBP()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UPlayerHUDWidget_FlashShieldVignetteBP_Statics::FuncParams);
+		}
+		return ReturnFunction;
 	}
 	IMPLEMENT_CLASS_NO_AUTO_REGISTRATION(UPlayerHUDWidget);
 	UClass* Z_Construct_UClass_UPlayerHUDWidget_NoRegister()
@@ -27,6 +108,7 @@ void EmptyLinkFunctionForGeneratedCodePlayerHUDWidget() {}
 	struct Z_Construct_UClass_UPlayerHUDWidget_Statics
 	{
 		static UObject* (*const DependentSingletons[])();
+		static const FClassFunctionLinkInfo FuncInfo[];
 #if WITH_METADATA
 		static const UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
@@ -47,6 +129,12 @@ void EmptyLinkFunctionForGeneratedCodePlayerHUDWidget() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_CardslingerPrototype,
 	};
 	static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_UPlayerHUDWidget_Statics::DependentSingletons) < 16);
+	const FClassFunctionLinkInfo Z_Construct_UClass_UPlayerHUDWidget_Statics::FuncInfo[] = {
+		{ &Z_Construct_UFunction_UPlayerHUDWidget_FlashDamageVignetteBP, "FlashDamageVignetteBP" }, // 4253374158
+		{ &Z_Construct_UFunction_UPlayerHUDWidget_FlashHealVignetteBP, "FlashHealVignetteBP" }, // 417748574
+		{ &Z_Construct_UFunction_UPlayerHUDWidget_FlashShieldVignetteBP, "FlashShieldVignetteBP" }, // 615751265
+	};
+	static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_UPlayerHUDWidget_Statics::FuncInfo) < 2048);
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UPlayerHUDWidget_Statics::Class_MetaDataParams[] = {
 #if !UE_BUILD_SHIPPING
@@ -84,11 +172,11 @@ void EmptyLinkFunctionForGeneratedCodePlayerHUDWidget() {}
 		nullptr,
 		&StaticCppClassTypeInfo,
 		DependentSingletons,
-		nullptr,
+		FuncInfo,
 		Z_Construct_UClass_UPlayerHUDWidget_Statics::PropPointers,
 		nullptr,
 		UE_ARRAY_COUNT(DependentSingletons),
-		0,
+		UE_ARRAY_COUNT(FuncInfo),
 		UE_ARRAY_COUNT(Z_Construct_UClass_UPlayerHUDWidget_Statics::PropPointers),
 		0,
 		0x00B010A0u,
@@ -115,9 +203,9 @@ void EmptyLinkFunctionForGeneratedCodePlayerHUDWidget() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_PlayerHUDWidget_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_UPlayerHUDWidget, UPlayerHUDWidget::StaticClass, TEXT("UPlayerHUDWidget"), &Z_Registration_Info_UClass_UPlayerHUDWidget, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UPlayerHUDWidget), 1873339764U) },
+		{ Z_Construct_UClass_UPlayerHUDWidget, UPlayerHUDWidget::StaticClass, TEXT("UPlayerHUDWidget"), &Z_Registration_Info_UClass_UPlayerHUDWidget, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UPlayerHUDWidget), 1243783677U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_PlayerHUDWidget_h_2723197088(TEXT("/Script/CardslingerPrototype"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_PlayerHUDWidget_h_2656519289(TEXT("/Script/CardslingerPrototype"),
 		Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_PlayerHUDWidget_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_PlayerHUDWidget_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);

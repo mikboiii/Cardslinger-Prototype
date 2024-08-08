@@ -14,6 +14,7 @@
 #include "DrawDebugHelpers.h"
 #include "TimerManager.h"
 #include "BaseCharacterClass.h"
+#include "BaseAIClass.h"
 
 // Sets default values
 AProjectileCard::AProjectileCard()
@@ -39,6 +40,7 @@ AProjectileCard::AProjectileCard()
 void AProjectileCard::BeginPlay()
 {
 	Super::BeginPlay();
+	CardCollision->SetCollisionEnabled(ECollisionEnabled::NoCollision);
 	GetWorldTimerManager().SetTimer(CardLifetimeManager, this, &AProjectileCard::DestroyCard, CardLifetime);
 	PlayerPawn = Cast<ABaseCharacterClass>(UGameplayStatics::GetPlayerPawn(GetWorld(), 0));
 }
@@ -48,18 +50,33 @@ void AProjectileCard::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 	//if the card is homing and the hitscan detects an enemy, the card will seek the actor
-	if(IsHoming && TargetEnemy != nullptr) TargetLocation = TargetEnemy->GetActorLocation();
+	if(IsHoming && TargetEnemy != nullptr) 
+	{
+		if(BoneTarget != NAME_None) TargetLocation = Cast<USkeletalMeshComponent>((Cast<ABaseAIClass>(TargetEnemy)->GetMesh()))->GetBoneLocation(BoneTarget);
+		else TargetLocation = TargetEnemy->GetActorLocation();
+	}
+
 	//updates the curve point on the card's trajectory
 	CurvedPoint = UKismetMathLibrary::VInterpTo_Constant(CurvedPoint, TargetLocation, DeltaTime, CardSpeed);
 	//finds the new location for the card based on the projected path
 	FVector NewLocation = UKismetMathLibrary::VInterpTo_Constant(GetActorLocation(), CurvedPoint, DeltaTime, CardSpeed);
-	SetActorLocation(NewLocation, true);
+	if(!bIsAttached) SetActorLocation(NewLocation, true);
 	//if the card meets its location, it gets deleted. used to prevent cards floating in place of a dead enemy.
-	if(DestroyOnImpact && FVector::Dist(GetActorLocation(), TargetLocation) == 0) DestroyCard();
+	if(DestroyOnImpact && FVector::Dist(GetActorLocation(), TargetLocation) == 0 && !bIsAttached) DestroyCard();
 }
 
 /// @brief Destroys the projectile card
 void AProjectileCard::DestroyCard()
+{
+	CardVelocity = 0.0f;
+	CardSkeletalMesh->SetVisibility(false, false);
+	CardSkeletalMesh->SetCollisionEnabled(ECollisionEnabled::NoCollision);
+	CardCollision->SetCollisionEnabled(ECollisionEnabled::NoCollision);
+	FTimerHandle DeleteTimerHandle;
+	GetWorldTimerManager().SetTimer(DeleteTimerHandle, this, &AProjectileCard::DestroyCardTimerFunction, 2.0f);
+}
+
+void AProjectileCard::DestroyCardTimerFunction()
 {
 	Destroy();
 }
@@ -74,31 +91,49 @@ void AProjectileCard::OnHit(UPrimitiveComponent* HitComponent, AActor* OtherActo
 {
 	if (OtherActor != this)
     {
+		UE_LOG(LogTemp, Display, TEXT("Card Impact"));
         //if the collision is an enemy class actor, apply damage and hit fx
+		if(CardImpactUniversal) UNiagaraFunctionLibrary::SpawnSystemAtLocation(GetWorld(), CardImpactUniversal, Hit.ImpactPoint, GetActorForwardVector().Rotation(),FVector(ParticleScale), true, true, ENCPoolMethod::None, true);
+		DrawDebugSphere(GetWorld(), Hit.Location, 10.0f, 12, FColor::Red, false, 5.0f);
 		if(OtherActor != PlayerPawn && OtherActor->IsA(ABaseAIClass::StaticClass()))
 		{
 
 			FPointDamageEvent DamageEvent(CardDamage, Hit, -GetActorForwardVector(), nullptr);
 			OtherActor->TakeDamage(CardDamage, DamageEvent, PlayerPawn->GetController(), this);
 			PlayerPawn->GiveEnergy(EnergyOnDamage);
+			USkeletalMeshComponent* TargetMesh = Cast<USkeletalMeshComponent>(Cast<ABaseAIClass>(OtherActor)->GetMesh());
+			FVector* BoneLocation = new FVector(0.0f, 0.0f, 0.0f);
+			FName BoneName = TargetMesh->FindClosestBone(GetActorLocation(), BoneLocation, 0.0f, true);
 			if(CardImpact)
 			{
 				UNiagaraFunctionLibrary::SpawnSystemAtLocation(GetWorld(), CardImpact, Hit.ImpactPoint, GetActorForwardVector().Rotation(),FVector(ParticleScale), true, true, ENCPoolMethod::None, true);
 			}
+			if(BoneName != NAME_None)
+			{
+				AttachToComponent(TargetMesh, FAttachmentTransformRules::KeepWorldTransform, BoneName);
+				SetActorEnableCollision(false);
+				CardTrail->Deactivate();
+				bIsAttached = true;
+				CardSkeletalMesh->Stop();
+				return;
+			}
 		}
+		DestroyCard();
     }
-
-    Destroy();
 }
 
 /// @brief This sets the card's homing location to an FVector location
 /// @param Target This is the location in world space that the card will home in on
 void AProjectileCard::SetHomingTarget(FVector Target)
 {
-
 	TargetLocation = Target;
 	CalculateMidPoint();
 	CalculateCurveControlPoint();
+}
+
+void AProjectileCard::SetBoneTarget(FName BoneName)
+{
+	BoneTarget = BoneName;
 }
 
 /// @brief This sets the card's homing location to an FVector location and also sets the AActor target
@@ -108,6 +143,10 @@ void AProjectileCard::SetHomingTarget(FVector Target, AActor* TargetActor)
 {
 	TargetLocation = Target;
 	TargetEnemy = TargetActor;
+	if(BoneTarget != NAME_None) 
+	{
+		TargetLocation = Cast<USkeletalMeshComponent>((Cast<ABaseAIClass>(TargetActor)->GetMesh()))->GetBoneLocation(BoneTarget);
+	}
 	CalculateMidPoint();
 	CalculateCurveControlPoint();
 }

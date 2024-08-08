@@ -95,7 +95,7 @@ void ABaseCharacterClass::BeginPlay()
 
 	ACardslingerPlayerController* PC = Cast<ACardslingerPlayerController>(GetController());
 	//get pointer to player hud widget
-	PlayerHUD = PC->GetHUD();
+	PlayerHUD = Cast<UPlayerHUDWidget>(PC->GetHUD());
 	
 	//draw initial hands
 	ReplenishHandFunction();
@@ -238,15 +238,18 @@ float ABaseCharacterClass::TakeDamage(float DamageAmount, struct FDamageEvent co
 	if(CurrentShield > 0)
 	{
 		CurrentShield -= DamageToApply;
+		PlayerHUD->FlashShieldVignetteBP();
 		if(CurrentShield < 0)
 		{
 			CurrentShield = 0;
 			Health -= FMath::Abs(CurrentShield);
+			PlayerHUD->FlashDamageVignetteBP();
 		}
 	}
 	else
 	{
     	Health -= DamageToApply;
+		PlayerHUD->FlashDamageVignetteBP();
 	}
 
     if(IsDead())
@@ -283,8 +286,8 @@ void ABaseCharacterClass::UseCard(const FInputActionValue& Value)
 	else
 	{
 		if(!InfiniteEnergy) CurrentEnergy -= CardHand[Index]->GetCardCost();
-		Cast<UPlayerHUDWidget>(PlayerHUD)->RemoveCard(Index);
-		if(CardBackClass) Cast<UPlayerHUDWidget>(PlayerHUD)->SetCard(Index, CreateWidget<UUserWidget>(GetWorld(), CardBackClass));
+		PlayerHUD->RemoveCard(Index);
+		if(CardBackClass) PlayerHUD->SetCard(Index, CreateWidget<UUserWidget>(GetWorld(), CardBackClass));
 		//hit trace maintained in case specific card effects require hitscan
 		FVector ShotDirection;
 		FHitResult Hit;
@@ -344,8 +347,12 @@ void ABaseCharacterClass::Shoot()
 			//if the line trace hits an enemy actor, have the card home in on them
 			if(Hit.GetActor()->IsA(ABaseAIClass::StaticClass()))
 			{
+				USkeletalMeshComponent* TargetMesh = Cast<USkeletalMeshComponent>(Cast<ABaseAIClass>(HitActor)->GetMesh());
+				FVector* BoneLocation = new FVector(0.0f,0.0f,0.0f);
+				FName BoneName = TargetMesh->FindClosestBone(Hit.ImpactPoint, BoneLocation, 0.0f, true);
+				UE_LOG(LogTemp, Display, TEXT("Bone name: %s"), *BoneName.ToString());
 				//launch basic projectile
-				CardDeck->FireCard(-ShotDirection, BasicCardProjectile, Hit.ImpactPoint, Hit.GetActor());
+				CardDeck->FireCard(-ShotDirection, BasicCardProjectile, Hit.ImpactPoint, Hit.GetActor(), BoneName);
 				//remove from deck
 				CardDeck->RemoveCardFromDeck(CurrentClip);
 
@@ -413,7 +420,7 @@ bool ABaseCharacterClass::HitTrace(FHitResult& Hit, FVector& ShotDirection)
 	Params.AddIgnoredActor(this);
 	Params.AddIgnoredActor(GetOwner());
 	Params.AddIgnoredActors(CardDeck->Children);
-	return GetWorld()->LineTraceSingleByChannel(Hit, ViewLocation, End, ECollisionChannel::ECC_GameTraceChannel1, Params);
+	return GetWorld()->LineTraceSingleByChannel(Hit, ViewLocation, End, ECollisionChannel::ECC_GameTraceChannel2, Params);
 }
 
 /// @brief Gets player controller
@@ -475,7 +482,7 @@ void ABaseCharacterClass::DrawCardTimerFunction(int CardIndex)
 	else
 	{
 		CardHand[CardIndex] = CardDeck->DrawCard();
-		Cast<UPlayerHUDWidget>(PlayerHUD)->SetCard(CardIndex, CardHand[CardIndex]->CardWidget);
+		PlayerHUD->SetCard(CardIndex, CardHand[CardIndex]->CardWidget);
 	}
 }
 
@@ -490,12 +497,12 @@ void ABaseCharacterClass::ReplenishHandFunction()
 			{
 				if(CardHand[i]->CardWidget != nullptr)
 				{
-					Cast<UPlayerHUDWidget>(PlayerHUD)->SetCard(i, CardHand[i]->CardWidget);
+					PlayerHUD->SetCard(i, CardHand[i]->CardWidget);
 				}
 			}
 			else
 			{
-				Cast<UPlayerHUDWidget>(PlayerHUD)->SetCard(i, CreateWidget<UUserWidget>(GetWorld(), CardBackClass));
+				PlayerHUD->SetCard(i, CreateWidget<UUserWidget>(GetWorld(), CardBackClass));
 			}
 		}
 }
@@ -505,7 +512,6 @@ void ABaseCharacterClass::LeanCamera(float DeltaTime)
 	float CurrentCameraRoll = CameraComponent->GetRelativeRotation().Roll;
 	float CameraRotation = UKismetMathLibrary::FInterpTo(CurrentCameraRoll, CameraLeanValue, DeltaTime, CameraRotateSpeed);
 	CameraComponent->SetRelativeRotation(FRotator(0, 0, CameraRotation));
-	UE_LOG(LogTemp, Display, TEXT("CameraRotation is %f"), CameraRotation);
 }
 
 void ABaseCharacterClass::SetFlyMode(bool bIsFlying)
@@ -535,6 +541,7 @@ void ABaseCharacterClass::Heal(bool IsPercentile, float HealingValue)
 	if(IsPercentile) Health += MaxHealth * HealingValue;
 	else Health += HealingValue;
 	if(Health > MaxHealth) Health = MaxHealth;
+	PlayerHUD->FlashHealVignetteBP();
 }
 
 /// @brief Increases the player's shield bar by the given value
@@ -545,6 +552,7 @@ void ABaseCharacterClass::AddShield(bool IsPercentile, float ShieldValue)
 	if(IsPercentile) CurrentShield += MaxShield * ShieldValue;
 	else CurrentShield += ShieldValue;
 	if(CurrentShield > MaxShield) CurrentShield = MaxShield;
+	PlayerHUD->FlashShieldVignetteBP();
 }
 
 /// @brief Adds the parameter value to the player's current energy

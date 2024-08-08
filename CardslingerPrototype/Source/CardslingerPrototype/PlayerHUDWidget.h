@@ -27,4 +27,13 @@ protected:
 public:
 	void SetCard(int32 Index, class UUserWidget* NewCard);
 	void RemoveCard(int32 Index);
+
+	UFUNCTION(BlueprintImplementableEvent)
+	void FlashDamageVignetteBP();
+
+	UFUNCTION(BlueprintImplementableEvent)
+	void FlashHealVignetteBP();
+
+	UFUNCTION(BlueprintImplementableEvent)
+	void FlashShieldVignetteBP();
 };
