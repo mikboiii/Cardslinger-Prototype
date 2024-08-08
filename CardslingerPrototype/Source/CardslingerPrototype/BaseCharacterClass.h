@@ -82,6 +82,8 @@ protected:
 
 	void DashCooldownFunction();
 
+	class ACardslingerPlayerController* PC;
+
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;

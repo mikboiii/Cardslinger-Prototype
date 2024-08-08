@@ -81,6 +81,10 @@ void EmptyLinkFunctionForGeneratedCodeCardslingerPlayerController() {}
 		static const UECodeGen_Private::FMetaDataPairParam NewProp_HUDScreenClass_MetaData[];
 #endif
 		static const UECodeGen_Private::FClassPropertyParams NewProp_HUDScreenClass;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_PauseScreenClass_MetaData[];
+#endif
+		static const UECodeGen_Private::FClassPropertyParams NewProp_PauseScreenClass;
 		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UECodeGen_Private::FClassParams ClassParams;
@@ -132,11 +136,19 @@ void EmptyLinkFunctionForGeneratedCodeCardslingerPlayerController() {}
 	};
 #endif
 	const UECodeGen_Private::FClassPropertyParams Z_Construct_UClass_ACardslingerPlayerController_Statics::NewProp_HUDScreenClass = { "HUDScreenClass", nullptr, (EPropertyFlags)0x0044000000000001, UECodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ACardslingerPlayerController, HUDScreenClass), Z_Construct_UClass_UClass, Z_Construct_UClass_UUserWidget_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_ACardslingerPlayerController_Statics::NewProp_HUDScreenClass_MetaData), Z_Construct_UClass_ACardslingerPlayerController_Statics::NewProp_HUDScreenClass_MetaData) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ACardslingerPlayerController_Statics::NewProp_PauseScreenClass_MetaData[] = {
+		{ "Category", "CardslingerPlayerController" },
+		{ "ModuleRelativePath", "CardslingerPlayerController.h" },
+	};
+#endif
+	const UECodeGen_Private::FClassPropertyParams Z_Construct_UClass_ACardslingerPlayerController_Statics::NewProp_PauseScreenClass = { "PauseScreenClass", nullptr, (EPropertyFlags)0x0044000000000001, UECodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ACardslingerPlayerController, PauseScreenClass), Z_Construct_UClass_UClass, Z_Construct_UClass_UUserWidget_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_ACardslingerPlayerController_Statics::NewProp_PauseScreenClass_MetaData), Z_Construct_UClass_ACardslingerPlayerController_Statics::NewProp_PauseScreenClass_MetaData) };
 	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ACardslingerPlayerController_Statics::PropPointers[] = {
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ACardslingerPlayerController_Statics::NewProp_LoseScreenClass,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ACardslingerPlayerController_Statics::NewProp_WinScreenClass,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ACardslingerPlayerController_Statics::NewProp_RestartDelay,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ACardslingerPlayerController_Statics::NewProp_HUDScreenClass,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ACardslingerPlayerController_Statics::NewProp_PauseScreenClass,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_ACardslingerPlayerController_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<ACardslingerPlayerController>::IsAbstract,
@@ -177,9 +189,9 @@ void EmptyLinkFunctionForGeneratedCodeCardslingerPlayerController() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_CardslingerPlayerController_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_ACardslingerPlayerController, ACardslingerPlayerController::StaticClass, TEXT("ACardslingerPlayerController"), &Z_Registration_Info_UClass_ACardslingerPlayerController, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ACardslingerPlayerController), 574067176U) },
+		{ Z_Construct_UClass_ACardslingerPlayerController, ACardslingerPlayerController::StaticClass, TEXT("ACardslingerPlayerController"), &Z_Registration_Info_UClass_ACardslingerPlayerController, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ACardslingerPlayerController), 1265584810U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_CardslingerPlayerController_h_2108570836(TEXT("/Script/CardslingerPrototype"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_CardslingerPlayerController_h_3392084226(TEXT("/Script/CardslingerPrototype"),
 		Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_CardslingerPlayerController_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_CardslingerPlayerController_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);

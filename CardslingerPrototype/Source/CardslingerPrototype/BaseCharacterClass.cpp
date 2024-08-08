@@ -93,7 +93,7 @@ void ABaseCharacterClass::BeginPlay()
 
 	DashRecharge = 1.0f;
 
-	ACardslingerPlayerController* PC = Cast<ACardslingerPlayerController>(GetController());
+	PC = Cast<ACardslingerPlayerController>(GetController());
 	//get pointer to player hud widget
 	PlayerHUD = Cast<UPlayerHUDWidget>(PC->GetHUD());
 	
@@ -133,11 +133,9 @@ void ABaseCharacterClass::Tick(float DeltaTime)
 // Called to bind functionality to input
 void ABaseCharacterClass::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 {
-    // Get the player controller
-    APlayerController* PC = Cast<APlayerController>(GetController());
- 
+ 	ACardslingerPlayerController* PlayerController = Cast<ACardslingerPlayerController>(GetController());
     // Get the local player subsystem
-    UEnhancedInputLocalPlayerSubsystem* Subsystem = ULocalPlayer::GetSubsystem<UEnhancedInputLocalPlayerSubsystem>(PC->GetLocalPlayer());
+    UEnhancedInputLocalPlayerSubsystem* Subsystem = ULocalPlayer::GetSubsystem<UEnhancedInputLocalPlayerSubsystem>(PlayerController->GetLocalPlayer());
     // Clear out existing mapping, and add our mapping
     Subsystem->ClearAllMappings();
     Subsystem->AddMappingContext(InputMapping, 0);
@@ -192,7 +190,7 @@ void ABaseCharacterClass::Look(const FInputActionValue& Value)
 
 void ABaseCharacterClass::Pause(const FInputActionValue& Value)
 {
-	
+	PC->PauseLevel();	
 }
 
 

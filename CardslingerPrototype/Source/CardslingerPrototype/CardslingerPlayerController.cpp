@@ -30,6 +30,7 @@ void ACardslingerPlayerController::BeginPlay()
     Super::BeginPlay();
 
     HUD = CreateWidget(this, HUDScreenClass);
+    PauseScreen = CreateWidget(this, PauseScreenClass);
     if(HUD == nullptr) return;
     HUD->AddToViewport();
 }
@@ -42,5 +43,11 @@ UUserWidget* ACardslingerPlayerController::GetHUD() const
 void ACardslingerPlayerController::RestartLevelBP()
 {
     RestartLevel();
+}
+
+void ACardslingerPlayerController::PauseLevel()
+{
+    UE_LOG(LogTemp, Display, TEXT("Pause called"));
+    if(PauseScreen) PauseScreen->AddToViewport();
 }
 
