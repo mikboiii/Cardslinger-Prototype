@@ -57,12 +57,15 @@ protected:
 	UInputAction* DashAction;
 	UPROPERTY(EditAnywhere, Category = "Input")
 	UInputAction* FlyAction;
+	UPROPERTY(EditAnywhere, Category = "Input")
+	UInputAction* PauseAction;
 
 	void Move(const FInputActionValue& Value);
 	void FlyUp(const FInputActionValue& Value);
 	void Look(const FInputActionValue& Value);
 	void UseCard(const FInputActionValue& Value);
 	void Zoom(const FInputActionValue& Value);
+	void Pause(const FInputActionValue& Value);
 
 	void Shoot();
 

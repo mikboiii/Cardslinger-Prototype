@@ -154,6 +154,7 @@ void ABaseCharacterClass::SetupPlayerInputComponent(UInputComponent* PlayerInput
 		EnhancedInputComponent->BindAction(ReloadAction, ETriggerEvent::Triggered, this, &ABaseCharacterClass::Reload);
 		EnhancedInputComponent->BindAction(ZoomAction, ETriggerEvent::Triggered, this, &ABaseCharacterClass::Zoom);
 		EnhancedInputComponent->BindAction(DashAction, ETriggerEvent::Triggered, this, &ABaseCharacterClass::Dash);
+		EnhancedInputComponent->BindAction(PauseAction, ETriggerEvent::Triggered, this, &ABaseCharacterClass::Pause);
     }
 }
 
@@ -188,6 +189,12 @@ void ABaseCharacterClass::Look(const FInputActionValue& Value)
     AddControllerPitchInput(Value.Get<FVector2D>().Y);
     AddControllerYawInput(Value.Get<FVector2D>().X);
 }
+
+void ABaseCharacterClass::Pause(const FInputActionValue& Value)
+{
+	
+}
+
 
 void ABaseCharacterClass::Dash()
 {
