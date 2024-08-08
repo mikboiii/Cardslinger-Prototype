@@ -53,6 +53,10 @@ protected:
 	//the card's particle impact system
 	UPROPERTY(EditAnywhere)
 	class UNiagaraSystem* CardImpact;
+
+	UPROPERTY(EditAnywhere)
+	class UNiagaraSystem* CardImpactUniversal;
+
 	//the card's velocity
 	UPROPERTY(EditAnywhere)
 	float CardSpeed;
