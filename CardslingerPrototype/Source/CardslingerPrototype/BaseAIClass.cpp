@@ -36,6 +36,7 @@ void ABaseAIClass::BeginPlay()
 	ThisController = Cast<AAIController>(GetController());
 	BaseTimePerShot = TimePerShot;
 	PlayerActor = UGameplayStatics::GetPlayerPawn(GetWorld(), 0);
+	GetCapsuleComponent()->SetCollisionEnabled(ECollisionEnabled::NoCollision);
 	//ThisController->GetBlackboardComponent()->SetValueAsFloat(TEXT("FireCooldown"), FireCooldown);
 	
 }
