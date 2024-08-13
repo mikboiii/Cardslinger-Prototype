@@ -41,6 +41,8 @@ class CARDSLINGERPROTOTYPE_API ACardslingerPlayerController : public APlayerCont
 
 		class UUserWidget* PauseScreen;
 
+		bool bIsGamePaused = false;
+
 	public:
 		class UUserWidget* GetHUD() const;
 

@@ -47,7 +47,16 @@ void ACardslingerPlayerController::RestartLevelBP()
 
 void ACardslingerPlayerController::PauseLevel()
 {
-    UE_LOG(LogTemp, Display, TEXT("Pause called"));
-    if(PauseScreen) PauseScreen->AddToViewport();
+    bIsGamePaused = !bIsGamePaused;
+
+    if(bIsGamePaused)
+    {
+        UE_LOG(LogTemp, Display, TEXT("Pause called"));
+        if(PauseScreen) PauseScreen->AddToViewport();
+    }
+    else
+    {
+        if(PauseScreen) PauseScreen->RemoveFromViewport();
+    }
 }
 
