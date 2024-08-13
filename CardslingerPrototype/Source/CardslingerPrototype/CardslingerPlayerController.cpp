@@ -3,6 +3,7 @@
 
 #include "CardslingerPlayerController.h"
 #include "Engine/EngineTypes.h"
+#include "Kismet/GameplayStatics.h"
 #include "Blueprint/UserWidget.h"
 #include "TimerManager.h"
 
@@ -48,10 +49,9 @@ void ACardslingerPlayerController::RestartLevelBP()
 void ACardslingerPlayerController::PauseLevel()
 {
     bIsGamePaused = !bIsGamePaused;
-
+    UGameplayStatics::SetGamePaused(GetWorld(), bIsGamePaused);
     if(bIsGamePaused)
     {
-        UE_LOG(LogTemp, Display, TEXT("Pause called"));
         if(PauseScreen) PauseScreen->AddToViewport();
     }
     else
