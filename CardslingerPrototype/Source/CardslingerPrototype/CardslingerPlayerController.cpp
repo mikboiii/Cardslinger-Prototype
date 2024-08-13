@@ -53,10 +53,12 @@ void ACardslingerPlayerController::PauseLevel()
     if(bIsGamePaused)
     {
         if(PauseScreen) PauseScreen->AddToViewport();
+        bShowMouseCursor = true;
     }
     else
     {
         if(PauseScreen) PauseScreen->RemoveFromViewport();
+        bShowMouseCursor = false;
     }
 }
 
