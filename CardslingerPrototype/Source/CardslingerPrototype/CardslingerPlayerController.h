@@ -48,6 +48,6 @@ class CARDSLINGERPROTOTYPE_API ACardslingerPlayerController : public APlayerCont
 
 		UFUNCTION(BlueprintCallable)
 		void RestartLevelBP();
-
+		UFUNCTION(BlueprintCallable)
 		void PauseLevel();
 };
