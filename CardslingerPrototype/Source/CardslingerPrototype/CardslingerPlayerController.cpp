@@ -54,7 +54,7 @@ void ACardslingerPlayerController::PauseLevel()
     {
         if(PauseScreen) PauseScreen->AddToViewport();
         bShowMouseCursor = true;
-        FInputModeUIOnly InputMode;
+        FInputModeGameAndUI InputMode;
         InputMode.SetWidgetToFocus(PauseScreen->TakeWidget());
         SetInputMode(InputMode);
     }
