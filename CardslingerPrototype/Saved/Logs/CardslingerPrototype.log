@@ -1377,3 +1377,56 @@ LogConfig: Set CVar [[r.Shadow.DetectVertexShaderLayerAtRuntime:1]]
 [2024.08.16-22.07.17:831][957]LogFileHelpers: InternalPromptForCheckoutAndSave took 174 ms (total: 1.75 sec)
 [2024.08.16-22.07.17:833][957]AssetCheck: New page: Asset Save: S_Levels
 [2024.08.16-22.07.17:833][957]LogContentValidation: Display: Validating /Script/Engine.UserDefinedStruct /Game/Levels/S_Levels.S_Levels
+[2024.08.16-22.09.34:443][379]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.08.16-22.09.34:588][379]LogSavePackage: Moving output files for package: /Game/UI/WBP_LevelSelect
+[2024.08.16-22.09.34:589][379]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/WBP_LevelSelectC6710D994995F4ACC5FF5AB574649404.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/UI/WBP_LevelSelect.uasset'
+[2024.08.16-22.09.34:600][379]LogFileHelpers: InternalPromptForCheckoutAndSave took 156 ms (total: 1.91 sec)
+[2024.08.16-22.09.34:600][379]AssetCheck: New page: Asset Save: WBP_LevelSelect
+[2024.08.16-22.09.34:600][379]LogContentValidation: Display: Validating /Script/UMGEditor.WidgetBlueprint /Game/UI/WBP_LevelSelect.WBP_LevelSelect
+[2024.08.16-22.09.49:288][992]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.08.16-22.09.49:400][992]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Levels/S_Levels" FILE="../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/Levels/S_Levels.uasset" SILENT=true
+[2024.08.16-22.09.49:412][992]LogSavePackage: Moving output files for package: /Game/Levels/S_Levels
+[2024.08.16-22.09.49:414][992]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/S_Levels99EB4C5A44EA7092301C87ABCC531ACF.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/Levels/S_Levels.uasset'
+[2024.08.16-22.09.49:425][992]LogFileHelpers: InternalPromptForCheckoutAndSave took 137 ms (total: 2.05 sec)
+[2024.08.16-22.09.49:426][992]AssetCheck: New page: Asset Save: S_Levels
+[2024.08.16-22.09.49:427][992]LogContentValidation: Display: Validating /Script/Engine.UserDefinedStruct /Game/Levels/S_Levels.S_Levels
+[2024.08.16-22.11.20:149][378]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.08.16-22.11.20:299][378]LogSavePackage: Moving output files for package: /Game/UI/WBP_LevelSelect
+[2024.08.16-22.11.20:300][378]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/WBP_LevelSelectAC7099BB4A06AEEF9DCCD6963A758DD7.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/UI/WBP_LevelSelect.uasset'
+[2024.08.16-22.11.20:311][378]LogFileHelpers: InternalPromptForCheckoutAndSave took 162 ms (total: 2.21 sec)
+[2024.08.16-22.11.20:314][378]AssetCheck: New page: Asset Save: WBP_LevelSelect
+[2024.08.16-22.11.20:314][378]LogContentValidation: Display: Validating /Script/UMGEditor.WidgetBlueprint /Game/UI/WBP_LevelSelect.WBP_LevelSelect
+[2024.08.16-22.11.21:749][534]BlueprintLog: New page: Compile WBP_LevelSelect
+[2024.08.16-22.11.21:787][534]LogUObjectHash: Compacting FUObjectHashTables data took   2.38ms
+[2024.08.16-22.11.25:045][780]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.08.16-22.11.25:085][781]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.08.16-22.12.21:080][787]LogAssetEditorSubsystem: Opening Asset editor for WidgetBlueprint /Game/UI/WBP_LevelButton.WBP_LevelButton
+[2024.08.16-22.12.21:080][787]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.08.16-22.12.21:080][787]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2024.08.16-22.12.21:094][787]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.08.16-22.12.21:094][787]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2024.08.16-22.12.23:863][ 49]LogSlate: Took 0.006487 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/DroidSansFallback.ttf' (3848K)
+[2024.08.16-22.16.01:088][906]LogUObjectHash: Compacting FUObjectHashTables data took   2.60ms
+[2024.08.16-22.16.01:091][906]LogFileHelpers: Editor autosave (incl. external actors) for '/Game/Levels/MovementLevel' took 0.028
+[2024.08.16-22.16.01:093][906]OBJ SavePackage: Generating thumbnails for [2] asset(s) in package [/Game/UI/WBP_LevelButton] ([2] browsable assets)...
+[2024.08.16-22.16.01:098][906]OBJ SavePackage:     Rendered thumbnail for [WidgetBlueprint /Game/UI/WBP_LevelButton.WBP_LevelButton]
+[2024.08.16-22.16.01:098][906]OBJ SavePackage: Finished generating thumbnails for package [/Game/UI/WBP_LevelButton]
+[2024.08.16-22.16.01:109][906]LogSavePackage: Moving output files for package: /Temp/Autosaves/Game/UI/WBP_LevelButton_Auto1
+[2024.08.16-22.16.01:109][906]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/WBP_LevelButton_Auto19F9D9B9A4CD428125803E080D5A2C893.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/Autosaves/Game/UI/WBP_LevelButton_Auto1.uasset'
+[2024.08.16-22.16.01:110][906]LogFileHelpers: Auto-saving content packages took 0.018
+[2024.08.16-22.21.49:614][948]BlueprintLog: New page: Compile WBP_LevelButton
+[2024.08.16-22.21.49:650][948]LogUObjectHash: Compacting FUObjectHashTables data took   2.32ms
+[2024.08.16-22.23.09:364][515]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.08.16-22.23.09:506][515]LogSavePackage: Moving output files for package: /Game/UI/WBP_LevelButton
+[2024.08.16-22.23.09:507][515]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/WBP_LevelButton1C8531A54E9E3E3DC804C4A880D61A28.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/UI/WBP_LevelButton.uasset'
+[2024.08.16-22.23.09:516][515]LogFileHelpers: InternalPromptForCheckoutAndSave took 153 ms (total: 2.36 sec)
+[2024.08.16-22.23.09:519][515]AssetCheck: New page: Asset Save: WBP_LevelButton
+[2024.08.16-22.23.09:519][515]LogContentValidation: Display: Validating /Script/UMGEditor.WidgetBlueprint /Game/UI/WBP_LevelButton.WBP_LevelButton
+[2024.08.16-22.23.17:620][986]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.08.16-22.23.17:766][986]LogSavePackage: Moving output files for package: /Game/UI/WBP_LevelButton
+[2024.08.16-22.23.17:767][986]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/WBP_LevelButtonEFC3CF12440F7D79DC8E289F0A2C82A8.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/UI/WBP_LevelButton.uasset'
+[2024.08.16-22.23.17:778][986]LogFileHelpers: InternalPromptForCheckoutAndSave took 158 ms (total: 2.52 sec)
+[2024.08.16-22.23.17:781][986]AssetCheck: New page: Asset Save: WBP_LevelButton
+[2024.08.16-22.23.17:781][986]LogContentValidation: Display: Validating /Script/UMGEditor.WidgetBlueprint /Game/UI/WBP_LevelButton.WBP_LevelButton
+[2024.08.16-22.23.58:565][362]BlueprintLog: New page: Compile WBP_LevelButton
+[2024.08.16-22.23.58:601][362]LogUObjectHash: Compacting FUObjectHashTables data took   2.06ms
