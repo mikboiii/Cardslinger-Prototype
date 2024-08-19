@@ -63,7 +63,6 @@ void ACardslingerPlayerController::PauseLevel()
     }
     else
     {
-        if(PauseScreen) PauseScreen->RemoveFromViewport();
         bShowMouseCursor = false;
         FInputModeGameOnly InputMode;
         SetInputMode(InputMode);
