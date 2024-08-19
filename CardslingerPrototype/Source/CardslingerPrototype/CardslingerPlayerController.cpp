@@ -30,6 +30,9 @@ void ACardslingerPlayerController::BeginPlay()
 {
     Super::BeginPlay();
 
+    FInputModeGameOnly InputMode;
+    SetInputMode(InputMode);
+
     HUD = CreateWidget(this, HUDScreenClass);
     PauseScreen = CreateWidget(this, PauseScreenClass);
     if(HUD == nullptr) return;
