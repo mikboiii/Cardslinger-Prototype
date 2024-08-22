@@ -56,7 +56,7 @@ TArray<AActor*> ASlowTimeProjectileCard::FindActorsInRange(UClass* ActorClass, f
         this,
         GetActorLocation(),
         Radius,
-        { EObjectTypeQuery::ObjectTypeQuery3 }, // ObjectTypeQuery3 is WorldDynamic by default, adjust as needed
+        { EObjectTypeQuery::ObjectTypeQuery4 }, // ObjectTypeQuery3 is WorldDynamic by default, adjust as needed
         ActorClass,
         TArray<AActor*>(), // Actors to ignore
         OverlappingActors
