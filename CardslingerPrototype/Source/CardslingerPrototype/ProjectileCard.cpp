@@ -94,7 +94,6 @@ void AProjectileCard::OnHit(UPrimitiveComponent* HitComponent, AActor* OtherActo
 		UE_LOG(LogTemp, Display, TEXT("Card Impact"));
         //if the collision is an enemy class actor, apply damage and hit fx
 		if(CardImpactUniversal) UNiagaraFunctionLibrary::SpawnSystemAtLocation(GetWorld(), CardImpactUniversal, Hit.ImpactPoint, GetActorForwardVector().Rotation(),FVector(ParticleScale), true, true, ENCPoolMethod::None, true);
-		DrawDebugSphere(GetWorld(), Hit.Location, 10.0f, 12, FColor::Red, false, 5.0f);
 		if(OtherActor != PlayerPawn && OtherActor->IsA(ABaseAIClass::StaticClass()))
 		{
 

@@ -34,11 +34,20 @@ class CARDSLINGERPROTOTYPE_API ACardslingerPlayerController : public APlayerCont
 		UPROPERTY(EditAnywhere)
 		TSubclassOf<class UUserWidget> HUDScreenClass;
 
+		UPROPERTY(EditAnywhere)
+		TSubclassOf<class UUserWidget> PauseScreenClass;
+
 		class UUserWidget* HUD;
+
+		class UUserWidget* PauseScreen;
+
+		bool bIsGamePaused = false;
 
 	public:
 		class UUserWidget* GetHUD() const;
 
 		UFUNCTION(BlueprintCallable)
 		void RestartLevelBP();
+		UFUNCTION(BlueprintCallable)
+		void PauseLevel();
 };

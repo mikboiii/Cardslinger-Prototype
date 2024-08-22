@@ -3,6 +3,7 @@
 
 #include "CardslingerPlayerController.h"
 #include "Engine/EngineTypes.h"
+#include "Kismet/GameplayStatics.h"
 #include "Blueprint/UserWidget.h"
 #include "TimerManager.h"
 
@@ -29,7 +30,11 @@ void ACardslingerPlayerController::BeginPlay()
 {
     Super::BeginPlay();
 
+    FInputModeGameOnly InputMode;
+    SetInputMode(InputMode);
+
     HUD = CreateWidget(this, HUDScreenClass);
+    PauseScreen = CreateWidget(this, PauseScreenClass);
     if(HUD == nullptr) return;
     HUD->AddToViewport();
 }
@@ -42,5 +47,25 @@ UUserWidget* ACardslingerPlayerController::GetHUD() const
 void ACardslingerPlayerController::RestartLevelBP()
 {
     RestartLevel();
+}
+
+void ACardslingerPlayerController::PauseLevel()
+{
+    bIsGamePaused = !bIsGamePaused;
+    UGameplayStatics::SetGamePaused(GetWorld(), bIsGamePaused);
+    if(bIsGamePaused)
+    {
+        if(PauseScreen) PauseScreen->AddToViewport();
+        bShowMouseCursor = true;
+        FInputModeGameAndUI InputMode;
+        InputMode.SetWidgetToFocus(PauseScreen->TakeWidget());
+        SetInputMode(InputMode);
+    }
+    else
+    {
+        bShowMouseCursor = false;
+        FInputModeGameOnly InputMode;
+        SetInputMode(InputMode);
+    }
 }
 
