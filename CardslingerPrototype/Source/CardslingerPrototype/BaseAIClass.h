@@ -46,6 +46,8 @@ public:
 
 	void RemoveProjectile(class AEnemyProjectile* Projectile);
 
+	void SetRagdollMode(bool bIsRagdoll);
+
 private:
 
 	AActor* PlayerActor;

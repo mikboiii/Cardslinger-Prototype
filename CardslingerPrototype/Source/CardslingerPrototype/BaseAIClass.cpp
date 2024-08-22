@@ -13,6 +13,7 @@
 #include "Engine/DamageEvents.h"
 #include "Engine/World.h"
 #include "BehaviorTree/BlackboardComponent.h"
+#include "BehaviorTree/BehaviorTreeComponent.h"
 #include "NiagaraSystem.h"
 #include "NiagaraFunctionLibrary.h"
 #include "AIController.h"
@@ -57,6 +58,7 @@ void ABaseAIClass::SetupPlayerInputComponent(UInputComponent* PlayerInputCompone
 
 float ABaseAIClass::TakeDamage(float DamageAmount, struct FDamageEvent const &DamageEvent, class AController *EventInstigator, AActor* DamageCauser)
 {
+	SetRagdollMode(true);
     float DamageToApply = Super::TakeDamage(DamageAmount, DamageEvent, EventInstigator, EventInstigator);
     Health -= DamageToApply;
 
@@ -152,6 +154,22 @@ void ABaseAIClass::Shoot()
 	Projectile->SetOwnerClass(this);
 	ActiveBullets.Emplace(Projectile);
 	UNiagaraFunctionLibrary::SpawnSystemAtLocation(GetWorld(), MuzzleFlash, GetMesh()->GetBoneLocation(TEXT("gun_barrel")), ShotDirection.Rotation(), FVector::One(), true, true, ENCPoolMethod::None, true);
+	}
+}
+
+void ABaseAIClass::SetRagdollMode(bool bIsRagdollMode)
+{
+	if(bIsRagdollMode)
+	{
+		GetMesh()->SetSimulatePhysics(true);
+		GetMesh()->bPauseAnims = true;
+		ThisController = Cast<AAIController>(GetController());
+		UBehaviorTreeComponent* BT = Cast<UBehaviorTreeComponent>(ThisController->GetBrainComponent());
+		BT->StopTree(EBTStopMode::Safe);
+	}
+	else
+	{
+		GetMesh()->SetSimulatePhysics(false);
 	}
 }
 
