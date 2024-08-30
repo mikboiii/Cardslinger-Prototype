@@ -20,6 +20,7 @@
 #include "Sound/SoundBase.h"
 #include "Components/PostProcessComponent.h"
 #include "EnemyProjectile.h"
+#include "BaseAIController.h"
 
 // Sets default values
 ABaseAIClass::ABaseAIClass()
@@ -34,7 +35,7 @@ void ABaseAIClass::BeginPlay()
 {
 	Super::BeginPlay();
 	Health = MaxHealth;
-	ThisController = Cast<AAIController>(GetController());
+	ThisController = Cast<ABaseAIController>(GetController());
 	BaseTimePerShot = TimePerShot;
 	PlayerActor = UGameplayStatics::GetPlayerPawn(GetWorld(), 0);
 	GetCapsuleComponent()->SetCollisionEnabled(ECollisionEnabled::NoCollision);
@@ -163,20 +164,24 @@ void ABaseAIClass::SetRagdollMode(bool bIsRagdollMode)
 	{
 		GetMesh()->SetSimulatePhysics(true);
 		GetMesh()->bPauseAnims = true;
-		ThisController = Cast<AAIController>(GetController());
+		ThisController = Cast<ABaseAIController>(GetController());
 		UBehaviorTreeComponent* BT = Cast<UBehaviorTreeComponent>(ThisController->GetBrainComponent());
 		BT->StopTree(EBTStopMode::Safe);
 	}
 	else
 	{
 		GetMesh()->SetSimulatePhysics(false);
+		GetMesh()->bPauseAnims = false;
+		ThisController = Cast<ABaseAIController>(GetController());
+		UBehaviorTreeComponent* BT = Cast<UBehaviorTreeComponent>(ThisController->GetBrainComponent());
+		ThisController->RunBehaviorTree(ThisController->GetBehaviorTree());
 	}
 }
 
 void ABaseAIClass::EnableSlowEffect(bool bIsSlow)
 {
 	GetComponentByClass<UPostProcessComponent>()->bEnabled = bIsSlow;
-	ThisController = Cast<AAIController>(GetController());
+	ThisController = Cast<ABaseAIController>(GetController());
 	if(bIsSlow) 
 	{
 		GetMesh()->SetCustomDepthStencilValue(2);

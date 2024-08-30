@@ -55,7 +55,7 @@ private:
 	UPROPERTY(EditAnywhere)
 	float Speed = 10.f;
 
-	class AAIController* ThisController;
+	class ABaseAIController* ThisController;
 	
 	UPROPERTY(VisibleAnywhere, Category = "Combat")
 	float Health;
