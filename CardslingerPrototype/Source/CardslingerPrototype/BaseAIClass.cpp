@@ -38,7 +38,7 @@ void ABaseAIClass::BeginPlay()
 	ThisController = Cast<ABaseAIController>(GetController());
 	BaseTimePerShot = TimePerShot;
 	PlayerActor = UGameplayStatics::GetPlayerPawn(GetWorld(), 0);
-	GetCapsuleComponent()->SetCollisionEnabled(ECollisionEnabled::NoCollision);
+	GetCapsuleComponent()->SetCollisionEnabled(ECollisionEnabled::QueryOnly);
 	//ThisController->GetBlackboardComponent()->SetValueAsFloat(TEXT("FireCooldown"), FireCooldown);
 	
 }
@@ -169,16 +169,22 @@ void ABaseAIClass::SetRagdollMode(bool bIsRagdollMode)
 		GetMesh()->SetSimulatePhysics(true);
 		GetMesh()->bPauseAnims = true;
 		ThisController = Cast<ABaseAIController>(GetController());
+		if(ThisController)
+		{
 		UBehaviorTreeComponent* BT = Cast<UBehaviorTreeComponent>(ThisController->GetBrainComponent());
 		BT->StopTree(EBTStopMode::Safe);
+		}
 	}
 	else
 	{
 		GetMesh()->SetSimulatePhysics(false);
 		GetMesh()->bPauseAnims = false;
 		ThisController = Cast<ABaseAIController>(GetController());
+		if(ThisController)
+		{
 		UBehaviorTreeComponent* BT = Cast<UBehaviorTreeComponent>(ThisController->GetBrainComponent());
 		ThisController->RunBehaviorTree(ThisController->GetBehaviorTree());
+		}
 	}
 }
 
