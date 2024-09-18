@@ -63,11 +63,6 @@ void ABaseAIClass::SetupPlayerInputComponent(UInputComponent* PlayerInputCompone
 
 float ABaseAIClass::TakeDamage(float DamageAmount, struct FDamageEvent const &DamageEvent, class AController *EventInstigator, AActor* DamageCauser)
 {
-	SetRagdollMode(true);
-
-	GetWorldTimerManager().ClearTimer(RagdollReset);
-	FTimerDelegate RagdollDelegate = FTimerDelegate::CreateUObject(this, &ABaseAIClass::SetRagdollMode, false);
-	GetWorldTimerManager().SetTimer(RagdollReset, RagdollDelegate, 2.0f, false);
     float DamageToApply = Super::TakeDamage(DamageAmount, DamageEvent, EventInstigator, EventInstigator);
     Health -= DamageToApply;
 
@@ -237,3 +232,12 @@ void ABaseAIClass::RemoveProjectile(AEnemyProjectile* Projectile)
 {
 	ActiveBullets.Remove(Projectile);
 }
+
+/*
+Ragdoll Code:
+	SetRagdollMode(true);
+
+	GetWorldTimerManager().ClearTimer(RagdollReset);
+	FTimerDelegate RagdollDelegate = FTimerDelegate::CreateUObject(this, &ABaseAIClass::SetRagdollMode, false);
+	GetWorldTimerManager().SetTimer(RagdollReset, RagdollDelegate, 2.0f, false);
+*/
