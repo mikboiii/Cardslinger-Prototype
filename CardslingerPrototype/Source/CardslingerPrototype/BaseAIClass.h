@@ -104,4 +104,7 @@ private:
 	class UCapsuleComponent* CollisionCapsule;
 
 	class USkeletalMeshComponent* EnemyMesh;
+
+	FVector MeshOffset;
+	FRotator MeshRotation;
 };

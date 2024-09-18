@@ -41,6 +41,8 @@ void ABaseAIClass::BeginPlay()
 	CollisionCapsule = GetCapsuleComponent();
 	CollisionCapsule->SetCollisionEnabled(ECollisionEnabled::QueryOnly);
 	EnemyMesh = GetMesh();
+	MeshOffset = EnemyMesh->GetRelativeLocation();
+	MeshRotation = EnemyMesh->GetRelativeRotation();
 	//ThisController->GetBlackboardComponent()->SetValueAsFloat(TEXT("FireCooldown"), FireCooldown);
 	
 }
@@ -50,10 +52,7 @@ void ABaseAIClass::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
-	if(bRagdoll)
-	{
-		CollisionCapsule->SetWorldLocation(EnemyMesh->GetBoneLocation(TEXT("pelvis")));
-	}
+	CollisionCapsule->SetWorldLocation(EnemyMesh->GetComponentLocation()-MeshOffset);
 
 }
 
@@ -188,6 +187,8 @@ void ABaseAIClass::SetRagdollMode(bool bIsRagdollMode)
 		GetMesh()->SetSimulatePhysics(false);
 		GetMesh()->bPauseAnims = false;
 		EnemyMesh->AttachToComponent(CollisionCapsule, FAttachmentTransformRules::SnapToTargetNotIncludingScale);
+		EnemyMesh->SetRelativeLocation(MeshOffset);
+		EnemyMesh->SetRelativeRotation(MeshRotation);
 		ThisController = Cast<ABaseAIController>(GetController());
 		if(ThisController)
 		{
