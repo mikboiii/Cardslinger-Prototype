@@ -18,6 +18,7 @@ void AConcussiveProjectileCard::OnHit(UPrimitiveComponent* HitComponent, AActor*
         UGameplayStatics::ApplyRadialDamage(GetWorld(), CardExplosiveDamage, Hit.ImpactPoint, CardExplosionRadius, 
         UDamageType::StaticClass(), TArray<AActor*>(), PlayerPawn, 
         UGameplayStatics::GetPlayerController(GetWorld(),0), true, ECollisionChannel::ECC_Visibility);
+        ConcussionSphere();
     }
     //destroy the card on impact
     Destroy();
