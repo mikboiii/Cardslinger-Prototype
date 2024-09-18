@@ -38,7 +38,9 @@ void ABaseAIClass::BeginPlay()
 	ThisController = Cast<ABaseAIController>(GetController());
 	BaseTimePerShot = TimePerShot;
 	PlayerActor = UGameplayStatics::GetPlayerPawn(GetWorld(), 0);
-	GetCapsuleComponent()->SetCollisionEnabled(ECollisionEnabled::QueryOnly);
+	CollisionCapsule = GetCapsuleComponent();
+	CollisionCapsule->SetCollisionEnabled(ECollisionEnabled::QueryOnly);
+	EnemyMesh = GetMesh();
 	//ThisController->GetBlackboardComponent()->SetValueAsFloat(TEXT("FireCooldown"), FireCooldown);
 	
 }
@@ -47,6 +49,11 @@ void ABaseAIClass::BeginPlay()
 void ABaseAIClass::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
+
+	if(bRagdoll)
+	{
+		CollisionCapsule->SetWorldLocation(EnemyMesh->GetBoneLocation(TEXT("pelvis")));
+	}
 
 }
 
@@ -164,6 +171,7 @@ void ABaseAIClass::Shoot()
 
 void ABaseAIClass::SetRagdollMode(bool bIsRagdollMode)
 {
+	bRagdoll = bIsRagdollMode;
 	if(bIsRagdollMode)
 	{
 		GetMesh()->SetSimulatePhysics(true);

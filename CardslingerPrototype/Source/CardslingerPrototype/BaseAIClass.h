@@ -98,4 +98,10 @@ private:
 	class UNiagaraSystem* MuzzleFlash;
 
 	bool HitTrace(FHitResult& Hit, FVector& ShotDirection);
+	
+	bool bRagdoll = false;
+
+	class UCapsuleComponent* CollisionCapsule;
+
+	class USkeletalMeshComponent* EnemyMesh;
 };
