@@ -5,6 +5,7 @@
 #include "Kismet/GameplayStatics.h"
 #include "NiagaraFunctionLibrary.h"
 #include "NiagaraComponent.h"
+#include "BaseAIClass.h"
 #include "Engine/DamageEvents.h"
 
 void AConcussiveProjectileCard::OnHit(UPrimitiveComponent* HitComponent, AActor* OtherActor, UPrimitiveComponent* OtherComponent, FVector NormalImpulse, const FHitResult& Hit)
@@ -20,4 +21,44 @@ void AConcussiveProjectileCard::OnHit(UPrimitiveComponent* HitComponent, AActor*
     }
     //destroy the card on impact
     Destroy();
+}
+
+TArray<AActor*> AConcussiveProjectileCard::FindActorsInRange(UClass* ActorClass, float Radius)
+{
+    TArray<AActor*> OverlappingActors;
+    TArray<AActor*> FoundActors;
+
+    // Perform the sphere overlap
+    bool bHasOverlaps = UKismetSystemLibrary::SphereOverlapActors(
+        this,
+        GetActorLocation(),
+        Radius,
+        { EObjectTypeQuery::ObjectTypeQuery3 }, // ObjectTypeQuery3 is WorldDynamic by default, adjust as needed
+        ActorClass,
+        TArray<AActor*>(), // Actors to ignore
+        OverlappingActors
+    );
+
+    if (bHasOverlaps)
+    {
+        for (AActor* Actor : OverlappingActors)
+        {
+            if (Actor && Actor->IsA(ActorClass))
+            {
+                FoundActors.Add(Actor);
+            }
+        }
+    }
+
+    return FoundActors;
+}
+
+void AConcussiveProjectileCard::ConcussionSphere()
+{
+    //DrawDebugSphere(GetWorld(), GetActorLocation(), CardSlowTimeRadius, 32, FColor::Blue, true, 100.0f);
+    AffectedEnemies = FindActorsInRange(ABaseAIClass::StaticClass(), CardExplosionRadius);
+    for(AActor* Actor : AffectedEnemies)
+    {
+        Cast<ABaseAIClass>(Actor)->SetRagdollMode(true, 2.0f);
+    }
 }

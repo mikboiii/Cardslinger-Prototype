@@ -46,7 +46,7 @@ public:
 
 	void RemoveProjectile(class AEnemyProjectile* Projectile);
 
-	void SetRagdollMode(bool bIsRagdoll);
+	void SetRagdollMode(bool bIsRagdoll, float RagdollTime);
 
 private:
 

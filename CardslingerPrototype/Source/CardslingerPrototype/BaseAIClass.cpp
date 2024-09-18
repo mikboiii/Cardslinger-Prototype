@@ -161,11 +161,16 @@ void ABaseAIClass::Shoot()
 	}
 }
 
-void ABaseAIClass::SetRagdollMode(bool bIsRagdollMode)
+void ABaseAIClass::SetRagdollMode(bool bIsRagdollMode, float RagdollTime=2.0f)
 {
 	bRagdoll = bIsRagdollMode;
+
 	if(bIsRagdollMode)
 	{
+
+		GetWorldTimerManager().ClearTimer(RagdollReset);
+		FTimerDelegate RagdollDelegate = FTimerDelegate::CreateUObject(this, &ABaseAIClass::SetRagdollMode, false, 0.0f);
+		GetWorldTimerManager().SetTimer(RagdollReset, RagdollDelegate, RagdollTime, false);
 		GetMesh()->SetSimulatePhysics(true);
 		GetMesh()->bPauseAnims = true;
 		ThisController = Cast<ABaseAIController>(GetController());

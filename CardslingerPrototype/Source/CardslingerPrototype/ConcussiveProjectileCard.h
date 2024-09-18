@@ -23,4 +23,9 @@ class CARDSLINGERPROTOTYPE_API AConcussiveProjectileCard : public AProjectileCar
 		//the radius of the card explosion
 		UPROPERTY(EditAnywhere)
 		float CardExplosionRadius = 300.0f;
+
+		void ConcussionSphere();
+		
+		TArray<AActor*> AffectedEnemies;
+		TArray<AActor*> FindActorsInRange(UClass* ActorClass, float Radius);
 };
