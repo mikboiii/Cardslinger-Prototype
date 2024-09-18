@@ -31,9 +31,9 @@ void EmptyLinkFunctionForGeneratedCodeConcussiveCard() {}
 		static const UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
 #if WITH_METADATA
-		static const UECodeGen_Private::FMetaDataPairParam NewProp_ExplosionProjectileCardClass_MetaData[];
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_ConcussiveProjectileCardClass_MetaData[];
 #endif
-		static const UECodeGen_Private::FClassPropertyParams NewProp_ExplosionProjectileCardClass;
+		static const UECodeGen_Private::FClassPropertyParams NewProp_ConcussiveProjectileCardClass;
 		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UECodeGen_Private::FClassParams ClassParams;
@@ -53,20 +53,14 @@ void EmptyLinkFunctionForGeneratedCodeConcussiveCard() {}
 	};
 #endif
 #if WITH_METADATA
-	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AConcussiveCard_Statics::NewProp_ExplosionProjectileCardClass_MetaData[] = {
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AConcussiveCard_Statics::NewProp_ConcussiveProjectileCardClass_MetaData[] = {
 		{ "Category", "ConcussiveCard" },
-#if !UE_BUILD_SHIPPING
-		{ "Comment", "//the explosive projectile card class\n" },
-#endif
 		{ "ModuleRelativePath", "ConcussiveCard.h" },
-#if !UE_BUILD_SHIPPING
-		{ "ToolTip", "the explosive projectile card class" },
-#endif
 	};
 #endif
-	const UECodeGen_Private::FClassPropertyParams Z_Construct_UClass_AConcussiveCard_Statics::NewProp_ExplosionProjectileCardClass = { "ExplosionProjectileCardClass", nullptr, (EPropertyFlags)0x0044000000000001, UECodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AConcussiveCard, ExplosionProjectileCardClass), Z_Construct_UClass_UClass, Z_Construct_UClass_AProjectileCard_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_AConcussiveCard_Statics::NewProp_ExplosionProjectileCardClass_MetaData), Z_Construct_UClass_AConcussiveCard_Statics::NewProp_ExplosionProjectileCardClass_MetaData) };
+	const UECodeGen_Private::FClassPropertyParams Z_Construct_UClass_AConcussiveCard_Statics::NewProp_ConcussiveProjectileCardClass = { "ConcussiveProjectileCardClass", nullptr, (EPropertyFlags)0x0044000000000001, UECodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AConcussiveCard, ConcussiveProjectileCardClass), Z_Construct_UClass_UClass, Z_Construct_UClass_AProjectileCard_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_AConcussiveCard_Statics::NewProp_ConcussiveProjectileCardClass_MetaData), Z_Construct_UClass_AConcussiveCard_Statics::NewProp_ConcussiveProjectileCardClass_MetaData) };
 	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AConcussiveCard_Statics::PropPointers[] = {
-		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AConcussiveCard_Statics::NewProp_ExplosionProjectileCardClass,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AConcussiveCard_Statics::NewProp_ConcussiveProjectileCardClass,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_AConcussiveCard_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<AConcussiveCard>::IsAbstract,
@@ -107,9 +101,9 @@ void EmptyLinkFunctionForGeneratedCodeConcussiveCard() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_ConcussiveCard_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_AConcussiveCard, AConcussiveCard::StaticClass, TEXT("AConcussiveCard"), &Z_Registration_Info_UClass_AConcussiveCard, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AConcussiveCard), 2503115437U) },
+		{ Z_Construct_UClass_AConcussiveCard, AConcussiveCard::StaticClass, TEXT("AConcussiveCard"), &Z_Registration_Info_UClass_AConcussiveCard, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AConcussiveCard), 2226886323U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_ConcussiveCard_h_2110176866(TEXT("/Script/CardslingerPrototype"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_ConcussiveCard_h_1484544188(TEXT("/Script/CardslingerPrototype"),
 		Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_ConcussiveCard_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_ConcussiveCard_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);

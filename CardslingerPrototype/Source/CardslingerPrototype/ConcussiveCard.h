@@ -16,7 +16,6 @@ class CARDSLINGERPROTOTYPE_API AConcussiveCard : public ABaseCard
 	virtual void CardEffect(class ACardDeck* CardDeck, FVector Direction, FVector Target, AActor* TargetActor) override;
 
 private:
-	//the explosive projectile card class
 	UPROPERTY(EditAnywhere)
-	TSubclassOf<class AProjectileCard> ExplosionProjectileCardClass;
+	TSubclassOf<class AProjectileCard> ConcussiveProjectileCardClass;
 };

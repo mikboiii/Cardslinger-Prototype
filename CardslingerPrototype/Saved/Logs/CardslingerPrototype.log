@@ -1764,3 +1764,404 @@ LogConfig: Set CVar [[r.Shadow.DetectVertexShaderLayerAtRuntime:1]]
 [2024.09.18-15.50.39:725][906]LogUObjectHash: Compacting FUObjectHashTables data took   2.30ms
 [2024.09.18-15.50.40:312][907]Display: Reload/Re-instancing Complete: 1 package changed, 1 class changed, 22 classes unchanged, 37 functions remapped
 [2024.09.18-15.50.40:313][907]LogLiveCoding: Warning: Live coding succeeded, data type changes may cause packaging to fail if assets reference the new or updated data types
+[2024.09.18-15.59.44:818][663]LogDebuggerCommands: Repeating last play command: Selected Viewport
+[2024.09.18-15.59.44:837][663]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2024.09.18-15.59.44:837][663]PIE: New page: PIE session: MovementLevel (18 Sep 2024, 17:59:44)
+[2024.09.18-15.59.44:837][663]LogPlayLevel: Creating play world package: /Game/Levels/UEDPIE_0_MovementLevel
+[2024.09.18-15.59.44:844][663]LogPlayLevel: PIE: StaticDuplicateObject took: (0.005996s)
+[2024.09.18-15.59.44:845][663]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Levels/MovementLevel.MovementLevel to /Game/Levels/UEDPIE_0_MovementLevel.MovementLevel (0.006166s)
+[2024.09.18-15.59.44:962][663]LogUObjectHash: Compacting FUObjectHashTables data took   4.16ms
+[2024.09.18-15.59.44:964][663]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.09.18-15.59.44:964][663]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2024.09.18-15.59.44:965][663]LogAIModule: Creating AISystem for world MovementLevel
+[2024.09.18-15.59.44:965][663]LogPlayLevel: PIE: World Init took: (0.001517s)
+[2024.09.18-15.59.44:966][663]LogAudio: Display: Creating Audio Device:                 Id: 8, Scope: Unique, Realtime: True
+[2024.09.18-15.59.44:966][663]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2024.09.18-15.59.44:966][663]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2024.09.18-15.59.44:966][663]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2024.09.18-15.59.44:966][663]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2024.09.18-15.59.44:966][663]LogAudioMixer: Display: 	Number of buffers to queue:			  1
+[2024.09.18-15.59.44:966][663]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2024.09.18-15.59.44:966][663]LogAudioMixer: Display: 	Number of Async Source Workers:		  4
+[2024.09.18-15.59.44:966][663]LogAudio: Display: AudioDevice MaxSources: 32
+[2024.09.18-15.59.44:966][663]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2024.09.18-15.59.44:966][663]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2024.09.18-15.59.44:966][663]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2024.09.18-15.59.44:969][663]LogAudioMixer: Display: Initializing audio mixer using platform API: 'XAudio2'
+[2024.09.18-15.59.45:047][663]LogAudioMixer: Display: Using Audio Hardware Device Speakers (Realtek(R) Audio)
+[2024.09.18-15.59.45:048][663]LogAudioMixer: Display: Initializing Sound Submixes...
+[2024.09.18-15.59.45:048][663]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2024.09.18-15.59.45:048][663]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2024.09.18-15.59.45:048][663]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called. InstanceID=8
+[2024.09.18-15.59.45:048][663]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048, InstanceID=8
+[2024.09.18-15.59.45:051][663]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=8
+[2024.09.18-15.59.45:051][663]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time. InstanceID=8
+[2024.09.18-15.59.45:051][663]LogInit: FAudioDevice initialized with ID 8.
+[2024.09.18-15.59.45:052][663]LogAudio: Display: Audio Device (ID: 8) registered with world 'MovementLevel'.
+[2024.09.18-15.59.45:052][663]LogAudioMixer: Initializing Audio Bus Subsystem for audio device with ID 8
+[2024.09.18-15.59.45:061][663]LogLoad: Game class is 'BP_CardslingerTestGameMode_C'
+[2024.09.18-15.59.45:066][663]LogWorld: Bringing World /Game/Levels/UEDPIE_0_MovementLevel.MovementLevel up for play (max tick rate 60) at 2024.09.18-16.59.45
+[2024.09.18-15.59.45:067][663]LogWorld: Bringing up level for play took: 0.004814
+[2024.09.18-15.59.45:070][663]LogOnline: OSS: Created online subsystem instance for: :Context_21
+[2024.09.18-15.59.45:074][663]LogViewport: Display: Viewport MouseCaptureMode Changed, CapturePermanently_IncludingInitialMouseDown -> CapturePermanently
+[2024.09.18-15.59.45:078][663]LogTemp: Display: ../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/CardDeck.sav
+[2024.09.18-15.59.45:079][663]LogTemp: Load successful!
+[2024.09.18-15.59.45:084][663]LogTemp: Save successful!
+[2024.09.18-15.59.45:085][663]PIE: Server logged in
+[2024.09.18-15.59.45:086][663]PIE: Play in editor total start time 0.25 seconds.
+[2024.09.18-15.59.47:628][807]LogTemp: Display: Bone name: lowerarm_l
+[2024.09.18-15.59.47:858][820]LogTemp: Display: Bone name: lowerarm_l
+[2024.09.18-15.59.48:097][833]LogTemp: Display: Bone name: lowerarm_l
+[2024.09.18-15.59.48:510][856]LogTemp: Display: Card Impact
+[2024.09.18-15.59.48:649][864]LogTemp: Display: Card Impact
+[2024.09.18-15.59.48:800][873]LogTemp: Display: Card Impact
+[2024.09.18-15.59.49:898][937]LogTemp: Display: Bone name: shoulderpad_l
+[2024.09.18-15.59.50:065][947]LogTemp: Display: Card Impact
+[2024.09.18-15.59.50:165][953]LogTemp: Display: Card Impact
+[2024.09.18-15.59.50:401][967]LogTemp: Display: Card Impact
+[2024.09.18-15.59.50:572][977]LogTemp: Display: Card Impact
+[2024.09.18-15.59.50:587][978]LogTemp: Display: Bone name: calf_l
+[2024.09.18-15.59.50:780][989]LogTemp: Display: Card Impact
+[2024.09.18-15.59.51:072][  6]LogTemp: Display: Card Impact
+[2024.09.18-15.59.51:172][ 12]LogTemp: Display: Bone name: lowerarm_r
+[2024.09.18-15.59.51:378][ 24]LogTemp: Display: Card Impact
+[2024.09.18-15.59.51:545][ 34]LogTemp: Display: Bone name: hand_l
+[2024.09.18-15.59.51:768][ 47]LogTemp: Display: Bone name: hand_l
+[2024.09.18-15.59.51:824][ 50]LogTemp: Display: Card Impact
+[2024.09.18-15.59.52:026][ 62]LogTemp: Display: Bone name: lowerarm_l
+[2024.09.18-15.59.52:096][ 66]LogTemp: Display: Card Impact
+[2024.09.18-15.59.52:245][ 75]LogTemp: Display: Bone name: lowerarm_l
+[2024.09.18-15.59.52:397][ 84]LogTemp: Display: Card Impact
+[2024.09.18-15.59.53:236][133]LogTemp: Display: Card Impact
+[2024.09.18-15.59.53:504][149]LogTemp: Display: Card Impact
+[2024.09.18-15.59.53:804][167]LogTemp: Display: Card Impact
+[2024.09.18-16.00.01:816][642]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2024.09.18-16.00.01:816][642]LogWorld: BeginTearingDown for /Game/Levels/UEDPIE_0_MovementLevel
+[2024.09.18-16.00.01:816][642]LogWorld: UWorld::CleanupWorld for MovementLevel, bSessionEnded=true, bCleanupResources=true
+[2024.09.18-16.00.01:817][642]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.09.18-16.00.01:824][642]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2024.09.18-16.00.01:829][642]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.09.18-16.00.01:847][642]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2024.09.18-16.00.01:849][642]LogAudioMixer: Deinitializing Audio Bus Subsystem for audio device with ID 8
+[2024.09.18-16.00.01:849][642]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=8
+[2024.09.18-16.00.01:852][642]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=8
+[2024.09.18-16.00.01:860][642]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2024.09.18-16.00.01:865][642]LogUObjectHash: Compacting FUObjectHashTables data took   1.67ms
+[2024.09.18-16.00.01:925][643]LogPlayLevel: Display: Destroying online subsystem :Context_21
+[2024.09.18-16.01.31:544][991]LogLiveCoding: Display: Starting Live Coding compile.
+[2024.09.18-16.01.31:669][991]LogSlate: Window 'Add C++ Class' being destroyed
+[2024.09.18-16.02.51:289][229]LogDerivedDataCache: C:/Users/Mikolaj/AppData/Local/UnrealEngine/Common/DerivedDataCache: Maintenance finished in +00:00:02.531 and deleted 0 files with total size 0 MiB and 0 empty folders. Scanned 1296 files in 2166 folders with total size 211 MiB.
+[2024.09.18-16.02.52:340][232]LogLiveCoding: Display:    Creating library C:\Users\Mikolaj\Documents\Unreal Projects\Cardslinger-Prototype\CardslingerPrototype\Binaries\Win64\UnrealEditor-CardslingerPrototype.patch_4.lib and object C:\Users\Mikolaj\Documents\Unreal Projects\Cardslinger-Prototype\CardslingerPrototype\Binaries\Win64\UnrealEditor-CardslingerPrototype.patch_4.exp
+[2024.09.18-16.02.53:590][236]LogClass: UPackage /Script/CardslingerPrototype Reload.
+[2024.09.18-16.02.53:590][236]LogClass: UClass ConcussiveCard Reload.
+[2024.09.18-16.02.53:618][236]LogClass: Could not find existing class ConcussiveCard in package /Script/CardslingerPrototype for reload, assuming new or modified class
+[2024.09.18-16.02.53:618][236]LogClass: Could not find existing class ConcussiveProjectileCard in package /Script/CardslingerPrototype for reload, assuming new or modified class
+[2024.09.18-16.02.53:672][236]Re-instancing ConcussiveCard after reload.
+[2024.09.18-16.02.53:883][236]LogUObjectHash: Compacting FUObjectHashTables data took   2.46ms
+[2024.09.18-16.02.54:600][237]Display: Reload/Re-instancing Complete: 1 package changed, 1 class new, 1 class changed, 22 classes unchanged, 37 functions remapped
+[2024.09.18-16.02.54:600][237]LogLiveCoding: Warning: Live coding succeeded, data type changes may cause packaging to fail if assets reference the new or updated data types
+[2024.09.18-16.03.19:146][311]LogLiveCoding: Display: Starting Live Coding compile.
+[2024.09.18-16.04.22:997][502]LogLiveCoding: Display:    Creating library C:\Users\Mikolaj\Documents\Unreal Projects\Cardslinger-Prototype\CardslingerPrototype\Binaries\Win64\UnrealEditor-CardslingerPrototype.patch_5.lib and object C:\Users\Mikolaj\Documents\Unreal Projects\Cardslinger-Prototype\CardslingerPrototype\Binaries\Win64\UnrealEditor-CardslingerPrototype.patch_5.exp
+[2024.09.18-16.04.24:297][506]LogClass: UPackage /Script/CardslingerPrototype Reload.
+[2024.09.18-16.04.24:298][506]LogClass: UClass ConcussiveProjectileCard Reload.
+[2024.09.18-16.04.24:339][506]LogClass: Could not find existing class ConcussiveProjectileCard in package /Script/CardslingerPrototype for reload, assuming new or modified class
+[2024.09.18-16.04.24:411][506]Re-instancing ConcussiveProjectileCard after reload.
+[2024.09.18-16.04.24:716][506]LogUObjectHash: Compacting FUObjectHashTables data took   5.26ms
+[2024.09.18-16.04.25:432][507]Display: Reload/Re-instancing Complete: 1 package changed, 1 class changed, 23 classes unchanged, 37 functions remapped
+[2024.09.18-16.04.25:432][507]LogLiveCoding: Warning: Live coding succeeded, data type changes may cause packaging to fail if assets reference the new or updated data types
+[2024.09.18-16.04.36:476][ 39]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/Cards/BP_ConcussiveCard.BP_ConcussiveCard
+[2024.09.18-16.04.36:480][ 39]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.09.18-16.04.36:480][ 39]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2024.09.18-16.04.36:848][ 39]LogSlate: Window 'Add Blueprint Class' being destroyed
+[2024.09.18-16.04.37:046][ 39]LogViewport: Scene viewport resized to 1132x1010, mode Windowed.
+[2024.09.18-16.04.38:546][117]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.09.18-16.04.38:719][117]LogPackageLocalizationCache: Processed 46 localized package path(s) for 1 prioritized culture(s) in 0.023120 seconds
+[2024.09.18-16.04.38:743][117]LogWorldPartition: Can't find class descriptor '/Game/Cards/BP_ConcussiveCard.BP_ConcussiveCard_C' for saving '/Game/Cards/BP_ConcussiveCard.BP_ConcussiveCard_C'
+[2024.09.18-16.04.38:745][117]LogWorldPartition: Can't find class descriptor '/Game/Cards/BP_ConcussiveCard.BP_ConcussiveCard_C' for saving '/Game/Cards/BP_ConcussiveCard.BP_ConcussiveCard_C'
+[2024.09.18-16.04.38:752][117]LogSavePackage: Moving output files for package: /Game/Cards/BP_ConcussiveCard
+[2024.09.18-16.04.38:752][117]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/BP_ConcussiveCard4D1499864CA3418062D17488EF72F54B.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/Cards/BP_ConcussiveCard.uasset'
+[2024.09.18-16.04.38:779][117]LogFileHelpers: InternalPromptForCheckoutAndSave took 232 ms
+[2024.09.18-16.04.38:787][117]AssetCheck: New page: Asset Save: BP_ConcussiveCard
+[2024.09.18-16.04.38:787][117]LogContentValidation: Display: Validating /Script/Engine.Blueprint /Game/Cards/BP_ConcussiveCard.BP_ConcussiveCard
+[2024.09.18-16.04.52:071][866]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/Cards/BP_ConcussiveProjectileCard.BP_ConcussiveProjectileCard
+[2024.09.18-16.04.52:071][866]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.09.18-16.04.52:071][866]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2024.09.18-16.04.52:197][866]LogSlate: Window 'Add Blueprint Class' being destroyed
+[2024.09.18-16.04.52:306][866]LogViewport: Scene viewport resized to 1132x1010, mode Windowed.
+[2024.09.18-16.04.54:293][974]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.09.18-16.04.54:407][974]LogWorldPartition: Can't find class descriptor '/Game/Cards/BP_ConcussiveProjectileCard.BP_ConcussiveProjectileCard_C' for saving '/Game/Cards/BP_ConcussiveProjectileCard.BP_ConcussiveProjectileCard_C'
+[2024.09.18-16.04.54:408][974]LogWorldPartition: Can't find class descriptor '/Game/Cards/BP_ConcussiveProjectileCard.BP_ConcussiveProjectileCard_C' for saving '/Game/Cards/BP_ConcussiveProjectileCard.BP_ConcussiveProjectileCard_C'
+[2024.09.18-16.04.54:414][974]LogSavePackage: Moving output files for package: /Game/Cards/BP_ConcussiveProjectileCard
+[2024.09.18-16.04.54:414][974]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/BP_ConcussiveProjectileCardD279598C49345B3ABEF2C0AC5CB05498.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/Cards/BP_ConcussiveProjectileCard.uasset'
+[2024.09.18-16.04.54:430][974]LogFileHelpers: InternalPromptForCheckoutAndSave took 136 ms (total: 369 ms)
+[2024.09.18-16.04.54:431][974]AssetCheck: New page: Asset Save: BP_ConcussiveProjectileCard
+[2024.09.18-16.04.54:431][974]LogContentValidation: Display: Validating /Script/Engine.Blueprint /Game/Cards/BP_ConcussiveProjectileCard.BP_ConcussiveProjectileCard
+[2024.09.18-16.04.59:370][233]LogSlate: Took 0.001493 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
+[2024.09.18-16.04.59:453][235]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.09.18-16.05.01:578][354]LogSkeletalMesh: Building Skeletal Mesh CardShuffleRigSingleSpin...
+[2024.09.18-16.05.01:604][354]LogSkeletalMesh: Display: Waiting for skinned assets to be ready 0/1 (CardShuffleRigSingleSpin) ...
+[2024.09.18-16.05.01:612][354]LogSkeletalMesh: Built Skeletal Mesh [0.04s] /Game/FBXTest/SpinningCard/CardShuffleRigSingleSpin.CardShuffleRigSingleSpin
+[2024.09.18-16.05.01:680][355]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.09.18-16.05.04:201][494]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.09.18-16.05.10:889][879]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.09.18-16.05.10:998][879]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.09.18-16.05.11:020][879]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.09.18-16.05.11:047][879]LogWorldPartition: Can't find class descriptor '/Game/Cards/BP_ConcussiveProjectileCard.BP_ConcussiveProjectileCard_C' for saving '/Game/Cards/BP_ConcussiveProjectileCard.BP_ConcussiveProjectileCard_C'
+[2024.09.18-16.05.11:047][879]LogWorldPartition: Can't find class descriptor '/Game/Cards/BP_ConcussiveProjectileCard.BP_ConcussiveProjectileCard_C' for saving '/Game/Cards/BP_ConcussiveProjectileCard.BP_ConcussiveProjectileCard_C'
+[2024.09.18-16.05.11:052][879]LogSavePackage: Moving output files for package: /Game/Cards/BP_ConcussiveProjectileCard
+[2024.09.18-16.05.11:053][879]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/BP_ConcussiveProjectileCard7231AB03416B290E53DA3BA09912A1B6.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/Cards/BP_ConcussiveProjectileCard.uasset'
+[2024.09.18-16.05.11:065][879]LogFileHelpers: InternalPromptForCheckoutAndSave took 175 ms (total: 544 ms)
+[2024.09.18-16.05.11:067][879]AssetCheck: New page: Asset Save: BP_ConcussiveProjectileCard
+[2024.09.18-16.05.11:067][879]LogContentValidation: Display: Validating /Script/Engine.Blueprint /Game/Cards/BP_ConcussiveProjectileCard.BP_ConcussiveProjectileCard
+[2024.09.18-16.05.23:278][563]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.09.18-16.05.23:408][563]LogWorldPartition: Can't find class descriptor '/Game/Cards/BP_ConcussiveProjectileCard.BP_ConcussiveProjectileCard_C' for saving '/Game/Cards/BP_ConcussiveProjectileCard.BP_ConcussiveProjectileCard_C'
+[2024.09.18-16.05.23:408][563]LogWorldPartition: Can't find class descriptor '/Game/Cards/BP_ConcussiveProjectileCard.BP_ConcussiveProjectileCard_C' for saving '/Game/Cards/BP_ConcussiveProjectileCard.BP_ConcussiveProjectileCard_C'
+[2024.09.18-16.05.23:413][563]LogSavePackage: Moving output files for package: /Game/Cards/BP_ConcussiveProjectileCard
+[2024.09.18-16.05.23:414][563]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/BP_ConcussiveProjectileCardD12A86FA4F7BAD02B1752B8AB8BD6EA9.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/Cards/BP_ConcussiveProjectileCard.uasset'
+[2024.09.18-16.05.23:426][563]LogFileHelpers: InternalPromptForCheckoutAndSave took 147 ms (total: 692 ms)
+[2024.09.18-16.05.23:428][563]AssetCheck: New page: Asset Save: BP_ConcussiveProjectileCard
+[2024.09.18-16.05.23:428][563]LogContentValidation: Display: Validating /Script/Engine.Blueprint /Game/Cards/BP_ConcussiveProjectileCard.BP_ConcussiveProjectileCard
+[2024.09.18-16.05.29:719][919]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.09.18-16.05.29:825][919]LogWorldPartition: Can't find class descriptor '/Game/Cards/BP_ConcussiveProjectileCard.BP_ConcussiveProjectileCard_C' for saving '/Game/Cards/BP_ConcussiveProjectileCard.BP_ConcussiveProjectileCard_C'
+[2024.09.18-16.05.29:825][919]LogWorldPartition: Can't find class descriptor '/Game/Cards/BP_ConcussiveProjectileCard.BP_ConcussiveProjectileCard_C' for saving '/Game/Cards/BP_ConcussiveProjectileCard.BP_ConcussiveProjectileCard_C'
+[2024.09.18-16.05.29:831][919]LogSavePackage: Moving output files for package: /Game/Cards/BP_ConcussiveProjectileCard
+[2024.09.18-16.05.29:832][919]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/BP_ConcussiveProjectileCard61BE3929430A52A62F6D578D1E36C096.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/Cards/BP_ConcussiveProjectileCard.uasset'
+[2024.09.18-16.05.29:844][919]LogFileHelpers: InternalPromptForCheckoutAndSave took 125 ms (total: 817 ms)
+[2024.09.18-16.05.29:847][919]AssetCheck: New page: Asset Save: BP_ConcussiveProjectileCard
+[2024.09.18-16.05.29:847][919]LogContentValidation: Display: Validating /Script/Engine.Blueprint /Game/Cards/BP_ConcussiveProjectileCard.BP_ConcussiveProjectileCard
+[2024.09.18-16.05.59:249][640]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.09.18-16.05.59:371][640]LogWorldPartition: Can't find class descriptor '/Game/Cards/BP_ConcussiveProjectileCard.BP_ConcussiveProjectileCard_C' for saving '/Game/Cards/BP_ConcussiveProjectileCard.BP_ConcussiveProjectileCard_C'
+[2024.09.18-16.05.59:371][640]LogWorldPartition: Can't find class descriptor '/Game/Cards/BP_ConcussiveProjectileCard.BP_ConcussiveProjectileCard_C' for saving '/Game/Cards/BP_ConcussiveProjectileCard.BP_ConcussiveProjectileCard_C'
+[2024.09.18-16.05.59:376][640]LogSavePackage: Moving output files for package: /Game/Cards/BP_ConcussiveProjectileCard
+[2024.09.18-16.05.59:378][640]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/BP_ConcussiveProjectileCard4A03BB104150AD43E388A8B7D1DE48F8.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/Cards/BP_ConcussiveProjectileCard.uasset'
+[2024.09.18-16.05.59:392][640]LogFileHelpers: InternalPromptForCheckoutAndSave took 142 ms (total: 960 ms)
+[2024.09.18-16.05.59:393][640]AssetCheck: New page: Asset Save: BP_ConcussiveProjectileCard
+[2024.09.18-16.05.59:393][640]LogContentValidation: Display: Validating /Script/Engine.Blueprint /Game/Cards/BP_ConcussiveProjectileCard.BP_ConcussiveProjectileCard
+[2024.09.18-16.05.59:734][660]BlueprintLog: New page: Compile BP_ConcussiveProjectileCard
+[2024.09.18-16.05.59:887][660]LogUObjectHash: Compacting FUObjectHashTables data took   2.31ms
+[2024.09.18-16.06.02:926][825]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.09.18-16.06.03:028][825]LogWorldPartition: Can't find class descriptor '/Game/Cards/BP_ConcussiveCard.BP_ConcussiveCard_C' for saving '/Game/Cards/BP_ConcussiveCard.BP_ConcussiveCard_C'
+[2024.09.18-16.06.03:028][825]LogWorldPartition: Can't find class descriptor '/Game/Cards/BP_ConcussiveCard.BP_ConcussiveCard_C' for saving '/Game/Cards/BP_ConcussiveCard.BP_ConcussiveCard_C'
+[2024.09.18-16.06.03:033][825]LogSavePackage: Moving output files for package: /Game/Cards/BP_ConcussiveCard
+[2024.09.18-16.06.03:034][825]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/BP_ConcussiveCard1B2A39AF44BA03D749862182A624AF89.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/Cards/BP_ConcussiveCard.uasset'
+[2024.09.18-16.06.03:044][825]LogFileHelpers: InternalPromptForCheckoutAndSave took 118 ms (total: 1.07 sec)
+[2024.09.18-16.06.03:047][825]AssetCheck: New page: Asset Save: BP_ConcussiveCard
+[2024.09.18-16.06.03:047][825]LogContentValidation: Display: Validating /Script/Engine.Blueprint /Game/Cards/BP_ConcussiveCard.BP_ConcussiveCard
+[2024.09.18-16.06.11:292][307]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.09.18-16.06.11:407][307]LogWorldPartition: Can't find class descriptor '/Game/Cards/BP_ConcussiveCard.BP_ConcussiveCard_C' for saving '/Game/Cards/BP_ConcussiveCard.BP_ConcussiveCard_C'
+[2024.09.18-16.06.11:407][307]LogWorldPartition: Can't find class descriptor '/Game/Cards/BP_ConcussiveCard.BP_ConcussiveCard_C' for saving '/Game/Cards/BP_ConcussiveCard.BP_ConcussiveCard_C'
+[2024.09.18-16.06.11:412][307]LogSavePackage: Moving output files for package: /Game/Cards/BP_ConcussiveCard
+[2024.09.18-16.06.11:413][307]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/BP_ConcussiveCard29216D6349084DDAF7F13EB52B198B12.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/Cards/BP_ConcussiveCard.uasset'
+[2024.09.18-16.06.11:426][307]LogFileHelpers: InternalPromptForCheckoutAndSave took 134 ms (total: 1.21 sec)
+[2024.09.18-16.06.11:429][307]AssetCheck: New page: Asset Save: BP_ConcussiveCard
+[2024.09.18-16.06.11:429][307]LogContentValidation: Display: Validating /Script/Engine.Blueprint /Game/Cards/BP_ConcussiveCard.BP_ConcussiveCard
+[2024.09.18-16.06.11:491][311]BlueprintLog: New page: Compile BP_ConcussiveCard
+[2024.09.18-16.06.11:526][311]LogUObjectHash: Compacting FUObjectHashTables data took   3.53ms
+[2024.09.18-16.06.25:607][140]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.09.18-16.06.25:710][140]LogWorldPartition: Can't find class descriptor '/Game/Cards/BP_ConcussiveCard.BP_ConcussiveCard_C' for saving '/Game/Cards/BP_ConcussiveCard.BP_ConcussiveCard_C'
+[2024.09.18-16.06.25:710][140]LogWorldPartition: Can't find class descriptor '/Game/Cards/BP_ConcussiveCard.BP_ConcussiveCard_C' for saving '/Game/Cards/BP_ConcussiveCard.BP_ConcussiveCard_C'
+[2024.09.18-16.06.25:713][140]LogSavePackage: Moving output files for package: /Game/Cards/BP_ConcussiveCard
+[2024.09.18-16.06.25:716][140]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/BP_ConcussiveCard45C1CB484C109E6CB6AC01A1A48A49BC.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/Cards/BP_ConcussiveCard.uasset'
+[2024.09.18-16.06.25:727][140]LogFileHelpers: InternalPromptForCheckoutAndSave took 120 ms (total: 1.33 sec)
+[2024.09.18-16.06.25:729][140]AssetCheck: New page: Asset Save: BP_ConcussiveCard
+[2024.09.18-16.06.25:729][140]LogContentValidation: Display: Validating /Script/Engine.Blueprint /Game/Cards/BP_ConcussiveCard.BP_ConcussiveCard
+[2024.09.18-16.06.43:003][114]BlueprintLog: New page: Compile BP_ConcussiveCard
+[2024.09.18-16.06.43:044][114]LogUObjectHash: Compacting FUObjectHashTables data took   1.76ms
+[2024.09.18-16.06.43:673][148]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.09.18-16.06.43:775][148]LogWorldPartition: Can't find class descriptor '/Game/Cards/BP_ConcussiveCard.BP_ConcussiveCard_C' for saving '/Game/Cards/BP_ConcussiveCard.BP_ConcussiveCard_C'
+[2024.09.18-16.06.43:775][148]LogWorldPartition: Can't find class descriptor '/Game/Cards/BP_ConcussiveCard.BP_ConcussiveCard_C' for saving '/Game/Cards/BP_ConcussiveCard.BP_ConcussiveCard_C'
+[2024.09.18-16.06.43:781][148]LogSavePackage: Moving output files for package: /Game/Cards/BP_ConcussiveCard
+[2024.09.18-16.06.43:782][148]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/BP_ConcussiveCard5C8A4E884D6210B2E5EBD8B023CD1145.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/Cards/BP_ConcussiveCard.uasset'
+[2024.09.18-16.06.43:793][148]LogFileHelpers: InternalPromptForCheckoutAndSave took 119 ms (total: 1.45 sec)
+[2024.09.18-16.06.43:795][148]AssetCheck: New page: Asset Save: BP_ConcussiveCard
+[2024.09.18-16.06.43:795][148]LogContentValidation: Display: Validating /Script/Engine.Blueprint /Game/Cards/BP_ConcussiveCard.BP_ConcussiveCard
+[2024.09.18-16.06.51:503][591]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/Cards/BP_AllCards.BP_AllCards
+[2024.09.18-16.06.51:504][591]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.09.18-16.06.51:504][591]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2024.09.18-16.06.55:965][836]LogWorld: UWorld::CleanupWorld for World_21, bSessionEnded=true, bCleanupResources=true
+[2024.09.18-16.06.55:965][836]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.09.18-16.07.28:216][647]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/Cards/BP_AllCards.BP_AllCards
+[2024.09.18-16.07.28:217][647]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.09.18-16.07.28:217][647]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2024.09.18-16.07.43:342][529]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.09.18-16.07.43:504][529]LogSavePackage: Moving output files for package: /Game/Cards/BP_AllCards
+[2024.09.18-16.07.43:505][529]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/BP_AllCards73CAAB5E4E3616F1683DFAAF6AC4F21D.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/Cards/BP_AllCards.uasset'
+[2024.09.18-16.07.43:516][529]LogFileHelpers: InternalPromptForCheckoutAndSave took 174 ms (total: 1.62 sec)
+[2024.09.18-16.07.43:520][529]AssetCheck: New page: Asset Save: BP_AllCards
+[2024.09.18-16.07.43:520][529]LogContentValidation: Display: Validating /Script/Engine.Blueprint /Game/Cards/BP_AllCards.BP_AllCards
+[2024.09.18-16.07.55:961][246]BlueprintLog: New page: Compile BP_ConcussiveCard
+[2024.09.18-16.07.56:001][246]LogUObjectHash: Compacting FUObjectHashTables data took   2.32ms
+[2024.09.18-16.08.19:276][878]LogInterchangeEngine: [Pending] Importing
+[2024.09.18-16.08.19:276][878]LogInterchangeEngine: Display: Interchange start importing source [C:/Users/Mikolaj/Pic... Cards/PNG-cards-1.3/jack_of_diamonds2.png]
+[2024.09.18-16.08.19:354][879]LogInterchangeEngine: [Pending] Importing
+[2024.09.18-16.08.19:358][879]LogCore: PNG has complex alpha channel, will not fill RGB in transparent background, due to setting PNGInfill == OnlyOnBinaryTransparency
+[2024.09.18-16.08.19:575][879]LogTexture: Display: Building textures: /Game/CardAssets/jack_of_diamonds2.jack_of_diamonds2 (BGRA8, 500x726 x1x1x1) (Required Memory Estimate: 10.678802 MB), EncodeSpeed: Fast
+[2024.09.18-16.08.19:626][880]LogInterchangeEngine: [Success] Import Done
+[2024.09.18-16.08.19:685][880]LogInterchangeEngine: [Success] Import Done
+[2024.09.18-16.08.22:953][989]BlueprintLog: New page: Compile BP_AllCards
+[2024.09.18-16.08.23:003][989]LogUObjectHash: Compacting FUObjectHashTables data took   1.90ms
+[2024.09.18-16.08.26:607][194]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.09.18-16.08.26:712][194]LogWorldPartition: Can't find class descriptor '/Game/Cards/BP_ConcussiveCard.BP_ConcussiveCard_C' for saving '/Game/Cards/BP_ConcussiveCard.BP_ConcussiveCard_C'
+[2024.09.18-16.08.26:712][194]LogWorldPartition: Can't find class descriptor '/Game/Cards/BP_ConcussiveCard.BP_ConcussiveCard_C' for saving '/Game/Cards/BP_ConcussiveCard.BP_ConcussiveCard_C'
+[2024.09.18-16.08.26:718][194]LogSavePackage: Moving output files for package: /Game/Cards/BP_ConcussiveCard
+[2024.09.18-16.08.26:719][194]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/BP_ConcussiveCard6CC90FEC431C30849A419D89DDE9B857.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/Cards/BP_ConcussiveCard.uasset'
+[2024.09.18-16.08.26:731][194]LogFileHelpers: InternalPromptForCheckoutAndSave took 125 ms (total: 1.75 sec)
+[2024.09.18-16.08.26:733][194]AssetCheck: New page: Asset Save: BP_ConcussiveCard
+[2024.09.18-16.08.26:733][194]LogContentValidation: Display: Validating /Script/Engine.Blueprint /Game/Cards/BP_ConcussiveCard.BP_ConcussiveCard
+[2024.09.18-16.08.40:608][993]LogContentBrowser: Deferred new asset file creation: WBP_ExplosiveCardUI1
+[2024.09.18-16.08.40:615][993]LogContentBrowser: Creating deferred item: WBP_ExplosiveCardUI1
+[2024.09.18-16.08.40:650][994]LogContentBrowser: Renaming the item being created (Deferred Item: WBP_ExplosiveCardUI1).
+[2024.09.18-16.08.46:069][319]LogContentBrowser: Attempting asset rename: WBP_ExplosiveCardUI1 -> WBP_ConcussiveCardUI1
+[2024.09.18-16.08.46:100][319]LogUObjectHash: Compacting FUObjectHashTables data took   1.88ms
+[2024.09.18-16.08.46:117][319]LogContentBrowser: End creating deferred item WBP_ExplosiveCardUI1
+[2024.09.18-16.08.47:354][387]LogAssetEditorSubsystem: Opening Asset editor for WidgetBlueprint /Game/UI/Cards/WBP_ConcussiveCardUI1.WBP_ConcussiveCardUI1
+[2024.09.18-16.08.47:356][387]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.09.18-16.08.47:356][387]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2024.09.18-16.08.47:364][387]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.09.18-16.08.47:364][387]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2024.09.18-16.08.47:376][387]LogSlate: Warning: The command 'UMGEditor.OpenAnimDrawer' has the same default chord as 'EditorViewport.Next' [Ctrl+Shift+Space Bar]
+[2024.09.18-16.08.47:862][387]LogSlateStyle: Warning: Missing Resource from 'CoreStyle' Style: 'Unable to find SlateColor 'Foreground'.'
+[2024.09.18-16.08.47:866][387]LogSlate: Took 0.002545 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
+[2024.09.18-16.08.48:863][447]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.09.18-16.08.48:997][447]LogSavePackage: Moving output files for package: /Game/UI/Cards/WBP_ConcussiveCardUI1
+[2024.09.18-16.08.48:997][447]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/WBP_ConcussiveCardUI1E9F0A9A04565677DCEE3DB8768BFC31E.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/UI/Cards/WBP_ConcussiveCardUI1.uasset'
+[2024.09.18-16.08.49:015][447]LogFileHelpers: InternalPromptForCheckoutAndSave took 152 ms (total: 1.90 sec)
+[2024.09.18-16.08.49:017][447]AssetCheck: New page: Asset Save: WBP_ConcussiveCardUI1
+[2024.09.18-16.08.49:017][447]LogContentValidation: Display: Validating /Script/UMGEditor.WidgetBlueprint /Game/UI/Cards/WBP_ConcussiveCardUI1.WBP_ConcussiveCardUI1
+[2024.09.18-16.08.55:503][823]LogContentBrowser: Attempting asset rename: WBP_ConcussiveCardUI1 -> WBP_ConcussiveCardUI
+[2024.09.18-16.08.55:569][823]LogMetaData: Removing '/Game/UI/Cards/WBP_ConcussiveCardUI.SKEL_WBP_ConcussiveCardUI_C' ref from Metadata '/Game/UI/Cards/WBP_ConcussiveCardUI1.PackageMetaData'
+[2024.09.18-16.08.55:569][823]LogMetaData: Removing '/Game/UI/Cards/WBP_ConcussiveCardUI.WBP_ConcussiveCardUI_C' ref from Metadata '/Game/UI/Cards/WBP_ConcussiveCardUI1.PackageMetaData'
+[2024.09.18-16.08.55:569][823]LogMetaData: Removing '/Game/UI/Cards/WBP_ConcussiveCardUI.SKEL_WBP_ConcussiveCardUI_C:PreConstruct' ref from Metadata '/Game/UI/Cards/WBP_ConcussiveCardUI1.PackageMetaData'
+[2024.09.18-16.08.55:569][823]LogMetaData: Removing '/Game/UI/Cards/WBP_ConcussiveCardUI.SKEL_WBP_ConcussiveCardUI_C:Construct' ref from Metadata '/Game/UI/Cards/WBP_ConcussiveCardUI1.PackageMetaData'
+[2024.09.18-16.08.55:569][823]LogMetaData: Removing '/Game/UI/Cards/WBP_ConcussiveCardUI.SKEL_WBP_ConcussiveCardUI_C:Tick' ref from Metadata '/Game/UI/Cards/WBP_ConcussiveCardUI1.PackageMetaData'
+[2024.09.18-16.08.55:617][823]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.09.18-16.08.55:757][823]LogSavePackage: Moving output files for package: /Game/UI/Cards/WBP_ConcussiveCardUI
+[2024.09.18-16.08.55:757][823]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/WBP_ConcussiveCardUIAD27AFAE4D8CBB02C0DC988FB784957E.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/UI/Cards/WBP_ConcussiveCardUI.uasset'
+[2024.09.18-16.08.55:775][823]LogFileHelpers: InternalPromptForCheckoutAndSave took 159 ms (total: 2.06 sec)
+[2024.09.18-16.08.55:817][823]LogUObjectHash: Compacting FUObjectHashTables data took   2.21ms
+[2024.09.18-16.08.55:837][823]LogUObjectHash: Compacting FUObjectHashTables data took   1.47ms
+[2024.09.18-16.08.55:856][823]LogUObjectHash: Compacting FUObjectHashTables data took   1.27ms
+[2024.09.18-16.08.55:860][823]AssetCheck: New page: Asset Save: WBP_ConcussiveCardUI
+[2024.09.18-16.08.55:860][823]LogContentValidation: Display: Validating /Script/UMGEditor.WidgetBlueprint /Game/UI/Cards/WBP_ConcussiveCardUI.WBP_ConcussiveCardUI
+[2024.09.18-16.08.57:747][931]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.09.18-16.08.57:869][931]LogSavePackage: Moving output files for package: /Game/UI/Cards/WBP_ConcussiveCardUI
+[2024.09.18-16.08.57:870][931]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/WBP_ConcussiveCardUID9165957451F987484FB9E8D0142095A.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/UI/Cards/WBP_ConcussiveCardUI.uasset'
+[2024.09.18-16.08.57:882][931]LogFileHelpers: InternalPromptForCheckoutAndSave took 135 ms (total: 2.19 sec)
+[2024.09.18-16.08.57:885][931]AssetCheck: New page: Asset Save: WBP_ConcussiveCardUI
+[2024.09.18-16.08.57:885][931]LogContentValidation: Display: Validating /Script/UMGEditor.WidgetBlueprint /Game/UI/Cards/WBP_ConcussiveCardUI.WBP_ConcussiveCardUI
+[2024.09.18-16.09.02:997][208]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.09.18-16.09.03:137][208]LogSavePackage: Moving output files for package: /Game/UI/Cards/WBP_ConcussiveCardUI
+[2024.09.18-16.09.03:140][208]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/WBP_ConcussiveCardUI7241CAFE451A8E0D5FD567AD9FE6DBB3.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/UI/Cards/WBP_ConcussiveCardUI.uasset'
+[2024.09.18-16.09.03:150][208]LogFileHelpers: InternalPromptForCheckoutAndSave took 154 ms (total: 2.35 sec)
+[2024.09.18-16.09.03:153][208]AssetCheck: New page: Asset Save: WBP_ConcussiveCardUI
+[2024.09.18-16.09.03:153][208]LogContentValidation: Display: Validating /Script/UMGEditor.WidgetBlueprint /Game/UI/Cards/WBP_ConcussiveCardUI.WBP_ConcussiveCardUI
+[2024.09.18-16.09.09:352][570]LogWorld: UWorld::CleanupWorld for World_24, bSessionEnded=true, bCleanupResources=true
+[2024.09.18-16.09.09:352][570]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.09.18-16.09.09:367][570]LogWorld: UWorld::CleanupWorld for World_23, bSessionEnded=true, bCleanupResources=true
+[2024.09.18-16.09.09:368][570]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.09.18-16.09.11:553][696]LogWorld: UWorld::CleanupWorld for World_22, bSessionEnded=true, bCleanupResources=true
+[2024.09.18-16.09.11:553][696]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.09.18-16.09.12:867][771]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.09.18-16.09.12:986][771]LogWorldPartition: Can't find class descriptor '/Game/Cards/BP_ConcussiveCard.BP_ConcussiveCard_C' for saving '/Game/Cards/BP_ConcussiveCard.BP_ConcussiveCard_C'
+[2024.09.18-16.09.12:986][771]LogWorldPartition: Can't find class descriptor '/Game/Cards/BP_ConcussiveCard.BP_ConcussiveCard_C' for saving '/Game/Cards/BP_ConcussiveCard.BP_ConcussiveCard_C'
+[2024.09.18-16.09.12:993][771]LogSavePackage: Moving output files for package: /Game/Cards/BP_ConcussiveCard
+[2024.09.18-16.09.12:994][771]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/BP_ConcussiveCard297602454C403016947BFB813A02DBE6.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/Cards/BP_ConcussiveCard.uasset'
+[2024.09.18-16.09.13:007][771]LogFileHelpers: InternalPromptForCheckoutAndSave took 140 ms (total: 2.49 sec)
+[2024.09.18-16.09.13:009][771]AssetCheck: New page: Asset Save: BP_ConcussiveCard
+[2024.09.18-16.09.13:010][771]LogContentValidation: Display: Validating /Script/Engine.Blueprint /Game/Cards/BP_ConcussiveCard.BP_ConcussiveCard
+[2024.09.18-16.09.35:629][ 71]BlueprintLog: New page: Compile BP_ConcussiveProjectileCard
+[2024.09.18-16.09.35:668][ 71]LogUObjectHash: Compacting FUObjectHashTables data took   2.83ms
+[2024.09.18-16.09.57:305][455]LogSlate: Vector cache flush requested. Reason: Large atlases out of space; 2/1 Textures; frames since last flush: 18414092503957503852
+[2024.09.18-16.09.57:305][455]LogSlate: Warning: Setting the threshold to trigger a flush to 2 non-atlased textures as there is a lot of font data being cached.
+[2024.09.18-16.10.06:396][482]LogUObjectHash: Compacting FUObjectHashTables data took   1.57ms
+[2024.09.18-16.10.06:404][482]LogFileHelpers: Editor autosave (incl. external actors) for '/Game/Levels/MovementLevel' took 0.028
+[2024.09.18-16.10.06:405][482]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/Cards/BP_ConcussiveProjectileCard] ([2] browsable assets)...
+[2024.09.18-16.10.06:431][482]OBJ SavePackage:     Rendered thumbnail for [Blueprint /Game/Cards/BP_ConcussiveProjectileCard.BP_ConcussiveProjectileCard]
+[2024.09.18-16.10.06:431][482]OBJ SavePackage: Finished generating thumbnails for package [/Game/Cards/BP_ConcussiveProjectileCard]
+[2024.09.18-16.10.06:437][482]LogWorldPartition: Can't find class descriptor '/Game/Cards/BP_ConcussiveProjectileCard.BP_ConcussiveProjectileCard_C' for saving '/Game/Cards/BP_ConcussiveProjectileCard.BP_ConcussiveProjectileCard_C'
+[2024.09.18-16.10.06:437][482]LogWorldPartition: Can't find class descriptor '/Game/Cards/BP_ConcussiveProjectileCard.BP_ConcussiveProjectileCard_C' for saving '/Game/Cards/BP_ConcussiveProjectileCard.BP_ConcussiveProjectileCard_C'
+[2024.09.18-16.10.06:442][482]LogSavePackage: Moving output files for package: /Temp/Autosaves/Game/Cards/BP_ConcussiveProjectileCard_Auto1
+[2024.09.18-16.10.06:442][482]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/BP_ConcussiveProjectileCard_Auto415F75F4476AAA38EE3BD79621E7396E.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/Autosaves/Game/Cards/BP_ConcussiveProjectileCard_Auto1.uasset'
+[2024.09.18-16.10.06:444][482]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/CardAssets/jack_of_diamonds2] ([1] browsable assets)...
+[2024.09.18-16.10.06:448][482]OBJ SavePackage:     Rendered thumbnail for [Texture2D /Game/CardAssets/jack_of_diamonds2.jack_of_diamonds2]
+[2024.09.18-16.10.06:448][482]OBJ SavePackage: Finished generating thumbnails for package [/Game/CardAssets/jack_of_diamonds2]
+[2024.09.18-16.10.06:456][482]LogSavePackage: Moving output files for package: /Temp/Autosaves/Game/CardAssets/jack_of_diamonds2_Auto1
+[2024.09.18-16.10.06:456][482]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/jack_of_diamonds2_Auto1D35329EA46D270C4D36BF9948D6CC327.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/Autosaves/Game/CardAssets/jack_of_diamonds2_Auto1.uasset'
+[2024.09.18-16.10.06:457][482]LogFileHelpers: Auto-saving content packages took 0.053
+[2024.09.18-16.10.17:487][653]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.09.18-16.10.17:629][653]LogWorldPartition: Can't find class descriptor '/Game/Cards/BP_ConcussiveProjectileCard.BP_ConcussiveProjectileCard_C' for saving '/Game/Cards/BP_ConcussiveProjectileCard.BP_ConcussiveProjectileCard_C'
+[2024.09.18-16.10.17:629][653]LogWorldPartition: Can't find class descriptor '/Game/Cards/BP_ConcussiveProjectileCard.BP_ConcussiveProjectileCard_C' for saving '/Game/Cards/BP_ConcussiveProjectileCard.BP_ConcussiveProjectileCard_C'
+[2024.09.18-16.10.17:634][653]LogSavePackage: Moving output files for package: /Game/Cards/BP_ConcussiveProjectileCard
+[2024.09.18-16.10.17:636][653]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/BP_ConcussiveProjectileCard537BEE514E475AFB34BD2AB9F2132467.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/Cards/BP_ConcussiveProjectileCard.uasset'
+[2024.09.18-16.10.17:647][653]LogFileHelpers: InternalPromptForCheckoutAndSave took 159 ms (total: 2.65 sec)
+[2024.09.18-16.10.17:649][653]AssetCheck: New page: Asset Save: BP_ConcussiveProjectileCard
+[2024.09.18-16.10.17:649][653]LogContentValidation: Display: Validating /Script/Engine.Blueprint /Game/Cards/BP_ConcussiveProjectileCard.BP_ConcussiveProjectileCard
+[2024.09.18-16.10.30:047][358]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/Cards/BP_ExplosionProjectileCard.BP_ExplosionProjectileCard
+[2024.09.18-16.10.30:048][358]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.09.18-16.10.30:048][358]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2024.09.18-16.10.33:722][560]LogWorld: UWorld::CleanupWorld for World_29, bSessionEnded=true, bCleanupResources=true
+[2024.09.18-16.10.33:722][560]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.09.18-16.10.38:803][845]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/Cards/BP_ProjectileCard.BP_ProjectileCard
+[2024.09.18-16.10.38:804][845]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.09.18-16.10.38:804][845]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2024.09.18-16.11.04:000][295]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.09.18-16.11.04:120][295]LogWorldPartition: Can't find class descriptor '/Game/Cards/BP_ConcussiveProjectileCard.BP_ConcussiveProjectileCard_C' for saving '/Game/Cards/BP_ConcussiveProjectileCard.BP_ConcussiveProjectileCard_C'
+[2024.09.18-16.11.04:121][295]LogWorldPartition: Can't find class descriptor '/Game/Cards/BP_ConcussiveProjectileCard.BP_ConcussiveProjectileCard_C' for saving '/Game/Cards/BP_ConcussiveProjectileCard.BP_ConcussiveProjectileCard_C'
+[2024.09.18-16.11.04:126][295]LogSavePackage: Moving output files for package: /Game/Cards/BP_ConcussiveProjectileCard
+[2024.09.18-16.11.04:127][295]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/BP_ConcussiveProjectileCardDA49569B436A12BD885014B064D988A5.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/Cards/BP_ConcussiveProjectileCard.uasset'
+[2024.09.18-16.11.04:137][295]LogFileHelpers: InternalPromptForCheckoutAndSave took 138 ms (total: 2.79 sec)
+[2024.09.18-16.11.04:139][295]AssetCheck: New page: Asset Save: BP_ConcussiveProjectileCard
+[2024.09.18-16.11.04:139][295]LogContentValidation: Display: Validating /Script/Engine.Blueprint /Game/Cards/BP_ConcussiveProjectileCard.BP_ConcussiveProjectileCard
+[2024.09.18-16.11.07:151][467]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.09.18-16.11.07:269][467]LogWorldPartition: Can't find class descriptor '/Game/Cards/BP_ConcussiveProjectileCard.BP_ConcussiveProjectileCard_C' for saving '/Game/Cards/BP_ConcussiveProjectileCard.BP_ConcussiveProjectileCard_C'
+[2024.09.18-16.11.07:269][467]LogWorldPartition: Can't find class descriptor '/Game/Cards/BP_ConcussiveProjectileCard.BP_ConcussiveProjectileCard_C' for saving '/Game/Cards/BP_ConcussiveProjectileCard.BP_ConcussiveProjectileCard_C'
+[2024.09.18-16.11.07:273][467]LogSavePackage: Moving output files for package: /Game/Cards/BP_ConcussiveProjectileCard
+[2024.09.18-16.11.07:274][467]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/BP_ConcussiveProjectileCard051FB04A44A4B514CBFC59BB17ED19D5.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/Cards/BP_ConcussiveProjectileCard.uasset'
+[2024.09.18-16.11.07:286][467]LogFileHelpers: InternalPromptForCheckoutAndSave took 134 ms (total: 2.92 sec)
+[2024.09.18-16.11.07:288][467]AssetCheck: New page: Asset Save: BP_ConcussiveProjectileCard
+[2024.09.18-16.11.07:288][467]LogContentValidation: Display: Validating /Script/Engine.Blueprint /Game/Cards/BP_ConcussiveProjectileCard.BP_ConcussiveProjectileCard
+[2024.09.18-16.11.09:446][591]BlueprintLog: New page: Compile BP_ConcussiveProjectileCard
+[2024.09.18-16.11.09:484][591]LogUObjectHash: Compacting FUObjectHashTables data took   1.57ms
+[2024.09.18-16.11.19:249][145]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.09.18-16.11.19:370][145]LogWorldPartition: Can't find class descriptor '/Game/Cards/BP_ConcussiveProjectileCard.BP_ConcussiveProjectileCard_C' for saving '/Game/Cards/BP_ConcussiveProjectileCard.BP_ConcussiveProjectileCard_C'
+[2024.09.18-16.11.19:370][145]LogWorldPartition: Can't find class descriptor '/Game/Cards/BP_ConcussiveProjectileCard.BP_ConcussiveProjectileCard_C' for saving '/Game/Cards/BP_ConcussiveProjectileCard.BP_ConcussiveProjectileCard_C'
+[2024.09.18-16.11.19:376][145]LogSavePackage: Moving output files for package: /Game/Cards/BP_ConcussiveProjectileCard
+[2024.09.18-16.11.19:378][145]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/BP_ConcussiveProjectileCardA61F6F0143281DC24CFD308DAEC5F384.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/Cards/BP_ConcussiveProjectileCard.uasset'
+[2024.09.18-16.11.19:388][145]LogFileHelpers: InternalPromptForCheckoutAndSave took 139 ms (total: 3.06 sec)
+[2024.09.18-16.11.19:390][145]AssetCheck: New page: Asset Save: BP_ConcussiveProjectileCard
+[2024.09.18-16.11.19:390][145]LogContentValidation: Display: Validating /Script/Engine.Blueprint /Game/Cards/BP_ConcussiveProjectileCard.BP_ConcussiveProjectileCard
+[2024.09.18-16.11.28:868][698]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.09.18-16.11.28:974][698]LogWorldPartition: Can't find class descriptor '/Game/Cards/BP_ConcussiveProjectileCard.BP_ConcussiveProjectileCard_C' for saving '/Game/Cards/BP_ConcussiveProjectileCard.BP_ConcussiveProjectileCard_C'
+[2024.09.18-16.11.28:974][698]LogWorldPartition: Can't find class descriptor '/Game/Cards/BP_ConcussiveProjectileCard.BP_ConcussiveProjectileCard_C' for saving '/Game/Cards/BP_ConcussiveProjectileCard.BP_ConcussiveProjectileCard_C'
+[2024.09.18-16.11.28:980][698]LogSavePackage: Moving output files for package: /Game/Cards/BP_ConcussiveProjectileCard
+[2024.09.18-16.11.28:981][698]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/BP_ConcussiveProjectileCardB7DA559A44539578F1C5C6A18475575B.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/Cards/BP_ConcussiveProjectileCard.uasset'
+[2024.09.18-16.11.28:993][698]LogFileHelpers: InternalPromptForCheckoutAndSave took 124 ms (total: 3.19 sec)
+[2024.09.18-16.11.28:994][698]AssetCheck: New page: Asset Save: BP_ConcussiveProjectileCard
+[2024.09.18-16.11.28:994][698]LogContentValidation: Display: Validating /Script/Engine.Blueprint /Game/Cards/BP_ConcussiveProjectileCard.BP_ConcussiveProjectileCard
+[2024.09.18-16.11.29:670][739]BlueprintLog: New page: Compile BP_ConcussiveProjectileCard
+[2024.09.18-16.11.29:706][739]LogUObjectHash: Compacting FUObjectHashTables data took   1.94ms
+[2024.09.18-16.11.36:355][127]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.09.18-16.11.36:471][127]LogWorldPartition: Can't find class descriptor '/Game/Cards/BP_ConcussiveProjectileCard.BP_ConcussiveProjectileCard_C' for saving '/Game/Cards/BP_ConcussiveProjectileCard.BP_ConcussiveProjectileCard_C'
+[2024.09.18-16.11.36:471][127]LogWorldPartition: Can't find class descriptor '/Game/Cards/BP_ConcussiveProjectileCard.BP_ConcussiveProjectileCard_C' for saving '/Game/Cards/BP_ConcussiveProjectileCard.BP_ConcussiveProjectileCard_C'
+[2024.09.18-16.11.36:477][127]LogSavePackage: Moving output files for package: /Game/Cards/BP_ConcussiveProjectileCard
+[2024.09.18-16.11.36:479][127]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/BP_ConcussiveProjectileCard31520C674E0448432606F8A5614FF2D4.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/Cards/BP_ConcussiveProjectileCard.uasset'
+[2024.09.18-16.11.36:490][127]LogFileHelpers: InternalPromptForCheckoutAndSave took 134 ms (total: 3.32 sec)
+[2024.09.18-16.11.36:491][127]AssetCheck: New page: Asset Save: BP_ConcussiveProjectileCard
+[2024.09.18-16.11.36:491][127]LogContentValidation: Display: Validating /Script/Engine.Blueprint /Game/Cards/BP_ConcussiveProjectileCard.BP_ConcussiveProjectileCard
+[2024.09.18-16.11.36:786][145]BlueprintLog: New page: Compile BP_ConcussiveProjectileCard
+[2024.09.18-16.11.36:821][145]LogUObjectHash: Compacting FUObjectHashTables data took   1.67ms
+[2024.09.18-16.12.27:729][350]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.09.18-16.12.27:837][350]LogWorldPartition: Can't find class descriptor '/Game/Cards/BP_ConcussiveProjectileCard.BP_ConcussiveProjectileCard_C' for saving '/Game/Cards/BP_ConcussiveProjectileCard.BP_ConcussiveProjectileCard_C'
+[2024.09.18-16.12.27:837][350]LogWorldPartition: Can't find class descriptor '/Game/Cards/BP_ConcussiveProjectileCard.BP_ConcussiveProjectileCard_C' for saving '/Game/Cards/BP_ConcussiveProjectileCard.BP_ConcussiveProjectileCard_C'
+[2024.09.18-16.12.27:842][350]LogSavePackage: Moving output files for package: /Game/Cards/BP_ConcussiveProjectileCard
+[2024.09.18-16.12.27:843][350]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/BP_ConcussiveProjectileCard07A290054A75CDD62CE73DA85FE9E706.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/Cards/BP_ConcussiveProjectileCard.uasset'
+[2024.09.18-16.12.27:854][350]LogFileHelpers: InternalPromptForCheckoutAndSave took 124 ms (total: 3.44 sec)
+[2024.09.18-16.12.27:855][350]AssetCheck: New page: Asset Save: BP_ConcussiveProjectileCard
+[2024.09.18-16.12.27:855][350]LogContentValidation: Display: Validating /Script/Engine.Blueprint /Game/Cards/BP_ConcussiveProjectileCard.BP_ConcussiveProjectileCard
+[2024.09.18-16.12.28:618][396]BlueprintLog: New page: Compile BP_ConcussiveProjectileCard
+[2024.09.18-16.12.28:659][396]LogUObjectHash: Compacting FUObjectHashTables data took   2.04ms
+[2024.09.18-16.12.30:490][434]LogLiveCoding: Display: Starting Live Coding compile.
+[2024.09.18-16.13.41:938][648]LogLiveCoding: Display:    Creating library C:\Users\Mikolaj\Documents\Unreal Projects\Cardslinger-Prototype\CardslingerPrototype\Binaries\Win64\UnrealEditor-CardslingerPrototype.patch_6.lib and object C:\Users\Mikolaj\Documents\Unreal Projects\Cardslinger-Prototype\CardslingerPrototype\Binaries\Win64\UnrealEditor-CardslingerPrototype.patch_6.exp
+[2024.09.18-16.13.43:419][652]LogUObjectHash: Compacting FUObjectHashTables data took   2.26ms
+[2024.09.18-16.13.44:062][653]Display: Reload/Re-instancing Complete: 1 package changed, 24 classes unchanged, 37 functions remapped
+[2024.09.18-16.13.44:062][653]LogLiveCoding: Display: Live coding succeeded

@@ -9,5 +9,5 @@
 /// @brief launches an explosive card (damage values are stored in the projectile card)
 void AConcussiveCard::CardEffect(ACardDeck* CardDeck, FVector Direction, FVector Target, AActor* TargetActor)
 {
-    AProjectileCard* LaunchedCard = CardDeck->FireCard(Direction, ExplosionProjectileCardClass, Target, TargetActor);
+    AProjectileCard* LaunchedCard = CardDeck->FireCard(Direction, ConcussiveProjectileCardClass, Target, TargetActor);
 }
