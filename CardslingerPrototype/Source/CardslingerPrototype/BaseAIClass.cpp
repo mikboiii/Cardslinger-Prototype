@@ -52,8 +52,6 @@ void ABaseAIClass::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
-	CollisionCapsule->SetWorldLocation(EnemyMesh->GetComponentLocation()-MeshOffset);
-
 }
 
 // Called to bind functionality to input
@@ -67,7 +65,7 @@ float ABaseAIClass::TakeDamage(float DamageAmount, struct FDamageEvent const &Da
 {
 	SetRagdollMode(true);
 
-	FTimerHandle RagdollReset;
+	GetWorldTimerManager().ClearTimer(RagdollReset);
 	FTimerDelegate RagdollDelegate = FTimerDelegate::CreateUObject(this, &ABaseAIClass::SetRagdollMode, false);
 	GetWorldTimerManager().SetTimer(RagdollReset, RagdollDelegate, 2.0f, false);
     float DamageToApply = Super::TakeDamage(DamageAmount, DamageEvent, EventInstigator, EventInstigator);
@@ -186,7 +184,8 @@ void ABaseAIClass::SetRagdollMode(bool bIsRagdollMode)
 	{
 		GetMesh()->SetSimulatePhysics(false);
 		GetMesh()->bPauseAnims = false;
-		EnemyMesh->AttachToComponent(CollisionCapsule, FAttachmentTransformRules::SnapToTargetNotIncludingScale);
+		CollisionCapsule->SetWorldLocation(EnemyMesh->GetBoneLocation(TEXT("pelvis"))-MeshOffset);
+		EnemyMesh->AttachToComponent(CollisionCapsule, FAttachmentTransformRules::SnapToTargetIncludingScale);
 		EnemyMesh->SetRelativeLocation(MeshOffset);
 		EnemyMesh->SetRelativeRotation(MeshRotation);
 		ThisController = Cast<ABaseAIController>(GetController());

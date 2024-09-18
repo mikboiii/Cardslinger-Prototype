@@ -99,6 +99,8 @@ private:
 
 	bool HitTrace(FHitResult& Hit, FVector& ShotDirection);
 	
+	FTimerHandle RagdollReset;
+
 	bool bRagdoll = false;
 
 	class UCapsuleComponent* CollisionCapsule;
