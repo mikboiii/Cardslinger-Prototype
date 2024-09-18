@@ -187,6 +187,7 @@ void ABaseAIClass::SetRagdollMode(bool bIsRagdollMode)
 	{
 		GetMesh()->SetSimulatePhysics(false);
 		GetMesh()->bPauseAnims = false;
+		EnemyMesh->AttachToComponent(CollisionCapsule, FAttachmentTransformRules::SnapToTargetNotIncludingScale);
 		ThisController = Cast<ABaseAIController>(GetController());
 		if(ThisController)
 		{
