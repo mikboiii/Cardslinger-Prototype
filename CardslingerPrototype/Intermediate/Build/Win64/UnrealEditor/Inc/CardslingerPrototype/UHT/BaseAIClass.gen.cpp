@@ -183,6 +183,14 @@ void EmptyLinkFunctionForGeneratedCodeBaseAIClass() {}
 		static const UECodeGen_Private::FMetaDataPairParam NewProp_MuzzleFlash_MetaData[];
 #endif
 		static const UECodeGen_Private::FObjectPropertyParams NewProp_MuzzleFlash;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_RagdollSpeedCheckTimer_MetaData[];
+#endif
+		static const UECodeGen_Private::FFloatPropertyParams NewProp_RagdollSpeedCheckTimer;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_RagdollSpeedMaximum_MetaData[];
+#endif
+		static const UECodeGen_Private::FFloatPropertyParams NewProp_RagdollSpeedMaximum;
 		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UECodeGen_Private::FClassParams ClassParams;
@@ -307,6 +315,26 @@ void EmptyLinkFunctionForGeneratedCodeBaseAIClass() {}
 	};
 #endif
 	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ABaseAIClass_Statics::NewProp_MuzzleFlash = { "MuzzleFlash", nullptr, (EPropertyFlags)0x0040000000000001, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ABaseAIClass, MuzzleFlash), Z_Construct_UClass_UNiagaraSystem_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_ABaseAIClass_Statics::NewProp_MuzzleFlash_MetaData), Z_Construct_UClass_ABaseAIClass_Statics::NewProp_MuzzleFlash_MetaData) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABaseAIClass_Statics::NewProp_RagdollSpeedCheckTimer_MetaData[] = {
+		{ "Category", "Ragdoll Settings" },
+		{ "ModuleRelativePath", "BaseAIClass.h" },
+	};
+#endif
+	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ABaseAIClass_Statics::NewProp_RagdollSpeedCheckTimer = { "RagdollSpeedCheckTimer", nullptr, (EPropertyFlags)0x0040000000000001, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ABaseAIClass, RagdollSpeedCheckTimer), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_ABaseAIClass_Statics::NewProp_RagdollSpeedCheckTimer_MetaData), Z_Construct_UClass_ABaseAIClass_Statics::NewProp_RagdollSpeedCheckTimer_MetaData) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABaseAIClass_Statics::NewProp_RagdollSpeedMaximum_MetaData[] = {
+		{ "Category", "Ragdoll Settings" },
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "//determines the speed above which an enemy cannot stand up after being ragdolled\n" },
+#endif
+		{ "ModuleRelativePath", "BaseAIClass.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "determines the speed above which an enemy cannot stand up after being ragdolled" },
+#endif
+	};
+#endif
+	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ABaseAIClass_Statics::NewProp_RagdollSpeedMaximum = { "RagdollSpeedMaximum", nullptr, (EPropertyFlags)0x0040000000000001, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ABaseAIClass, RagdollSpeedMaximum), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_ABaseAIClass_Statics::NewProp_RagdollSpeedMaximum_MetaData), Z_Construct_UClass_ABaseAIClass_Statics::NewProp_RagdollSpeedMaximum_MetaData) };
 	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ABaseAIClass_Statics::PropPointers[] = {
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABaseAIClass_Statics::NewProp_Speed,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABaseAIClass_Statics::NewProp_Health,
@@ -323,6 +351,8 @@ void EmptyLinkFunctionForGeneratedCodeBaseAIClass() {}
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABaseAIClass_Statics::NewProp_ActiveBullets_Inner,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABaseAIClass_Statics::NewProp_ActiveBullets,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABaseAIClass_Statics::NewProp_MuzzleFlash,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABaseAIClass_Statics::NewProp_RagdollSpeedCheckTimer,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABaseAIClass_Statics::NewProp_RagdollSpeedMaximum,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_ABaseAIClass_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<ABaseAIClass>::IsAbstract,
@@ -362,9 +392,9 @@ void EmptyLinkFunctionForGeneratedCodeBaseAIClass() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_BaseAIClass_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_ABaseAIClass, ABaseAIClass::StaticClass, TEXT("ABaseAIClass"), &Z_Registration_Info_UClass_ABaseAIClass, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ABaseAIClass), 2502256422U) },
+		{ Z_Construct_UClass_ABaseAIClass, ABaseAIClass::StaticClass, TEXT("ABaseAIClass"), &Z_Registration_Info_UClass_ABaseAIClass, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ABaseAIClass), 230453256U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_BaseAIClass_h_1293579903(TEXT("/Script/CardslingerPrototype"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_BaseAIClass_h_88769762(TEXT("/Script/CardslingerPrototype"),
 		Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_BaseAIClass_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_BaseAIClass_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);

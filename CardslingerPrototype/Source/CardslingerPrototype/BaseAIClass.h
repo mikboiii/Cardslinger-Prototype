@@ -103,7 +103,11 @@ private:
 
 	bool bRagdoll = false;
 
+	UPROPERTY(EditAnywhere, Category = "Ragdoll Settings")
+	float RagdollSpeedCheckTimer = 0.5f;
+
 	//determines the speed above which an enemy cannot stand up after being ragdolled
+	UPROPERTY(EditAnywhere, Category = "Ragdoll Settings")
 	float RagdollSpeedMaximum = 10.0f;
 
 	class UCapsuleComponent* CollisionCapsule;

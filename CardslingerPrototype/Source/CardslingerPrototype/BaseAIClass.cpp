@@ -51,7 +51,6 @@ void ABaseAIClass::BeginPlay()
 void ABaseAIClass::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
-	UE_LOG(LogTemp, Display, TEXT("Current speed: %f"), EnemyMesh->GetPhysicsLinearVelocity(FName(TEXT("pelvis"))).Size());
 
 }
 
@@ -201,7 +200,7 @@ void ABaseAIClass::SetRagdollMode(bool bIsRagdollMode, float RagdollTime=2.0f)
 		{
 		GetWorldTimerManager().ClearTimer(RagdollReset);
 		FTimerDelegate RagdollDelegate = FTimerDelegate::CreateUObject(this, &ABaseAIClass::SetRagdollMode, false, 0.0f);
-		GetWorldTimerManager().SetTimer(RagdollReset, RagdollDelegate, 1.0f, false);
+		GetWorldTimerManager().SetTimer(RagdollReset, RagdollDelegate, RagdollSpeedCheckTimer, false);
 		}
 	}
 }
