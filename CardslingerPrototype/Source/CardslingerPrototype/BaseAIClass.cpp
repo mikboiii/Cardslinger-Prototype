@@ -167,7 +167,6 @@ void ABaseAIClass::SetRagdollMode(bool bIsRagdollMode, float RagdollTime=2.0f)
 
 	if(bIsRagdollMode)
 	{
-
 		GetWorldTimerManager().ClearTimer(RagdollReset);
 		FTimerDelegate RagdollDelegate = FTimerDelegate::CreateUObject(this, &ABaseAIClass::SetRagdollMode, false, 0.0f);
 		GetWorldTimerManager().SetTimer(RagdollReset, RagdollDelegate, RagdollTime, false);
@@ -182,17 +181,26 @@ void ABaseAIClass::SetRagdollMode(bool bIsRagdollMode, float RagdollTime=2.0f)
 	}
 	else
 	{
-		GetMesh()->SetSimulatePhysics(false);
-		GetMesh()->bPauseAnims = false;
-		CollisionCapsule->SetWorldLocation(EnemyMesh->GetBoneLocation(TEXT("pelvis"))-MeshOffset);
-		EnemyMesh->AttachToComponent(CollisionCapsule, FAttachmentTransformRules::SnapToTargetIncludingScale);
-		EnemyMesh->SetRelativeLocation(MeshOffset);
-		EnemyMesh->SetRelativeRotation(MeshRotation);
-		ThisController = Cast<ABaseAIController>(GetController());
-		if(ThisController)
+		if(EnemyMesh->ComponentVelocity.Length() <= 1.0f)
 		{
-		UBehaviorTreeComponent* BT = Cast<UBehaviorTreeComponent>(ThisController->GetBrainComponent());
-		ThisController->RunBehaviorTree(ThisController->GetBehaviorTree());
+			GetMesh()->SetSimulatePhysics(false);
+			GetMesh()->bPauseAnims = false;
+			CollisionCapsule->SetWorldLocation(EnemyMesh->GetBoneLocation(TEXT("pelvis"))-MeshOffset);
+			EnemyMesh->AttachToComponent(CollisionCapsule, FAttachmentTransformRules::SnapToTargetIncludingScale);
+			EnemyMesh->SetRelativeLocation(MeshOffset);
+			EnemyMesh->SetRelativeRotation(MeshRotation);
+			ThisController = Cast<ABaseAIController>(GetController());
+			if(ThisController)
+			{
+			UBehaviorTreeComponent* BT = Cast<UBehaviorTreeComponent>(ThisController->GetBrainComponent());
+			ThisController->RunBehaviorTree(ThisController->GetBehaviorTree());
+			}
+		}
+		else
+		{
+		GetWorldTimerManager().ClearTimer(RagdollReset);
+		FTimerDelegate RagdollDelegate = FTimerDelegate::CreateUObject(this, &ABaseAIClass::SetRagdollMode, false, 0.0f);
+		GetWorldTimerManager().SetTimer(RagdollReset, RagdollDelegate, 1.0f, false);
 		}
 	}
 }
