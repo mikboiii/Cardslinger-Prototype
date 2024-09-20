@@ -64,7 +64,8 @@ void AConcussiveProjectileCard::ConcussionSphere()
         ABaseAIClass* Enemy = Cast<ABaseAIClass>(Actor);
         Enemy->SetRagdollMode(true, 2.0f);
         FVector ImpulseDirection = Enemy->GetActorLocation() - GetActorLocation();
+        //DrawDebugLine(GetWorld(), GetActorLocation(), Enemy->GetActorLocation(), FColor::Red, false, 1000.0f);
         ImpulseDirection.Normalize();
-        Enemy->GetMesh()->AddImpulse(ImpulseDirection * CardPushForce);
+        Enemy->GetMesh()->AddImpulse(ImpulseDirection * CardPushForce, FName(TEXT("pelvis")), true);
     }
 }
