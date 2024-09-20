@@ -40,6 +40,10 @@ void EmptyLinkFunctionForGeneratedCodeConcussiveProjectileCard() {}
 		static const UECodeGen_Private::FMetaDataPairParam NewProp_CardPushForce_MetaData[];
 #endif
 		static const UECodeGen_Private::FFloatPropertyParams NewProp_CardPushForce;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_RagdollTime_MetaData[];
+#endif
+		static const UECodeGen_Private::FFloatPropertyParams NewProp_RagdollTime;
 		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UECodeGen_Private::FClassParams ClassParams;
@@ -91,10 +95,18 @@ void EmptyLinkFunctionForGeneratedCodeConcussiveProjectileCard() {}
 	};
 #endif
 	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AConcussiveProjectileCard_Statics::NewProp_CardPushForce = { "CardPushForce", nullptr, (EPropertyFlags)0x0020080000000001, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AConcussiveProjectileCard, CardPushForce), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_AConcussiveProjectileCard_Statics::NewProp_CardPushForce_MetaData), Z_Construct_UClass_AConcussiveProjectileCard_Statics::NewProp_CardPushForce_MetaData) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AConcussiveProjectileCard_Statics::NewProp_RagdollTime_MetaData[] = {
+		{ "Category", "ConcussiveProjectileCard" },
+		{ "ModuleRelativePath", "ConcussiveProjectileCard.h" },
+	};
+#endif
+	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AConcussiveProjectileCard_Statics::NewProp_RagdollTime = { "RagdollTime", nullptr, (EPropertyFlags)0x0020080000000001, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AConcussiveProjectileCard, RagdollTime), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_AConcussiveProjectileCard_Statics::NewProp_RagdollTime_MetaData), Z_Construct_UClass_AConcussiveProjectileCard_Statics::NewProp_RagdollTime_MetaData) };
 	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AConcussiveProjectileCard_Statics::PropPointers[] = {
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AConcussiveProjectileCard_Statics::NewProp_CardExplosiveDamage,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AConcussiveProjectileCard_Statics::NewProp_CardExplosionRadius,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AConcussiveProjectileCard_Statics::NewProp_CardPushForce,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AConcussiveProjectileCard_Statics::NewProp_RagdollTime,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_AConcussiveProjectileCard_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<AConcussiveProjectileCard>::IsAbstract,
@@ -135,9 +147,9 @@ void EmptyLinkFunctionForGeneratedCodeConcussiveProjectileCard() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_ConcussiveProjectileCard_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_AConcussiveProjectileCard, AConcussiveProjectileCard::StaticClass, TEXT("AConcussiveProjectileCard"), &Z_Registration_Info_UClass_AConcussiveProjectileCard, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AConcussiveProjectileCard), 481634263U) },
+		{ Z_Construct_UClass_AConcussiveProjectileCard, AConcussiveProjectileCard::StaticClass, TEXT("AConcussiveProjectileCard"), &Z_Registration_Info_UClass_AConcussiveProjectileCard, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AConcussiveProjectileCard), 1572539588U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_ConcussiveProjectileCard_h_858034735(TEXT("/Script/CardslingerPrototype"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_ConcussiveProjectileCard_h_397390201(TEXT("/Script/CardslingerPrototype"),
 		Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_ConcussiveProjectileCard_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_ConcussiveProjectileCard_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);

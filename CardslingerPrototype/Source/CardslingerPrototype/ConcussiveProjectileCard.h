@@ -24,7 +24,9 @@ class CARDSLINGERPROTOTYPE_API AConcussiveProjectileCard : public AProjectileCar
 		UPROPERTY(EditAnywhere)
 		float CardExplosionRadius = 300.0f;
 		UPROPERTY(EditAnywhere)
-		float CardPushForce = 10.0f;
+		float CardPushForce = 10000.0f;
+		UPROPERTY(EditAnywhere)
+		float RagdollTime = 2.0f;
 
 		void ConcussionSphere();
 		

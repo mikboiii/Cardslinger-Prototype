@@ -62,7 +62,7 @@ void AConcussiveProjectileCard::ConcussionSphere()
     for(AActor* Actor : AffectedEnemies)
     {
         ABaseAIClass* Enemy = Cast<ABaseAIClass>(Actor);
-        Enemy->SetRagdollMode(true, 2.0f);
+        Enemy->SetRagdollMode(true, RagdollTime);
         FVector ImpulseDirection = Enemy->GetActorLocation() - GetActorLocation();
         //DrawDebugLine(GetWorld(), GetActorLocation(), Enemy->GetActorLocation(), FColor::Red, false, 1000.0f);
         ImpulseDirection.Normalize();
