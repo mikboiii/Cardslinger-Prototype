@@ -363,11 +363,11 @@ void EmptyLinkFunctionForGeneratedCodeProjectileCard() {}
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AProjectileCard_Statics::NewProp_CardImpact_MetaData[] = {
 		{ "Category", "ProjectileCard" },
 #if !UE_BUILD_SHIPPING
-		{ "Comment", "//the card's particle impact system\n" },
+		{ "Comment", "//the card's particle impact system when colliding only with an enemy\n" },
 #endif
 		{ "ModuleRelativePath", "ProjectileCard.h" },
 #if !UE_BUILD_SHIPPING
-		{ "ToolTip", "the card's particle impact system" },
+		{ "ToolTip", "the card's particle impact system when colliding only with an enemy" },
 #endif
 	};
 #endif
@@ -375,7 +375,13 @@ void EmptyLinkFunctionForGeneratedCodeProjectileCard() {}
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AProjectileCard_Statics::NewProp_CardImpactUniversal_MetaData[] = {
 		{ "Category", "ProjectileCard" },
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "//plays the particle impact effect on impact with anything (walls, other projectiles, enemies etc)\n" },
+#endif
 		{ "ModuleRelativePath", "ProjectileCard.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "plays the particle impact effect on impact with anything (walls, other projectiles, enemies etc)" },
+#endif
 	};
 #endif
 	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AProjectileCard_Statics::NewProp_CardImpactUniversal = { "CardImpactUniversal", nullptr, (EPropertyFlags)0x0020080000000001, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AProjectileCard, CardImpactUniversal), Z_Construct_UClass_UNiagaraSystem_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_AProjectileCard_Statics::NewProp_CardImpactUniversal_MetaData), Z_Construct_UClass_AProjectileCard_Statics::NewProp_CardImpactUniversal_MetaData) };
@@ -619,9 +625,9 @@ void EmptyLinkFunctionForGeneratedCodeProjectileCard() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_ProjectileCard_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_AProjectileCard, AProjectileCard::StaticClass, TEXT("AProjectileCard"), &Z_Registration_Info_UClass_AProjectileCard, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AProjectileCard), 819169065U) },
+		{ Z_Construct_UClass_AProjectileCard, AProjectileCard::StaticClass, TEXT("AProjectileCard"), &Z_Registration_Info_UClass_AProjectileCard, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AProjectileCard), 4070162663U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_ProjectileCard_h_3424364824(TEXT("/Script/CardslingerPrototype"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_ProjectileCard_h_37975289(TEXT("/Script/CardslingerPrototype"),
 		Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_ProjectileCard_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_ProjectileCard_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);

@@ -182,7 +182,7 @@ void ABaseAIClass::SetRagdollMode(bool bIsRagdollMode, float RagdollTime=2.0f)
 	}
 	else
 	{
-		if(EnemyMesh->GetPhysicsLinearVelocity(FName(TEXT("pelvis"))).Size() <= 1.0f)
+		if(EnemyMesh->GetPhysicsLinearVelocity(FName(TEXT("pelvis"))).Size() <= RagdollSpeedMaximum)
 		{
 			GetMesh()->SetSimulatePhysics(false);
 			GetMesh()->bPauseAnims = false;

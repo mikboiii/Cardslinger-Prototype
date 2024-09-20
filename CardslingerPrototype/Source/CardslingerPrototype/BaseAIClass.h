@@ -103,6 +103,9 @@ private:
 
 	bool bRagdoll = false;
 
+	//determines the speed above which an enemy cannot stand up after being ragdolled
+	float RagdollSpeedMaximum = 10.0f;
+
 	class UCapsuleComponent* CollisionCapsule;
 
 	class USkeletalMeshComponent* EnemyMesh;
