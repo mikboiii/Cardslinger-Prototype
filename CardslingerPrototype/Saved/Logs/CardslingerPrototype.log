@@ -3704,3 +3704,1227 @@ LogConfig: Set CVar [[r.Shadow.DetectVertexShaderLayerAtRuntime:1]]
 [2024.09.20-17.45.31:616][954]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=30
 [2024.09.20-17.45.31:628][954]LogUObjectHash: Compacting FUObjectHashTables data took   1.16ms
 [2024.09.20-17.45.31:680][955]LogPlayLevel: Display: Destroying online subsystem :Context_40
+[2024.09.20-17.47.28:181][365]LogLiveCoding: Display: Starting Live Coding compile.
+[2024.09.20-17.47.55:917][448]LogLiveCoding: Display:    Creating library C:\Users\Mikolaj\Documents\Unreal Projects\Cardslinger-Prototype\CardslingerPrototype\Binaries\Win64\UnrealEditor-CardslingerPrototype.patch_9.lib and object C:\Users\Mikolaj\Documents\Unreal Projects\Cardslinger-Prototype\CardslingerPrototype\Binaries\Win64\UnrealEditor-CardslingerPrototype.patch_9.exp
+[2024.09.20-17.47.57:363][451]LogUObjectHash: Compacting FUObjectHashTables data took   0.77ms
+[2024.09.20-17.47.57:696][452]Display: Reload/Re-instancing Complete: 1 package changed, 24 classes unchanged, 37 functions remapped
+[2024.09.20-17.47.57:696][452]LogLiveCoding: Display: Live coding succeeded
+[2024.09.20-17.48.14:117][529]LogDebuggerCommands: Repeating last play command: Selected Viewport
+[2024.09.20-17.48.14:134][529]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2024.09.20-17.48.14:134][529]PIE: New page: PIE session: MovementLevel (20 Sep 2024, 19:48:14)
+[2024.09.20-17.48.14:134][529]LogPlayLevel: Creating play world package: /Game/Levels/UEDPIE_0_MovementLevel
+[2024.09.20-17.48.14:140][529]LogPlayLevel: PIE: StaticDuplicateObject took: (0.004872s)
+[2024.09.20-17.48.14:140][529]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Levels/MovementLevel.MovementLevel to /Game/Levels/UEDPIE_0_MovementLevel.MovementLevel (0.004923s)
+[2024.09.20-17.48.14:145][529]LogUObjectHash: Compacting FUObjectHashTables data took   0.96ms
+[2024.09.20-17.48.14:147][529]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.09.20-17.48.14:147][529]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2024.09.20-17.48.14:148][529]LogAIModule: Creating AISystem for world MovementLevel
+[2024.09.20-17.48.14:148][529]LogPlayLevel: PIE: World Init took: (0.001184s)
+[2024.09.20-17.48.14:149][529]LogAudio: Display: Creating Audio Device:                 Id: 31, Scope: Unique, Realtime: True
+[2024.09.20-17.48.14:149][529]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2024.09.20-17.48.14:149][529]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2024.09.20-17.48.14:149][529]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2024.09.20-17.48.14:149][529]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2024.09.20-17.48.14:149][529]LogAudioMixer: Display: 	Number of buffers to queue:			  1
+[2024.09.20-17.48.14:149][529]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2024.09.20-17.48.14:149][529]LogAudioMixer: Display: 	Number of Async Source Workers:		  4
+[2024.09.20-17.48.14:149][529]LogAudio: Display: AudioDevice MaxSources: 32
+[2024.09.20-17.48.14:149][529]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2024.09.20-17.48.14:149][529]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2024.09.20-17.48.14:149][529]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2024.09.20-17.48.14:151][529]LogAudioMixer: Display: Initializing audio mixer using platform API: 'XAudio2'
+[2024.09.20-17.48.14:224][529]LogAudioMixer: Display: Using Audio Hardware Device Speakers (Realtek(R) Audio)
+[2024.09.20-17.48.14:224][529]LogAudioMixer: Display: Initializing Sound Submixes...
+[2024.09.20-17.48.14:224][529]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2024.09.20-17.48.14:224][529]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2024.09.20-17.48.14:226][529]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called. InstanceID=31
+[2024.09.20-17.48.14:226][529]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048, InstanceID=31
+[2024.09.20-17.48.14:228][529]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=31
+[2024.09.20-17.48.14:228][529]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time. InstanceID=31
+[2024.09.20-17.48.14:228][529]LogInit: FAudioDevice initialized with ID 31.
+[2024.09.20-17.48.14:228][529]LogAudio: Display: Audio Device (ID: 31) registered with world 'MovementLevel'.
+[2024.09.20-17.48.14:228][529]LogAudioMixer: Initializing Audio Bus Subsystem for audio device with ID 31
+[2024.09.20-17.48.14:232][529]LogLoad: Game class is 'BP_CardslingerTestGameMode_C'
+[2024.09.20-17.48.14:235][529]LogWorld: Bringing World /Game/Levels/UEDPIE_0_MovementLevel.MovementLevel up for play (max tick rate 60) at 2024.09.20-18.48.14
+[2024.09.20-17.48.14:236][529]LogWorld: Bringing up level for play took: 0.003569
+[2024.09.20-17.48.14:239][529]LogOnline: OSS: Created online subsystem instance for: :Context_41
+[2024.09.20-17.48.14:243][529]LogViewport: Display: Viewport MouseCaptureMode Changed, CapturePermanently_IncludingInitialMouseDown -> CapturePermanently
+[2024.09.20-17.48.14:247][529]LogTemp: Display: ../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/CardDeck.sav
+[2024.09.20-17.48.14:248][529]LogTemp: Load successful!
+[2024.09.20-17.48.14:252][529]LogTemp: Save successful!
+[2024.09.20-17.48.14:255][529]PIE: Server logged in
+[2024.09.20-17.48.14:256][529]PIE: Play in editor total start time 0.122 seconds.
+[2024.09.20-17.48.14:257][529]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.14:257][529]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.14:289][530]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.14:289][530]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.14:307][531]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.14:307][531]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.14:323][532]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.14:323][532]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.14:341][533]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.14:341][533]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.14:357][534]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.14:357][534]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.14:373][535]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.14:373][535]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.14:390][536]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.14:390][536]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.14:407][537]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.14:407][537]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.14:424][538]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.14:424][538]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.14:440][539]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.14:440][539]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.14:457][540]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.14:458][540]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.14:474][541]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.14:474][541]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.14:490][542]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.14:490][542]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.14:507][543]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.14:507][543]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.14:528][544]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.14:528][544]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.14:545][545]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.14:545][545]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.14:561][546]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.14:561][546]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.14:579][547]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.14:579][547]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.14:595][548]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.14:595][548]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.14:612][549]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.14:612][549]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.14:629][550]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.14:629][550]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.14:645][551]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.14:646][551]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.14:663][552]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.14:663][552]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.14:678][553]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.14:678][553]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.14:695][554]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.14:695][554]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.14:712][555]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.14:712][555]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.14:734][556]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.14:735][556]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.14:750][557]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.14:750][557]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.14:770][558]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.14:770][558]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.14:787][559]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.14:787][559]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.14:813][560]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.14:813][560]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.14:829][561]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.14:829][561]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.14:846][562]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.14:846][562]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.14:865][563]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.14:865][563]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.14:885][564]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.14:885][564]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.14:907][565]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.14:907][565]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.14:926][566]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.14:927][566]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.14:945][567]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.14:945][567]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.14:963][568]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.14:963][568]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.14:981][569]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.14:981][569]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.14:999][570]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.14:999][570]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.15:016][571]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.15:016][571]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.15:033][572]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.15:034][572]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.15:052][573]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.15:052][573]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.15:069][574]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.15:069][574]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.15:086][575]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.15:086][575]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.15:102][576]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.15:102][576]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.15:120][577]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.15:120][577]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.15:139][578]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.15:139][578]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.15:155][579]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.15:155][579]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.15:172][580]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.15:173][580]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.15:189][581]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.15:189][581]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.15:206][582]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.15:207][582]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.15:223][583]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.15:223][583]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.15:242][584]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.15:242][584]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.15:259][585]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.15:259][585]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.15:276][586]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.15:276][586]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.15:292][587]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.15:293][587]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.15:309][588]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.15:309][588]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.15:326][589]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.15:326][589]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.15:341][590]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.15:342][590]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.15:359][591]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.15:359][591]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.15:375][592]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.15:375][592]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.15:391][593]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.15:391][593]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.15:409][594]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.15:409][594]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.15:425][595]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.15:425][595]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.15:442][596]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.15:442][596]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.15:460][597]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.15:460][597]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.15:476][598]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.15:476][598]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.15:492][599]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.15:492][599]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.15:508][600]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.15:508][600]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.15:525][601]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.15:525][601]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.15:542][602]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.15:542][602]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.15:559][603]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.15:559][603]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.15:576][604]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.15:576][604]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.15:592][605]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.15:592][605]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.15:609][606]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.15:609][606]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.15:626][607]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.15:626][607]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.15:642][608]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.15:642][608]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.15:658][609]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.15:659][609]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.15:675][610]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.15:675][610]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.15:692][611]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.15:692][611]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.15:709][612]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.15:709][612]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.15:725][613]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.15:725][613]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.15:742][614]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.15:742][614]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.15:759][615]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.15:759][615]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.15:775][616]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.15:775][616]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.15:792][617]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.15:792][617]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.15:809][618]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.15:809][618]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.15:827][619]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.15:828][619]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.15:842][620]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.15:842][620]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.15:858][621]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.15:858][621]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.15:877][622]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.15:877][622]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.15:892][623]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.15:893][623]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.15:909][624]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.15:909][624]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.15:926][625]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.15:926][625]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.15:943][626]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.15:943][626]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.15:959][627]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.15:959][627]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.15:976][628]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.15:976][628]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.15:992][629]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.15:992][629]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.16:010][630]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.16:010][630]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.16:026][631]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.16:026][631]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.16:042][632]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.16:042][632]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.16:061][633]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.16:061][633]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.16:077][634]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.16:077][634]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.16:094][635]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.16:094][635]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.16:110][636]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.16:110][636]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.16:127][637]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.16:127][637]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.16:144][638]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.16:144][638]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.16:189][639]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.16:189][639]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.16:206][640]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.16:207][640]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.16:223][641]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.16:223][641]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.16:240][642]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.16:240][642]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.16:257][643]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.16:257][643]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.16:276][644]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.16:276][644]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.16:292][645]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.16:292][645]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.16:309][646]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.16:309][646]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.16:325][647]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.16:327][647]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.16:342][648]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.16:342][648]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.16:361][649]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.16:361][649]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.16:377][650]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.16:377][650]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.16:394][651]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.16:394][651]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.16:410][652]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.16:410][652]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.16:426][653]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.16:426][653]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.16:443][654]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.16:444][654]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.16:490][655]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.16:490][655]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.16:508][656]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.16:508][656]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.16:525][657]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.16:525][657]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.16:542][658]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.16:543][658]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.16:560][659]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.16:560][659]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.16:577][660]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.16:577][660]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.16:594][661]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.16:594][661]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.16:613][662]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.16:613][662]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.16:631][663]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.16:631][663]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.16:647][664]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.16:647][664]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.16:664][665]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.16:664][665]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.16:708][666]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.16:708][666]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.16:724][667]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.16:724][667]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.17:159][669]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.17:159][669]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.17:173][670]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.17:173][670]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.17:190][671]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.17:190][671]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.17:208][672]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.17:208][672]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.17:226][673]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.17:226][673]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.17:243][674]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.17:243][674]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.17:258][675]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.17:258][675]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.17:276][676]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.17:276][676]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.17:291][677]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.17:291][677]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.17:309][678]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.17:309][678]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.17:326][679]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.17:326][679]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.17:341][680]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.17:342][680]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.17:459][687]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.17:459][687]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.17:476][688]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.17:476][688]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.17:491][689]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.17:491][689]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.17:509][690]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.17:509][690]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.17:525][691]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.17:525][691]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.17:540][692]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.17:542][692]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.17:559][693]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.17:559][693]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.17:576][694]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.17:576][694]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.17:592][695]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.17:592][695]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.17:610][696]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.17:610][696]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.17:626][697]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.17:626][697]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.17:646][698]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.17:646][698]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.17:665][699]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.17:665][699]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.17:699][700]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.17:699][700]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.17:718][701]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.17:718][701]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.17:734][702]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.17:735][702]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.17:751][703]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.17:751][703]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.17:767][704]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.17:767][704]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.17:783][705]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.17:783][705]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.17:801][706]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.17:801][706]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.17:817][707]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.17:819][707]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.17:834][708]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.17:834][708]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.17:850][709]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.17:850][709]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.17:867][710]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.17:867][710]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.17:885][711]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.17:885][711]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.17:901][712]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.17:901][712]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.17:918][713]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.17:918][713]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.17:934][714]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.17:934][714]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.17:951][715]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.17:951][715]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.17:967][716]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.17:967][716]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.17:985][717]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.17:985][717]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.18:002][718]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.18:002][718]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.18:018][719]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.18:018][719]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.18:034][720]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.18:034][720]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.18:052][721]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.18:052][721]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.18:068][722]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.18:068][722]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.18:083][723]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.18:083][723]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.18:100][724]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.18:100][724]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.18:118][725]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.18:118][725]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.18:134][726]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.18:134][726]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.18:150][727]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.18:150][727]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.18:167][728]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.18:167][728]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.18:184][729]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.18:184][729]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.18:201][730]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.18:201][730]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.18:267][734]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.18:267][734]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.18:284][735]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.18:284][735]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.18:300][736]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.18:301][736]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.18:318][737]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.18:318][737]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.18:334][738]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.18:334][738]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.18:351][739]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.18:351][739]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.18:368][740]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.18:368][740]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.18:384][741]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.18:384][741]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.18:401][742]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.18:401][742]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.18:418][743]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.18:418][743]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.18:434][744]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.18:434][744]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.18:451][745]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.18:451][745]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.18:468][746]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.18:468][746]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.18:485][747]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.18:485][747]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.18:501][748]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.18:501][748]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.18:518][749]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.18:518][749]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.18:534][750]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.18:534][750]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.18:551][751]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.18:551][751]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.18:568][752]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.18:568][752]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.18:585][753]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.18:585][753]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.18:601][754]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.18:601][754]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.18:618][755]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.18:618][755]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.18:634][756]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.18:634][756]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.18:652][757]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.18:652][757]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.18:668][758]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.18:668][758]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.18:685][759]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.18:685][759]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.18:701][760]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.18:701][760]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.18:718][761]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.18:718][761]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.18:734][762]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.18:734][762]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.18:751][763]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.18:751][763]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.18:768][764]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.18:768][764]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.18:786][765]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.18:786][765]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.18:802][766]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.18:802][766]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.18:817][767]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.18:817][767]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.18:834][768]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.18:834][768]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.18:851][769]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.18:851][769]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.18:867][770]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.18:867][770]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.18:884][771]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.18:884][771]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.18:900][772]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.18:902][772]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.18:918][773]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.18:918][773]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.18:935][774]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.18:935][774]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.18:953][775]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.18:953][775]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.18:969][776]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.18:969][776]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.18:987][777]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.18:987][777]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.19:003][778]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.19:003][778]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.19:020][779]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.19:020][779]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.19:037][780]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.19:037][780]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.19:053][781]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.19:053][781]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.19:069][782]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.19:069][782]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.19:085][783]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.19:087][783]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.19:102][784]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.19:103][784]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.19:120][785]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.19:120][785]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.19:137][786]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.19:138][786]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.19:154][787]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.19:155][787]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.19:254][793]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.19:254][793]LogTemp: Display: Current speed: 0.000000
+[2024.09.20-17.48.19:289][793]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2024.09.20-17.48.19:289][793]LogWorld: BeginTearingDown for /Game/Levels/UEDPIE_0_MovementLevel
+[2024.09.20-17.48.19:289][793]LogWorld: UWorld::CleanupWorld for MovementLevel, bSessionEnded=true, bCleanupResources=true
+[2024.09.20-17.48.19:290][793]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.09.20-17.48.19:293][793]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2024.09.20-17.48.19:296][793]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.09.20-17.48.19:302][793]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2024.09.20-17.48.19:302][793]LogAudioMixer: Deinitializing Audio Bus Subsystem for audio device with ID 31
+[2024.09.20-17.48.19:302][793]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=31
+[2024.09.20-17.48.19:305][793]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=31
+[2024.09.20-17.48.19:317][793]LogUObjectHash: Compacting FUObjectHashTables data took   1.47ms
+[2024.09.20-17.48.19:355][794]LogPlayLevel: Display: Destroying online subsystem :Context_41
+[2024.09.20-17.48.20:811][881]Cmd: CAMERA ALIGN
+[2024.09.20-17.48.20:811][881]Can't find target element.
+[2024.09.20-17.48.21:171][901]Cmd: POLY SELECT MEMORY RECALL
+[2024.09.20-17.48.22:428][971]Cmd: POLY SELECT ALL
+[2024.09.20-17.48.22:928][  1]Cmd: POLY SELECT ALL
+[2024.09.20-17.48.23:327][ 25]Cmd: POLY SELECT ADJACENT WALLS
+[2024.09.20-17.48.23:628][ 43]Cmd: POLY SELECT REVERSE
+[2024.09.20-17.48.23:911][ 60]Cmd: POLY SELECT MEMORY UNION
+[2024.09.20-17.48.24:361][ 87]Cmd: POLY SELECT ALL
+[2024.09.20-17.48.25:312][144]Cmd: POLY SELECT MATCHING TEXTURE
+[2024.09.20-17.48.26:911][240]Cmd: SELECT NONE
+[2024.09.20-17.48.27:520][276]LogUObjectHash: Compacting FUObjectHashTables data took   0.68ms
+[2024.09.20-17.48.27:522][276]LogStall: Shutdown...
+[2024.09.20-17.48.27:533][276]LogStall: Shutdown complete.
+[2024.09.20-17.48.27:632][276]LogWorld: UWorld::CleanupWorld for World_8, bSessionEnded=true, bCleanupResources=true
+[2024.09.20-17.48.27:632][276]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.09.20-17.48.27:777][276]LogActorComponent: UnregisterComponent: (/Engine/Transient.EditorFloorComp) Not registered. Aborting.
+[2024.09.20-17.48.27:777][276]LogWorld: UWorld::CleanupWorld for World_9, bSessionEnded=true, bCleanupResources=true
+[2024.09.20-17.48.27:777][276]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.09.20-17.48.27:891][276]LogSlate: Window 'CardslingerPrototype - Unreal Editor' being destroyed
+[2024.09.20-17.48.28:197][277]Cmd: QUIT_EDITOR
+[2024.09.20-17.48.28:197][277]LogCore: Engine exit requested (reason: UUnrealEdEngine::CloseEditor())
+[2024.09.20-17.48.28:216][277]LogCore: Engine exit requested (reason: EngineExit() was called; note: exit was already requested)
+[2024.09.20-17.48.28:217][277]LogStaticMesh: Abandoning remaining async distance field tasks for shutdown
+[2024.09.20-17.48.28:222][277]LogStaticMesh: Abandoning remaining async card representation tasks for shutdown
+[2024.09.20-17.48.28:238][277]LogWorld: UWorld::CleanupWorld for MovementLevel, bSessionEnded=true, bCleanupResources=true
+[2024.09.20-17.48.28:238][277]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.09.20-17.48.28:307][277]LogLevelSequenceEditor: LevelSequenceEditor subsystem deinitialized.
+[2024.09.20-17.48.29:526][277]LogAudio: Display: Beginning Audio Device Manager Shutdown (Module: AudioMixerXAudio2)...
+[2024.09.20-17.48.29:526][277]LogAudio: Display: Destroying 1 Remaining Audio Device(s)...
+[2024.09.20-17.48.29:526][277]LogAudio: Display: Audio Device unregistered from world 'MovementLevel'.
+[2024.09.20-17.48.29:526][277]LogAudioMixer: Deinitializing Audio Bus Subsystem for audio device with ID 1
+[2024.09.20-17.48.29:527][277]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=1
+[2024.09.20-17.48.29:533][277]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=1
+[2024.09.20-17.48.29:596][277]LogAudio: Display: Audio Device Manager Shutdown
+[2024.09.20-17.48.29:599][277]LogWindowsTextInputMethodSystem: Activated input method: English (United Kingdom) - (Keyboard).
+[2024.09.20-17.48.29:619][277]LogSlate: Slate User Destroyed.  User Index 0, Is Virtual User: 0
+[2024.09.20-17.48.29:620][277]LogExit: Preparing to exit.
+[2024.09.20-17.48.29:737][277]LogUObjectHash: Compacting FUObjectHashTables data took   1.59ms
+[2024.09.20-17.48.31:430][277]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2024.09.20-17.48.31:430][277]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2024.09.20-17.48.31:430][277]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2024.09.20-17.48.31:430][277]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2024.09.20-17.48.31:430][277]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2024.09.20-17.48.31:430][277]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2024.09.20-17.48.31:430][277]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2024.09.20-17.48.31:430][277]LogWorld: UWorld::CleanupWorld for None, bSessionEnded=true, bCleanupResources=true
+[2024.09.20-17.48.31:430][277]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2024.09.20-17.48.31:430][277]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2024.09.20-17.48.31:430][277]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2024.09.20-17.48.31:430][277]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2024.09.20-17.48.31:430][277]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2024.09.20-17.48.31:430][277]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2024.09.20-17.48.31:430][277]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2024.09.20-17.48.31:430][277]LogWorld: UWorld::CleanupWorld for None, bSessionEnded=true, bCleanupResources=true
+[2024.09.20-17.48.31:430][277]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2024.09.20-17.48.31:431][277]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2024.09.20-17.48.31:431][277]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2024.09.20-17.48.31:431][277]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2024.09.20-17.48.31:431][277]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2024.09.20-17.48.31:431][277]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2024.09.20-17.48.31:431][277]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2024.09.20-17.48.31:431][277]LogWorld: UWorld::CleanupWorld for None, bSessionEnded=true, bCleanupResources=true
+[2024.09.20-17.48.31:431][277]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2024.09.20-17.48.31:431][277]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2024.09.20-17.48.31:431][277]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2024.09.20-17.48.31:431][277]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2024.09.20-17.48.31:431][277]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2024.09.20-17.48.31:431][277]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2024.09.20-17.48.31:431][277]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2024.09.20-17.48.31:431][277]LogWorld: UWorld::CleanupWorld for None, bSessionEnded=true, bCleanupResources=true
+[2024.09.20-17.48.31:431][277]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2024.09.20-17.48.31:431][277]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2024.09.20-17.48.31:431][277]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2024.09.20-17.48.31:431][277]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2024.09.20-17.48.31:431][277]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2024.09.20-17.48.31:431][277]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2024.09.20-17.48.31:431][277]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2024.09.20-17.48.31:431][277]LogWorld: UWorld::CleanupWorld for None, bSessionEnded=true, bCleanupResources=true
+[2024.09.20-17.48.31:432][277]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2024.09.20-17.48.31:432][277]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2024.09.20-17.48.31:432][277]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2024.09.20-17.48.31:432][277]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2024.09.20-17.48.31:432][277]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2024.09.20-17.48.31:432][277]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2024.09.20-17.48.31:432][277]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2024.09.20-17.48.31:432][277]LogWorld: UWorld::CleanupWorld for None, bSessionEnded=true, bCleanupResources=true
+[2024.09.20-17.48.31:432][277]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2024.09.20-17.48.31:432][277]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2024.09.20-17.48.31:432][277]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2024.09.20-17.48.31:432][277]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2024.09.20-17.48.31:432][277]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2024.09.20-17.48.31:432][277]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2024.09.20-17.48.31:432][277]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2024.09.20-17.48.31:432][277]LogWorld: UWorld::CleanupWorld for None, bSessionEnded=true, bCleanupResources=true
+[2024.09.20-17.48.31:432][277]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2024.09.20-17.48.31:432][277]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2024.09.20-17.48.31:432][277]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2024.09.20-17.48.31:432][277]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2024.09.20-17.48.31:433][277]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2024.09.20-17.48.31:433][277]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2024.09.20-17.48.31:433][277]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2024.09.20-17.48.31:433][277]LogWorld: UWorld::CleanupWorld for None, bSessionEnded=true, bCleanupResources=true
+[2024.09.20-17.48.31:433][277]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2024.09.20-17.48.31:433][277]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2024.09.20-17.48.31:433][277]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2024.09.20-17.48.31:433][277]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2024.09.20-17.48.31:433][277]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2024.09.20-17.48.31:433][277]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2024.09.20-17.48.31:433][277]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2024.09.20-17.48.31:433][277]LogWorld: UWorld::CleanupWorld for None, bSessionEnded=true, bCleanupResources=true
+[2024.09.20-17.48.31:541][277]LogDemo: Cleaned up 0 splitscreen connections, owner deletion: enabled
+[2024.09.20-17.48.31:638][277]LogExit: Editor shut down
+[2024.09.20-17.48.31:671][277]LogExit: Transaction tracking system shut down
+[2024.09.20-17.48.33:925][277]LogExit: Object subsystem successfully closed.
+[2024.09.20-17.48.33:945][277]LogShaderCompilers: Display: ================================================
+[2024.09.20-17.48.33:945][277]LogShaderCompilers: Display: === FShaderJobCache stats ===
+[2024.09.20-17.48.33:945][277]LogShaderCompilers: Display: Total job queries 24, among them cache hits 0 (0.00%)
+[2024.09.20-17.48.33:945][277]LogShaderCompilers: Display: Tracking 24 distinct input hashes that result in 24 distinct outputs (100.00%)
+[2024.09.20-17.48.33:945][277]LogShaderCompilers: Display: RAM used: 605.78 KiB of 819.20 MiB budget. Usage: 0.07%
+[2024.09.20-17.48.33:946][277]LogShaderCompilers: Display: === Shader Compilation stats ===
+[2024.09.20-17.48.33:946][277]LogShaderCompilers: Display: Shaders Compiled: 0
+[2024.09.20-17.48.33:946][277]LogShaderCompilers: Display: Jobs assigned 0, completed 0 (0%)
+[2024.09.20-17.48.33:946][277]LogShaderCompilers: Display: Time at least one job was in flight (either pending or executed): 0.00 s
+[2024.09.20-17.48.33:946][277]LogShaderCompilers: Display: ================================================
+[2024.09.20-17.48.34:020][277]LogShaderCompilers: Display: Shaders left to compile 0
+[2024.09.20-17.48.34:133][277]LogVirtualization: UE::Virtualization was shutdown
+[2024.09.20-17.48.34:369][277]LogModuleManager: Shutting down and abandoning module MovieSceneCapture (1054)
+[2024.09.20-17.48.34:369][277]LogModuleManager: Shutting down and abandoning module Voice (1052)
+[2024.09.20-17.48.34:369][277]LogModuleManager: Shutting down and abandoning module HierarchicalLODOutliner (1050)
+[2024.09.20-17.48.34:370][277]LogModuleManager: Shutting down and abandoning module SubobjectEditor (1048)
+[2024.09.20-17.48.34:370][277]LogModuleManager: Shutting down and abandoning module SceneOutliner (1046)
+[2024.09.20-17.48.34:370][277]LogModuleManager: Shutting down and abandoning module AddContentDialog (1044)
+[2024.09.20-17.48.34:391][277]LogModuleManager: Shutting down and abandoning module WidgetCarousel (1043)
+[2024.09.20-17.48.34:391][277]LogModuleManager: Shutting down and abandoning module StatusBar (1040)
+[2024.09.20-17.48.34:391][277]LogModuleManager: Shutting down and abandoning module UnsavedAssetsTracker (1038)
+[2024.09.20-17.48.34:391][277]LogModuleManager: Shutting down and abandoning module GameProjectGeneration (1036)
+[2024.09.20-17.48.34:392][277]LogModuleManager: Shutting down and abandoning module StatsViewer (1034)
+[2024.09.20-17.48.34:393][277]LogModuleManager: Shutting down and abandoning module SequenceRecorderSections (1032)
+[2024.09.20-17.48.34:393][277]LogModuleManager: Shutting down and abandoning module AutomationWorker (1030)
+[2024.09.20-17.48.34:394][277]LogModuleManager: Shutting down and abandoning module PlanarCut (1028)
+[2024.09.20-17.48.34:395][277]LogModuleManager: Shutting down and abandoning module FractureEngine (1026)
+[2024.09.20-17.48.34:395][277]LogModuleManager: Shutting down and abandoning module CharacterAI (1024)
+[2024.09.20-17.48.34:395][277]LogModuleManager: Shutting down and abandoning module SmartSnapping (1022)
+[2024.09.20-17.48.34:396][277]LogModuleManager: Shutting down and abandoning module TemplateSequenceEditor (1020)
+[2024.09.20-17.48.34:400][277]LogModuleManager: Shutting down and abandoning module LevelSequenceEditor (1018)
+[2024.09.20-17.48.34:406][277]LogModuleManager: Shutting down and abandoning module ActorSequenceEditor (1016)
+[2024.09.20-17.48.34:407][277]LogModuleManager: Shutting down and abandoning module EngineAssetDefinitions (1014)
+[2024.09.20-17.48.34:408][277]LogModuleManager: Shutting down and abandoning module TextureAlignMode (1012)
+[2024.09.20-17.48.34:408][277]LogModuleManager: Shutting down and abandoning module BspMode (1010)
+[2024.09.20-17.48.34:408][277]LogModuleManager: Shutting down and abandoning module GeometryMode (1008)
+[2024.09.20-17.48.34:410][277]LogModuleManager: Shutting down and abandoning module AvfMediaFactory (1006)
+[2024.09.20-17.48.34:410][277]LogModuleManager: Shutting down and abandoning module AvfMediaEditor (1004)
+[2024.09.20-17.48.34:410][277]LogModuleManager: Shutting down and abandoning module WebMMediaFactory (1002)
+[2024.09.20-17.48.34:410][277]LogModuleManager: Shutting down and abandoning module WebMMediaEditor (1000)
+[2024.09.20-17.48.34:410][277]LogModuleManager: Shutting down and abandoning module WebMMedia (998)
+[2024.09.20-17.48.34:410][277]LogModuleManager: Shutting down and abandoning module WmfMediaFactory (996)
+[2024.09.20-17.48.34:410][277]LogModuleManager: Shutting down and abandoning module WmfMediaEditor (994)
+[2024.09.20-17.48.34:410][277]LogModuleManager: Shutting down and abandoning module MediaPlayerEditor (992)
+[2024.09.20-17.48.34:412][277]LogModuleManager: Shutting down and abandoning module MediaCompositingEditor (990)
+[2024.09.20-17.48.34:415][277]LogModuleManager: Shutting down and abandoning module SequenceRecorder (989)
+[2024.09.20-17.48.34:415][277]LogModuleManager: Shutting down and abandoning module OpenExrWrapper (986)
+[2024.09.20-17.48.34:415][277]LogModuleManager: Shutting down and abandoning module ImgMediaFactory (984)
+[2024.09.20-17.48.34:415][277]LogModuleManager: Shutting down and abandoning module ImgMediaEditor (982)
+[2024.09.20-17.48.34:416][277]LogModuleManager: Shutting down and abandoning module AndroidMediaFactory (980)
+[2024.09.20-17.48.34:416][277]LogModuleManager: Shutting down and abandoning module AndroidMediaEditor (978)
+[2024.09.20-17.48.34:416][277]LogModuleManager: Shutting down and abandoning module WaveTableEditor (976)
+[2024.09.20-17.48.34:418][277]LogModuleManager: Shutting down and abandoning module ResonanceAudioEditor (974)
+[2024.09.20-17.48.34:418][277]LogModuleManager: Shutting down and abandoning module RigVMEditor (972)
+[2024.09.20-17.48.34:421][277]LogModuleManager: Shutting down and abandoning module GooglePADEditor (970)
+[2024.09.20-17.48.34:421][277]LogModuleManager: Shutting down and abandoning module AudioCaptureEditor (968)
+[2024.09.20-17.48.34:421][277]LogModuleManager: Shutting down and abandoning module AndroidFileServerEditor (966)
+[2024.09.20-17.48.34:421][277]LogModuleManager: Shutting down and abandoning module CameraShakePreviewer (964)
+[2024.09.20-17.48.34:422][277]LogModuleManager: Shutting down and abandoning module IKRigEditor (962)
+[2024.09.20-17.48.34:425][277]LogModuleManager: Shutting down and abandoning module ControlRigEditor (960)
+[2024.09.20-17.48.34:428][277]LogModuleManager: Shutting down and abandoning module SessionServices (958)
+[2024.09.20-17.48.34:430][277]LogModuleManager: Shutting down and abandoning module MeshPaint (956)
+[2024.09.20-17.48.34:433][277]LogModuleManager: Shutting down and abandoning module VirtualTexturingEditor (954)
+[2024.09.20-17.48.34:433][277]LogModuleManager: Shutting down and abandoning module PlacementMode (953)
+[2024.09.20-17.48.34:435][277]LogModuleManager: Shutting down and abandoning module FoliageEdit (950)
+[2024.09.20-17.48.34:436][277]LogModuleManager: Shutting down and abandoning module LandscapeEditor (948)
+[2024.09.20-17.48.34:445][277]LogModuleManager: Shutting down and abandoning module SceneDepthPickerMode (946)
+[2024.09.20-17.48.34:445][277]LogModuleManager: Shutting down and abandoning module ActorPickerMode (944)
+[2024.09.20-17.48.34:445][277]LogModuleManager: Shutting down and abandoning module ViewportSnapping (942)
+[2024.09.20-17.48.34:445][277]LogModuleManager: Shutting down and abandoning module EditorWidgets (940)
+[2024.09.20-17.48.34:446][277]LogModuleManager: Shutting down and abandoning module ViewportInteraction (938)
+[2024.09.20-17.48.34:446][277]LogModuleManager: Shutting down and abandoning module ClothPainter (936)
+[2024.09.20-17.48.34:448][277]LogModuleManager: Shutting down and abandoning module SkeletalMeshEditor (935)
+[2024.09.20-17.48.34:449][277]LogModuleManager: Shutting down and abandoning module WidgetRegistration (932)
+[2024.09.20-17.48.34:450][277]LogModuleManager: Shutting down and abandoning module LogVisualizer (930)
+[2024.09.20-17.48.34:453][277]LogModuleManager: Shutting down and abandoning module IOSPlatformEditor (928)
+[2024.09.20-17.48.34:453][277]LogModuleManager: Shutting down and abandoning module AndroidPlatformEditor (926)
+[2024.09.20-17.48.34:454][277]LogModuleManager: Shutting down and abandoning module PIEPreviewDeviceProfileSelector (925)
+[2024.09.20-17.48.34:455][277]LogModuleManager: Shutting down and abandoning module AndroidDeviceDetection (923)
+[2024.09.20-17.48.34:993][277]LogModuleManager: Shutting down and abandoning module WindowsPlatformEditor (920)
+[2024.09.20-17.48.34:993][277]LogModuleManager: Shutting down and abandoning module MacPlatformEditor (918)
+[2024.09.20-17.48.34:994][277]LogModuleManager: Shutting down and abandoning module IOSRuntimeSettings (916)
+[2024.09.20-17.48.34:994][277]LogModuleManager: Shutting down and abandoning module AndroidRuntimeSettings (914)
+[2024.09.20-17.48.34:994][277]LogModuleManager: Shutting down and abandoning module RenderResourceViewer (912)
+[2024.09.20-17.48.34:994][277]LogModuleManager: Shutting down and abandoning module GameplayDebuggerEditor (910)
+[2024.09.20-17.48.34:994][277]LogModuleManager: Shutting down and abandoning module AnimationSettings (908)
+[2024.09.20-17.48.34:994][277]LogModuleManager: Shutting down and abandoning module VirtualizationEditor (906)
+[2024.09.20-17.48.34:994][277]LogModuleManager: Shutting down and abandoning module CSVtoSVG (904)
+[2024.09.20-17.48.34:994][277]LogModuleManager: Shutting down and abandoning module DerivedDataEditor (902)
+[2024.09.20-17.48.34:995][277]LogModuleManager: Shutting down and abandoning module EditorConfig (900)
+[2024.09.20-17.48.34:995][277]LogModuleManager: Shutting down and abandoning module EditorFramework (898)
+[2024.09.20-17.48.34:995][277]LogModuleManager: Shutting down and abandoning module StaticMeshEditor (896)
+[2024.09.20-17.48.34:997][277]LogModuleManager: Shutting down and abandoning module TraceInsights (894)
+[2024.09.20-17.48.35:001][277]MemoryProfiler: Shutdown
+[2024.09.20-17.48.35:002][277]NetworkingProfiler: Shutdown
+[2024.09.20-17.48.35:002][277]LoadingProfiler: Shutdown
+[2024.09.20-17.48.35:003][277]TimingProfiler: Shutdown
+[2024.09.20-17.48.35:006][277]LogModuleManager: Shutting down and abandoning module TraceServices (893)
+[2024.09.20-17.48.35:008][277]LogModuleManager: Shutting down and abandoning module TraceAnalysis (892)
+[2024.09.20-17.48.35:008][277]LogModuleManager: Shutting down and abandoning module EditorInteractiveToolsFramework (888)
+[2024.09.20-17.48.35:008][277]LogModuleManager: Shutting down and abandoning module InteractiveToolsFramework (887)
+[2024.09.20-17.48.35:008][277]LogModuleManager: Shutting down and abandoning module InputBindingEditor (884)
+[2024.09.20-17.48.35:009][277]LogModuleManager: Shutting down and abandoning module MergeActors (882)
+[2024.09.20-17.48.35:010][277]LogModuleManager: Shutting down and abandoning module LocalizationDashboard (880)
+[2024.09.20-17.48.35:011][277]LogModuleManager: Shutting down and abandoning module LocalizationService (879)
+[2024.09.20-17.48.35:012][277]LogModuleManager: Shutting down and abandoning module HardwareTargeting (876)
+[2024.09.20-17.48.35:012][277]LogModuleManager: Shutting down and abandoning module DeviceProfileEditor (874)
+[2024.09.20-17.48.35:013][277]LogModuleManager: Shutting down and abandoning module UndoHistory (872)
+[2024.09.20-17.48.35:013][277]LogModuleManager: Shutting down and abandoning module XmlParser (870)
+[2024.09.20-17.48.35:013][277]LogModuleManager: Shutting down and abandoning module Blutility (868)
+[2024.09.20-17.48.35:014][277]LogModuleManager: Shutting down and abandoning module ProjectSettingsViewer (866)
+[2024.09.20-17.48.35:014][277]LogModuleManager: Shutting down and abandoning module ProjectTargetPlatformEditor (865)
+[2024.09.20-17.48.35:015][277]LogModuleManager: Shutting down and abandoning module EditorSettingsViewer (862)
+[2024.09.20-17.48.35:015][277]LogModuleManager: Shutting down and abandoning module InternationalizationSettings (861)
+[2024.09.20-17.48.35:015][277]LogModuleManager: Shutting down and abandoning module SettingsEditor (858)
+[2024.09.20-17.48.35:015][277]LogModuleManager: Shutting down and abandoning module ProjectLauncher (856)
+[2024.09.20-17.48.35:016][277]LogModuleManager: Shutting down and abandoning module SessionFrontend (854)
+[2024.09.20-17.48.35:016][277]LogModuleManager: Shutting down and abandoning module ProfilerClient (852)
+[2024.09.20-17.48.35:016][277]LogModuleManager: Shutting down and abandoning module DeviceManager (850)
+[2024.09.20-17.48.35:017][277]LogModuleManager: Shutting down and abandoning module AutomationController (848)
+[2024.09.20-17.48.35:018][277]LogModuleManager: Shutting down and abandoning module AutomationWindow (846)
+[2024.09.20-17.48.35:021][277]LogModuleManager: Shutting down and abandoning module Layers (844)
+[2024.09.20-17.48.35:023][277]LogModuleManager: Shutting down and abandoning module ComponentVisualizers (842)
+[2024.09.20-17.48.35:023][277]LogModuleManager: Shutting down and abandoning module DetailCustomizations (840)
+[2024.09.20-17.48.35:024][277]LogModuleManager: Shutting down and abandoning module PackagesDialog (838)
+[2024.09.20-17.48.35:025][277]LogModuleManager: Shutting down and abandoning module AnimationBlueprintEditor (836)
+[2024.09.20-17.48.35:027][277]LogModuleManager: Shutting down and abandoning module Persona (834)
+[2024.09.20-17.48.35:030][277]LogModuleManager: Shutting down and abandoning module AdvancedPreviewScene (833)
+[2024.09.20-17.48.35:030][277]LogModuleManager: Shutting down and abandoning module Kismet (830)
+[2024.09.20-17.48.35:035][277]LogModuleManager: Shutting down and abandoning module KismetWidgets (829)
+[2024.09.20-17.48.35:035][277]LogModuleManager: Shutting down and abandoning module GraphEditor (826)
+[2024.09.20-17.48.35:037][277]LogModuleManager: Shutting down and abandoning module StructViewer (824)
+[2024.09.20-17.48.35:037][277]LogModuleManager: Shutting down and abandoning module ClassViewer (822)
+[2024.09.20-17.48.35:037][277]LogModuleManager: Shutting down and abandoning module UncontrolledChangelists (820)
+[2024.09.20-17.48.35:040][277]LogModuleManager: Shutting down and abandoning module SourceControlWindowExtender (818)
+[2024.09.20-17.48.35:041][277]LogModuleManager: Shutting down and abandoning module SourceControlWindows (816)
+[2024.09.20-17.48.35:041][277]LogModuleManager: Shutting down and abandoning module OutputLog (814)
+[2024.09.20-17.48.35:043][277]LogModuleManager: Shutting down and abandoning module Documentation (812)
+[2024.09.20-17.48.35:043][277]LogModuleManager: Shutting down and abandoning module SparseVolumeTexture (810)
+[2024.09.20-17.48.35:045][277]LogModuleManager: Shutting down and abandoning module MovieSceneTracks (808)
+[2024.09.20-17.48.35:045][277]LogModuleManager: Shutting down and abandoning module MovieScene (806)
+[2024.09.20-17.48.35:046][277]LogModuleManager: Shutting down and abandoning module StreamingPauseRendering (804)
+[2024.09.20-17.48.35:046][277]LogModuleManager: Shutting down and abandoning module BinkAudioDecoder (802)
+[2024.09.20-17.48.35:047][277]LogModuleManager: Shutting down and abandoning module AudioMixerXAudio2 (800)
+[2024.09.20-17.48.35:047][277]LogModuleManager: Shutting down and abandoning module AudioMixer (799)
+[2024.09.20-17.48.35:047][277]LogModuleManager: Shutting down and abandoning module AudioMixerCore (798)
+[2024.09.20-17.48.35:047][277]LogModuleManager: Shutting down and abandoning module LauncherPlatform (794)
+[2024.09.20-17.48.35:047][277]LogModuleManager: Shutting down and abandoning module AnalyticsET (792)
+[2024.09.20-17.48.35:047][277]LogModuleManager: Shutting down and abandoning module PortalServices (790)
+[2024.09.20-17.48.35:047][277]LogModuleManager: Shutting down and abandoning module PortalRpc (788)
+[2024.09.20-17.48.35:047][277]LogModuleManager: Shutting down and abandoning module MessagingRpc (786)
+[2024.09.20-17.48.35:047][277]LogModuleManager: Shutting down and abandoning module AIModule (784)
+[2024.09.20-17.48.35:047][277]LogModuleManager: Shutting down and abandoning module GameplayDebugger (783)
+[2024.09.20-17.48.35:047][277]LogModuleManager: Shutting down and abandoning module AITestSuite (781)
+[2024.09.20-17.48.35:047][277]LogModuleManager: Shutting down and abandoning module NavigationSystem (779)
+[2024.09.20-17.48.35:048][277]LogModuleManager: Shutting down and abandoning module LevelInstanceEditor (776)
+[2024.09.20-17.48.35:048][277]LogModuleManager: Shutting down and abandoning module TypedElementRuntime (774)
+[2024.09.20-17.48.35:048][277]LogModuleManager: Shutting down and abandoning module TypedElementFramework (772)
+[2024.09.20-17.48.35:048][277]LogModuleManager: Shutting down and abandoning module ImageWriteQueue (770)
+[2024.09.20-17.48.35:048][277]LogModuleManager: Shutting down and abandoning module ProfilerService (768)
+[2024.09.20-17.48.35:059][277]LogModuleManager: Shutting down and abandoning module ProfileVisualizer (766)
+[2024.09.20-17.48.35:060][277]LogModuleManager: Shutting down and abandoning module CacheTrackRecorder (764)
+[2024.09.20-17.48.35:060][277]LogModuleManager: Shutting down and abandoning module TakeRecorderSources (762)
+[2024.09.20-17.48.35:064][277]LogModuleManager: Shutting down and abandoning module TakeTrackRecorders (760)
+[2024.09.20-17.48.35:064][277]LogModuleManager: Shutting down and abandoning module TakesCore (758)
+[2024.09.20-17.48.35:065][277]LogModuleManager: Shutting down and abandoning module AudioSynesthesiaEditor (756)
+[2024.09.20-17.48.35:065][277]LogModuleManager: Shutting down and abandoning module MegascansPlugin (754)
+[2024.09.20-17.48.35:066][277]LogModuleManager: Shutting down and abandoning module Bridge (752)
+[2024.09.20-17.48.35:066][277]LogModuleManager: Shutting down and abandoning module ContentBrowserAssetDataSource (750)
+[2024.09.20-17.48.35:066][277]LogModuleManager: Shutting down and abandoning module ObjectMixerEditor (748)
+[2024.09.20-17.48.35:069][277]LogModuleManager: Shutting down and abandoning module ContentBrowserFileDataSource (746)
+[2024.09.20-17.48.35:069][277]LogModuleManager: Shutting down and abandoning module LightMixer (744)
+[2024.09.20-17.48.35:069][277]LogModuleManager: Shutting down and abandoning module ContentBrowserClassDataSource (742)
+[2024.09.20-17.48.35:069][277]LogModuleManager: Shutting down and abandoning module CollectionManager (741)
+[2024.09.20-17.48.35:071][277]LogModuleManager: Shutting down and abandoning module PortableObjectFileDataSource (738)
+[2024.09.20-17.48.35:071][277]LogModuleManager: Shutting down and abandoning module ToolPresetEditor (736)
+[2024.09.20-17.48.35:071][277]LogModuleManager: Shutting down and abandoning module ToolPresetAsset (734)
+[2024.09.20-17.48.35:071][277]LogModuleManager: Shutting down and abandoning module StructUtilsTestSuite (732)
+[2024.09.20-17.48.35:072][277]LogModuleManager: Shutting down and abandoning module StructUtilsNodes (730)
+[2024.09.20-17.48.35:072][277]LogModuleManager: Shutting down and abandoning module StructUtilsEditor (728)
+[2024.09.20-17.48.35:072][277]LogModuleManager: Shutting down and abandoning module StructUtilsEngine (726)
+[2024.09.20-17.48.35:072][277]LogModuleManager: Shutting down and abandoning module OpenImageDenoise (724)
+[2024.09.20-17.48.35:072][277]LogOpenImageDenoise: OIDN shutting down
+[2024.09.20-17.48.35:072][277]LogModuleManager: Shutting down and abandoning module LocalizableMessageBlueprint (722)
+[2024.09.20-17.48.35:072][277]LogModuleManager: Shutting down and abandoning module LocalizableMessage (720)
+[2024.09.20-17.48.35:072][277]LogModuleManager: Shutting down and abandoning module SkeletalMeshModifiers (718)
+[2024.09.20-17.48.35:072][277]LogModuleManager: Shutting down and abandoning module ModelingEditorUI (716)
+[2024.09.20-17.48.35:073][277]LogModuleManager: Shutting down and abandoning module GeometryProcessingAdapters (714)
+[2024.09.20-17.48.35:075][277]LogModuleManager: Shutting down and abandoning module MeshModelingToolsEditorOnlyExp (712)
+[2024.09.20-17.48.35:075][277]LogModuleManager: Shutting down and abandoning module MeshModelingToolsExp (710)
+[2024.09.20-17.48.35:076][277]LogModuleManager: Shutting down and abandoning module MeshLODToolset (708)
+[2024.09.20-17.48.35:076][277]LogModuleManager: Shutting down and abandoning module DataflowNodes (706)
+[2024.09.20-17.48.35:076][277]LogModuleManager: Shutting down and abandoning module DataflowEnginePlugin (704)
+[2024.09.20-17.48.35:076][277]LogModuleManager: Shutting down and abandoning module DataflowEditor (702)
+[2024.09.20-17.48.35:076][277]LogModuleManager: Shutting down and abandoning module GeometryFlowMeshProcessingEditor (700)
+[2024.09.20-17.48.35:078][277]LogModuleManager: Shutting down and abandoning module GeometryFlowMeshProcessing (698)
+[2024.09.20-17.48.35:078][277]LogModuleManager: Shutting down and abandoning module GeometryFlowCore (696)
+[2024.09.20-17.48.35:078][277]LogModuleManager: Shutting down and abandoning module GeometryCollectionNodes (694)
+[2024.09.20-17.48.35:079][277]LogModuleManager: Shutting down and abandoning module GeometryCollectionTracks (692)
+[2024.09.20-17.48.35:079][277]LogModuleManager: Shutting down and abandoning module GeometryCollectionEngine (691)
+[2024.09.20-17.48.35:079][277]LogModuleManager: Shutting down and abandoning module GeometryCollectionSequencer (689)
+[2024.09.20-17.48.35:079][277]LogModuleManager: Shutting down and abandoning module GeometryCollectionEditor (686)
+[2024.09.20-17.48.35:080][277]LogModuleManager: Shutting down and abandoning module ChaosSolverEditor (684)
+[2024.09.20-17.48.35:080][277]LogModuleManager: Shutting down and abandoning module ChaosNiagara (682)
+[2024.09.20-17.48.35:080][277]LogModuleManager: Shutting down and abandoning module ChaosUserDataPT (680)
+[2024.09.20-17.48.35:080][277]LogModuleManager: Shutting down and abandoning module FractureEditor (678)
+[2024.09.20-17.48.35:084][277]LogModuleManager: Shutting down and abandoning module ChaosClothEditor (676)
+[2024.09.20-17.48.35:085][277]LogModuleManager: Shutting down and abandoning module BackChannel (674)
+[2024.09.20-17.48.35:085][277]LogModuleManager: Shutting down and abandoning module AutomationUtilsEditor (672)
+[2024.09.20-17.48.35:085][277]LogModuleManager: Shutting down and abandoning module AutomationUtils (670)
+[2024.09.20-17.48.35:085][277]LogModuleManager: Shutting down and abandoning module PaperTiledImporter (668)
+[2024.09.20-17.48.35:085][277]LogModuleManager: Shutting down and abandoning module PaperSpriteSheetImporter (666)
+[2024.09.20-17.48.35:085][277]LogModuleManager: Shutting down and abandoning module Paper2DEditor (664)
+[2024.09.20-17.48.35:090][277]LogModuleManager: Shutting down and abandoning module SequencerScriptingEditor (662)
+[2024.09.20-17.48.35:090][277]LogModuleManager: Shutting down and abandoning module SequencerScripting (660)
+[2024.09.20-17.48.35:090][277]LogModuleManager: Shutting down and abandoning module TemplateSequence (658)
+[2024.09.20-17.48.35:091][277]LogModuleManager: Shutting down and abandoning module VariantManager (656)
+[2024.09.20-17.48.35:095][277]LogModuleManager: Shutting down and abandoning module VariantManagerContentEditor (655)
+[2024.09.20-17.48.35:095][277]LogModuleManager: Shutting down and abandoning module MobileLauncherProfileWizard (652)
+[2024.09.20-17.48.35:096][277]LogModuleManager: Shutting down and abandoning module DatasmithContentEditor (650)
+[2024.09.20-17.48.35:097][277]LogModuleManager: Shutting down and abandoning module WorldPartitionHLODUtilities (648)
+[2024.09.20-17.48.35:097][277]LogModuleManager: Shutting down and abandoning module SpeedTreeImporter (646)
+[2024.09.20-17.48.35:097][277]LogModuleManager: Shutting down and abandoning module UVEditorToolsEditorOnly (644)
+[2024.09.20-17.48.35:097][277]LogModuleManager: Shutting down and abandoning module UVEditorTools (642)
+[2024.09.20-17.48.35:098][277]LogModuleManager: Shutting down and abandoning module UVEditor (640)
+[2024.09.20-17.48.35:101][277]LogModuleManager: Shutting down and abandoning module SequencerAnimTools (638)
+[2024.09.20-17.48.35:101][277]LogModuleManager: Shutting down and abandoning module PluginBrowser (636)
+[2024.09.20-17.48.35:106][277]LogModuleManager: Shutting down and abandoning module ModelingToolsEditorMode (634)
+[2024.09.20-17.48.35:115][277]LogModuleManager: Shutting down and abandoning module EditorDebugTools (632)
+[2024.09.20-17.48.35:117][277]LogModuleManager: Shutting down and abandoning module MaterialAnalyzer (630)
+[2024.09.20-17.48.35:118][277]LogModuleManager: Shutting down and abandoning module ChangelistReview (628)
+[2024.09.20-17.48.35:119][277]LogModuleManager: Shutting down and abandoning module CurveEditorTools (626)
+[2024.09.20-17.48.35:120][277]LogModuleManager: Shutting down and abandoning module CryptoKeysOpenSSL (624)
+[2024.09.20-17.48.35:120][277]LogModuleManager: Shutting down and abandoning module CryptoKeys (622)
+[2024.09.20-17.48.35:120][277]LogModuleManager: Shutting down and abandoning module BlueprintHeaderView (620)
+[2024.09.20-17.48.35:121][277]LogModuleManager: Shutting down and abandoning module EditorScriptingUtilities (618)
+[2024.09.20-17.48.35:121][277]LogModuleManager: Shutting down and abandoning module InputDebuggingEditor (616)
+[2024.09.20-17.48.35:121][277]LogModuleManager: Shutting down and abandoning module InputDebugging (614)
+[2024.09.20-17.48.35:121][277]LogModuleManager: Shutting down and abandoning module TakeSequencer (612)
+[2024.09.20-17.48.35:121][277]LogModuleManager: Shutting down and abandoning module TakeMovieScene (610)
+[2024.09.20-17.48.35:121][277]LogModuleManager: Shutting down and abandoning module MediaPlateEditor (608)
+[2024.09.20-17.48.35:123][277]LogModuleManager: Shutting down and abandoning module MediaPlate (606)
+[2024.09.20-17.48.35:123][277]LogModuleManager: Shutting down and abandoning module MediaCompositing (604)
+[2024.09.20-17.48.35:123][277]LogModuleManager: Shutting down and abandoning module ImgMedia (602)
+[2024.09.20-17.48.35:123][277]LogModuleManager: Shutting down and abandoning module SynthesisEditor (600)
+[2024.09.20-17.48.35:123][277]LogModuleManager: Shutting down and abandoning module ResonanceAudio (598)
+[2024.09.20-17.48.35:123][277]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponentEditor (596)
+[2024.09.20-17.48.35:124][277]LogModuleManager: Shutting down and abandoning module MobilePatchingUtils (594)
+[2024.09.20-17.48.35:124][277]LogModuleManager: Shutting down and abandoning module ModelingOperatorsEditorOnly (592)
+[2024.09.20-17.48.35:124][277]LogModuleManager: Shutting down and abandoning module ModelingOperators (590)
+[2024.09.20-17.48.35:124][277]LogModuleManager: Shutting down and abandoning module ModelingComponentsEditorOnly (588)
+[2024.09.20-17.48.35:124][277]LogModuleManager: Shutting down and abandoning module ModelingComponents (586)
+[2024.09.20-17.48.35:125][277]LogModuleManager: Shutting down and abandoning module GeometryFramework (585)
+[2024.09.20-17.48.35:126][277]LogModuleManager: Shutting down and abandoning module MeshModelingToolsEditorOnly (582)
+[2024.09.20-17.48.35:126][277]LogModuleManager: Shutting down and abandoning module MeshModelingTools (580)
+[2024.09.20-17.48.35:126][277]LogModuleManager: Shutting down and abandoning module GooglePAD (578)
+[2024.09.20-17.48.35:126][277]LogModuleManager: Shutting down and abandoning module GeometryCacheTracks (576)
+[2024.09.20-17.48.35:126][277]LogModuleManager: Shutting down and abandoning module GeometryCacheStreamer (574)
+[2024.09.20-17.48.35:126][277]LogModuleManager: Shutting down and abandoning module GeometryCacheSequencer (572)
+[2024.09.20-17.48.35:126][277]LogModuleManager: Shutting down and abandoning module DynamicMesh (570)
+[2024.09.20-17.48.35:128][277]LogModuleManager: Shutting down and abandoning module GeometryAlgorithms (568)
+[2024.09.20-17.48.35:128][277]LogModuleManager: Shutting down and abandoning module AudioCapture (566)
+[2024.09.20-17.48.35:128][277]LogModuleManager: Shutting down and abandoning module AudioCaptureWasapi (565)
+[2024.09.20-17.48.35:128][277]LogModuleManager: Shutting down and abandoning module ActorLayerUtilitiesEditor (562)
+[2024.09.20-17.48.35:129][277]LogModuleManager: Shutting down and abandoning module ActorLayerUtilities (560)
+[2024.09.20-17.48.35:129][277]LogModuleManager: Shutting down and abandoning module ArchVisCharacter (558)
+[2024.09.20-17.48.35:129][277]LogModuleManager: Shutting down and abandoning module AssetTags (556)
+[2024.09.20-17.48.35:129][277]LogModuleManager: Shutting down and abandoning module AppleImageUtilsBlueprintSupport (554)
+[2024.09.20-17.48.35:129][277]LogModuleManager: Shutting down and abandoning module AppleImageUtils (552)
+[2024.09.20-17.48.35:129][277]LogModuleManager: Shutting down and abandoning module AndroidPermission (550)
+[2024.09.20-17.48.35:129][277]LogModuleManager: Shutting down and abandoning module NiagaraEditorWidgets (548)
+[2024.09.20-17.48.35:139][277]LogModuleManager: Shutting down and abandoning module AlembicImporter (546)
+[2024.09.20-17.48.35:139][277]LogModuleManager: Shutting down and abandoning module AlembicLibrary (545)
+[2024.09.20-17.48.35:139][277]LogModuleManager: Shutting down and abandoning module GeometryCache (544)
+[2024.09.20-17.48.35:139][277]LogModuleManager: Shutting down and abandoning module GeometryCacheEd (543)
+[2024.09.20-17.48.35:139][277]LogModuleManager: Shutting down and abandoning module InterchangeFbxParser (536)
+[2024.09.20-17.48.35:140][277]LogModuleManager: Shutting down and abandoning module InterchangeCommonParser (534)
+[2024.09.20-17.48.35:140][277]LogModuleManager: Shutting down and abandoning module InterchangeDispatcher (532)
+[2024.09.20-17.48.35:140][277]LogModuleManager: Shutting down and abandoning module InterchangeExport (530)
+[2024.09.20-17.48.35:140][277]LogModuleManager: Shutting down and abandoning module InterchangeMessages (528)
+[2024.09.20-17.48.35:140][277]LogModuleManager: Shutting down and abandoning module GLTFCore (526)
+[2024.09.20-17.48.35:140][277]LogModuleManager: Shutting down and abandoning module UObjectPlugin (524)
+[2024.09.20-17.48.35:140][277]LogModuleManager: Shutting down and abandoning module InterchangeEditorUtilities (522)
+[2024.09.20-17.48.35:140][277]LogModuleManager: Shutting down and abandoning module InterchangeEditorPipelines (520)
+[2024.09.20-17.48.35:141][277]LogModuleManager: Shutting down and abandoning module InterchangeEditor (518)
+[2024.09.20-17.48.35:141][277]LogModuleManager: Shutting down and abandoning module BlendSpaceMotionAnalysis (516)
+[2024.09.20-17.48.35:141][277]LogModuleManager: Shutting down and abandoning module ControlRigSpline (514)
+[2024.09.20-17.48.35:141][277]LogModuleManager: Shutting down and abandoning module AnimationModifierLibrary (512)
+[2024.09.20-17.48.35:141][277]LogModuleManager: Shutting down and abandoning module ACLPluginEditor (510)
+[2024.09.20-17.48.35:142][277]LogModuleManager: Shutting down and abandoning module OodleNetworkHandlerComponent (508)
+[2024.09.20-17.48.35:142][277]LogModuleManager: Shutting down and abandoning module InterchangeTestEditor (506)
+[2024.09.20-17.48.35:142][277]LogModuleManager: Shutting down and abandoning module InterchangeTests (504)
+[2024.09.20-17.48.35:142][277]LogModuleManager: Shutting down and abandoning module VisualStudioSourceCodeAccess (502)
+[2024.09.20-17.48.35:142][277]LogModuleManager: Shutting down and abandoning module VisualStudioCodeSourceCodeAccess (500)
+[2024.09.20-17.48.35:142][277]LogModuleManager: Shutting down and abandoning module SubversionSourceControl (498)
+[2024.09.20-17.48.35:143][277]LogModuleManager: Shutting down and abandoning module GitSourceControl (496)
+[2024.09.20-17.48.35:144][277]LogModuleManager: Shutting down and abandoning module RiderSourceCodeAccess (494)
+[2024.09.20-17.48.35:144][277]LogModuleManager: Shutting down and abandoning module PluginUtils (492)
+[2024.09.20-17.48.35:144][277]LogModuleManager: Shutting down and abandoning module N10XSourceCodeAccess (490)
+[2024.09.20-17.48.35:144][277]LogModuleManager: Shutting down and abandoning module DumpGPUServices (488)
+[2024.09.20-17.48.35:144][277]LogModuleManager: Shutting down and abandoning module CLionSourceCodeAccess (486)
+[2024.09.20-17.48.35:144][277]LogModuleManager: Shutting down and abandoning module AnimationSharingEd (484)
+[2024.09.20-17.48.35:144][277]LogModuleManager: Shutting down and abandoning module EditorTraceUtilities (482)
+[2024.09.20-17.48.35:144][277]LogModuleManager: Shutting down and abandoning module TraceUtilities (480)
+[2024.09.20-17.48.35:144][277]LogModuleManager: Shutting down and abandoning module MeshPaintingToolset (478)
+[2024.09.20-17.48.35:145][277]LogModuleManager: Shutting down and abandoning module MeshPaintEditorMode (476)
+[2024.09.20-17.48.35:146][277]LogModuleManager: Shutting down and abandoning module InputEditor (474)
+[2024.09.20-17.48.35:147][277]LogModuleManager: Shutting down and abandoning module CardslingerPrototype (472)
+[2024.09.20-17.48.35:147][277]LogModuleManager: Shutting down and abandoning module StructUtils (470)
+[2024.09.20-17.48.35:147][277]LogModuleManager: Shutting down and abandoning module PythonScriptPlugin (468)
+[2024.09.20-17.48.35:147][277]LogModuleManager: Shutting down and abandoning module ChaosCachingEditor (466)
+[2024.09.20-17.48.35:147][277]LogModuleManager: Shutting down and abandoning module TakeRecorder (465)
+[2024.09.20-17.48.35:150][277]LogModuleManager: Shutting down and abandoning module ChaosCaching (462)
+[2024.09.20-17.48.35:151][277]LogModuleManager: Shutting down and abandoning module PBIK (460)
+[2024.09.20-17.48.35:151][277]LogModuleManager: Shutting down and abandoning module FullBodyIK (458)
+[2024.09.20-17.48.35:151][277]LogModuleManager: Shutting down and abandoning module Paper2D (456)
+[2024.09.20-17.48.35:151][277]LogModuleManager: Shutting down and abandoning module FacialAnimationEditor (454)
+[2024.09.20-17.48.35:152][277]LogModuleManager: Shutting down and abandoning module FacialAnimation (452)
+[2024.09.20-17.48.35:152][277]LogModuleManager: Shutting down and abandoning module ActorSequence (450)
+[2024.09.20-17.48.35:152][277]LogModuleManager: Shutting down and abandoning module GameplayTagsEditor (448)
+[2024.09.20-17.48.35:153][277]LogModuleManager: Shutting down and abandoning module DataValidation (446)
+[2024.09.20-17.48.35:153][277]LogModuleManager: Shutting down and abandoning module AssetManagerEditor (444)
+[2024.09.20-17.48.35:154][277]LogModuleManager: Shutting down and abandoning module LevelEditor (443)
+[2024.09.20-17.48.35:168][277]LogModuleManager: Shutting down and abandoning module PixelInspectorModule (442)
+[2024.09.20-17.48.35:168][277]LogModuleManager: Shutting down and abandoning module CommonMenuExtensions (440)
+[2024.09.20-17.48.35:171][277]LogModuleManager: Shutting down and abandoning module MainFrame (438)
+[2024.09.20-17.48.35:172][277]LogModuleManager: Shutting down and abandoning module HotReload (437)
+[2024.09.20-17.48.35:173][277]LogModuleManager: Shutting down and abandoning module TreeMap (433)
+[2024.09.20-17.48.35:174][277]LogModuleManager: Shutting down and abandoning module ImgMediaEngine (430)
+[2024.09.20-17.48.35:174][277]LogModuleManager: Shutting down and abandoning module Synthesis (428)
+[2024.09.20-17.48.35:175][277]LogModuleManager: Shutting down and abandoning module SoundFields (426)
+[2024.09.20-17.48.35:175][277]LogModuleManager: Shutting down and abandoning module PropertyAccessEditor (424)
+[2024.09.20-17.48.35:175][277]LogModuleManager: Shutting down and abandoning module SignificanceManager (422)
+[2024.09.20-17.48.35:175][277]LogModuleManager: Shutting down and abandoning module RigVMDeveloper (420)
+[2024.09.20-17.48.35:175][277]LogModuleManager: Shutting down and abandoning module RigVM (418)
+[2024.09.20-17.48.35:175][277]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponent (416)
+[2024.09.20-17.48.35:176][277]LogModuleManager: Shutting down and abandoning module MsQuicRuntime (414)
+[2024.09.20-17.48.35:176][277]LogModuleManager: Shutting down and abandoning module MetasoundEditor (412)
+[2024.09.20-17.48.35:179][277]LogModuleManager: Shutting down and abandoning module AudioWidgets (411)
+[2024.09.20-17.48.35:180][277]LogModuleManager: Shutting down and abandoning module AdvancedWidgets (410)
+[2024.09.20-17.48.35:182][277]LogModuleManager: Shutting down and abandoning module MetasoundEngineTest (406)
+[2024.09.20-17.48.35:182][277]LogModuleManager: Shutting down and abandoning module MetasoundEngine (404)
+[2024.09.20-17.48.35:182][277]LogModuleManager: Shutting down and abandoning module WaveTable (403)
+[2024.09.20-17.48.35:182][277]LogModuleManager: Shutting down and abandoning module AudioCodecEngine (401)
+[2024.09.20-17.48.35:183][277]LogModuleManager: Shutting down and abandoning module MetasoundStandardNodes (398)
+[2024.09.20-17.48.35:184][277]LogModuleManager: Shutting down and abandoning module MetasoundFrontend (396)
+[2024.09.20-17.48.35:190][277]LogModuleManager: Shutting down and abandoning module MetasoundGenerator (394)
+[2024.09.20-17.48.35:190][277]LogModuleManager: Shutting down and abandoning module MetasoundGraphCore (392)
+[2024.09.20-17.48.35:190][277]LogModuleManager: Shutting down and abandoning module LocationServicesBPLibrary (390)
+[2024.09.20-17.48.35:190][277]LogModuleManager: Shutting down and abandoning module CustomMeshComponent (388)
+[2024.09.20-17.48.35:190][277]LogModuleManager: Shutting down and abandoning module CableComponent (386)
+[2024.09.20-17.48.35:190][277]LogModuleManager: Shutting down and abandoning module AudioSynesthesia (384)
+[2024.09.20-17.48.35:190][277]LogModuleManager: Shutting down and abandoning module AudioAnalyzer (383)
+[2024.09.20-17.48.35:190][277]LogModuleManager: Shutting down and abandoning module AudioSynesthesiaCore (380)
+[2024.09.20-17.48.35:190][277]LogModuleManager: Shutting down and abandoning module GameplayCameras (378)
+[2024.09.20-17.48.35:190][277]LogModuleManager: Shutting down and abandoning module NiagaraAnimNotifies (376)
+[2024.09.20-17.48.35:190][277]LogModuleManager: Shutting down and abandoning module Niagara (374)
+[2024.09.20-17.48.35:192][277]LogModuleManager: Shutting down and abandoning module SignalProcessing (373)
+[2024.09.20-17.48.35:193][277]LogModuleManager: Shutting down and abandoning module NiagaraEditor (371)
+[2024.09.20-17.48.35:197][277]LogModuleManager: Shutting down and abandoning module ContentBrowser (370)
+[2024.09.20-17.48.35:197][277]LogModuleManager: Shutting down and abandoning module ToolMenus (369)
+[2024.09.20-17.48.35:197][277]LogModuleManager: Shutting down and abandoning module ContentBrowserData (367)
+[2024.09.20-17.48.35:197][277]LogModuleManager: Shutting down and abandoning module NiagaraCore (362)
+[2024.09.20-17.48.35:197][277]LogModuleManager: Shutting down and abandoning module InterchangePipelines (360)
+[2024.09.20-17.48.35:197][277]LogModuleManager: Shutting down and abandoning module InterchangeImport (358)
+[2024.09.20-17.48.35:197][277]LogModuleManager: Shutting down and abandoning module InterchangeFactoryNodes (356)
+[2024.09.20-17.48.35:198][277]LogModuleManager: Shutting down and abandoning module InterchangeNodes (354)
+[2024.09.20-17.48.35:198][277]LogModuleManager: Shutting down and abandoning module IKRigDeveloper (352)
+[2024.09.20-17.48.35:198][277]LogModuleManager: Shutting down and abandoning module IKRig (350)
+[2024.09.20-17.48.35:198][277]LogModuleManager: Shutting down and abandoning module ControlRigDeveloper (348)
+[2024.09.20-17.48.35:198][277]LogModuleManager: Shutting down and abandoning module ControlRig (346)
+[2024.09.20-17.48.35:198][277]LogModuleManager: Shutting down and abandoning module Constraints (345)
+[2024.09.20-17.48.35:199][277]LogModuleManager: Shutting down and abandoning module LevelSequence (343)
+[2024.09.20-17.48.35:199][277]LogModuleManager: Shutting down and abandoning module UdpMessaging (340)
+[2024.09.20-17.48.35:301][277]LogModuleManager: Shutting down and abandoning module AnimationData (338)
+[2024.09.20-17.48.35:301][277]LogModuleManager: Shutting down and abandoning module TcpMessaging (336)
+[2024.09.20-17.48.35:402][277]LogModuleManager: Shutting down and abandoning module TraceDataFiltering (334)
+[2024.09.20-17.48.35:403][277]LogModuleManager: Shutting down and abandoning module PropertyAccessNode (332)
+[2024.09.20-17.48.35:405][277]LogModuleManager: Shutting down and abandoning module EnvironmentQueryEditor (330)
+[2024.09.20-17.48.35:406][277]LogModuleManager: Shutting down and abandoning module AnimationSharing (328)
+[2024.09.20-17.48.35:406][277]LogModuleManager: Shutting down and abandoning module InputBlueprintNodes (326)
+[2024.09.20-17.48.35:406][277]LogModuleManager: Shutting down and abandoning module BlueprintGraph (325)
+[2024.09.20-17.48.35:406][277]LogModuleManager: Shutting down and abandoning module EnhancedInput (322)
+[2024.09.20-17.48.35:406][277]LogModuleManager: Shutting down and abandoning module WindowsMoviePlayer (320)
+[2024.09.20-17.48.35:858][277]LogModuleManager: Shutting down and abandoning module WebMMoviePlayer (318)
+[2024.09.20-17.48.35:858][277]LogModuleManager: Shutting down and abandoning module AndroidFileServer (316)
+[2024.09.20-17.48.35:858][277]LogModuleManager: Shutting down and abandoning module NetworkReplayStreaming (314)
+[2024.09.20-17.48.35:858][277]LogModuleManager: Shutting down and abandoning module PacketHandler (312)
+[2024.09.20-17.48.35:858][277]LogModuleManager: Shutting down and abandoning module WorldPartitionEditor (310)
+[2024.09.20-17.48.35:862][277]LogModuleManager: Shutting down and abandoning module AnimGraph (308)
+[2024.09.20-17.48.35:863][277]LogModuleManager: Shutting down and abandoning module TimeManagement (306)
+[2024.09.20-17.48.35:863][277]LogModuleManager: Shutting down and abandoning module AnimationDataController (304)
+[2024.09.20-17.48.35:863][277]LogModuleManager: Shutting down and abandoning module ClothingSystemEditor (302)
+[2024.09.20-17.48.35:863][277]LogModuleManager: Shutting down and abandoning module ClothingSystemRuntimeNv (300)
+[2024.09.20-17.48.35:863][277]LogModuleManager: Shutting down and abandoning module MediaAssets (298)
+[2024.09.20-17.48.35:863][277]LogModuleManager: Shutting down and abandoning module Overlay (296)
+[2024.09.20-17.48.35:863][277]LogModuleManager: Shutting down and abandoning module OverlayEditor (295)
+[2024.09.20-17.48.35:863][277]LogModuleManager: Shutting down and abandoning module VREditor (292)
+[2024.09.20-17.48.35:863][277]LogModuleManager: Shutting down and abandoning module StringTableEditor (290)
+[2024.09.20-17.48.35:864][277]LogModuleManager: Shutting down and abandoning module GameplayTasksEditor (288)
+[2024.09.20-17.48.35:864][277]LogModuleManager: Shutting down and abandoning module BehaviorTreeEditor (286)
+[2024.09.20-17.48.35:866][277]LogModuleManager: Shutting down and abandoning module FunctionalTesting (284)
+[2024.09.20-17.48.35:866][277]LogModuleManager: Shutting down and abandoning module CollisionAnalyzer (282)
+[2024.09.20-17.48.35:868][277]LogModuleManager: Shutting down and abandoning module WorkspaceMenuStructure (281)
+[2024.09.20-17.48.35:871][277]LogModuleManager: Shutting down and abandoning module ScriptableEditorWidgets (278)
+[2024.09.20-17.48.35:871][277]LogModuleManager: Shutting down and abandoning module UMG (276)
+[2024.09.20-17.48.35:872][277]LogModuleManager: Shutting down and abandoning module UMGEditor (275)
+[2024.09.20-17.48.35:874][277]LogModuleManager: Shutting down and abandoning module EditorStyle (270)
+[2024.09.20-17.48.35:875][277]LogModuleManager: Shutting down and abandoning module SlateReflector (268)
+[2024.09.20-17.48.35:880][277]LogModuleManager: Shutting down and abandoning module Slate (266)
+[2024.09.20-17.48.35:880][277]LogModuleManager: Shutting down and abandoning module SlateCore (264)
+[2024.09.20-17.48.35:882][277]LogModuleManager: Shutting down and abandoning module SubobjectDataInterface (262)
+[2024.09.20-17.48.35:882][277]LogModuleManager: Shutting down and abandoning module LandscapeEditorUtilities (260)
+[2024.09.20-17.48.35:882][277]LogModuleManager: Shutting down and abandoning module UnrealEd (258)
+[2024.09.20-17.48.35:882][277]LogModuleManager: Shutting down and abandoning module MRMesh (256)
+[2024.09.20-17.48.35:882][277]LogModuleManager: Shutting down and abandoning module Messaging (254)
+[2024.09.20-17.48.35:882][277]LogModuleManager: Shutting down and abandoning module SourceCodeAccess (252)
+[2024.09.20-17.48.35:883][277]LogModuleManager: Shutting down and abandoning module HeadMountedDisplay (250)
+[2024.09.20-17.48.35:883][277]LogModuleManager: Shutting down and abandoning module LiveCoding (248)
+[2024.09.20-17.48.35:898][277]LogModuleManager: Shutting down and abandoning module Networking (246)
+[2024.09.20-17.48.35:898][277]LogModuleManager: Shutting down and abandoning module Core (244)
+[2024.09.20-17.48.35:898][277]LogModuleManager: Shutting down and abandoning module AssetDefinition (242)
+[2024.09.20-17.48.35:898][277]LogModuleManager: Shutting down and abandoning module MovieSceneTools (240)
+[2024.09.20-17.48.35:901][277]LogModuleManager: Shutting down and abandoning module CurveEditor (239)
+[2024.09.20-17.48.35:904][277]LogModuleManager: Shutting down and abandoning module Sequencer (237)
+[2024.09.20-17.48.35:909][277]LogModuleManager: Shutting down and abandoning module KismetCompiler (234)
+[2024.09.20-17.48.35:909][277]LogModuleManager: Shutting down and abandoning module MeshBuilder (232)
+[2024.09.20-17.48.35:909][277]LogModuleManager: Shutting down and abandoning module NaniteBuilder (230)
+[2024.09.20-17.48.35:909][277]LogModuleManager: Shutting down and abandoning module MeshUtilities (228)
+[2024.09.20-17.48.35:912][277]LogModuleManager: Shutting down and abandoning module MeshMergeUtilities (227)
+[2024.09.20-17.48.35:912][277]LogModuleManager: Shutting down and abandoning module StaticMeshDescription (226)
+[2024.09.20-17.48.35:912][277]LogModuleManager: Shutting down and abandoning module GeometryProcessingInterfaces (225)
+[2024.09.20-17.48.35:912][277]LogModuleManager: Shutting down and abandoning module MeshReductionInterface (222)
+[2024.09.20-17.48.35:912][277]LogModuleManager: Shutting down and abandoning module MeshBoneReduction (221)
+[2024.09.20-17.48.35:912][277]LogModuleManager: Shutting down and abandoning module SkeletalMeshReduction (219)
+[2024.09.20-17.48.35:913][277]LogModuleManager: Shutting down and abandoning module ProxyLODMeshReduction (217)
+[2024.09.20-17.48.35:918][277]LogModuleManager: Shutting down and abandoning module QuadricMeshReduction (215)
+[2024.09.20-17.48.35:918][277]LogModuleManager: Shutting down and abandoning module MaterialBaking (211)
+[2024.09.20-17.48.35:919][277]LogModuleManager: Shutting down and abandoning module TargetDeviceServices (208)
+[2024.09.20-17.48.35:931][277]LogModuleManager: Shutting down and abandoning module TelemetryUtils (205)
+[2024.09.20-17.48.35:931][277]LogModuleManager: Shutting down and abandoning module NullInstallBundleManager (202)
+[2024.09.20-17.48.35:931][277]LogModuleManager: Shutting down and abandoning module ShaderPreprocessor (200)
+[2024.09.20-17.48.35:931][277]LogModuleManager: Shutting down and abandoning module DerivedDataCache (198)
+[2024.09.20-17.48.35:986][277]LogModuleManager: Shutting down and abandoning module TargetPlatform (196)
+[2024.09.20-17.48.35:986][277]LogModuleManager: Shutting down and abandoning module MetalShaderFormat (195)
+[2024.09.20-17.48.35:987][277]LogModuleManager: Shutting down and abandoning module VulkanShaderFormat (193)
+[2024.09.20-17.48.35:991][277]LogModuleManager: Shutting down and abandoning module ShaderFormatOpenGL (191)
+[2024.09.20-17.48.35:991][277]LogModuleManager: Shutting down and abandoning module ShaderFormatD3D (189)
+[2024.09.20-17.48.35:991][277]LogModuleManager: Shutting down and abandoning module ShaderFormatVectorVM (187)
+[2024.09.20-17.48.35:992][277]LogModuleManager: Shutting down and abandoning module AudioFormatBINK (185)
+[2024.09.20-17.48.35:992][277]LogModuleManager: Shutting down and abandoning module AudioFormatADPCM (183)
+[2024.09.20-17.48.35:993][277]LogModuleManager: Shutting down and abandoning module AudioFormatOGG (181)
+[2024.09.20-17.48.35:993][277]LogModuleManager: Shutting down and abandoning module AudioFormatOPUS (179)
+[2024.09.20-17.48.35:994][277]LogModuleManager: Shutting down and abandoning module WindowsTargetPlatform (177)
+[2024.09.20-17.48.35:995][277]LogModuleManager: Shutting down and abandoning module TVOSTargetPlatform (175)
+[2024.09.20-17.48.35:995][277]LogModuleManager: Shutting down and abandoning module MacTargetPlatform (173)
+[2024.09.20-17.48.35:996][277]LogModuleManager: Shutting down and abandoning module LinuxArm64TargetPlatform (171)
+[2024.09.20-17.48.35:997][277]LogModuleManager: Shutting down and abandoning module LinuxTargetPlatform (169)
+[2024.09.20-17.48.35:997][277]LogModuleManager: Shutting down and abandoning module IOSTargetPlatform (167)
+[2024.09.20-17.48.35:997][277]LogModuleManager: Shutting down and abandoning module AndroidTargetPlatform (165)
+[2024.09.20-17.48.36:006][277]LogModuleManager: Shutting down and abandoning module TextureFormat (163)
+[2024.09.20-17.48.36:006][277]LogModuleManager: Shutting down and abandoning module ImageWrapper (162)
+[2024.09.20-17.48.36:006][277]LogModuleManager: Shutting down and abandoning module TextureFormatOodle (160)
+[2024.09.20-17.48.36:016][277]LogModuleManager: Shutting down and abandoning module TextureFormatUncompressed (158)
+[2024.09.20-17.48.36:016][277]LogModuleManager: Shutting down and abandoning module TextureFormatIntelISPCTexComp (156)
+[2024.09.20-17.48.36:017][277]LogModuleManager: Shutting down and abandoning module TextureFormatETC2 (154)
+[2024.09.20-17.48.36:017][277]LogModuleManager: Shutting down and abandoning module TextureFormatDXT (152)
+[2024.09.20-17.48.36:018][277]LogModuleManager: Shutting down and abandoning module TextureFormatASTC (150)
+[2024.09.20-17.48.36:018][277]LogModuleManager: Shutting down and abandoning module TurnkeySupport (147)
+[2024.09.20-17.48.36:018][277]LogModuleManager: Shutting down and abandoning module InputCore (144)
+[2024.09.20-17.48.36:018][277]LogModuleManager: Shutting down and abandoning module Settings (142)
+[2024.09.20-17.48.36:018][277]LogModuleManager: Shutting down and abandoning module DirectoryWatcher (140)
+[2024.09.20-17.48.36:026][277]LogModuleManager: Shutting down and abandoning module ChaosSolverEngine (138)
+[2024.09.20-17.48.36:026][277]LogModuleManager: Shutting down and abandoning module FieldSystemEngine (137)
+[2024.09.20-17.48.36:026][277]LogModuleManager: Shutting down and abandoning module Chaos (134)
+[2024.09.20-17.48.36:026][277]LogModuleManager: Shutting down and abandoning module GeometryCore (133)
+[2024.09.20-17.48.36:027][277]LogModuleManager: Shutting down and abandoning module WindowsPlatformFeatures (130)
+[2024.09.20-17.48.36:027][277]LogModuleManager: Shutting down and abandoning module GameplayMediaEncoder (129)
+[2024.09.20-17.48.36:027][277]LogModuleManager: Shutting down and abandoning module AVEncoder (128)
+[2024.09.20-17.48.36:027][277]LogModuleManager: Shutting down and abandoning module D3D12RHI (124)
+[2024.09.20-17.48.36:027][277]LogModuleManager: Shutting down and abandoning module ChaosCloth (122)
+[2024.09.20-17.48.36:028][277]LogModuleManager: Shutting down and abandoning module VariantManagerContent (120)
+[2024.09.20-17.48.36:028][277]LogModuleManager: Shutting down and abandoning module GLTFExporter (118)
+[2024.09.20-17.48.36:028][277]LogModuleManager: Shutting down and abandoning module DatasmithContent (116)
+[2024.09.20-17.48.36:029][277]LogModuleManager: Shutting down and abandoning module WmfMedia (114)
+[2024.09.20-17.48.36:036][277]LogModuleManager: Shutting down and abandoning module Media (113)
+[2024.09.20-17.48.36:041][277]LogModuleManager: Shutting down and abandoning module ExrReaderGpu (110)
+[2024.09.20-17.48.36:041][277]LogModuleManager: Shutting down and abandoning module WindowsDeviceProfileSelector (108)
+[2024.09.20-17.48.36:041][277]LogModuleManager: Shutting down and abandoning module ChunkDownloader (106)
+[2024.09.20-17.48.36:042][277]LogModuleManager: Shutting down and abandoning module ExampleDeviceProfileSelector (104)
+[2024.09.20-17.48.36:042][277]LogModuleManager: Shutting down and abandoning module NiagaraVertexFactories (102)
+[2024.09.20-17.48.36:042][277]LogModuleManager: Shutting down and abandoning module NiagaraShader (100)
+[2024.09.20-17.48.36:042][277]LogModuleManager: Shutting down and abandoning module OnlineBlueprintSupport (98)
+[2024.09.20-17.48.36:042][277]LogModuleManager: Shutting down and abandoning module OnlineSubsystemUtils (96)
+[2024.09.20-17.48.36:043][277]LogModuleManager: Shutting down and abandoning module OnlineSubsystem (94)
+[2024.09.20-17.48.36:048][277]LogModuleManager: Shutting down and abandoning module XMPP (89)
+[2024.09.20-17.48.36:049][277]LogModuleManager: Shutting down and abandoning module WebSockets (88)
+[2024.09.20-17.48.36:076][277]LogModuleManager: Shutting down and abandoning module HTTP (85)
+[2024.09.20-17.48.36:076][277]LogHttp: Warning: [FHttpManager::Shutdown] Unbinding delegates for 1 outstanding Http Requests:
+[2024.09.20-17.48.36:076][277]LogHttp: Warning: 	verb=[POST] url=[https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7BDD2A14DE-4F40-8326-B585-23A1A0BFAA33%7D&AppID=UEEditor.Rocket.Release&AppVersion=5.3.2-29314046%2B%2B%2BUE5%2BRelease-5.3&UserID=f11afd3e4c6f8243176a289b51324d7f%7C5e5e48d375cd4672aa720f01c96c2adf%7C6b56d185-088e-4fb0-ad09-236dfa8933ce&AppEnvironment=datacollector-binary&UploadType=eteventstream] refs=[1] status=Processing
+[2024.09.20-17.48.36:120][277]LogModuleManager: Shutting down and abandoning module SSL (84)
+[2024.09.20-17.48.36:131][277]LogModuleManager: Shutting down and abandoning module OnlineServicesCommonEngineUtils (80)
+[2024.09.20-17.48.36:131][277]LogModuleManager: Shutting down and abandoning module OnlineServicesCommon (78)
+[2024.09.20-17.48.36:131][277]LogModuleManager: Shutting down and abandoning module OnlineServicesInterface (76)
+[2024.09.20-17.48.36:131][277]LogModuleManager: Shutting down and abandoning module ACLPlugin (74)
+[2024.09.20-17.48.36:132][277]LogModuleManager: Shutting down and abandoning module RenderDocPlugin (72)
+[2024.09.20-17.48.36:132][277]RenderDocPlugin: plugin has been unloaded.
+[2024.09.20-17.48.36:132][277]LogModuleManager: Shutting down and abandoning module PixWinPlugin (70)
+[2024.09.20-17.48.36:133][277]LogModuleManager: Shutting down and abandoning module AISupportModule (68)
+[2024.09.20-17.48.36:133][277]LogModuleManager: Shutting down and abandoning module LauncherChunkInstaller (66)
+[2024.09.20-17.48.36:133][277]LogModuleManager: Shutting down and abandoning module DesktopPlatform (64)
+[2024.09.20-17.48.36:133][277]LogModuleManager: Shutting down and abandoning module PlatformCryptoOpenSSL (62)
+[2024.09.20-17.48.36:133][277]LogModuleManager: Shutting down and abandoning module PlatformCryptoTypes (60)
+[2024.09.20-17.48.36:133][277]LogModuleManager: Shutting down and abandoning module PlatformCrypto (58)
+[2024.09.20-17.48.36:133][277]LogModuleManager: Shutting down and abandoning module PythonScriptPluginPreload (56)
+[2024.09.20-17.48.36:133][277]LogModuleManager: Shutting down and abandoning module PerforceSourceControl (54)
+[2024.09.20-17.48.36:134][277]LogModuleManager: Shutting down and abandoning module PlasticSourceControl (52)
+[2024.09.20-17.48.36:134][277]LogModuleManager: Shutting down and abandoning module SourceControl (51)
+[2024.09.20-17.48.36:134][277]LogModuleManager: Shutting down and abandoning module XGEController (48)
+[2024.09.20-17.48.36:134][277]LogXGEController: Cleaning working directory: C:/Users/Mikolaj/AppData/Local/Temp/UnrealXGEWorkingDir/
+[2024.09.20-17.48.36:135][277]LogModuleManager: Shutting down and abandoning module FastBuildController (46)
+[2024.09.20-17.48.36:135][277]LogModuleManager: Shutting down and abandoning module IoStoreOnDemand (44)
+[2024.09.20-17.48.36:135][277]LogModuleManager: Shutting down and abandoning module AnimationModifiers (42)
+[2024.09.20-17.48.36:137][277]LogModuleManager: Shutting down and abandoning module AudioEditor (40)
+[2024.09.20-17.48.36:139][277]LogModuleManager: Shutting down and abandoning module PropertyEditor (39)
+[2024.09.20-17.48.36:146][277]LogModuleManager: Shutting down and abandoning module Virtualization (36)
+[2024.09.20-17.48.36:146][277]LogModuleManager: Shutting down and abandoning module MessageLog (35)
+[2024.09.20-17.48.36:146][277]LogModuleManager: Shutting down and abandoning module TextureCompressor (32)
+[2024.09.20-17.48.36:146][277]LogModuleManager: Shutting down and abandoning module OpenColorIOWrapper (31)
+[2024.09.20-17.48.36:146][277]LogModuleManager: Shutting down and abandoning module RenderCore (28)
+[2024.09.20-17.48.36:146][277]LogModuleManager: Shutting down and abandoning module Landscape (26)
+[2024.09.20-17.48.36:146][277]LogModuleManager: Shutting down and abandoning module SlateRHIRenderer (24)
+[2024.09.20-17.48.36:150][277]LogModuleManager: Shutting down and abandoning module AnimGraphRuntime (22)
+[2024.09.20-17.48.36:150][277]LogModuleManager: Shutting down and abandoning module Renderer (20)
+[2024.09.20-17.48.36:151][277]LogModuleManager: Shutting down and abandoning module Engine (18)
+[2024.09.20-17.48.36:151][277]LogModuleManager: Shutting down and abandoning module CoreUObject (16)
+[2024.09.20-17.48.36:151][277]LogModuleManager: Shutting down and abandoning module SandboxFile (14)
+[2024.09.20-17.48.36:151][277]LogModuleManager: Shutting down and abandoning module PakFile (12)
+[2024.09.20-17.48.36:151][277]LogPakFile: Destroying PakPlatformFile
+[2024.09.20-17.48.36:152][277]LogModuleManager: Shutting down and abandoning module RSA (11)
+[2024.09.20-17.48.36:152][277]LogModuleManager: Shutting down and abandoning module NetworkFile (8)
+[2024.09.20-17.48.36:152][277]LogModuleManager: Shutting down and abandoning module StreamingFile (6)
+[2024.09.20-17.48.36:152][277]LogModuleManager: Shutting down and abandoning module CookOnTheFly (4)
+[2024.09.20-17.48.36:152][277]LogModuleManager: Shutting down and abandoning module StorageServerClient (2)
+[2024.09.20-17.48.36:472][277]LogD3D12RHI: ~FD3D12DynamicRHI
+[2024.09.20-17.48.36:556][277]LogExit: Exiting.
+[2024.09.20-17.48.36:743][277]Log file closed, 09/20/24 18:48:36
