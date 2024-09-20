@@ -7,6 +7,7 @@
 #include "NiagaraComponent.h"
 #include "BaseAIClass.h"
 #include "Engine/DamageEvents.h"
+#include "Components/SkeletalMeshComponent.h"
 
 void AConcussiveProjectileCard::OnHit(UPrimitiveComponent* HitComponent, AActor* OtherActor, UPrimitiveComponent* OtherComponent, FVector NormalImpulse, const FHitResult& Hit)
 {
@@ -60,6 +61,10 @@ void AConcussiveProjectileCard::ConcussionSphere()
     AffectedEnemies = FindActorsInRange(ABaseAIClass::StaticClass(), CardExplosionRadius);
     for(AActor* Actor : AffectedEnemies)
     {
-        Cast<ABaseAIClass>(Actor)->SetRagdollMode(true, 2.0f);
+        ABaseAIClass* Enemy = Cast<ABaseAIClass>(Actor);
+        Enemy->SetRagdollMode(true, 2.0f);
+        FVector ImpulseDirection = Enemy->GetActorLocation() - GetActorLocation();
+        ImpulseDirection.Normalize();
+        Enemy->GetMesh()->AddImpulse(ImpulseDirection * CardPushForce);
     }
 }
