@@ -25,6 +25,7 @@ void ASlowTimeProjectileCard::OnHit(UPrimitiveComponent* HitComponent, AActor* O
 void ASlowTimeProjectileCard::Tick(float DeltaTime)
 {
     Super::Tick(DeltaTime);
+    //if card has not collided with anything but reaches its target, enable slow time effect anyway
     if(FVector::Dist(GetActorLocation(), TargetLocation) == 0 && GetActorEnableCollision()) 
     {
     SlowTimeSphere();
@@ -36,26 +37,14 @@ void ASlowTimeProjectileCard::Tick(float DeltaTime)
 void ASlowTimeProjectileCard::SlowTimeSphere()
 {
     //DrawDebugSphere(GetWorld(), GetActorLocation(), CardSlowTimeRadius, 32, FColor::Blue, true, 100.0f);
+
+    //get all enemies in range and enable slow time effect
     AffectedEnemies = FindActorsInRange(ABaseAIClass::StaticClass(), CardSlowTimeRadius);
     for(AActor* Actor : AffectedEnemies)
     {
         Actor->CustomTimeDilation = CardSlowDilationValue;
-        Cast<ABaseAIClass>(Actor)->EnableSlowEffect(true);
+        Cast<ABaseAIClass>(Actor)->EnableSlowEffect(true, CardSlowDuration);
     }
-    FTimerHandle TimeResetHandle;
-    GetWorldTimerManager().SetTimer(TimeResetHandle, this, &ASlowTimeProjectileCard::ResetTimeDilation, CardSlowDuration);
-}
-
-void ASlowTimeProjectileCard::ResetTimeDilation()
-{
-    for(AActor* Actor : AffectedEnemies)
-    {
-        if(!Actor)
-        {
-            return;
-        }
-        Actor->CustomTimeDilation = 1.0f;
-        Cast<ABaseAIClass>(Actor)->EnableSlowEffect(false);
-    }
+    //destroy card once effect is activated
     DestroyCard();
 }

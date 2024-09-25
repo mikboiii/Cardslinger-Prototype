@@ -128,7 +128,9 @@ bool ABaseAIClass::HitTrace(FHitResult& Hit, FVector& ShotDirection)
 	FCollisionQueryParams Params;
 	Params.AddIgnoredActor(this);
 	Params.AddIgnoredActor(GetOwner());
+	
 	//DrawDebugLine(GetWorld(), ViewLocation, End, FColor::Red, true, 100.0f);
+
 	//shoot line trace
 	return GetWorld()->LineTraceSingleByChannel(Hit, ViewLocation, End, ECollisionChannel::ECC_GameTraceChannel1, Params);
 }
@@ -257,8 +259,9 @@ void ABaseAIClass::SetRagdollMode(bool bIsRagdollMode, float RagdollTime=2.0f)
 	}
 }
 
-void ABaseAIClass::EnableSlowEffect(bool bIsSlow)
+void ABaseAIClass::EnableSlowEffect(bool bIsSlow, float TimeSlowed)
 {
+	bIsSlowed = bIsSlow;
 	//turn on slow effect shader
 	GetComponentByClass<UPostProcessComponent>()->bEnabled = bIsSlow;
 	//get controller
@@ -267,6 +270,13 @@ void ABaseAIClass::EnableSlowEffect(bool bIsSlow)
 	{
 		//set actor stencil value to the slow effect shader
 		GetMesh()->SetCustomDepthStencilValue(2);
+
+		//clear slow time timer
+		GetWorldTimerManager().ClearTimer(TimeResetHandle);
+		//create delegate to allow parameters in timer function
+		FTimerDelegate TimeSlowDelegate = FTimerDelegate::CreateUObject(this, &ABaseAIClass::EnableSlowEffect, false, 0.0f);
+		//set timer until debuff clears
+		GetWorldTimerManager().SetTimer(TimeResetHandle, TimeSlowDelegate, TimeSlowed, false);
 	}
 	else
 	{ 
