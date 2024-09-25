@@ -193,36 +193,50 @@ void ABaseCharacterClass::Pause(const FInputActionValue& Value)
 	PC->PauseLevel();	
 }
 
-
+/// @brief Very quickly displaces the character in the direction of their input
 void ABaseCharacterClass::Dash()
 {
+	//do nothing if dashing is impossible or if the curve does not exist (error catch)
 	if((bIsDashing || !bCanDash) || !DashCurve) return;
 	bIsDashing = true;
 	bCanDash = false;
 
+	//Get player input vector to determine direction
 	FVector DashDirection = GetLastMovementInputVector().GetSafeNormal2D();
-
 	DashStartLocation = GetActorLocation();
+	//calculate dash end location based on dash parameters
 	DashEndLocation = DashStartLocation + DashDirection * DashDistance;
 	FTimerHandle DashCooldownHandle;
+	//start dash cooldown timer
 	GetWorldTimerManager().SetTimer(DashCooldownHandle, this, &ABaseCharacterClass::DashCooldownFunction, DashCooldown);
 	DashRecharge = 0.0f;
+	//start dash timeline
 	DashTimeline->PlayFromStart();
+	//reverse dash direction (to make it go in the actual direction)
 	DashDirection *= -1;
+	//set dash spring arm in the same direction as the dash
 	DashSpringArm->SetWorldRotation(DashDirection.Rotation());
+	//play the dash effect (speed lines)
 	DashEmitter->Activate();
+	//play camera shake
 	if(DashShake) PlayerCameraShakeSource->StartCameraShake(DashShake);
+	//Set player velocity to the same as the dash (to maintain momentum)
 	GetMovementComponent()->Velocity = DashDirection * -DashSpeed;
 }
 
+/// @brief Indicate that the dash timeline has finished
 void ABaseCharacterClass::DashEndFunction()
 {
 	bIsDashing = false;
 }
 
+/// @brief Function to move player along the dash
+/// @param Value The position on the timeline curve (to determine how far along the curve the dash has progressed)
 void ABaseCharacterClass::UpdateDash(float Value)
 {
+	//interpolate the player position based on dash completeness
 	FVector NewLocation = FMath::Lerp(DashStartLocation, DashEndLocation, Value);
+	//set player location
 	SetActorLocation(NewLocation, true);
 }
 
