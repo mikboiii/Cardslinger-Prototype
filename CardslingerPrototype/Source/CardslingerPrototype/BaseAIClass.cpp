@@ -226,29 +226,36 @@ void ABaseAIClass::SetRagdollMode(bool bIsRagdollMode, float RagdollTime=2.0f)
 
 void ABaseAIClass::EnableSlowEffect(bool bIsSlow)
 {
+	//turn on slow effect shader
 	GetComponentByClass<UPostProcessComponent>()->bEnabled = bIsSlow;
+	//get controller
 	ThisController = Cast<ABaseAIController>(GetController());
 	if(bIsSlow) 
 	{
+		//set actor stencil value to the slow effect shader
 		GetMesh()->SetCustomDepthStencilValue(2);
 	}
 	else
 	{ 
+		//set to neutral stencil (no effect)
 		GetMesh()->SetCustomDepthStencilValue(1);
 	}
 	if(bIsSlow && ThisController)
 	{
+		//slow shot delay 
 		ThisController->GetBlackboardComponent()->SetValueAsFloat(TEXT("FireCooldown"), FireCooldown / GetActorTimeDilation());
 		TimePerShot /= GetActorTimeDilation();
 	}
 	else if(!bIsSlow && ThisController)
 	{
+		//reset shot delay
 		ThisController->GetBlackboardComponent()->SetValueAsFloat(TEXT("FireCooldown"), FireCooldown);
 		TimePerShot = BaseTimePerShot;
 	}
 
 	for(AEnemyProjectile* ActiveBullet : ActiveBullets)
 	{
+		//enable/disable slow effect for all active bullets belonging to this enemy
 		if(ActiveBullet) ActiveBullet->EnableSlowEffect(bIsSlow);
 		else ActiveBullets.Remove(ActiveBullet);
 	}
