@@ -23,9 +23,9 @@ class CARDSLINGERPROTOTYPE_API AConcussiveProjectileCard : public AProjectileCar
 		//the radius of the card explosion
 		UPROPERTY(EditAnywhere)
 		float CardExplosionRadius = 300.0f;
-		UPROPERTY(EditAnywhere)
+		UPROPERTY(EditAnywhere, meta=(Tooltip="This is the force applied to enemies caught in the explosion radius"))
 		float CardPushForce = 10000.0f;
-		UPROPERTY(EditAnywhere)
+		UPROPERTY(EditAnywhere, meta=(Tooltip="This is how long the enemies remain in ragdoll mode"))
 		float RagdollTime = 2.0f;
 
 		void ConcussionSphere();
