@@ -376,29 +376,42 @@ void ABaseCharacterClass::ShootMultiple()
 {
 	if(CanFire)
 	{
+		//creates temporary fire delay variable to account for time between last shot fired and the first shot of the next volley
 		float TempFireDelay = FireDelay;
+		//creates int of the number of cards to fire
 		int32 CardsToFire {CardsPerShot};
+		//spool cards if charge mode is enabled (only works when staggered firing is enabled)
 		if(bIsChargeMode)
 		{
+			//do nothing if no cards charged
 			if(CardsCharged < 1) return;
+			//set number of card to fire to the amount spooled
 			CardsToFire = CardsCharged;
+			//reset values
 			CardsCharged = 0;
 			CardCharge = 0.0f;
 		}
+		//if cards are set to staggered (fire in order) then start firing sequence
 		if(bIsStaggeredFiring)
 		{
+			//cannot fire when cards are shooting
 			CanFire = false;
 			for(int32 i = 0; i <= CardsToFire; i++)
 			{
 				FTimerHandle StaggerFireHandle;
+				//set timer for each card, delayed by their position in order
 				GetWorldTimerManager().SetTimer(StaggerFireHandle, this, &ABaseCharacterClass::Shoot, StaggerDelay * i);
 			}
+			//get number of cards to fire
 			float FloatCardsToFire = CardsToFire;
+			//calculate actual delay for fire cooldown
 			TempFireDelay += StaggerDelay * FloatCardsToFire;
+			//start cooldown timer
 			GetWorldTimerManager().SetTimer(AutoFireManager, this, &ABaseCharacterClass::FireCooldown, TempFireDelay);
 		}
 		else
 		{
+			//if no specific firing modes are active, fire one card
 			Shoot();
 			CanFire = false;
 			GetWorldTimerManager().SetTimer(AutoFireManager, this, &ABaseCharacterClass::FireCooldown, FireDelay);
