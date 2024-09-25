@@ -136,27 +136,42 @@ void ABaseAIClass::Shoot()
 	FHitResult Hit;
 	FVector ShotDirection;
 	AController* OwnerController = GetController();
+	//error catch
 	if(OwnerController == nullptr) return;
+	//only fire if the shot impacts something or if the enemies have predictive aiming (often aimed into empty space to track moving targets)
 	if(HitTrace(Hit, ShotDirection) || bIsPredictiveAiming)
 	{
+
+	//i honestly forgot what this code was for but i'm scared to get rid of it:
 	//UGameplayStatics::PlaySoundAtLocation(GetWorld(), ImpactSound, Hit.Location);
 	//FPointDamageEvent DamageEvent(Damage, Hit, ShotDirection, nullptr);
 	//AActor* HitActor = Hit.GetActor();
 	//if(HitActor == nullptr) return;
 	//HitActor->TakeDamage(Damage, DamageEvent, OwnerController, this);
 	//ShotDirection *= -1;
+
+	//get shot spawn location in world space
 	ShootLocation = GetMesh()->GetBoneLocation(TEXT("gun_barrel"), EBoneSpaces::WorldSpace);
+	//determine the upper and lower bound for aim variance
 	float LowerBound = 1 - AccuracyModifier;
 	float UpperBound = 1 + AccuracyModifier;
+	//create aim offset to mimic innacuracy
 	FVector RandomAimOffset = FVector(FMath::RandRange(LowerBound,UpperBound), 
 	FMath::RandRange(LowerBound,UpperBound), 
 	FMath::RandRange(LowerBound,UpperBound));
+	//apply aim variance
 	ShotDirection *= RandomAimOffset;
+	//spawn bullet and apply transform
 	AEnemyProjectile* Projectile = GetWorld()->SpawnActor<AEnemyProjectile>(Bullet, ShootLocation, ShotDirection.Rotation());
+	//apply velocity to the bullet
 	Projectile->SetBulletSpeed(BulletSpeed);
+	//if slow shader is active, enable slow effect for bullet
 	if(GetComponentByClass<UPostProcessComponent>()->bEnabled) Projectile->EnableSlowEffect(true);
+	//set owner of bullet to this enemy
 	Projectile->SetOwnerClass(this);
+	//add bullet to list of active bullets
 	ActiveBullets.Emplace(Projectile);
+	//spawn muzzle flash
 	UNiagaraFunctionLibrary::SpawnSystemAtLocation(GetWorld(), MuzzleFlash, GetMesh()->GetBoneLocation(TEXT("gun_barrel")), ShotDirection.Rotation(), FVector::One(), true, true, ENCPoolMethod::None, true);
 	}
 }
