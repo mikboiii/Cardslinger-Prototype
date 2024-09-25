@@ -46,36 +46,6 @@ void ASlowTimeProjectileCard::SlowTimeSphere()
     GetWorldTimerManager().SetTimer(TimeResetHandle, this, &ASlowTimeProjectileCard::ResetTimeDilation, CardSlowDuration);
 }
 
-TArray<AActor*> ASlowTimeProjectileCard::FindActorsInRange(UClass* ActorClass, float Radius)
-{
-    TArray<AActor*> OverlappingActors;
-    TArray<AActor*> FoundActors;
-
-    // Perform the sphere overlap
-    bool bHasOverlaps = UKismetSystemLibrary::SphereOverlapActors(
-        this,
-        GetActorLocation(),
-        Radius,
-        { EObjectTypeQuery::ObjectTypeQuery3 }, // ObjectTypeQuery3 is WorldDynamic by default, adjust as needed
-        ActorClass,
-        TArray<AActor*>(), // Actors to ignore
-        OverlappingActors
-    );
-
-    if (bHasOverlaps)
-    {
-        for (AActor* Actor : OverlappingActors)
-        {
-            if (Actor && Actor->IsA(ActorClass))
-            {
-                FoundActors.Add(Actor);
-            }
-        }
-    }
-
-    return FoundActors;
-}
-
 void ASlowTimeProjectileCard::ResetTimeDilation()
 {
     for(AActor* Actor : AffectedEnemies)

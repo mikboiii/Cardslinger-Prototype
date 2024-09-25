@@ -165,3 +165,33 @@ void AProjectileCard::CalculateCurveControlPoint()
 	y *= UKismetMathLibrary::RandomFloatInRange(MinCurveRadius, MaxCurveRadius);
 	CurvedPoint = MidPoint + UKismetMathLibrary::RotateAngleAxis(y, UKismetMathLibrary::RandomFloatInRange(MinAngle, MaxAngle), x);
 }
+
+TArray<AActor*> AProjectileCard::FindActorsInRange(UClass* ActorClass, float Radius)
+{
+    TArray<AActor*> OverlappingActors;
+    TArray<AActor*> FoundActors;
+
+    // Perform the sphere overlap
+    bool bHasOverlaps = UKismetSystemLibrary::SphereOverlapActors(
+        this,
+        GetActorLocation(),
+        Radius,
+        { EObjectTypeQuery::ObjectTypeQuery3 }, // ObjectTypeQuery3 is WorldDynamic by default, adjust as needed
+        ActorClass,
+        TArray<AActor*>(), // Actors to ignore
+        OverlappingActors
+    );
+
+    if (bHasOverlaps)
+    {
+        for (AActor* Actor : OverlappingActors)
+        {
+            if (Actor && Actor->IsA(ActorClass))
+            {
+                FoundActors.Add(Actor);
+            }
+        }
+    }
+
+    return FoundActors;
+}

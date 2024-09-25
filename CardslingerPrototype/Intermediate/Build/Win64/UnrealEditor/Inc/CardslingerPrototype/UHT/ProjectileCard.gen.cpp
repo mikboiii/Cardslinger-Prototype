@@ -12,6 +12,8 @@ void EmptyLinkFunctionForGeneratedCodeProjectileCard() {}
 // Cross Module References
 	CARDSLINGERPROTOTYPE_API UClass* Z_Construct_UClass_AProjectileCard();
 	CARDSLINGERPROTOTYPE_API UClass* Z_Construct_UClass_AProjectileCard_NoRegister();
+	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
+	COREUOBJECT_API UClass* Z_Construct_UClass_UObject_NoRegister();
 	COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FVector();
 	ENGINE_API UClass* Z_Construct_UClass_AActor();
 	ENGINE_API UClass* Z_Construct_UClass_AActor_NoRegister();
@@ -23,6 +25,15 @@ void EmptyLinkFunctionForGeneratedCodeProjectileCard() {}
 	NIAGARA_API UClass* Z_Construct_UClass_UNiagaraSystem_NoRegister();
 	UPackage* Z_Construct_UPackage__Script_CardslingerPrototype();
 // End Cross Module References
+	DEFINE_FUNCTION(AProjectileCard::execFindActorsInRange)
+	{
+		P_GET_OBJECT(UClass,Z_Param_ActorClass);
+		P_GET_PROPERTY(FFloatProperty,Z_Param_Radius);
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		*(TArray<AActor*>*)Z_Param__Result=P_THIS->FindActorsInRange(Z_Param_ActorClass,Z_Param_Radius);
+		P_NATIVE_END;
+	}
 	DEFINE_FUNCTION(AProjectileCard::execCalculateCurveControlPoint)
 	{
 		P_FINISH;
@@ -55,6 +66,7 @@ void EmptyLinkFunctionForGeneratedCodeProjectileCard() {}
 		static const FNameNativePtrPair Funcs[] = {
 			{ "CalculateCurveControlPoint", &AProjectileCard::execCalculateCurveControlPoint },
 			{ "CalculateMidPoint", &AProjectileCard::execCalculateMidPoint },
+			{ "FindActorsInRange", &AProjectileCard::execFindActorsInRange },
 			{ "OnHit", &AProjectileCard::execOnHit },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
@@ -100,6 +112,51 @@ void EmptyLinkFunctionForGeneratedCodeProjectileCard() {}
 		if (!ReturnFunction)
 		{
 			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_AProjectileCard_CalculateMidPoint_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_AProjectileCard_FindActorsInRange_Statics
+	{
+		struct ProjectileCard_eventFindActorsInRange_Parms
+		{
+			UClass* ActorClass;
+			float Radius;
+			TArray<AActor*> ReturnValue;
+		};
+		static const UECodeGen_Private::FClassPropertyParams NewProp_ActorClass;
+		static const UECodeGen_Private::FFloatPropertyParams NewProp_Radius;
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_ReturnValue_Inner;
+		static const UECodeGen_Private::FArrayPropertyParams NewProp_ReturnValue;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UECodeGen_Private::FClassPropertyParams Z_Construct_UFunction_AProjectileCard_FindActorsInRange_Statics::NewProp_ActorClass = { "ActorClass", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ProjectileCard_eventFindActorsInRange_Parms, ActorClass), Z_Construct_UClass_UClass, Z_Construct_UClass_UObject_NoRegister, METADATA_PARAMS(0, nullptr) };
+	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_AProjectileCard_FindActorsInRange_Statics::NewProp_Radius = { "Radius", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ProjectileCard_eventFindActorsInRange_Parms, Radius), METADATA_PARAMS(0, nullptr) };
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AProjectileCard_FindActorsInRange_Statics::NewProp_ReturnValue_Inner = { "ReturnValue", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(0, nullptr) };
+	const UECodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_AProjectileCard_FindActorsInRange_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ProjectileCard_eventFindActorsInRange_Parms, ReturnValue), EArrayPropertyFlags::None, METADATA_PARAMS(0, nullptr) };
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AProjectileCard_FindActorsInRange_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AProjectileCard_FindActorsInRange_Statics::NewProp_ActorClass,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AProjectileCard_FindActorsInRange_Statics::NewProp_Radius,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AProjectileCard_FindActorsInRange_Statics::NewProp_ReturnValue_Inner,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AProjectileCard_FindActorsInRange_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AProjectileCard_FindActorsInRange_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "ProjectileCard.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AProjectileCard_FindActorsInRange_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AProjectileCard, nullptr, "FindActorsInRange", nullptr, nullptr, Z_Construct_UFunction_AProjectileCard_FindActorsInRange_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_AProjectileCard_FindActorsInRange_Statics::PropPointers), sizeof(Z_Construct_UFunction_AProjectileCard_FindActorsInRange_Statics::ProjectileCard_eventFindActorsInRange_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00080401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_AProjectileCard_FindActorsInRange_Statics::Function_MetaDataParams), Z_Construct_UFunction_AProjectileCard_FindActorsInRange_Statics::Function_MetaDataParams) };
+	static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_AProjectileCard_FindActorsInRange_Statics::PropPointers) < 2048);
+	static_assert(sizeof(Z_Construct_UFunction_AProjectileCard_FindActorsInRange_Statics::ProjectileCard_eventFindActorsInRange_Parms) < MAX_uint16);
+	UFunction* Z_Construct_UFunction_AProjectileCard_FindActorsInRange()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_AProjectileCard_FindActorsInRange_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -296,6 +353,7 @@ void EmptyLinkFunctionForGeneratedCodeProjectileCard() {}
 	const FClassFunctionLinkInfo Z_Construct_UClass_AProjectileCard_Statics::FuncInfo[] = {
 		{ &Z_Construct_UFunction_AProjectileCard_CalculateCurveControlPoint, "CalculateCurveControlPoint" }, // 2280886562
 		{ &Z_Construct_UFunction_AProjectileCard_CalculateMidPoint, "CalculateMidPoint" }, // 2990521993
+		{ &Z_Construct_UFunction_AProjectileCard_FindActorsInRange, "FindActorsInRange" }, // 855126806
 		{ &Z_Construct_UFunction_AProjectileCard_OnHit, "OnHit" }, // 119443953
 	};
 	static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_AProjectileCard_Statics::FuncInfo) < 2048);
@@ -625,9 +683,9 @@ void EmptyLinkFunctionForGeneratedCodeProjectileCard() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_ProjectileCard_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_AProjectileCard, AProjectileCard::StaticClass, TEXT("AProjectileCard"), &Z_Registration_Info_UClass_AProjectileCard, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AProjectileCard), 4070162663U) },
+		{ Z_Construct_UClass_AProjectileCard, AProjectileCard::StaticClass, TEXT("AProjectileCard"), &Z_Registration_Info_UClass_AProjectileCard, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AProjectileCard), 373767480U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_ProjectileCard_h_37975289(TEXT("/Script/CardslingerPrototype"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_ProjectileCard_h_3646263174(TEXT("/Script/CardslingerPrototype"),
 		Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_ProjectileCard_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_ProjectileCard_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);
