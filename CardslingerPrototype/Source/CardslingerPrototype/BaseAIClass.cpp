@@ -167,40 +167,59 @@ void ABaseAIClass::SetRagdollMode(bool bIsRagdollMode, float RagdollTime=2.0f)
 
 	if(bIsRagdollMode)
 	{
+		//clear ragdoll timer in case multiple sources of ragdoll affect the enemy
 		GetWorldTimerManager().ClearTimer(RagdollReset);
+		//create delegate so parameters can be set in the timer
 		FTimerDelegate RagdollDelegate = FTimerDelegate::CreateUObject(this, &ABaseAIClass::SetRagdollMode, false, 0.0f);
+		//set ragdoll duration
 		GetWorldTimerManager().SetTimer(RagdollReset, RagdollDelegate, RagdollTime, false);
+		//enable bone physics (ragdoll)
 		GetMesh()->SetSimulatePhysics(true);
+		//suspend animations
 		GetMesh()->bPauseAnims = true;
+		//get ai controller
 		ThisController = Cast<ABaseAIController>(GetController());
 		if(ThisController)
 		{
+		//suspend ai behaviour tree
 		UBehaviorTreeComponent* BT = Cast<UBehaviorTreeComponent>(ThisController->GetBrainComponent());
 		BT->StopTree(EBTStopMode::Safe);
 		}
 	}
 	else
 	{
+		//check if ragdoll is still moving: ragdoll needs to be stationary on the ground to reset operations
 		if(EnemyMesh->GetPhysicsLinearVelocity(FName(TEXT("pelvis"))).Size() <= RagdollSpeedMaximum)
 		{
+			//stop bone physics
 			GetMesh()->SetSimulatePhysics(false);
+			//resume animations
 			GetMesh()->bPauseAnims = false;
+			//set capsule collider to the ground at enemy position
 			CollisionCapsule->SetWorldLocation(EnemyMesh->GetBoneLocation(TEXT("pelvis"))-MeshOffset);
+			//attach mesh to collider
 			EnemyMesh->AttachToComponent(CollisionCapsule, FAttachmentTransformRules::SnapToTargetIncludingScale);
+			//offset to mesh's original position
 			EnemyMesh->SetRelativeLocation(MeshOffset);
+			//offset to mesh's original rotation
 			EnemyMesh->SetRelativeRotation(MeshRotation);
 			ThisController = Cast<ABaseAIController>(GetController());
 			if(ThisController)
 			{
+			//restart behaviour tree
 			UBehaviorTreeComponent* BT = Cast<UBehaviorTreeComponent>(ThisController->GetBrainComponent());
 			ThisController->RunBehaviorTree(ThisController->GetBehaviorTree());
 			}
 		}
+		//if still in motion, enemy will delay turning off ragdoll mode
 		else
 		{
-		GetWorldTimerManager().ClearTimer(RagdollReset);
-		FTimerDelegate RagdollDelegate = FTimerDelegate::CreateUObject(this, &ABaseAIClass::SetRagdollMode, false, 0.0f);
-		GetWorldTimerManager().SetTimer(RagdollReset, RagdollDelegate, RagdollSpeedCheckTimer, false);
+			//clear current ragdoll timer
+			GetWorldTimerManager().ClearTimer(RagdollReset);
+			//create new delegate to disable ragdoll move
+			FTimerDelegate RagdollDelegate = FTimerDelegate::CreateUObject(this, &ABaseAIClass::SetRagdollMode, false, 0.0f);
+			//start new timer
+			GetWorldTimerManager().SetTimer(RagdollReset, RagdollDelegate, RagdollSpeedCheckTimer, false);
 		}
 	}
 }
