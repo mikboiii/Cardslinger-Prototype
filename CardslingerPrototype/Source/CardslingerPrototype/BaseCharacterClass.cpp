@@ -512,25 +512,38 @@ void ABaseCharacterClass::ReplenishHandFunction()
 		}
 }
 
+/// @brief Rotates the camera with character movement
+/// @param DeltaTime the world delta time to enable smooth movement
 void ABaseCharacterClass::LeanCamera(float DeltaTime)
 {
+	//get current camera rotation
 	float CurrentCameraRoll = CameraComponent->GetRelativeRotation().Roll;
+	//interpolate camera position for smooth movement
 	float CameraRotation = UKismetMathLibrary::FInterpTo(CurrentCameraRoll, CameraLeanValue, DeltaTime, CameraRotateSpeed);
+	//set camera rotation
 	CameraComponent->SetRelativeRotation(FRotator(0, 0, CameraRotation));
 }
 
+///@brief Enables/disables flying movement for the player
+///@param bIsFlying switches flying on or off
+///@param FlyTime the duration that fly mode is active (only applicable when enabled)
 void ABaseCharacterClass::SetFlyMode(bool bIsFlying, float FlyTime)
 {
 	bIsCharacterFlying = bIsFlying;
 	if(bIsFlying)
 	{
+		//create delegate to allow timer functions with parameters
 		FTimerDelegate FlyDelegate = FTimerDelegate::CreateUObject(this, &ABaseCharacterClass::SetFlyMode, false, 0.0f);
+		//clear timer to ensure only one instance is active at one time
 		GetWorldTimerManager().ClearTimer(FlyModeHandle);
+		//start fly timer
 		GetWorldTimerManager().SetTimer(FlyModeHandle, FlyDelegate, FlyTime, false);
+		//enable flying
 		GetCharacterMovement()->SetMovementMode(EMovementMode::MOVE_Flying);
 	}
 	else
 	{
+		//disable flying
 		GetCharacterMovement()->SetMovementMode(EMovementMode::MOVE_Walking);
 	}
 }

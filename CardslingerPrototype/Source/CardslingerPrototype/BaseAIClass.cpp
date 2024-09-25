@@ -34,6 +34,7 @@ ABaseAIClass::ABaseAIClass()
 void ABaseAIClass::BeginPlay()
 {
 	Super::BeginPlay();
+	//init values
 	Health = MaxHealth;
 	ThisController = Cast<ABaseAIController>(GetController());
 	BaseTimePerShot = TimePerShot;
@@ -63,19 +64,26 @@ void ABaseAIClass::SetupPlayerInputComponent(UInputComponent* PlayerInputCompone
 
 float ABaseAIClass::TakeDamage(float DamageAmount, struct FDamageEvent const &DamageEvent, class AController *EventInstigator, AActor* DamageCauser)
 {
+	//call unreal damage code
     float DamageToApply = Super::TakeDamage(DamageAmount, DamageEvent, EventInstigator, EventInstigator);
+	//reduce health
     Health -= DamageToApply;
 
     if(IsDead())
     {
+		//set health to zero
         Health = 0.0f;
+		//get gamemode
         ACardslingerTestGameMode* GameMode = GetWorld()->GetAuthGameMode<ACardslingerTestGameMode>();
         if(GameMode != nullptr)
         {
+			//if gamemode exists, report pawn as dead
             GameMode->PawnKilled(this);
         }
+		//disable collision on enemy (prevent collision with player)
 		GetCapsuleComponent()->SetCollisionEnabled(ECollisionEnabled::NoCollision);
 		GetMesh()->SetCollisionEnabled(ECollisionEnabled::NoCollision);
+		//remove ai controller
         DetachFromControllerPendingDestroy();
         
     }
@@ -104,7 +112,7 @@ bool ABaseAIClass::HitTrace(FHitResult& Hit, FVector& ShotDirection)
 	FVector PlayerVelocty = PlayerActor->GetVelocity();
 	//calculate distance from enemy to player
 	float Distance = FVector::Dist(ViewLocation, PlayerLocation);
-	//calculate time taken (in seconds) for bullet to travel the required distance
+	//calculate estimated time taken (in seconds) for bullet to travel the required distance
 	float BulletTravelTime = Distance / BulletSpeed;
 
 	//calculate the position of where the bullet needs to be based on where the player will be and how fast the bullet travels
