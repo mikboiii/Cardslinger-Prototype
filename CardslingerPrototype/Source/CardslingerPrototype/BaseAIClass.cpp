@@ -13,12 +13,14 @@
 #include "Engine/DamageEvents.h"
 #include "Engine/World.h"
 #include "BehaviorTree/BlackboardComponent.h"
+#include "BehaviorTree/BehaviorTreeComponent.h"
 #include "NiagaraSystem.h"
 #include "NiagaraFunctionLibrary.h"
 #include "AIController.h"
 #include "Sound/SoundBase.h"
 #include "Components/PostProcessComponent.h"
 #include "EnemyProjectile.h"
+#include "BaseAIController.h"
 
 // Sets default values
 ABaseAIClass::ABaseAIClass()
@@ -33,10 +35,14 @@ void ABaseAIClass::BeginPlay()
 {
 	Super::BeginPlay();
 	Health = MaxHealth;
-	ThisController = Cast<AAIController>(GetController());
+	ThisController = Cast<ABaseAIController>(GetController());
 	BaseTimePerShot = TimePerShot;
 	PlayerActor = UGameplayStatics::GetPlayerPawn(GetWorld(), 0);
-	GetCapsuleComponent()->SetCollisionEnabled(ECollisionEnabled::NoCollision);
+	CollisionCapsule = GetCapsuleComponent();
+	CollisionCapsule->SetCollisionEnabled(ECollisionEnabled::QueryOnly);
+	EnemyMesh = GetMesh();
+	MeshOffset = EnemyMesh->GetRelativeLocation();
+	MeshRotation = EnemyMesh->GetRelativeRotation();
 	//ThisController->GetBlackboardComponent()->SetValueAsFloat(TEXT("FireCooldown"), FireCooldown);
 	
 }
@@ -155,10 +161,54 @@ void ABaseAIClass::Shoot()
 	}
 }
 
+void ABaseAIClass::SetRagdollMode(bool bIsRagdollMode, float RagdollTime=2.0f)
+{
+	bRagdoll = bIsRagdollMode;
+
+	if(bIsRagdollMode)
+	{
+		GetWorldTimerManager().ClearTimer(RagdollReset);
+		FTimerDelegate RagdollDelegate = FTimerDelegate::CreateUObject(this, &ABaseAIClass::SetRagdollMode, false, 0.0f);
+		GetWorldTimerManager().SetTimer(RagdollReset, RagdollDelegate, RagdollTime, false);
+		GetMesh()->SetSimulatePhysics(true);
+		GetMesh()->bPauseAnims = true;
+		ThisController = Cast<ABaseAIController>(GetController());
+		if(ThisController)
+		{
+		UBehaviorTreeComponent* BT = Cast<UBehaviorTreeComponent>(ThisController->GetBrainComponent());
+		BT->StopTree(EBTStopMode::Safe);
+		}
+	}
+	else
+	{
+		if(EnemyMesh->GetPhysicsLinearVelocity(FName(TEXT("pelvis"))).Size() <= RagdollSpeedMaximum)
+		{
+			GetMesh()->SetSimulatePhysics(false);
+			GetMesh()->bPauseAnims = false;
+			CollisionCapsule->SetWorldLocation(EnemyMesh->GetBoneLocation(TEXT("pelvis"))-MeshOffset);
+			EnemyMesh->AttachToComponent(CollisionCapsule, FAttachmentTransformRules::SnapToTargetIncludingScale);
+			EnemyMesh->SetRelativeLocation(MeshOffset);
+			EnemyMesh->SetRelativeRotation(MeshRotation);
+			ThisController = Cast<ABaseAIController>(GetController());
+			if(ThisController)
+			{
+			UBehaviorTreeComponent* BT = Cast<UBehaviorTreeComponent>(ThisController->GetBrainComponent());
+			ThisController->RunBehaviorTree(ThisController->GetBehaviorTree());
+			}
+		}
+		else
+		{
+		GetWorldTimerManager().ClearTimer(RagdollReset);
+		FTimerDelegate RagdollDelegate = FTimerDelegate::CreateUObject(this, &ABaseAIClass::SetRagdollMode, false, 0.0f);
+		GetWorldTimerManager().SetTimer(RagdollReset, RagdollDelegate, RagdollSpeedCheckTimer, false);
+		}
+	}
+}
+
 void ABaseAIClass::EnableSlowEffect(bool bIsSlow)
 {
 	GetComponentByClass<UPostProcessComponent>()->bEnabled = bIsSlow;
-	ThisController = Cast<AAIController>(GetController());
+	ThisController = Cast<ABaseAIController>(GetController());
 	if(bIsSlow) 
 	{
 		GetMesh()->SetCustomDepthStencilValue(2);
@@ -195,3 +245,12 @@ void ABaseAIClass::RemoveProjectile(AEnemyProjectile* Projectile)
 {
 	ActiveBullets.Remove(Projectile);
 }
+
+/*
+Ragdoll Code:
+	SetRagdollMode(true);
+
+	GetWorldTimerManager().ClearTimer(RagdollReset);
+	FTimerDelegate RagdollDelegate = FTimerDelegate::CreateUObject(this, &ABaseAIClass::SetRagdollMode, false);
+	GetWorldTimerManager().SetTimer(RagdollReset, RagdollDelegate, 2.0f, false);
+*/

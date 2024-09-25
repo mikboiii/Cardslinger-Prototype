@@ -52,10 +52,11 @@ protected:
 	//the card's trail particle system
 	UPROPERTY(Instanced, EditAnywhere)
 	class UNiagaraComponent* CardTrail;
-	//the card's particle impact system
+	//the card's particle impact system when colliding only with an enemy
 	UPROPERTY(EditAnywhere)
 	class UNiagaraSystem* CardImpact;
 
+	//plays the particle impact effect on impact with anything (walls, other projectiles, enemies etc)
 	UPROPERTY(EditAnywhere)
 	class UNiagaraSystem* CardImpactUniversal;
 

@@ -46,6 +46,8 @@ public:
 
 	void RemoveProjectile(class AEnemyProjectile* Projectile);
 
+	void SetRagdollMode(bool bIsRagdoll, float RagdollTime);
+
 private:
 
 	AActor* PlayerActor;
@@ -53,7 +55,7 @@ private:
 	UPROPERTY(EditAnywhere)
 	float Speed = 10.f;
 
-	class AAIController* ThisController;
+	class ABaseAIController* ThisController;
 	
 	UPROPERTY(VisibleAnywhere, Category = "Combat")
 	float Health;
@@ -96,4 +98,22 @@ private:
 	class UNiagaraSystem* MuzzleFlash;
 
 	bool HitTrace(FHitResult& Hit, FVector& ShotDirection);
+	
+	FTimerHandle RagdollReset;
+
+	bool bRagdoll = false;
+
+	UPROPERTY(EditAnywhere, Category = "Ragdoll Settings")
+	float RagdollSpeedCheckTimer = 0.5f;
+
+	//determines the speed above which an enemy cannot stand up after being ragdolled
+	UPROPERTY(EditAnywhere, Category = "Ragdoll Settings")
+	float RagdollSpeedMaximum = 10.0f;
+
+	class UCapsuleComponent* CollisionCapsule;
+
+	class USkeletalMeshComponent* EnemyMesh;
+
+	FVector MeshOffset;
+	FRotator MeshRotation;
 };
