@@ -239,21 +239,31 @@ void ABaseCharacterClass::DashCooldownFunction()
 /// @return Returns a damage applied float
 float ABaseCharacterClass::TakeDamage(float DamageAmount, struct FDamageEvent const &DamageEvent, class AController *EventInstigator, AActor* DamageCauser)
 {
+	//call unreal base damage function
     float DamageToApply = Super::TakeDamage(DamageAmount, DamageEvent, EventInstigator, EventInstigator);
+	//if shield health exists, apply damage there first
 	if(CurrentShield > 0)
 	{
+		//reduce shield hp
 		CurrentShield -= DamageToApply;
+		//flash shield damage effect
 		PlayerHUD->FlashShieldVignetteBP();
+		//if shield destroy, apply overflow damage to player
 		if(CurrentShield < 0)
 		{
-			CurrentShield = 0;
+			//reduce player hp by shield overflow
 			Health -= FMath::Abs(CurrentShield);
+			//set shield hp to 0
+			CurrentShield = 0;
+			//flash damage effect
 			PlayerHUD->FlashDamageVignetteBP();
 		}
 	}
 	else
 	{
+		//reduce health
     	Health -= DamageToApply;
+		//flash damage effect
 		PlayerHUD->FlashDamageVignetteBP();
 	}
 
