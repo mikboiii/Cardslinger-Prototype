@@ -519,11 +519,14 @@ void ABaseCharacterClass::LeanCamera(float DeltaTime)
 	CameraComponent->SetRelativeRotation(FRotator(0, 0, CameraRotation));
 }
 
-void ABaseCharacterClass::SetFlyMode(bool bIsFlying)
+void ABaseCharacterClass::SetFlyMode(bool bIsFlying, float FlyTime)
 {
 	bIsCharacterFlying = bIsFlying;
 	if(bIsFlying)
 	{
+		FTimerDelegate FlyDelegate = FTimerDelegate::CreateUObject(this, &ABaseCharacterClass::SetFlyMode, false, 0.0f);
+		GetWorldTimerManager().ClearTimer(FlyModeHandle);
+		GetWorldTimerManager().SetTimer(FlyModeHandle, FlyDelegate, FlyTime, false);
 		GetCharacterMovement()->SetMovementMode(EMovementMode::MOVE_Flying);
 	}
 	else

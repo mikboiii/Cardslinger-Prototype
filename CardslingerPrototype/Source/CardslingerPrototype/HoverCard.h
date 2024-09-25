@@ -16,8 +16,6 @@ class CARDSLINGERPROTOTYPE_API AHoverCard : public ABaseCard
 
 	virtual void CardEffect(class ACardDeck* CardDeck, FVector Direction, FVector Target, AActor* TargetActor) override;
 
-	void EndHover();
-
 	private:
 		UPROPERTY(EditAnywhere)
 		float FlyTime = 10.0f;

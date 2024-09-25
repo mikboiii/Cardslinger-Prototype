@@ -101,7 +101,7 @@ public:
 	UFUNCTION(BlueprintCallable)
 	void IncrementClip();
 
-	void SetFlyMode(bool bIsFlying);
+	void SetFlyMode(bool bIsFlying, float FlyTime);
 
 
 	void Heal(bool IsPercentile, float HealingAmount);
@@ -265,6 +265,8 @@ private:
 	//FTimerHandle DrawCardTimeManager;
 
 	FTimerHandle AutoFireManager;
+
+	FTimerHandle FlyModeHandle;
 
 	void ReloadTimerFunction();
 
