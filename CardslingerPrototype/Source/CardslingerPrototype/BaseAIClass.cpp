@@ -186,7 +186,7 @@ void ABaseAIClass::Shoot()
 	//apply velocity to the bullet
 	Projectile->SetBulletSpeed(BulletSpeed);
 	//if slow shader is active, enable slow effect for bullet
-	if(GetComponentByClass<UPostProcessComponent>()->bEnabled) Projectile->EnableSlowEffect(true);
+	if(GetComponentByClass<UPostProcessComponent>()->bEnabled) Projectile->EnableSlowEffect(true, GetActorTimeDilation());
 	//set owner of bullet to this enemy
 	Projectile->SetOwnerClass(this);
 	//add bullet to list of active bullets
@@ -264,6 +264,7 @@ void ABaseAIClass::EnableSlowEffect(bool bIsSlow, float TimeSlowed)
 	bIsSlowed = bIsSlow;
 	//turn on slow effect shader
 	GetComponentByClass<UPostProcessComponent>()->bEnabled = bIsSlow;
+	float TimeDilation = GetActorTimeDilation();
 	//get controller
 	ThisController = Cast<ABaseAIController>(GetController());
 	if(bIsSlow) 
@@ -286,8 +287,8 @@ void ABaseAIClass::EnableSlowEffect(bool bIsSlow, float TimeSlowed)
 	if(bIsSlow && ThisController)
 	{
 		//slow shot delay 
-		ThisController->GetBlackboardComponent()->SetValueAsFloat(TEXT("FireCooldown"), FireCooldown / GetActorTimeDilation());
-		TimePerShot /= GetActorTimeDilation();
+		ThisController->GetBlackboardComponent()->SetValueAsFloat(TEXT("FireCooldown"), FireCooldown / TimeDilation);
+		TimePerShot /= TimeDilation;
 	}
 	else if(!bIsSlow && ThisController)
 	{
@@ -299,7 +300,7 @@ void ABaseAIClass::EnableSlowEffect(bool bIsSlow, float TimeSlowed)
 	for(AEnemyProjectile* ActiveBullet : ActiveBullets)
 	{
 		//enable/disable slow effect for all active bullets belonging to this enemy
-		if(ActiveBullet) ActiveBullet->EnableSlowEffect(bIsSlow);
+		if(ActiveBullet) ActiveBullet->EnableSlowEffect(bIsSlow, TimeDilation);
 		else ActiveBullets.Remove(ActiveBullet);
 	}
 

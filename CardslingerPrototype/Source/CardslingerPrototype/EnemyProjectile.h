@@ -25,7 +25,7 @@ public:
 
 	void SetOwnerClass(ABaseAIClass* NewOwner);
 
-	void EnableSlowEffect(bool bIsSlow);
+	void EnableSlowEffect(bool bIsSlow, float TimeDilationValue);
 
 	void SetBulletSpeed(float NewSpeed);
 

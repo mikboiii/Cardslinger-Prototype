@@ -99,9 +99,12 @@ void AEnemyProjectile::DestroyProjectileTimerFunction()
 	Destroy();
 }
 
-void AEnemyProjectile::EnableSlowEffect(bool bIsSlow)
+/// @brief Toggles the slow effect for the bullet
+/// @param bIsSlow enables/disables the slow effect
+/// @param TimeDilationValue the new time dilation
+void AEnemyProjectile::EnableSlowEffect(bool bIsSlow, float TimeDilationValue)
 {
-	if(bIsSlow) BulletSpeed *= 0.05f;
+	if(bIsSlow) BulletSpeed *= TimeDilationValue;
 	else BulletSpeed = BaseBulletSpeed;
 
 	UStaticMeshComponent* Mesh = FindComponentByClass<UStaticMeshComponent>();
@@ -122,6 +125,8 @@ void AEnemyProjectile::EnableSlowEffect(bool bIsSlow)
 	}
 }
 
+/// @brief Set the bullet speed to a new value
+/// @param NewSpeed the new speed that the bullet is set to
 void AEnemyProjectile::SetBulletSpeed(float NewSpeed)
 {
 	BaseBulletSpeed = NewSpeed;
