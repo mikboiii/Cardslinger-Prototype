@@ -175,13 +175,13 @@ void ACardDeck::SpawnCard()
 	USkeletalMeshComponent* NewCard = NewObject<USkeletalMeshComponent>(this);
 	if(NewCard)
 	{
-	NewCard->SetWorldTransform(CardTransform);
-	NewCard->AttachToComponent(GetRootComponent(), FAttachmentTransformRules::KeepRelativeTransform);
-	NewCard->RegisterComponent();	
-	NewCard->SetSkeletalMesh(CardSkeletalMeshTemplate);
-	CardMeshArray.Emplace(NewCard);
-	NewCard->SetAnimInstanceClass(CardAnimationBlueprint);
-	Player->IncrementClip();
+		NewCard->SetWorldTransform(CardTransform);
+		NewCard->AttachToComponent(GetRootComponent(), FAttachmentTransformRules::KeepRelativeTransform);
+		NewCard->RegisterComponent();	
+		NewCard->SetSkeletalMesh(CardSkeletalMeshTemplate);
+		CardMeshArray.Emplace(NewCard);
+		NewCard->SetAnimInstanceClass(CardAnimationBlueprint);
+		Player->IncrementClip();
 	}
 }
 
