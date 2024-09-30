@@ -25,6 +25,9 @@ class CARDSLINGERPROTOTYPE_API ASwarmProjectileCard : public AProjectileCard
 		UPROPERTY(EditAnywhere)
 		float SearchRadius = 500.0f;
 
+		UPROPERTY(EditAnywhere)
+		TSubclassOf<AProjectileCard> SwarmCardClass;
+
 		TArray<AActor*> EnemyTargets;
 
 		TArray<AProjectileCard*> SpawnedCards;
