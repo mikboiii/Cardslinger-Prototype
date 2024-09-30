@@ -16,4 +16,18 @@ class CARDSLINGERPROTOTYPE_API ASwarmProjectileCard : public AProjectileCard
 
 	protected:	
 		virtual void OnHit(UPrimitiveComponent* HitComponent, AActor* OtherActor, UPrimitiveComponent* OtherComponent, FVector NormalImpulse, const FHitResult& Hit) override;
+
+	private:
+
+		UPROPERTY(EditAnywhere)
+		int32 SwarmPopulation = 12;
+		
+		UPROPERTY(EditAnywhere)
+		float SearchRadius = 500.0f;
+
+		TArray<AActor*> EnemyTargets;
+
+		TArray<AProjectileCard*> SpawnedCards;
+
+		void SpawnSwarm();
 };

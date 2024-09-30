@@ -11,5 +11,13 @@
 
 void ASwarmProjectileCard::OnHit(UPrimitiveComponent* HitComponent, AActor* OtherActor, UPrimitiveComponent* OtherComponent, FVector NormalImpulse, const FHitResult& Hit)
 {
+    EnemyTargets = FindActorsInRange(ABaseAIClass::StaticClass(), SearchRadius);
+}
 
+void ASwarmProjectileCard::SpawnSwarm()
+{
+    for(int i = 0; i < SwarmPopulation; i++)
+    {
+
+    }
 }
