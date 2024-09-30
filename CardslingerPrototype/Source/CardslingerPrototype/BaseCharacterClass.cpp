@@ -119,13 +119,16 @@ void ABaseCharacterClass::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
+	//tick until energy reaches minimum
 	if(CurrentEnergy < EnergyMinimum)
 	{
 		CurrentEnergy+= (EnergyRegenRate) * DeltaTime;
 	}
+	//tick dash recharge
 	DashRecharge += DeltaTime / DashCooldown;
 	if(DashRecharge > 1) DashRecharge = 1.0f;
 
+	//lean camera (mainly input deltatime)
 	LeanCamera(DeltaTime);
 
 }
@@ -172,11 +175,13 @@ void ABaseCharacterClass::Move(const FInputActionValue& Value)
 	float Right = Value.Get<FVector2D>().X;
 
     FVector DeltaLocation = FVector::ZeroVector;
+	//move character based on input direction
     DeltaLocation.X += Forward * UGameplayStatics::GetWorldDeltaSeconds(this) * Speed;
 	DeltaLocation.Y += Right * UGameplayStatics::GetWorldDeltaSeconds(this) * Speed;
 	AddMovementInput(GetActorForwardVector() * Forward);
 	AddMovementInput(GetActorRightVector() * Right);
 
+	//lean camera if lateral movement
 	if(Right > 0) CameraLeanValue = MaxCameraLeanValue;
 	else if(Right < 0) CameraLeanValue = -MaxCameraLeanValue;
 	else CameraLeanValue = 0;
@@ -305,8 +310,10 @@ void ABaseCharacterClass::UseCard(const FInputActionValue& Value)
 {
 	//enhanced input only allows floats, so value is floored and decremented to compensate for zero index
 	int Index = FMath::Floor(Value.Get<float>())-1;
+	//error catching
 	if(!CardHand.IsValidIndex(Index)) return;
 	if(CardHand[Index] == nullptr) return;
+	//checks if sufficient energy to use card
 	if(CurrentEnergy < CardHand[Index]->GetCardCost() && !InfiniteEnergy)
 	{
 		return;
@@ -376,10 +383,12 @@ void ABaseCharacterClass::Shoot()
 			//if the line trace hits an enemy actor, have the card home in on them
 			if(Hit.GetActor()->IsA(ABaseAIClass::StaticClass()))
 			{
+				//get skeletal mesh from target
 				USkeletalMeshComponent* TargetMesh = Cast<USkeletalMeshComponent>(Cast<ABaseAIClass>(HitActor)->GetMesh());
+				//create empty fvector to store bone location
 				FVector* BoneLocation = new FVector(0.0f,0.0f,0.0f);
+				//find bone closest to linetrace impact point
 				FName BoneName = TargetMesh->FindClosestBone(Hit.ImpactPoint, BoneLocation, 0.0f, true);
-				UE_LOG(LogTemp, Display, TEXT("Bone name: %s"), *BoneName.ToString());
 				//launch basic projectile
 				CardDeck->FireCard(-ShotDirection, BasicCardProjectile, Hit.ImpactPoint, Hit.GetActor(), BoneName);
 				//remove from deck
@@ -462,6 +471,7 @@ bool ABaseCharacterClass::HitTrace(FHitResult& Hit, FVector& ShotDirection)
 	Params.AddIgnoredActor(this);
 	Params.AddIgnoredActor(GetOwner());
 	Params.AddIgnoredActors(CardDeck->Children);
+	//shoot linetrace
 	return GetWorld()->LineTraceSingleByChannel(Hit, ViewLocation, End, ECollisionChannel::ECC_GameTraceChannel2, Params);
 }
 
@@ -539,6 +549,7 @@ void ABaseCharacterClass::ReplenishHandFunction()
 			{
 				if(CardHand[i]->CardWidget != nullptr)
 				{
+					//only set card ui if it exists
 					PlayerHUD->SetCard(i, CardHand[i]->CardWidget);
 				}
 			}
@@ -599,6 +610,7 @@ void ABaseCharacterClass::Heal(bool IsPercentile, float HealingValue)
 	if(IsPercentile) Health += MaxHealth * HealingValue;
 	else Health += HealingValue;
 	if(Health > MaxHealth) Health = MaxHealth;
+	//call blueprint event to play hud effect
 	PlayerHUD->FlashHealVignetteBP();
 }
 
@@ -610,6 +622,7 @@ void ABaseCharacterClass::AddShield(bool IsPercentile, float ShieldValue)
 	if(IsPercentile) CurrentShield += MaxShield * ShieldValue;
 	else CurrentShield += ShieldValue;
 	if(CurrentShield > MaxShield) CurrentShield = MaxShield;
+	//call blueprint event to play hud effect
 	PlayerHUD->FlashShieldVignetteBP();
 }
 
@@ -639,10 +652,12 @@ void ABaseCharacterClass::Zoom(const FInputActionValue& Value)
 		//Speed = 5.0f;
 		if(CardCharge >= ChargeForOneCard)
 		{
+			//add card to spool and reduce charge
 			if(CardsCharged < MaxCardsCharged) CardCharge -= ChargeForOneCard;
 			CardsCharged += 1;
 			if(CardsCharged > MaxCardsCharged) CardsCharged = MaxCardsCharged;
 		}
+		//increase card charge whilst actiive
 		CardCharge += CardChargeRate;
 		bIsChargeMode = true;
 	}
