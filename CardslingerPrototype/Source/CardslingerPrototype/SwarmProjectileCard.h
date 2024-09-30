@@ -13,5 +13,7 @@ UCLASS()
 class CARDSLINGERPROTOTYPE_API ASwarmProjectileCard : public AProjectileCard
 {
 	GENERATED_BODY()
-	
+
+	protected:	
+		virtual void OnHit(UPrimitiveComponent* HitComponent, AActor* OtherActor, UPrimitiveComponent* OtherComponent, FVector NormalImpulse, const FHitResult& Hit) override;
 };
