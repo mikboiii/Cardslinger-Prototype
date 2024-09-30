@@ -10,6 +10,7 @@
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 class AActor;
+class UObject;
 class UPrimitiveComponent;
 struct FHitResult;
 #ifdef CARDSLINGERPROTOTYPE_ProjectileCard_generated_h
@@ -22,6 +23,7 @@ struct FHitResult;
 #define FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_ProjectileCard_h_18_EDITOR_ONLY_SPARSE_DATA_PROPERTY_ACCESSORS
 #define FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_ProjectileCard_h_18_RPC_WRAPPERS_NO_PURE_DECLS \
  \
+	DECLARE_FUNCTION(execFindActorsInRange); \
 	DECLARE_FUNCTION(execCalculateCurveControlPoint); \
 	DECLARE_FUNCTION(execCalculateMidPoint); \
 	DECLARE_FUNCTION(execOnHit);

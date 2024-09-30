@@ -120,6 +120,11 @@ protected:
 	UFUNCTION()
 	void CalculateCurveControlPoint();
 
+	UFUNCTION()
+	TArray<AActor*> FindActorsInRange(UClass* ActorClass, float Radius);
+
+	TArray<AActor*> AffectedEnemies;
+
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;

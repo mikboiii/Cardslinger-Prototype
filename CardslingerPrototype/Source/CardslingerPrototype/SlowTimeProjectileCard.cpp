@@ -25,6 +25,7 @@ void ASlowTimeProjectileCard::OnHit(UPrimitiveComponent* HitComponent, AActor* O
 void ASlowTimeProjectileCard::Tick(float DeltaTime)
 {
     Super::Tick(DeltaTime);
+    //if card has not collided with anything but reaches its target, enable slow time effect anyway
     if(FVector::Dist(GetActorLocation(), TargetLocation) == 0 && GetActorEnableCollision()) 
     {
     SlowTimeSphere();
@@ -36,56 +37,14 @@ void ASlowTimeProjectileCard::Tick(float DeltaTime)
 void ASlowTimeProjectileCard::SlowTimeSphere()
 {
     //DrawDebugSphere(GetWorld(), GetActorLocation(), CardSlowTimeRadius, 32, FColor::Blue, true, 100.0f);
+
+    //get all enemies in range and enable slow time effect
     AffectedEnemies = FindActorsInRange(ABaseAIClass::StaticClass(), CardSlowTimeRadius);
     for(AActor* Actor : AffectedEnemies)
     {
         Actor->CustomTimeDilation = CardSlowDilationValue;
-        Cast<ABaseAIClass>(Actor)->EnableSlowEffect(true);
+        Cast<ABaseAIClass>(Actor)->EnableSlowEffect(true, CardSlowDuration);
     }
-    FTimerHandle TimeResetHandle;
-    GetWorldTimerManager().SetTimer(TimeResetHandle, this, &ASlowTimeProjectileCard::ResetTimeDilation, CardSlowDuration);
-}
-
-TArray<AActor*> ASlowTimeProjectileCard::FindActorsInRange(UClass* ActorClass, float Radius)
-{
-    TArray<AActor*> OverlappingActors;
-    TArray<AActor*> FoundActors;
-
-    // Perform the sphere overlap
-    bool bHasOverlaps = UKismetSystemLibrary::SphereOverlapActors(
-        this,
-        GetActorLocation(),
-        Radius,
-        { EObjectTypeQuery::ObjectTypeQuery3 }, // ObjectTypeQuery3 is WorldDynamic by default, adjust as needed
-        ActorClass,
-        TArray<AActor*>(), // Actors to ignore
-        OverlappingActors
-    );
-
-    if (bHasOverlaps)
-    {
-        for (AActor* Actor : OverlappingActors)
-        {
-            if (Actor && Actor->IsA(ActorClass))
-            {
-                FoundActors.Add(Actor);
-            }
-        }
-    }
-
-    return FoundActors;
-}
-
-void ASlowTimeProjectileCard::ResetTimeDilation()
-{
-    for(AActor* Actor : AffectedEnemies)
-    {
-        if(!Actor)
-        {
-            return;
-        }
-        Actor->CustomTimeDilation = 1.0f;
-        Cast<ABaseAIClass>(Actor)->EnableSlowEffect(false);
-    }
+    //destroy card once effect is activated
     DestroyCard();
 }

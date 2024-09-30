@@ -106,18 +106,21 @@ AProjectileCard* ACardDeck::FireCard(FVector Direction, TSubclassOf<class AProje
 {
 	if(CardClass != nullptr)
 	{
-	//spawns the projectile card in the world
-	AProjectileCard* Projectile = GetWorld()->SpawnActor<AProjectileCard>(CardClass, GetActorLocation(), Direction.Rotation());
-	//sets the deck as the owner of the card in the hierarchy
-	Projectile->SetOwner(this);
-	if(TargetBone != NAME_None)
-	{
-		Projectile->SetBoneTarget(TargetBone);
-	}
-	//sets the card's homing target
-	Projectile->SetHomingTarget(Target, TargetActor);
-	//returns the card actor
-	return Projectile;
+		//spawns the projectile card in the world
+		AProjectileCard* Projectile = GetWorld()->SpawnActor<AProjectileCard>(CardClass, GetActorLocation(), Direction.Rotation());
+		//sets the deck as the owner of the card in the hierarchy
+		Projectile->SetOwner(this);
+		//if enemy has a bone near the hitscan then:
+		if(TargetBone != NAME_None)
+		{
+			//make that bone the homing target
+			Projectile->SetBoneTarget(TargetBone);
+		}
+		//sets the card's homing target
+		Projectile->SetHomingTarget(Target, TargetActor);
+
+		//returns the card actor
+		return Projectile;
 	}
 	//returns nullptr if the card class is invalid
 	return nullptr;
@@ -148,14 +151,18 @@ void ACardDeck::RemoveCardFromDeck(int CardIndex)
 /// @brief Triggers the reload animation
 void ACardDeck::ReloadCards()
 {
+	//loop through all remaining cards
 	for(USkeletalMeshComponent* CardMesh : CardMeshArray)
 	{
 		if(CardMesh)
 		{
+			//destroy current card
 			CardMesh->DestroyComponent();
 		}
 	}
+	//empty array
 	CardMeshArray.Empty();
+	//create looping timer which add cards one-by-one until stopped
 	GetWorldTimerManager().SetTimer(ReloadHandle, this, &ACardDeck::SpawnCard, ReloadDelayPerCard, true);
 	
 }
@@ -163,25 +170,40 @@ void ACardDeck::ReloadCards()
 /// @brief FOR USE ONLY IN THE RELOAD ANIMATION
 void ACardDeck::SpawnCard()
 {
+	//if clip full then:
 	if(Player->GetMaxClip() == CardMeshArray.Num())
 	{
+		//clear reload timer and do nothing
 		GetWorldTimerManager().ClearTimer(ReloadHandle);
 		return;
 	}
+	//get index of current card
 	float CardPos = CardMeshArray.Num()-1;
+	//scalar to keep distances between cards consistent
 	CardPos *= 0.17f;
+	//vector position of the card
 	FVector Translation = FVector(0,0, CardPos);
+	//create transform for spawning the card
 	FTransform CardTransform = FTransform(Translation);
+	//create new empty mesh component
 	USkeletalMeshComponent* NewCard = NewObject<USkeletalMeshComponent>(this);
+	//if successfully created then:
 	if(NewCard)
 	{
-	NewCard->SetWorldTransform(CardTransform);
-	NewCard->AttachToComponent(GetRootComponent(), FAttachmentTransformRules::KeepRelativeTransform);
-	NewCard->RegisterComponent();	
-	NewCard->SetSkeletalMesh(CardSkeletalMeshTemplate);
-	CardMeshArray.Emplace(NewCard);
-	NewCard->SetAnimInstanceClass(CardAnimationBlueprint);
-	Player->IncrementClip();
+		//set position
+		NewCard->SetWorldTransform(CardTransform);
+		//set parent to card deck root
+		NewCard->AttachToComponent(GetRootComponent(), FAttachmentTransformRules::KeepRelativeTransform);
+		//init card's variables
+		NewCard->RegisterComponent();	
+		//set card mesh
+		NewCard->SetSkeletalMesh(CardSkeletalMeshTemplate);
+		//add card to list of cards
+		CardMeshArray.Emplace(NewCard);
+		//add animation blueprint to card
+		NewCard->SetAnimInstanceClass(CardAnimationBlueprint);
+		//+1 to the player's clip number
+		Player->IncrementClip();
 	}
 }
 
@@ -196,12 +218,15 @@ float ACardDeck::GetTimeToReload()
 /// @param SavePathRef the save file path
 void ACardDeck::SaveDeck(const FString& SavePathRef)
 {
-    // Create a memory writer
+    //create empty binary data array
     TArray<uint8> BinaryData;
+	//create a memory writer
     FMemoryWriter MemoryWriter(BinaryData, true);
+	//create new archive
     FObjectAndNameAsStringProxyArchive Archive(MemoryWriter, false);
+	//make it known that game is being saved
     Archive.ArIsSaveGame = true;
-
+	//get data from card deck and serialise
     Archive << FullDeck;
 
     // Write to the file
@@ -215,6 +240,7 @@ void ACardDeck::SaveDeck(const FString& SavePathRef)
     }
 }
 
+/// @brief function for manual saving
 void ACardDeck::ManualSaveDeck()
 {
 	SaveDeck(SavePath);
@@ -224,8 +250,9 @@ void ACardDeck::ManualSaveDeck()
 /// @param SavePathRef the save file path
 TArray<TSubclassOf<ABaseCard>> ACardDeck::LoadDeck(const FString& SavePathRef)
 {
-    // Load the binary data from the file
+    //create empty binary data array
     TArray<uint8> BinaryData;
+	//create empty array to store loaded cards
 	TArray<TSubclassOf<ABaseCard>> LoadedCards;
     if (FFileHelper::LoadFileToArray(BinaryData, *SavePathRef))
     {
@@ -233,7 +260,9 @@ TArray<TSubclassOf<ABaseCard>> ACardDeck::LoadDeck(const FString& SavePathRef)
 
         // Create a memory reader
         FMemoryReader MemoryReader(BinaryData, true);
+		//create new archive
         FObjectAndNameAsStringProxyArchive Archive(MemoryReader, true);
+		//make it known that there is loading going on
         Archive.ArIsSaveGame = true;
 
         // Deserialize the data into the array
@@ -246,6 +275,7 @@ TArray<TSubclassOf<ABaseCard>> ACardDeck::LoadDeck(const FString& SavePathRef)
 	return LoadedCards;
 }
 
+/// @brief function to manually load
 void ACardDeck::ManualLoadDeck()
 {
 	FullDeck = LoadDeck(SavePath);
@@ -276,10 +306,8 @@ void ACardDeck::RemoveCard(TSubclassOf<ABaseCard> CardToRemove, bool bIsPermanen
 {
 	if(bIsPermanent)
 	{
-		UE_LOG(LogTemp, Display, TEXT("Permanent Passed"));
 		if(FullDeck.Contains(CardToRemove))
 		{
-			UE_LOG(LogTemp, Display, TEXT("Array contains passed"));
 			FullDeck.RemoveSingle(CardToRemove);
 			SaveDeck(SavePath);
 		}
@@ -315,6 +343,8 @@ void ACardDeck::RemoveCardAtIndex(int32 Index, bool bIsPermanent)
 	}
 }
 
+/// @brief Gets save path
+/// @return the currrent deck save path
 FString ACardDeck::GetSavePath() const
 {
 	return SavePath;

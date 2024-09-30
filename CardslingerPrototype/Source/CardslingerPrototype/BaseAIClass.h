@@ -28,7 +28,7 @@ public:
 
 	float TakeDamage(float DamageAmount, struct FDamageEvent const &DamageEvent, class AController *EventInstigator, AActor* DamageCauser) override;
 
-	void EnableSlowEffect(bool bIsSlow);
+	void EnableSlowEffect(bool bIsSlow, float TimeSlowed);
 
 	UFUNCTION(BlueprintPure)
 	bool IsDead() const;
@@ -101,7 +101,11 @@ private:
 	
 	FTimerHandle RagdollReset;
 
+	FTimerHandle TimeResetHandle;
+
 	bool bRagdoll = false;
+
+	bool bIsSlowed = false;
 
 	UPROPERTY(EditAnywhere, Category = "Ragdoll Settings")
 	float RagdollSpeedCheckTimer = 0.5f;

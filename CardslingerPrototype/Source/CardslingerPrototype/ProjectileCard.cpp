@@ -91,32 +91,44 @@ void AProjectileCard::OnHit(UPrimitiveComponent* HitComponent, AActor* OtherActo
 {
 	if (OtherActor != this)
     {
-		UE_LOG(LogTemp, Display, TEXT("Card Impact"));
-        //if the collision is an enemy class actor, apply damage and hit fx
+		//play impact fx that occurs when anything is hit
 		if(CardImpactUniversal) UNiagaraFunctionLibrary::SpawnSystemAtLocation(GetWorld(), CardImpactUniversal, Hit.ImpactPoint, GetActorForwardVector().Rotation(),FVector(ParticleScale), true, true, ENCPoolMethod::None, true);
 		if(OtherActor != PlayerPawn && OtherActor->IsA(ABaseAIClass::StaticClass()))
 		{
-
+			//create unreal damage event
 			FPointDamageEvent DamageEvent(CardDamage, Hit, -GetActorForwardVector(), nullptr);
+			//apply damage to target
 			OtherActor->TakeDamage(CardDamage, DamageEvent, PlayerPawn->GetController(), this);
+			//add energy to player
 			PlayerPawn->GiveEnergy(EnergyOnDamage);
+			//get target mesh
 			USkeletalMeshComponent* TargetMesh = Cast<USkeletalMeshComponent>(Cast<ABaseAIClass>(OtherActor)->GetMesh());
+			//create vector to store bone transform
 			FVector* BoneLocation = new FVector(0.0f, 0.0f, 0.0f);
+			//get closest bone to impact site
 			FName BoneName = TargetMesh->FindClosestBone(GetActorLocation(), BoneLocation, 0.0f, true);
 			if(CardImpact)
 			{
+				//play enemy hit fx if applicable
 				UNiagaraFunctionLibrary::SpawnSystemAtLocation(GetWorld(), CardImpact, Hit.ImpactPoint, GetActorForwardVector().Rotation(),FVector(ParticleScale), true, true, ENCPoolMethod::None, true);
 			}
+			//if bone exists then:
 			if(BoneName != NAME_None)
 			{
+				//attach card mesh transform to bone
 				AttachToComponent(TargetMesh, FAttachmentTransformRules::KeepWorldTransform, BoneName);
+				//disable card collision
 				SetActorEnableCollision(false);
+				//disable card trail
 				CardTrail->Deactivate();
+				//check attachment mode
 				bIsAttached = true;
+				//stop animations
 				CardSkeletalMesh->Stop();
 				return;
 			}
 		}
+		//destroy card if not attached
 		DestroyCard();
     }
 }
@@ -164,4 +176,34 @@ void AProjectileCard::CalculateCurveControlPoint()
 	UKismetMathLibrary::BreakRotIntoAxes(MidToTargetRot, x, y, z);
 	y *= UKismetMathLibrary::RandomFloatInRange(MinCurveRadius, MaxCurveRadius);
 	CurvedPoint = MidPoint + UKismetMathLibrary::RotateAngleAxis(y, UKismetMathLibrary::RandomFloatInRange(MinAngle, MaxAngle), x);
+}
+
+TArray<AActor*> AProjectileCard::FindActorsInRange(UClass* ActorClass, float Radius)
+{
+    TArray<AActor*> OverlappingActors;
+    TArray<AActor*> FoundActors;
+
+    // Perform the sphere overlap
+    bool bHasOverlaps = UKismetSystemLibrary::SphereOverlapActors(
+        this,
+        GetActorLocation(),
+        Radius,
+        { EObjectTypeQuery::ObjectTypeQuery3 }, // ObjectTypeQuery3 is WorldDynamic by default, adjust as needed
+        ActorClass,
+        TArray<AActor*>(), // Actors to ignore
+        OverlappingActors
+    );
+
+    if (bHasOverlaps)
+    {
+        for (AActor* Actor : OverlappingActors)
+        {
+            if (Actor && Actor->IsA(ActorClass))
+            {
+                FoundActors.Add(Actor);
+            }
+        }
+    }
+
+    return FoundActors;
 }

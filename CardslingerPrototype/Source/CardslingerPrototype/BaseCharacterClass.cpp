@@ -119,13 +119,16 @@ void ABaseCharacterClass::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
+	//tick until energy reaches minimum
 	if(CurrentEnergy < EnergyMinimum)
 	{
 		CurrentEnergy+= (EnergyRegenRate) * DeltaTime;
 	}
+	//tick dash recharge
 	DashRecharge += DeltaTime / DashCooldown;
 	if(DashRecharge > 1) DashRecharge = 1.0f;
 
+	//lean camera (mainly input deltatime)
 	LeanCamera(DeltaTime);
 
 }
@@ -172,11 +175,13 @@ void ABaseCharacterClass::Move(const FInputActionValue& Value)
 	float Right = Value.Get<FVector2D>().X;
 
     FVector DeltaLocation = FVector::ZeroVector;
+	//move character based on input direction
     DeltaLocation.X += Forward * UGameplayStatics::GetWorldDeltaSeconds(this) * Speed;
 	DeltaLocation.Y += Right * UGameplayStatics::GetWorldDeltaSeconds(this) * Speed;
 	AddMovementInput(GetActorForwardVector() * Forward);
 	AddMovementInput(GetActorRightVector() * Right);
 
+	//lean camera if lateral movement
 	if(Right > 0) CameraLeanValue = MaxCameraLeanValue;
 	else if(Right < 0) CameraLeanValue = -MaxCameraLeanValue;
 	else CameraLeanValue = 0;
@@ -193,36 +198,50 @@ void ABaseCharacterClass::Pause(const FInputActionValue& Value)
 	PC->PauseLevel();	
 }
 
-
+/// @brief Very quickly displaces the character in the direction of their input
 void ABaseCharacterClass::Dash()
 {
+	//do nothing if dashing is impossible or if the curve does not exist (error catch)
 	if((bIsDashing || !bCanDash) || !DashCurve) return;
 	bIsDashing = true;
 	bCanDash = false;
 
+	//Get player input vector to determine direction
 	FVector DashDirection = GetLastMovementInputVector().GetSafeNormal2D();
-
 	DashStartLocation = GetActorLocation();
+	//calculate dash end location based on dash parameters
 	DashEndLocation = DashStartLocation + DashDirection * DashDistance;
 	FTimerHandle DashCooldownHandle;
+	//start dash cooldown timer
 	GetWorldTimerManager().SetTimer(DashCooldownHandle, this, &ABaseCharacterClass::DashCooldownFunction, DashCooldown);
 	DashRecharge = 0.0f;
+	//start dash timeline
 	DashTimeline->PlayFromStart();
+	//reverse dash direction (to make it go in the actual direction)
 	DashDirection *= -1;
+	//set dash spring arm in the same direction as the dash
 	DashSpringArm->SetWorldRotation(DashDirection.Rotation());
+	//play the dash effect (speed lines)
 	DashEmitter->Activate();
+	//play camera shake
 	if(DashShake) PlayerCameraShakeSource->StartCameraShake(DashShake);
+	//Set player velocity to the same as the dash (to maintain momentum)
 	GetMovementComponent()->Velocity = DashDirection * -DashSpeed;
 }
 
+/// @brief Indicate that the dash timeline has finished
 void ABaseCharacterClass::DashEndFunction()
 {
 	bIsDashing = false;
 }
 
+/// @brief Function to move player along the dash
+/// @param Value The position on the timeline curve (to determine how far along the curve the dash has progressed)
 void ABaseCharacterClass::UpdateDash(float Value)
 {
+	//interpolate the player position based on dash completeness
 	FVector NewLocation = FMath::Lerp(DashStartLocation, DashEndLocation, Value);
+	//set player location
 	SetActorLocation(NewLocation, true);
 }
 
@@ -239,21 +258,31 @@ void ABaseCharacterClass::DashCooldownFunction()
 /// @return Returns a damage applied float
 float ABaseCharacterClass::TakeDamage(float DamageAmount, struct FDamageEvent const &DamageEvent, class AController *EventInstigator, AActor* DamageCauser)
 {
+	//call unreal base damage function
     float DamageToApply = Super::TakeDamage(DamageAmount, DamageEvent, EventInstigator, EventInstigator);
+	//if shield health exists, apply damage there first
 	if(CurrentShield > 0)
 	{
+		//reduce shield hp
 		CurrentShield -= DamageToApply;
+		//flash shield damage effect
 		PlayerHUD->FlashShieldVignetteBP();
+		//if shield destroy, apply overflow damage to player
 		if(CurrentShield < 0)
 		{
-			CurrentShield = 0;
+			//reduce player hp by shield overflow
 			Health -= FMath::Abs(CurrentShield);
+			//set shield hp to 0
+			CurrentShield = 0;
+			//flash damage effect
 			PlayerHUD->FlashDamageVignetteBP();
 		}
 	}
 	else
 	{
+		//reduce health
     	Health -= DamageToApply;
+		//flash damage effect
 		PlayerHUD->FlashDamageVignetteBP();
 	}
 
@@ -281,8 +310,10 @@ void ABaseCharacterClass::UseCard(const FInputActionValue& Value)
 {
 	//enhanced input only allows floats, so value is floored and decremented to compensate for zero index
 	int Index = FMath::Floor(Value.Get<float>())-1;
+	//error catching
 	if(!CardHand.IsValidIndex(Index)) return;
 	if(CardHand[Index] == nullptr) return;
+	//checks if sufficient energy to use card
 	if(CurrentEnergy < CardHand[Index]->GetCardCost() && !InfiniteEnergy)
 	{
 		return;
@@ -352,10 +383,12 @@ void ABaseCharacterClass::Shoot()
 			//if the line trace hits an enemy actor, have the card home in on them
 			if(Hit.GetActor()->IsA(ABaseAIClass::StaticClass()))
 			{
+				//get skeletal mesh from target
 				USkeletalMeshComponent* TargetMesh = Cast<USkeletalMeshComponent>(Cast<ABaseAIClass>(HitActor)->GetMesh());
+				//create empty fvector to store bone location
 				FVector* BoneLocation = new FVector(0.0f,0.0f,0.0f);
+				//find bone closest to linetrace impact point
 				FName BoneName = TargetMesh->FindClosestBone(Hit.ImpactPoint, BoneLocation, 0.0f, true);
-				UE_LOG(LogTemp, Display, TEXT("Bone name: %s"), *BoneName.ToString());
 				//launch basic projectile
 				CardDeck->FireCard(-ShotDirection, BasicCardProjectile, Hit.ImpactPoint, Hit.GetActor(), BoneName);
 				//remove from deck
@@ -376,29 +409,42 @@ void ABaseCharacterClass::ShootMultiple()
 {
 	if(CanFire)
 	{
+		//creates temporary fire delay variable to account for time between last shot fired and the first shot of the next volley
 		float TempFireDelay = FireDelay;
+		//creates int of the number of cards to fire
 		int32 CardsToFire {CardsPerShot};
+		//spool cards if charge mode is enabled (only works when staggered firing is enabled)
 		if(bIsChargeMode)
 		{
+			//do nothing if no cards charged
 			if(CardsCharged < 1) return;
+			//set number of card to fire to the amount spooled
 			CardsToFire = CardsCharged;
+			//reset values
 			CardsCharged = 0;
 			CardCharge = 0.0f;
 		}
+		//if cards are set to staggered (fire in order) then start firing sequence
 		if(bIsStaggeredFiring)
 		{
+			//cannot fire when cards are shooting
 			CanFire = false;
 			for(int32 i = 0; i <= CardsToFire; i++)
 			{
 				FTimerHandle StaggerFireHandle;
+				//set timer for each card, delayed by their position in order
 				GetWorldTimerManager().SetTimer(StaggerFireHandle, this, &ABaseCharacterClass::Shoot, StaggerDelay * i);
 			}
+			//get number of cards to fire
 			float FloatCardsToFire = CardsToFire;
+			//calculate actual delay for fire cooldown
 			TempFireDelay += StaggerDelay * FloatCardsToFire;
+			//start cooldown timer
 			GetWorldTimerManager().SetTimer(AutoFireManager, this, &ABaseCharacterClass::FireCooldown, TempFireDelay);
 		}
 		else
 		{
+			//if no specific firing modes are active, fire one card
 			Shoot();
 			CanFire = false;
 			GetWorldTimerManager().SetTimer(AutoFireManager, this, &ABaseCharacterClass::FireCooldown, FireDelay);
@@ -425,6 +471,7 @@ bool ABaseCharacterClass::HitTrace(FHitResult& Hit, FVector& ShotDirection)
 	Params.AddIgnoredActor(this);
 	Params.AddIgnoredActor(GetOwner());
 	Params.AddIgnoredActors(CardDeck->Children);
+	//shoot linetrace
 	return GetWorld()->LineTraceSingleByChannel(Hit, ViewLocation, End, ECollisionChannel::ECC_GameTraceChannel2, Params);
 }
 
@@ -502,6 +549,7 @@ void ABaseCharacterClass::ReplenishHandFunction()
 			{
 				if(CardHand[i]->CardWidget != nullptr)
 				{
+					//only set card ui if it exists
 					PlayerHUD->SetCard(i, CardHand[i]->CardWidget);
 				}
 			}
@@ -512,22 +560,38 @@ void ABaseCharacterClass::ReplenishHandFunction()
 		}
 }
 
+/// @brief Rotates the camera with character movement
+/// @param DeltaTime the world delta time to enable smooth movement
 void ABaseCharacterClass::LeanCamera(float DeltaTime)
 {
+	//get current camera rotation
 	float CurrentCameraRoll = CameraComponent->GetRelativeRotation().Roll;
+	//interpolate camera position for smooth movement
 	float CameraRotation = UKismetMathLibrary::FInterpTo(CurrentCameraRoll, CameraLeanValue, DeltaTime, CameraRotateSpeed);
+	//set camera rotation
 	CameraComponent->SetRelativeRotation(FRotator(0, 0, CameraRotation));
 }
 
-void ABaseCharacterClass::SetFlyMode(bool bIsFlying)
+///@brief Enables/disables flying movement for the player
+///@param bIsFlying switches flying on or off
+///@param FlyTime the duration that fly mode is active (only applicable when enabled)
+void ABaseCharacterClass::SetFlyMode(bool bIsFlying, float FlyTime)
 {
 	bIsCharacterFlying = bIsFlying;
 	if(bIsFlying)
 	{
+		//create delegate to allow timer functions with parameters
+		FTimerDelegate FlyDelegate = FTimerDelegate::CreateUObject(this, &ABaseCharacterClass::SetFlyMode, false, 0.0f);
+		//clear timer to ensure only one instance is active at one time
+		GetWorldTimerManager().ClearTimer(FlyModeHandle);
+		//start fly timer
+		GetWorldTimerManager().SetTimer(FlyModeHandle, FlyDelegate, FlyTime, false);
+		//enable flying
 		GetCharacterMovement()->SetMovementMode(EMovementMode::MOVE_Flying);
 	}
 	else
 	{
+		//disable flying
 		GetCharacterMovement()->SetMovementMode(EMovementMode::MOVE_Walking);
 	}
 }
@@ -546,6 +610,7 @@ void ABaseCharacterClass::Heal(bool IsPercentile, float HealingValue)
 	if(IsPercentile) Health += MaxHealth * HealingValue;
 	else Health += HealingValue;
 	if(Health > MaxHealth) Health = MaxHealth;
+	//call blueprint event to play hud effect
 	PlayerHUD->FlashHealVignetteBP();
 }
 
@@ -557,6 +622,7 @@ void ABaseCharacterClass::AddShield(bool IsPercentile, float ShieldValue)
 	if(IsPercentile) CurrentShield += MaxShield * ShieldValue;
 	else CurrentShield += ShieldValue;
 	if(CurrentShield > MaxShield) CurrentShield = MaxShield;
+	//call blueprint event to play hud effect
 	PlayerHUD->FlashShieldVignetteBP();
 }
 
@@ -586,10 +652,12 @@ void ABaseCharacterClass::Zoom(const FInputActionValue& Value)
 		//Speed = 5.0f;
 		if(CardCharge >= ChargeForOneCard)
 		{
+			//add card to spool and reduce charge
 			if(CardsCharged < MaxCardsCharged) CardCharge -= ChargeForOneCard;
 			CardsCharged += 1;
 			if(CardsCharged > MaxCardsCharged) CardsCharged = MaxCardsCharged;
 		}
+		//increase card charge whilst actiive
 		CardCharge += CardChargeRate;
 		bIsChargeMode = true;
 	}

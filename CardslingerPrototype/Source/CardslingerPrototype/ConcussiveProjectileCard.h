@@ -29,7 +29,4 @@ class CARDSLINGERPROTOTYPE_API AConcussiveProjectileCard : public AProjectileCar
 		float RagdollTime = 2.0f;
 
 		void ConcussionSphere();
-		
-		TArray<AActor*> AffectedEnemies;
-		TArray<AActor*> FindActorsInRange(UClass* ActorClass, float Radius);
 };

@@ -25,47 +25,23 @@ void AConcussiveProjectileCard::OnHit(UPrimitiveComponent* HitComponent, AActor*
     Destroy();
 }
 
-TArray<AActor*> AConcussiveProjectileCard::FindActorsInRange(UClass* ActorClass, float Radius)
-{
-    TArray<AActor*> OverlappingActors;
-    TArray<AActor*> FoundActors;
-
-    // Perform the sphere overlap
-    bool bHasOverlaps = UKismetSystemLibrary::SphereOverlapActors(
-        this,
-        GetActorLocation(),
-        Radius,
-        { EObjectTypeQuery::ObjectTypeQuery3 }, // ObjectTypeQuery3 is WorldDynamic by default, adjust as needed
-        ActorClass,
-        TArray<AActor*>(), // Actors to ignore
-        OverlappingActors
-    );
-
-    if (bHasOverlaps)
-    {
-        for (AActor* Actor : OverlappingActors)
-        {
-            if (Actor && Actor->IsA(ActorClass))
-            {
-                FoundActors.Add(Actor);
-            }
-        }
-    }
-
-    return FoundActors;
-}
-
 void AConcussiveProjectileCard::ConcussionSphere()
 {
     //DrawDebugSphere(GetWorld(), GetActorLocation(), CardSlowTimeRadius, 32, FColor::Blue, true, 100.0f);
+    //find enemies in range
     AffectedEnemies = FindActorsInRange(ABaseAIClass::StaticClass(), CardExplosionRadius);
     for(AActor* Actor : AffectedEnemies)
     {
+        //cast to baseaiclass to get access to enemy methods
         ABaseAIClass* Enemy = Cast<ABaseAIClass>(Actor);
+        //set ragdoll mode on with target time
         Enemy->SetRagdollMode(true, RagdollTime);
+        //calculate direction of force from card
         FVector ImpulseDirection = Enemy->GetActorLocation() - GetActorLocation();
         //DrawDebugLine(GetWorld(), GetActorLocation(), Enemy->GetActorLocation(), FColor::Red, false, 1000.0f);
+        //normalise vector to perform accurate force application
         ImpulseDirection.Normalize();
+        //apply force to target pelvis to get most centred movement
         Enemy->GetMesh()->AddImpulse(ImpulseDirection * CardPushForce, FName(TEXT("pelvis")), true);
     }
 }
