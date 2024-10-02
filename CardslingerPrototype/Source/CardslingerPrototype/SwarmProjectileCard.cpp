@@ -17,8 +17,17 @@ void ASwarmProjectileCard::OnHit(UPrimitiveComponent* HitComponent, AActor* Othe
 
 void ASwarmProjectileCard::SpawnSwarm()
 {
+    TArray<AProjectileCard*> ProjectileCards;
+    TArray<AActor*> CardActors;
     for(int i = 0; i < SwarmPopulation; i++)
     {
         AProjectileCard* LaunchedCard = GetWorld()->SpawnActor<AProjectileCard>(SwarmCardClass, GetActorLocation(), GetActorRotation());
+        ProjectileCards.Emplace(LaunchedCard);
+        CardActors.Emplace(LaunchedCard);
+    }
+
+    for(AProjectileCard* NewCard : ProjectileCards)
+    {
+        NewCard->SetIgnoredActors(CardActors);
     }
 }
