@@ -207,3 +207,8 @@ TArray<AActor*> AProjectileCard::FindActorsInRange(UClass* ActorClass, float Rad
 
     return FoundActors;
 }
+
+void AProjectileCard::SetIgnoredActors(TArray<AActor*> IgnoredActors)
+{
+	CardCollision->MoveIgnoreActors = IgnoredActors;
+}
