@@ -24,8 +24,14 @@ void ASwarmProjectileCard::SpawnSwarm()
     {
         AProjectileCard* LaunchedCard = GetWorld()->SpawnActor<AProjectileCard>(SwarmCardClass, GetActorLocation()+FVector(0,0,10), GetActorRotation());
         UE_LOG(LogTemp, Display, TEXT("Card Spawned"));
-        ProjectileCards.Emplace(LaunchedCard);
-        CardActors.Emplace(LaunchedCard);
+        if(!EnemyTargets.IsEmpty())
+        {
+            AActor* RandomEnemy = EnemyTargets[FMath::RandRange(0,EnemyTargets.Num()-1)];
+            FVector EnemyLocation = RandomEnemy->GetActorLocation();
+            LaunchedCard->SetHomingTarget(EnemyLocation, RandomEnemy);
+            ProjectileCards.Emplace(LaunchedCard);
+            CardActors.Emplace(LaunchedCard);
+        }
     }
 
     for(AProjectileCard* NewCard : ProjectileCards)
