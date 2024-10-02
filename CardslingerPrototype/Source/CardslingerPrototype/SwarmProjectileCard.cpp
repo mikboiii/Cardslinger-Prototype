@@ -22,7 +22,12 @@ void ASwarmProjectileCard::SpawnSwarm()
     TArray<AActor*> CardActors;
     for(int32 i = 0; i < SwarmPopulation; i++)
     {
-        AProjectileCard* LaunchedCard = GetWorld()->SpawnActor<AProjectileCard>(SwarmCardClass, GetActorLocation()+FVector(0,0,10), GetActorRotation());
+        FVector CardSpawn = FVector(
+            FMath::RandRange(-HorizontalOffsetBound, HorizontalOffsetBound),
+            FMath::RandRange(-HorizontalOffsetBound, HorizontalOffsetBound),
+            FMath::RandRange(10.0f,VerticalOffsetBound)
+            );
+        AProjectileCard* LaunchedCard = GetWorld()->SpawnActor<AProjectileCard>(SwarmCardClass, GetActorLocation()+CardSpawn, GetActorRotation());
         UE_LOG(LogTemp, Display, TEXT("Card Spawned"));
         if(!EnemyTargets.IsEmpty())
         {

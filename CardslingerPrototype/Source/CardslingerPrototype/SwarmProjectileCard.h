@@ -32,5 +32,11 @@ class CARDSLINGERPROTOTYPE_API ASwarmProjectileCard : public AProjectileCard
 
 		TArray<AProjectileCard*> SpawnedCards;
 
+		UPROPERTY(EditAnywhere)
+		float HorizontalOffsetBound = 50;
+
+		UPROPERTY(EditAnywhere)
+		float VerticalOffsetBound = 10;
+
 		void SpawnSwarm();
 };
