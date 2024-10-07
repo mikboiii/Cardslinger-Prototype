@@ -45,4 +45,9 @@ class CARDSLINGERPROTOTYPE_API ASwarmProjectileCard : public AProjectileCard
 		float VerticalOffsetBound = 10;
 
 		void SpawnSwarm();
+
+		void SpawnSwarmProjectile(float CardFreezeDelay);
+
+		TArray<AProjectileCard*> ProjectileCards;
+    	TArray<AActor*> CardActors;
 };

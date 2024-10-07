@@ -17,15 +17,28 @@ void ASwarmProjectileCard::OnHit(UPrimitiveComponent* HitComponent, AActor* Othe
 
 void ASwarmProjectileCard::SpawnSwarm()
 {
-    TArray<AProjectileCard*> ProjectileCards;
-    TArray<AActor*> CardActors;
+    float CardRelease = SwarmDelay / SwarmPopulation;
     for(int32 i = 0; i < SwarmPopulation; i++)
     {
+        UE_LOG(LogTemp, Display, TEXT("%d"),i);
+        FTimerHandle CardSpawnHandle;
+        FTimerDelegate CardSpawnDelegate = FTimerDelegate::CreateUObject(this, &ASwarmProjectileCard::SpawnSwarmProjectile, SwarmDelay - (CardRelease * i));
+        GetWorldTimerManager().SetTimer(CardSpawnHandle, CardSpawnDelegate, CardRelease * i, false);
+    }
+    for(AProjectileCard* NewCard : ProjectileCards)
+    {
+        NewCard->SetIgnoredActors(CardActors);
+    }
+    DestroyCard();
+}
+
+void ASwarmProjectileCard::SpawnSwarmProjectile(float CardFreezeDelay)
+    {
         FVector CardSpawn = FVector(
-            FMath::RandRange(-HorizontalOffsetBound, HorizontalOffsetBound),
-            FMath::RandRange(-HorizontalOffsetBound, HorizontalOffsetBound),
-            FMath::RandRange(10.0f,VerticalOffsetBound)
-            );
+        FMath::RandRange(-HorizontalOffsetBound, HorizontalOffsetBound),
+        FMath::RandRange(-HorizontalOffsetBound, HorizontalOffsetBound),
+        FMath::RandRange(10.0f,VerticalOffsetBound)
+        );
         AProjectileCard* LaunchedCard = GetWorld()->SpawnActor<AProjectileCard>(SwarmCardClass, GetActorLocation()+CardSpawn, GetActorRotation());
         LaunchedCard->FreezeCard(true);
         UNiagaraFunctionLibrary::SpawnSystemAtLocation(GetWorld(), SpawnFX, GetActorLocation()+CardSpawn, GetActorForwardVector().Rotation(),FVector(ParticleScale), true, true, ENCPoolMethod::None, true);
@@ -41,11 +54,3 @@ void ASwarmProjectileCard::SpawnSwarm()
             CardActors.Emplace(LaunchedCard);
         }
     }
-
-    for(AProjectileCard* NewCard : ProjectileCards)
-    {
-        NewCard->SetIgnoredActors(CardActors);
-    }
-
-    DestroyCard();
-}
