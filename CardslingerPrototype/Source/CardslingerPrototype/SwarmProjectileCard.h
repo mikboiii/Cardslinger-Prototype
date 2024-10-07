@@ -28,6 +28,9 @@ class CARDSLINGERPROTOTYPE_API ASwarmProjectileCard : public AProjectileCard
 		UPROPERTY(EditAnywhere)
 		TSubclassOf<AProjectileCard> SwarmCardClass;
 
+		UPROPERTY(EditAnywhere)
+		class UNiagaraSystem* SpawnFX;
+
 		TArray<AActor*> EnemyTargets;
 
 		TArray<AProjectileCard*> SpawnedCards;

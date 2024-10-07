@@ -27,6 +27,7 @@ void ASwarmProjectileCard::SpawnSwarm()
             FMath::RandRange(10.0f,VerticalOffsetBound)
             );
         AProjectileCard* LaunchedCard = GetWorld()->SpawnActor<AProjectileCard>(SwarmCardClass, GetActorLocation()+CardSpawn, GetActorRotation());
+        UNiagaraFunctionLibrary::SpawnSystemAtLocation(GetWorld(), SpawnFX, GetActorLocation()+CardSpawn, GetActorForwardVector().Rotation(),FVector(ParticleScale), true, true, ENCPoolMethod::None, true);
         if(!EnemyTargets.IsEmpty())
         {
             AActor* RandomEnemy = EnemyTargets[FMath::RandRange(0,EnemyTargets.Num()-1)];
