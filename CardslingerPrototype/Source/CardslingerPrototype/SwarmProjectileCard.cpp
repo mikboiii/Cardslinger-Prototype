@@ -11,7 +11,6 @@
 
 void ASwarmProjectileCard::OnHit(UPrimitiveComponent* HitComponent, AActor* OtherActor, UPrimitiveComponent* OtherComponent, FVector NormalImpulse, const FHitResult& Hit)
 {
-    UE_LOG(LogTemp, Display, TEXT("Swarm card impact"));
     EnemyTargets = FindActorsInRange(ABaseAIClass::StaticClass(), SearchRadius);
     SpawnSwarm();
 }
@@ -28,7 +27,6 @@ void ASwarmProjectileCard::SpawnSwarm()
             FMath::RandRange(10.0f,VerticalOffsetBound)
             );
         AProjectileCard* LaunchedCard = GetWorld()->SpawnActor<AProjectileCard>(SwarmCardClass, GetActorLocation()+CardSpawn, GetActorRotation());
-        UE_LOG(LogTemp, Display, TEXT("Card Spawned"));
         if(!EnemyTargets.IsEmpty())
         {
             AActor* RandomEnemy = EnemyTargets[FMath::RandRange(0,EnemyTargets.Num()-1)];
