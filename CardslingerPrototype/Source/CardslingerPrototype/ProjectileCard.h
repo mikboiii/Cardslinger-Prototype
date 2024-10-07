@@ -45,6 +45,7 @@ protected:
 	//the multiplier applied to the scale of the particle hit effect
 	UPROPERTY(EditAnywhere)
 	float ParticleScale = 1.0f;
+	bool bCanCardMove = true;
 
 	UFUNCTION()
 	virtual void OnHit(UPrimitiveComponent* HitComponent, AActor* OtherActor, UPrimitiveComponent* OtherComponent, FVector NormalImpulse, const FHitResult& Hit);
@@ -130,5 +131,8 @@ protected:
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
+	
+
+	void FreezeCard(bool bIsFrozen);
 
 };

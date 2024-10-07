@@ -55,14 +55,16 @@ void AProjectileCard::Tick(float DeltaTime)
 		if(BoneTarget != NAME_None) TargetLocation = Cast<USkeletalMeshComponent>((Cast<ABaseAIClass>(TargetEnemy)->GetMesh()))->GetBoneLocation(BoneTarget);
 		else TargetLocation = TargetEnemy->GetActorLocation();
 	}
-
-	//updates the curve point on the card's trajectory
-	CurvedPoint = UKismetMathLibrary::VInterpTo_Constant(CurvedPoint, TargetLocation, DeltaTime, CardSpeed);
-	//finds the new location for the card based on the projected path
-	FVector NewLocation = UKismetMathLibrary::VInterpTo_Constant(GetActorLocation(), CurvedPoint, DeltaTime, CardSpeed);
-	if(!bIsAttached) SetActorLocation(NewLocation, true);
-	//if the card meets its location, it gets deleted. used to prevent cards floating in place of a dead enemy.
-	if(DestroyOnImpact && FVector::Dist(GetActorLocation(), TargetLocation) == 0 && !bIsAttached) DestroyCard();
+	if(bCanCardMove)
+	{
+		//updates the curve point on the card's trajectory
+		CurvedPoint = UKismetMathLibrary::VInterpTo_Constant(CurvedPoint, TargetLocation, DeltaTime, CardSpeed);
+		//finds the new location for the card based on the projected path
+		FVector NewLocation = UKismetMathLibrary::VInterpTo_Constant(GetActorLocation(), CurvedPoint, DeltaTime, CardSpeed);
+		if(!bIsAttached) SetActorLocation(NewLocation, true);
+		//if the card meets its location, it gets deleted. used to prevent cards floating in place of a dead enemy.
+		if(DestroyOnImpact && FVector::Dist(GetActorLocation(), TargetLocation) == 0 && !bIsAttached) DestroyCard();
+	}
 }
 
 /// @brief Destroys the projectile card
@@ -211,4 +213,9 @@ TArray<AActor*> AProjectileCard::FindActorsInRange(UClass* ActorClass, float Rad
 void AProjectileCard::SetIgnoredActors(TArray<AActor*> IgnoredActors)
 {
 	CardCollision->MoveIgnoreActors = IgnoredActors;
+}
+
+void AProjectileCard::FreezeCard(bool bIsFrozen)
+{
+	bCanCardMove = !bIsFrozen;
 }
