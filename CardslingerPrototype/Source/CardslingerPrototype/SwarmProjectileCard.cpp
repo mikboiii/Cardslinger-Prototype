@@ -20,10 +20,12 @@ void ASwarmProjectileCard::SpawnSwarm()
     float CardRelease = SwarmDelay / SwarmPopulation;
     for(int32 i = 0; i < SwarmPopulation; i++)
     {
-        UE_LOG(LogTemp, Display, TEXT("%d"),i);
         FTimerHandle CardSpawnHandle;
         FTimerDelegate CardSpawnDelegate = FTimerDelegate::CreateUObject(this, &ASwarmProjectileCard::SpawnSwarmProjectile, SwarmDelay - (CardRelease * i));
         GetWorldTimerManager().SetTimer(CardSpawnHandle, CardSpawnDelegate, CardRelease * i, false);
+        float FreezeDel = SwarmDelay - (CardRelease * i);
+        float SpawnDel = CardRelease * i;
+        //UE_LOG(LogTemp, Display, TEXT("Card Freeze Delay: %f, Card Spawn Delay: %f"), FreezeDel, SpawnDel);
     }
     for(AProjectileCard* NewCard : ProjectileCards)
     {
