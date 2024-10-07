@@ -48,6 +48,10 @@ void EmptyLinkFunctionForGeneratedCodeSwarmProjectileCard() {}
 #endif
 		static const UECodeGen_Private::FObjectPropertyParams NewProp_SpawnFX;
 #if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_SwarmDelay_MetaData[];
+#endif
+		static const UECodeGen_Private::FFloatPropertyParams NewProp_SwarmDelay;
+#if WITH_METADATA
 		static const UECodeGen_Private::FMetaDataPairParam NewProp_HorizontalOffsetBound_MetaData[];
 #endif
 		static const UECodeGen_Private::FFloatPropertyParams NewProp_HorizontalOffsetBound;
@@ -102,6 +106,13 @@ void EmptyLinkFunctionForGeneratedCodeSwarmProjectileCard() {}
 #endif
 	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ASwarmProjectileCard_Statics::NewProp_SpawnFX = { "SpawnFX", nullptr, (EPropertyFlags)0x0040000000000001, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ASwarmProjectileCard, SpawnFX), Z_Construct_UClass_UNiagaraSystem_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_ASwarmProjectileCard_Statics::NewProp_SpawnFX_MetaData), Z_Construct_UClass_ASwarmProjectileCard_Statics::NewProp_SpawnFX_MetaData) };
 #if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ASwarmProjectileCard_Statics::NewProp_SwarmDelay_MetaData[] = {
+		{ "Category", "SwarmProjectileCard" },
+		{ "ModuleRelativePath", "SwarmProjectileCard.h" },
+	};
+#endif
+	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ASwarmProjectileCard_Statics::NewProp_SwarmDelay = { "SwarmDelay", nullptr, (EPropertyFlags)0x0040000000000001, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ASwarmProjectileCard, SwarmDelay), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_ASwarmProjectileCard_Statics::NewProp_SwarmDelay_MetaData), Z_Construct_UClass_ASwarmProjectileCard_Statics::NewProp_SwarmDelay_MetaData) };
+#if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ASwarmProjectileCard_Statics::NewProp_HorizontalOffsetBound_MetaData[] = {
 		{ "Category", "SwarmProjectileCard" },
 		{ "ModuleRelativePath", "SwarmProjectileCard.h" },
@@ -120,6 +131,7 @@ void EmptyLinkFunctionForGeneratedCodeSwarmProjectileCard() {}
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASwarmProjectileCard_Statics::NewProp_SearchRadius,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASwarmProjectileCard_Statics::NewProp_SwarmCardClass,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASwarmProjectileCard_Statics::NewProp_SpawnFX,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASwarmProjectileCard_Statics::NewProp_SwarmDelay,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASwarmProjectileCard_Statics::NewProp_HorizontalOffsetBound,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASwarmProjectileCard_Statics::NewProp_VerticalOffsetBound,
 	};
@@ -162,9 +174,9 @@ void EmptyLinkFunctionForGeneratedCodeSwarmProjectileCard() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_SwarmProjectileCard_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_ASwarmProjectileCard, ASwarmProjectileCard::StaticClass, TEXT("ASwarmProjectileCard"), &Z_Registration_Info_UClass_ASwarmProjectileCard, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ASwarmProjectileCard), 431532048U) },
+		{ Z_Construct_UClass_ASwarmProjectileCard, ASwarmProjectileCard::StaticClass, TEXT("ASwarmProjectileCard"), &Z_Registration_Info_UClass_ASwarmProjectileCard, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ASwarmProjectileCard), 2908335185U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_SwarmProjectileCard_h_2309347737(TEXT("/Script/CardslingerPrototype"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_SwarmProjectileCard_h_1925938689(TEXT("/Script/CardslingerPrototype"),
 		Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_SwarmProjectileCard_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_SwarmProjectileCard_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);

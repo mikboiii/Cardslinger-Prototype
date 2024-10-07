@@ -28,11 +28,14 @@ void ASwarmProjectileCard::SpawnSwarm()
             );
         AProjectileCard* LaunchedCard = GetWorld()->SpawnActor<AProjectileCard>(SwarmCardClass, GetActorLocation()+CardSpawn, GetActorRotation());
         UNiagaraFunctionLibrary::SpawnSystemAtLocation(GetWorld(), SpawnFX, GetActorLocation()+CardSpawn, GetActorForwardVector().Rotation(),FVector(ParticleScale), true, true, ENCPoolMethod::None, true);
+        FTimerHandle SwarmDelayHandle;
         if(!EnemyTargets.IsEmpty())
         {
             AActor* RandomEnemy = EnemyTargets[FMath::RandRange(0,EnemyTargets.Num()-1)];
             FVector EnemyLocation = RandomEnemy->GetActorLocation();
-            LaunchedCard->SetHomingTarget(EnemyLocation, RandomEnemy);
+            FTimerDelegate SwarmDelegate = FTimerDelegate::CreateUObject(LaunchedCard, &AProjectileCard::SetHomingTarget, EnemyLocation, RandomEnemy);
+            GetWorldTimerManager().SetTimer(SwarmDelayHandle, SwarmDelegate, SwarmDelay, false);
+            //LaunchedCard->SetHomingTarget(EnemyLocation, RandomEnemy);
             ProjectileCards.Emplace(LaunchedCard);
             CardActors.Emplace(LaunchedCard);
         }

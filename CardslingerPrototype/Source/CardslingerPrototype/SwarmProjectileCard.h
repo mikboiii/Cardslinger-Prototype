@@ -31,6 +31,9 @@ class CARDSLINGERPROTOTYPE_API ASwarmProjectileCard : public AProjectileCard
 		UPROPERTY(EditAnywhere)
 		class UNiagaraSystem* SpawnFX;
 
+		UPROPERTY(EditAnywhere)
+		float SwarmDelay = 1.0f;
+
 		TArray<AActor*> EnemyTargets;
 
 		TArray<AProjectileCard*> SpawnedCards;
