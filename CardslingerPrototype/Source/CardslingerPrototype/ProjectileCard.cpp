@@ -115,7 +115,7 @@ void AProjectileCard::OnHit(UPrimitiveComponent* HitComponent, AActor* OtherActo
 				UNiagaraFunctionLibrary::SpawnSystemAtLocation(GetWorld(), CardImpact, Hit.ImpactPoint, GetActorForwardVector().Rotation(),FVector(ParticleScale), true, true, ENCPoolMethod::None, true);
 			}
 			//if bone exists then:
-			if(BoneName != NAME_None)
+			if(BoneName != NAME_None && bCanAttach)
 			{
 				//attach card mesh transform to bone
 				AttachToComponent(TargetMesh, FAttachmentTransformRules::KeepWorldTransform, BoneName);

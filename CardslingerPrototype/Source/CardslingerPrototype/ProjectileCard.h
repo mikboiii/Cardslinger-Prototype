@@ -108,6 +108,9 @@ protected:
 	UPROPERTY(EditAnywhere)
 	bool DestroyOnImpact;
 
+	UPROPERTY(EditAnywhere)
+	bool bCanAttach = true;
+
 	//AActor reference to the target enemy
 	AActor* TargetEnemy;
 
