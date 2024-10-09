@@ -28,6 +28,8 @@ public:
 
 	void SetBoneTarget(FName BoneName);
 
+	void SetIgnoredActors(TArray<AActor*> IgnoredActors);
+
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
@@ -43,6 +45,7 @@ protected:
 	//the multiplier applied to the scale of the particle hit effect
 	UPROPERTY(EditAnywhere)
 	float ParticleScale = 1.0f;
+	bool bCanCardMove = true;
 
 	UFUNCTION()
 	virtual void OnHit(UPrimitiveComponent* HitComponent, AActor* OtherActor, UPrimitiveComponent* OtherComponent, FVector NormalImpulse, const FHitResult& Hit);
@@ -105,6 +108,9 @@ protected:
 	UPROPERTY(EditAnywhere)
 	bool DestroyOnImpact;
 
+	UPROPERTY(EditAnywhere)
+	bool bCanAttach = true;
+
 	//AActor reference to the target enemy
 	AActor* TargetEnemy;
 
@@ -128,5 +134,8 @@ protected:
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
+	
+
+	void FreezeCard(bool bIsFrozen);
 
 };
