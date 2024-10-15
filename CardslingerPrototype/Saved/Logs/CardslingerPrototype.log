@@ -1268,3 +1268,139 @@ LogConfig: Set CVar [[r.Shadow.DetectVertexShaderLayerAtRuntime:1]]
 [2024.10.15-15.13.36:768][585]LogFileHelpers: InternalPromptForCheckoutAndSave took 166 ms
 [2024.10.15-15.13.36:769][585]AssetCheck: New page: Asset Save: BP_ReflectionCard
 [2024.10.15-15.13.36:769][585]LogContentValidation: Display: Validating /Script/Engine.Blueprint /Game/Cards/BP_ReflectionCard.BP_ReflectionCard
+[2024.10.15-15.14.17:657][522]LogDerivedDataCache: C:/Users/Mikolaj/AppData/Local/UnrealEngine/Common/DerivedDataCache: Maintenance finished in +00:00:01.426 and deleted 0 files with total size 0 MiB and 0 empty folders. Scanned 1133 files in 1970 folders with total size 215 MiB.
+[2024.10.15-15.19.11:875][866]LogInterchangeEngine: [Pending] Importing
+[2024.10.15-15.19.11:876][866]LogInterchangeEngine: Display: Interchange start importing source [C:/Users/Mikolaj/Pic... Cards/PNG-cards-1.3/king_of_clubs2.png]
+[2024.10.15-15.19.11:945][867]LogCore: PNG has complex alpha channel, will not fill RGB in transparent background, due to setting PNGInfill == OnlyOnBinaryTransparency
+[2024.10.15-15.19.11:945][867]LogInterchangeEngine: [Pending] Importing
+[2024.10.15-15.19.12:198][867]LogTexture: Display: Building textures: /Game/CardAssets/king_of_clubs2.king_of_clubs2 (BGRA8, 500x726 x1x1x1) (Required Memory Estimate: 10.678802 MB), EncodeSpeed: Fast
+[2024.10.15-15.19.12:222][868]LogInterchangeEngine: [Success] Import Done
+[2024.10.15-15.19.12:290][868]LogInterchangeEngine: [Success] Import Done
+[2024.10.15-15.19.17:700][ 56]LogAssetEditorSubsystem: Opening Asset editor for Texture2D /Game/CardAssets/king_of_clubs2.king_of_clubs2
+[2024.10.15-15.19.17:872][ 56]LogViewport: Scene viewport resized to 1895x1315, mode Windowed.
+[2024.10.15-15.19.21:748][497]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.10.15-15.19.21:887][497]LogSavePackage: Moving output files for package: /Game/CardAssets/king_of_clubs2
+[2024.10.15-15.19.21:887][497]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/king_of_clubs20181E75C4D4319EFC832139F74A046E0.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/CardAssets/king_of_clubs2.uasset'
+[2024.10.15-15.19.21:901][497]LogFileHelpers: InternalPromptForCheckoutAndSave took 153 ms (total: 319 ms)
+[2024.10.15-15.19.21:902][497]AssetCheck: New page: Asset Save: king_of_clubs2
+[2024.10.15-15.19.21:902][497]LogContentValidation: Display: Validating /Script/Engine.Texture2D /Game/CardAssets/king_of_clubs2.king_of_clubs2
+[2024.10.15-15.19.32:067][459]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.10.15-15.19.32:246][459]LogUObjectHash: Compacting FUObjectHashTables data took   1.86ms
+[2024.10.15-15.19.32:263][459]LogSavePackage: Moving output files for package: /Game/Levels/MovementLevel
+[2024.10.15-15.19.32:264][459]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/MovementLevel815B39DF43426F48C714859F4A6B3438.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/Levels/MovementLevel.umap'
+[2024.10.15-15.19.32:284][459]LogFileHelpers: Saving map 'MovementLevel' took 0.107
+[2024.10.15-15.19.32:295][459]LogFileHelpers: InternalPromptForCheckoutAndSave took 227 ms (total: 547 ms)
+[2024.10.15-15.19.32:297][459]AssetCheck: New page: Asset Save: MovementLevel
+[2024.10.15-15.19.32:297][459]LogContentValidation: Display: Validating /Script/Engine.World /Game/Levels/MovementLevel.MovementLevel
+[2024.10.15-15.19.46:538][699]LogAssetEditorSubsystem: Opening Asset editor for WidgetBlueprint /Game/UI/Cards/WBP_SwarmCardUI.WBP_SwarmCardUI
+[2024.10.15-15.19.46:544][699]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.10.15-15.19.46:544][699]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2024.10.15-15.19.46:553][699]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.10.15-15.19.46:553][699]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2024.10.15-15.19.46:561][699]LogSlate: Warning: The command 'UMGEditor.OpenAnimDrawer' has the same default chord as 'EditorViewport.Next' [Ctrl+Shift+Space Bar]
+[2024.10.15-15.19.46:787][699]LogSlateStyle: Warning: Missing Resource from 'CoreStyle' Style: 'Unable to find SlateColor 'Foreground'.'
+[2024.10.15-15.19.46:789][699]LogSlate: Took 0.000294 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
+[2024.10.15-15.19.51:122][174]LogWorld: UWorld::CleanupWorld for World_9, bSessionEnded=true, bCleanupResources=true
+[2024.10.15-15.19.51:122][174]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.10.15-15.19.51:135][174]LogWorld: UWorld::CleanupWorld for World_8, bSessionEnded=true, bCleanupResources=true
+[2024.10.15-15.19.51:135][174]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.10.15-15.19.56:209][612]LogUObjectGlobals: Reloading 1 Package(s):
+	Asset Name: /Game/UI/Cards/WBP_SwarmCardUI
+[2024.10.15-15.19.56:229][612]LogUObjectHash: Compacting FUObjectHashTables data took   1.70ms
+[2024.10.15-15.19.56:652][612]LogUObjectHash: Compacting FUObjectHashTables data took   1.62ms
+[2024.10.15-15.20.00:179][934]LogContentBrowser: Deferred new asset file creation: WBP_SwarmCardUI1
+[2024.10.15-15.20.00:187][934]LogContentBrowser: Creating deferred item: WBP_SwarmCardUI1
+[2024.10.15-15.20.00:204][935]LogContentBrowser: Renaming the item being created (Deferred Item: WBP_SwarmCardUI1).
+[2024.10.15-15.20.21:343][887]LogContentBrowser: Attempting asset rename: WBP_SwarmCardUI1 -> WBP_ReflectionCardUI
+[2024.10.15-15.20.21:371][887]LogUObjectHash: Compacting FUObjectHashTables data took   1.57ms
+[2024.10.15-15.20.21:382][887]LogContentBrowser: End creating deferred item WBP_SwarmCardUI1
+[2024.10.15-15.20.23:674][ 76]LogAssetEditorSubsystem: Opening Asset editor for WidgetBlueprint /Game/UI/Cards/WBP_ReflectionCardUI.WBP_ReflectionCardUI
+[2024.10.15-15.20.23:674][ 76]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.10.15-15.20.23:674][ 76]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2024.10.15-15.20.23:684][ 76]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.10.15-15.20.23:684][ 76]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2024.10.15-15.20.24:815][188]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.10.15-15.20.24:937][188]LogSavePackage: Moving output files for package: /Game/UI/Cards/WBP_ReflectionCardUI
+[2024.10.15-15.20.24:937][188]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/WBP_ReflectionCardUI7CD8566E4FE1335047010184CCEC4756.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/UI/Cards/WBP_ReflectionCardUI.uasset'
+[2024.10.15-15.20.24:950][188]LogFileHelpers: InternalPromptForCheckoutAndSave took 136 ms (total: 683 ms)
+[2024.10.15-15.20.24:951][188]AssetCheck: New page: Asset Save: WBP_ReflectionCardUI
+[2024.10.15-15.20.24:952][188]LogContentValidation: Display: Validating /Script/UMGEditor.WidgetBlueprint /Game/UI/Cards/WBP_ReflectionCardUI.WBP_ReflectionCardUI
+[2024.10.15-15.20.28:204][516]LogSlate: Took 0.004849 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
+[2024.10.15-15.20.31:567][767]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.10.15-15.20.31:727][767]LogSavePackage: Moving output files for package: /Game/UI/Cards/WBP_ReflectionCardUI
+[2024.10.15-15.20.31:728][767]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/WBP_ReflectionCardUIF12736F84D0D1E42517940B0B0BB9187.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/UI/Cards/WBP_ReflectionCardUI.uasset'
+[2024.10.15-15.20.31:738][767]LogFileHelpers: InternalPromptForCheckoutAndSave took 170 ms (total: 853 ms)
+[2024.10.15-15.20.31:740][767]AssetCheck: New page: Asset Save: WBP_ReflectionCardUI
+[2024.10.15-15.20.31:740][767]LogContentValidation: Display: Validating /Script/UMGEditor.WidgetBlueprint /Game/UI/Cards/WBP_ReflectionCardUI.WBP_ReflectionCardUI
+[2024.10.15-15.20.32:122][808]BlueprintLog: New page: Compile WBP_ReflectionCardUI
+[2024.10.15-15.20.32:153][808]LogUObjectHash: Compacting FUObjectHashTables data took   1.77ms
+[2024.10.15-15.20.33:912][992]LogWorld: UWorld::CleanupWorld for World_11, bSessionEnded=true, bCleanupResources=true
+[2024.10.15-15.20.33:912][992]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.10.15-15.20.33:927][992]LogWorld: UWorld::CleanupWorld for World_10, bSessionEnded=true, bCleanupResources=true
+[2024.10.15-15.20.33:927][992]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.10.15-15.20.46:906][389]LogShaderCompilers: Display: ================================================
+[2024.10.15-15.20.46:906][389]LogShaderCompilers: Display: === FShaderJobCache stats ===
+[2024.10.15-15.20.46:906][389]LogShaderCompilers: Display: Total job queries 41, among them cache hits 8 (19.51%)
+[2024.10.15-15.20.46:906][389]LogShaderCompilers: Display: Tracking 33 distinct input hashes that result in 32 distinct outputs (96.97%)
+[2024.10.15-15.20.46:906][389]LogShaderCompilers: Display: RAM used: 822.92 KiB of 819.20 MiB budget. Usage: 0.10%
+[2024.10.15-15.20.46:906][389]LogShaderCompilers: Display: === Shader Compilation stats ===
+[2024.10.15-15.20.46:906][389]LogShaderCompilers: Display: Shaders Compiled: 0
+[2024.10.15-15.20.46:906][389]LogShaderCompilers: Display: Jobs assigned 0, completed 0 (0%)
+[2024.10.15-15.20.46:906][389]LogShaderCompilers: Display: Time at least one job was in flight (either pending or executed): 0.00 s
+[2024.10.15-15.20.46:906][389]LogShaderCompilers: Display: ================================================
+[2024.10.15-15.20.58:274][443]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.10.15-15.20.58:388][443]LogSavePackage: Moving output files for package: /Game/Cards/BP_ReflectionCard
+[2024.10.15-15.20.58:389][443]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/BP_ReflectionCard0A2E08D546C26C750DB0D292A7268BA9.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/Cards/BP_ReflectionCard.uasset'
+[2024.10.15-15.20.58:399][443]LogFileHelpers: InternalPromptForCheckoutAndSave took 124 ms (total: 978 ms)
+[2024.10.15-15.20.58:401][443]AssetCheck: New page: Asset Save: BP_ReflectionCard
+[2024.10.15-15.20.58:401][443]LogContentValidation: Display: Validating /Script/Engine.Blueprint /Game/Cards/BP_ReflectionCard.BP_ReflectionCard
+[2024.10.15-15.20.58:869][492]BlueprintLog: New page: Compile BP_ReflectionCard
+[2024.10.15-15.20.58:915][492]LogUObjectHash: Compacting FUObjectHashTables data took   1.57ms
+[2024.10.15-15.21.11:225][675]BlueprintLog: New page: Compile BP_ReflectionCard
+[2024.10.15-15.21.11:252][675]LogUObjectHash: Compacting FUObjectHashTables data took   1.62ms
+[2024.10.15-15.21.26:558][912]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/Cards/BP_AllCards.BP_AllCards
+[2024.10.15-15.21.26:558][912]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.10.15-15.21.26:558][912]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2024.10.15-15.21.26:708][912]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.10.15-15.21.26:763][913]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.10.15-15.21.26:845][914]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.10.15-15.21.42:646][399]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.10.15-15.21.42:782][399]LogSavePackage: Moving output files for package: /Game/Cards/BP_AllCards
+[2024.10.15-15.21.42:782][399]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/BP_AllCards853CCFA44A0D58327A0E2AB028FE2807.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/Cards/BP_AllCards.uasset'
+[2024.10.15-15.21.42:792][399]LogFileHelpers: InternalPromptForCheckoutAndSave took 146 ms (total: 1.12 sec)
+[2024.10.15-15.21.42:793][399]AssetCheck: New page: Asset Save: BP_AllCards
+[2024.10.15-15.21.42:793][399]LogContentValidation: Display: Validating /Script/Engine.Blueprint /Game/Cards/BP_AllCards.BP_AllCards
+[2024.10.15-15.21.44:916][628]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.10.15-15.21.45:028][628]LogSavePackage: Moving output files for package: /Game/Cards/BP_ReflectionCard
+[2024.10.15-15.21.45:029][628]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/BP_ReflectionCardAF77C562400761FBD4D6D093444380AD.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/Cards/BP_ReflectionCard.uasset'
+[2024.10.15-15.21.45:039][628]LogFileHelpers: InternalPromptForCheckoutAndSave took 123 ms (total: 1.24 sec)
+[2024.10.15-15.21.45:041][628]AssetCheck: New page: Asset Save: BP_ReflectionCard
+[2024.10.15-15.21.45:041][628]LogContentValidation: Display: Validating /Script/Engine.Blueprint /Game/Cards/BP_ReflectionCard.BP_ReflectionCard
+[2024.10.15-15.21.48:024][896]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.10.15-15.21.48:138][896]LogSavePackage: Moving output files for package: /Game/Cards/BP_ReflectionCard
+[2024.10.15-15.21.48:139][896]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/BP_ReflectionCardA3F927FF48C9057786EA528DA9AA720F.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/Cards/BP_ReflectionCard.uasset'
+[2024.10.15-15.21.48:150][896]LogFileHelpers: InternalPromptForCheckoutAndSave took 126 ms (total: 1.37 sec)
+[2024.10.15-15.21.48:151][896]AssetCheck: New page: Asset Save: BP_ReflectionCard
+[2024.10.15-15.21.48:151][896]LogContentValidation: Display: Validating /Script/Engine.Blueprint /Game/Cards/BP_ReflectionCard.BP_ReflectionCard
+[2024.10.15-15.21.57:403][759]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.10.15-15.21.57:512][759]LogSavePackage: Moving output files for package: /Game/Cards/BP_ReflectionCard
+[2024.10.15-15.21.57:513][759]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/BP_ReflectionCardC0F531C644E3995E40FFC6822092E7B2.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/Cards/BP_ReflectionCard.uasset'
+[2024.10.15-15.21.57:522][759]LogFileHelpers: InternalPromptForCheckoutAndSave took 119 ms (total: 1.49 sec)
+[2024.10.15-15.21.57:524][759]AssetCheck: New page: Asset Save: BP_ReflectionCard
+[2024.10.15-15.21.57:524][759]LogContentValidation: Display: Validating /Script/Engine.Blueprint /Game/Cards/BP_ReflectionCard.BP_ReflectionCard
+[2024.10.15-15.21.58:117][812]BlueprintLog: New page: Compile BP_ReflectionCard
+[2024.10.15-15.21.58:164][812]LogUObjectHash: Compacting FUObjectHashTables data took   1.61ms
+[2024.10.15-15.22.06:461][583]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.10.15-15.22.06:576][583]LogSavePackage: Moving output files for package: /Game/Cards/BP_ReflectionCard
+[2024.10.15-15.22.06:577][583]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/BP_ReflectionCard32AC28344AC933EC2A5DF6BCCCD6DCA0.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/Cards/BP_ReflectionCard.uasset'
+[2024.10.15-15.22.06:588][583]LogFileHelpers: InternalPromptForCheckoutAndSave took 126 ms (total: 1.62 sec)
+[2024.10.15-15.22.06:590][583]AssetCheck: New page: Asset Save: BP_ReflectionCard
+[2024.10.15-15.22.06:590][583]LogContentValidation: Display: Validating /Script/Engine.Blueprint /Game/Cards/BP_ReflectionCard.BP_ReflectionCard
+[2024.10.15-15.22.18:521][700]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.10.15-15.22.18:646][700]LogSavePackage: Moving output files for package: /Game/Cards/BP_ReflectionCard
+[2024.10.15-15.22.18:647][700]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/BP_ReflectionCard3D5203254F6A1F9FA40489B1A85925B2.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/Cards/BP_ReflectionCard.uasset'
+[2024.10.15-15.22.18:660][700]LogFileHelpers: InternalPromptForCheckoutAndSave took 137 ms (total: 1.75 sec)
+[2024.10.15-15.22.18:662][700]AssetCheck: New page: Asset Save: BP_ReflectionCard
+[2024.10.15-15.22.18:662][700]LogContentValidation: Display: Validating /Script/Engine.Blueprint /Game/Cards/BP_ReflectionCard.BP_ReflectionCard
+[2024.10.15-15.22.27:468][493]BlueprintLog: New page: Compile BP_ReflectionCard
+[2024.10.15-15.22.27:514][493]LogUObjectHash: Compacting FUObjectHashTables data took   1.78ms
