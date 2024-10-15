@@ -84,6 +84,10 @@ void AEnemyProjectile::OnHit(UPrimitiveComponent* HitComponent, AActor* OtherAct
 		{
 			//create unreal damage event
 			FPointDamageEvent DamageEvent(BulletDamage, Hit, -GetActorForwardVector(), nullptr);
+			if(FMath::Asin(FVector::DotProduct(PlayerPawn->GetActorForwardVector(), Hit.Normal)) > 0)
+			{
+				ReflectBullet();
+			}
 			//apply damage to other actor
 			OtherActor->TakeDamage(BulletDamage, DamageEvent, OwnerAI->GetController(), this);
 		}
@@ -152,4 +156,9 @@ void AEnemyProjectile::SetBulletSpeed(float NewSpeed)
 {
 	BaseBulletSpeed = NewSpeed;
 	BulletSpeed = BaseBulletSpeed;
+}
+
+void AEnemyProjectile::ReflectBullet()
+{
+	UE_LOG(LogTemp, Display, TEXT("Bullet Reflected"));
 }

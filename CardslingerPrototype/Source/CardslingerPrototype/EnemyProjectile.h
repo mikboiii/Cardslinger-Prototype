@@ -64,4 +64,6 @@ private:
 
 	void DestroyProjectileTimerFunction();
 
+	void ReflectBullet();
+
 };
