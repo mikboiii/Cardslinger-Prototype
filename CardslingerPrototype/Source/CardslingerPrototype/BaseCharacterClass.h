@@ -103,6 +103,8 @@ public:
 
 	void SetFlyMode(bool bIsFlying, float FlyTime);
 
+	void SetReflectionMode(bool bIsReflecting, float ReflectionTime);
+
 
 	void Heal(bool IsPercentile, float HealingAmount);
 
@@ -137,6 +139,8 @@ private:
 	float BaseSpeed = 10.0f;
 
 	bool bIsCharacterFlying = false;
+
+	bool bIsCharacterReflecting = false;
 
 	float Speed = 10.f;
 	
@@ -267,6 +271,8 @@ private:
 	FTimerHandle AutoFireManager;
 
 	FTimerHandle FlyModeHandle;
+
+	FTimerHandle ReflectModeHandle;
 
 	void ReloadTimerFunction();
 

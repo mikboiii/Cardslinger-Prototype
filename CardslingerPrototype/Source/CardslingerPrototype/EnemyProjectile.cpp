@@ -88,8 +88,11 @@ void AEnemyProjectile::OnHit(UPrimitiveComponent* HitComponent, AActor* OtherAct
 			{
 				ReflectBullet();
 			}
+			else
+			{
 			//apply damage to other actor
 			OtherActor->TakeDamage(BulletDamage, DamageEvent, OwnerAI->GetController(), this);
+			}
 		}
     }
 	//play impact fx
@@ -161,4 +164,7 @@ void AEnemyProjectile::SetBulletSpeed(float NewSpeed)
 void AEnemyProjectile::ReflectBullet()
 {
 	UE_LOG(LogTemp, Display, TEXT("Bullet Reflected"));
+	//reenable collision with enemy actor
+	BulletMesh->IgnoreActorWhenMoving(OwnerAI, false);
+	BulletCollision->IgnoreActorWhenMoving(OwnerAI, false);
 }

@@ -596,6 +596,13 @@ void ABaseCharacterClass::SetFlyMode(bool bIsFlying, float FlyTime)
 	}
 }
 
+void ABaseCharacterClass::SetReflectionMode(bool bIsReflecting, float ReflectionTime)
+{
+	bIsCharacterReflecting = bIsReflecting;
+	FTimerDelegate ReflectDelegate = FTimerDelegate::CreateUObject(this, &ABaseCharacterClass::SetReflectionMode, false, 0.0f);
+	GetWorldTimerManager().SetTimer(ReflectModeHandle, ReflectDelegate, ReflectionTime, false);
+}
+
 ///@brief Returns alive state of the player
 bool ABaseCharacterClass::IsDead() const
 {
