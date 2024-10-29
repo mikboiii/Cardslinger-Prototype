@@ -7,5 +7,6 @@
 
 void AReflectionCard::CardEffect(class ACardDeck* CardDeck, FVector Direction, FVector Target, AActor* TargetActor)
 {
-    
+    Super::CardEffect(CardDeck, Direction, Target, TargetActor);
+    Cast<ABaseCharacterClass>(UGameplayStatics::GetPlayerPawn(GetWorld(), 0))->SetReflectionMode(true, ReflectionShieldDuration);
 }
