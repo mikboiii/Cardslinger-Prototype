@@ -87,6 +87,8 @@ void AEnemyProjectile::OnHit(UPrimitiveComponent* HitComponent, AActor* OtherAct
 			if(FMath::Asin(FVector::DotProduct(PlayerPawn->GetActorForwardVector(), Hit.Normal)) > 0 && Cast<ABaseCharacterClass>(PlayerPawn)->GetReflectionMode())
 			{
 				ReflectBullet();
+				UNiagaraFunctionLibrary::SpawnSystemAtLocation(GetWorld(), ImpactFX, GetActorLocation(), GetActorForwardVector().Rotation(), FVector::One(), true, true, ENCPoolMethod::None, true);
+				return;
 			}
 			else
 			{
@@ -164,10 +166,11 @@ void AEnemyProjectile::SetBulletSpeed(float NewSpeed)
 void AEnemyProjectile::ReflectBullet()
 {
 	UE_LOG(LogTemp, Display, TEXT("Bullet Reflected"));
+	bIsReflected = true;
 	//reenable collision with enemy actor
 	BulletMesh->IgnoreActorWhenMoving(OwnerAI, false);
 	BulletCollision->IgnoreActorWhenMoving(OwnerAI, false);
-	BulletMesh->IgnoreActorWhenMoving(PlayerPawn, false);
-	BulletCollision->IgnoreActorWhenMoving(PlayerPawn, false);
+	BulletMesh->IgnoreActorWhenMoving(PlayerPawn, true);
+	BulletCollision->IgnoreActorWhenMoving(PlayerPawn, true);
 	SetActorRotation(GetActorRotation().GetInverse());
 }

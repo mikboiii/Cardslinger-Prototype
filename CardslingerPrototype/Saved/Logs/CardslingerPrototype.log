@@ -1318,3 +1318,946 @@ LogConfig: Set CVar [[r.Shadow.DetectVertexShaderLayerAtRuntime:1]]
 [2024.10.29-15.40.37:947][167]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
 [2024.10.29-15.40.37:966][167]LogUObjectHash: Compacting FUObjectHashTables data took   1.50ms
 [2024.10.29-15.40.38:021][168]LogPlayLevel: Display: Destroying online subsystem :Context_5
+[2024.10.29-15.41.07:430][339]LogDerivedDataCache: C:/Users/Mikolaj/AppData/Local/UnrealEngine/Common/DerivedDataCache: Maintenance finished in +00:00:01.278 and deleted 0 files with total size 0 MiB and 0 empty folders. Scanned 1125 files in 1957 folders with total size 215 MiB.
+[2024.10.29-15.46.34:124][319]LogLiveCoding: Display: Starting Live Coding compile.
+[2024.10.29-15.47.44:176][529]LogLiveCoding: Display:    Creating library C:\Users\Mikolaj\Documents\Unreal Projects\Cardslinger-Prototype\CardslingerPrototype\Binaries\Win64\UnrealEditor-CardslingerPrototype.patch_0.lib and object C:\Users\Mikolaj\Documents\Unreal Projects\Cardslinger-Prototype\CardslingerPrototype\Binaries\Win64\UnrealEditor-CardslingerPrototype.patch_0.exp
+[2024.10.29-15.47.45:965][534]LogUObjectHash: Compacting FUObjectHashTables data took   0.77ms
+[2024.10.29-15.47.46:106][535]Display: Reload/Re-instancing Complete: 1 package changed, 27 classes unchanged, 39 functions remapped
+[2024.10.29-15.47.46:106][535]LogLiveCoding: Display: Live coding succeeded
+[2024.10.29-15.48.07:349][682]LogDebuggerCommands: Repeating last play command: Selected Viewport
+[2024.10.29-15.48.07:371][682]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2024.10.29-15.48.07:371][682]PIE: New page: PIE session: MovementLevel (29 Oct 2024, 15:48:07)
+[2024.10.29-15.48.07:399][682]LogPlayLevel: Creating play world package: /Game/Levels/UEDPIE_0_MovementLevel
+[2024.10.29-15.48.07:403][682]LogPlayLevel: PIE: StaticDuplicateObject took: (0.003970s)
+[2024.10.29-15.48.07:403][682]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Levels/MovementLevel.MovementLevel to /Game/Levels/UEDPIE_0_MovementLevel.MovementLevel (0.004035s)
+[2024.10.29-15.48.07:410][682]LogUObjectHash: Compacting FUObjectHashTables data took   0.82ms
+[2024.10.29-15.48.07:411][682]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.10.29-15.48.07:412][682]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2024.10.29-15.48.07:412][682]LogAIModule: Creating AISystem for world MovementLevel
+[2024.10.29-15.48.07:412][682]LogPlayLevel: PIE: World Init took: (0.001509s)
+[2024.10.29-15.48.07:412][682]LogAudio: Display: Creating Audio Device:                 Id: 3, Scope: Unique, Realtime: True
+[2024.10.29-15.48.07:412][682]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2024.10.29-15.48.07:412][682]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2024.10.29-15.48.07:412][682]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2024.10.29-15.48.07:412][682]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2024.10.29-15.48.07:413][682]LogAudioMixer: Display: 	Number of buffers to queue:			  1
+[2024.10.29-15.48.07:413][682]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2024.10.29-15.48.07:413][682]LogAudioMixer: Display: 	Number of Async Source Workers:		  4
+[2024.10.29-15.48.07:413][682]LogAudio: Display: AudioDevice MaxSources: 32
+[2024.10.29-15.48.07:413][682]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2024.10.29-15.48.07:413][682]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2024.10.29-15.48.07:413][682]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2024.10.29-15.48.07:416][682]LogAudioMixer: Display: Initializing audio mixer using platform API: 'XAudio2'
+[2024.10.29-15.48.07:483][682]LogAudioMixer: Display: Using Audio Hardware Device Speakers (Realtek(R) Audio)
+[2024.10.29-15.48.07:483][682]LogAudioMixer: Display: Initializing Sound Submixes...
+[2024.10.29-15.48.07:483][682]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2024.10.29-15.48.07:483][682]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2024.10.29-15.48.07:484][682]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called. InstanceID=3
+[2024.10.29-15.48.07:484][682]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048, InstanceID=3
+[2024.10.29-15.48.07:486][682]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=3
+[2024.10.29-15.48.07:486][682]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time. InstanceID=3
+[2024.10.29-15.48.07:486][682]LogInit: FAudioDevice initialized with ID 3.
+[2024.10.29-15.48.07:486][682]LogAudio: Display: Audio Device (ID: 3) registered with world 'MovementLevel'.
+[2024.10.29-15.48.07:486][682]LogAudioMixer: Initializing Audio Bus Subsystem for audio device with ID 3
+[2024.10.29-15.48.07:490][682]LogLoad: Game class is 'BP_CardslingerTestGameMode_C'
+[2024.10.29-15.48.07:493][682]LogWorld: Bringing World /Game/Levels/UEDPIE_0_MovementLevel.MovementLevel up for play (max tick rate 60) at 2024.10.29-15.48.07
+[2024.10.29-15.48.07:494][682]LogWorld: Bringing up level for play took: 0.003577
+[2024.10.29-15.48.07:497][682]LogOnline: OSS: Created online subsystem instance for: :Context_6
+[2024.10.29-15.48.07:501][682]LogViewport: Display: Viewport MouseCaptureMode Changed, CapturePermanently_IncludingInitialMouseDown -> CapturePermanently
+[2024.10.29-15.48.07:505][682]LogTemp: Display: ../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/CardDeck.sav
+[2024.10.29-15.48.07:505][682]LogTemp: Load successful!
+[2024.10.29-15.48.07:508][682]LogTemp: Save successful!
+[2024.10.29-15.48.07:511][682]PIE: Server logged in
+[2024.10.29-15.48.07:512][682]PIE: Play in editor total start time 0.141 seconds.
+[2024.10.29-15.48.19:677][411]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.48.20:800][478]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.48.22:591][583]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2024.10.29-15.48.22:591][583]LogWorld: BeginTearingDown for /Game/Levels/UEDPIE_0_MovementLevel
+[2024.10.29-15.48.22:591][583]LogWorld: UWorld::CleanupWorld for MovementLevel, bSessionEnded=true, bCleanupResources=true
+[2024.10.29-15.48.22:592][583]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.10.29-15.48.22:596][583]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2024.10.29-15.48.22:599][583]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.10.29-15.48.22:611][583]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2024.10.29-15.48.22:611][583]LogAudioMixer: Deinitializing Audio Bus Subsystem for audio device with ID 3
+[2024.10.29-15.48.22:611][583]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=3
+[2024.10.29-15.48.22:614][583]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=3
+[2024.10.29-15.48.22:626][583]LogUObjectHash: Compacting FUObjectHashTables data took   0.99ms
+[2024.10.29-15.48.22:677][584]LogPlayLevel: Display: Destroying online subsystem :Context_6
+[2024.10.29-15.49.54:333][ 92]LogLiveCoding: Display: Starting Live Coding compile.
+[2024.10.29-15.50.59:355][287]LogLiveCoding: Display:    Creating library C:\Users\Mikolaj\Documents\Unreal Projects\Cardslinger-Prototype\CardslingerPrototype\Binaries\Win64\UnrealEditor-CardslingerPrototype.patch_1.lib and object C:\Users\Mikolaj\Documents\Unreal Projects\Cardslinger-Prototype\CardslingerPrototype\Binaries\Win64\UnrealEditor-CardslingerPrototype.patch_1.exp
+[2024.10.29-15.51.00:963][291]LogUObjectHash: Compacting FUObjectHashTables data took   0.80ms
+[2024.10.29-15.51.01:153][292]Display: Reload/Re-instancing Complete: 1 package changed, 27 classes unchanged, 39 functions remapped
+[2024.10.29-15.51.01:153][292]LogLiveCoding: Display: Live coding succeeded
+[2024.10.29-15.51.29:895][461]LogDebuggerCommands: Repeating last play command: Selected Viewport
+[2024.10.29-15.51.29:909][461]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2024.10.29-15.51.29:909][461]PIE: New page: PIE session: MovementLevel (29 Oct 2024, 15:51:29)
+[2024.10.29-15.51.29:909][461]LogPlayLevel: Creating play world package: /Game/Levels/UEDPIE_0_MovementLevel
+[2024.10.29-15.51.29:913][461]LogPlayLevel: PIE: StaticDuplicateObject took: (0.003352s)
+[2024.10.29-15.51.29:913][461]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Levels/MovementLevel.MovementLevel to /Game/Levels/UEDPIE_0_MovementLevel.MovementLevel (0.003403s)
+[2024.10.29-15.51.29:919][461]LogUObjectHash: Compacting FUObjectHashTables data took   0.74ms
+[2024.10.29-15.51.29:920][461]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.10.29-15.51.29:920][461]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2024.10.29-15.51.29:921][461]LogAIModule: Creating AISystem for world MovementLevel
+[2024.10.29-15.51.29:921][461]LogPlayLevel: PIE: World Init took: (0.001136s)
+[2024.10.29-15.51.29:921][461]LogAudio: Display: Creating Audio Device:                 Id: 4, Scope: Unique, Realtime: True
+[2024.10.29-15.51.29:921][461]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2024.10.29-15.51.29:921][461]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2024.10.29-15.51.29:921][461]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2024.10.29-15.51.29:921][461]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2024.10.29-15.51.29:921][461]LogAudioMixer: Display: 	Number of buffers to queue:			  1
+[2024.10.29-15.51.29:921][461]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2024.10.29-15.51.29:921][461]LogAudioMixer: Display: 	Number of Async Source Workers:		  4
+[2024.10.29-15.51.29:921][461]LogAudio: Display: AudioDevice MaxSources: 32
+[2024.10.29-15.51.29:922][461]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2024.10.29-15.51.29:922][461]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2024.10.29-15.51.29:922][461]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2024.10.29-15.51.29:925][461]LogAudioMixer: Display: Initializing audio mixer using platform API: 'XAudio2'
+[2024.10.29-15.51.29:982][461]LogAudioMixer: Display: Using Audio Hardware Device Speakers (Realtek(R) Audio)
+[2024.10.29-15.51.29:984][461]LogAudioMixer: Display: Initializing Sound Submixes...
+[2024.10.29-15.51.29:984][461]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2024.10.29-15.51.29:984][461]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2024.10.29-15.51.29:985][461]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called. InstanceID=4
+[2024.10.29-15.51.29:985][461]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048, InstanceID=4
+[2024.10.29-15.51.29:988][461]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=4
+[2024.10.29-15.51.29:988][461]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time. InstanceID=4
+[2024.10.29-15.51.29:988][461]LogInit: FAudioDevice initialized with ID 4.
+[2024.10.29-15.51.29:988][461]LogAudio: Display: Audio Device (ID: 4) registered with world 'MovementLevel'.
+[2024.10.29-15.51.29:988][461]LogAudioMixer: Initializing Audio Bus Subsystem for audio device with ID 4
+[2024.10.29-15.51.29:991][461]LogLoad: Game class is 'BP_CardslingerTestGameMode_C'
+[2024.10.29-15.51.29:994][461]LogWorld: Bringing World /Game/Levels/UEDPIE_0_MovementLevel.MovementLevel up for play (max tick rate 60) at 2024.10.29-15.51.29
+[2024.10.29-15.51.29:994][461]LogWorld: Bringing up level for play took: 0.003118
+[2024.10.29-15.51.29:997][461]LogOnline: OSS: Created online subsystem instance for: :Context_7
+[2024.10.29-15.51.30:000][461]LogViewport: Display: Viewport MouseCaptureMode Changed, CapturePermanently_IncludingInitialMouseDown -> CapturePermanently
+[2024.10.29-15.51.30:004][461]LogTemp: Display: ../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/CardDeck.sav
+[2024.10.29-15.51.30:004][461]LogTemp: Load successful!
+[2024.10.29-15.51.30:007][461]LogTemp: Save successful!
+[2024.10.29-15.51.30:009][461]PIE: Server logged in
+[2024.10.29-15.51.30:010][461]PIE: Play in editor total start time 0.101 seconds.
+[2024.10.29-15.51.59:183][311]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.52.00:117][367]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.52.00:318][379]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.52.13:486][165]LogViewport: Display: Viewport MouseLockMode Changed, LockOnCapture -> DoNotLock
+[2024.10.29-15.52.13:486][165]LogViewport: Display: Viewport MouseCaptureMode Changed, CapturePermanently -> NoCapture
+[2024.10.29-15.52.13:499][165]LogTemp: Display: ../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/CardDeck.sav
+[2024.10.29-15.52.13:499][165]LogTemp: Load successful!
+[2024.10.29-15.52.13:503][165]LogTemp: Save successful!
+[2024.10.29-15.52.13:503][165]LogTemp: Load successful!
+[2024.10.29-15.52.14:237][206]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2024.10.29-15.52.14:237][206]LogWorld: BeginTearingDown for /Game/Levels/UEDPIE_0_MovementLevel
+[2024.10.29-15.52.14:237][206]LogWorld: UWorld::CleanupWorld for MovementLevel, bSessionEnded=true, bCleanupResources=true
+[2024.10.29-15.52.14:238][206]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.10.29-15.52.14:242][206]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2024.10.29-15.52.14:246][206]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.10.29-15.52.14:258][206]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2024.10.29-15.52.14:258][206]LogAudioMixer: Deinitializing Audio Bus Subsystem for audio device with ID 4
+[2024.10.29-15.52.14:258][206]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=4
+[2024.10.29-15.52.14:260][206]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=4
+[2024.10.29-15.52.14:274][206]LogUObjectHash: Compacting FUObjectHashTables data took   1.11ms
+[2024.10.29-15.52.14:306][207]LogPlayLevel: Display: Destroying online subsystem :Context_7
+[2024.10.29-15.52.24:571][331]LogDebuggerCommands: Repeating last play command: Selected Viewport
+[2024.10.29-15.52.24:586][331]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2024.10.29-15.52.24:586][331]PIE: New page: PIE session: MovementLevel (29 Oct 2024, 15:52:24)
+[2024.10.29-15.52.24:586][331]LogPlayLevel: Creating play world package: /Game/Levels/UEDPIE_0_MovementLevel
+[2024.10.29-15.52.24:589][331]LogPlayLevel: PIE: StaticDuplicateObject took: (0.003628s)
+[2024.10.29-15.52.24:589][331]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Levels/MovementLevel.MovementLevel to /Game/Levels/UEDPIE_0_MovementLevel.MovementLevel (0.003673s)
+[2024.10.29-15.52.24:598][331]LogUObjectHash: Compacting FUObjectHashTables data took   1.04ms
+[2024.10.29-15.52.24:600][331]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.10.29-15.52.24:600][331]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2024.10.29-15.52.24:600][331]LogAIModule: Creating AISystem for world MovementLevel
+[2024.10.29-15.52.24:601][331]LogPlayLevel: PIE: World Init took: (0.001170s)
+[2024.10.29-15.52.24:601][331]LogAudio: Display: Creating Audio Device:                 Id: 5, Scope: Unique, Realtime: True
+[2024.10.29-15.52.24:601][331]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2024.10.29-15.52.24:601][331]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2024.10.29-15.52.24:601][331]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2024.10.29-15.52.24:601][331]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2024.10.29-15.52.24:601][331]LogAudioMixer: Display: 	Number of buffers to queue:			  1
+[2024.10.29-15.52.24:601][331]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2024.10.29-15.52.24:601][331]LogAudioMixer: Display: 	Number of Async Source Workers:		  4
+[2024.10.29-15.52.24:601][331]LogAudio: Display: AudioDevice MaxSources: 32
+[2024.10.29-15.52.24:601][331]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2024.10.29-15.52.24:601][331]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2024.10.29-15.52.24:601][331]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2024.10.29-15.52.24:604][331]LogAudioMixer: Display: Initializing audio mixer using platform API: 'XAudio2'
+[2024.10.29-15.52.24:670][331]LogAudioMixer: Display: Using Audio Hardware Device Speakers (Realtek(R) Audio)
+[2024.10.29-15.52.24:670][331]LogAudioMixer: Display: Initializing Sound Submixes...
+[2024.10.29-15.52.24:670][331]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2024.10.29-15.52.24:670][331]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2024.10.29-15.52.24:670][331]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called. InstanceID=5
+[2024.10.29-15.52.24:670][331]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048, InstanceID=5
+[2024.10.29-15.52.24:673][331]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=5
+[2024.10.29-15.52.24:673][331]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time. InstanceID=5
+[2024.10.29-15.52.24:673][331]LogInit: FAudioDevice initialized with ID 5.
+[2024.10.29-15.52.24:673][331]LogAudio: Display: Audio Device (ID: 5) registered with world 'MovementLevel'.
+[2024.10.29-15.52.24:673][331]LogAudioMixer: Initializing Audio Bus Subsystem for audio device with ID 5
+[2024.10.29-15.52.24:677][331]LogLoad: Game class is 'BP_CardslingerTestGameMode_C'
+[2024.10.29-15.52.24:680][331]LogWorld: Bringing World /Game/Levels/UEDPIE_0_MovementLevel.MovementLevel up for play (max tick rate 60) at 2024.10.29-15.52.24
+[2024.10.29-15.52.24:681][331]LogWorld: Bringing up level for play took: 0.003745
+[2024.10.29-15.52.24:683][331]LogOnline: OSS: Created online subsystem instance for: :Context_8
+[2024.10.29-15.52.24:688][331]LogViewport: Display: Viewport MouseCaptureMode Changed, CapturePermanently_IncludingInitialMouseDown -> CapturePermanently
+[2024.10.29-15.52.24:692][331]LogTemp: Display: ../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/CardDeck.sav
+[2024.10.29-15.52.24:692][331]LogTemp: Load successful!
+[2024.10.29-15.52.24:696][331]LogTemp: Save successful!
+[2024.10.29-15.52.24:697][331]PIE: Server logged in
+[2024.10.29-15.52.24:698][331]PIE: Play in editor total start time 0.113 seconds.
+[2024.10.29-15.52.33:624][862]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.52.33:826][874]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.52.35:188][954]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2024.10.29-15.52.35:188][954]LogWorld: BeginTearingDown for /Game/Levels/UEDPIE_0_MovementLevel
+[2024.10.29-15.52.35:188][954]LogWorld: UWorld::CleanupWorld for MovementLevel, bSessionEnded=true, bCleanupResources=true
+[2024.10.29-15.52.35:189][954]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.10.29-15.52.35:193][954]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2024.10.29-15.52.35:196][954]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.10.29-15.52.35:205][954]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2024.10.29-15.52.35:205][954]LogAudioMixer: Deinitializing Audio Bus Subsystem for audio device with ID 5
+[2024.10.29-15.52.35:205][954]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=5
+[2024.10.29-15.52.35:209][954]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=5
+[2024.10.29-15.52.35:220][954]LogUObjectHash: Compacting FUObjectHashTables data took   1.21ms
+[2024.10.29-15.52.35:267][955]LogPlayLevel: Display: Destroying online subsystem :Context_8
+[2024.10.29-15.53.00:344][477]LogDebuggerCommands: Repeating last play command: Selected Viewport
+[2024.10.29-15.53.00:358][477]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2024.10.29-15.53.00:358][477]PIE: New page: PIE session: MovementLevel (29 Oct 2024, 15:53:00)
+[2024.10.29-15.53.00:358][477]LogPlayLevel: Creating play world package: /Game/Levels/UEDPIE_0_MovementLevel
+[2024.10.29-15.53.00:362][477]LogPlayLevel: PIE: StaticDuplicateObject took: (0.003341s)
+[2024.10.29-15.53.00:362][477]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Levels/MovementLevel.MovementLevel to /Game/Levels/UEDPIE_0_MovementLevel.MovementLevel (0.003386s)
+[2024.10.29-15.53.00:368][477]LogUObjectHash: Compacting FUObjectHashTables data took   0.90ms
+[2024.10.29-15.53.00:370][477]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.10.29-15.53.00:370][477]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2024.10.29-15.53.00:370][477]LogAIModule: Creating AISystem for world MovementLevel
+[2024.10.29-15.53.00:370][477]LogPlayLevel: PIE: World Init took: (0.000955s)
+[2024.10.29-15.53.00:370][477]LogAudio: Display: Creating Audio Device:                 Id: 6, Scope: Unique, Realtime: True
+[2024.10.29-15.53.00:370][477]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2024.10.29-15.53.00:370][477]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2024.10.29-15.53.00:370][477]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2024.10.29-15.53.00:370][477]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2024.10.29-15.53.00:370][477]LogAudioMixer: Display: 	Number of buffers to queue:			  1
+[2024.10.29-15.53.00:370][477]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2024.10.29-15.53.00:371][477]LogAudioMixer: Display: 	Number of Async Source Workers:		  4
+[2024.10.29-15.53.00:371][477]LogAudio: Display: AudioDevice MaxSources: 32
+[2024.10.29-15.53.00:371][477]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2024.10.29-15.53.00:371][477]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2024.10.29-15.53.00:371][477]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2024.10.29-15.53.00:373][477]LogAudioMixer: Display: Initializing audio mixer using platform API: 'XAudio2'
+[2024.10.29-15.53.00:430][477]LogAudioMixer: Display: Using Audio Hardware Device Speakers (Realtek(R) Audio)
+[2024.10.29-15.53.00:430][477]LogAudioMixer: Display: Initializing Sound Submixes...
+[2024.10.29-15.53.00:430][477]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2024.10.29-15.53.00:430][477]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2024.10.29-15.53.00:431][477]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called. InstanceID=6
+[2024.10.29-15.53.00:431][477]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048, InstanceID=6
+[2024.10.29-15.53.00:433][477]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=6
+[2024.10.29-15.53.00:433][477]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time. InstanceID=6
+[2024.10.29-15.53.00:433][477]LogInit: FAudioDevice initialized with ID 6.
+[2024.10.29-15.53.00:433][477]LogAudio: Display: Audio Device (ID: 6) registered with world 'MovementLevel'.
+[2024.10.29-15.53.00:433][477]LogAudioMixer: Initializing Audio Bus Subsystem for audio device with ID 6
+[2024.10.29-15.53.00:437][477]LogLoad: Game class is 'BP_CardslingerTestGameMode_C'
+[2024.10.29-15.53.00:440][477]LogWorld: Bringing World /Game/Levels/UEDPIE_0_MovementLevel.MovementLevel up for play (max tick rate 60) at 2024.10.29-15.53.00
+[2024.10.29-15.53.00:441][477]LogWorld: Bringing up level for play took: 0.003223
+[2024.10.29-15.53.00:444][477]LogOnline: OSS: Created online subsystem instance for: :Context_9
+[2024.10.29-15.53.00:446][477]LogViewport: Display: Viewport MouseCaptureMode Changed, CapturePermanently_IncludingInitialMouseDown -> CapturePermanently
+[2024.10.29-15.53.00:449][477]LogTemp: Display: ../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/CardDeck.sav
+[2024.10.29-15.53.00:449][477]LogTemp: Load successful!
+[2024.10.29-15.53.00:454][477]LogTemp: Save successful!
+[2024.10.29-15.53.00:455][477]PIE: Server logged in
+[2024.10.29-15.53.00:456][477]PIE: Play in editor total start time 0.097 seconds.
+[2024.10.29-15.53.09:792][ 36]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.53.09:993][ 48]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.53.10:509][ 79]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.53.10:709][ 91]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.53.10:910][103]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.53.12:017][167]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2024.10.29-15.53.12:018][167]LogWorld: BeginTearingDown for /Game/Levels/UEDPIE_0_MovementLevel
+[2024.10.29-15.53.12:018][167]LogWorld: UWorld::CleanupWorld for MovementLevel, bSessionEnded=true, bCleanupResources=true
+[2024.10.29-15.53.12:021][167]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.10.29-15.53.12:024][167]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2024.10.29-15.53.12:028][167]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.10.29-15.53.12:036][167]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2024.10.29-15.53.12:036][167]LogAudioMixer: Deinitializing Audio Bus Subsystem for audio device with ID 6
+[2024.10.29-15.53.12:037][167]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=6
+[2024.10.29-15.53.12:040][167]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=6
+[2024.10.29-15.53.12:050][167]LogUObjectHash: Compacting FUObjectHashTables data took   0.90ms
+[2024.10.29-15.53.12:098][168]LogPlayLevel: Display: Destroying online subsystem :Context_9
+[2024.10.29-15.53.30:989][677]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.10.29-15.53.31:044][678]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.10.29-15.53.31:083][679]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.10.29-15.53.31:117][680]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.10.29-15.53.31:150][681]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.10.29-15.53.31:182][682]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.10.29-15.53.36:363][984]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/Cards/BP_ReflectionCard.BP_ReflectionCard
+[2024.10.29-15.53.36:365][984]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.10.29-15.53.36:365][984]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2024.10.29-15.53.36:383][984]LogSlate: Warning: The command 'BlueprintEditorSpawnNodes.AddActorRefAction->CommandInfo' has the same default chord as 'BlueprintEditorSpawnNodes.(Class=/Script/BlueprintGraph.K2Node_Knot Key=R Shift=false Ctrl=false Alt=false)' [R]
+[2024.10.29-15.53.46:008][506]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.10.29-15.53.46:167][506]LogPackageLocalizationCache: Processed 46 localized package path(s) for 1 prioritized culture(s) in 0.011191 seconds
+[2024.10.29-15.53.46:188][506]LogSavePackage: Moving output files for package: /Game/Cards/BP_ReflectionCard
+[2024.10.29-15.53.46:190][506]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/BP_ReflectionCard89572A9D4F25CDC5F82F169EC8F569CF.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/Cards/BP_ReflectionCard.uasset'
+[2024.10.29-15.53.46:205][506]LogFileHelpers: InternalPromptForCheckoutAndSave took 195 ms
+[2024.10.29-15.53.46:217][506]AssetCheck: New page: Asset Save: BP_ReflectionCard
+[2024.10.29-15.53.46:217][506]LogContentValidation: Display: Validating /Script/Engine.Blueprint /Game/Cards/BP_ReflectionCard.BP_ReflectionCard
+[2024.10.29-15.53.46:528][525]BlueprintLog: New page: Compile BP_ReflectionCard
+[2024.10.29-15.53.46:574][525]LogUObjectHash: Compacting FUObjectHashTables data took   0.70ms
+[2024.10.29-15.53.47:893][599]LogDebuggerCommands: Repeating last play command: Selected Viewport
+[2024.10.29-15.53.47:907][599]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2024.10.29-15.53.47:907][599]PIE: New page: PIE session: MovementLevel (29 Oct 2024, 15:53:47)
+[2024.10.29-15.53.47:937][599]LogPlayLevel: Creating play world package: /Game/Levels/UEDPIE_0_MovementLevel
+[2024.10.29-15.53.47:941][599]LogPlayLevel: PIE: StaticDuplicateObject took: (0.003429s)
+[2024.10.29-15.53.47:941][599]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Levels/MovementLevel.MovementLevel to /Game/Levels/UEDPIE_0_MovementLevel.MovementLevel (0.003481s)
+[2024.10.29-15.53.47:947][599]LogUObjectHash: Compacting FUObjectHashTables data took   0.69ms
+[2024.10.29-15.53.47:947][599]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.10.29-15.53.47:948][599]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2024.10.29-15.53.47:948][599]LogAIModule: Creating AISystem for world MovementLevel
+[2024.10.29-15.53.47:948][599]LogPlayLevel: PIE: World Init took: (0.000992s)
+[2024.10.29-15.53.47:948][599]LogAudio: Display: Creating Audio Device:                 Id: 7, Scope: Unique, Realtime: True
+[2024.10.29-15.53.47:948][599]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2024.10.29-15.53.47:948][599]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2024.10.29-15.53.47:948][599]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2024.10.29-15.53.47:949][599]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2024.10.29-15.53.47:949][599]LogAudioMixer: Display: 	Number of buffers to queue:			  1
+[2024.10.29-15.53.47:949][599]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2024.10.29-15.53.47:949][599]LogAudioMixer: Display: 	Number of Async Source Workers:		  4
+[2024.10.29-15.53.47:949][599]LogAudio: Display: AudioDevice MaxSources: 32
+[2024.10.29-15.53.47:949][599]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2024.10.29-15.53.47:949][599]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2024.10.29-15.53.47:949][599]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2024.10.29-15.53.47:951][599]LogAudioMixer: Display: Initializing audio mixer using platform API: 'XAudio2'
+[2024.10.29-15.53.48:015][599]LogAudioMixer: Display: Using Audio Hardware Device Speakers (Realtek(R) Audio)
+[2024.10.29-15.53.48:015][599]LogAudioMixer: Display: Initializing Sound Submixes...
+[2024.10.29-15.53.48:015][599]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2024.10.29-15.53.48:015][599]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2024.10.29-15.53.48:019][599]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called. InstanceID=7
+[2024.10.29-15.53.48:019][599]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048, InstanceID=7
+[2024.10.29-15.53.48:021][599]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=7
+[2024.10.29-15.53.48:021][599]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time. InstanceID=7
+[2024.10.29-15.53.48:021][599]LogInit: FAudioDevice initialized with ID 7.
+[2024.10.29-15.53.48:021][599]LogAudio: Display: Audio Device (ID: 7) registered with world 'MovementLevel'.
+[2024.10.29-15.53.48:021][599]LogAudioMixer: Initializing Audio Bus Subsystem for audio device with ID 7
+[2024.10.29-15.53.48:025][599]LogLoad: Game class is 'BP_CardslingerTestGameMode_C'
+[2024.10.29-15.53.48:028][599]LogWorld: Bringing World /Game/Levels/UEDPIE_0_MovementLevel.MovementLevel up for play (max tick rate 60) at 2024.10.29-15.53.48
+[2024.10.29-15.53.48:030][599]LogWorld: Bringing up level for play took: 0.004553
+[2024.10.29-15.53.48:034][599]LogOnline: OSS: Created online subsystem instance for: :Context_17
+[2024.10.29-15.53.48:037][599]LogViewport: Display: Viewport MouseCaptureMode Changed, CapturePermanently_IncludingInitialMouseDown -> CapturePermanently
+[2024.10.29-15.53.48:042][599]LogTemp: Display: ../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/CardDeck.sav
+[2024.10.29-15.53.48:042][599]LogTemp: Load successful!
+[2024.10.29-15.53.48:047][599]LogTemp: Save successful!
+[2024.10.29-15.53.48:049][599]PIE: Server logged in
+[2024.10.29-15.53.48:050][599]PIE: Play in editor total start time 0.143 seconds.
+[2024.10.29-15.54.03:380][511]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2024.10.29-15.54.03:380][511]LogWorld: BeginTearingDown for /Game/Levels/UEDPIE_0_MovementLevel
+[2024.10.29-15.54.03:380][511]LogWorld: UWorld::CleanupWorld for MovementLevel, bSessionEnded=true, bCleanupResources=true
+[2024.10.29-15.54.03:381][511]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.10.29-15.54.03:385][511]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2024.10.29-15.54.03:389][511]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.10.29-15.54.03:398][511]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2024.10.29-15.54.03:399][511]LogAudioMixer: Deinitializing Audio Bus Subsystem for audio device with ID 7
+[2024.10.29-15.54.03:399][511]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=7
+[2024.10.29-15.54.03:401][511]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=7
+[2024.10.29-15.54.03:412][511]LogUObjectHash: Compacting FUObjectHashTables data took   1.14ms
+[2024.10.29-15.54.03:460][512]LogPlayLevel: Display: Destroying online subsystem :Context_17
+[2024.10.29-15.54.04:452][571]LogDebuggerCommands: Repeating last play command: Selected Viewport
+[2024.10.29-15.54.04:466][571]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2024.10.29-15.54.04:466][571]PIE: New page: PIE session: MovementLevel (29 Oct 2024, 15:54:04)
+[2024.10.29-15.54.04:466][571]LogPlayLevel: Creating play world package: /Game/Levels/UEDPIE_0_MovementLevel
+[2024.10.29-15.54.04:469][571]LogPlayLevel: PIE: StaticDuplicateObject took: (0.003088s)
+[2024.10.29-15.54.04:469][571]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Levels/MovementLevel.MovementLevel to /Game/Levels/UEDPIE_0_MovementLevel.MovementLevel (0.003140s)
+[2024.10.29-15.54.04:475][571]LogUObjectHash: Compacting FUObjectHashTables data took   1.08ms
+[2024.10.29-15.54.04:476][571]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.10.29-15.54.04:476][571]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2024.10.29-15.54.04:476][571]LogAIModule: Creating AISystem for world MovementLevel
+[2024.10.29-15.54.04:478][571]LogPlayLevel: PIE: World Init took: (0.001069s)
+[2024.10.29-15.54.04:478][571]LogAudio: Display: Creating Audio Device:                 Id: 8, Scope: Unique, Realtime: True
+[2024.10.29-15.54.04:478][571]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2024.10.29-15.54.04:478][571]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2024.10.29-15.54.04:478][571]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2024.10.29-15.54.04:478][571]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2024.10.29-15.54.04:478][571]LogAudioMixer: Display: 	Number of buffers to queue:			  1
+[2024.10.29-15.54.04:478][571]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2024.10.29-15.54.04:478][571]LogAudioMixer: Display: 	Number of Async Source Workers:		  4
+[2024.10.29-15.54.04:478][571]LogAudio: Display: AudioDevice MaxSources: 32
+[2024.10.29-15.54.04:478][571]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2024.10.29-15.54.04:478][571]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2024.10.29-15.54.04:478][571]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2024.10.29-15.54.04:481][571]LogAudioMixer: Display: Initializing audio mixer using platform API: 'XAudio2'
+[2024.10.29-15.54.04:539][571]LogAudioMixer: Display: Using Audio Hardware Device Speakers (Realtek(R) Audio)
+[2024.10.29-15.54.04:539][571]LogAudioMixer: Display: Initializing Sound Submixes...
+[2024.10.29-15.54.04:539][571]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2024.10.29-15.54.04:539][571]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2024.10.29-15.54.04:540][571]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called. InstanceID=8
+[2024.10.29-15.54.04:540][571]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048, InstanceID=8
+[2024.10.29-15.54.04:542][571]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=8
+[2024.10.29-15.54.04:542][571]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time. InstanceID=8
+[2024.10.29-15.54.04:542][571]LogInit: FAudioDevice initialized with ID 8.
+[2024.10.29-15.54.04:542][571]LogAudio: Display: Audio Device (ID: 8) registered with world 'MovementLevel'.
+[2024.10.29-15.54.04:542][571]LogAudioMixer: Initializing Audio Bus Subsystem for audio device with ID 8
+[2024.10.29-15.54.04:545][571]LogLoad: Game class is 'BP_CardslingerTestGameMode_C'
+[2024.10.29-15.54.04:548][571]LogWorld: Bringing World /Game/Levels/UEDPIE_0_MovementLevel.MovementLevel up for play (max tick rate 60) at 2024.10.29-15.54.04
+[2024.10.29-15.54.04:548][571]LogWorld: Bringing up level for play took: 0.003279
+[2024.10.29-15.54.04:551][571]LogOnline: OSS: Created online subsystem instance for: :Context_18
+[2024.10.29-15.54.04:554][571]LogViewport: Display: Viewport MouseCaptureMode Changed, CapturePermanently_IncludingInitialMouseDown -> CapturePermanently
+[2024.10.29-15.54.04:558][571]LogTemp: Display: ../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/CardDeck.sav
+[2024.10.29-15.54.04:558][571]LogTemp: Load successful!
+[2024.10.29-15.54.04:562][571]LogTemp: Save successful!
+[2024.10.29-15.54.04:563][571]PIE: Server logged in
+[2024.10.29-15.54.04:564][571]PIE: Play in editor total start time 0.098 seconds.
+[2024.10.29-15.54.07:019][715]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2024.10.29-15.54.07:020][715]LogWorld: BeginTearingDown for /Game/Levels/UEDPIE_0_MovementLevel
+[2024.10.29-15.54.07:020][715]LogWorld: UWorld::CleanupWorld for MovementLevel, bSessionEnded=true, bCleanupResources=true
+[2024.10.29-15.54.07:021][715]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.10.29-15.54.07:025][715]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2024.10.29-15.54.07:029][715]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.10.29-15.54.07:040][715]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2024.10.29-15.54.07:041][715]LogAudioMixer: Deinitializing Audio Bus Subsystem for audio device with ID 8
+[2024.10.29-15.54.07:041][715]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=8
+[2024.10.29-15.54.07:043][715]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=8
+[2024.10.29-15.54.07:055][715]LogUObjectHash: Compacting FUObjectHashTables data took   0.98ms
+[2024.10.29-15.54.07:106][716]Cmd: SELECT NONE
+[2024.10.29-15.54.07:120][716]LogPlayLevel: Display: Destroying online subsystem :Context_18
+[2024.10.29-15.54.11:510][976]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.10.29-15.54.11:631][976]LogSavePackage: Moving output files for package: /Game/Cards/BP_ReflectionCard
+[2024.10.29-15.54.11:632][976]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/BP_ReflectionCardE7513D724BB861F4AFBC60B77D7BFF19.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/Cards/BP_ReflectionCard.uasset'
+[2024.10.29-15.54.11:642][976]LogFileHelpers: InternalPromptForCheckoutAndSave took 131 ms (total: 327 ms)
+[2024.10.29-15.54.11:643][976]AssetCheck: New page: Asset Save: BP_ReflectionCard
+[2024.10.29-15.54.11:643][976]LogContentValidation: Display: Validating /Script/Engine.Blueprint /Game/Cards/BP_ReflectionCard.BP_ReflectionCard
+[2024.10.29-15.54.12:220][ 11]BlueprintLog: New page: Compile BP_ReflectionCard
+[2024.10.29-15.54.12:260][ 11]LogUObjectHash: Compacting FUObjectHashTables data took   0.82ms
+[2024.10.29-15.54.49:394][303]LogDebuggerCommands: Repeating last play command: Selected Viewport
+[2024.10.29-15.54.49:410][303]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2024.10.29-15.54.49:410][303]PIE: New page: PIE session: MovementLevel (29 Oct 2024, 15:54:49)
+[2024.10.29-15.54.49:450][303]LogPlayLevel: Creating play world package: /Game/Levels/UEDPIE_0_MovementLevel
+[2024.10.29-15.54.49:454][303]LogPlayLevel: PIE: StaticDuplicateObject took: (0.003537s)
+[2024.10.29-15.54.49:454][303]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Levels/MovementLevel.MovementLevel to /Game/Levels/UEDPIE_0_MovementLevel.MovementLevel (0.003593s)
+[2024.10.29-15.54.49:459][303]LogUObjectHash: Compacting FUObjectHashTables data took   0.73ms
+[2024.10.29-15.54.49:460][303]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.10.29-15.54.49:460][303]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2024.10.29-15.54.49:460][303]LogAIModule: Creating AISystem for world MovementLevel
+[2024.10.29-15.54.49:461][303]LogPlayLevel: PIE: World Init took: (0.001073s)
+[2024.10.29-15.54.49:461][303]LogAudio: Display: Creating Audio Device:                 Id: 9, Scope: Unique, Realtime: True
+[2024.10.29-15.54.49:461][303]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2024.10.29-15.54.49:461][303]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2024.10.29-15.54.49:461][303]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2024.10.29-15.54.49:461][303]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2024.10.29-15.54.49:461][303]LogAudioMixer: Display: 	Number of buffers to queue:			  1
+[2024.10.29-15.54.49:461][303]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2024.10.29-15.54.49:461][303]LogAudioMixer: Display: 	Number of Async Source Workers:		  4
+[2024.10.29-15.54.49:461][303]LogAudio: Display: AudioDevice MaxSources: 32
+[2024.10.29-15.54.49:462][303]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2024.10.29-15.54.49:462][303]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2024.10.29-15.54.49:462][303]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2024.10.29-15.54.49:464][303]LogAudioMixer: Display: Initializing audio mixer using platform API: 'XAudio2'
+[2024.10.29-15.54.49:535][303]LogAudioMixer: Display: Using Audio Hardware Device Speakers (Realtek(R) Audio)
+[2024.10.29-15.54.49:536][303]LogAudioMixer: Display: Initializing Sound Submixes...
+[2024.10.29-15.54.49:536][303]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2024.10.29-15.54.49:536][303]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2024.10.29-15.54.49:537][303]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called. InstanceID=9
+[2024.10.29-15.54.49:537][303]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048, InstanceID=9
+[2024.10.29-15.54.49:540][303]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=9
+[2024.10.29-15.54.49:540][303]LogInit: FAudioDevice initialized with ID 9.
+[2024.10.29-15.54.49:540][303]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time. InstanceID=9
+[2024.10.29-15.54.49:540][303]LogAudio: Display: Audio Device (ID: 9) registered with world 'MovementLevel'.
+[2024.10.29-15.54.49:540][303]LogAudioMixer: Initializing Audio Bus Subsystem for audio device with ID 9
+[2024.10.29-15.54.49:544][303]LogLoad: Game class is 'BP_CardslingerTestGameMode_C'
+[2024.10.29-15.54.49:547][303]LogWorld: Bringing World /Game/Levels/UEDPIE_0_MovementLevel.MovementLevel up for play (max tick rate 60) at 2024.10.29-15.54.49
+[2024.10.29-15.54.49:548][303]LogWorld: Bringing up level for play took: 0.003766
+[2024.10.29-15.54.49:551][303]LogOnline: OSS: Created online subsystem instance for: :Context_19
+[2024.10.29-15.54.49:554][303]LogViewport: Display: Viewport MouseCaptureMode Changed, CapturePermanently_IncludingInitialMouseDown -> CapturePermanently
+[2024.10.29-15.54.49:557][303]LogTemp: Display: ../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/CardDeck.sav
+[2024.10.29-15.54.49:559][303]LogTemp: Load successful!
+[2024.10.29-15.54.49:563][303]LogTemp: Save successful!
+[2024.10.29-15.54.49:564][303]PIE: Server logged in
+[2024.10.29-15.54.49:565][303]PIE: Play in editor total start time 0.155 seconds.
+[2024.10.29-15.54.58:392][829]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.54.58:811][854]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.54.58:827][855]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.54.59:550][897]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.54.59:569][898]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.54.59:752][908]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.54.59:952][920]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.54.59:969][921]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.55.00:692][964]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.55.00:893][976]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.55.01:092][988]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.55.01:109][989]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.55.01:827][ 32]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.55.02:029][ 44]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.55.07:653][372]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.55.14:404][775]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.55.16:143][879]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.55.17:724][972]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.55.28:354][598]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.55.30:773][743]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.55.30:992][756]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.55.33:174][887]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.55.33:361][898]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.55.38:813][221]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.55.38:846][222]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.55.39:012][228]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.55.39:198][235]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.55.39:952][279]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.55.40:153][287]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.55.40:360][296]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.55.41:098][339]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.55.41:116][340]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.55.41:306][351]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.55.41:511][363]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.55.42:241][406]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.55.42:275][408]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.55.42:447][418]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.55.42:463][419]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.55.42:646][430]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.55.43:374][473]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.55.43:603][483]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.55.43:749][490]LogEditorViewport: Clicking Background
+[2024.10.29-15.55.43:781][491]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.55.44:572][513]LogShaderCompilers: Display: ================================================
+[2024.10.29-15.55.44:572][513]LogShaderCompilers: Display: === FShaderJobCache stats ===
+[2024.10.29-15.55.44:572][513]LogShaderCompilers: Display: Total job queries 38, among them cache hits 0 (0.00%)
+[2024.10.29-15.55.44:572][513]LogShaderCompilers: Display: Tracking 38 distinct input hashes that result in 35 distinct outputs (92.11%)
+[2024.10.29-15.55.44:572][513]LogShaderCompilers: Display: RAM used: 946.49 KiB of 819.20 MiB budget. Usage: 0.11%
+[2024.10.29-15.55.44:572][513]LogShaderCompilers: Display: === Shader Compilation stats ===
+[2024.10.29-15.55.44:572][513]LogShaderCompilers: Display: Shaders Compiled: 0
+[2024.10.29-15.55.44:572][513]LogShaderCompilers: Display: Jobs assigned 0, completed 0 (0%)
+[2024.10.29-15.55.44:572][513]LogShaderCompilers: Display: Time at least one job was in flight (either pending or executed): 0.00 s
+[2024.10.29-15.55.44:572][513]LogShaderCompilers: Display: ================================================
+[2024.10.29-15.55.44:789][514]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.55.44:994][515]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.55.44:995][515]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.55.45:754][524]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.55.46:175][543]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.55.46:368][549]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.55.47:123][585]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.55.47:142][586]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.55.47:332][595]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.55.48:253][639]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.55.48:277][640]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.55.48:462][649]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.55.49:446][698]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.55.49:650][708]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.55.49:670][709]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.55.49:848][718]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.55.50:602][754]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.55.50:647][756]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.10.29-15.55.50:994][770]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.55.51:762][808]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.55.51:968][818]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.55.52:175][828]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.55.52:924][865]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.55.53:111][874]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.55.53:313][884]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.55.53:336][885]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.55.54:067][920]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.55.54:273][930]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.55.54:477][940]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.55.55:215][976]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.55.55:235][977]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.55.55:409][985]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.55.55:431][986]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.55.55:623][995]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.55.55:645][996]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.55.56:649][ 41]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.55.56:669][ 42]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.55.58:020][ 99]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.55.58:811][130]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.55.59:013][139]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.55.59:033][140]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.55.59:955][183]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.56.00:003][184]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.56.00:149][190]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.56.00:172][191]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.56.00:371][200]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.56.01:194][240]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.56.01:216][241]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.56.01:407][250]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.56.01:427][251]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.56.01:596][259]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.56.01:616][260]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.56.02:363][296]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.56.02:749][314]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.56.02:767][315]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.56.03:506][349]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.56.03:913][367]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.56.04:651][400]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.56.04:694][402]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.56.04:869][410]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.56.04:891][411]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.56.05:066][419]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.56.05:827][453]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.56.05:860][454]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.56.06:206][467]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.56.06:987][502]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.56.07:171][510]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.56.07:214][512]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.56.07:389][520]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.56.08:133][553]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.56.08:155][554]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.56.08:341][562]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.56.08:551][571]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.56.08:573][572]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.56.09:331][605]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.56.09:512][613]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.56.09:751][623]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.56.10:462][656]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.56.10:483][657]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.56.10:644][664]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.56.10:852][673]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.56.11:603][707]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.56.11:623][708]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.56.11:807][716]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.56.12:750][758]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.56.12:771][759]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.56.12:952][767]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.56.12:973][768]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.56.13:154][776]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.56.13:921][810]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.56.14:127][818]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.56.14:321][827]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.56.15:077][860]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.56.15:279][869]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.56.15:301][870]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.56.15:498][879]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.56.16:224][911]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.56.16:427][920]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.56.16:631][929]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.56.17:362][959]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.56.17:593][969]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.56.17:797][978]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.56.18:565][  7]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.56.18:752][ 14]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.56.18:964][ 23]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.56.18:987][ 24]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.56.19:797][ 56]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.56.19:985][ 66]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.56.20:335][ 86]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.56.20:354][ 87]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.56.21:083][126]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.56.21:293][137]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.56.22:243][187]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.56.23:409][250]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.56.23:627][262]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.56.23:890][276]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.56.25:171][342]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.56.25:393][353]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.56.26:223][396]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.56.26:411][406]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.56.26:628][418]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.56.27:450][463]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.56.27:488][465]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.56.27:655][474]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.56.27:840][484]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.56.28:580][524]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.56.28:791][535]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.56.28:830][537]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.56.29:028][548]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.56.29:759][587]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.56.29:965][597]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.56.29:988][598]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.56.30:138][606]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.56.30:907][644]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.56.31:098][653]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.56.31:313][663]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.56.32:077][699]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.56.32:118][701]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.56.32:469][719]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.56.33:254][759]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.56.33:466][770]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.56.33:467][770]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.56.33:665][780]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.56.33:875][791]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.56.34:603][828]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.56.34:998][848]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.56.35:560][877]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.56.36:162][907]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.56.36:881][943]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.56.37:093][954]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.56.37:290][964]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.56.37:837][992]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.56.38:037][  2]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.56.38:237][ 12]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.56.38:438][ 22]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.56.39:379][ 68]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.56.39:401][ 69]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.56.39:600][ 79]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.56.40:242][110]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.56.40:264][111]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.56.40:265][111]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.56.40:436][119]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.56.40:453][120]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.56.40:453][120]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.56.41:067][149]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.56.41:245][157]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.56.41:418][165]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.56.41:435][166]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.56.41:436][166]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.56.42:183][201]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.56.42:435][213]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.56.42:625][222]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.56.43:769][277]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.56.44:472][311]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.56.44:514][313]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.56.44:933][333]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.56.45:430][357]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.56.45:678][369]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.56.45:886][379]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.56.47:240][443]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.56.47:529][457]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.56.47:915][475]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.56.48:008][479]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.56.48:195][487]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.56.48:385][496]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.56.48:683][510]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.56.49:138][532]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.56.49:551][551]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.56.49:830][564]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.56.50:023][573]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.56.50:689][604]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.56.52:831][703]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.56.53:288][724]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.56.53:786][747]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.56.54:176][765]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.56.54:441][777]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.56.54:959][800]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.56.55:159][809]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.56.55:363][818]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.56.55:786][837]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.56.56:118][850]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.56.56:309][858]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.56.56:512][866]LogTemp: Display: Bullet Reflected
+[2024.10.29-15.56.56:615][868]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2024.10.29-15.56.56:615][868]LogWorld: BeginTearingDown for /Game/Levels/UEDPIE_0_MovementLevel
+[2024.10.29-15.56.56:615][868]LogWorld: UWorld::CleanupWorld for MovementLevel, bSessionEnded=true, bCleanupResources=true
+[2024.10.29-15.56.56:620][868]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.10.29-15.56.56:625][868]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2024.10.29-15.56.56:630][868]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.10.29-15.56.56:640][868]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2024.10.29-15.56.56:641][868]LogAudioMixer: Deinitializing Audio Bus Subsystem for audio device with ID 9
+[2024.10.29-15.56.56:641][868]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=9
+[2024.10.29-15.56.56:643][868]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=9
+[2024.10.29-15.56.56:661][868]LogUObjectHash: Compacting FUObjectHashTables data took   1.35ms
+[2024.10.29-15.56.56:720][869]LogPlayLevel: Display: Destroying online subsystem :Context_19
+[2024.10.29-16.06.19:544][820]LogLiveCoding: Display: Starting Live Coding compile.
+[2024.10.29-16.07.25:219][ 17]LogLiveCoding: Display:    Creating library C:\Users\Mikolaj\Documents\Unreal Projects\Cardslinger-Prototype\CardslingerPrototype\Binaries\Win64\UnrealEditor-CardslingerPrototype.patch_2.lib and object C:\Users\Mikolaj\Documents\Unreal Projects\Cardslinger-Prototype\CardslingerPrototype\Binaries\Win64\UnrealEditor-CardslingerPrototype.patch_2.exp
+[2024.10.29-16.07.26:879][ 21]LogUObjectHash: Compacting FUObjectHashTables data took   0.80ms
+[2024.10.29-16.07.27:060][ 22]Display: Reload/Re-instancing Complete: 1 package changed, 27 classes unchanged, 39 functions remapped
+[2024.10.29-16.07.27:060][ 22]LogLiveCoding: Display: Live coding succeeded
+[2024.10.29-16.07.30:674][134]LogDebuggerCommands: Repeating last play command: Selected Viewport
+[2024.10.29-16.07.30:690][134]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2024.10.29-16.07.30:690][134]PIE: New page: PIE session: MovementLevel (29 Oct 2024, 16:07:30)
+[2024.10.29-16.07.30:719][134]LogPlayLevel: Creating play world package: /Game/Levels/UEDPIE_0_MovementLevel
+[2024.10.29-16.07.30:724][134]LogPlayLevel: PIE: StaticDuplicateObject took: (0.004671s)
+[2024.10.29-16.07.30:724][134]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Levels/MovementLevel.MovementLevel to /Game/Levels/UEDPIE_0_MovementLevel.MovementLevel (0.004760s)
+[2024.10.29-16.07.30:730][134]LogUObjectHash: Compacting FUObjectHashTables data took   0.75ms
+[2024.10.29-16.07.30:731][134]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.10.29-16.07.30:731][134]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2024.10.29-16.07.30:732][134]LogAIModule: Creating AISystem for world MovementLevel
+[2024.10.29-16.07.30:732][134]LogPlayLevel: PIE: World Init took: (0.001326s)
+[2024.10.29-16.07.30:732][134]LogAudio: Display: Creating Audio Device:                 Id: 10, Scope: Unique, Realtime: True
+[2024.10.29-16.07.30:732][134]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2024.10.29-16.07.30:733][134]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2024.10.29-16.07.30:733][134]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2024.10.29-16.07.30:733][134]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2024.10.29-16.07.30:733][134]LogAudioMixer: Display: 	Number of buffers to queue:			  1
+[2024.10.29-16.07.30:733][134]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2024.10.29-16.07.30:733][134]LogAudioMixer: Display: 	Number of Async Source Workers:		  4
+[2024.10.29-16.07.30:733][134]LogAudio: Display: AudioDevice MaxSources: 32
+[2024.10.29-16.07.30:733][134]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2024.10.29-16.07.30:733][134]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2024.10.29-16.07.30:733][134]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2024.10.29-16.07.30:735][134]LogAudioMixer: Display: Initializing audio mixer using platform API: 'XAudio2'
+[2024.10.29-16.07.30:797][134]LogAudioMixer: Display: Using Audio Hardware Device Speakers (Realtek(R) Audio)
+[2024.10.29-16.07.30:797][134]LogAudioMixer: Display: Initializing Sound Submixes...
+[2024.10.29-16.07.30:797][134]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2024.10.29-16.07.30:797][134]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2024.10.29-16.07.30:799][134]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called. InstanceID=10
+[2024.10.29-16.07.30:799][134]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048, InstanceID=10
+[2024.10.29-16.07.30:802][134]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=10
+[2024.10.29-16.07.30:802][134]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time. InstanceID=10
+[2024.10.29-16.07.30:802][134]LogInit: FAudioDevice initialized with ID 10.
+[2024.10.29-16.07.30:802][134]LogAudio: Display: Audio Device (ID: 10) registered with world 'MovementLevel'.
+[2024.10.29-16.07.30:802][134]LogAudioMixer: Initializing Audio Bus Subsystem for audio device with ID 10
+[2024.10.29-16.07.30:806][134]LogLoad: Game class is 'BP_CardslingerTestGameMode_C'
+[2024.10.29-16.07.30:809][134]LogWorld: Bringing World /Game/Levels/UEDPIE_0_MovementLevel.MovementLevel up for play (max tick rate 60) at 2024.10.29-16.07.30
+[2024.10.29-16.07.30:810][134]LogWorld: Bringing up level for play took: 0.003277
+[2024.10.29-16.07.30:813][134]LogOnline: OSS: Created online subsystem instance for: :Context_21
+[2024.10.29-16.07.30:816][134]LogViewport: Display: Viewport MouseCaptureMode Changed, CapturePermanently_IncludingInitialMouseDown -> CapturePermanently
+[2024.10.29-16.07.30:820][134]LogTemp: Display: ../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/CardDeck.sav
+[2024.10.29-16.07.30:820][134]LogTemp: Load successful!
+[2024.10.29-16.07.30:823][134]LogTemp: Save successful!
+[2024.10.29-16.07.30:825][134]PIE: Server logged in
+[2024.10.29-16.07.30:826][134]PIE: Play in editor total start time 0.136 seconds.
+[2024.10.29-16.07.44:492][947]LogTemp: Display: Bullet Reflected
+[2024.10.29-16.07.46:499][ 67]LogTemp: Display: Bullet Reflected
+[2024.10.29-16.07.46:516][ 68]LogTemp: Display: Bullet Reflected
+[2024.10.29-16.07.46:701][ 79]LogTemp: Display: Bullet Reflected
+[2024.10.29-16.07.46:901][ 91]LogTemp: Display: Bullet Reflected
+[2024.10.29-16.07.47:635][135]LogTemp: Display: Bullet Reflected
+[2024.10.29-16.07.47:803][145]LogTemp: Display: Bullet Reflected
+[2024.10.29-16.07.47:837][147]LogTemp: Display: Bullet Reflected
+[2024.10.29-16.07.48:041][159]LogTemp: Display: Bullet Reflected
+[2024.10.29-16.07.48:543][188]LogTemp: Display: Bullet Reflected
+[2024.10.29-16.07.48:793][203]LogTemp: Display: Bullet Reflected
+[2024.10.29-16.07.48:995][215]LogTemp: Display: Bullet Reflected
+[2024.10.29-16.07.49:196][227]LogTemp: Display: Bullet Reflected
+[2024.10.29-16.07.49:938][271]LogTemp: Display: Bullet Reflected
+[2024.10.29-16.07.50:088][280]LogTemp: Display: Bullet Reflected
+[2024.10.29-16.07.50:139][283]LogTemp: Display: Bullet Reflected
+[2024.10.29-16.07.50:339][295]LogTemp: Display: Bullet Reflected
+[2024.10.29-16.07.50:830][324]LogTemp: Display: Bullet Reflected
+[2024.10.29-16.07.51:083][339]LogTemp: Display: Bullet Reflected
+[2024.10.29-16.07.51:291][351]LogTemp: Display: Bullet Reflected
+[2024.10.29-16.07.51:492][363]LogTemp: Display: Bullet Reflected
+[2024.10.29-16.07.51:965][391]LogTemp: Display: Bullet Reflected
+[2024.10.29-16.07.52:208][405]LogTemp: Display: Bullet Reflected
+[2024.10.29-16.07.52:360][414]LogTemp: Display: Bullet Reflected
+[2024.10.29-16.07.52:427][418]LogTemp: Display: Bullet Reflected
+[2024.10.29-16.07.52:632][430]LogTemp: Display: Bullet Reflected
+[2024.10.29-16.07.53:094][457]LogTemp: Display: Bullet Reflected
+[2024.10.29-16.07.53:354][472]LogTemp: Display: Bullet Reflected
+[2024.10.29-16.07.53:369][473]LogTemp: Display: Bullet Reflected
+[2024.10.29-16.07.53:508][481]LogTemp: Display: Bullet Reflected
+[2024.10.29-16.07.53:558][484]LogTemp: Display: Bullet Reflected
+[2024.10.29-16.07.53:760][496]LogTemp: Display: Bullet Reflected
+[2024.10.29-16.07.54:224][523]LogTemp: Display: Bullet Reflected
+[2024.10.29-16.07.54:432][535]LogTemp: Display: Bullet Reflected
+[2024.10.29-16.07.54:642][547]LogTemp: Display: Bullet Reflected
+[2024.10.29-16.07.54:726][552]LogTemp: Display: Bullet Reflected
+[2024.10.29-16.07.54:915][563]LogTemp: Display: Bullet Reflected
+[2024.10.29-16.07.55:361][589]LogTemp: Display: Bullet Reflected
+[2024.10.29-16.07.55:569][601]LogTemp: Display: Bullet Reflected
+[2024.10.29-16.07.55:658][606]LogTemp: Display: Bullet Reflected
+[2024.10.29-16.07.55:776][613]LogTemp: Display: Bullet Reflected
+[2024.10.29-16.07.55:791][614]LogTemp: Display: Bullet Reflected
+[2024.10.29-16.07.55:792][614]LogTemp: Display: Bullet Reflected
+[2024.10.29-16.07.55:864][618]LogTemp: Display: Bullet Reflected
+[2024.10.29-16.07.55:879][619]LogTemp: Display: Bullet Reflected
+[2024.10.29-16.07.56:052][629]LogTemp: Display: Bullet Reflected
+[2024.10.29-16.07.56:718][667]LogTemp: Display: Bullet Reflected
+[2024.10.29-16.07.56:735][668]LogTemp: Display: Bullet Reflected
+[2024.10.29-16.07.56:735][668]LogTemp: Display: Bullet Reflected
+[2024.10.29-16.07.56:790][671]LogTemp: Display: Bullet Reflected
+[2024.10.29-16.07.56:912][678]LogTemp: Display: Bullet Reflected
+[2024.10.29-16.07.57:208][695]LogTemp: Display: Bullet Reflected
+[2024.10.29-16.07.57:630][719]LogTemp: Display: Bullet Reflected
+[2024.10.29-16.07.57:845][731]LogTemp: Display: Bullet Reflected
+[2024.10.29-16.07.57:864][732]LogTemp: Display: Bullet Reflected
+[2024.10.29-16.07.57:864][732]LogTemp: Display: Bullet Reflected
+[2024.10.29-16.07.58:025][741]LogTemp: Display: Bullet Reflected
+[2024.10.29-16.07.58:041][742]LogTemp: Display: Bullet Reflected
+[2024.10.29-16.07.58:042][742]LogTemp: Display: Bullet Reflected
+[2024.10.29-16.07.58:115][746]LogTemp: Display: Bullet Reflected
+[2024.10.29-16.07.58:315][757]LogTemp: Display: Bullet Reflected
+[2024.10.29-16.07.58:777][783]LogTemp: Display: Bullet Reflected
+[2024.10.29-16.07.58:972][794]LogTemp: Display: Bullet Reflected
+[2024.10.29-16.07.59:254][810]LogTemp: Display: Bullet Reflected
+[2024.10.29-16.08.00:322][870]LogTemp: Display: Bullet Reflected
+[2024.10.29-16.08.00:610][886]LogTemp: Display: Bullet Reflected
+[2024.10.29-16.08.01:066][912]LogTemp: Display: Bullet Reflected
+[2024.10.29-16.08.01:265][923]LogTemp: Display: Bullet Reflected
+[2024.10.29-16.08.01:355][928]LogTemp: Display: Bullet Reflected
+[2024.10.29-16.08.01:481][935]LogTemp: Display: Bullet Reflected
+[2024.10.29-16.08.01:743][950]LogTemp: Display: Bullet Reflected
+[2024.10.29-16.08.02:637][999]LogTemp: Display: Bullet Reflected
+[2024.10.29-16.08.02:867][ 12]LogTemp: Display: Bullet Reflected
+[2024.10.29-16.08.03:385][ 41]LogTemp: Display: Bullet Reflected
+[2024.10.29-16.08.03:784][ 63]LogTemp: Display: Bullet Reflected
+[2024.10.29-16.08.07:247][255]LogTemp: Display: Bullet Reflected
+[2024.10.29-16.08.07:303][258]LogTemp: Display: Bullet Reflected
+[2024.10.29-16.08.07:503][269]LogTemp: Display: Bullet Reflected
+[2024.10.29-16.08.07:645][277]LogTemp: Display: Bullet Reflected
+[2024.10.29-16.08.08:379][318]LogTemp: Display: Bullet Reflected
+[2024.10.29-16.08.08:435][321]LogTemp: Display: Bullet Reflected
+[2024.10.29-16.08.08:581][329]LogTemp: Display: Bullet Reflected
+[2024.10.29-16.08.08:634][332]LogTemp: Display: Bullet Reflected
+[2024.10.29-16.08.08:779][340]LogTemp: Display: Bullet Reflected
+[2024.10.29-16.08.08:832][343]LogTemp: Display: Bullet Reflected
+[2024.10.29-16.08.09:454][377]LogTemp: Display: Bullet Reflected
+[2024.10.29-16.08.09:472][378]LogTemp: Display: Bullet Reflected
+[2024.10.29-16.08.09:472][378]LogTemp: Display: Bullet Reflected
+[2024.10.29-16.08.09:627][386]LogTemp: Display: Bullet Reflected
+[2024.10.29-16.08.09:647][387]LogTemp: Display: Bullet Reflected
+[2024.10.29-16.08.09:647][387]LogTemp: Display: Bullet Reflected
+[2024.10.29-16.08.10:468][431]LogTemp: Display: Bullet Reflected
+[2024.10.29-16.08.10:483][432]LogTemp: Display: Bullet Reflected
+[2024.10.29-16.08.10:484][432]LogTemp: Display: Bullet Reflected
+[2024.10.29-16.08.10:727][445]LogTemp: Display: Bullet Reflected
+[2024.10.29-16.08.10:877][453]LogTemp: Display: Bullet Reflected
+[2024.10.29-16.08.10:933][456]LogTemp: Display: Bullet Reflected
+[2024.10.29-16.08.11:609][493]LogTemp: Display: Bullet Reflected
+[2024.10.29-16.08.11:683][497]LogTemp: Display: Bullet Reflected
+[2024.10.29-16.08.11:813][504]LogTemp: Display: Bullet Reflected
+[2024.10.29-16.08.11:870][507]LogTemp: Display: Bullet Reflected
+[2024.10.29-16.08.12:024][515]LogTemp: Display: Bullet Reflected
+[2024.10.29-16.08.12:083][518]LogTemp: Display: Bullet Reflected
+[2024.10.29-16.08.12:767][554]LogTemp: Display: Bullet Reflected
+[2024.10.29-16.08.12:806][556]LogTemp: Display: Bullet Reflected
+[2024.10.29-16.08.12:974][565]LogTemp: Display: Bullet Reflected
+[2024.10.29-16.08.13:013][567]LogTemp: Display: Bullet Reflected
+[2024.10.29-16.08.13:165][575]LogTemp: Display: Bullet Reflected
+[2024.10.29-16.08.13:223][578]LogTemp: Display: Bullet Reflected
+[2024.10.29-16.08.13:922][615]LogTemp: Display: Bullet Reflected
+[2024.10.29-16.08.14:123][625]LogTemp: Display: Bullet Reflected
+[2024.10.29-16.08.14:164][627]LogTemp: Display: Bullet Reflected
+[2024.10.29-16.08.14:367][635]LogTemp: Display: Bullet Reflected
+[2024.10.29-16.08.14:410][637]LogTemp: Display: Bullet Reflected
+[2024.10.29-16.08.15:122][667]LogTemp: Display: Bullet Reflected
+[2024.10.29-16.08.15:188][670]LogTemp: Display: Bullet Reflected
+[2024.10.29-16.08.15:315][676]LogTemp: Display: Bullet Reflected
+[2024.10.29-16.08.15:377][679]LogTemp: Display: Bullet Reflected
+[2024.10.29-16.08.15:501][685]LogTemp: Display: Bullet Reflected
+[2024.10.29-16.08.16:272][721]LogTemp: Display: Bullet Reflected
+[2024.10.29-16.08.16:460][730]LogTemp: Display: Bullet Reflected
+[2024.10.29-16.08.16:646][739]LogTemp: Display: Bullet Reflected
+[2024.10.29-16.08.16:727][743]LogTemp: Display: Bullet Reflected
+[2024.10.29-16.08.17:424][775]LogTemp: Display: Bullet Reflected
+[2024.10.29-16.08.17:468][777]LogTemp: Display: Bullet Reflected
+[2024.10.29-16.08.17:605][783]LogTemp: Display: Bullet Reflected
+[2024.10.29-16.08.17:673][786]LogTemp: Display: Bullet Reflected
+[2024.10.29-16.08.17:826][793]LogTemp: Display: Bullet Reflected
+[2024.10.29-16.08.18:618][829]LogTemp: Display: Bullet Reflected
+[2024.10.29-16.08.18:696][833]LogTemp: Display: Bullet Reflected
+[2024.10.29-16.08.18:798][838]LogTemp: Display: Bullet Reflected
+[2024.10.29-16.08.18:904][843]LogTemp: Display: Bullet Reflected
+[2024.10.29-16.08.19:005][848]LogTemp: Display: Bullet Reflected
+[2024.10.29-16.08.20:826][936]LogTemp: Display: Bullet Reflected
+[2024.10.29-16.08.20:967][943]LogTemp: Display: Bullet Reflected
+[2024.10.29-16.08.21:027][946]LogTemp: Display: Bullet Reflected
+[2024.10.29-16.08.22:417][ 14]LogTemp: Display: Bullet Reflected
+[2024.10.29-16.08.23:566][ 65]LogTemp: Display: Bullet Reflected
+[2024.10.29-16.08.24:327][ 99]LogTemp: Display: Bullet Reflected
+[2024.10.29-16.08.24:347][100]LogTemp: Display: Bullet Reflected
+[2024.10.29-16.08.24:347][100]LogTemp: Display: Bullet Reflected
+[2024.10.29-16.08.24:516][107]LogTemp: Display: Bullet Reflected
+[2024.10.29-16.08.24:720][117]LogTemp: Display: Bullet Reflected
+[2024.10.29-16.08.24:738][118]LogTemp: Display: Bullet Reflected
+[2024.10.29-16.08.24:738][118]LogTemp: Display: Bullet Reflected
+[2024.10.29-16.08.25:488][155]LogTemp: Display: Bullet Reflected
+[2024.10.29-16.08.25:671][164]LogTemp: Display: Bullet Reflected
+[2024.10.29-16.08.25:880][174]LogTemp: Display: Bullet Reflected
+[2024.10.29-16.08.26:627][211]LogTemp: Display: Bullet Reflected
+[2024.10.29-16.08.26:812][220]LogTemp: Display: Bullet Reflected
+[2024.10.29-16.08.27:018][230]LogTemp: Display: Bullet Reflected
+[2024.10.29-16.08.27:904][274]LogTemp: Display: Bullet Reflected
+[2024.10.29-16.08.28:120][285]LogTemp: Display: Bullet Reflected
+[2024.10.29-16.08.28:326][295]LogTemp: Display: Bullet Reflected
+[2024.10.29-16.08.29:084][332]LogTemp: Display: Bullet Reflected
+[2024.10.29-16.08.29:264][341]LogTemp: Display: Bullet Reflected
+[2024.10.29-16.08.29:483][352]LogTemp: Display: Bullet Reflected
+[2024.10.29-16.08.30:235][390]LogTemp: Display: Bullet Reflected
+[2024.10.29-16.08.30:432][400]LogTemp: Display: Bullet Reflected
+[2024.10.29-16.08.30:633][410]LogTemp: Display: Bullet Reflected
+[2024.10.29-16.08.31:379][448]LogTemp: Display: Bullet Reflected
+[2024.10.29-16.08.31:560][457]LogTemp: Display: Bullet Reflected
+[2024.10.29-16.08.31:625][460]LogViewport: Display: Viewport MouseLockMode Changed, LockOnCapture -> DoNotLock
+[2024.10.29-16.08.31:625][460]LogViewport: Display: Viewport MouseCaptureMode Changed, CapturePermanently -> NoCapture
+[2024.10.29-16.08.31:628][460]LogTemp: Display: ../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/CardDeck.sav
+[2024.10.29-16.08.31:628][460]LogTemp: Load successful!
+[2024.10.29-16.08.31:632][460]LogTemp: Save successful!
+[2024.10.29-16.08.31:632][460]LogTemp: Load successful!
+[2024.10.29-16.08.31:769][466]LogTemp: Display: Bullet Reflected
+[2024.10.29-16.08.32:272][489]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2024.10.29-16.08.32:272][489]LogWorld: BeginTearingDown for /Game/Levels/UEDPIE_0_MovementLevel
+[2024.10.29-16.08.32:272][489]LogWorld: UWorld::CleanupWorld for MovementLevel, bSessionEnded=true, bCleanupResources=true
+[2024.10.29-16.08.32:276][489]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.10.29-16.08.32:280][489]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2024.10.29-16.08.32:284][489]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.10.29-16.08.32:295][489]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2024.10.29-16.08.32:295][489]LogAudioMixer: Deinitializing Audio Bus Subsystem for audio device with ID 10
+[2024.10.29-16.08.32:295][489]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=10
+[2024.10.29-16.08.32:297][489]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=10
+[2024.10.29-16.08.32:312][489]LogUObjectHash: Compacting FUObjectHashTables data took   0.99ms
+[2024.10.29-16.08.32:345][490]LogPlayLevel: Display: Destroying online subsystem :Context_21
