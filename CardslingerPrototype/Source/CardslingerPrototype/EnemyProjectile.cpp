@@ -172,5 +172,5 @@ void AEnemyProjectile::ReflectBullet()
 	BulletCollision->IgnoreActorWhenMoving(OwnerAI, false);
 	BulletMesh->IgnoreActorWhenMoving(PlayerPawn, true);
 	BulletCollision->IgnoreActorWhenMoving(PlayerPawn, true);
-	SetActorRotation(GetActorRotation().GetInverse());
+	SetActorRotation(GetActorRotation().Add(0.0f,180.0f,0.0f));
 }
