@@ -80,11 +80,11 @@ void AEnemyProjectile::OnHit(UPrimitiveComponent* HitComponent, AActor* OtherAct
 	if (OtherActor != this)
     {
         //if the collision is an enemy class actor, apply damage and hit fx
-		if(OtherActor == PlayerPawn)
+		if(OtherActor == PlayerPawn || bIsReflected)
 		{
 			//create unreal damage event
 			FPointDamageEvent DamageEvent(BulletDamage, Hit, -GetActorForwardVector(), nullptr);
-			if(FMath::Asin(FVector::DotProduct(PlayerPawn->GetActorForwardVector(), Hit.Normal)) > 0)
+			if(FMath::Asin(FVector::DotProduct(PlayerPawn->GetActorForwardVector(), Hit.Normal)) > 0 && Cast<ABaseCharacterClass>(PlayerPawn)->GetReflectionMode())
 			{
 				ReflectBullet();
 			}
@@ -167,4 +167,7 @@ void AEnemyProjectile::ReflectBullet()
 	//reenable collision with enemy actor
 	BulletMesh->IgnoreActorWhenMoving(OwnerAI, false);
 	BulletCollision->IgnoreActorWhenMoving(OwnerAI, false);
+	BulletMesh->IgnoreActorWhenMoving(PlayerPawn, false);
+	BulletCollision->IgnoreActorWhenMoving(PlayerPawn, false);
+	SetActorRotation(GetActorRotation().GetInverse());
 }

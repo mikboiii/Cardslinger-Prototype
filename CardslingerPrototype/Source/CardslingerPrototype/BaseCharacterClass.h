@@ -132,6 +132,8 @@ public:
 	void GetCardCharge(float &OutCurrentCharge, float &OutMaxCharge);
 	UFUNCTION(BlueprintPure)
 	float GetDashRecharge();
+	UFUNCTION(BlueprintPure)
+	bool GetReflectionMode();
 
 private:
 

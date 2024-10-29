@@ -734,6 +734,11 @@ int32 ABaseCharacterClass::GetChargedCards()
 	return CardsCharged;
 }
 
+bool ABaseCharacterClass::GetReflectionMode()
+{
+	return bIsCharacterReflecting;
+}
+
 /// @brief gets the charge until a new card gets spooled
 /// @param OutCurrentCharge The current charge progress until the next card
 /// @param OutMaxCharge The charge required for the next spooled card

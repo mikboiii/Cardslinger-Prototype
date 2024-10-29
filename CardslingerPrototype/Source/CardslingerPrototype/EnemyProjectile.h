@@ -66,4 +66,6 @@ private:
 
 	void ReflectBullet();
 
+	bool bIsReflected = false;
+
 };
