@@ -17,6 +17,7 @@
 #include "DrawDebugHelpers.h"
 #include "TimerManager.h"
 #include "BaseCharacterClass.h"
+#include "PlayerHUDWidget.h"
 
 // Sets default values
 AEnemyProjectile::AEnemyProjectile()
@@ -88,6 +89,7 @@ void AEnemyProjectile::OnHit(UPrimitiveComponent* HitComponent, AActor* OtherAct
 			if(FMath::Asin(FVector::DotProduct(PlayerPawn->GetActorForwardVector(), Hit.Normal)) > 0 && Cast<ABaseCharacterClass>(PlayerPawn)->GetReflectionMode())
 			{
 				ReflectBullet();
+				PlayerClass->GetPlayerHUD()->FlashDeflectionVignetteBP();
 				UNiagaraFunctionLibrary::SpawnSystemAtLocation(GetWorld(), ImpactFX, GetActorLocation(), GetActorForwardVector().Rotation(), FVector::One(), true, true, ENCPoolMethod::None, true);
 				return;
 			}
