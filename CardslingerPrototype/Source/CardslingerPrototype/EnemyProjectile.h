@@ -23,7 +23,7 @@ public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
-	void SetOwnerClass(ABaseAIClass* NewOwner);
+	void SetOwnerClass(class ABaseAIClass* NewOwner);
 
 	void EnableSlowEffect(bool bIsSlow, float TimeDilationValue);
 

@@ -1,3 +1,3 @@
 // PCH for Runtime/Core/Public/CoreSharedPCH.h
-#include "C:/Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Intermediate/Build/Win64/x64/CardslingerPrototypeEditor/Development/Core/SharedDefinitions.Core.Cpp17.h"
+#include "G:/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Intermediate/Build/Win64/x64/CardslingerPrototypeEditor/Development/Core/SharedDefinitions.Core.Cpp17.h"
 #include "Runtime/Core/Public/CoreSharedPCH.h"
