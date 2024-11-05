@@ -23,24 +23,32 @@ public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
-	void SetOwnerClass(ABaseAIClass* NewOwner);
+	void SetOwnerClass(class ABaseAIClass* NewOwner);
 
 	void EnableSlowEffect(bool bIsSlow, float TimeDilationValue);
 
 	void SetBulletSpeed(float NewSpeed);
 
+	UFUNCTION(BlueprintImplementableEvent)
+	void SetReflectedMaterials();
+
+	UPROPERTY(Instanced, EditAnywhere, BlueprintReadWrite)
+	class UNiagaraComponent* BulletTrail;
+
+	UPROPERTY(Instanced, EditAnywhere, BlueprintReadWrite)
+	class UStaticMeshComponent* BulletMesh;
+
 private:
 	UPROPERTY(Instanced, EditAnywhere)
-	class UStaticMeshComponent* BulletMesh;
-	UPROPERTY(Instanced, EditAnywhere)
 	class UBoxComponent* BulletCollision;
-	UPROPERTY(Instanced, EditAnywhere)
-	class UNiagaraComponent* BulletTrail;
+
 
 	UPROPERTY(EditAnywhere)
 	class UNiagaraSystem* ImpactFX;
 
 	AActor* PlayerPawn;
+
+	class ABaseCharacterClass* PlayerClass;
 
 	class ABaseAIClass* OwnerAI;
 
@@ -63,5 +71,9 @@ private:
 	virtual void OnHit(UPrimitiveComponent* HitComponent, AActor* OtherActor, UPrimitiveComponent* OtherComponent, FVector NormalImpulse, const FHitResult& Hit);
 
 	void DestroyProjectileTimerFunction();
+
+	void ReflectBullet();
+
+	bool bIsReflected = false;
 
 };
