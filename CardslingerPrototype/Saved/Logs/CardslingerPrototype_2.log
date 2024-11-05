@@ -2120,3 +2120,217 @@ LogConfig: CVar [[con.DebugLateCheat:1]] deferred - dummy variable created
 [2024.11.05-17.35.05:687][201]LogActor: Warning: BP_Portal_C /Engine/Transient.World_9:PersistentLevel.BP_Portal_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
 [2024.11.05-17.35.05:723][201]LogUObjectHash: Compacting FUObjectHashTables data took   1.68ms
 [2024.11.05-17.35.05:728][201]LogActor: Warning: BP_Portal_C /Engine/Transient.World_6:PersistentLevel.BP_Portal_C_1 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2024.11.05-17.39.26:940][488]LogLiveCoding: Display: Starting Live Coding compile.
+[2024.11.05-17.40.21:579][894]Display: Reload/Re-instancing Complete: No object changes detected
+[2024.11.05-17.40.21:580][894]LogLiveCoding: Error: Live coding failed, please see Live console for more information
+[2024.11.05-17.40.54:467][992]LogLiveCoding: Display: Starting Live Coding compile.
+[2024.11.05-17.40.57:639][  2]Display: Reload/Re-instancing Complete: No object changes detected
+[2024.11.05-17.40.57:639][  2]LogLiveCoding: Error: Live coding canceled
+[2024.11.05-17.41.09:335][ 87]LogLiveCoding: Display: Starting Live Coding compile.
+[2024.11.05-17.41.42:279][186]LogLiveCoding: Display:    Creating library C:\Users\Mikolaj\Documents\Unreal Projects\Cardslinger-Prototype\CardslingerPrototype\Binaries\Win64\UnrealEditor-CardslingerPrototype.patch_2.lib and object C:\Users\Mikolaj\Documents\Unreal Projects\Cardslinger-Prototype\CardslingerPrototype\Binaries\Win64\UnrealEditor-CardslingerPrototype.patch_2.exp
+[2024.11.05-17.41.43:600][190]LogClass: UPackage /Script/CardslingerPrototype Reload.
+[2024.11.05-17.41.43:601][190]LogClass: UClass Portal Reload.
+[2024.11.05-17.41.43:643][190]LogClass: Could not find existing class Portal in package /Script/CardslingerPrototype for reload, assuming new or modified class
+[2024.11.05-17.41.43:716][190]Re-instancing Portal after reload.
+[2024.11.05-17.41.44:071][190]LogUObjectHash: Compacting FUObjectHashTables data took   1.98ms
+[2024.11.05-17.41.44:930][191]Display: Reload/Re-instancing Complete: 1 package changed, 1 class changed, 27 classes unchanged, 40 functions remapped
+[2024.11.05-17.41.44:930][191]LogLiveCoding: Warning: Live coding succeeded, data type changes may cause packaging to fail if assets reference the new or updated data types
+[2024.11.05-17.42.48:298][441]LogContentBrowser: Deferred new asset file creation: NewMaterial
+[2024.11.05-17.42.48:309][441]LogContentBrowser: Creating deferred item: NewMaterial
+[2024.11.05-17.42.48:325][442]LogContentBrowser: Renaming the item being created (Deferred Item: NewMaterial).
+[2024.11.05-17.42.55:763][886]LogContentBrowser: Attempting asset rename: NewMaterial -> M_PortalPlane
+[2024.11.05-17.42.55:771][886]LogContentBrowser: End creating deferred item NewMaterial
+[2024.11.05-17.42.56:280][916]LogAssetEditorSubsystem: Opening Asset editor for Material /Game/Portals/M_PortalPlane.M_PortalPlane
+[2024.11.05-17.42.56:326][916]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.11.05-17.42.56:327][916]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2024.11.05-17.42.56:580][916]MaterialEditorStats: Texture samplers: 0/16
+[2024.11.05-17.42.56:580][916]MaterialEditorStats: Texture Lookups (Est.): VS(0), PS(3)
+[2024.11.05-17.42.56:580][916]MaterialEditorStats: Shader Count: 0
+[2024.11.05-17.42.56:587][916]LogViewport: Scene viewport resized to 578x657, mode Windowed.
+[2024.11.05-17.42.56:663][917]LogShaderCompilers: Display: ================================================
+[2024.11.05-17.42.56:663][917]LogShaderCompilers: Display: === FShaderJobCache stats ===
+[2024.11.05-17.42.56:663][917]LogShaderCompilers: Display: Total job queries 6,742, among them cache hits 11 (0.16%)
+[2024.11.05-17.42.56:663][917]LogShaderCompilers: Display: Tracking 6,727 distinct input hashes that result in 4,828 distinct outputs (71.77%)
+[2024.11.05-17.42.56:663][917]LogShaderCompilers: Display: RAM used: 93.41 MiB of 819.20 MiB budget. Usage: 11.40%
+[2024.11.05-17.42.56:663][917]LogShaderCompilers: Display: === Shader Compilation stats ===
+[2024.11.05-17.42.56:664][917]LogShaderCompilers: Display: Shaders Compiled: 6,727
+[2024.11.05-17.42.56:664][917]LogShaderCompilers: Display: Jobs assigned 6,727, completed 6,727 (100%)
+[2024.11.05-17.42.56:664][917]LogShaderCompilers: Display: Average time worker was idle: 14.49 s
+[2024.11.05-17.42.56:664][917]LogShaderCompilers: Display: Time job spent in pending queue: average 193.81 s, longest 392.71 s
+[2024.11.05-17.42.56:664][917]LogShaderCompilers: Display: Job execution time: average 4.67 s, max 36.05 s
+[2024.11.05-17.42.56:664][917]LogShaderCompilers: Display: Job life time (pending + execution): average 198.48 s, max 393.17
+[2024.11.05-17.42.56:664][917]LogShaderCompilers: Display: Shader code size: average 29.481 KiB, min 2.078 KiB, max 162.84 KiB
+[2024.11.05-17.42.56:664][917]LogShaderCompilers: Display: Time at least one job was in flight (either pending or executed): 409.44 s
+[2024.11.05-17.42.56:664][917]LogShaderCompilers: Display: Jobs were issued in 780 batches (only local compilation was used), average 8.62 jobs/batch
+[2024.11.05-17.42.56:664][917]LogShaderCompilers: Display: Average processing rate: 16.43 jobs/sec
+[2024.11.05-17.42.56:664][917]LogShaderCompilers: Display: Total thread time: 3,122.268 s
+[2024.11.05-17.42.56:664][917]LogShaderCompilers: Display: Total thread preprocess time: 223.004 s
+[2024.11.05-17.42.56:664][917]LogShaderCompilers: Display: Percentage time preprocessing: 7.14%
+[2024.11.05-17.42.56:664][917]LogShaderCompilers: Display: Effective parallelization: 7.63 (times faster than compiling all shaders on one thread). Compare with number of workers: 8
+[2024.11.05-17.42.56:665][917]LogShaderCompilers: Display: Top 5 most expensive shader types by average time:
+[2024.11.05-17.42.56:666][917]LogShaderCompilers: Display:                                          FTSRRejectShadingCS (compiled   12 times, average 10.51 sec, max 16.88 sec, min 1.27 sec)
+[2024.11.05-17.42.56:666][917]LogShaderCompilers: Display:                                   FSSDTemporalAccumulationCS (compiled   10 times, average 7.54 sec, max 10.24 sec, min 5.12 sec)
+[2024.11.05-17.42.56:666][917]LogShaderCompilers: Display:                                          FClusteredShadingPS (compiled    4 times, average 7.54 sec, max 13.81 sec, min 2.38 sec)
+[2024.11.05-17.42.56:666][917]LogShaderCompilers: Display:                                    FSSDSpatialAccumulationCS (compiled   33 times, average 2.54 sec, max 4.62 sec, min 1.53 sec)
+[2024.11.05-17.42.56:666][917]LogShaderCompilers: Display:                                             FDeferredLightPS (compiled  134 times, average 2.34 sec, max 3.24 sec, min 1.84 sec)
+[2024.11.05-17.42.56:666][917]LogShaderCompilers: Display: Top 5 shader types by total compile time:
+[2024.11.05-17.42.56:666][917]LogShaderCompilers: Display:                                             FDeferredLightPS - 10.04% of total time (compiled  134 times, average 2.34 sec, max 3.24 sec, min 1.84 sec)
+[2024.11.05-17.42.56:666][917]LogShaderCompilers: Display:          FBuildInstanceIdBufferAndCommandsFromPrimitiveIdsCs - 4.80% of total time (compiled  384 times, average 0.39 sec, max 0.79 sec, min 0.15 sec)
+[2024.11.05-17.42.56:666][917]LogShaderCompilers: Display:                                          FTSRRejectShadingCS - 4.04% of total time (compiled   12 times, average 10.51 sec, max 16.88 sec, min 1.27 sec)
+[2024.11.05-17.42.56:666][917]LogShaderCompilers: Display:                                  FScreenProbeTraceMeshSDFsCS - 3.98% of total time (compiled   96 times, average 1.29 sec, max 2.39 sec, min 0.34 sec)
+[2024.11.05-17.42.56:666][917]LogShaderCompilers: Display:                                FVirtualShadowMapProjectionCS - 3.65% of total time (compiled   96 times, average 1.19 sec, max 2.02 sec, min 0.68 sec)
+[2024.11.05-17.42.56:666][917]LogShaderCompilers: Display: ================================================
+[2024.11.05-17.42.56:704][918]MaterialEditorStats: Base pass shader: 187 instructions
+[2024.11.05-17.42.56:704][918]MaterialEditorStats: Base pass vertex shader: 134 instructions
+[2024.11.05-17.42.56:704][918]MaterialEditorStats: Texture samplers: 2/16
+[2024.11.05-17.42.56:704][918]MaterialEditorStats: Texture Lookups (Est.): VS(0), PS(3)
+[2024.11.05-17.42.56:704][918]MaterialEditorStats: Shader Count: 4
+[2024.11.05-17.42.57:627][971]LogMaterialEditor: Saving and Compiling material M_PortalPlane
+[2024.11.05-17.42.57:632][971]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.11.05-17.42.57:779][971]LogSavePackage: Moving output files for package: /Game/Portals/M_PortalPlane
+[2024.11.05-17.42.57:779][971]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/M_PortalPlane58B360B146332DC96FF564BE21C2E40E.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/Portals/M_PortalPlane.uasset'
+[2024.11.05-17.42.57:793][971]LogFileHelpers: InternalPromptForCheckoutAndSave took 161 ms (total: 898 ms)
+[2024.11.05-17.42.57:794][971]AssetCheck: New page: Asset Save: M_PortalPlane
+[2024.11.05-17.42.57:794][971]LogContentValidation: Display: Validating /Script/Engine.Material /Game/Portals/M_PortalPlane.M_PortalPlane
+[2024.11.05-17.43.16:036][707]MaterialEditorStats: Texture samplers: 0/16
+[2024.11.05-17.43.16:036][707]MaterialEditorStats: Texture Lookups (Est.): VS(0), PS(3)
+[2024.11.05-17.43.16:036][707]MaterialEditorStats: Shader Count: 0
+[2024.11.05-17.43.16:358][725]LogMaterialEditor: Saving and Compiling material M_PortalPlane
+[2024.11.05-17.43.16:729][725]LogUObjectHash: Compacting FUObjectHashTables data took   2.54ms
+[2024.11.05-17.43.17:592][725]LogUObjectHash: Compacting FUObjectHashTables data took   2.20ms
+[2024.11.05-17.43.17:612][725]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.11.05-17.43.17:837][725]LogSavePackage: Moving output files for package: /Game/Portals/M_PortalPlane
+[2024.11.05-17.43.17:839][725]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/M_PortalPlaneE439F4B941BABAA7A9051DB5995236DA.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/Portals/M_PortalPlane.uasset'
+[2024.11.05-17.43.17:848][725]LogFileHelpers: InternalPromptForCheckoutAndSave took 235 ms (total: 1.13 sec)
+[2024.11.05-17.43.17:850][725]AssetCheck: New page: Asset Save: M_PortalPlane
+[2024.11.05-17.43.17:851][725]LogContentValidation: Display: Validating /Script/Engine.Material /Game/Portals/M_PortalPlane.M_PortalPlane
+[2024.11.05-17.43.17:866][725]MaterialEditorStats: Base pass shader without light map: 65 instructions
+[2024.11.05-17.43.17:866][725]MaterialEditorStats: Base pass vertex shader: 134 instructions
+[2024.11.05-17.43.17:866][725]MaterialEditorStats: Texture samplers: 0/16
+[2024.11.05-17.43.17:866][725]MaterialEditorStats: Texture Lookups (Est.): VS(0), PS(3)
+[2024.11.05-17.43.17:866][725]MaterialEditorStats: Shader Count: 6
+[2024.11.05-17.43.27:554][935]MaterialEditorStats: Texture samplers: 0/16
+[2024.11.05-17.43.27:554][935]MaterialEditorStats: Texture Lookups (Est.): VS(0), PS(3)
+[2024.11.05-17.43.27:554][935]MaterialEditorStats: Shader Count: 0
+[2024.11.05-17.43.27:624][937]MaterialEditorStats: Base pass shader without light map: 65 instructions
+[2024.11.05-17.43.27:626][937]MaterialEditorStats: Base pass vertex shader: 134 instructions
+[2024.11.05-17.43.27:626][937]MaterialEditorStats: Texture samplers: 0/16
+[2024.11.05-17.43.27:626][937]MaterialEditorStats: Texture Lookups (Est.): VS(0), PS(3)
+[2024.11.05-17.43.27:626][937]MaterialEditorStats: Shader Count: 4
+[2024.11.05-17.43.39:647][198]MaterialEditorStats: Texture samplers: 0/16
+[2024.11.05-17.43.39:647][198]MaterialEditorStats: Texture Lookups (Est.): VS(0), PS(3)
+[2024.11.05-17.43.39:647][198]MaterialEditorStats: Shader Count: 0
+[2024.11.05-17.43.39:721][200]MaterialEditorStats: Base pass shader without light map: 65 instructions
+[2024.11.05-17.43.39:721][200]MaterialEditorStats: Base pass vertex shader: 134 instructions
+[2024.11.05-17.43.39:721][200]MaterialEditorStats: Texture samplers: 0/16
+[2024.11.05-17.43.39:721][200]MaterialEditorStats: Texture Lookups (Est.): VS(0), PS(3)
+[2024.11.05-17.43.39:722][200]MaterialEditorStats: Shader Count: 4
+[2024.11.05-17.43.41:529][302]MaterialEditorStats: Texture samplers: 0/16
+[2024.11.05-17.43.41:529][302]MaterialEditorStats: Texture Lookups (Est.): VS(0), PS(3)
+[2024.11.05-17.43.41:529][302]MaterialEditorStats: Shader Count: 0
+[2024.11.05-17.43.41:617][304]MaterialEditorStats: Base pass shader without light map: 65 instructions
+[2024.11.05-17.43.41:618][304]MaterialEditorStats: Base pass vertex shader: 134 instructions
+[2024.11.05-17.43.41:618][304]MaterialEditorStats: Texture samplers: 0/16
+[2024.11.05-17.43.41:618][304]MaterialEditorStats: Texture Lookups (Est.): VS(0), PS(3)
+[2024.11.05-17.43.41:618][304]MaterialEditorStats: Shader Count: 4
+[2024.11.05-17.43.42:268][343]LogMaterialEditor: Saving and Compiling material M_PortalPlane
+[2024.11.05-17.43.42:358][343]LogUObjectHash: Compacting FUObjectHashTables data took   1.90ms
+[2024.11.05-17.43.42:634][343]LogUObjectHash: Compacting FUObjectHashTables data took   1.58ms
+[2024.11.05-17.43.42:647][343]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.11.05-17.43.42:857][343]LogSavePackage: Moving output files for package: /Game/Portals/M_PortalPlane
+[2024.11.05-17.43.42:860][343]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/M_PortalPlaneB1D0CB3E4E03560959AD6584FECA4B1E.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/Portals/M_PortalPlane.uasset'
+[2024.11.05-17.43.42:871][343]LogFileHelpers: InternalPromptForCheckoutAndSave took 224 ms (total: 1.35 sec)
+[2024.11.05-17.43.42:873][343]AssetCheck: New page: Asset Save: M_PortalPlane
+[2024.11.05-17.43.42:873][343]LogContentValidation: Display: Validating /Script/Engine.Material /Game/Portals/M_PortalPlane.M_PortalPlane
+[2024.11.05-17.43.47:254][392]MaterialEditorStats: Texture samplers: 0/16
+[2024.11.05-17.43.47:254][392]MaterialEditorStats: Texture Lookups (Est.): VS(0), PS(3)
+[2024.11.05-17.43.47:254][392]MaterialEditorStats: Shader Count: 0
+[2024.11.05-17.43.47:325][394]MaterialEditorStats: Base pass shader without light map: 65 instructions
+[2024.11.05-17.43.47:325][394]MaterialEditorStats: Base pass vertex shader: 134 instructions
+[2024.11.05-17.43.47:326][394]MaterialEditorStats: Texture samplers: 0/16
+[2024.11.05-17.43.47:326][394]MaterialEditorStats: Texture Lookups (Est.): VS(0), PS(3)
+[2024.11.05-17.43.47:326][394]MaterialEditorStats: Shader Count: 4
+[2024.11.05-17.43.51:215][621]MaterialEditorStats: Texture samplers: 0/16
+[2024.11.05-17.43.51:215][621]MaterialEditorStats: Texture Lookups (Est.): VS(0), PS(3)
+[2024.11.05-17.43.51:215][621]MaterialEditorStats: Shader Count: 0
+[2024.11.05-17.43.51:314][623]MaterialEditorStats: Base pass shader without light map: 65 instructions
+[2024.11.05-17.43.51:314][623]MaterialEditorStats: Base pass vertex shader: 134 instructions
+[2024.11.05-17.43.51:314][623]MaterialEditorStats: Texture samplers: 0/16
+[2024.11.05-17.43.51:314][623]MaterialEditorStats: Texture Lookups (Est.): VS(0), PS(3)
+[2024.11.05-17.43.51:314][623]MaterialEditorStats: Shader Count: 4
+[2024.11.05-17.43.51:691][646]LogMaterialEditor: Saving and Compiling material M_PortalPlane
+[2024.11.05-17.43.51:770][646]LogUObjectHash: Compacting FUObjectHashTables data took   2.49ms
+[2024.11.05-17.43.51:882][646]LogSlate: Warning: Ignoring SetUserFocus because it's not an active modal Window (user 0 not set to SGraphPanel [SGraphEditorImpl.cpp(754)].
+[2024.11.05-17.43.52:070][646]LogUObjectHash: Compacting FUObjectHashTables data took   1.33ms
+[2024.11.05-17.43.52:085][646]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.11.05-17.43.52:239][646]LogSavePackage: Moving output files for package: /Game/Portals/M_PortalPlane
+[2024.11.05-17.43.52:241][646]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/M_PortalPlaneBAE3EF56450C81BB7B4935B4D92CB73C.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/Portals/M_PortalPlane.uasset'
+[2024.11.05-17.43.52:248][646]LogFileHelpers: InternalPromptForCheckoutAndSave took 163 ms (total: 1.52 sec)
+[2024.11.05-17.43.52:250][646]AssetCheck: New page: Asset Save: M_PortalPlane
+[2024.11.05-17.43.52:250][646]LogContentValidation: Display: Validating /Script/Engine.Material /Game/Portals/M_PortalPlane.M_PortalPlane
+[2024.11.05-17.44.04:968][135]LogMaterialEditor: Saving and Compiling material M_PortalPlane
+[2024.11.05-17.44.05:051][135]LogUObjectHash: Compacting FUObjectHashTables data took   1.49ms
+[2024.11.05-17.44.05:300][135]LogUObjectHash: Compacting FUObjectHashTables data took   0.68ms
+[2024.11.05-17.44.05:312][135]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.11.05-17.44.05:470][135]LogSavePackage: Moving output files for package: /Game/Portals/M_PortalPlane
+[2024.11.05-17.44.05:471][135]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/M_PortalPlane4112F5174ACB6872E89CA5B380CB1F2F.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/Portals/M_PortalPlane.uasset'
+[2024.11.05-17.44.05:481][135]LogFileHelpers: InternalPromptForCheckoutAndSave took 169 ms (total: 1.69 sec)
+[2024.11.05-17.44.05:482][135]AssetCheck: New page: Asset Save: M_PortalPlane
+[2024.11.05-17.44.05:482][135]LogContentValidation: Display: Validating /Script/Engine.Material /Game/Portals/M_PortalPlane.M_PortalPlane
+[2024.11.05-17.44.12:929][211]MaterialEditorStats: Texture samplers: 0/16
+[2024.11.05-17.44.12:930][211]MaterialEditorStats: Texture Lookups (Est.): VS(3), PS(1)
+[2024.11.05-17.44.12:930][211]MaterialEditorStats: User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2024.11.05-17.44.12:930][211]MaterialEditorStats: Shader Count: 0
+[2024.11.05-17.44.13:284][230]LogMaterialEditor: Saving and Compiling material M_PortalPlane
+[2024.11.05-17.44.13:361][230]LogUObjectHash: Compacting FUObjectHashTables data took   1.73ms
+[2024.11.05-17.44.14:244][230]LogUObjectHash: Compacting FUObjectHashTables data took   0.84ms
+[2024.11.05-17.44.14:255][230]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.11.05-17.44.14:440][230]LogSavePackage: Moving output files for package: /Game/Portals/M_PortalPlane
+[2024.11.05-17.44.14:442][230]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/M_PortalPlane95F5F42243EA00F0DDC71985E0E26483.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/Portals/M_PortalPlane.uasset'
+[2024.11.05-17.44.14:452][230]LogFileHelpers: InternalPromptForCheckoutAndSave took 196 ms (total: 1.88 sec)
+[2024.11.05-17.44.14:455][230]AssetCheck: New page: Asset Save: M_PortalPlane
+[2024.11.05-17.44.14:455][230]LogContentValidation: Display: Validating /Script/Engine.Material /Game/Portals/M_PortalPlane.M_PortalPlane
+[2024.11.05-17.44.14:465][230]MaterialEditorStats: Base pass shader without light map: 72 instructions
+[2024.11.05-17.44.14:465][230]MaterialEditorStats: Base pass vertex shader: 139 instructions
+[2024.11.05-17.44.14:465][230]MaterialEditorStats: Texture samplers: 1/16
+[2024.11.05-17.44.14:465][230]MaterialEditorStats: Texture Lookups (Est.): VS(3), PS(1)
+[2024.11.05-17.44.14:465][230]MaterialEditorStats: User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2024.11.05-17.44.14:465][230]MaterialEditorStats: Shader Count: 6
+[2024.11.05-17.44.22:177][360]MaterialEditorStats: Texture samplers: 0/16
+[2024.11.05-17.44.22:177][360]MaterialEditorStats: Texture Lookups (Est.): VS(3), PS(1)
+[2024.11.05-17.44.22:177][360]MaterialEditorStats: User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2024.11.05-17.44.22:177][360]MaterialEditorStats: Shader Count: 0
+[2024.11.05-17.44.22:243][362]MaterialEditorStats: Base pass shader without light map: 72 instructions
+[2024.11.05-17.44.22:243][362]MaterialEditorStats: Base pass vertex shader: 139 instructions
+[2024.11.05-17.44.22:243][362]MaterialEditorStats: Texture samplers: 1/16
+[2024.11.05-17.44.22:243][362]MaterialEditorStats: Texture Lookups (Est.): VS(3), PS(1)
+[2024.11.05-17.44.22:243][362]MaterialEditorStats: User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2024.11.05-17.44.22:243][362]MaterialEditorStats: Shader Count: 4
+[2024.11.05-17.44.22:254][363]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.11.05-17.44.24:829][510]MaterialEditorStats: Texture samplers: 0/16
+[2024.11.05-17.44.24:829][510]MaterialEditorStats: Texture Lookups (Est.): VS(0), PS(4)
+[2024.11.05-17.44.24:829][510]MaterialEditorStats: Shader Count: 0
+[2024.11.05-17.44.25:224][533]MaterialEditorStats: Texture samplers: 1/16
+[2024.11.05-17.44.25:224][533]MaterialEditorStats: Texture Lookups (Est.): VS(0), PS(4)
+[2024.11.05-17.44.25:224][533]MaterialEditorStats: Shader Count: 1
+[2024.11.05-17.44.25:392][542]MaterialEditorStats: Base pass shader without light map: 75 instructions
+[2024.11.05-17.44.25:392][542]MaterialEditorStats: Base pass vertex shader: 134 instructions
+[2024.11.05-17.44.25:392][542]MaterialEditorStats: Texture samplers: 1/16
+[2024.11.05-17.44.25:392][542]MaterialEditorStats: Texture Lookups (Est.): VS(0), PS(4)
+[2024.11.05-17.44.25:392][542]MaterialEditorStats: Shader Count: 4
+[2024.11.05-17.44.25:406][543]LogMaterialEditor: Saving and Compiling material M_PortalPlane
+[2024.11.05-17.44.25:481][543]LogUObjectHash: Compacting FUObjectHashTables data took   1.54ms
+[2024.11.05-17.44.26:302][543]LogUObjectHash: Compacting FUObjectHashTables data took   0.82ms
+[2024.11.05-17.44.26:318][543]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.11.05-17.44.26:504][543]LogSavePackage: Moving output files for package: /Game/Portals/M_PortalPlane
+[2024.11.05-17.44.26:506][543]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/M_PortalPlane7EF45E024E169ACADDAA6BBF51669DC5.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/Portals/M_PortalPlane.uasset'
+[2024.11.05-17.44.26:514][543]LogFileHelpers: InternalPromptForCheckoutAndSave took 194 ms (total: 2.08 sec)
+[2024.11.05-17.44.26:518][543]AssetCheck: New page: Asset Save: M_PortalPlane
+[2024.11.05-17.44.26:518][543]LogContentValidation: Display: Validating /Script/Engine.Material /Game/Portals/M_PortalPlane.M_PortalPlane
+[2024.11.05-17.44.38:936][638]LogMaterialEditor: Saving and Compiling material M_PortalPlane
+[2024.11.05-17.44.38:941][638]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.11.05-17.44.39:076][638]LogSavePackage: Moving output files for package: /Game/Portals/M_PortalPlane
+[2024.11.05-17.44.39:077][638]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/M_PortalPlaneFBC6AD2F4271EEFBC7209180E2E51B8A.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/Portals/M_PortalPlane.uasset'
+[2024.11.05-17.44.39:088][638]LogFileHelpers: InternalPromptForCheckoutAndSave took 147 ms (total: 2.23 sec)
+[2024.11.05-17.44.39:090][638]AssetCheck: New page: Asset Save: M_PortalPlane
+[2024.11.05-17.44.39:090][638]LogContentValidation: Display: Validating /Script/Engine.Material /Game/Portals/M_PortalPlane.M_PortalPlane

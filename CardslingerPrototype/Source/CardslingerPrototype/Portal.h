@@ -22,6 +22,8 @@ protected:
 
 	UPROPERTY(Instanced, EditAnywhere, BlueprintReadWrite)
 	class UStaticMeshComponent* PortalPlane;
+	UPROPERTY(Instanced, EditAnywhere, BlueprintReadWrite)
+	class USceneCaptureComponent2D* PortalCam;
 
 public:	
 	// Called every frame
