@@ -168,7 +168,6 @@ void AEnemyProjectile::SetBulletSpeed(float NewSpeed)
 
 void AEnemyProjectile::ReflectBullet()
 {
-	UE_LOG(LogTemp, Display, TEXT("Bullet Reflected"));
 	bIsReflected = true;
 	//reenable collision with enemy actor
 	BulletMesh->IgnoreActorWhenMoving(OwnerAI, false);
@@ -177,5 +176,6 @@ void AEnemyProjectile::ReflectBullet()
 	BulletCollision->IgnoreActorWhenMoving(PlayerPawn, true);
 	FVector projectileToEnemy = OwnerAI->GetActorLocation() - GetActorLocation();
 	SetActorRotation(projectileToEnemy.GetSafeNormal().Rotation());
+	SetReflectedMaterials();
 	//SetActorRotation(GetActorRotation().Add(0.0f,180.0f,0.0f));
 }

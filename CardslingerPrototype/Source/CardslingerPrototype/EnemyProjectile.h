@@ -29,13 +29,19 @@ public:
 
 	void SetBulletSpeed(float NewSpeed);
 
+	UFUNCTION(BlueprintImplementableEvent)
+	void SetReflectedMaterials();
+
+	UPROPERTY(Instanced, EditAnywhere, BlueprintReadWrite)
+	class UNiagaraComponent* BulletTrail;
+
+	UPROPERTY(Instanced, EditAnywhere, BlueprintReadWrite)
+	class UStaticMeshComponent* BulletMesh;
+
 private:
 	UPROPERTY(Instanced, EditAnywhere)
-	class UStaticMeshComponent* BulletMesh;
-	UPROPERTY(Instanced, EditAnywhere)
 	class UBoxComponent* BulletCollision;
-	UPROPERTY(Instanced, EditAnywhere)
-	class UNiagaraComponent* BulletTrail;
+
 
 	UPROPERTY(EditAnywhere)
 	class UNiagaraSystem* ImpactFX;
