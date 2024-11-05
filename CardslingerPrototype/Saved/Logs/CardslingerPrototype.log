@@ -1384,3 +1384,35 @@ LogConfig: Set CVar [[r.Shadow.DetectVertexShaderLayerAtRuntime:1]]
 [2024.11.05-14.59.55:134][847]LogUObjectHash: Compacting FUObjectHashTables data took   4.31ms
 [2024.11.05-14.59.56:032][848]Display: Reload/Re-instancing Complete: 1 package changed, 27 classes unchanged, 39 functions remapped
 [2024.11.05-14.59.56:033][848]LogLiveCoding: Display: Live coding succeeded
+[2024.11.05-15.05.14:896][785]LogLiveCoding: Display: Starting Live Coding compile.
+[2024.11.05-15.06.30:039][ 10]LogLiveCoding: Display:    Creating library C:\Users\Mikolaj\Documents\Unreal Projects\Cardslinger-Prototype\CardslingerPrototype\Binaries\Win64\UnrealEditor-CardslingerPrototype.patch_2.lib and object C:\Users\Mikolaj\Documents\Unreal Projects\Cardslinger-Prototype\CardslingerPrototype\Binaries\Win64\UnrealEditor-CardslingerPrototype.patch_2.exp
+[2024.11.05-15.06.31:571][ 14]LogClass: UPackage /Script/CardslingerPrototype Reload.
+[2024.11.05-15.06.31:571][ 14]LogClass: UClass BaseCharacterClass Reload.
+[2024.11.05-15.06.31:573][ 14]LogClass: UClass EnemyProjectile Reload.
+[2024.11.05-15.06.31:585][ 14]LogClass: Could not find existing class BaseCharacterClass in package /Script/CardslingerPrototype for reload, assuming new or modified class
+[2024.11.05-15.06.31:585][ 14]LogClass: Function Dash is new or belongs to a modified class.
+[2024.11.05-15.06.31:586][ 14]LogClass: Function DashEndFunction is new or belongs to a modified class.
+[2024.11.05-15.06.31:586][ 14]LogClass: Function GetCardCharge is new or belongs to a modified class.
+[2024.11.05-15.06.31:586][ 14]LogClass: Function GetChargedCards is new or belongs to a modified class.
+[2024.11.05-15.06.31:586][ 14]LogClass: Function GetClip is new or belongs to a modified class.
+[2024.11.05-15.06.31:586][ 14]LogClass: Function GetDashRecharge is new or belongs to a modified class.
+[2024.11.05-15.06.31:586][ 14]LogClass: Function GetDeck is new or belongs to a modified class.
+[2024.11.05-15.06.31:586][ 14]LogClass: Function GetEnergy is new or belongs to a modified class.
+[2024.11.05-15.06.31:586][ 14]LogClass: Function GetEnergyPercent is new or belongs to a modified class.
+[2024.11.05-15.06.31:586][ 14]LogClass: Function GetHealth is new or belongs to a modified class.
+[2024.11.05-15.06.31:586][ 14]LogClass: Function GetHealthPercent is new or belongs to a modified class.
+[2024.11.05-15.06.31:586][ 14]LogClass: Function GetMaxClip is new or belongs to a modified class.
+[2024.11.05-15.06.31:586][ 14]LogClass: Function GetPlayerHUD is new or belongs to a modified class.
+[2024.11.05-15.06.31:586][ 14]LogClass: Function GetReflectionMode is new or belongs to a modified class.
+[2024.11.05-15.06.31:586][ 14]LogClass: Function GetShield is new or belongs to a modified class.
+[2024.11.05-15.06.31:586][ 14]LogClass: Function IncrementClip is new or belongs to a modified class.
+[2024.11.05-15.06.31:586][ 14]LogClass: Function IsDead is new or belongs to a modified class.
+[2024.11.05-15.06.31:586][ 14]LogClass: Function IsHandEmpty is new or belongs to a modified class.
+[2024.11.05-15.06.31:586][ 14]LogClass: Function UpdateDash is new or belongs to a modified class.
+[2024.11.05-15.06.31:616][ 14]LogClass: Could not find existing class EnemyProjectile in package /Script/CardslingerPrototype for reload, assuming new or modified class
+[2024.11.05-15.06.31:616][ 14]LogClass: Function OnHit is new or belongs to a modified class.
+[2024.11.05-15.06.31:700][ 14]Re-instancing BaseCharacterClass after reload.
+[2024.11.05-15.06.31:957][ 14]Re-instancing EnemyProjectile after reload.
+[2024.11.05-15.06.32:525][ 14]LogUObjectHash: Compacting FUObjectHashTables data took   3.56ms
+[2024.11.05-15.06.33:237][ 15]Display: Reload/Re-instancing Complete: 1 package changed, 2 classes changed, 25 classes unchanged, 20 functions remapped
+[2024.11.05-15.06.33:237][ 15]LogLiveCoding: Warning: Live coding succeeded, data type changes may cause packaging to fail if assets reference the new or updated data types

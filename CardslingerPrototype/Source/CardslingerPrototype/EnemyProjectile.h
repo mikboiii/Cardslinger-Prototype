@@ -42,6 +42,8 @@ private:
 
 	AActor* PlayerPawn;
 
+	class ABaseCharacterClass* PlayerClass;
+
 	class ABaseAIClass* OwnerAI;
 
 	void DestroyProjectile();

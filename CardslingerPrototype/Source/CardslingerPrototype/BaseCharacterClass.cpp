@@ -752,6 +752,10 @@ float ABaseCharacterClass::GetDashRecharge()
 {
 	return DashRecharge;
 }
+UPlayerHUDWidget* ABaseCharacterClass::GetPlayerHUD()
+{
+	return PlayerHUD;
+}
 
 /// @brief increases the number of cards in the clip by 1
 void ABaseCharacterClass::IncrementClip()

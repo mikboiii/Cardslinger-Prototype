@@ -134,6 +134,8 @@ public:
 	float GetDashRecharge();
 	UFUNCTION(BlueprintPure)
 	bool GetReflectionMode();
+	UFUNCTION(BlueprintPure)
+	UPlayerHUDWidget* GetPlayerHUD();
 
 private:
 

@@ -44,6 +44,7 @@ void AEnemyProjectile::BeginPlay()
 {
 	Super::BeginPlay();
 	PlayerPawn = UGameplayStatics::GetPlayerPawn(GetWorld(), 0);
+	PlayerClass = Cast<ABaseCharacterClass>(PlayerPawn);
 	BulletSpeed = BaseBulletSpeed;
 	GetWorldTimerManager().SetTimer(BulletLifetimeManager, this, &AEnemyProjectile::DestroyProjectile, BulletLifetime);
 	
