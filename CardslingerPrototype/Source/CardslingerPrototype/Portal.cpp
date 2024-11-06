@@ -34,7 +34,7 @@ void APortal::BeginPlay()
 	UGameplayStatics::GetPlayerController(GetWorld(), 0)->GetViewportSize(viewportX, viewportY);
 	portalRenderTarget = UKismetRenderingLibrary::CreateRenderTarget2D(GetWorld(), viewportX, viewportY);
 	portalMat->SetTextureParameterValueEditorOnly(TEXT("CamInput"), portalRenderTarget);
-	
+	TwinnedPortal->GetPortalCam()->TextureTarget = portalRenderTarget;
 }
 
 // Called every frame
@@ -42,5 +42,10 @@ void APortal::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
+}
+
+USceneCaptureComponent2D* APortal::GetPortalCam()
+{
+	return PortalCam;
 }
 

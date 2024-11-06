@@ -38,4 +38,6 @@ public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
+	class USceneCaptureComponent2D* GetPortalCam();
+
 };
