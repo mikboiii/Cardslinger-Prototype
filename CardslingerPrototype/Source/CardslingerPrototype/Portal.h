@@ -15,15 +15,16 @@ public:
 	// Sets default values for this actor's properties
 	APortal();
 
-
-protected:
-	// Called when the game starts or when spawned
-	virtual void BeginPlay() override;
-
 	UPROPERTY(Instanced, EditAnywhere, BlueprintReadWrite)
 	class UStaticMeshComponent* PortalPlane;
 	UPROPERTY(Instanced, EditAnywhere, BlueprintReadWrite)
 	class USceneCaptureComponent2D* PortalCam;
+	class USceneComponent* Origin;
+
+
+protected:
+	// Called when the game starts or when spawned
+	virtual void BeginPlay() override;
 
 	UPROPERTY(EditAnywhere)
 	class UMaterial* portalMat;
@@ -36,6 +37,8 @@ protected:
 	void UpdatePortalView();
 
 	void MirrorByNormal(FVector& outInput);
+	
+	void SetClipPlanes();
 
 public:	
 	// Called every frame
