@@ -42,7 +42,7 @@ void APortal::BeginPlay()
 void APortal::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
-
+	UpdatePortalView();
 }
 
 USceneCaptureComponent2D* APortal::GetPortalCam()
@@ -58,8 +58,27 @@ void APortal::UpdatePortalView()
 	portalScale *= FVector(-1,-1,1);
 	FTransform newTransform = FTransform(portalRot, portalPos, portalScale);
 	FVector playerCamTransform = UGameplayStatics::GetPlayerCameraManager(GetWorld(), 0)->GetCameraLocation();
-	FVector playerCamPos = UKismetMathLibrary::InverseTransformLocation(newTransform, playerCamTransform);
-	FVector twinnedPortalCamLocation = UKismetMathLibrary::TransformLocation(TwinnedPortal->GetActorTransform(), playerCamPos);
+	FVector playerCamInversePos = UKismetMathLibrary::InverseTransformLocation(newTransform, playerCamTransform);
+	FVector twinnedPortalCamLocation = UKismetMathLibrary::TransformLocation(TwinnedPortal->GetActorTransform(), playerCamInversePos);
 	TwinnedPortal->GetPortalCam()->SetWorldLocation(twinnedPortalCamLocation);
+
+	FRotator playerCamRot = UGameplayStatics::GetPlayerCameraManager(GetWorld(),0)->GetCameraRotation();
+	FVector XVector;
+	FVector YVector;
+	FVector ZVector;
+	UKismetMathLibrary::BreakRotIntoAxes(playerCamRot, XVector, YVector, ZVector);
+	MirrorByNormal(XVector);
+	MirrorByNormal(YVector);
+	MirrorByNormal(ZVector);
+	UKismetMathLibrary::MakeRotationFromAxes(XVector, YVector, ZVector);
+
+}
+
+void APortal::MirrorByNormal(FVector& outInput)
+{
+	FVector inverseInput = UKismetMathLibrary::InverseTransformDirection(GetActorTransform(), outInput);
+	inverseInput = UKismetMathLibrary::MirrorVectorByNormal(inverseInput, FVector(1,0,0));
+	inverseInput = UKismetMathLibrary::MirrorVectorByNormal(inverseInput, FVector(0,1,0));
+	outInput = UKismetMathLibrary::TransformDirection(TwinnedPortal->GetActorTransform(), inverseInput);
 }
 

@@ -35,6 +35,8 @@ protected:
 	APortal* TwinnedPortal;
 	void UpdatePortalView();
 
+	void MirrorByNormal(FVector& outInput);
+
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
