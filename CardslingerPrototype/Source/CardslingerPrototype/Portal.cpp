@@ -54,7 +54,7 @@ void APortal::UpdatePortalView()
 {
 	FVector portalPos = GetActorLocation();
 	FRotator portalRot = GetActorRotation();
-	FVector portalScale = GetActorScale3D();
+	FVector portalScale = GetActorScale();
 	portalScale *= FVector(-1,-1,1);
 	FTransform newTransform = FTransform(portalRot, portalPos, portalScale);
 	FVector playerCamTransform = UGameplayStatics::GetPlayerCameraManager(GetWorld(), 0)->GetCameraLocation();
@@ -70,7 +70,7 @@ void APortal::UpdatePortalView()
 	MirrorByNormal(XVector);
 	MirrorByNormal(YVector);
 	MirrorByNormal(ZVector);
-	UKismetMathLibrary::MakeRotationFromAxes(XVector, YVector, ZVector);
+	TwinnedPortal->GetPortalCam()->SetWorldRotation(UKismetMathLibrary::MakeRotationFromAxes(XVector, YVector, ZVector))	;
 
 }
 

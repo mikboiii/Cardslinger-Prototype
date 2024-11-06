@@ -3301,3 +3301,581 @@ LogConfig: Set CVar [[r.Shadow.DetectVertexShaderLayerAtRuntime:1]]
 [2024.11.06-14.40.30:918][587]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=15
 [2024.11.06-14.40.30:934][587]LogUObjectHash: Compacting FUObjectHashTables data took   2.09ms
 [2024.11.06-14.40.30:989][588]LogPlayLevel: Display: Destroying online subsystem :Context_24
+[2024.11.06-14.45.28:635][670]LogLiveCoding: Display: Starting Live Coding compile.
+[2024.11.06-14.46.24:650][838]LogLiveCoding: Display:    Creating library C:\Users\Mikolaj\Documents\Unreal Projects\Cardslinger-Prototype\CardslingerPrototype\Binaries\Win64\UnrealEditor-CardslingerPrototype.patch_11.lib and object C:\Users\Mikolaj\Documents\Unreal Projects\Cardslinger-Prototype\CardslingerPrototype\Binaries\Win64\UnrealEditor-CardslingerPrototype.patch_11.exp
+[2024.11.06-14.46.26:331][842]LogUObjectHash: Compacting FUObjectHashTables data took   1.76ms
+[2024.11.06-14.46.27:025][843]Display: Reload/Re-instancing Complete: 1 package changed, 28 classes unchanged, 40 functions remapped
+[2024.11.06-14.46.27:025][843]LogLiveCoding: Display: Live coding succeeded
+[2024.11.06-14.46.30:380][897]LogDebuggerCommands: Repeating last play command: Selected Viewport
+[2024.11.06-14.46.30:397][897]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2024.11.06-14.46.30:398][897]PIE: New page: PIE session: MovementLevel (6 Nov 2024, 14:46:30)
+[2024.11.06-14.46.30:398][897]LogPlayLevel: Creating play world package: /Game/Levels/UEDPIE_0_MovementLevel
+[2024.11.06-14.46.30:403][897]LogPlayLevel: PIE: StaticDuplicateObject took: (0.004820s)
+[2024.11.06-14.46.30:403][897]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Levels/MovementLevel.MovementLevel to /Game/Levels/UEDPIE_0_MovementLevel.MovementLevel (0.004853s)
+[2024.11.06-14.46.30:495][897]LogUObjectHash: Compacting FUObjectHashTables data took   2.64ms
+[2024.11.06-14.46.30:504][897]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.11.06-14.46.30:505][897]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2024.11.06-14.46.30:506][897]LogAIModule: Creating AISystem for world MovementLevel
+[2024.11.06-14.46.30:506][897]LogPlayLevel: PIE: World Init took: (0.002055s)
+[2024.11.06-14.46.30:506][897]LogAudio: Display: Creating Audio Device:                 Id: 16, Scope: Unique, Realtime: True
+[2024.11.06-14.46.30:506][897]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2024.11.06-14.46.30:506][897]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2024.11.06-14.46.30:506][897]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2024.11.06-14.46.30:506][897]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2024.11.06-14.46.30:506][897]LogAudioMixer: Display: 	Number of buffers to queue:			  1
+[2024.11.06-14.46.30:506][897]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2024.11.06-14.46.30:506][897]LogAudioMixer: Display: 	Number of Async Source Workers:		  4
+[2024.11.06-14.46.30:506][897]LogAudio: Display: AudioDevice MaxSources: 32
+[2024.11.06-14.46.30:506][897]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2024.11.06-14.46.30:506][897]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2024.11.06-14.46.30:506][897]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2024.11.06-14.46.30:508][897]LogAudioMixer: Display: Initializing audio mixer using platform API: 'XAudio2'
+[2024.11.06-14.46.30:576][897]LogAudioMixer: Display: Using Audio Hardware Device Speakers (Realtek(R) Audio)
+[2024.11.06-14.46.30:577][897]LogAudioMixer: Display: Initializing Sound Submixes...
+[2024.11.06-14.46.30:577][897]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2024.11.06-14.46.30:577][897]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2024.11.06-14.46.30:581][897]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called. InstanceID=16
+[2024.11.06-14.46.30:581][897]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048, InstanceID=16
+[2024.11.06-14.46.30:584][897]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=16
+[2024.11.06-14.46.30:584][897]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time. InstanceID=16
+[2024.11.06-14.46.30:585][897]LogInit: FAudioDevice initialized with ID 16.
+[2024.11.06-14.46.30:585][897]LogAudio: Display: Audio Device (ID: 16) registered with world 'MovementLevel'.
+[2024.11.06-14.46.30:585][897]LogAudioMixer: Initializing Audio Bus Subsystem for audio device with ID 16
+[2024.11.06-14.46.30:588][897]LogLoad: Game class is 'BP_CardslingerTestGameMode_C'
+[2024.11.06-14.46.30:592][897]LogWorld: Bringing World /Game/Levels/UEDPIE_0_MovementLevel.MovementLevel up for play (max tick rate 60) at 2024.11.06-14.46.30
+[2024.11.06-14.46.30:593][897]LogWorld: Bringing up level for play took: 0.004404
+[2024.11.06-14.46.30:596][897]LogOnline: OSS: Created online subsystem instance for: :Context_25
+[2024.11.06-14.46.30:630][897]LogViewport: Display: Viewport MouseCaptureMode Changed, CapturePermanently_IncludingInitialMouseDown -> CapturePermanently
+[2024.11.06-14.46.30:638][897]LogTemp: Display: ../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/CardDeck.sav
+[2024.11.06-14.46.30:638][897]LogTemp: Load successful!
+[2024.11.06-14.46.30:644][897]LogTemp: Save successful!
+[2024.11.06-14.46.30:646][897]PIE: Server logged in
+[2024.11.06-14.46.30:646][897]PIE: Play in editor total start time 0.25 seconds.
+[2024.11.06-14.46.30:652][897]LogShaderCompilers: Display: ================================================
+[2024.11.06-14.46.30:652][897]LogShaderCompilers: Display: === FShaderJobCache stats ===
+[2024.11.06-14.46.30:652][897]LogShaderCompilers: Display: Total job queries 277, among them cache hits 117 (42.24%)
+[2024.11.06-14.46.30:652][897]LogShaderCompilers: Display: Tracking 160 distinct input hashes that result in 118 distinct outputs (73.75%)
+[2024.11.06-14.46.30:652][897]LogShaderCompilers: Display: RAM used: 3.61 MiB of 819.20 MiB budget. Usage: 0.44%
+[2024.11.06-14.46.30:652][897]LogShaderCompilers: Display: === Shader Compilation stats ===
+[2024.11.06-14.46.30:652][897]LogShaderCompilers: Display: Shaders Compiled: 78
+[2024.11.06-14.46.30:652][897]LogShaderCompilers: Display: Jobs assigned 78, completed 78 (100%)
+[2024.11.06-14.46.30:652][897]LogShaderCompilers: Display: Average time worker was idle: 595.47 s
+[2024.11.06-14.46.30:652][897]LogShaderCompilers: Display: Time job spent in pending queue: average 0.06 s, longest 0.12 s
+[2024.11.06-14.46.30:652][897]LogShaderCompilers: Display: Job execution time: average 0.90 s, max 2.03 s
+[2024.11.06-14.46.30:652][897]LogShaderCompilers: Display: Job life time (pending + execution): average 0.97 s, max 2.07
+[2024.11.06-14.46.30:652][897]LogShaderCompilers: Display: Shader code size: average 36.299 KiB, min 3.934 KiB, max 81.113 KiB
+[2024.11.06-14.46.30:652][897]LogShaderCompilers: Display: Time at least one job was in flight (either pending or executed): 15.47 s
+[2024.11.06-14.46.30:652][897]LogShaderCompilers: Display: Jobs were issued in 78 batches (only local compilation was used), average 1.00 jobs/batch
+[2024.11.06-14.46.30:652][897]LogShaderCompilers: Display: Average processing rate: 5.04 jobs/sec
+[2024.11.06-14.46.30:652][897]LogShaderCompilers: Display: Total thread time: 38.632 s
+[2024.11.06-14.46.30:652][897]LogShaderCompilers: Display: Total thread preprocess time: 5.444 s
+[2024.11.06-14.46.30:652][897]LogShaderCompilers: Display: Percentage time preprocessing: 14.09%
+[2024.11.06-14.46.30:652][897]LogShaderCompilers: Display: Effective parallelization: 2.50 (times faster than compiling all shaders on one thread). Compare with number of workers: 8
+[2024.11.06-14.46.30:652][897]LogShaderCompilers: Display: Top 5 most expensive shader types by average time:
+[2024.11.06-14.46.30:652][897]LogShaderCompilers: Display:                                       FPostProcessMaterialPS (compiled    1 times, average 1.08 sec, max 1.08 sec, min 1.08 sec)
+[2024.11.06-14.46.30:652][897]LogShaderCompilers: Display:                                                  FHitProxyVS (compiled    2 times, average 0.68 sec, max 0.80 sec, min 0.56 sec)
+[2024.11.06-14.46.30:652][897]LogShaderCompilers: Display:                                 TBasePassVSFNoLightMapPolicy (compiled   16 times, average 0.59 sec, max 1.10 sec, min 0.36 sec)
+[2024.11.06-14.46.30:652][897]LogShaderCompilers: Display:             TShadowDepthVSVertexShadowDepth_VirtualShadowMap (compiled    3 times, average 0.58 sec, max 0.65 sec, min 0.54 sec)
+[2024.11.06-14.46.30:652][897]LogShaderCompilers: Display:                                 TBasePassPSFNoLightMapPolicy (compiled   16 times, average 0.52 sec, max 0.66 sec, min 0.39 sec)
+[2024.11.06-14.46.30:652][897]LogShaderCompilers: Display: Top 5 shader types by total compile time:
+[2024.11.06-14.46.30:652][897]LogShaderCompilers: Display:                                 TBasePassVSFNoLightMapPolicy - 24.50% of total time (compiled   16 times, average 0.59 sec, max 1.10 sec, min 0.36 sec)
+[2024.11.06-14.46.30:652][897]LogShaderCompilers: Display:                                 TBasePassPSFNoLightMapPolicy - 21.71% of total time (compiled   16 times, average 0.52 sec, max 0.66 sec, min 0.39 sec)
+[2024.11.06-14.46.30:652][897]LogShaderCompilers: Display:                                                 FLumenCardVS - 11.39% of total time (compiled   10 times, average 0.44 sec, max 0.60 sec, min 0.39 sec)
+[2024.11.06-14.46.30:652][897]LogShaderCompilers: Display:                                                  FVelocityVS - 8.76% of total time (compiled    7 times, average 0.48 sec, max 0.87 sec, min 0.32 sec)
+[2024.11.06-14.46.30:652][897]LogShaderCompilers: Display:                                          FLumenCardPS<false> - 6.64% of total time (compiled   10 times, average 0.26 sec, max 0.38 sec, min 0.17 sec)
+[2024.11.06-14.46.30:652][897]LogShaderCompilers: Display: ================================================
+[2024.11.06-14.46.42:942][625]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2024.11.06-14.46.42:942][625]LogWorld: BeginTearingDown for /Game/Levels/UEDPIE_0_MovementLevel
+[2024.11.06-14.46.42:942][625]LogWorld: UWorld::CleanupWorld for MovementLevel, bSessionEnded=true, bCleanupResources=true
+[2024.11.06-14.46.42:943][625]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.11.06-14.46.42:948][625]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2024.11.06-14.46.42:956][625]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.11.06-14.46.42:973][625]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2024.11.06-14.46.42:974][625]LogAudioMixer: Deinitializing Audio Bus Subsystem for audio device with ID 16
+[2024.11.06-14.46.42:974][625]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=16
+[2024.11.06-14.46.42:976][625]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=16
+[2024.11.06-14.46.42:984][625]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2024.11.06-14.46.43:021][625]LogUObjectHash: Compacting FUObjectHashTables data took   2.98ms
+[2024.11.06-14.46.43:078][626]LogPlayLevel: Display: Destroying online subsystem :Context_25
+[2024.11.06-14.47.51:734][534]LogDerivedDataCache: C:/Users/Mikolaj/AppData/Local/UnrealEngine/Common/DerivedDataCache: Maintenance finished in +00:00:03.614 and deleted 0 files with total size 0 MiB and 0 empty folders. Scanned 1951 files in 3080 folders with total size 296 MiB.
+[2024.11.06-14.47.56:127][764]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.11.06-14.47.56:303][764]LogUObjectHash: Compacting FUObjectHashTables data took   1.64ms
+[2024.11.06-14.47.56:327][764]LogSavePackage: Moving output files for package: /Game/Levels/MovementLevel
+[2024.11.06-14.47.56:328][764]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/MovementLevel1E2FAFAF4FB75DF6C019DF883EF42AA9.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/Levels/MovementLevel.umap'
+[2024.11.06-14.47.56:344][764]LogFileHelpers: Saving map 'MovementLevel' took 0.115
+[2024.11.06-14.47.56:357][764]LogFileHelpers: InternalPromptForCheckoutAndSave took 230 ms (total: 2.65 sec)
+[2024.11.06-14.47.56:359][764]AssetCheck: New page: Asset Save: MovementLevel
+[2024.11.06-14.47.56:360][764]LogContentValidation: Display: Validating /Script/Engine.World /Game/Levels/MovementLevel.MovementLevel
+[2024.11.06-14.47.56:834][791]LogDebuggerCommands: Repeating last play command: Selected Viewport
+[2024.11.06-14.47.56:858][791]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2024.11.06-14.47.56:858][791]PIE: New page: PIE session: MovementLevel (6 Nov 2024, 14:47:56)
+[2024.11.06-14.47.56:859][791]LogPlayLevel: Creating play world package: /Game/Levels/UEDPIE_0_MovementLevel
+[2024.11.06-14.47.56:863][791]LogPlayLevel: PIE: StaticDuplicateObject took: (0.004053s)
+[2024.11.06-14.47.56:863][791]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Levels/MovementLevel.MovementLevel to /Game/Levels/UEDPIE_0_MovementLevel.MovementLevel (0.004122s)
+[2024.11.06-14.47.56:883][791]LogUObjectHash: Compacting FUObjectHashTables data took   2.22ms
+[2024.11.06-14.47.56:885][791]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.11.06-14.47.56:885][791]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2024.11.06-14.47.56:886][791]LogAIModule: Creating AISystem for world MovementLevel
+[2024.11.06-14.47.56:886][791]LogPlayLevel: PIE: World Init took: (0.001356s)
+[2024.11.06-14.47.56:886][791]LogAudio: Display: Creating Audio Device:                 Id: 17, Scope: Unique, Realtime: True
+[2024.11.06-14.47.56:886][791]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2024.11.06-14.47.56:886][791]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2024.11.06-14.47.56:886][791]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2024.11.06-14.47.56:886][791]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2024.11.06-14.47.56:886][791]LogAudioMixer: Display: 	Number of buffers to queue:			  1
+[2024.11.06-14.47.56:888][791]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2024.11.06-14.47.56:888][791]LogAudioMixer: Display: 	Number of Async Source Workers:		  4
+[2024.11.06-14.47.56:888][791]LogAudio: Display: AudioDevice MaxSources: 32
+[2024.11.06-14.47.56:888][791]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2024.11.06-14.47.56:888][791]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2024.11.06-14.47.56:888][791]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2024.11.06-14.47.56:891][791]LogAudioMixer: Display: Initializing audio mixer using platform API: 'XAudio2'
+[2024.11.06-14.47.56:965][791]LogAudioMixer: Display: Using Audio Hardware Device Speakers (Realtek(R) Audio)
+[2024.11.06-14.47.56:966][791]LogAudioMixer: Display: Initializing Sound Submixes...
+[2024.11.06-14.47.56:966][791]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2024.11.06-14.47.56:966][791]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2024.11.06-14.47.56:968][791]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called. InstanceID=17
+[2024.11.06-14.47.56:968][791]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048, InstanceID=17
+[2024.11.06-14.47.56:970][791]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=17
+[2024.11.06-14.47.56:970][791]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time. InstanceID=17
+[2024.11.06-14.47.56:970][791]LogInit: FAudioDevice initialized with ID 17.
+[2024.11.06-14.47.56:970][791]LogAudio: Display: Audio Device (ID: 17) registered with world 'MovementLevel'.
+[2024.11.06-14.47.56:970][791]LogAudioMixer: Initializing Audio Bus Subsystem for audio device with ID 17
+[2024.11.06-14.47.56:975][791]LogLoad: Game class is 'BP_CardslingerTestGameMode_C'
+[2024.11.06-14.47.56:980][791]LogWorld: Bringing World /Game/Levels/UEDPIE_0_MovementLevel.MovementLevel up for play (max tick rate 60) at 2024.11.06-14.47.56
+[2024.11.06-14.47.56:982][791]LogWorld: Bringing up level for play took: 0.006209
+[2024.11.06-14.47.56:986][791]LogOnline: OSS: Created online subsystem instance for: :Context_26
+[2024.11.06-14.47.57:025][791]LogViewport: Display: Viewport MouseCaptureMode Changed, CapturePermanently_IncludingInitialMouseDown -> CapturePermanently
+[2024.11.06-14.47.57:037][791]LogTemp: Display: ../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/CardDeck.sav
+[2024.11.06-14.47.57:037][791]LogTemp: Load successful!
+[2024.11.06-14.47.57:041][791]LogTemp: Save successful!
+[2024.11.06-14.47.57:044][791]PIE: Server logged in
+[2024.11.06-14.47.57:046][791]PIE: Play in editor total start time 0.188 seconds.
+[2024.11.06-14.48.08:294][460]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2024.11.06-14.48.08:294][460]LogWorld: BeginTearingDown for /Game/Levels/UEDPIE_0_MovementLevel
+[2024.11.06-14.48.08:294][460]LogWorld: UWorld::CleanupWorld for MovementLevel, bSessionEnded=true, bCleanupResources=true
+[2024.11.06-14.48.08:295][460]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.11.06-14.48.08:301][460]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2024.11.06-14.48.08:308][460]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.11.06-14.48.08:329][460]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2024.11.06-14.48.08:329][460]LogAudioMixer: Deinitializing Audio Bus Subsystem for audio device with ID 17
+[2024.11.06-14.48.08:329][460]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=17
+[2024.11.06-14.48.08:333][460]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=17
+[2024.11.06-14.48.08:344][460]LogUObjectHash: Compacting FUObjectHashTables data took   1.94ms
+[2024.11.06-14.48.08:542][461]LogPlayLevel: Display: Destroying online subsystem :Context_26
+[2024.11.06-14.48.15:824][876]LogDebuggerCommands: Repeating last play command: Selected Viewport
+[2024.11.06-14.48.15:839][876]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2024.11.06-14.48.15:839][876]PIE: New page: PIE session: MovementLevel (6 Nov 2024, 14:48:15)
+[2024.11.06-14.48.15:840][876]LogPlayLevel: Creating play world package: /Game/Levels/UEDPIE_0_MovementLevel
+[2024.11.06-14.48.15:843][876]LogPlayLevel: PIE: StaticDuplicateObject took: (0.003646s)
+[2024.11.06-14.48.15:843][876]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Levels/MovementLevel.MovementLevel to /Game/Levels/UEDPIE_0_MovementLevel.MovementLevel (0.003690s)
+[2024.11.06-14.48.15:863][876]LogUObjectHash: Compacting FUObjectHashTables data took   1.55ms
+[2024.11.06-14.48.15:872][876]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.11.06-14.48.15:872][876]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2024.11.06-14.48.15:872][876]LogAIModule: Creating AISystem for world MovementLevel
+[2024.11.06-14.48.15:873][876]LogPlayLevel: PIE: World Init took: (0.001136s)
+[2024.11.06-14.48.15:873][876]LogAudio: Display: Creating Audio Device:                 Id: 18, Scope: Unique, Realtime: True
+[2024.11.06-14.48.15:873][876]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2024.11.06-14.48.15:873][876]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2024.11.06-14.48.15:873][876]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2024.11.06-14.48.15:873][876]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2024.11.06-14.48.15:873][876]LogAudioMixer: Display: 	Number of buffers to queue:			  1
+[2024.11.06-14.48.15:873][876]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2024.11.06-14.48.15:873][876]LogAudioMixer: Display: 	Number of Async Source Workers:		  4
+[2024.11.06-14.48.15:873][876]LogAudio: Display: AudioDevice MaxSources: 32
+[2024.11.06-14.48.15:873][876]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2024.11.06-14.48.15:873][876]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2024.11.06-14.48.15:873][876]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2024.11.06-14.48.15:876][876]LogAudioMixer: Display: Initializing audio mixer using platform API: 'XAudio2'
+[2024.11.06-14.48.15:932][876]LogAudioMixer: Display: Using Audio Hardware Device Speakers (Realtek(R) Audio)
+[2024.11.06-14.48.15:932][876]LogAudioMixer: Display: Initializing Sound Submixes...
+[2024.11.06-14.48.15:932][876]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2024.11.06-14.48.15:932][876]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2024.11.06-14.48.15:933][876]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called. InstanceID=18
+[2024.11.06-14.48.15:933][876]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048, InstanceID=18
+[2024.11.06-14.48.15:936][876]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=18
+[2024.11.06-14.48.15:936][876]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time. InstanceID=18
+[2024.11.06-14.48.15:936][876]LogInit: FAudioDevice initialized with ID 18.
+[2024.11.06-14.48.15:936][876]LogAudio: Display: Audio Device (ID: 18) registered with world 'MovementLevel'.
+[2024.11.06-14.48.15:936][876]LogAudioMixer: Initializing Audio Bus Subsystem for audio device with ID 18
+[2024.11.06-14.48.15:938][876]LogLoad: Game class is 'BP_CardslingerTestGameMode_C'
+[2024.11.06-14.48.15:941][876]LogWorld: Bringing World /Game/Levels/UEDPIE_0_MovementLevel.MovementLevel up for play (max tick rate 60) at 2024.11.06-14.48.15
+[2024.11.06-14.48.15:943][876]LogWorld: Bringing up level for play took: 0.003588
+[2024.11.06-14.48.15:946][876]LogOnline: OSS: Created online subsystem instance for: :Context_27
+[2024.11.06-14.48.15:975][876]LogViewport: Display: Viewport MouseCaptureMode Changed, CapturePermanently_IncludingInitialMouseDown -> CapturePermanently
+[2024.11.06-14.48.15:982][876]LogTemp: Display: ../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/CardDeck.sav
+[2024.11.06-14.48.15:984][876]LogTemp: Load successful!
+[2024.11.06-14.48.15:988][876]LogTemp: Save successful!
+[2024.11.06-14.48.15:991][876]PIE: Server logged in
+[2024.11.06-14.48.15:992][876]PIE: Play in editor total start time 0.152 seconds.
+[2024.11.06-14.51.15:098][146]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2024.11.06-14.51.15:098][146]LogWorld: BeginTearingDown for /Game/Levels/UEDPIE_0_MovementLevel
+[2024.11.06-14.51.15:100][146]LogWorld: UWorld::CleanupWorld for MovementLevel, bSessionEnded=true, bCleanupResources=true
+[2024.11.06-14.51.15:100][146]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.11.06-14.51.15:105][146]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2024.11.06-14.51.15:112][146]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.11.06-14.51.15:130][146]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2024.11.06-14.51.15:130][146]LogAudioMixer: Deinitializing Audio Bus Subsystem for audio device with ID 18
+[2024.11.06-14.51.15:130][146]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=18
+[2024.11.06-14.51.15:132][146]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=18
+[2024.11.06-14.51.15:146][146]LogUObjectHash: Compacting FUObjectHashTables data took   1.95ms
+[2024.11.06-14.51.15:330][147]LogPlayLevel: Display: Destroying online subsystem :Context_27
+[2024.11.06-14.51.15:519][154]LogDebuggerCommands: Repeating last play command: Selected Viewport
+[2024.11.06-14.51.15:535][154]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2024.11.06-14.51.15:535][154]PIE: New page: PIE session: MovementLevel (6 Nov 2024, 14:51:15)
+[2024.11.06-14.51.15:535][154]LogPlayLevel: Creating play world package: /Game/Levels/UEDPIE_0_MovementLevel
+[2024.11.06-14.51.15:539][154]LogPlayLevel: PIE: StaticDuplicateObject took: (0.003621s)
+[2024.11.06-14.51.15:539][154]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Levels/MovementLevel.MovementLevel to /Game/Levels/UEDPIE_0_MovementLevel.MovementLevel (0.003655s)
+[2024.11.06-14.51.15:560][154]LogUObjectHash: Compacting FUObjectHashTables data took   2.00ms
+[2024.11.06-14.51.15:565][154]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.11.06-14.51.15:565][154]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2024.11.06-14.51.15:566][154]LogAIModule: Creating AISystem for world MovementLevel
+[2024.11.06-14.51.15:566][154]LogPlayLevel: PIE: World Init took: (0.001116s)
+[2024.11.06-14.51.15:566][154]LogAudio: Display: Creating Audio Device:                 Id: 19, Scope: Unique, Realtime: True
+[2024.11.06-14.51.15:566][154]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2024.11.06-14.51.15:566][154]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2024.11.06-14.51.15:566][154]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2024.11.06-14.51.15:566][154]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2024.11.06-14.51.15:566][154]LogAudioMixer: Display: 	Number of buffers to queue:			  1
+[2024.11.06-14.51.15:566][154]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2024.11.06-14.51.15:566][154]LogAudioMixer: Display: 	Number of Async Source Workers:		  4
+[2024.11.06-14.51.15:566][154]LogAudio: Display: AudioDevice MaxSources: 32
+[2024.11.06-14.51.15:567][154]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2024.11.06-14.51.15:567][154]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2024.11.06-14.51.15:567][154]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2024.11.06-14.51.15:570][154]LogAudioMixer: Display: Initializing audio mixer using platform API: 'XAudio2'
+[2024.11.06-14.51.15:626][154]LogAudioMixer: Display: Using Audio Hardware Device Speakers (Realtek(R) Audio)
+[2024.11.06-14.51.15:626][154]LogAudioMixer: Display: Initializing Sound Submixes...
+[2024.11.06-14.51.15:626][154]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2024.11.06-14.51.15:626][154]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2024.11.06-14.51.15:627][154]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called. InstanceID=19
+[2024.11.06-14.51.15:627][154]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048, InstanceID=19
+[2024.11.06-14.51.15:629][154]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=19
+[2024.11.06-14.51.15:629][154]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time. InstanceID=19
+[2024.11.06-14.51.15:629][154]LogInit: FAudioDevice initialized with ID 19.
+[2024.11.06-14.51.15:629][154]LogAudio: Display: Audio Device (ID: 19) registered with world 'MovementLevel'.
+[2024.11.06-14.51.15:629][154]LogAudioMixer: Initializing Audio Bus Subsystem for audio device with ID 19
+[2024.11.06-14.51.15:633][154]LogLoad: Game class is 'BP_CardslingerTestGameMode_C'
+[2024.11.06-14.51.15:636][154]LogWorld: Bringing World /Game/Levels/UEDPIE_0_MovementLevel.MovementLevel up for play (max tick rate 60) at 2024.11.06-14.51.15
+[2024.11.06-14.51.15:637][154]LogWorld: Bringing up level for play took: 0.003591
+[2024.11.06-14.51.15:640][154]LogOnline: OSS: Created online subsystem instance for: :Context_28
+[2024.11.06-14.51.15:672][154]LogViewport: Display: Viewport MouseCaptureMode Changed, CapturePermanently_IncludingInitialMouseDown -> CapturePermanently
+[2024.11.06-14.51.15:679][154]LogTemp: Display: ../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/CardDeck.sav
+[2024.11.06-14.51.15:679][154]LogTemp: Load successful!
+[2024.11.06-14.51.15:684][154]LogTemp: Save successful!
+[2024.11.06-14.51.15:685][154]PIE: Server logged in
+[2024.11.06-14.51.15:686][154]PIE: Play in editor total start time 0.151 seconds.
+[2024.11.06-14.51.15:692][154]LogShaderCompilers: Display: ================================================
+[2024.11.06-14.51.15:692][154]LogShaderCompilers: Display: === FShaderJobCache stats ===
+[2024.11.06-14.51.15:692][154]LogShaderCompilers: Display: Total job queries 301, among them cache hits 141 (46.84%)
+[2024.11.06-14.51.15:692][154]LogShaderCompilers: Display: Tracking 160 distinct input hashes that result in 118 distinct outputs (73.75%)
+[2024.11.06-14.51.15:692][154]LogShaderCompilers: Display: RAM used: 3.61 MiB of 819.20 MiB budget. Usage: 0.44%
+[2024.11.06-14.51.15:692][154]LogShaderCompilers: Display: === Shader Compilation stats ===
+[2024.11.06-14.51.15:692][154]LogShaderCompilers: Display: Shaders Compiled: 78
+[2024.11.06-14.51.15:692][154]LogShaderCompilers: Display: Jobs assigned 78, completed 78 (100%)
+[2024.11.06-14.51.15:692][154]LogShaderCompilers: Display: Average time worker was idle: 595.47 s
+[2024.11.06-14.51.15:692][154]LogShaderCompilers: Display: Time job spent in pending queue: average 0.06 s, longest 0.12 s
+[2024.11.06-14.51.15:692][154]LogShaderCompilers: Display: Job execution time: average 0.90 s, max 2.03 s
+[2024.11.06-14.51.15:692][154]LogShaderCompilers: Display: Job life time (pending + execution): average 0.97 s, max 2.07
+[2024.11.06-14.51.15:692][154]LogShaderCompilers: Display: Shader code size: average 36.299 KiB, min 3.934 KiB, max 81.113 KiB
+[2024.11.06-14.51.15:692][154]LogShaderCompilers: Display: Time at least one job was in flight (either pending or executed): 15.47 s
+[2024.11.06-14.51.15:692][154]LogShaderCompilers: Display: Jobs were issued in 78 batches (only local compilation was used), average 1.00 jobs/batch
+[2024.11.06-14.51.15:692][154]LogShaderCompilers: Display: Average processing rate: 5.04 jobs/sec
+[2024.11.06-14.51.15:692][154]LogShaderCompilers: Display: Total thread time: 38.632 s
+[2024.11.06-14.51.15:692][154]LogShaderCompilers: Display: Total thread preprocess time: 5.444 s
+[2024.11.06-14.51.15:692][154]LogShaderCompilers: Display: Percentage time preprocessing: 14.09%
+[2024.11.06-14.51.15:692][154]LogShaderCompilers: Display: Effective parallelization: 2.50 (times faster than compiling all shaders on one thread). Compare with number of workers: 8
+[2024.11.06-14.51.15:692][154]LogShaderCompilers: Display: Top 5 most expensive shader types by average time:
+[2024.11.06-14.51.15:692][154]LogShaderCompilers: Display:                                       FPostProcessMaterialPS (compiled    1 times, average 1.08 sec, max 1.08 sec, min 1.08 sec)
+[2024.11.06-14.51.15:692][154]LogShaderCompilers: Display:                                                  FHitProxyVS (compiled    2 times, average 0.68 sec, max 0.80 sec, min 0.56 sec)
+[2024.11.06-14.51.15:692][154]LogShaderCompilers: Display:                                 TBasePassVSFNoLightMapPolicy (compiled   16 times, average 0.59 sec, max 1.10 sec, min 0.36 sec)
+[2024.11.06-14.51.15:692][154]LogShaderCompilers: Display:             TShadowDepthVSVertexShadowDepth_VirtualShadowMap (compiled    3 times, average 0.58 sec, max 0.65 sec, min 0.54 sec)
+[2024.11.06-14.51.15:692][154]LogShaderCompilers: Display:                                 TBasePassPSFNoLightMapPolicy (compiled   16 times, average 0.52 sec, max 0.66 sec, min 0.39 sec)
+[2024.11.06-14.51.15:692][154]LogShaderCompilers: Display: Top 5 shader types by total compile time:
+[2024.11.06-14.51.15:692][154]LogShaderCompilers: Display:                                 TBasePassVSFNoLightMapPolicy - 24.50% of total time (compiled   16 times, average 0.59 sec, max 1.10 sec, min 0.36 sec)
+[2024.11.06-14.51.15:692][154]LogShaderCompilers: Display:                                 TBasePassPSFNoLightMapPolicy - 21.71% of total time (compiled   16 times, average 0.52 sec, max 0.66 sec, min 0.39 sec)
+[2024.11.06-14.51.15:692][154]LogShaderCompilers: Display:                                                 FLumenCardVS - 11.39% of total time (compiled   10 times, average 0.44 sec, max 0.60 sec, min 0.39 sec)
+[2024.11.06-14.51.15:692][154]LogShaderCompilers: Display:                                                  FVelocityVS - 8.76% of total time (compiled    7 times, average 0.48 sec, max 0.87 sec, min 0.32 sec)
+[2024.11.06-14.51.15:692][154]LogShaderCompilers: Display:                                          FLumenCardPS<false> - 6.64% of total time (compiled   10 times, average 0.26 sec, max 0.38 sec, min 0.17 sec)
+[2024.11.06-14.51.15:692][154]LogShaderCompilers: Display: ================================================
+[2024.11.06-14.51.26:581][787]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2024.11.06-14.51.26:581][787]LogWorld: BeginTearingDown for /Game/Levels/UEDPIE_0_MovementLevel
+[2024.11.06-14.51.26:581][787]LogWorld: UWorld::CleanupWorld for MovementLevel, bSessionEnded=true, bCleanupResources=true
+[2024.11.06-14.51.26:582][787]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.11.06-14.51.26:588][787]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2024.11.06-14.51.26:594][787]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.11.06-14.51.26:614][787]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2024.11.06-14.51.26:614][787]LogAudioMixer: Deinitializing Audio Bus Subsystem for audio device with ID 19
+[2024.11.06-14.51.26:616][787]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=19
+[2024.11.06-14.51.26:618][787]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=19
+[2024.11.06-14.51.26:629][787]LogUObjectHash: Compacting FUObjectHashTables data took   2.06ms
+[2024.11.06-14.51.26:833][788]LogPlayLevel: Display: Destroying online subsystem :Context_28
+[2024.11.06-14.53.16:383][985]LogDebuggerCommands: Repeating last play command: Selected Viewport
+[2024.11.06-14.53.16:399][985]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2024.11.06-14.53.16:399][985]PIE: New page: PIE session: MovementLevel (6 Nov 2024, 14:53:16)
+[2024.11.06-14.53.16:399][985]LogPlayLevel: Creating play world package: /Game/Levels/UEDPIE_0_MovementLevel
+[2024.11.06-14.53.16:403][985]LogPlayLevel: PIE: StaticDuplicateObject took: (0.003456s)
+[2024.11.06-14.53.16:403][985]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Levels/MovementLevel.MovementLevel to /Game/Levels/UEDPIE_0_MovementLevel.MovementLevel (0.003490s)
+[2024.11.06-14.53.16:423][985]LogUObjectHash: Compacting FUObjectHashTables data took   1.56ms
+[2024.11.06-14.53.16:428][985]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.11.06-14.53.16:428][985]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2024.11.06-14.53.16:429][985]LogAIModule: Creating AISystem for world MovementLevel
+[2024.11.06-14.53.16:429][985]LogPlayLevel: PIE: World Init took: (0.001221s)
+[2024.11.06-14.53.16:429][985]LogAudio: Display: Creating Audio Device:                 Id: 20, Scope: Unique, Realtime: True
+[2024.11.06-14.53.16:429][985]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2024.11.06-14.53.16:429][985]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2024.11.06-14.53.16:429][985]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2024.11.06-14.53.16:429][985]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2024.11.06-14.53.16:429][985]LogAudioMixer: Display: 	Number of buffers to queue:			  1
+[2024.11.06-14.53.16:429][985]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2024.11.06-14.53.16:429][985]LogAudioMixer: Display: 	Number of Async Source Workers:		  4
+[2024.11.06-14.53.16:429][985]LogAudio: Display: AudioDevice MaxSources: 32
+[2024.11.06-14.53.16:430][985]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2024.11.06-14.53.16:430][985]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2024.11.06-14.53.16:430][985]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2024.11.06-14.53.16:432][985]LogAudioMixer: Display: Initializing audio mixer using platform API: 'XAudio2'
+[2024.11.06-14.53.16:490][985]LogAudioMixer: Display: Using Audio Hardware Device Speakers (Realtek(R) Audio)
+[2024.11.06-14.53.16:491][985]LogAudioMixer: Display: Initializing Sound Submixes...
+[2024.11.06-14.53.16:491][985]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2024.11.06-14.53.16:491][985]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2024.11.06-14.53.16:492][985]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called. InstanceID=20
+[2024.11.06-14.53.16:492][985]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048, InstanceID=20
+[2024.11.06-14.53.16:493][985]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=20
+[2024.11.06-14.53.16:493][985]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time. InstanceID=20
+[2024.11.06-14.53.16:493][985]LogInit: FAudioDevice initialized with ID 20.
+[2024.11.06-14.53.16:493][985]LogAudio: Display: Audio Device (ID: 20) registered with world 'MovementLevel'.
+[2024.11.06-14.53.16:493][985]LogAudioMixer: Initializing Audio Bus Subsystem for audio device with ID 20
+[2024.11.06-14.53.16:497][985]LogLoad: Game class is 'BP_CardslingerTestGameMode_C'
+[2024.11.06-14.53.16:500][985]LogWorld: Bringing World /Game/Levels/UEDPIE_0_MovementLevel.MovementLevel up for play (max tick rate 60) at 2024.11.06-14.53.16
+[2024.11.06-14.53.16:501][985]LogWorld: Bringing up level for play took: 0.003590
+[2024.11.06-14.53.16:504][985]LogOnline: OSS: Created online subsystem instance for: :Context_29
+[2024.11.06-14.53.16:533][985]LogViewport: Display: Viewport MouseCaptureMode Changed, CapturePermanently_IncludingInitialMouseDown -> CapturePermanently
+[2024.11.06-14.53.16:543][985]LogTemp: Display: ../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/CardDeck.sav
+[2024.11.06-14.53.16:543][985]LogTemp: Load successful!
+[2024.11.06-14.53.16:548][985]LogTemp: Save successful!
+[2024.11.06-14.53.16:549][985]PIE: Server logged in
+[2024.11.06-14.53.16:551][985]PIE: Play in editor total start time 0.152 seconds.
+[2024.11.06-14.54.18:985][316]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2024.11.06-14.54.18:985][316]LogWorld: BeginTearingDown for /Game/Levels/UEDPIE_0_MovementLevel
+[2024.11.06-14.54.18:985][316]LogWorld: UWorld::CleanupWorld for MovementLevel, bSessionEnded=true, bCleanupResources=true
+[2024.11.06-14.54.18:986][316]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.11.06-14.54.18:992][316]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2024.11.06-14.54.18:998][316]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.11.06-14.54.19:019][316]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2024.11.06-14.54.19:019][316]LogAudioMixer: Deinitializing Audio Bus Subsystem for audio device with ID 20
+[2024.11.06-14.54.19:019][316]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=20
+[2024.11.06-14.54.19:021][316]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=20
+[2024.11.06-14.54.19:037][316]LogUObjectHash: Compacting FUObjectHashTables data took   2.06ms
+[2024.11.06-14.54.19:240][317]LogPlayLevel: Display: Destroying online subsystem :Context_29
+[2024.11.06-14.54.34:058][170]Cmd: TRANSACTION UNDO
+[2024.11.06-14.54.34:058][170]LogEditorTransaction: Undo Modify Component Location
+[2024.11.06-14.54.51:359][137]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.11.06-14.54.51:481][137]LogSavePackage: Moving output files for package: /Game/Portals/BP_Portal
+[2024.11.06-14.54.51:482][137]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/BP_PortalD3D453134C2C18CEE4F52CB7BCB2CD8C.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/Portals/BP_Portal.uasset'
+[2024.11.06-14.54.51:495][137]LogFileHelpers: InternalPromptForCheckoutAndSave took 135 ms (total: 2.79 sec)
+[2024.11.06-14.54.51:496][137]AssetCheck: New page: Asset Save: BP_Portal
+[2024.11.06-14.54.51:496][137]LogContentValidation: Display: Validating /Script/Engine.Blueprint /Game/Portals/BP_Portal.BP_Portal
+[2024.11.06-14.54.59:636][601]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.11.06-14.54.59:751][601]LogSavePackage: Moving output files for package: /Game/Portals/BP_Portal
+[2024.11.06-14.54.59:752][601]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/BP_PortalFF2FECD14836736711433180EB56F6C3.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/Portals/BP_Portal.uasset'
+[2024.11.06-14.54.59:763][601]LogFileHelpers: InternalPromptForCheckoutAndSave took 127 ms (total: 2.92 sec)
+[2024.11.06-14.54.59:764][601]AssetCheck: New page: Asset Save: BP_Portal
+[2024.11.06-14.54.59:766][601]LogContentValidation: Display: Validating /Script/Engine.Blueprint /Game/Portals/BP_Portal.BP_Portal
+[2024.11.06-14.55.04:268][867]BlueprintLog: New page: Compile BP_Portal
+[2024.11.06-14.55.04:411][867]LogUObjectHash: Compacting FUObjectHashTables data took   1.51ms
+[2024.11.06-14.55.05:515][914]LogEditorViewport: Clicking Background
+[2024.11.06-14.55.05:666][922]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.11.06-14.55.05:848][922]LogUObjectHash: Compacting FUObjectHashTables data took   1.85ms
+[2024.11.06-14.55.05:873][922]LogSavePackage: Moving output files for package: /Game/Levels/MovementLevel
+[2024.11.06-14.55.05:874][922]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/MovementLevel10441F6F443A2BF5D103EEB3343AEB5B.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/Levels/MovementLevel.umap'
+[2024.11.06-14.55.05:892][922]LogFileHelpers: Saving map 'MovementLevel' took 0.127
+[2024.11.06-14.55.05:901][922]LogFileHelpers: InternalPromptForCheckoutAndSave took 234 ms (total: 3.15 sec)
+[2024.11.06-14.55.05:904][922]AssetCheck: New page: Asset Save: MovementLevel
+[2024.11.06-14.55.05:904][922]LogContentValidation: Display: Validating /Script/Engine.World /Game/Levels/MovementLevel.MovementLevel
+[2024.11.06-14.55.06:409][952]LogDebuggerCommands: Repeating last play command: Selected Viewport
+[2024.11.06-14.55.06:424][952]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2024.11.06-14.55.06:424][952]PIE: New page: PIE session: MovementLevel (6 Nov 2024, 14:55:06)
+[2024.11.06-14.55.06:424][952]LogPlayLevel: Creating play world package: /Game/Levels/UEDPIE_0_MovementLevel
+[2024.11.06-14.55.06:428][952]LogPlayLevel: PIE: StaticDuplicateObject took: (0.003653s)
+[2024.11.06-14.55.06:428][952]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Levels/MovementLevel.MovementLevel to /Game/Levels/UEDPIE_0_MovementLevel.MovementLevel (0.003698s)
+[2024.11.06-14.55.06:447][952]LogUObjectHash: Compacting FUObjectHashTables data took   1.44ms
+[2024.11.06-14.55.06:448][952]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.11.06-14.55.06:448][952]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2024.11.06-14.55.06:449][952]LogAIModule: Creating AISystem for world MovementLevel
+[2024.11.06-14.55.06:449][952]LogPlayLevel: PIE: World Init took: (0.001171s)
+[2024.11.06-14.55.06:449][952]LogAudio: Display: Creating Audio Device:                 Id: 21, Scope: Unique, Realtime: True
+[2024.11.06-14.55.06:449][952]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2024.11.06-14.55.06:449][952]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2024.11.06-14.55.06:449][952]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2024.11.06-14.55.06:449][952]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2024.11.06-14.55.06:449][952]LogAudioMixer: Display: 	Number of buffers to queue:			  1
+[2024.11.06-14.55.06:449][952]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2024.11.06-14.55.06:449][952]LogAudioMixer: Display: 	Number of Async Source Workers:		  4
+[2024.11.06-14.55.06:449][952]LogAudio: Display: AudioDevice MaxSources: 32
+[2024.11.06-14.55.06:450][952]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2024.11.06-14.55.06:450][952]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2024.11.06-14.55.06:450][952]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2024.11.06-14.55.06:452][952]LogAudioMixer: Display: Initializing audio mixer using platform API: 'XAudio2'
+[2024.11.06-14.55.06:514][952]LogAudioMixer: Display: Using Audio Hardware Device Speakers (Realtek(R) Audio)
+[2024.11.06-14.55.06:514][952]LogAudioMixer: Display: Initializing Sound Submixes...
+[2024.11.06-14.55.06:515][952]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2024.11.06-14.55.06:515][952]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2024.11.06-14.55.06:518][952]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called. InstanceID=21
+[2024.11.06-14.55.06:518][952]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048, InstanceID=21
+[2024.11.06-14.55.06:521][952]LogInit: FAudioDevice initialized with ID 21.
+[2024.11.06-14.55.06:521][952]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=21
+[2024.11.06-14.55.06:521][952]LogAudio: Display: Audio Device (ID: 21) registered with world 'MovementLevel'.
+[2024.11.06-14.55.06:521][952]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time. InstanceID=21
+[2024.11.06-14.55.06:521][952]LogAudioMixer: Initializing Audio Bus Subsystem for audio device with ID 21
+[2024.11.06-14.55.06:523][952]LogLoad: Game class is 'BP_CardslingerTestGameMode_C'
+[2024.11.06-14.55.06:527][952]LogWorld: Bringing World /Game/Levels/UEDPIE_0_MovementLevel.MovementLevel up for play (max tick rate 60) at 2024.11.06-14.55.06
+[2024.11.06-14.55.06:528][952]LogWorld: Bringing up level for play took: 0.003534
+[2024.11.06-14.55.06:531][952]LogOnline: OSS: Created online subsystem instance for: :Context_30
+[2024.11.06-14.55.06:567][952]LogViewport: Display: Viewport MouseCaptureMode Changed, CapturePermanently_IncludingInitialMouseDown -> CapturePermanently
+[2024.11.06-14.55.06:573][952]LogTemp: Display: ../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/CardDeck.sav
+[2024.11.06-14.55.06:573][952]LogTemp: Load successful!
+[2024.11.06-14.55.06:578][952]LogTemp: Save successful!
+[2024.11.06-14.55.06:582][952]PIE: Server logged in
+[2024.11.06-14.55.06:583][952]PIE: Play in editor total start time 0.158 seconds.
+[2024.11.06-14.55.06:588][952]LogShaderCompilers: Display: ================================================
+[2024.11.06-14.55.06:588][952]LogShaderCompilers: Display: === FShaderJobCache stats ===
+[2024.11.06-14.55.06:588][952]LogShaderCompilers: Display: Total job queries 317, among them cache hits 157 (49.53%)
+[2024.11.06-14.55.06:588][952]LogShaderCompilers: Display: Tracking 160 distinct input hashes that result in 118 distinct outputs (73.75%)
+[2024.11.06-14.55.06:588][952]LogShaderCompilers: Display: RAM used: 3.61 MiB of 819.20 MiB budget. Usage: 0.44%
+[2024.11.06-14.55.06:588][952]LogShaderCompilers: Display: === Shader Compilation stats ===
+[2024.11.06-14.55.06:588][952]LogShaderCompilers: Display: Shaders Compiled: 78
+[2024.11.06-14.55.06:588][952]LogShaderCompilers: Display: Jobs assigned 78, completed 78 (100%)
+[2024.11.06-14.55.06:588][952]LogShaderCompilers: Display: Average time worker was idle: 595.47 s
+[2024.11.06-14.55.06:588][952]LogShaderCompilers: Display: Time job spent in pending queue: average 0.06 s, longest 0.12 s
+[2024.11.06-14.55.06:588][952]LogShaderCompilers: Display: Job execution time: average 0.90 s, max 2.03 s
+[2024.11.06-14.55.06:588][952]LogShaderCompilers: Display: Job life time (pending + execution): average 0.97 s, max 2.07
+[2024.11.06-14.55.06:588][952]LogShaderCompilers: Display: Shader code size: average 36.299 KiB, min 3.934 KiB, max 81.113 KiB
+[2024.11.06-14.55.06:588][952]LogShaderCompilers: Display: Time at least one job was in flight (either pending or executed): 15.47 s
+[2024.11.06-14.55.06:588][952]LogShaderCompilers: Display: Jobs were issued in 78 batches (only local compilation was used), average 1.00 jobs/batch
+[2024.11.06-14.55.06:588][952]LogShaderCompilers: Display: Average processing rate: 5.04 jobs/sec
+[2024.11.06-14.55.06:588][952]LogShaderCompilers: Display: Total thread time: 38.632 s
+[2024.11.06-14.55.06:588][952]LogShaderCompilers: Display: Total thread preprocess time: 5.444 s
+[2024.11.06-14.55.06:588][952]LogShaderCompilers: Display: Percentage time preprocessing: 14.09%
+[2024.11.06-14.55.06:588][952]LogShaderCompilers: Display: Effective parallelization: 2.50 (times faster than compiling all shaders on one thread). Compare with number of workers: 8
+[2024.11.06-14.55.06:588][952]LogShaderCompilers: Display: Top 5 most expensive shader types by average time:
+[2024.11.06-14.55.06:588][952]LogShaderCompilers: Display:                                       FPostProcessMaterialPS (compiled    1 times, average 1.08 sec, max 1.08 sec, min 1.08 sec)
+[2024.11.06-14.55.06:588][952]LogShaderCompilers: Display:                                                  FHitProxyVS (compiled    2 times, average 0.68 sec, max 0.80 sec, min 0.56 sec)
+[2024.11.06-14.55.06:588][952]LogShaderCompilers: Display:                                 TBasePassVSFNoLightMapPolicy (compiled   16 times, average 0.59 sec, max 1.10 sec, min 0.36 sec)
+[2024.11.06-14.55.06:588][952]LogShaderCompilers: Display:             TShadowDepthVSVertexShadowDepth_VirtualShadowMap (compiled    3 times, average 0.58 sec, max 0.65 sec, min 0.54 sec)
+[2024.11.06-14.55.06:588][952]LogShaderCompilers: Display:                                 TBasePassPSFNoLightMapPolicy (compiled   16 times, average 0.52 sec, max 0.66 sec, min 0.39 sec)
+[2024.11.06-14.55.06:588][952]LogShaderCompilers: Display: Top 5 shader types by total compile time:
+[2024.11.06-14.55.06:588][952]LogShaderCompilers: Display:                                 TBasePassVSFNoLightMapPolicy - 24.50% of total time (compiled   16 times, average 0.59 sec, max 1.10 sec, min 0.36 sec)
+[2024.11.06-14.55.06:588][952]LogShaderCompilers: Display:                                 TBasePassPSFNoLightMapPolicy - 21.71% of total time (compiled   16 times, average 0.52 sec, max 0.66 sec, min 0.39 sec)
+[2024.11.06-14.55.06:588][952]LogShaderCompilers: Display:                                                 FLumenCardVS - 11.39% of total time (compiled   10 times, average 0.44 sec, max 0.60 sec, min 0.39 sec)
+[2024.11.06-14.55.06:588][952]LogShaderCompilers: Display:                                                  FVelocityVS - 8.76% of total time (compiled    7 times, average 0.48 sec, max 0.87 sec, min 0.32 sec)
+[2024.11.06-14.55.06:588][952]LogShaderCompilers: Display:                                          FLumenCardPS<false> - 6.64% of total time (compiled   10 times, average 0.26 sec, max 0.38 sec, min 0.17 sec)
+[2024.11.06-14.55.06:588][952]LogShaderCompilers: Display: ================================================
+[2024.11.06-14.55.08:956][ 90]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2024.11.06-14.55.08:956][ 90]LogWorld: BeginTearingDown for /Game/Levels/UEDPIE_0_MovementLevel
+[2024.11.06-14.55.08:956][ 90]LogWorld: UWorld::CleanupWorld for MovementLevel, bSessionEnded=true, bCleanupResources=true
+[2024.11.06-14.55.08:957][ 90]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.11.06-14.55.08:963][ 90]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2024.11.06-14.55.08:969][ 90]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.11.06-14.55.08:988][ 90]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2024.11.06-14.55.08:989][ 90]LogAudioMixer: Deinitializing Audio Bus Subsystem for audio device with ID 21
+[2024.11.06-14.55.08:989][ 90]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=21
+[2024.11.06-14.55.08:990][ 90]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=21
+[2024.11.06-14.55.08:998][ 90]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2024.11.06-14.55.09:003][ 90]LogUObjectHash: Compacting FUObjectHashTables data took   1.62ms
+[2024.11.06-14.55.09:055][ 91]LogPlayLevel: Display: Destroying online subsystem :Context_30
+[2024.11.06-14.58.46:201][787]LogLiveCoding: Display: Starting Live Coding compile.
+[2024.11.06-14.59.03:008][838]LogLiveCoding: Display:    Creating library C:\Users\Mikolaj\Documents\Unreal Projects\Cardslinger-Prototype\CardslingerPrototype\Binaries\Win64\UnrealEditor-CardslingerPrototype.patch_12.lib and object C:\Users\Mikolaj\Documents\Unreal Projects\Cardslinger-Prototype\CardslingerPrototype\Binaries\Win64\UnrealEditor-CardslingerPrototype.patch_12.exp
+[2024.11.06-14.59.04:810][842]LogUObjectHash: Compacting FUObjectHashTables data took   1.63ms
+[2024.11.06-14.59.05:454][843]Display: Reload/Re-instancing Complete: 1 package changed, 28 classes unchanged, 40 functions remapped
+[2024.11.06-14.59.05:454][843]LogLiveCoding: Display: Live coding succeeded
+[2024.11.06-15.00.01:462][178]LogDebuggerCommands: Repeating last play command: Selected Viewport
+[2024.11.06-15.00.01:478][178]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2024.11.06-15.00.01:478][178]PIE: New page: PIE session: MovementLevel (6 Nov 2024, 15:00:01)
+[2024.11.06-15.00.01:479][178]LogPlayLevel: Creating play world package: /Game/Levels/UEDPIE_0_MovementLevel
+[2024.11.06-15.00.01:482][178]LogPlayLevel: PIE: StaticDuplicateObject took: (0.003635s)
+[2024.11.06-15.00.01:482][178]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Levels/MovementLevel.MovementLevel to /Game/Levels/UEDPIE_0_MovementLevel.MovementLevel (0.003668s)
+[2024.11.06-15.00.01:578][178]LogUObjectHash: Compacting FUObjectHashTables data took   2.74ms
+[2024.11.06-15.00.01:583][178]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.11.06-15.00.01:583][178]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2024.11.06-15.00.01:584][178]LogAIModule: Creating AISystem for world MovementLevel
+[2024.11.06-15.00.01:584][178]LogPlayLevel: PIE: World Init took: (0.001248s)
+[2024.11.06-15.00.01:584][178]LogAudio: Display: Creating Audio Device:                 Id: 22, Scope: Unique, Realtime: True
+[2024.11.06-15.00.01:584][178]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2024.11.06-15.00.01:584][178]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2024.11.06-15.00.01:584][178]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2024.11.06-15.00.01:584][178]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2024.11.06-15.00.01:584][178]LogAudioMixer: Display: 	Number of buffers to queue:			  1
+[2024.11.06-15.00.01:584][178]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2024.11.06-15.00.01:584][178]LogAudioMixer: Display: 	Number of Async Source Workers:		  4
+[2024.11.06-15.00.01:584][178]LogAudio: Display: AudioDevice MaxSources: 32
+[2024.11.06-15.00.01:585][178]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2024.11.06-15.00.01:585][178]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2024.11.06-15.00.01:585][178]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2024.11.06-15.00.01:587][178]LogAudioMixer: Display: Initializing audio mixer using platform API: 'XAudio2'
+[2024.11.06-15.00.01:646][178]LogAudioMixer: Display: Using Audio Hardware Device Speakers (Realtek(R) Audio)
+[2024.11.06-15.00.01:647][178]LogAudioMixer: Display: Initializing Sound Submixes...
+[2024.11.06-15.00.01:647][178]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2024.11.06-15.00.01:647][178]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2024.11.06-15.00.01:648][178]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called. InstanceID=22
+[2024.11.06-15.00.01:648][178]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048, InstanceID=22
+[2024.11.06-15.00.01:650][178]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=22
+[2024.11.06-15.00.01:650][178]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time. InstanceID=22
+[2024.11.06-15.00.01:650][178]LogInit: FAudioDevice initialized with ID 22.
+[2024.11.06-15.00.01:651][178]LogAudio: Display: Audio Device (ID: 22) registered with world 'MovementLevel'.
+[2024.11.06-15.00.01:651][178]LogAudioMixer: Initializing Audio Bus Subsystem for audio device with ID 22
+[2024.11.06-15.00.01:654][178]LogLoad: Game class is 'BP_CardslingerTestGameMode_C'
+[2024.11.06-15.00.01:659][178]LogWorld: Bringing World /Game/Levels/UEDPIE_0_MovementLevel.MovementLevel up for play (max tick rate 60) at 2024.11.06-15.00.01
+[2024.11.06-15.00.01:659][178]LogWorld: Bringing up level for play took: 0.003881
+[2024.11.06-15.00.01:662][178]LogOnline: OSS: Created online subsystem instance for: :Context_31
+[2024.11.06-15.00.01:690][178]LogViewport: Display: Viewport MouseCaptureMode Changed, CapturePermanently_IncludingInitialMouseDown -> CapturePermanently
+[2024.11.06-15.00.01:700][178]LogTemp: Display: ../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/CardDeck.sav
+[2024.11.06-15.00.01:700][178]LogTemp: Load successful!
+[2024.11.06-15.00.01:705][178]LogTemp: Save successful!
+[2024.11.06-15.00.01:706][178]PIE: Server logged in
+[2024.11.06-15.00.01:707][178]PIE: Play in editor total start time 0.23 seconds.
+[2024.11.06-15.00.01:713][178]LogShaderCompilers: Display: ================================================
+[2024.11.06-15.00.01:713][178]LogShaderCompilers: Display: === FShaderJobCache stats ===
+[2024.11.06-15.00.01:713][178]LogShaderCompilers: Display: Total job queries 325, among them cache hits 165 (50.77%)
+[2024.11.06-15.00.01:713][178]LogShaderCompilers: Display: Tracking 160 distinct input hashes that result in 118 distinct outputs (73.75%)
+[2024.11.06-15.00.01:713][178]LogShaderCompilers: Display: RAM used: 3.61 MiB of 819.20 MiB budget. Usage: 0.44%
+[2024.11.06-15.00.01:713][178]LogShaderCompilers: Display: === Shader Compilation stats ===
+[2024.11.06-15.00.01:713][178]LogShaderCompilers: Display: Shaders Compiled: 78
+[2024.11.06-15.00.01:713][178]LogShaderCompilers: Display: Jobs assigned 78, completed 78 (100%)
+[2024.11.06-15.00.01:713][178]LogShaderCompilers: Display: Average time worker was idle: 595.47 s
+[2024.11.06-15.00.01:713][178]LogShaderCompilers: Display: Time job spent in pending queue: average 0.06 s, longest 0.12 s
+[2024.11.06-15.00.01:713][178]LogShaderCompilers: Display: Job execution time: average 0.90 s, max 2.03 s
+[2024.11.06-15.00.01:713][178]LogShaderCompilers: Display: Job life time (pending + execution): average 0.97 s, max 2.07
+[2024.11.06-15.00.01:713][178]LogShaderCompilers: Display: Shader code size: average 36.299 KiB, min 3.934 KiB, max 81.113 KiB
+[2024.11.06-15.00.01:713][178]LogShaderCompilers: Display: Time at least one job was in flight (either pending or executed): 15.47 s
+[2024.11.06-15.00.01:713][178]LogShaderCompilers: Display: Jobs were issued in 78 batches (only local compilation was used), average 1.00 jobs/batch
+[2024.11.06-15.00.01:713][178]LogShaderCompilers: Display: Average processing rate: 5.04 jobs/sec
+[2024.11.06-15.00.01:713][178]LogShaderCompilers: Display: Total thread time: 38.632 s
+[2024.11.06-15.00.01:713][178]LogShaderCompilers: Display: Total thread preprocess time: 5.444 s
+[2024.11.06-15.00.01:714][178]LogShaderCompilers: Display: Percentage time preprocessing: 14.09%
+[2024.11.06-15.00.01:714][178]LogShaderCompilers: Display: Effective parallelization: 2.50 (times faster than compiling all shaders on one thread). Compare with number of workers: 8
+[2024.11.06-15.00.01:714][178]LogShaderCompilers: Display: Top 5 most expensive shader types by average time:
+[2024.11.06-15.00.01:714][178]LogShaderCompilers: Display:                                       FPostProcessMaterialPS (compiled    1 times, average 1.08 sec, max 1.08 sec, min 1.08 sec)
+[2024.11.06-15.00.01:714][178]LogShaderCompilers: Display:                                                  FHitProxyVS (compiled    2 times, average 0.68 sec, max 0.80 sec, min 0.56 sec)
+[2024.11.06-15.00.01:714][178]LogShaderCompilers: Display:                                 TBasePassVSFNoLightMapPolicy (compiled   16 times, average 0.59 sec, max 1.10 sec, min 0.36 sec)
+[2024.11.06-15.00.01:714][178]LogShaderCompilers: Display:             TShadowDepthVSVertexShadowDepth_VirtualShadowMap (compiled    3 times, average 0.58 sec, max 0.65 sec, min 0.54 sec)
+[2024.11.06-15.00.01:714][178]LogShaderCompilers: Display:                                 TBasePassPSFNoLightMapPolicy (compiled   16 times, average 0.52 sec, max 0.66 sec, min 0.39 sec)
+[2024.11.06-15.00.01:714][178]LogShaderCompilers: Display: Top 5 shader types by total compile time:
+[2024.11.06-15.00.01:714][178]LogShaderCompilers: Display:                                 TBasePassVSFNoLightMapPolicy - 24.50% of total time (compiled   16 times, average 0.59 sec, max 1.10 sec, min 0.36 sec)
+[2024.11.06-15.00.01:714][178]LogShaderCompilers: Display:                                 TBasePassPSFNoLightMapPolicy - 21.71% of total time (compiled   16 times, average 0.52 sec, max 0.66 sec, min 0.39 sec)
+[2024.11.06-15.00.01:714][178]LogShaderCompilers: Display:                                                 FLumenCardVS - 11.39% of total time (compiled   10 times, average 0.44 sec, max 0.60 sec, min 0.39 sec)
+[2024.11.06-15.00.01:714][178]LogShaderCompilers: Display:                                                  FVelocityVS - 8.76% of total time (compiled    7 times, average 0.48 sec, max 0.87 sec, min 0.32 sec)
+[2024.11.06-15.00.01:714][178]LogShaderCompilers: Display:                                          FLumenCardPS<false> - 6.64% of total time (compiled   10 times, average 0.26 sec, max 0.38 sec, min 0.17 sec)
+[2024.11.06-15.00.01:714][178]LogShaderCompilers: Display: ================================================
+[2024.11.06-15.00.21:804][373]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2024.11.06-15.00.21:804][373]LogWorld: BeginTearingDown for /Game/Levels/UEDPIE_0_MovementLevel
+[2024.11.06-15.00.21:804][373]LogWorld: UWorld::CleanupWorld for MovementLevel, bSessionEnded=true, bCleanupResources=true
+[2024.11.06-15.00.21:805][373]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.11.06-15.00.21:811][373]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2024.11.06-15.00.21:818][373]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.11.06-15.00.21:837][373]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2024.11.06-15.00.21:856][373]LogAudioMixer: Deinitializing Audio Bus Subsystem for audio device with ID 22
+[2024.11.06-15.00.21:856][373]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=22
+[2024.11.06-15.00.21:858][373]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=22
+[2024.11.06-15.00.21:866][373]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2024.11.06-15.00.21:888][373]LogUObjectHash: Compacting FUObjectHashTables data took   2.46ms
+[2024.11.06-15.00.21:951][374]LogPlayLevel: Display: Destroying online subsystem :Context_31
