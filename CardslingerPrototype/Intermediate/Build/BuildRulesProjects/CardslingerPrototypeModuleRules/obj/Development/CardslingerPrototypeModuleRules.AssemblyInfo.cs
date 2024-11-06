@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CardslingerPrototypeModuleRules")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Development")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cbf176bf11e68a2a7c0fee9cfd3bcdae739c2757")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8feecdb932579c662a595331fc02ff7be70f16b0")]
 [assembly: System.Reflection.AssemblyProductAttribute("CardslingerPrototypeModuleRules")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CardslingerPrototypeModuleRules")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

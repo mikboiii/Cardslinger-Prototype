@@ -12,6 +12,8 @@ void EmptyLinkFunctionForGeneratedCodeLightningCard() {}
 	CARDSLINGERPROTOTYPE_API UClass* Z_Construct_UClass_ABaseCard();
 	CARDSLINGERPROTOTYPE_API UClass* Z_Construct_UClass_ALightningCard();
 	CARDSLINGERPROTOTYPE_API UClass* Z_Construct_UClass_ALightningCard_NoRegister();
+	CARDSLINGERPROTOTYPE_API UClass* Z_Construct_UClass_AProjectileCard_NoRegister();
+	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
 	UPackage* Z_Construct_UPackage__Script_CardslingerPrototype();
 // End Cross Module References
 	void ALightningCard::StaticRegisterNativesALightningCard()
@@ -28,6 +30,11 @@ void EmptyLinkFunctionForGeneratedCodeLightningCard() {}
 #if WITH_METADATA
 		static const UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_LightningProjectileCardClass_MetaData[];
+#endif
+		static const UECodeGen_Private::FClassPropertyParams NewProp_LightningProjectileCardClass;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UECodeGen_Private::FClassParams ClassParams;
 	};
@@ -45,6 +52,22 @@ void EmptyLinkFunctionForGeneratedCodeLightningCard() {}
 		{ "ModuleRelativePath", "LightningCard.h" },
 	};
 #endif
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ALightningCard_Statics::NewProp_LightningProjectileCardClass_MetaData[] = {
+		{ "Category", "LightningCard" },
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "//the lightning projectile card class\n" },
+#endif
+		{ "ModuleRelativePath", "LightningCard.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "the lightning projectile card class" },
+#endif
+	};
+#endif
+	const UECodeGen_Private::FClassPropertyParams Z_Construct_UClass_ALightningCard_Statics::NewProp_LightningProjectileCardClass = { "LightningProjectileCardClass", nullptr, (EPropertyFlags)0x0044000000000001, UECodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ALightningCard, LightningProjectileCardClass), Z_Construct_UClass_UClass, Z_Construct_UClass_AProjectileCard_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_ALightningCard_Statics::NewProp_LightningProjectileCardClass_MetaData), Z_Construct_UClass_ALightningCard_Statics::NewProp_LightningProjectileCardClass_MetaData) };
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ALightningCard_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ALightningCard_Statics::NewProp_LightningProjectileCardClass,
+	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_ALightningCard_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<ALightningCard>::IsAbstract,
 	};
@@ -54,15 +77,16 @@ void EmptyLinkFunctionForGeneratedCodeLightningCard() {}
 		&StaticCppClassTypeInfo,
 		DependentSingletons,
 		nullptr,
-		nullptr,
+		Z_Construct_UClass_ALightningCard_Statics::PropPointers,
 		nullptr,
 		UE_ARRAY_COUNT(DependentSingletons),
 		0,
-		0,
+		UE_ARRAY_COUNT(Z_Construct_UClass_ALightningCard_Statics::PropPointers),
 		0,
 		0x009000A4u,
 		METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_ALightningCard_Statics::Class_MetaDataParams), Z_Construct_UClass_ALightningCard_Statics::Class_MetaDataParams)
 	};
+	static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_ALightningCard_Statics::PropPointers) < 2048);
 	UClass* Z_Construct_UClass_ALightningCard()
 	{
 		if (!Z_Registration_Info_UClass_ALightningCard.OuterSingleton)
@@ -83,9 +107,9 @@ void EmptyLinkFunctionForGeneratedCodeLightningCard() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_LightningCard_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_ALightningCard, ALightningCard::StaticClass, TEXT("ALightningCard"), &Z_Registration_Info_UClass_ALightningCard, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ALightningCard), 4281846192U) },
+		{ Z_Construct_UClass_ALightningCard, ALightningCard::StaticClass, TEXT("ALightningCard"), &Z_Registration_Info_UClass_ALightningCard, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ALightningCard), 3451748869U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_LightningCard_h_1903404219(TEXT("/Script/CardslingerPrototype"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_LightningCard_h_2876058333(TEXT("/Script/CardslingerPrototype"),
 		Z_CompiledInDeferFile_FID_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_LightningCard_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_LightningCard_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);

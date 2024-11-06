@@ -1,1 +1,1 @@
-#include "G:/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Source/CardslingerPrototype/Public/LightningCard.h"
+#include "G:/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Source/CardslingerPrototype/LightningCard.h"

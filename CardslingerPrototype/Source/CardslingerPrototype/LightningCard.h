@@ -13,5 +13,12 @@ UCLASS()
 class CARDSLINGERPROTOTYPE_API ALightningCard : public ABaseCard
 {
 	GENERATED_BODY()
-	
+
+	virtual void CardEffect(class ACardDeck* CardDeck, FVector Direction, FVector Target, AActor* TargetActor) override;
+
+private:
+	//the lightning projectile card class
+	UPROPERTY(EditAnywhere)
+	TSubclassOf<class AProjectileCard> LightningProjectileCardClass;
 };
+
