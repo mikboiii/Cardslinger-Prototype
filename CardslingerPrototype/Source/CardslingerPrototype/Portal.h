@@ -25,6 +25,11 @@ protected:
 	UPROPERTY(Instanced, EditAnywhere, BlueprintReadWrite)
 	class USceneCaptureComponent2D* PortalCam;
 
+	UPROPERTY(EditAnywhere)
+	class UMaterial* portalMat;
+	UPROPERTY(EditAnywhere)
+	class UMaterialInstanceDynamic* portalViewMat;
+
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;

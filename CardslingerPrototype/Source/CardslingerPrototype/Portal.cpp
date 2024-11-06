@@ -4,6 +4,9 @@
 #include "Portal.h"
 #include "Components/StaticMeshComponent.h"
 #include "Components/SceneCaptureComponent2D.h"
+#include "Materials/MaterialInstanceDynamic.h"
+#include "Materials/MaterialInstance.h"
+#include "Materials/Material.h"
 
 // Sets default values
 APortal::APortal()
@@ -20,6 +23,9 @@ APortal::APortal()
 void APortal::BeginPlay()
 {
 	Super::BeginPlay();
+	SetTickGroup(TG_PostUpdateWork);
+	portalViewMat = UMaterialInstanceDynamic::Create(portalMat, portalViewMat);
+	PortalPlane->SetMaterial(0, portalViewMat);
 	
 }
 
