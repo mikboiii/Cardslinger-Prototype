@@ -10,6 +10,7 @@
 #include "Engine/TextureRenderTarget2D.h"
 #include "Kismet/KismetRenderingLibrary.h"
 #include "Kismet/GameplayStatics.h"
+#include "Kismet/KismetMathLibrary.h"
 
 // Sets default values
 APortal::APortal()
@@ -47,5 +48,18 @@ void APortal::Tick(float DeltaTime)
 USceneCaptureComponent2D* APortal::GetPortalCam()
 {
 	return PortalCam;
+}
+
+void APortal::UpdatePortalView()
+{
+	FVector portalPos = GetActorLocation();
+	FRotator portalRot = GetActorRotation();
+	FVector portalScale = GetActorScale3D();
+	portalScale *= FVector(-1,-1,1);
+	FTransform newTransform = FTransform(portalRot, portalPos, portalScale);
+	FVector playerCamTransform = UGameplayStatics::GetPlayerCameraManager(GetWorld(), 0)->GetCameraLocation();
+	FVector playerCamPos = UKismetMathLibrary::InverseTransformLocation(newTransform, playerCamTransform);
+	FVector twinnedPortalCamLocation = UKismetMathLibrary::TransformLocation(TwinnedPortal->GetActorTransform(), playerCamPos);
+	TwinnedPortal->GetPortalCam()->SetWorldLocation(twinnedPortalCamLocation);
 }
 

@@ -33,6 +33,7 @@ protected:
 	class UTextureRenderTarget2D* portalRenderTarget;
 	UPROPERTY(EditAnywhere)
 	APortal* TwinnedPortal;
+	void UpdatePortalView();
 
 public:	
 	// Called every frame
