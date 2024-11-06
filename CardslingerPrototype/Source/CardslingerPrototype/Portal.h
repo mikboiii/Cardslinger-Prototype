@@ -29,6 +29,10 @@ protected:
 	class UMaterial* portalMat;
 	UPROPERTY(EditAnywhere)
 	class UMaterialInstanceDynamic* portalViewMat;
+	UPROPERTY(EditAnywhere)
+	class UTextureRenderTarget2D* portalRenderTarget;
+	UPROPERTY(EditAnywhere)
+	APortal* TwinnedPortal;
 
 public:	
 	// Called every frame

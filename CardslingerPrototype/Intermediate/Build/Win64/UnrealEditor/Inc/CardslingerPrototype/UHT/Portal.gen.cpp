@@ -16,6 +16,7 @@ void EmptyLinkFunctionForGeneratedCodePortal() {}
 	ENGINE_API UClass* Z_Construct_UClass_UMaterialInstanceDynamic_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_USceneCaptureComponent2D_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UStaticMeshComponent_NoRegister();
+	ENGINE_API UClass* Z_Construct_UClass_UTextureRenderTarget2D_NoRegister();
 	UPackage* Z_Construct_UPackage__Script_CardslingerPrototype();
 // End Cross Module References
 	void APortal::StaticRegisterNativesAPortal()
@@ -48,6 +49,14 @@ void EmptyLinkFunctionForGeneratedCodePortal() {}
 		static const UECodeGen_Private::FMetaDataPairParam NewProp_portalViewMat_MetaData[];
 #endif
 		static const UECodeGen_Private::FObjectPropertyParams NewProp_portalViewMat;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_portalRenderTarget_MetaData[];
+#endif
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_portalRenderTarget;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_TwinnedPortal_MetaData[];
+#endif
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_TwinnedPortal;
 		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UECodeGen_Private::FClassParams ClassParams;
@@ -93,11 +102,27 @@ void EmptyLinkFunctionForGeneratedCodePortal() {}
 	};
 #endif
 	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_APortal_Statics::NewProp_portalViewMat = { "portalViewMat", nullptr, (EPropertyFlags)0x0020080000000001, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(APortal, portalViewMat), Z_Construct_UClass_UMaterialInstanceDynamic_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_APortal_Statics::NewProp_portalViewMat_MetaData), Z_Construct_UClass_APortal_Statics::NewProp_portalViewMat_MetaData) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_APortal_Statics::NewProp_portalRenderTarget_MetaData[] = {
+		{ "Category", "Portal" },
+		{ "ModuleRelativePath", "Portal.h" },
+	};
+#endif
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_APortal_Statics::NewProp_portalRenderTarget = { "portalRenderTarget", nullptr, (EPropertyFlags)0x0020080000000001, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(APortal, portalRenderTarget), Z_Construct_UClass_UTextureRenderTarget2D_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_APortal_Statics::NewProp_portalRenderTarget_MetaData), Z_Construct_UClass_APortal_Statics::NewProp_portalRenderTarget_MetaData) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_APortal_Statics::NewProp_TwinnedPortal_MetaData[] = {
+		{ "Category", "Portal" },
+		{ "ModuleRelativePath", "Portal.h" },
+	};
+#endif
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_APortal_Statics::NewProp_TwinnedPortal = { "TwinnedPortal", nullptr, (EPropertyFlags)0x0020080000000001, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(APortal, TwinnedPortal), Z_Construct_UClass_APortal_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_APortal_Statics::NewProp_TwinnedPortal_MetaData), Z_Construct_UClass_APortal_Statics::NewProp_TwinnedPortal_MetaData) };
 	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_APortal_Statics::PropPointers[] = {
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APortal_Statics::NewProp_PortalPlane,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APortal_Statics::NewProp_PortalCam,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APortal_Statics::NewProp_portalMat,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APortal_Statics::NewProp_portalViewMat,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APortal_Statics::NewProp_portalRenderTarget,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APortal_Statics::NewProp_TwinnedPortal,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_APortal_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<APortal>::IsAbstract,
@@ -137,9 +162,9 @@ void EmptyLinkFunctionForGeneratedCodePortal() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_Portal_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_APortal, APortal::StaticClass, TEXT("APortal"), &Z_Registration_Info_UClass_APortal, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(APortal), 1134503851U) },
+		{ Z_Construct_UClass_APortal, APortal::StaticClass, TEXT("APortal"), &Z_Registration_Info_UClass_APortal, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(APortal), 3824799556U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_Portal_h_2594722884(TEXT("/Script/CardslingerPrototype"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_Portal_h_3096615481(TEXT("/Script/CardslingerPrototype"),
 		Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_Portal_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_Portal_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);

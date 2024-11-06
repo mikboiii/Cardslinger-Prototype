@@ -7,6 +7,9 @@
 #include "Materials/MaterialInstanceDynamic.h"
 #include "Materials/MaterialInstance.h"
 #include "Materials/Material.h"
+#include "Engine/TextureRenderTarget2D.h"
+#include "Kismet/KismetRenderingLibrary.h"
+#include "Kismet/GameplayStatics.h"
 
 // Sets default values
 APortal::APortal()
@@ -26,6 +29,11 @@ void APortal::BeginPlay()
 	SetTickGroup(TG_PostUpdateWork);
 	portalViewMat = UMaterialInstanceDynamic::Create(portalMat, portalViewMat);
 	PortalPlane->SetMaterial(0, portalViewMat);
+	int32 viewportX;
+	int32 viewportY;
+	UGameplayStatics::GetPlayerController(GetWorld(), 0)->GetViewportSize(viewportX, viewportY);
+	portalRenderTarget = UKismetRenderingLibrary::CreateRenderTarget2D(GetWorld(), viewportX, viewportY);
+	portalMat->SetTextureParameterValueEditorOnly(TEXT("CamInput"), portalRenderTarget);
 	
 }
 
