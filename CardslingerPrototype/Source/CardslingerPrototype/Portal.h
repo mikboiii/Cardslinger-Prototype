@@ -21,7 +21,6 @@ public:
 	class USceneCaptureComponent2D* PortalCam;
 	class USceneComponent* Origin;
 
-
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
@@ -36,7 +35,7 @@ protected:
 	APortal* TwinnedPortal;
 	void UpdatePortalView();
 
-	void MirrorByNormal(FVector& outInput);
+	FVector MirrorByNormal(FVector outInput);
 	
 	void SetClipPlanes();
 
