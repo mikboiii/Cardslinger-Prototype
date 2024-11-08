@@ -11,26 +11,47 @@
 
 void ALightningProjectileCard::OnHit(UPrimitiveComponent* HitComponent, AActor* OtherActor, UPrimitiveComponent* OtherComponent, FVector NormalImpulse, const FHitResult& Hit)
 {
-    FindClosestEnemy();
+    enemyTarget = FindClosestEnemy();
+    if (enemyTarget != nullptr)
+    {
+        UE_LOG(LogTemp, Log, TEXT("Target = %s"), *enemyTarget->GetActorNameOrLabel());
+
+        //create unreal damage event
+        FPointDamageEvent DamageEvent(CardDamage, Hit, -GetActorForwardVector(), nullptr);
+        //apply damage to target
+        enemyTarget->TakeDamage(CardLightningDamage, DamageEvent, enemyTarget->GetController(), this);
+    }
+    DestroyCard();
 }
 
-ABaseAIClass* ALightningProjectileCard::FindClosestEnemy()/*TArray<AActor*> EnemiesToCheck)*/
+ABaseAIClass* ALightningProjectileCard::FindClosestEnemy()
 {
     EnemyTargets = FindActorsInRange(ABaseAIClass::StaticClass(), CardChainDistance);
+    UE_LOG(LogTemp, Log, TEXT("Find closest enemy!"));
 
     // Store the card hit location
-    FVector cardLocation = GetActorLocation();
-    // Store the closest distance to the card impact
-    AActor* closestEnemy;
+    cardLocation = GetActorLocation();
+    //Store the closest distance to the card impact
+    if (!EnemyTargets.IsEmpty())
+    {
+        // Foreach loop to check each enemy found in the radius
+        for (AActor* selectedEnemy : EnemyTargets)
+        {
+            if (!closestEnemy)
+                closestEnemy = selectedEnemy;
 
-    for(AActor* selectedEnemy : EnemyTargets)
-    {    
-        float cardToEnemyDistance = FVector::Distance(cardLocation, selectedEnemy->GetActorLocation());
+            // Find the distance between the enemy and the enemy
+            float cardToEnemyDistance = FVector::Distance(cardLocation, selectedEnemy->GetActorLocation());
 
-        if (cardToEnemyDistance < FVector::Distance(cardLocation, closestEnemy->GetActorLocation()))
-            closestEnemy = selectedEnemy;
+            if (cardToEnemyDistance < FVector::Distance(cardLocation, closestEnemy->GetActorLocation()))
+                closestEnemy = selectedEnemy;
 
+        }
+        // Cast the closestEnemy found from the loop to be the first lightning target
+        ABaseAIClass* lightningTarget = Cast<ABaseAIClass>(closestEnemy);
+        return lightningTarget;
     }
-    ABaseAIClass* lightningTarget = Cast<ABaseAIClass, AActor>(closestEnemy);
-    return lightningTarget;
+    return nullptr;
 };
+
+

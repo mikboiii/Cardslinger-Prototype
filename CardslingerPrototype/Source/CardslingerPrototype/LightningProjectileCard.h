@@ -16,7 +16,7 @@ class CARDSLINGERPROTOTYPE_API ALightningProjectileCard : public AProjectileCard
 
 	virtual void OnHit(UPrimitiveComponent* HitComponent, AActor* OtherActor, UPrimitiveComponent* OtherComponent, FVector NormalImpulse, const FHitResult& Hit) override;
 
-	ABaseAIClass* FindClosestEnemy(/*TArray<AActor*> EnemiesToCheck*/);
+	class ABaseAIClass* FindClosestEnemy();
 
 private:
 	//the damage that the lighting deals
@@ -34,6 +34,12 @@ private:
 	// amount of times the lightning can chain between enemies
 	UPROPERTY(EditAnywhere)
 	int32 CardLightningChains = 3;
+
+	FVector cardLocation;
+
+	AActor* closestEnemy;
+
+	class ABaseAIClass* enemyTarget;
 
 	TArray<AActor*> EnemyTargets;
 };
