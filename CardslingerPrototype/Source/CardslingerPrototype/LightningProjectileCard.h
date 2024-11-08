@@ -13,9 +13,12 @@ UCLASS()
 class CARDSLINGERPROTOTYPE_API ALightningProjectileCard : public AProjectileCard
 {
 	GENERATED_BODY()
-	
+
 	virtual void OnHit(UPrimitiveComponent* HitComponent, AActor* OtherActor, UPrimitiveComponent* OtherComponent, FVector NormalImpulse, const FHitResult& Hit) override;
 
+	ABaseAIClass* FindClosestEnemy(/*TArray<AActor*> EnemiesToCheck*/);
+
+private:
 	//the damage that the lighting deals
 	UPROPERTY(EditAnywhere)
 	float CardLightningDamage = 100.0f;
@@ -28,8 +31,9 @@ class CARDSLINGERPROTOTYPE_API ALightningProjectileCard : public AProjectileCard
 	UPROPERTY(EditAnywhere)
 	float CardChainDistance = 300.0f;
 
-	UPROPERTY(EditAnywhere)
 	// amount of times the lightning can chain between enemies
-	int CardLightningChains
+	UPROPERTY(EditAnywhere)
+	int32 CardLightningChains = 3;
 
+	TArray<AActor*> EnemyTargets;
 };
