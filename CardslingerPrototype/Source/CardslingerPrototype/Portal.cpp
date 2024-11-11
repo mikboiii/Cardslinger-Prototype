@@ -114,24 +114,26 @@ void APortal::TeleportCheck()
 	PlayerCollision->GetOverlappingActors(ActorsInPortal);
 	if(ActorsInPortal.Contains(PlayerActor))
 	{
-		UE_LOG(LogTemp, Display, TEXT("Player In Range"));
+		if(PlayerDotCheck(PlayerActor->GetActorLocation(), GetActorLocation(), GetActorForwardVector()))
+		{
+			UE_LOG(LogTemp, Display, TEXT("Player passed through"));
+		}
 	}
 }
 
 bool APortal::PlayerDotCheck(FVector CurrentPos, FVector PortalPos, FVector PortalNormal)
 {
 	bool bIsCrossing = false;
-	if(FVector::DotProduct(PortalNormal, (CurrentPos - PortalPos)) >= 0.0f)
-	{
-		bIsPlayerInFront = true;
-		FPlane TempPlane = UKismetMathLibrary::MakePlaneFromPointAndNormal(PortalPos, PortalNormal);
-		float TempFloat;
-		FVector TempVec;
-		bool bIsIntersect = UKismetMathLibrary::LinePlaneIntersection(LastPos, CurrentPos, TempPlane, TempFloat, TempVec);
-		bIsCrossing = (!bIsPlayerInFront && bIsIntersect && bIsLastInFront);
-		bIsPlayerInFront = bIsLastInFront;
-		LastPos = CurrentPos;
-	}
+	bool bIsPlayerInFront = false; 
+	if(FVector::DotProduct(PortalNormal, (CurrentPos - PortalPos)) >= 0.0f) bIsPlayerInFront = true;
+	FPlane TempPlane = UKismetMathLibrary::MakePlaneFromPointAndNormal(PortalPos, PortalNormal);
+	float TempFloat;
+	FVector TempVec;
+	bool bIsIntersect = UKismetMathLibrary::LinePlaneIntersection(LastPos, CurrentPos, TempPlane, TempFloat, TempVec);
+	bIsCrossing = (!bIsPlayerInFront && bIsIntersect && bIsLastInFront);
+	bIsLastInFront = bIsPlayerInFront;
+	LastPos = CurrentPos;
+
 	return bIsCrossing;
 }
 
