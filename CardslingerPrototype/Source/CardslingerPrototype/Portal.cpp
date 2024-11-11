@@ -118,11 +118,20 @@ void APortal::TeleportCheck()
 	}
 }
 
-void APortal::PlayerDotCheck(FVector CurrentPos, FVector PortalPos, FVector PortalNormal)
+bool APortal::PlayerDotCheck(FVector CurrentPos, FVector PortalPos, FVector PortalNormal)
 {
+	bool bIsCrossing = false;
 	if(FVector::DotProduct(PortalNormal, (CurrentPos - PortalPos)) >= 0.0f)
 	{
 		bIsPlayerInFront = true;
+		FPlane TempPlane = UKismetMathLibrary::MakePlaneFromPointAndNormal(PortalPos, PortalNormal);
+		float TempFloat;
+		FVector TempVec;
+		bool bIsIntersect = UKismetMathLibrary::LinePlaneIntersection(LastPos, CurrentPos, TempPlane, TempFloat, TempVec);
+		bIsCrossing = (!bIsPlayerInFront && bIsIntersect && bIsLastInFront);
+		bIsPlayerInFront = bIsLastInFront;
+		LastPos = CurrentPos;
 	}
+	return bIsCrossing;
 }
 

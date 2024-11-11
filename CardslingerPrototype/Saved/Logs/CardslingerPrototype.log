@@ -1440,3 +1440,50 @@ LogConfig: Set CVar [[r.Shadow.DetectVertexShaderLayerAtRuntime:1]]
 [2024.11.11-18.05.27:073][925]LogUObjectHash: Compacting FUObjectHashTables data took   1.13ms
 [2024.11.11-18.05.27:271][926]Display: Reload/Re-instancing Complete: 1 package changed, 1 class changed, 27 classes unchanged, 40 functions remapped
 [2024.11.11-18.05.27:272][926]LogLiveCoding: Warning: Live coding succeeded, data type changes may cause packaging to fail if assets reference the new or updated data types
+[2024.11.11-18.08.39:583][690]LogLinker: Warning: Failed to load '/Game/Levels/UEDPIE_0_MovementLevel': Can't find file.
+[2024.11.11-18.08.39:584][690]LogLinker: Warning: Failed to load '/Game/Levels/UEDPIE_0_MovementLevel': Can't find file.
+[2024.11.11-18.08.39:584][690]LogUObjectGlobals: Warning: Failed to find object 'Object /Game/Levels/UEDPIE_0_MovementLevel.MovementLevel'
+[2024.11.11-18.08.41:872][824]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/Portals/BP_Portal.BP_Portal
+[2024.11.11-18.08.41:874][824]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.11.11-18.08.41:874][824]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2024.11.11-18.08.41:888][824]LogSlate: Warning: The command 'BlueprintEditorSpawnNodes.AddActorRefAction->CommandInfo' has the same default chord as 'BlueprintEditorSpawnNodes.(Class=/Script/BlueprintGraph.K2Node_Knot Key=R Shift=false Ctrl=false Alt=false)' [R]
+[2024.11.11-18.08.43:130][824]LogSlate: Took 0.001685 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-BoldCondensed.ttf' (158K)
+[2024.11.11-18.08.48:698][109]LogSlate: Took 0.000900 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-BoldCondensedItalic.ttf' (160K)
+[2024.11.11-18.09.05:296][ 34]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.11.11-18.09.19:272][795]LogSelectionDetails: Warning: NavigateToFunctionSource:  Unable to find source file and line number for 'UKismetMathLibrary::MakePlaneFromPointAndNormal' [Element not found.]
+[2024.11.11-18.09.21:506][908]LogSelectionDetails: Warning: NavigateToFunctionSource:  Unable to find source file and line number for 'UKismetMathLibrary::MakePlaneFromPointAndNormal' [The specified module could not be found.]
+[2024.11.11-18.09.58:388][570]LogUObjectHash: Compacting FUObjectHashTables data took   2.22ms
+[2024.11.11-18.09.58:391][570]LogFileHelpers: Editor autosave (incl. external actors) for '/Game/Levels/MovementLevel' took 0.028
+[2024.11.11-18.09.58:392][570]OBJ SavePackage: Generating thumbnails for [2] asset(s) in package [/Game/Portals/BP_Portal] ([2] browsable assets)...
+[2024.11.11-18.09.58:394][570]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.11.11-18.09.58:433][570]OBJ SavePackage:     Rendered thumbnail for [BlueprintGeneratedClass /Game/Portals/BP_Portal.BP_Portal_C]
+[2024.11.11-18.09.58:442][570]OBJ SavePackage:     Rendered thumbnail for [Blueprint /Game/Portals/BP_Portal.BP_Portal]
+[2024.11.11-18.09.58:442][570]OBJ SavePackage: Finished generating thumbnails for package [/Game/Portals/BP_Portal]
+[2024.11.11-18.09.58:461][570]LogPackageLocalizationCache: Processed 46 localized package path(s) for 1 prioritized culture(s) in 0.012601 seconds
+[2024.11.11-18.09.58:485][570]LogSavePackage: Moving output files for package: /Temp/Autosaves/Game/Portals/BP_Portal_Auto1
+[2024.11.11-18.09.58:486][570]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/BP_Portal_Auto1A2EA4EF54F5522B002C13795C311CEAE.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/Autosaves/Game/Portals/BP_Portal_Auto1.uasset'
+[2024.11.11-18.09.58:488][570]LogFileHelpers: Auto-saving content packages took 0.098
+[2024.11.11-18.10.07:917][714]BlueprintLog: New page: Compile BP_Portal
+[2024.11.11-18.10.07:960][714]LogUObjectHash: Compacting FUObjectHashTables data took   1.73ms
+[2024.11.11-18.10.13:952][ 65]BlueprintLog: New page: Compile BP_Portal
+[2024.11.11-18.10.13:989][ 65]LogUObjectHash: Compacting FUObjectHashTables data took   2.25ms
+[2024.11.11-18.10.14:626][101]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.11.11-18.10.14:762][101]LogSavePackage: Moving output files for package: /Game/Portals/BP_Portal
+[2024.11.11-18.10.14:763][101]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/BP_PortalF9B49C394FA9ADD0805FDE825CE4658A.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/Portals/BP_Portal.uasset'
+[2024.11.11-18.10.14:775][101]LogFileHelpers: InternalPromptForCheckoutAndSave took 149 ms
+[2024.11.11-18.10.14:778][101]AssetCheck: New page: Asset Save: BP_Portal
+[2024.11.11-18.10.14:778][101]LogContentValidation: Display: Validating /Script/Engine.Blueprint /Game/Portals/BP_Portal.BP_Portal
+[2024.11.11-18.18.58:479][957]LogLiveCoding: Display: Starting Live Coding compile.
+[2024.11.11-18.19.00:662][964]Display: Reload/Re-instancing Complete: No object changes detected
+[2024.11.11-18.19.00:662][964]LogLiveCoding: Error: Live coding canceled
+[2024.11.11-18.19.07:031][983]LogLiveCoding: Display: Starting Live Coding compile.
+[2024.11.11-18.19.42:002][ 88]Display: Reload/Re-instancing Complete: No object changes detected
+[2024.11.11-18.19.42:002][ 88]LogLiveCoding: Error: Live coding failed, please see Live console for more information
+[2024.11.11-18.20.35:659][248]LogLiveCoding: Display: Starting Live Coding compile.
+[2024.11.11-18.20.58:299][316]LogLiveCoding: Display:    Creating library C:\Users\Mikolaj\Documents\Unreal Projects\Cardslinger-Prototype\CardslingerPrototype\Binaries\Win64\UnrealEditor-CardslingerPrototype.patch_2.lib and object C:\Users\Mikolaj\Documents\Unreal Projects\Cardslinger-Prototype\CardslingerPrototype\Binaries\Win64\UnrealEditor-CardslingerPrototype.patch_2.exp
+[2024.11.11-18.20.59:630][320]LogClass: UClass Portal Reload.
+[2024.11.11-18.20.59:681][320]LogClass: Could not find existing class Portal in package /Script/CardslingerPrototype for reload, assuming new or modified class
+[2024.11.11-18.20.59:745][320]Re-instancing Portal after reload.
+[2024.11.11-18.21.00:003][320]LogUObjectHash: Compacting FUObjectHashTables data took   1.81ms
+[2024.11.11-18.21.00:943][321]Display: Reload/Re-instancing Complete: 1 package changed, 1 class changed, 27 classes unchanged, 40 functions remapped
+[2024.11.11-18.21.00:943][321]LogLiveCoding: Warning: Live coding succeeded, data type changes may cause packaging to fail if assets reference the new or updated data types

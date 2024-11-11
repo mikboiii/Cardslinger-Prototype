@@ -45,9 +45,13 @@ protected:
 
 	void TeleportCheck();
 
-	void PlayerDotCheck(FVector CurrentPos, FVector PortalPos, FVector PortalNormal);
+	bool PlayerDotCheck(FVector CurrentPos, FVector PortalPos, FVector PortalNormal);
 
 	bool bIsPlayerInFront = false;
+
+	bool bIsLastInFront = false;
+
+	FVector LastPos;
 
 public:	
 	// Called every frame
