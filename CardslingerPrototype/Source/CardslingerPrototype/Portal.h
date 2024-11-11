@@ -45,6 +45,10 @@ protected:
 
 	void TeleportCheck();
 
+	void PlayerDotCheck(FVector CurrentPos, FVector PortalPos, FVector PortalNormal);
+
+	bool bIsPlayerInFront = false;
+
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;

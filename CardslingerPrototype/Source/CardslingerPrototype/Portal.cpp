@@ -118,3 +118,11 @@ void APortal::TeleportCheck()
 	}
 }
 
+void APortal::PlayerDotCheck(FVector CurrentPos, FVector PortalPos, FVector PortalNormal)
+{
+	if(FVector::DotProduct(PortalNormal, (CurrentPos - PortalPos)) >= 0.0f)
+	{
+		bIsPlayerInFront = true;
+	}
+}
+

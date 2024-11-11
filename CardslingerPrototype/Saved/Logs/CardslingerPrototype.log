@@ -1432,3 +1432,11 @@ LogConfig: Set CVar [[r.Shadow.DetectVertexShaderLayerAtRuntime:1]]
 [2024.11.11-17.55.12:342][907]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=2
 [2024.11.11-17.55.12:371][907]LogUObjectHash: Compacting FUObjectHashTables data took   1.39ms
 [2024.11.11-17.55.12:421][908]LogPlayLevel: Display: Destroying online subsystem :Context_4
+[2024.11.11-18.04.38:316][780]LogLiveCoding: Display: Starting Live Coding compile.
+[2024.11.11-18.05.25:315][921]LogLiveCoding: Display:    Creating library C:\Users\Mikolaj\Documents\Unreal Projects\Cardslinger-Prototype\CardslingerPrototype\Binaries\Win64\UnrealEditor-CardslingerPrototype.patch_1.lib and object C:\Users\Mikolaj\Documents\Unreal Projects\Cardslinger-Prototype\CardslingerPrototype\Binaries\Win64\UnrealEditor-CardslingerPrototype.patch_1.exp
+[2024.11.11-18.05.26:868][925]LogClass: UClass Portal Reload.
+[2024.11.11-18.05.26:883][925]LogClass: Could not find existing class Portal in package /Script/CardslingerPrototype for reload, assuming new or modified class
+[2024.11.11-18.05.26:921][925]Re-instancing Portal after reload.
+[2024.11.11-18.05.27:073][925]LogUObjectHash: Compacting FUObjectHashTables data took   1.13ms
+[2024.11.11-18.05.27:271][926]Display: Reload/Re-instancing Complete: 1 package changed, 1 class changed, 27 classes unchanged, 40 functions remapped
+[2024.11.11-18.05.27:272][926]LogLiveCoding: Warning: Live coding succeeded, data type changes may cause packaging to fail if assets reference the new or updated data types
