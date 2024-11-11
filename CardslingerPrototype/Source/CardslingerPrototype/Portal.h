@@ -20,6 +20,8 @@ public:
 	UPROPERTY(Instanced, EditAnywhere, BlueprintReadWrite)
 	class USceneCaptureComponent2D* PortalCam;
 	class USceneComponent* Origin;
+	UPROPERTY(Instanced, EditAnywhere, BlueprintReadWrite)
+	class UBoxComponent* PlayerCollision;
 
 protected:
 	// Called when the game starts or when spawned
@@ -36,8 +38,12 @@ protected:
 	void UpdatePortalView();
 
 	FVector MirrorByNormal(FVector outInput);
+
+	AActor* PlayerActor;
 	
 	void SetClipPlanes();
+
+	void TeleportCheck();
 
 public:	
 	// Called every frame

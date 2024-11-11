@@ -5,6 +5,7 @@
 #include "Components/StaticMeshComponent.h"
 #include "Components/SceneCaptureComponent2D.h"
 #include "Components/SceneComponent.h"
+#include "Components/BoxComponent.h"
 #include "Materials/MaterialInstanceDynamic.h"
 #include "Materials/MaterialInstance.h"
 #include "Materials/Material.h"
@@ -24,6 +25,8 @@ APortal::APortal()
 	PortalPlane->SetupAttachment(Origin);
 	PortalCam = CreateDefaultSubobject<USceneCaptureComponent2D>(TEXT("Portal Camera"));
 	PortalCam->SetupAttachment(Origin);
+	PlayerCollision = CreateDefaultSubobject<UBoxComponent>(TEXT("Player Collider"));
+	PlayerCollision->SetupAttachment(Origin);
 
 }
 
@@ -41,6 +44,7 @@ void APortal::BeginPlay()
 	portalMat->SetTextureParameterValueEditorOnly(TEXT("CamInput"), portalRenderTarget);
 	TwinnedPortal->GetPortalCam()->TextureTarget = portalRenderTarget;
 	SetClipPlanes();
+	PlayerActor = Cast<AActor>(UGameplayStatics::GetPlayerPawn(GetWorld(), 0));
 }
 
 // Called every frame
@@ -48,6 +52,7 @@ void APortal::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 	UpdatePortalView();
+	TeleportCheck();
 }
 
 USceneCaptureComponent2D* APortal::GetPortalCam()
@@ -100,6 +105,16 @@ void APortal::SetClipPlanes()
 		PortalForwardVector *= -3;
 		PortalCam->ClipPlaneBase = PlaneLoc + PortalForwardVector;
 		PortalCam->ClipPlaneNormal = GetActorForwardVector();
+	}
+}
+
+void APortal::TeleportCheck()
+{
+	TArray<AActor*> ActorsInPortal;
+	PlayerCollision->GetOverlappingActors(ActorsInPortal);
+	if(ActorsInPortal.Contains(PlayerActor))
+	{
+		UE_LOG(LogTemp, Display, TEXT("Player In Range"));
 	}
 }
 
