@@ -40,7 +40,7 @@ void APortal::BeginPlay()
 	int32 viewportX;
 	int32 viewportY;
 	UGameplayStatics::GetPlayerController(GetWorld(), 0)->GetViewportSize(viewportX, viewportY);
-	portalRenderTarget = UKismetRenderingLibrary::CreateRenderTarget2D(GetWorld(), viewportX, viewportY);
+	portalRenderTarget = UKismetRenderingLibrary::CreateRenderTarget2D(GetWorld(), viewportX*1.2f, viewportY*1.2f);
 	portalMat->SetTextureParameterValueEditorOnly(TEXT("CamInput"), portalRenderTarget);
 	TwinnedPortal->GetPortalCam()->TextureTarget = portalRenderTarget;
 	SetClipPlanes();
