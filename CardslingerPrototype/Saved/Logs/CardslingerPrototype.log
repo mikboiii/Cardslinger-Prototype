@@ -4005,3 +4005,152 @@ LogConfig: Set CVar [[r.Shadow.DetectVertexShaderLayerAtRuntime:1]]
 [2024.11.12-16.42.17:936][ 18]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
 [2024.11.12-16.42.17:942][ 18]LogUObjectHash: Compacting FUObjectHashTables data took   1.64ms
 [2024.11.12-16.42.17:994][ 19]LogPlayLevel: Display: Destroying online subsystem :Context_29
+[2024.11.12-16.44.02:956][327]LogShaderCompilers: Display: ================================================
+[2024.11.12-16.44.02:956][327]LogShaderCompilers: Display: === FShaderJobCache stats ===
+[2024.11.12-16.44.02:956][327]LogShaderCompilers: Display: Total job queries 291, among them cache hits 196 (67.35%)
+[2024.11.12-16.44.02:956][327]LogShaderCompilers: Display: Tracking 91 distinct input hashes that result in 69 distinct outputs (75.82%)
+[2024.11.12-16.44.02:956][327]LogShaderCompilers: Display: RAM used: 1.97 MiB of 819.20 MiB budget. Usage: 0.24%
+[2024.11.12-16.44.02:956][327]LogShaderCompilers: Display: === Shader Compilation stats ===
+[2024.11.12-16.44.02:956][327]LogShaderCompilers: Display: Shaders Compiled: 1
+[2024.11.12-16.44.02:956][327]LogShaderCompilers: Display: Jobs assigned 5, completed 1 (20.00%)
+[2024.11.12-16.44.02:956][327]LogShaderCompilers: Display: Time job spent in pending queue: average 0.04 s, longest 0.05 s
+[2024.11.12-16.44.02:956][327]LogShaderCompilers: Display: Job execution time: average 1.47 s, max 1.47 s
+[2024.11.12-16.44.02:956][327]LogShaderCompilers: Display: Job life time (pending + execution): average 1.52 s, max 1.52
+[2024.11.12-16.44.02:956][327]LogShaderCompilers: Display: Shader code size: average 4.328 KiB, min 4.328 KiB, max 4.328 KiB
+[2024.11.12-16.44.02:956][327]LogShaderCompilers: Display: Time at least one job was in flight (either pending or executed): 1.52 s
+[2024.11.12-16.44.02:956][327]LogShaderCompilers: Display: Jobs were issued in 5 batches (only local compilation was used), average 1.00 jobs/batch
+[2024.11.12-16.44.02:956][327]LogShaderCompilers: Display: Average processing rate: 0.66 jobs/sec
+[2024.11.12-16.44.02:956][327]LogShaderCompilers: Display: Total thread time: 0.297 s
+[2024.11.12-16.44.02:956][327]LogShaderCompilers: Display: Total thread preprocess time: 0.124 s
+[2024.11.12-16.44.02:956][327]LogShaderCompilers: Display: Percentage time preprocessing: 41.79%
+[2024.11.12-16.44.02:956][327]LogShaderCompilers: Display: Effective parallelization: 0.20 (times faster than compiling all shaders on one thread). Compare with number of workers: 8
+[2024.11.12-16.44.02:956][327]LogShaderCompilers: Display: Top 1 most expensive shader types by average time:
+[2024.11.12-16.44.02:956][327]LogShaderCompilers: Display:                                                  FHitProxyPS (compiled    1 times, average 0.30 sec, max 0.30 sec, min 0.30 sec)
+[2024.11.12-16.44.02:956][327]LogShaderCompilers: Display: Top 1 shader types by total compile time:
+[2024.11.12-16.44.02:956][327]LogShaderCompilers: Display:                                                  FHitProxyPS - 100.00% of total time (compiled    1 times, average 0.30 sec, max 0.30 sec, min 0.30 sec)
+[2024.11.12-16.44.02:956][327]LogShaderCompilers: Display: ================================================
+[2024.11.12-16.44.29:070][  9]LogEditorViewport: Clicking Background
+[2024.11.12-16.44.41:584][730]LogActorFactory: Actor Factory attempting to spawn StaticMesh /Game/Levels/_GENERATED/Mikolaj/Rectangle_1EE87F1F.Rectangle_1EE87F1F
+[2024.11.12-16.44.41:586][730]LogStaticMesh: Display: Building static mesh Rectangle_1EE87F1F...
+[2024.11.12-16.44.41:591][730]LogActorFactory: Actor Factory spawned StaticMesh /Game/Levels/_GENERATED/Mikolaj/Rectangle_1EE87F1F.Rectangle_1EE87F1F as actor: StaticMeshActor /Game/Levels/MovementLevel.MovementLevel:PersistentLevel.StaticMeshActor_0
+[2024.11.12-16.44.41:599][730]LogStaticMesh: Built static mesh [0.02s] /Game/Levels/_GENERATED/Mikolaj/Rectangle_1EE87F1F.Rectangle_1EE87F1F
+[2024.11.12-16.44.56:340][567]LogAssetEditorSubsystem: Opening Asset editor for StaticMesh /Game/Levels/_GENERATED/Mikolaj/Rectangle_1EE87F1F.Rectangle_1EE87F1F
+[2024.11.12-16.44.56:367][567]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.11.12-16.44.56:368][567]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2024.11.12-16.44.57:260][567]LogViewport: Scene viewport resized to 1872x1321, mode Windowed.
+[2024.11.12-16.45.25:401][ 55]LogSlate: Window 'Save Asset As' being destroyed
+[2024.11.12-16.45.25:427][ 55]LogStaticMesh: Display: Building static mesh SM_PortalMesh...
+[2024.11.12-16.45.25:428][ 55]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.11.12-16.45.25:432][ 55]LogStaticMesh: Built static mesh [0.01s] /Game/Portals/SM_PortalMesh.SM_PortalMesh
+[2024.11.12-16.45.25:608][ 55]LogSavePackage: Moving output files for package: /Game/Portals/SM_PortalMesh
+[2024.11.12-16.45.25:608][ 55]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/SM_PortalMesh2B33B2C64BBFC553B058548206AADDEE.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/Portals/SM_PortalMesh.uasset'
+[2024.11.12-16.45.25:626][ 55]LogFileHelpers: InternalPromptForCheckoutAndSave took 197 ms (total: 1.77 sec)
+[2024.11.12-16.45.25:672][ 55]LogAssetEditorSubsystem: Opening Asset editor for StaticMesh /Game/Portals/SM_PortalMesh.SM_PortalMesh
+[2024.11.12-16.45.25:680][ 55]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.11.12-16.45.25:680][ 55]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2024.11.12-16.45.26:537][ 55]LogWorld: UWorld::CleanupWorld for World_9, bSessionEnded=true, bCleanupResources=true
+[2024.11.12-16.45.26:537][ 55]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.11.12-16.45.26:581][ 55]AssetCheck: New page: Asset Save: SM_PortalMesh
+[2024.11.12-16.45.26:581][ 55]LogContentValidation: Display: Validating /Script/Engine.StaticMesh /Game/Portals/SM_PortalMesh.SM_PortalMesh
+[2024.11.12-16.45.26:668][ 55]LogDerivedDataCache: C:/Users/Mikolaj/AppData/Local/UnrealEngine/Common/DerivedDataCache: Move collision when writing file C:/Users/Mikolaj/AppData/Local/UnrealEngine/Common/DerivedDataCache/Buckets/LegacyDIST/7b/f8/ae78a4db68c1a78bc8c4f4a439cec3a164c0.udd from '/Game/Portals/SM_PortalMesh.SM_PortalMesh'.
+[2024.11.12-16.45.26:668][ 55]LogViewport: Scene viewport resized to 1872x1321, mode Windowed.
+[2024.11.12-16.45.26:730][ 56]LogDerivedDataCache: C:/Users/Mikolaj/AppData/Local/UnrealEngine/Common/DerivedDataCache: Move collision when writing file C:/Users/Mikolaj/AppData/Local/UnrealEngine/Common/DerivedDataCache/Buckets/LegacyCARD/97/90/3dfa38c356034a50927b360425ebcf3b7e3e.udd from '/Game/Portals/SM_PortalMesh.SM_PortalMesh'.
+[2024.11.12-16.45.29:616][219]Cmd: DELETE
+[2024.11.12-16.45.29:617][219]Cmd: ACTOR DELETE
+[2024.11.12-16.45.29:621][219]LogEditorActor: Cannot delete component StaticMeshComponent /Game/Levels/MovementLevel.MovementLevel:PersistentLevel.StaticMeshActor_0.StaticMeshComponent0: Can't delete non-instanced components or the scene root.
+[2024.11.12-16.45.30:867][287]Cmd: DELETE
+[2024.11.12-16.45.30:867][287]Cmd: ACTOR DELETE
+[2024.11.12-16.45.30:867][287]LogEditorActor: Cannot delete component StaticMeshComponent /Game/Levels/MovementLevel.MovementLevel:PersistentLevel.StaticMeshActor_0.StaticMeshComponent0: Can't delete non-instanced components or the scene root.
+[2024.11.12-16.45.32:857][399]Cmd: DELETE
+[2024.11.12-16.45.32:857][399]Cmd: ACTOR DELETE
+[2024.11.12-16.45.32:885][399]LogEditorActor: Deleted Actor: StaticMeshActor
+[2024.11.12-16.45.32:921][399]LogUObjectHash: Compacting FUObjectHashTables data took   2.50ms
+[2024.11.12-16.45.32:924][399]LogEditorActor: Deleted 1 Actors (0.066 secs)
+[2024.11.12-16.45.33:532][434]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.11.12-16.45.33:722][434]LogUObjectHash: Compacting FUObjectHashTables data took   1.61ms
+[2024.11.12-16.45.33:740][434]LogSavePackage: Moving output files for package: /Game/Levels/MovementLevel
+[2024.11.12-16.45.33:741][434]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/MovementLevelF4CA3A7B4F89AEDAD71B0B9BEDAA44D0.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/Levels/MovementLevel.umap'
+[2024.11.12-16.45.33:761][434]LogFileHelpers: Saving map 'MovementLevel' took 0.118
+[2024.11.12-16.45.33:771][434]LogFileHelpers: InternalPromptForCheckoutAndSave took 238 ms (total: 2.01 sec)
+[2024.11.12-16.45.33:773][434]AssetCheck: New page: Asset Save: MovementLevel
+[2024.11.12-16.45.33:773][434]LogContentValidation: Display: Validating /Script/Engine.World /Game/Levels/MovementLevel.MovementLevel
+[2024.11.12-16.45.43:880][  2]LogSlate: Took 0.001763 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
+[2024.11.12-16.45.47:253][193]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.11.12-16.45.47:383][193]LogSavePackage: Moving output files for package: /Game/Portals/BP_Portal
+[2024.11.12-16.45.47:385][193]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/BP_PortalB7FFF8FB4C28C97C741425BAC2680CC7.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/Portals/BP_Portal.uasset'
+[2024.11.12-16.45.47:397][193]LogFileHelpers: InternalPromptForCheckoutAndSave took 143 ms (total: 2.15 sec)
+[2024.11.12-16.45.47:399][193]AssetCheck: New page: Asset Save: BP_Portal
+[2024.11.12-16.45.47:399][193]LogContentValidation: Display: Validating /Script/Engine.Blueprint /Game/Portals/BP_Portal.BP_Portal
+[2024.11.12-16.45.48:566][255]BlueprintLog: New page: Compile BP_Portal
+[2024.11.12-16.45.48:760][255]LogUObjectHash: Compacting FUObjectHashTables data took   1.90ms
+[2024.11.12-16.45.49:999][308]LogDebuggerCommands: Repeating last play command: Selected Viewport
+[2024.11.12-16.45.50:015][308]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2024.11.12-16.45.50:015][308]PIE: New page: PIE session: MovementLevel (12 Nov 2024, 16:45:50)
+[2024.11.12-16.45.50:046][308]LogPlayLevel: Creating play world package: /Game/Levels/UEDPIE_0_MovementLevel
+[2024.11.12-16.45.50:050][308]LogPlayLevel: PIE: StaticDuplicateObject took: (0.004530s)
+[2024.11.12-16.45.50:050][308]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Levels/MovementLevel.MovementLevel to /Game/Levels/UEDPIE_0_MovementLevel.MovementLevel (0.004585s)
+[2024.11.12-16.45.50:069][308]LogUObjectHash: Compacting FUObjectHashTables data took   1.66ms
+[2024.11.12-16.45.50:075][308]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.11.12-16.45.50:075][308]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2024.11.12-16.45.50:076][308]LogAIModule: Creating AISystem for world MovementLevel
+[2024.11.12-16.45.50:076][308]LogPlayLevel: PIE: World Init took: (0.001213s)
+[2024.11.12-16.45.50:077][308]LogAudio: Display: Creating Audio Device:                 Id: 22, Scope: Unique, Realtime: True
+[2024.11.12-16.45.50:077][308]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2024.11.12-16.45.50:077][308]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2024.11.12-16.45.50:077][308]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2024.11.12-16.45.50:077][308]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2024.11.12-16.45.50:077][308]LogAudioMixer: Display: 	Number of buffers to queue:			  1
+[2024.11.12-16.45.50:077][308]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2024.11.12-16.45.50:077][308]LogAudioMixer: Display: 	Number of Async Source Workers:		  4
+[2024.11.12-16.45.50:077][308]LogAudio: Display: AudioDevice MaxSources: 32
+[2024.11.12-16.45.50:077][308]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2024.11.12-16.45.50:077][308]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2024.11.12-16.45.50:077][308]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2024.11.12-16.45.50:079][308]LogAudioMixer: Display: Initializing audio mixer using platform API: 'XAudio2'
+[2024.11.12-16.45.50:135][308]LogAudioMixer: Display: Using Audio Hardware Device Speakers (Realtek(R) Audio)
+[2024.11.12-16.45.50:137][308]LogAudioMixer: Display: Initializing Sound Submixes...
+[2024.11.12-16.45.50:137][308]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2024.11.12-16.45.50:137][308]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2024.11.12-16.45.50:138][308]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called. InstanceID=22
+[2024.11.12-16.45.50:138][308]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048, InstanceID=22
+[2024.11.12-16.45.50:139][308]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=22
+[2024.11.12-16.45.50:139][308]LogInit: FAudioDevice initialized with ID 22.
+[2024.11.12-16.45.50:139][308]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time. InstanceID=22
+[2024.11.12-16.45.50:139][308]LogAudio: Display: Audio Device (ID: 22) registered with world 'MovementLevel'.
+[2024.11.12-16.45.50:140][308]LogAudioMixer: Initializing Audio Bus Subsystem for audio device with ID 22
+[2024.11.12-16.45.50:143][308]LogLoad: Game class is 'BP_CardslingerTestGameMode_C'
+[2024.11.12-16.45.50:147][308]LogWorld: Bringing World /Game/Levels/UEDPIE_0_MovementLevel.MovementLevel up for play (max tick rate 60) at 2024.11.12-16.45.50
+[2024.11.12-16.45.50:147][308]LogWorld: Bringing up level for play took: 0.003671
+[2024.11.12-16.45.50:150][308]LogOnline: OSS: Created online subsystem instance for: :Context_32
+[2024.11.12-16.45.50:180][308]LogViewport: Display: Viewport MouseCaptureMode Changed, CapturePermanently_IncludingInitialMouseDown -> CapturePermanently
+[2024.11.12-16.45.50:185][308]LogTemp: Display: ../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/CardDeck.sav
+[2024.11.12-16.45.50:187][308]LogTemp: Load successful!
+[2024.11.12-16.45.50:191][308]LogTemp: Save successful!
+[2024.11.12-16.45.50:194][308]PIE: Server logged in
+[2024.11.12-16.45.50:195][308]PIE: Play in editor total start time 0.18 seconds.
+[2024.11.12-16.45.53:727][514]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2024.11.12-16.45.53:727][514]LogWorld: BeginTearingDown for /Game/Levels/UEDPIE_0_MovementLevel
+[2024.11.12-16.45.53:727][514]LogWorld: UWorld::CleanupWorld for MovementLevel, bSessionEnded=true, bCleanupResources=true
+[2024.11.12-16.45.53:729][514]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.11.12-16.45.53:735][514]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2024.11.12-16.45.53:741][514]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.11.12-16.45.53:758][514]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2024.11.12-16.45.53:759][514]LogAudioMixer: Deinitializing Audio Bus Subsystem for audio device with ID 22
+[2024.11.12-16.45.53:760][514]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=22
+[2024.11.12-16.45.53:762][514]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=22
+[2024.11.12-16.45.53:769][514]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2024.11.12-16.45.53:775][514]LogUObjectHash: Compacting FUObjectHashTables data took   2.26ms
+[2024.11.12-16.45.53:986][515]LogPlayLevel: Display: Destroying online subsystem :Context_32
+[2024.11.12-16.46.06:940][780]LogUObjectHash: Compacting FUObjectHashTables data took   1.51ms
+[2024.11.12-16.46.07:966][780]LogSlate: Window 'Delete Assets' being destroyed
+[2024.11.12-16.46.08:036][780]LogUObjectHash: Compacting FUObjectHashTables data took   2.36ms
+[2024.11.12-16.46.08:058][780]LogUObjectHash: Compacting FUObjectHashTables data took   1.87ms
+[2024.11.12-16.46.08:083][780]LogUObjectHash: Compacting FUObjectHashTables data took   0.72ms
+[2024.11.12-16.46.09:310][852]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.11.12-16.46.09:497][852]LogUObjectHash: Compacting FUObjectHashTables data took   0.72ms
+[2024.11.12-16.46.09:517][852]LogSavePackage: Moving output files for package: /Game/Levels/MovementLevel
+[2024.11.12-16.46.09:519][852]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/MovementLevel4F6827E949CE0A196ECECE818FF62522.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/Levels/MovementLevel.umap'
+[2024.11.12-16.46.09:537][852]LogFileHelpers: Saving map 'MovementLevel' took 0.112
+[2024.11.12-16.46.09:547][852]LogFileHelpers: InternalPromptForCheckoutAndSave took 237 ms (total: 2.39 sec)
+[2024.11.12-16.46.09:549][852]AssetCheck: New page: Asset Save: MovementLevel
+[2024.11.12-16.46.09:549][852]LogContentValidation: Display: Validating /Script/Engine.World /Game/Levels/MovementLevel.MovementLevel
