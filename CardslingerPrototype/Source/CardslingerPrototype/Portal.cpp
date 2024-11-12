@@ -46,6 +46,7 @@ void APortal::BeginPlay()
 	SetClipPlanes();
 	PlayerActor = Cast<AActor>(UGameplayStatics::GetPlayerPawn(GetWorld(), 0));
 	FVector ForwardVec = GetActorForwardVector();
+	ForwardVec *= OffsetAmount;
 	FLinearColor MatOffset = UKismetMathLibrary::MakeColor(ForwardVec.X, ForwardVec.Y, ForwardVec.Z, 1.0f);
 	portalMat->SetVectorParameterValueEditorOnly(TEXT("OffsetDist"), MatOffset);
 }
@@ -142,6 +143,7 @@ bool APortal::PlayerDotCheck(FVector CurrentPos, FVector PortalPos, FVector Port
 
 void APortal::TeleportPlayer()
 {
+	UE_LOG(LogTemp, Display, TEXT("Teleported"));
 	FTransform PortalTransform = GetActorTransform();
 	PortalTransform.SetScale3D(PortalTransform.GetScale3D() * FVector(-1,-1,1));
 	FVector InverseLoc = UKismetMathLibrary::InverseTransformLocation(PortalTransform, PlayerActor->GetActorLocation());
