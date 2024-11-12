@@ -144,5 +144,18 @@ void APortal::TeleportPlayer()
 	FVector InverseLoc = UKismetMathLibrary::InverseTransformLocation(PortalTransform, PlayerActor->GetActorLocation());
 	FVector NewPlayerLocation = UKismetMathLibrary::TransformLocation(TwinnedPortal->GetActorTransform(), InverseLoc);
 	PlayerActor->SetActorLocation(NewPlayerLocation);
+
+	FRotator PlayerRotation = PlayerActor->GetActorRotation();
+	FVector XVector;
+	FVector YVector;
+	FVector ZVector;
+	UKismetMathLibrary::BreakRotIntoAxes(PlayerRotation, XVector, YVector, ZVector);
+	FRotator NewPlayerRotation = UKismetMathLibrary::MakeRotationFromAxes(MirrorByNormal(XVector), MirrorByNormal(YVector), MirrorByNormal(ZVector));
+	PlayerActor->SetActorRotation(NewPlayerRotation);
+
+	PlayerRotation = UGameplayStatics::GetPlayerController(GetWorld(), 0)->GetControlRotation();
+	UKismetMathLibrary::BreakRotIntoAxes(PlayerRotation, XVector, YVector, ZVector);
+	NewPlayerRotation = UKismetMathLibrary::MakeRotationFromAxes(MirrorByNormal(XVector), MirrorByNormal(YVector), MirrorByNormal(ZVector));
+	UGameplayStatics::GetPlayerController(GetWorld(), 0)->SetControlRotation(NewPlayerRotation);
 }
 
