@@ -55,6 +55,9 @@ protected:
 
 	FVector LastPos;
 
+	UPROPERTY(EditAnywhere)
+	float OffsetAmount = -4.0f;
+
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;

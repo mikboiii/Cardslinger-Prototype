@@ -45,6 +45,9 @@ void APortal::BeginPlay()
 	TwinnedPortal->GetPortalCam()->TextureTarget = portalRenderTarget;
 	SetClipPlanes();
 	PlayerActor = Cast<AActor>(UGameplayStatics::GetPlayerPawn(GetWorld(), 0));
+	FVector ForwardVec = GetActorForwardVector();
+	FLinearColor MatOffset = UKismetMathLibrary::MakeColor(ForwardVec.X, ForwardVec.Y, ForwardVec.Z, 1.0f);
+	portalMat->SetVectorParameterValueEditorOnly(TEXT("OffsetDist"), MatOffset);
 }
 
 // Called every frame
