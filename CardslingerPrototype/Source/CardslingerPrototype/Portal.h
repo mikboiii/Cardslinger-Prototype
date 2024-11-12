@@ -49,6 +49,8 @@ protected:
 
 	void TeleportPlayer();
 
+	FVector RetainVelocity(FVector VelocityOnEnter);
+
 	bool bIsLastInFront = false;
 
 	FVector LastPos;

@@ -157,5 +157,18 @@ void APortal::TeleportPlayer()
 	UKismetMathLibrary::BreakRotIntoAxes(PlayerRotation, XVector, YVector, ZVector);
 	NewPlayerRotation = UKismetMathLibrary::MakeRotationFromAxes(MirrorByNormal(XVector), MirrorByNormal(YVector), MirrorByNormal(ZVector));
 	UGameplayStatics::GetPlayerController(GetWorld(), 0)->SetControlRotation(NewPlayerRotation);
+
+	APawn* PlayerPawn = UGameplayStatics::GetPlayerPawn(GetWorld(), 0);
+	UPawnMovementComponent* PlayerMovement = PlayerPawn->GetMovementComponent();
+	PlayerMovement->Velocity = RetainVelocity(PlayerMovement->Velocity);
+}
+
+FVector APortal::RetainVelocity(FVector VelocityOnEnter)
+{
+	FVector VelocityCopy = VelocityOnEnter;
+	VelocityCopy.Normalize();
+	FVector InverseVelocityDirection = UKismetMathLibrary::InverseTransformDirection(GetActorTransform(), VelocityCopy);
+	FVector NewVelocity = MirrorByNormal(VelocityCopy) * VelocityOnEnter.Length();
+	return NewVelocity;
 }
 
