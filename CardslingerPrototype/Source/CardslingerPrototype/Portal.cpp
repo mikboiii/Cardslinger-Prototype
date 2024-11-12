@@ -114,7 +114,7 @@ void APortal::TeleportCheck()
 	PlayerCollision->GetOverlappingActors(ActorsInPortal);
 	if(ActorsInPortal.Contains(PlayerActor))
 	{
-		if(PlayerDotCheck(PlayerActor->GetActorLocation(), GetActorLocation(), GetActorForwardVector()))
+		if(PlayerDotCheck(UGameplayStatics::GetPlayerCameraManager(GetWorld(), 0)->GetCameraLocation(), GetActorLocation(), GetActorForwardVector()))
 		{
 			TeleportPlayer();
 		}
