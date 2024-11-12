@@ -47,6 +47,8 @@ protected:
 
 	bool PlayerDotCheck(FVector CurrentPos, FVector PortalPos, FVector PortalNormal);
 
+	void TeleportPlayer();
+
 	bool bIsLastInFront = false;
 
 	FVector LastPos;

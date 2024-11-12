@@ -116,7 +116,7 @@ void APortal::TeleportCheck()
 	{
 		if(PlayerDotCheck(PlayerActor->GetActorLocation(), GetActorLocation(), GetActorForwardVector()))
 		{
-			UE_LOG(LogTemp, Display, TEXT("Player passed through"));
+			TeleportPlayer();
 		}
 	}
 }
@@ -135,5 +135,14 @@ bool APortal::PlayerDotCheck(FVector CurrentPos, FVector PortalPos, FVector Port
 	LastPos = CurrentPos;
 
 	return bIsCrossing;
+}
+
+void APortal::TeleportPlayer()
+{
+	FTransform PortalTransform = GetActorTransform();
+	PortalTransform.SetScale3D(PortalTransform.GetScale3D() * FVector(-1,-1,1));
+	FVector InverseLoc = UKismetMathLibrary::InverseTransformLocation(PortalTransform, PlayerActor->GetActorLocation());
+	FVector NewPlayerLocation = UKismetMathLibrary::TransformLocation(TwinnedPortal->GetActorTransform(), InverseLoc);
+	PlayerActor->SetActorLocation(NewPlayerLocation);
 }
 
