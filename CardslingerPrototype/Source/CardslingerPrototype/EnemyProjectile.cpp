@@ -17,6 +17,7 @@
 #include "DrawDebugHelpers.h"
 #include "TimerManager.h"
 #include "BaseCharacterClass.h"
+#include "PlayerHUDWidget.h"
 
 // Sets default values
 AEnemyProjectile::AEnemyProjectile()
@@ -44,6 +45,7 @@ void AEnemyProjectile::BeginPlay()
 {
 	Super::BeginPlay();
 	PlayerPawn = UGameplayStatics::GetPlayerPawn(GetWorld(), 0);
+	PlayerClass = Cast<ABaseCharacterClass>(PlayerPawn);
 	BulletSpeed = BaseBulletSpeed;
 	GetWorldTimerManager().SetTimer(BulletLifetimeManager, this, &AEnemyProjectile::DestroyProjectile, BulletLifetime);
 	
@@ -80,12 +82,22 @@ void AEnemyProjectile::OnHit(UPrimitiveComponent* HitComponent, AActor* OtherAct
 	if (OtherActor != this)
     {
         //if the collision is an enemy class actor, apply damage and hit fx
-		if(OtherActor == PlayerPawn)
+		if(OtherActor == PlayerPawn || bIsReflected)
 		{
 			//create unreal damage event
 			FPointDamageEvent DamageEvent(BulletDamage, Hit, -GetActorForwardVector(), nullptr);
+			if(FMath::Asin(FVector::DotProduct(PlayerPawn->GetActorForwardVector(), Hit.Normal)) > 0 && Cast<ABaseCharacterClass>(PlayerPawn)->GetReflectionMode())
+			{
+				ReflectBullet();
+				PlayerClass->GetPlayerHUD()->FlashDeflectionVignetteBP();
+				UNiagaraFunctionLibrary::SpawnSystemAtLocation(GetWorld(), ImpactFX, GetActorLocation(), GetActorForwardVector().Rotation(), FVector::One(), true, true, ENCPoolMethod::None, true);
+				return;
+			}
+			else
+			{
 			//apply damage to other actor
 			OtherActor->TakeDamage(BulletDamage, DamageEvent, OwnerAI->GetController(), this);
+			}
 		}
     }
 	//play impact fx
@@ -152,4 +164,18 @@ void AEnemyProjectile::SetBulletSpeed(float NewSpeed)
 {
 	BaseBulletSpeed = NewSpeed;
 	BulletSpeed = BaseBulletSpeed;
+}
+
+void AEnemyProjectile::ReflectBullet()
+{
+	bIsReflected = true;
+	//reenable collision with enemy actor
+	BulletMesh->IgnoreActorWhenMoving(OwnerAI, false);
+	BulletCollision->IgnoreActorWhenMoving(OwnerAI, false);
+	BulletMesh->IgnoreActorWhenMoving(PlayerPawn, true);
+	BulletCollision->IgnoreActorWhenMoving(PlayerPawn, true);
+	FVector projectileToEnemy = OwnerAI->GetActorLocation() - GetActorLocation();
+	SetActorRotation(projectileToEnemy.GetSafeNormal().Rotation());
+	SetReflectedMaterials();
+	//SetActorRotation(GetActorRotation().Add(0.0f,180.0f,0.0f));
 }

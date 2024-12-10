@@ -596,6 +596,13 @@ void ABaseCharacterClass::SetFlyMode(bool bIsFlying, float FlyTime)
 	}
 }
 
+void ABaseCharacterClass::SetReflectionMode(bool bIsReflecting, float ReflectionTime)
+{
+	bIsCharacterReflecting = bIsReflecting;
+	FTimerDelegate ReflectDelegate = FTimerDelegate::CreateUObject(this, &ABaseCharacterClass::SetReflectionMode, false, 0.0f);
+	GetWorldTimerManager().SetTimer(ReflectModeHandle, ReflectDelegate, ReflectionTime, false);
+}
+
 ///@brief Returns alive state of the player
 bool ABaseCharacterClass::IsDead() const
 {
@@ -727,6 +734,11 @@ int32 ABaseCharacterClass::GetChargedCards()
 	return CardsCharged;
 }
 
+bool ABaseCharacterClass::GetReflectionMode()
+{
+	return bIsCharacterReflecting;
+}
+
 /// @brief gets the charge until a new card gets spooled
 /// @param OutCurrentCharge The current charge progress until the next card
 /// @param OutMaxCharge The charge required for the next spooled card
@@ -739,6 +751,10 @@ void ABaseCharacterClass::GetCardCharge(float &OutCurrentCharge, float &OutMaxCh
 float ABaseCharacterClass::GetDashRecharge()
 {
 	return DashRecharge;
+}
+UPlayerHUDWidget* ABaseCharacterClass::GetPlayerHUD()
+{
+	return PlayerHUD;
 }
 
 /// @brief increases the number of cards in the clip by 1

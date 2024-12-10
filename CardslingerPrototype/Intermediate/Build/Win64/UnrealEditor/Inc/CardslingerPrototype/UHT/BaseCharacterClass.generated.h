@@ -10,6 +10,7 @@
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 class ACardDeck;
+class UPlayerHUDWidget;
 #ifdef CARDSLINGERPROTOTYPE_BaseCharacterClass_generated_h
 #error "BaseCharacterClass.generated.h already included, missing '#pragma once' in BaseCharacterClass.h"
 #endif
@@ -20,6 +21,8 @@ class ACardDeck;
 #define FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_BaseCharacterClass_h_18_EDITOR_ONLY_SPARSE_DATA_PROPERTY_ACCESSORS
 #define FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_BaseCharacterClass_h_18_RPC_WRAPPERS_NO_PURE_DECLS \
  \
+	DECLARE_FUNCTION(execGetPlayerHUD); \
+	DECLARE_FUNCTION(execGetReflectionMode); \
 	DECLARE_FUNCTION(execGetDashRecharge); \
 	DECLARE_FUNCTION(execGetCardCharge); \
 	DECLARE_FUNCTION(execGetChargedCards); \

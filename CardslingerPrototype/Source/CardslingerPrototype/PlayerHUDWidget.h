@@ -36,4 +36,7 @@ public:
 
 	UFUNCTION(BlueprintImplementableEvent)
 	void FlashShieldVignetteBP();
+
+	UFUNCTION(BlueprintImplementableEvent)
+	void FlashDeflectionVignetteBP();
 };
