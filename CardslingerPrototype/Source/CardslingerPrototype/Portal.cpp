@@ -41,14 +41,14 @@ void APortal::BeginPlay()
 	int32 viewportY;
 	UGameplayStatics::GetPlayerController(GetWorld(), 0)->GetViewportSize(viewportX, viewportY);
 	portalRenderTarget = UKismetRenderingLibrary::CreateRenderTarget2D(GetWorld(), viewportX*1.2f, viewportY*1.2f);
-	portalMat->SetTextureParameterValueEditorOnly(TEXT("CamInput"), portalRenderTarget);
+	portalViewMat->SetTextureParameterValue(TEXT("CamInput"), portalRenderTarget);
 	TwinnedPortal->GetPortalCam()->TextureTarget = portalRenderTarget;
 	SetClipPlanes();
 	PlayerActor = Cast<AActor>(UGameplayStatics::GetPlayerPawn(GetWorld(), 0));
 	FVector ForwardVec = GetActorForwardVector();
 	ForwardVec *= OffsetAmount;
 	FLinearColor MatOffset = UKismetMathLibrary::MakeColor(ForwardVec.X, ForwardVec.Y, ForwardVec.Z, 1.0f);
-	portalMat->SetVectorParameterValueEditorOnly(TEXT("OffsetDist"), MatOffset);
+	portalViewMat->SetVectorParameterValue(TEXT("OffsetDist"), MatOffset);
 }
 
 // Called every frame
