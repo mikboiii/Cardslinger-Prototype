@@ -14,6 +14,14 @@ class CARDSLINGERPROTOTYPE_API AFlyingEnemy : public ABaseAIClass
 {
 	GENERATED_BODY()
 
+protected:
+	virtual void BeginPlay() override;
 
+public:
+	virtual void Tick(float DeltaTime) override;
+
+private:
+	UPROPERTY(EditAnywhere)
+	float HoverDistFromPlayer 300.0f;
 	
 };

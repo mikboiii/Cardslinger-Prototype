@@ -1290,3 +1290,188 @@ LogConfig: Set CVar [[r.Shadow.DetectVertexShaderLayerAtRuntime:1]]
 [2025.01.07-15.28.09:402][194]LogContentValidation: Display: Validating /Script/Engine.Blueprint /Game/AI/FlyingEnemy/BP_FlyingEnemy.BP_FlyingEnemy
 [2025.01.07-15.28.09:828][220]BlueprintLog: New page: Compile BP_FlyingEnemy
 [2025.01.07-15.28.09:861][220]LogUObjectHash: Compacting FUObjectHashTables data took   1.81ms
+[2025.01.07-15.38.42:738][415]LogLiveCoding: Display: Starting Live Coding compile.
+[2025.01.07-15.39.29:452][555]LogLiveCoding: Display:    Creating library C:\Users\Mikolaj\Documents\Unreal Projects\Cardslinger-Prototype\CardslingerPrototype\Binaries\Win64\UnrealEditor-CardslingerPrototype.patch_0.lib and object C:\Users\Mikolaj\Documents\Unreal Projects\Cardslinger-Prototype\CardslingerPrototype\Binaries\Win64\UnrealEditor-CardslingerPrototype.patch_0.exp
+[2025.01.07-15.39.31:263][559]LogUObjectHash: Compacting FUObjectHashTables data took   2.16ms
+[2025.01.07-15.39.32:144][560]Display: Reload/Re-instancing Complete: 1 package changed, 28 classes unchanged, 40 functions remapped
+[2025.01.07-15.39.32:144][560]LogLiveCoding: Display: Live coding succeeded
+[2025.01.07-15.40.00:328][923]LogShaderCompilers: Display: ================================================
+[2025.01.07-15.40.00:328][923]LogShaderCompilers: Display: === FShaderJobCache stats ===
+[2025.01.07-15.40.00:328][923]LogShaderCompilers: Display: Total job queries 46, among them cache hits 4 (8.70%)
+[2025.01.07-15.40.00:328][923]LogShaderCompilers: Display: Tracking 42 distinct input hashes that result in 38 distinct outputs (90.48%)
+[2025.01.07-15.40.00:328][923]LogShaderCompilers: Display: RAM used: 972.95 KiB of 819.20 MiB budget. Usage: 0.12%
+[2025.01.07-15.40.00:328][923]LogShaderCompilers: Display: === Shader Compilation stats ===
+[2025.01.07-15.40.00:328][923]LogShaderCompilers: Display: Shaders Compiled: 0
+[2025.01.07-15.40.00:328][923]LogShaderCompilers: Display: Jobs assigned 0, completed 0 (0%)
+[2025.01.07-15.40.00:328][923]LogShaderCompilers: Display: Time at least one job was in flight (either pending or executed): 0.00 s
+[2025.01.07-15.40.00:328][923]LogShaderCompilers: Display: ================================================
+[2025.01.07-15.40.00:373][925]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2025.01.07-15.40.00:444][926]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2025.01.07-15.40.01:804][994]LogActorFactory: Actor Factory attempting to spawn BlueprintGeneratedClass /Game/AI/FlyingEnemy/BP_FlyingEnemy.BP_FlyingEnemy_C
+[2025.01.07-15.40.01:805][994]LogActorFactory: Actor Factory attempting to spawn BlueprintGeneratedClass /Game/AI/FlyingEnemy/BP_FlyingEnemy.BP_FlyingEnemy_C
+[2025.01.07-15.40.01:819][994]LogActorFactory: Actor Factory spawned Blueprint /Game/AI/FlyingEnemy/BP_FlyingEnemy.BP_FlyingEnemy as actor: BP_FlyingEnemy_C /Game/Levels/MovementLevel.MovementLevel:PersistentLevel.BP_FlyingEnemy_C_0
+[2025.01.07-15.40.01:822][994]LogActorFactory: Actor Factory spawned Blueprint /Game/AI/FlyingEnemy/BP_FlyingEnemy.BP_FlyingEnemy as actor: BP_FlyingEnemy_C /Game/Levels/MovementLevel.MovementLevel:PersistentLevel.BP_FlyingEnemy_C_0
+[2025.01.07-15.40.01:830][994]LogActorFactory: Loading ActorFactory Class /Script/Engine.LevelInstance
+[2025.01.07-15.40.02:284][ 20]LogActorFactory: Actor Factory attempting to spawn BlueprintGeneratedClass /Game/AI/FlyingEnemy/BP_FlyingEnemy.BP_FlyingEnemy_C
+[2025.01.07-15.40.02:284][ 20]LogActorFactory: Actor Factory attempting to spawn BlueprintGeneratedClass /Game/AI/FlyingEnemy/BP_FlyingEnemy.BP_FlyingEnemy_C
+[2025.01.07-15.40.02:292][ 20]LogActorFactory: Actor Factory spawned Blueprint /Game/AI/FlyingEnemy/BP_FlyingEnemy.BP_FlyingEnemy as actor: BP_FlyingEnemy_C /Game/Levels/MovementLevel.MovementLevel:PersistentLevel.BP_FlyingEnemy_C_1
+[2025.01.07-15.40.02:293][ 20]LogActorFactory: Actor Factory spawned Blueprint /Game/AI/FlyingEnemy/BP_FlyingEnemy.BP_FlyingEnemy as actor: BP_FlyingEnemy_C /Game/Levels/MovementLevel.MovementLevel:PersistentLevel.BP_FlyingEnemy_C_1
+[2025.01.07-15.40.05:353][168]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2025.01.07-15.40.05:603][168]LogUObjectHash: Compacting FUObjectHashTables data took   3.01ms
+[2025.01.07-15.40.05:623][168]LogSavePackage: Moving output files for package: /Game/Levels/MovementLevel
+[2025.01.07-15.40.05:624][168]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/MovementLevel45D63D67400E3EBE1B1E919DCDF4CADF.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/Levels/MovementLevel.umap'
+[2025.01.07-15.40.05:649][168]LogFileHelpers: Saving map 'MovementLevel' took 0.187
+[2025.01.07-15.40.05:660][168]LogFileHelpers: InternalPromptForCheckoutAndSave took 306 ms (total: 875 ms)
+[2025.01.07-15.40.05:664][168]AssetCheck: New page: Asset Save: MovementLevel
+[2025.01.07-15.40.05:664][168]LogContentValidation: Display: Validating /Script/Engine.World /Game/Levels/MovementLevel.MovementLevel
+[2025.01.07-15.40.06:121][195]LogDebuggerCommands: Repeating last play command: Selected Viewport
+[2025.01.07-15.40.06:160][195]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2025.01.07-15.40.06:173][195]PIE: New page: PIE session: MovementLevel (7 Jan 2025, 15:40:06)
+[2025.01.07-15.40.06:214][195]LogOnline: OSS: Created online subsystem instance for: NULL
+[2025.01.07-15.40.06:216][195]LogOnline: OSS: TryLoadSubsystemAndSetDefault: Loaded subsystem for type [NULL]
+[2025.01.07-15.40.06:220][195]LogPlayLevel: Creating play world package: /Game/Levels/UEDPIE_0_MovementLevel
+[2025.01.07-15.40.06:254][195]LogPlayLevel: PIE: StaticDuplicateObject took: (0.034531s)
+[2025.01.07-15.40.06:254][195]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Levels/MovementLevel.MovementLevel to /Game/Levels/UEDPIE_0_MovementLevel.MovementLevel (0.034732s)
+[2025.01.07-15.40.06:321][195]LogUObjectHash: Compacting FUObjectHashTables data took   3.53ms
+[2025.01.07-15.40.06:334][195]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2025.01.07-15.40.06:337][195]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2025.01.07-15.40.06:340][195]LogAIModule: Creating AISystem for world MovementLevel
+[2025.01.07-15.40.06:348][195]LogPlayLevel: PIE: World Init took: (0.016366s)
+[2025.01.07-15.40.06:355][195]LogAudio: Display: Creating Audio Device:                 Id: 2, Scope: Unique, Realtime: True
+[2025.01.07-15.40.06:358][195]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2025.01.07-15.40.06:358][195]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2025.01.07-15.40.06:358][195]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2025.01.07-15.40.06:358][195]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2025.01.07-15.40.06:358][195]LogAudioMixer: Display: 	Number of buffers to queue:			  1
+[2025.01.07-15.40.06:358][195]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2025.01.07-15.40.06:358][195]LogAudioMixer: Display: 	Number of Async Source Workers:		  4
+[2025.01.07-15.40.06:358][195]LogAudio: Display: AudioDevice MaxSources: 32
+[2025.01.07-15.40.06:361][195]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2025.01.07-15.40.06:361][195]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2025.01.07-15.40.06:361][195]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2025.01.07-15.40.06:370][195]LogAudioMixer: Display: Initializing audio mixer using platform API: 'XAudio2'
+[2025.01.07-15.40.06:461][195]LogAudioMixer: Display: Using Audio Hardware Device Speakers (Realtek(R) Audio)
+[2025.01.07-15.40.06:470][195]LogAudioMixer: Display: Initializing Sound Submixes...
+[2025.01.07-15.40.06:471][195]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2025.01.07-15.40.06:471][195]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2025.01.07-15.40.06:475][195]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called. InstanceID=2
+[2025.01.07-15.40.06:475][195]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048, InstanceID=2
+[2025.01.07-15.40.06:477][195]LogInit: FAudioDevice initialized with ID 2.
+[2025.01.07-15.40.06:477][195]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=2
+[2025.01.07-15.40.06:477][195]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time. InstanceID=2
+[2025.01.07-15.40.06:477][195]LogAudio: Display: Audio Device (ID: 2) registered with world 'MovementLevel'.
+[2025.01.07-15.40.06:478][195]LogAudioMixer: Initializing Audio Bus Subsystem for audio device with ID 2
+[2025.01.07-15.40.06:743][195]LogProperty: Error: FStructProperty::Serialize Loading: Property 'StructProperty /Game/UI/WBP_LevelSelect.WBP_LevelSelect_C:Levels'. Unknown structure.
+[2025.01.07-15.40.06:757][195]LogClass: Warning: Property Levels of Levels has a struct type mismatch (tag STRUCT_REINST_S_Levels_8 != prop FallbackStruct) in package:  /Game/UI/WBP_LevelSelect. If that struct got renamed, add an entry to ActiveStructRedirects.
+[2025.01.07-15.40.06:962][195]LogClass: Warning: Property Levels of Levels has a struct type mismatch (tag FallbackStruct != prop S_Levels) in package:  FObjectReader. If that struct got renamed, add an entry to ActiveStructRedirects.
+[2025.01.07-15.40.07:179][195]LogLoad: Game class is 'BP_CardslingerTestGameMode_C'
+[2025.01.07-15.40.07:195][195]LogWorld: Bringing World /Game/Levels/UEDPIE_0_MovementLevel.MovementLevel up for play (max tick rate 60) at 2025.01.07-15.40.07
+[2025.01.07-15.40.07:222][195]LogWorld: Bringing up level for play took: 0.042040
+[2025.01.07-15.40.07:229][195]LogOnline: OSS: Created online subsystem instance for: :Context_11
+[2025.01.07-15.40.07:298][195]LogViewport: Display: Viewport MouseCaptureMode Changed, CapturePermanently_IncludingInitialMouseDown -> CapturePermanently
+[2025.01.07-15.40.07:320][195]LogTemp: Display: ../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/CardDeck.sav
+[2025.01.07-15.40.07:321][195]LogTemp: Load successful!
+[2025.01.07-15.40.07:325][195]LogTemp: Save successful!
+[2025.01.07-15.40.07:328][195]PIE: Server logged in
+[2025.01.07-15.40.07:330][195]PIE: Play in editor total start time 1.182 seconds.
+[2025.01.07-15.40.39:753][100]LogViewport: Display: Viewport MouseLockMode Changed, LockOnCapture -> DoNotLock
+[2025.01.07-15.40.39:754][100]LogViewport: Display: Viewport MouseCaptureMode Changed, CapturePermanently -> NoCapture
+[2025.01.07-15.40.39:757][100]LogTemp: Display: ../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/CardDeck.sav
+[2025.01.07-15.40.39:757][100]LogTemp: Load successful!
+[2025.01.07-15.40.39:762][100]LogTemp: Save successful!
+[2025.01.07-15.40.39:762][100]LogTemp: Load successful!
+[2025.01.07-15.40.40:804][160]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2025.01.07-15.40.40:804][160]LogWorld: BeginTearingDown for /Game/Levels/UEDPIE_0_MovementLevel
+[2025.01.07-15.40.40:805][160]LogWorld: UWorld::CleanupWorld for MovementLevel, bSessionEnded=true, bCleanupResources=true
+[2025.01.07-15.40.40:807][160]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.01.07-15.40.40:816][160]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2025.01.07-15.40.40:823][160]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.01.07-15.40.40:842][160]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2025.01.07-15.40.40:847][160]LogAudioMixer: Deinitializing Audio Bus Subsystem for audio device with ID 2
+[2025.01.07-15.40.40:847][160]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=2
+[2025.01.07-15.40.40:851][160]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=2
+[2025.01.07-15.40.40:859][160]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2025.01.07-15.40.40:871][160]LogUObjectHash: Compacting FUObjectHashTables data took   2.11ms
+[2025.01.07-15.40.41:023][161]LogPlayLevel: Display: Destroying online subsystem :Context_11
+[2025.01.07-15.46.49:678][971]LogSlate: Warning: Unable to rasterize '../../../Engine/Content/Editor/Slate/Starship/AssetIcons/SpecularProfile_64.svg'. File could not be found
+[2025.01.07-15.46.54:489][187]LogContentBrowser: Deferred new asset file creation: NewBehaviorTree
+[2025.01.07-15.46.54:503][187]LogContentBrowser: Creating deferred item: NewBehaviorTree
+[2025.01.07-15.46.54:519][188]LogContentBrowser: Renaming the item being created (Deferred Item: NewBehaviorTree).
+[2025.01.07-15.46.57:491][367]LogContentBrowser: Attempting asset rename: NewBehaviorTree -> FlyingBT
+[2025.01.07-15.46.57:504][367]LogContentBrowser: End creating deferred item NewBehaviorTree
+[2025.01.07-15.47.02:841][687]LogContentBrowser: Attempting asset rename: FlyingBT -> BT_FlyingEnemy
+[2025.01.07-15.47.02:932][687]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2025.01.07-15.47.03:055][687]LogSavePackage: Moving output files for package: /Game/AI/FlyingEnemy/BT_FlyingEnemy
+[2025.01.07-15.47.03:055][687]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/BT_FlyingEnemy74051D3A494F4B89E1414E9D7960FE3A.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/AI/FlyingEnemy/BT_FlyingEnemy.uasset'
+[2025.01.07-15.47.03:069][687]LogFileHelpers: InternalPromptForCheckoutAndSave took 137 ms (total: 1.01 sec)
+[2025.01.07-15.47.03:103][687]LogUObjectHash: Compacting FUObjectHashTables data took   1.86ms
+[2025.01.07-15.47.03:125][687]LogUObjectHash: Compacting FUObjectHashTables data took   1.81ms
+[2025.01.07-15.47.03:144][687]LogUObjectHash: Compacting FUObjectHashTables data took   0.90ms
+[2025.01.07-15.47.03:147][687]AssetCheck: New page: Asset Save: BT_FlyingEnemy
+[2025.01.07-15.47.03:147][687]LogContentValidation: Display: Validating /Script/AIModule.BehaviorTree /Game/AI/FlyingEnemy/BT_FlyingEnemy.BT_FlyingEnemy
+[2025.01.07-15.47.07:062][910]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2025.01.07-15.47.07:152][911]LogShaderCompilers: Display: ================================================
+[2025.01.07-15.47.07:152][911]LogShaderCompilers: Display: === FShaderJobCache stats ===
+[2025.01.07-15.47.07:152][911]LogShaderCompilers: Display: Total job queries 101, among them cache hits 31 (30.69%)
+[2025.01.07-15.47.07:152][911]LogShaderCompilers: Display: Tracking 70 distinct input hashes that result in 60 distinct outputs (85.71%)
+[2025.01.07-15.47.07:152][911]LogShaderCompilers: Display: RAM used: 1.61 MiB of 819.20 MiB budget. Usage: 0.20%
+[2025.01.07-15.47.07:152][911]LogShaderCompilers: Display: === Shader Compilation stats ===
+[2025.01.07-15.47.07:152][911]LogShaderCompilers: Display: Shaders Compiled: 20
+[2025.01.07-15.47.07:152][911]LogShaderCompilers: Display: Jobs assigned 20, completed 20 (100%)
+[2025.01.07-15.47.07:152][911]LogShaderCompilers: Display: Average time worker was idle: 2.08 s
+[2025.01.07-15.47.07:152][911]LogShaderCompilers: Display: Time job spent in pending queue: average 0.05 s, longest 0.09 s
+[2025.01.07-15.47.07:152][911]LogShaderCompilers: Display: Job execution time: average 0.75 s, max 1.95 s
+[2025.01.07-15.47.07:152][911]LogShaderCompilers: Display: Job life time (pending + execution): average 0.80 s, max 1.98
+[2025.01.07-15.47.07:152][911]LogShaderCompilers: Display: Shader code size: average 41.411 KiB, min 3.934 KiB, max 80.512 KiB
+[2025.01.07-15.47.07:152][911]LogShaderCompilers: Display: Time at least one job was in flight (either pending or executed): 5.41 s
+[2025.01.07-15.47.07:152][911]LogShaderCompilers: Display: Jobs were issued in 20 batches (only local compilation was used), average 1.00 jobs/batch
+[2025.01.07-15.47.07:152][911]LogShaderCompilers: Display: Average processing rate: 3.70 jobs/sec
+[2025.01.07-15.47.07:152][911]LogShaderCompilers: Display: Total thread time: 8.276 s
+[2025.01.07-15.47.07:152][911]LogShaderCompilers: Display: Total thread preprocess time: 0.961 s
+[2025.01.07-15.47.07:152][911]LogShaderCompilers: Display: Percentage time preprocessing: 11.61%
+[2025.01.07-15.47.07:152][911]LogShaderCompilers: Display: Effective parallelization: 1.53 (times faster than compiling all shaders on one thread). Compare with number of workers: 8
+[2025.01.07-15.47.07:152][911]LogShaderCompilers: Display: Top 5 most expensive shader types by average time:
+[2025.01.07-15.47.07:152][911]LogShaderCompilers: Display:                                 TBasePassVSFNoLightMapPolicy (compiled    4 times, average 0.66 sec, max 0.81 sec, min 0.55 sec)
+[2025.01.07-15.47.07:153][911]LogShaderCompilers: Display:                                                  FHitProxyVS (compiled    2 times, average 0.56 sec, max 0.66 sec, min 0.45 sec)
+[2025.01.07-15.47.07:153][911]LogShaderCompilers: Display:                                       FPostProcessMaterialPS (compiled    1 times, average 0.55 sec, max 0.55 sec, min 0.55 sec)
+[2025.01.07-15.47.07:153][911]LogShaderCompilers: Display:                                                  FVelocityVS (compiled    2 times, average 0.51 sec, max 0.59 sec, min 0.43 sec)
+[2025.01.07-15.47.07:153][911]LogShaderCompilers: Display:                                 TBasePassPSFNoLightMapPolicy (compiled    4 times, average 0.43 sec, max 0.51 sec, min 0.35 sec)
+[2025.01.07-15.47.07:153][911]LogShaderCompilers: Display: Top 5 shader types by total compile time:
+[2025.01.07-15.47.07:153][911]LogShaderCompilers: Display:                                 TBasePassVSFNoLightMapPolicy - 31.67% of total time (compiled    4 times, average 0.66 sec, max 0.81 sec, min 0.55 sec)
+[2025.01.07-15.47.07:153][911]LogShaderCompilers: Display:                                 TBasePassPSFNoLightMapPolicy - 20.66% of total time (compiled    4 times, average 0.43 sec, max 0.51 sec, min 0.35 sec)
+[2025.01.07-15.47.07:153][911]LogShaderCompilers: Display:                                                  FHitProxyVS - 13.51% of total time (compiled    2 times, average 0.56 sec, max 0.66 sec, min 0.45 sec)
+[2025.01.07-15.47.07:153][911]LogShaderCompilers: Display:                                                  FVelocityVS - 12.29% of total time (compiled    2 times, average 0.51 sec, max 0.59 sec, min 0.43 sec)
+[2025.01.07-15.47.07:153][911]LogShaderCompilers: Display:                                       FPostProcessMaterialPS - 6.67% of total time (compiled    1 times, average 0.55 sec, max 0.55 sec, min 0.55 sec)
+[2025.01.07-15.47.07:153][911]LogShaderCompilers: Display: ================================================
+[2025.01.07-15.47.07:191][913]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2025.01.07-15.47.11:386][152]LogAssetEditorSubsystem: Opening Asset editor for BehaviorTree /Game/AI/FlyingEnemy/BT_FlyingEnemy.BT_FlyingEnemy
+[2025.01.07-15.47.21:397][689]LogContentBrowser: Deferred new asset file creation: NewBlackboardData
+[2025.01.07-15.47.21:410][689]LogContentBrowser: Creating deferred item: NewBlackboardData
+[2025.01.07-15.47.21:428][690]LogContentBrowser: Renaming the item being created (Deferred Item: NewBlackboardData).
+[2025.01.07-15.47.24:184][856]LogContentBrowser: Attempting asset rename: NewBlackboardData -> BB_FlyingEnemy
+[2025.01.07-15.47.24:185][856]LogContentBrowser: End creating deferred item NewBlackboardData
+[2025.01.07-15.47.24:404][869]LogAssetEditorSubsystem: Opening Asset editor for BlackboardData /Game/AI/FlyingEnemy/BB_FlyingEnemy.BB_FlyingEnemy
+[2025.01.07-15.47.30:074][194]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2025.01.07-15.47.30:197][194]LogSavePackage: Moving output files for package: /Game/AI/FlyingEnemy/BB_FlyingEnemy
+[2025.01.07-15.47.30:197][194]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/BB_FlyingEnemy289B2D3D4910CA169F8C5AADE512E390.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/AI/FlyingEnemy/BB_FlyingEnemy.uasset'
+[2025.01.07-15.47.30:209][194]LogFileHelpers: InternalPromptForCheckoutAndSave took 135 ms (total: 1.14 sec)
+[2025.01.07-15.47.30:210][194]AssetCheck: New page: Asset Save: BB_FlyingEnemy
+[2025.01.07-15.47.30:210][194]LogContentValidation: Display: Validating /Script/AIModule.BlackboardData /Game/AI/FlyingEnemy/BB_FlyingEnemy.BB_FlyingEnemy
+[2025.01.07-15.47.36:450][556]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2025.01.07-15.47.36:591][556]LogSavePackage: Moving output files for package: /Game/AI/FlyingEnemy/BT_FlyingEnemy
+[2025.01.07-15.47.36:593][556]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/BT_FlyingEnemy8001A297476F7E6B73CD74AF9B22A6BF.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/AI/FlyingEnemy/BT_FlyingEnemy.uasset'
+[2025.01.07-15.47.36:603][556]LogFileHelpers: InternalPromptForCheckoutAndSave took 152 ms (total: 1.30 sec)
+[2025.01.07-15.47.36:604][556]AssetCheck: New page: Asset Save: BT_FlyingEnemy
+[2025.01.07-15.47.36:604][556]LogContentValidation: Display: Validating /Script/AIModule.BehaviorTree /Game/AI/FlyingEnemy/BT_FlyingEnemy.BT_FlyingEnemy
+[2025.01.07-15.48.18:610][ 34]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2025.01.07-15.48.18:726][ 34]LogSavePackage: Moving output files for package: /Game/AI/FlyingEnemy/BB_FlyingEnemy
+[2025.01.07-15.48.18:728][ 34]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/BB_FlyingEnemyDD4D75744B583A8247E9EDB532A18ED8.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/AI/FlyingEnemy/BB_FlyingEnemy.uasset'
+[2025.01.07-15.48.18:738][ 34]LogFileHelpers: InternalPromptForCheckoutAndSave took 128 ms (total: 1.42 sec)
+[2025.01.07-15.48.18:740][ 34]AssetCheck: New page: Asset Save: BB_FlyingEnemy
+[2025.01.07-15.48.18:740][ 34]LogContentValidation: Display: Validating /Script/AIModule.BlackboardData /Game/AI/FlyingEnemy/BB_FlyingEnemy.BB_FlyingEnemy
+[2025.01.07-15.50.18:921][649]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2025.01.07-15.50.19:052][649]LogSavePackage: Moving output files for package: /Game/AI/FlyingEnemy/BT_FlyingEnemy
+[2025.01.07-15.50.19:054][649]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/BT_FlyingEnemyF65A96F44A736297E3AC40BE6D2EF92A.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/AI/FlyingEnemy/BT_FlyingEnemy.uasset'
+[2025.01.07-15.50.19:062][649]LogFileHelpers: InternalPromptForCheckoutAndSave took 141 ms (total: 1.57 sec)
+[2025.01.07-15.50.19:063][649]AssetCheck: New page: Asset Save: BT_FlyingEnemy
+[2025.01.07-15.50.19:063][649]LogContentValidation: Display: Validating /Script/AIModule.BehaviorTree /Game/AI/FlyingEnemy/BT_FlyingEnemy.BT_FlyingEnemy

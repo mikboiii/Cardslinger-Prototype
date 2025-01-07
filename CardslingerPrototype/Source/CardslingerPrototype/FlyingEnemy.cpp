@@ -3,3 +3,13 @@
 
 #include "FlyingEnemy.h"
 
+void AFlyingEnemy::BeginPlay()
+{
+	Super::BeginPlay();
+}
+
+void AFlyingEnemy::Tick(float DeltaTime)
+{
+	Super::Tick(DeltaTime);
+
+}
