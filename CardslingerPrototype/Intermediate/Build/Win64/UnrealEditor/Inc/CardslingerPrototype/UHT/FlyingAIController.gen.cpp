@@ -1,0 +1,122 @@
+// Copyright Epic Games, Inc. All Rights Reserved.
+/*===========================================================================
+	Generated code exported from UnrealHeaderTool.
+	DO NOT modify this manually! Edit the corresponding .h files instead!
+===========================================================================*/
+
+#include "UObject/GeneratedCppIncludes.h"
+#include "CardslingerPrototype/FlyingAIController.h"
+PRAGMA_DISABLE_DEPRECATION_WARNINGS
+void EmptyLinkFunctionForGeneratedCodeFlyingAIController() {}
+// Cross Module References
+	AIMODULE_API UClass* Z_Construct_UClass_AAIController();
+	AIMODULE_API UClass* Z_Construct_UClass_UBehaviorTree_NoRegister();
+	CARDSLINGERPROTOTYPE_API UClass* Z_Construct_UClass_AFlyingAIController();
+	CARDSLINGERPROTOTYPE_API UClass* Z_Construct_UClass_AFlyingAIController_NoRegister();
+	UPackage* Z_Construct_UPackage__Script_CardslingerPrototype();
+// End Cross Module References
+	void AFlyingAIController::StaticRegisterNativesAFlyingAIController()
+	{
+	}
+	IMPLEMENT_CLASS_NO_AUTO_REGISTRATION(AFlyingAIController);
+	UClass* Z_Construct_UClass_AFlyingAIController_NoRegister()
+	{
+		return AFlyingAIController::StaticClass();
+	}
+	struct Z_Construct_UClass_AFlyingAIController_Statics
+	{
+		static UObject* (*const DependentSingletons[])();
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
+#endif
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_FollowRadius_MetaData[];
+#endif
+		static const UECodeGen_Private::FFloatPropertyParams NewProp_FollowRadius;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_AIBehavior_MetaData[];
+#endif
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_AIBehavior;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
+		static const UECodeGen_Private::FClassParams ClassParams;
+	};
+	UObject* (*const Z_Construct_UClass_AFlyingAIController_Statics::DependentSingletons[])() = {
+		(UObject* (*)())Z_Construct_UClass_AAIController,
+		(UObject* (*)())Z_Construct_UPackage__Script_CardslingerPrototype,
+	};
+	static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_AFlyingAIController_Statics::DependentSingletons) < 16);
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFlyingAIController_Statics::Class_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "/**\n * \n */" },
+#endif
+		{ "HideCategories", "Collision Rendering Transformation" },
+		{ "IncludePath", "FlyingAIController.h" },
+		{ "ModuleRelativePath", "FlyingAIController.h" },
+	};
+#endif
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFlyingAIController_Statics::NewProp_FollowRadius_MetaData[] = {
+		{ "Category", "FlyingAIController" },
+		{ "ModuleRelativePath", "FlyingAIController.h" },
+	};
+#endif
+	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFlyingAIController_Statics::NewProp_FollowRadius = { "FollowRadius", nullptr, (EPropertyFlags)0x0040000000000001, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AFlyingAIController, FollowRadius), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_AFlyingAIController_Statics::NewProp_FollowRadius_MetaData), Z_Construct_UClass_AFlyingAIController_Statics::NewProp_FollowRadius_MetaData) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFlyingAIController_Statics::NewProp_AIBehavior_MetaData[] = {
+		{ "Category", "FlyingAIController" },
+		{ "ModuleRelativePath", "FlyingAIController.h" },
+	};
+#endif
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFlyingAIController_Statics::NewProp_AIBehavior = { "AIBehavior", nullptr, (EPropertyFlags)0x0040000000000001, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AFlyingAIController, AIBehavior), Z_Construct_UClass_UBehaviorTree_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_AFlyingAIController_Statics::NewProp_AIBehavior_MetaData), Z_Construct_UClass_AFlyingAIController_Statics::NewProp_AIBehavior_MetaData) };
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AFlyingAIController_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFlyingAIController_Statics::NewProp_FollowRadius,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFlyingAIController_Statics::NewProp_AIBehavior,
+	};
+	const FCppClassTypeInfoStatic Z_Construct_UClass_AFlyingAIController_Statics::StaticCppClassTypeInfo = {
+		TCppClassTypeTraits<AFlyingAIController>::IsAbstract,
+	};
+	const UECodeGen_Private::FClassParams Z_Construct_UClass_AFlyingAIController_Statics::ClassParams = {
+		&AFlyingAIController::StaticClass,
+		"Engine",
+		&StaticCppClassTypeInfo,
+		DependentSingletons,
+		nullptr,
+		Z_Construct_UClass_AFlyingAIController_Statics::PropPointers,
+		nullptr,
+		UE_ARRAY_COUNT(DependentSingletons),
+		0,
+		UE_ARRAY_COUNT(Z_Construct_UClass_AFlyingAIController_Statics::PropPointers),
+		0,
+		0x009002A4u,
+		METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_AFlyingAIController_Statics::Class_MetaDataParams), Z_Construct_UClass_AFlyingAIController_Statics::Class_MetaDataParams)
+	};
+	static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_AFlyingAIController_Statics::PropPointers) < 2048);
+	UClass* Z_Construct_UClass_AFlyingAIController()
+	{
+		if (!Z_Registration_Info_UClass_AFlyingAIController.OuterSingleton)
+		{
+			UECodeGen_Private::ConstructUClass(Z_Registration_Info_UClass_AFlyingAIController.OuterSingleton, Z_Construct_UClass_AFlyingAIController_Statics::ClassParams);
+		}
+		return Z_Registration_Info_UClass_AFlyingAIController.OuterSingleton;
+	}
+	template<> CARDSLINGERPROTOTYPE_API UClass* StaticClass<AFlyingAIController>()
+	{
+		return AFlyingAIController::StaticClass();
+	}
+	AFlyingAIController::AFlyingAIController(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {}
+	DEFINE_VTABLE_PTR_HELPER_CTOR(AFlyingAIController);
+	AFlyingAIController::~AFlyingAIController() {}
+	struct Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_FlyingAIController_h_Statics
+	{
+		static const FClassRegisterCompiledInInfo ClassInfo[];
+	};
+	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_FlyingAIController_h_Statics::ClassInfo[] = {
+		{ Z_Construct_UClass_AFlyingAIController, AFlyingAIController::StaticClass, TEXT("AFlyingAIController"), &Z_Registration_Info_UClass_AFlyingAIController, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AFlyingAIController), 2889961445U) },
+	};
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_FlyingAIController_h_216087594(TEXT("/Script/CardslingerPrototype"),
+		Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_FlyingAIController_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_FlyingAIController_h_Statics::ClassInfo),
+		nullptr, 0,
+		nullptr, 0);
+PRAGMA_ENABLE_DEPRECATION_WARNINGS

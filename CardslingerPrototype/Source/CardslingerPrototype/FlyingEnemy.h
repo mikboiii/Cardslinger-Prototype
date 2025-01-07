@@ -22,6 +22,6 @@ public:
 
 private:
 	UPROPERTY(EditAnywhere)
-	float HoverDistFromPlayer 300.0f;
+	float HoverDistFromPlayer = 300.0f;
 	
 };
