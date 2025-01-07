@@ -22,13 +22,13 @@ class CARDSLINGERPROTOTYPE_API AFlyingAIController : public AAIController
 
 	protected:
 		virtual void BeginPlay() override;
-		
+
 	private:
 		APawn* PlayerPawn;
 
 
 		UPROPERTY(EditAnywhere)
-		float FollowRadius = 50.0f;
+		float HoverDistFromPlayer = 300.0f;
 		UPROPERTY(EditAnywhere)
 		class UBehaviorTree* AIBehavior;
 };

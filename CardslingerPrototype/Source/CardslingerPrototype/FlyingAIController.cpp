@@ -5,6 +5,7 @@
 #include "Kismet/GameplayStatics.h"
 #include "BehaviorTree/BlackboardComponent.h"
 #include "BehaviorTree/BehaviorTree.h"
+#include "BaseCharacterClass.h"
 #include "FlyingEnemy.h"
 
 void AFlyingAIController::BeginPlay()
@@ -18,7 +19,7 @@ void AFlyingAIController::BeginPlay()
         RunBehaviorTree(AIBehavior);
         if(GetPawn()) 
         {
-            GetBlackboardComponent()->SetValueAsVector(TEXT("StartLocation"), GetPawn()->GetActorLocation());
+            GetBlackboardComponent()->SetValueAsObject(TEXT("PlayerActor"), Cast<ABaseCharacterClass>(PlayerPawn));
         }
     }
 
