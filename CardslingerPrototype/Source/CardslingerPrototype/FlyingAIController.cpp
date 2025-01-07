@@ -20,6 +20,7 @@ void AFlyingAIController::BeginPlay()
         if(GetPawn()) 
         {
             GetBlackboardComponent()->SetValueAsObject(TEXT("PlayerActor"), Cast<ABaseCharacterClass>(PlayerPawn));
+            GetBlackboardComponent()->SetValueAsFloat(TEXT("TargetDistToPlayer"), HoverDistFromPlayer);
         }
     }
 
