@@ -29,8 +29,6 @@ public: \
 
 
 #define FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_FlyingEnemy_h_15_ENHANCED_CONSTRUCTORS \
-	/** Standard constructor, called after all reflected properties have been initialized */ \
-	NO_API AFlyingEnemy(); \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API AFlyingEnemy(AFlyingEnemy&&); \

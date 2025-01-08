@@ -12,6 +12,7 @@ void EmptyLinkFunctionForGeneratedCodeFlyingEnemy() {}
 	CARDSLINGERPROTOTYPE_API UClass* Z_Construct_UClass_ABaseAIClass();
 	CARDSLINGERPROTOTYPE_API UClass* Z_Construct_UClass_AFlyingEnemy();
 	CARDSLINGERPROTOTYPE_API UClass* Z_Construct_UClass_AFlyingEnemy_NoRegister();
+	ENGINE_API UClass* Z_Construct_UClass_UStaticMeshComponent_NoRegister();
 	UPackage* Z_Construct_UPackage__Script_CardslingerPrototype();
 // End Cross Module References
 	void AFlyingEnemy::StaticRegisterNativesAFlyingEnemy()
@@ -28,6 +29,11 @@ void EmptyLinkFunctionForGeneratedCodeFlyingEnemy() {}
 #if WITH_METADATA
 		static const UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_tempBody_MetaData[];
+#endif
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_tempBody;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UECodeGen_Private::FClassParams ClassParams;
 	};
@@ -46,6 +52,17 @@ void EmptyLinkFunctionForGeneratedCodeFlyingEnemy() {}
 		{ "ModuleRelativePath", "FlyingEnemy.h" },
 	};
 #endif
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFlyingEnemy_Statics::NewProp_tempBody_MetaData[] = {
+		{ "Category", "FlyingEnemy" },
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "FlyingEnemy.h" },
+	};
+#endif
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFlyingEnemy_Statics::NewProp_tempBody = { "tempBody", nullptr, (EPropertyFlags)0x0022080000080009, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AFlyingEnemy, tempBody), Z_Construct_UClass_UStaticMeshComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_AFlyingEnemy_Statics::NewProp_tempBody_MetaData), Z_Construct_UClass_AFlyingEnemy_Statics::NewProp_tempBody_MetaData) };
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AFlyingEnemy_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFlyingEnemy_Statics::NewProp_tempBody,
+	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_AFlyingEnemy_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<AFlyingEnemy>::IsAbstract,
 	};
@@ -55,15 +72,16 @@ void EmptyLinkFunctionForGeneratedCodeFlyingEnemy() {}
 		&StaticCppClassTypeInfo,
 		DependentSingletons,
 		nullptr,
-		nullptr,
+		Z_Construct_UClass_AFlyingEnemy_Statics::PropPointers,
 		nullptr,
 		UE_ARRAY_COUNT(DependentSingletons),
 		0,
-		0,
+		UE_ARRAY_COUNT(Z_Construct_UClass_AFlyingEnemy_Statics::PropPointers),
 		0,
 		0x009000A4u,
 		METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_AFlyingEnemy_Statics::Class_MetaDataParams), Z_Construct_UClass_AFlyingEnemy_Statics::Class_MetaDataParams)
 	};
+	static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_AFlyingEnemy_Statics::PropPointers) < 2048);
 	UClass* Z_Construct_UClass_AFlyingEnemy()
 	{
 		if (!Z_Registration_Info_UClass_AFlyingEnemy.OuterSingleton)
@@ -76,7 +94,6 @@ void EmptyLinkFunctionForGeneratedCodeFlyingEnemy() {}
 	{
 		return AFlyingEnemy::StaticClass();
 	}
-	AFlyingEnemy::AFlyingEnemy() {}
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFlyingEnemy);
 	AFlyingEnemy::~AFlyingEnemy() {}
 	struct Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_FlyingEnemy_h_Statics
@@ -84,9 +101,9 @@ void EmptyLinkFunctionForGeneratedCodeFlyingEnemy() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_FlyingEnemy_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_AFlyingEnemy, AFlyingEnemy::StaticClass, TEXT("AFlyingEnemy"), &Z_Registration_Info_UClass_AFlyingEnemy, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AFlyingEnemy), 1786289666U) },
+		{ Z_Construct_UClass_AFlyingEnemy, AFlyingEnemy::StaticClass, TEXT("AFlyingEnemy"), &Z_Registration_Info_UClass_AFlyingEnemy, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AFlyingEnemy), 86930564U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_FlyingEnemy_h_1943832640(TEXT("/Script/CardslingerPrototype"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_FlyingEnemy_h_3235592058(TEXT("/Script/CardslingerPrototype"),
 		Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_FlyingEnemy_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_FlyingEnemy_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);

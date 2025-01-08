@@ -14,8 +14,15 @@ class CARDSLINGERPROTOTYPE_API AFlyingEnemy : public ABaseAIClass
 {
 	GENERATED_BODY()
 
+	AFlyingEnemy();
+
 protected:
 	virtual void BeginPlay() override;
+
+	float TakeDamage(float DamageAmount, struct FDamageEvent const &DamageEvent, class AController *EventInstigator, AActor* DamageCauser) override;
+
+	UPROPERTY(EditAnywhere, Instanced)
+	UStaticMeshComponent* tempBody;
 
 public:
 	virtual void Tick(float DeltaTime) override;
