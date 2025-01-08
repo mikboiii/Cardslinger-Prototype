@@ -28,7 +28,7 @@ class CARDSLINGERPROTOTYPE_API AFlyingAIController : public AAIController
 
 
 		UPROPERTY(EditAnywhere)
-		float HoverDistFromPlayer = 300.0f;
+		float HoverDistFromPlayer = 1000.0f;
 		UPROPERTY(EditAnywhere)
 		class UBehaviorTree* AIBehavior;
 };
