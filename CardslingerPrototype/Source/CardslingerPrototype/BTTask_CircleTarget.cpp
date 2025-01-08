@@ -7,6 +7,8 @@
 #include "Kismet/GameplayStatics.h"
 #include "Kismet/KismetMathLibrary.h"
 #include "BehaviorTree/BlackboardComponent.h"
+#include "Engine/World.h"
+#include "TimerManager.h"
 
 UBTTask_CircleTarget::UBTTask_CircleTarget()
 {
@@ -27,5 +29,17 @@ EBTNodeResult::Type UBTTask_CircleTarget::ExecuteTask(UBehaviorTreeComponent& Ow
 void UBTTask_CircleTarget::CircleTarget(AActor* AIActor, AActor* PlayerActor)
 {
     FRotator LookRotator = UKismetMathLibrary::FindLookAtRotation(AIActor->GetActorLocation(), PlayerActor->GetActorLocation());
-    Cast<APawn>(AIActor)->AddMovementInput(UKismetMathLibrary::GetRightVector(LookRotator));
+    Cast<APawn>(AIActor)->AddMovementInput(UKismetMathLibrary::GetRightVector(LookRotator) * DirectionMode);
+    if(bCanSwitchDirection)
+    {
+        FTimerHandle DirectionChangeHandle;
+        GetWorld()->GetTimerManager().SetTimer(DirectionChangeHandle, this, &UBTTask_CircleTarget::SwitchDirection, TimeToSwitchDir);
+        bCanSwitchDirection = false;
+    }
+}
+
+void UBTTask_CircleTarget::SwitchDirection()
+{
+    DirectionMode *= -1.0f;
+    bCanSwitchDirection = true;
 }

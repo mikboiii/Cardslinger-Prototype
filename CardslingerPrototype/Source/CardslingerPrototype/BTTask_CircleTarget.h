@@ -24,4 +24,13 @@ class CARDSLINGERPROTOTYPE_API UBTTask_CircleTarget : public UBTTask_BlackboardB
 		virtual EBTNodeResult::Type ExecuteTask(UBehaviorTreeComponent& OwnerComp, uint8* NodeMemory) override;
 
 		void CircleTarget(AActor* AIActor, AActor* PlayerActor);
+
+		void SwitchDirection();
+
+		UPROPERTY(EditAnywhere, Category = Blackboard)
+		float TimeToSwitchDir = 7.0f;
+
+		float DirectionMode = 1.0f;
+
+		bool bCanSwitchDirection = true;
 };

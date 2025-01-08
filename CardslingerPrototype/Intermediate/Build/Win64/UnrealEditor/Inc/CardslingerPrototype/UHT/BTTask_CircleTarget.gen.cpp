@@ -34,6 +34,10 @@ void EmptyLinkFunctionForGeneratedCodeBTTask_CircleTarget() {}
 		static const UECodeGen_Private::FMetaDataPairParam NewProp_TargetKey_MetaData[];
 #endif
 		static const UECodeGen_Private::FStructPropertyParams NewProp_TargetKey;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_TimeToSwitchDir_MetaData[];
+#endif
+		static const UECodeGen_Private::FFloatPropertyParams NewProp_TimeToSwitchDir;
 		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UECodeGen_Private::FClassParams ClassParams;
@@ -59,8 +63,16 @@ void EmptyLinkFunctionForGeneratedCodeBTTask_CircleTarget() {}
 	};
 #endif
 	const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UBTTask_CircleTarget_Statics::NewProp_TargetKey = { "TargetKey", nullptr, (EPropertyFlags)0x0010000000000001, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UBTTask_CircleTarget, TargetKey), Z_Construct_UScriptStruct_FBlackboardKeySelector, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_UBTTask_CircleTarget_Statics::NewProp_TargetKey_MetaData), Z_Construct_UClass_UBTTask_CircleTarget_Statics::NewProp_TargetKey_MetaData) }; // 3137324432
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UBTTask_CircleTarget_Statics::NewProp_TimeToSwitchDir_MetaData[] = {
+		{ "Category", "Blackboard" },
+		{ "ModuleRelativePath", "BTTask_CircleTarget.h" },
+	};
+#endif
+	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UBTTask_CircleTarget_Statics::NewProp_TimeToSwitchDir = { "TimeToSwitchDir", nullptr, (EPropertyFlags)0x0040000000000001, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UBTTask_CircleTarget, TimeToSwitchDir), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_UBTTask_CircleTarget_Statics::NewProp_TimeToSwitchDir_MetaData), Z_Construct_UClass_UBTTask_CircleTarget_Statics::NewProp_TimeToSwitchDir_MetaData) };
 	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UBTTask_CircleTarget_Statics::PropPointers[] = {
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UBTTask_CircleTarget_Statics::NewProp_TargetKey,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UBTTask_CircleTarget_Statics::NewProp_TimeToSwitchDir,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_UBTTask_CircleTarget_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<UBTTask_CircleTarget>::IsAbstract,
@@ -100,9 +112,9 @@ void EmptyLinkFunctionForGeneratedCodeBTTask_CircleTarget() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_BTTask_CircleTarget_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_UBTTask_CircleTarget, UBTTask_CircleTarget::StaticClass, TEXT("UBTTask_CircleTarget"), &Z_Registration_Info_UClass_UBTTask_CircleTarget, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UBTTask_CircleTarget), 678315317U) },
+		{ Z_Construct_UClass_UBTTask_CircleTarget, UBTTask_CircleTarget::StaticClass, TEXT("UBTTask_CircleTarget"), &Z_Registration_Info_UClass_UBTTask_CircleTarget, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UBTTask_CircleTarget), 4033780481U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_BTTask_CircleTarget_h_464672567(TEXT("/Script/CardslingerPrototype"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_BTTask_CircleTarget_h_2078012278(TEXT("/Script/CardslingerPrototype"),
 		Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_BTTask_CircleTarget_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_BTTask_CircleTarget_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);
