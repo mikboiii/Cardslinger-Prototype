@@ -218,28 +218,28 @@ void EmptyLinkFunctionForGeneratedCodeBaseAIClass() {}
 		{ "ModuleRelativePath", "BaseAIClass.h" },
 	};
 #endif
-	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ABaseAIClass_Statics::NewProp_Speed = { "Speed", nullptr, (EPropertyFlags)0x0040000000000001, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ABaseAIClass, Speed), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_ABaseAIClass_Statics::NewProp_Speed_MetaData), Z_Construct_UClass_ABaseAIClass_Statics::NewProp_Speed_MetaData) };
+	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ABaseAIClass_Statics::NewProp_Speed = { "Speed", nullptr, (EPropertyFlags)0x0020080000000001, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ABaseAIClass, Speed), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_ABaseAIClass_Statics::NewProp_Speed_MetaData), Z_Construct_UClass_ABaseAIClass_Statics::NewProp_Speed_MetaData) };
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABaseAIClass_Statics::NewProp_Health_MetaData[] = {
 		{ "Category", "Combat" },
 		{ "ModuleRelativePath", "BaseAIClass.h" },
 	};
 #endif
-	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ABaseAIClass_Statics::NewProp_Health = { "Health", nullptr, (EPropertyFlags)0x0040000000020001, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ABaseAIClass, Health), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_ABaseAIClass_Statics::NewProp_Health_MetaData), Z_Construct_UClass_ABaseAIClass_Statics::NewProp_Health_MetaData) };
+	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ABaseAIClass_Statics::NewProp_Health = { "Health", nullptr, (EPropertyFlags)0x0020080000020001, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ABaseAIClass, Health), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_ABaseAIClass_Statics::NewProp_Health_MetaData), Z_Construct_UClass_ABaseAIClass_Statics::NewProp_Health_MetaData) };
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABaseAIClass_Statics::NewProp_MaxHealth_MetaData[] = {
 		{ "Category", "Combat" },
 		{ "ModuleRelativePath", "BaseAIClass.h" },
 	};
 #endif
-	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ABaseAIClass_Statics::NewProp_MaxHealth = { "MaxHealth", nullptr, (EPropertyFlags)0x0040000000010001, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ABaseAIClass, MaxHealth), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_ABaseAIClass_Statics::NewProp_MaxHealth_MetaData), Z_Construct_UClass_ABaseAIClass_Statics::NewProp_MaxHealth_MetaData) };
+	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ABaseAIClass_Statics::NewProp_MaxHealth = { "MaxHealth", nullptr, (EPropertyFlags)0x0020080000010001, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ABaseAIClass, MaxHealth), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_ABaseAIClass_Statics::NewProp_MaxHealth_MetaData), Z_Construct_UClass_ABaseAIClass_Statics::NewProp_MaxHealth_MetaData) };
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABaseAIClass_Statics::NewProp_MaxRange_MetaData[] = {
 		{ "Category", "Combat" },
 		{ "ModuleRelativePath", "BaseAIClass.h" },
 	};
 #endif
-	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ABaseAIClass_Statics::NewProp_MaxRange = { "MaxRange", nullptr, (EPropertyFlags)0x0040000000000001, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ABaseAIClass, MaxRange), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_ABaseAIClass_Statics::NewProp_MaxRange_MetaData), Z_Construct_UClass_ABaseAIClass_Statics::NewProp_MaxRange_MetaData) };
+	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ABaseAIClass_Statics::NewProp_MaxRange = { "MaxRange", nullptr, (EPropertyFlags)0x0020080000000001, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ABaseAIClass, MaxRange), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_ABaseAIClass_Statics::NewProp_MaxRange_MetaData), Z_Construct_UClass_ABaseAIClass_Statics::NewProp_MaxRange_MetaData) };
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABaseAIClass_Statics::NewProp_bIsPredictiveAiming_MetaData[] = {
 		{ "Category", "Combat" },
@@ -250,56 +250,56 @@ void EmptyLinkFunctionForGeneratedCodeBaseAIClass() {}
 	{
 		((ABaseAIClass*)Obj)->bIsPredictiveAiming = 1;
 	}
-	const UECodeGen_Private::FBoolPropertyParams Z_Construct_UClass_ABaseAIClass_Statics::NewProp_bIsPredictiveAiming = { "bIsPredictiveAiming", nullptr, (EPropertyFlags)0x0040000000000001, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, sizeof(bool), sizeof(ABaseAIClass), &Z_Construct_UClass_ABaseAIClass_Statics::NewProp_bIsPredictiveAiming_SetBit, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_ABaseAIClass_Statics::NewProp_bIsPredictiveAiming_MetaData), Z_Construct_UClass_ABaseAIClass_Statics::NewProp_bIsPredictiveAiming_MetaData) };
+	const UECodeGen_Private::FBoolPropertyParams Z_Construct_UClass_ABaseAIClass_Statics::NewProp_bIsPredictiveAiming = { "bIsPredictiveAiming", nullptr, (EPropertyFlags)0x0020080000000001, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, sizeof(bool), sizeof(ABaseAIClass), &Z_Construct_UClass_ABaseAIClass_Statics::NewProp_bIsPredictiveAiming_SetBit, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_ABaseAIClass_Statics::NewProp_bIsPredictiveAiming_MetaData), Z_Construct_UClass_ABaseAIClass_Statics::NewProp_bIsPredictiveAiming_MetaData) };
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABaseAIClass_Statics::NewProp_Damage_MetaData[] = {
 		{ "Category", "Combat" },
 		{ "ModuleRelativePath", "BaseAIClass.h" },
 	};
 #endif
-	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ABaseAIClass_Statics::NewProp_Damage = { "Damage", nullptr, (EPropertyFlags)0x0040000000000001, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ABaseAIClass, Damage), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_ABaseAIClass_Statics::NewProp_Damage_MetaData), Z_Construct_UClass_ABaseAIClass_Statics::NewProp_Damage_MetaData) };
+	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ABaseAIClass_Statics::NewProp_Damage = { "Damage", nullptr, (EPropertyFlags)0x0020080000000001, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ABaseAIClass, Damage), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_ABaseAIClass_Statics::NewProp_Damage_MetaData), Z_Construct_UClass_ABaseAIClass_Statics::NewProp_Damage_MetaData) };
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABaseAIClass_Statics::NewProp_FireCooldown_MetaData[] = {
 		{ "Category", "Combat" },
 		{ "ModuleRelativePath", "BaseAIClass.h" },
 	};
 #endif
-	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ABaseAIClass_Statics::NewProp_FireCooldown = { "FireCooldown", nullptr, (EPropertyFlags)0x0040000000000001, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ABaseAIClass, FireCooldown), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_ABaseAIClass_Statics::NewProp_FireCooldown_MetaData), Z_Construct_UClass_ABaseAIClass_Statics::NewProp_FireCooldown_MetaData) };
+	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ABaseAIClass_Statics::NewProp_FireCooldown = { "FireCooldown", nullptr, (EPropertyFlags)0x0020080000000001, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ABaseAIClass, FireCooldown), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_ABaseAIClass_Statics::NewProp_FireCooldown_MetaData), Z_Construct_UClass_ABaseAIClass_Statics::NewProp_FireCooldown_MetaData) };
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABaseAIClass_Statics::NewProp_NumberOfShots_MetaData[] = {
 		{ "Category", "Combat" },
 		{ "ModuleRelativePath", "BaseAIClass.h" },
 	};
 #endif
-	const UECodeGen_Private::FIntPropertyParams Z_Construct_UClass_ABaseAIClass_Statics::NewProp_NumberOfShots = { "NumberOfShots", nullptr, (EPropertyFlags)0x0040000000000001, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ABaseAIClass, NumberOfShots), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_ABaseAIClass_Statics::NewProp_NumberOfShots_MetaData), Z_Construct_UClass_ABaseAIClass_Statics::NewProp_NumberOfShots_MetaData) };
+	const UECodeGen_Private::FIntPropertyParams Z_Construct_UClass_ABaseAIClass_Statics::NewProp_NumberOfShots = { "NumberOfShots", nullptr, (EPropertyFlags)0x0020080000000001, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ABaseAIClass, NumberOfShots), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_ABaseAIClass_Statics::NewProp_NumberOfShots_MetaData), Z_Construct_UClass_ABaseAIClass_Statics::NewProp_NumberOfShots_MetaData) };
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABaseAIClass_Statics::NewProp_TimePerShot_MetaData[] = {
 		{ "Category", "Combat" },
 		{ "ModuleRelativePath", "BaseAIClass.h" },
 	};
 #endif
-	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ABaseAIClass_Statics::NewProp_TimePerShot = { "TimePerShot", nullptr, (EPropertyFlags)0x0040000000000001, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ABaseAIClass, TimePerShot), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_ABaseAIClass_Statics::NewProp_TimePerShot_MetaData), Z_Construct_UClass_ABaseAIClass_Statics::NewProp_TimePerShot_MetaData) };
+	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ABaseAIClass_Statics::NewProp_TimePerShot = { "TimePerShot", nullptr, (EPropertyFlags)0x0020080000000001, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ABaseAIClass, TimePerShot), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_ABaseAIClass_Statics::NewProp_TimePerShot_MetaData), Z_Construct_UClass_ABaseAIClass_Statics::NewProp_TimePerShot_MetaData) };
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABaseAIClass_Statics::NewProp_BulletSpeed_MetaData[] = {
 		{ "Category", "Combat" },
 		{ "ModuleRelativePath", "BaseAIClass.h" },
 	};
 #endif
-	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ABaseAIClass_Statics::NewProp_BulletSpeed = { "BulletSpeed", nullptr, (EPropertyFlags)0x0040000000000001, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ABaseAIClass, BulletSpeed), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_ABaseAIClass_Statics::NewProp_BulletSpeed_MetaData), Z_Construct_UClass_ABaseAIClass_Statics::NewProp_BulletSpeed_MetaData) };
+	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ABaseAIClass_Statics::NewProp_BulletSpeed = { "BulletSpeed", nullptr, (EPropertyFlags)0x0020080000000001, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ABaseAIClass, BulletSpeed), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_ABaseAIClass_Statics::NewProp_BulletSpeed_MetaData), Z_Construct_UClass_ABaseAIClass_Statics::NewProp_BulletSpeed_MetaData) };
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABaseAIClass_Statics::NewProp_Bullet_MetaData[] = {
 		{ "Category", "Combat" },
 		{ "ModuleRelativePath", "BaseAIClass.h" },
 	};
 #endif
-	const UECodeGen_Private::FClassPropertyParams Z_Construct_UClass_ABaseAIClass_Statics::NewProp_Bullet = { "Bullet", nullptr, (EPropertyFlags)0x0044000000010001, UECodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ABaseAIClass, Bullet), Z_Construct_UClass_UClass, Z_Construct_UClass_AEnemyProjectile_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_ABaseAIClass_Statics::NewProp_Bullet_MetaData), Z_Construct_UClass_ABaseAIClass_Statics::NewProp_Bullet_MetaData) };
+	const UECodeGen_Private::FClassPropertyParams Z_Construct_UClass_ABaseAIClass_Statics::NewProp_Bullet = { "Bullet", nullptr, (EPropertyFlags)0x0024080000010001, UECodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ABaseAIClass, Bullet), Z_Construct_UClass_UClass, Z_Construct_UClass_AEnemyProjectile_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_ABaseAIClass_Statics::NewProp_Bullet_MetaData), Z_Construct_UClass_ABaseAIClass_Statics::NewProp_Bullet_MetaData) };
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABaseAIClass_Statics::NewProp_AccuracyModifier_MetaData[] = {
 		{ "Category", "Combat" },
 		{ "ModuleRelativePath", "BaseAIClass.h" },
 	};
 #endif
-	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ABaseAIClass_Statics::NewProp_AccuracyModifier = { "AccuracyModifier", nullptr, (EPropertyFlags)0x0040000000000001, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ABaseAIClass, AccuracyModifier), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_ABaseAIClass_Statics::NewProp_AccuracyModifier_MetaData), Z_Construct_UClass_ABaseAIClass_Statics::NewProp_AccuracyModifier_MetaData) };
+	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ABaseAIClass_Statics::NewProp_AccuracyModifier = { "AccuracyModifier", nullptr, (EPropertyFlags)0x0020080000000001, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ABaseAIClass, AccuracyModifier), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_ABaseAIClass_Statics::NewProp_AccuracyModifier_MetaData), Z_Construct_UClass_ABaseAIClass_Statics::NewProp_AccuracyModifier_MetaData) };
 	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ABaseAIClass_Statics::NewProp_ActiveBullets_Inner = { "ActiveBullets", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UClass_AEnemyProjectile_NoRegister, METADATA_PARAMS(0, nullptr) };
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABaseAIClass_Statics::NewProp_ActiveBullets_MetaData[] = {
@@ -307,21 +307,21 @@ void EmptyLinkFunctionForGeneratedCodeBaseAIClass() {}
 		{ "ModuleRelativePath", "BaseAIClass.h" },
 	};
 #endif
-	const UECodeGen_Private::FArrayPropertyParams Z_Construct_UClass_ABaseAIClass_Statics::NewProp_ActiveBullets = { "ActiveBullets", nullptr, (EPropertyFlags)0x0040000000000001, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ABaseAIClass, ActiveBullets), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_ABaseAIClass_Statics::NewProp_ActiveBullets_MetaData), Z_Construct_UClass_ABaseAIClass_Statics::NewProp_ActiveBullets_MetaData) };
+	const UECodeGen_Private::FArrayPropertyParams Z_Construct_UClass_ABaseAIClass_Statics::NewProp_ActiveBullets = { "ActiveBullets", nullptr, (EPropertyFlags)0x0020080000000001, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ABaseAIClass, ActiveBullets), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_ABaseAIClass_Statics::NewProp_ActiveBullets_MetaData), Z_Construct_UClass_ABaseAIClass_Statics::NewProp_ActiveBullets_MetaData) };
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABaseAIClass_Statics::NewProp_MuzzleFlash_MetaData[] = {
 		{ "Category", "BaseAIClass" },
 		{ "ModuleRelativePath", "BaseAIClass.h" },
 	};
 #endif
-	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ABaseAIClass_Statics::NewProp_MuzzleFlash = { "MuzzleFlash", nullptr, (EPropertyFlags)0x0040000000000001, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ABaseAIClass, MuzzleFlash), Z_Construct_UClass_UNiagaraSystem_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_ABaseAIClass_Statics::NewProp_MuzzleFlash_MetaData), Z_Construct_UClass_ABaseAIClass_Statics::NewProp_MuzzleFlash_MetaData) };
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ABaseAIClass_Statics::NewProp_MuzzleFlash = { "MuzzleFlash", nullptr, (EPropertyFlags)0x0020080000000001, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ABaseAIClass, MuzzleFlash), Z_Construct_UClass_UNiagaraSystem_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_ABaseAIClass_Statics::NewProp_MuzzleFlash_MetaData), Z_Construct_UClass_ABaseAIClass_Statics::NewProp_MuzzleFlash_MetaData) };
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABaseAIClass_Statics::NewProp_RagdollSpeedCheckTimer_MetaData[] = {
 		{ "Category", "Ragdoll Settings" },
 		{ "ModuleRelativePath", "BaseAIClass.h" },
 	};
 #endif
-	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ABaseAIClass_Statics::NewProp_RagdollSpeedCheckTimer = { "RagdollSpeedCheckTimer", nullptr, (EPropertyFlags)0x0040000000000001, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ABaseAIClass, RagdollSpeedCheckTimer), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_ABaseAIClass_Statics::NewProp_RagdollSpeedCheckTimer_MetaData), Z_Construct_UClass_ABaseAIClass_Statics::NewProp_RagdollSpeedCheckTimer_MetaData) };
+	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ABaseAIClass_Statics::NewProp_RagdollSpeedCheckTimer = { "RagdollSpeedCheckTimer", nullptr, (EPropertyFlags)0x0020080000000001, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ABaseAIClass, RagdollSpeedCheckTimer), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_ABaseAIClass_Statics::NewProp_RagdollSpeedCheckTimer_MetaData), Z_Construct_UClass_ABaseAIClass_Statics::NewProp_RagdollSpeedCheckTimer_MetaData) };
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABaseAIClass_Statics::NewProp_RagdollSpeedMaximum_MetaData[] = {
 		{ "Category", "Ragdoll Settings" },
@@ -334,7 +334,7 @@ void EmptyLinkFunctionForGeneratedCodeBaseAIClass() {}
 #endif
 	};
 #endif
-	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ABaseAIClass_Statics::NewProp_RagdollSpeedMaximum = { "RagdollSpeedMaximum", nullptr, (EPropertyFlags)0x0040000000000001, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ABaseAIClass, RagdollSpeedMaximum), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_ABaseAIClass_Statics::NewProp_RagdollSpeedMaximum_MetaData), Z_Construct_UClass_ABaseAIClass_Statics::NewProp_RagdollSpeedMaximum_MetaData) };
+	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ABaseAIClass_Statics::NewProp_RagdollSpeedMaximum = { "RagdollSpeedMaximum", nullptr, (EPropertyFlags)0x0020080000000001, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ABaseAIClass, RagdollSpeedMaximum), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_ABaseAIClass_Statics::NewProp_RagdollSpeedMaximum_MetaData), Z_Construct_UClass_ABaseAIClass_Statics::NewProp_RagdollSpeedMaximum_MetaData) };
 	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ABaseAIClass_Statics::PropPointers[] = {
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABaseAIClass_Statics::NewProp_Speed,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABaseAIClass_Statics::NewProp_Health,
@@ -392,9 +392,9 @@ void EmptyLinkFunctionForGeneratedCodeBaseAIClass() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_BaseAIClass_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_ABaseAIClass, ABaseAIClass::StaticClass, TEXT("ABaseAIClass"), &Z_Registration_Info_UClass_ABaseAIClass, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ABaseAIClass), 230453256U) },
+		{ Z_Construct_UClass_ABaseAIClass, ABaseAIClass::StaticClass, TEXT("ABaseAIClass"), &Z_Registration_Info_UClass_ABaseAIClass, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ABaseAIClass), 3753135790U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_BaseAIClass_h_88769762(TEXT("/Script/CardslingerPrototype"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_BaseAIClass_h_3642440675(TEXT("/Script/CardslingerPrototype"),
 		Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_BaseAIClass_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_BaseAIClass_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);

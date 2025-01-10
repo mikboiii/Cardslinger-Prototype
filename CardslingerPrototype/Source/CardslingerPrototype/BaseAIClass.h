@@ -36,9 +36,9 @@ public:
 	UFUNCTION(BlueprintPure)
 	float GetHealthPercent() const;
 
-	void Shoot();
+	virtual void Shoot();
 
-	void ShootMultiple();
+	virtual void ShootMultiple();
 
 	FVector ShootLocation;
 
@@ -48,7 +48,7 @@ public:
 
 	void SetRagdollMode(bool bIsRagdoll, float RagdollTime);
 
-private:
+protected:
 
 	AActor* PlayerActor;
 

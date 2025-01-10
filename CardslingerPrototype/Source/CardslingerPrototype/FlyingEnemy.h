@@ -24,6 +24,12 @@ protected:
 	UPROPERTY(EditAnywhere, Instanced)
 	UStaticMeshComponent* tempBody;
 
+	AFlyingAIController* ThisController;
+
+	virtual void Shoot() override;
+
+	virtual void ShootMultiple() override;
+
 public:
 	virtual void Tick(float DeltaTime) override;
 	
