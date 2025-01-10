@@ -32,5 +32,10 @@ protected:
 
 public:
 	virtual void Tick(float DeltaTime) override;
+
+private:
+	bool bCanShoot = true;
+
+	void ResetShooting();
 	
 };

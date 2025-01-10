@@ -78,16 +78,26 @@ void AFlyingEnemy::Shoot()
 
 void AFlyingEnemy::ShootMultiple()
 {
-	//create temp fire cooldown to calculate accurate delay between firing the last shot and the first shot of the next volley
-	float TempFireCooldown = FireCooldown;
-	for(int32 i = 0; i <= NumberOfShots; i++)
+	if(bCanShoot)
 	{
-		FTimerHandle StaggerFireHandle;
-		//delay each bullet by an incremental timer
-		GetWorldTimerManager().SetTimer(StaggerFireHandle, this, &AFlyingEnemy::Shoot, TimePerShot * i);
+		//create temp fire cooldown to calculate accurate delay between firing the last shot and the first shot of the next volley
+		float TempFireCooldown = FireCooldown;
+		for(int32 i = 0; i <= NumberOfShots; i++)
+		{
+			FTimerHandle StaggerFireHandle;
+			//delay each bullet by an incremental timer
+			GetWorldTimerManager().SetTimer(StaggerFireHandle, this, &AFlyingEnemy::Shoot, TimePerShot * i);
+		}
+		TempFireCooldown += TimePerShot * NumberOfShots;
+		//set new fire cooldown to reflect actual time between volleys
+		//ThisController->GetBlackboardComponent()->SetValueAsFloat(TEXT("FireCooldown"), TempFireCooldown);
+		FTimerHandle ReloadHandle;
+		bCanShoot = false;
+		GetWorldTimerManager().SetTimer(ReloadHandle, this, &AFlyingEnemy::ResetShooting, TempFireCooldown);
 	}
-	TempFireCooldown += TimePerShot * NumberOfShots;
-	//set new fire cooldown to reflect actual time between volleys
-	ThisController->GetBlackboardComponent()->SetValueAsFloat(TEXT("FireCooldown"), TempFireCooldown);
+}
 
+void AFlyingEnemy::ResetShooting()
+{
+	bCanShoot = true;
 }
