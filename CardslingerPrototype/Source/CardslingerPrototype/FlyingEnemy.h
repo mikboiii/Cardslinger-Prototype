@@ -30,6 +30,8 @@ protected:
 
 	virtual void ShootMultiple() override;
 
+	virtual bool HitTrace(FHitResult& Hit, FVector& ShotDirection) override;
+
 public:
 	virtual void Tick(float DeltaTime) override;
 

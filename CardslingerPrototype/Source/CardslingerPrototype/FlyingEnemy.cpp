@@ -101,3 +101,41 @@ void AFlyingEnemy::ResetShooting()
 {
 	bCanShoot = true;
 }
+
+bool AFlyingEnemy::HitTrace(FHitResult& Hit, FVector& ShotDirection)
+{
+	FVector ViewLocation;
+	FRotator ViewRotation;
+	//AController* OwnerController = GetOwnerController();
+	//if(OwnerController == nullptr) return false;
+	//GetController()->GetPlayerViewPoint(ViewLocation, ViewRotation);
+
+	ViewLocation = GetActorLocation();
+	ViewRotation  = GetActorRotation();
+
+	FVector PlayerLocation = PlayerActor->GetActorLocation();
+	FVector PlayerVelocty = PlayerActor->GetVelocity();
+	//calculate distance from enemy to player
+	float Distance = FVector::Dist(ViewLocation, PlayerLocation);
+	//calculate estimated time taken (in seconds) for bullet to travel the required distance
+	float BulletTravelTime = Distance / BulletSpeed;
+
+	//calculate the position of where the bullet needs to be based on where the player will be and how fast the bullet travels
+	FVector PredictedLocation = PlayerLocation + (PlayerVelocty * BulletTravelTime);
+
+	//aim shot at where the player is going to be based on movement (can be messy with short bursts of very fast movement)
+	if(bIsPredictiveAiming) ShotDirection = (PredictedLocation - ViewLocation).GetSafeNormal();
+	//otherwise shoot directly forward
+	else ShotDirection = ViewRotation.Vector();
+	//calculate end of linetrace to determine shot viability
+	FVector End = ViewLocation + ShotDirection * MaxRange;
+	//create parameter list for ignored actors (prevent wacky bullet collision)
+	FCollisionQueryParams Params;
+	Params.AddIgnoredActor(this);
+	Params.AddIgnoredActor(GetOwner());
+	
+	DrawDebugLine(GetWorld(), ViewLocation, End, FColor::Red, true, 100.0f);
+
+	//shoot line trace
+	return GetWorld()->LineTraceSingleByChannel(Hit, ViewLocation, End, ECollisionChannel::ECC_GameTraceChannel1, Params);
+}

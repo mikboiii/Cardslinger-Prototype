@@ -97,7 +97,7 @@ protected:
 	UPROPERTY(EditAnywhere)
 	class UNiagaraSystem* MuzzleFlash;
 
-	bool HitTrace(FHitResult& Hit, FVector& ShotDirection);
+	virtual bool HitTrace(FHitResult& Hit, FVector& ShotDirection);
 	
 	FTimerHandle RagdollReset;
 
