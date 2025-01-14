@@ -19,6 +19,8 @@ void AFlyingEnemy::BeginPlay()
 void AFlyingEnemy::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
+	float HeightMod = FMath::Sin(DeltaTime) * 10.0f;
+	ThisController->GetBlackboardComponent()->SetValueAsFloat(TEXT("SineVar"), HeightMod);
 }
 
 float AFlyingEnemy::TakeDamage(float DamageAmount, struct FDamageEvent const &DamageEvent, class AController *EventInstigator, AActor* DamageCauser)
