@@ -134,7 +134,7 @@ bool AFlyingEnemy::HitTrace(FHitResult& Hit, FVector& ShotDirection)
 	Params.AddIgnoredActor(this);
 	Params.AddIgnoredActor(GetOwner());
 	
-	DrawDebugLine(GetWorld(), ViewLocation, End, FColor::Red, true, 100.0f);
+	//DrawDebugLine(GetWorld(), ViewLocation, End, FColor::Red, true, 100.0f);
 
 	//shoot line trace
 	return GetWorld()->LineTraceSingleByChannel(Hit, ViewLocation, End, ECollisionChannel::ECC_GameTraceChannel1, Params);

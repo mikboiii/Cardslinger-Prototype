@@ -19,11 +19,13 @@ class CARDSLINGERPROTOTYPE_API UBTTask_CircleTarget : public UBTTask_BlackboardB
 
 		UPROPERTY(EditAnywhere, Category = Blackboard) 
 		FBlackboardKeySelector TargetKey;
+		UPROPERTY(EditAnywhere, Category = Blackboard) 
+		FBlackboardKeySelector SineKey;
 
 	private:
 		virtual EBTNodeResult::Type ExecuteTask(UBehaviorTreeComponent& OwnerComp, uint8* NodeMemory) override;
 
-		void CircleTarget(AActor* AIActor, AActor* PlayerActor);
+		void CircleTarget(AActor* AIActor, AActor* PlayerActor, UBehaviorTreeComponent& OwnerComp);
 
 		void SwitchDirection();
 

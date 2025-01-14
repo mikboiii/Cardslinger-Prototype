@@ -22,14 +22,16 @@ EBTNodeResult::Type UBTTask_CircleTarget::ExecuteTask(UBehaviorTreeComponent& Ow
     AFlyingEnemy* Character = Cast<AFlyingEnemy>(OwnerComp.GetAIOwner()->GetPawn());
     if(Character == nullptr) return EBTNodeResult::Failed;
     AActor* Target = Cast<AActor>(OwnerComp.GetBlackboardComponent()->GetValueAsObject(TargetKey.SelectedKeyName));
-    CircleTarget(Character, Target);
+    CircleTarget(Character, Target, OwnerComp);
     return EBTNodeResult::Succeeded;
 }
 
-void UBTTask_CircleTarget::CircleTarget(AActor* AIActor, AActor* PlayerActor)
+void UBTTask_CircleTarget::CircleTarget(AActor* AIActor, AActor* PlayerActor, UBehaviorTreeComponent& OwnerComp)
 {
     FRotator LookRotator = UKismetMathLibrary::FindLookAtRotation(AIActor->GetActorLocation(), PlayerActor->GetActorLocation());
-    Cast<APawn>(AIActor)->AddMovementInput(UKismetMathLibrary::GetRightVector(LookRotator) * DirectionMode);
+    FVector FlyingPos = UKismetMathLibrary::GetRightVector(LookRotator) * DirectionMode;
+    FlyingPos.Z += OwnerComp.GetBlackboardComponent()->GetValueAsFloat(SineKey.SelectedKeyName);
+    Cast<APawn>(AIActor)->AddMovementInput(FlyingPos);
     if(bCanSwitchDirection)
     {
         FTimerHandle DirectionChangeHandle;

@@ -1406,3 +1406,25 @@ LogConfig: Set CVar [[r.Shadow.DetectVertexShaderLayerAtRuntime:1]]
 [2025.01.14-19.30.05:193][311]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
 [2025.01.14-19.30.05:203][311]LogUObjectHash: Compacting FUObjectHashTables data took   2.15ms
 [2025.01.14-19.30.05:251][312]LogPlayLevel: Display: Destroying online subsystem :Context_8
+[2025.01.14-19.42.47:331][735]LogLiveCoding: Display: Starting Live Coding compile.
+[2025.01.14-19.43.25:916][851]Display: Reload/Re-instancing Complete: No object changes detected
+[2025.01.14-19.43.25:917][851]LogLiveCoding: Error: Live coding failed, please see Live console for more information
+[2025.01.14-19.44.28:854][ 39]LogLiveCoding: Display: Starting Live Coding compile.
+[2025.01.14-19.45.05:353][149]LogLiveCoding: Display:    Creating library C:\Users\Mikolaj\Documents\Unreal Projects\Cardslinger-Prototype\CardslingerPrototype\Binaries\Win64\UnrealEditor-CardslingerPrototype.patch_0.lib and object C:\Users\Mikolaj\Documents\Unreal Projects\Cardslinger-Prototype\CardslingerPrototype\Binaries\Win64\UnrealEditor-CardslingerPrototype.patch_0.exp
+[2025.01.14-19.45.06:325][150]LogClass: UPackage /Script/CardslingerPrototype Reload.
+[2025.01.14-19.45.06:327][150]LogClass: UClass BTTask_CircleTarget Reload.
+[2025.01.14-19.45.06:343][150]LogClass: Could not find existing class BTTask_CircleTarget in package /Script/CardslingerPrototype for reload, assuming new or modified class
+[2025.01.14-19.45.06:438][150]Re-instancing BTTask_CircleTarget after reload.
+[2025.01.14-19.45.06:765][150]LogUObjectHash: Compacting FUObjectHashTables data took   1.84ms
+[2025.01.14-19.45.08:155][151]LogAutomationController: Ignoring very large delta of 2.55 seconds in calls to FAutomationControllerManager::Tick() and not penalizing unresponsive tests
+[2025.01.14-19.45.08:159][151]Display: Reload/Re-instancing Complete: 1 package changed, 1 class changed, 32 classes unchanged, 40 functions remapped
+[2025.01.14-19.45.08:159][151]LogLiveCoding: Warning: Live coding succeeded, data type changes may cause packaging to fail if assets reference the new or updated data types
+[2025.01.14-19.45.54:125][665]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2025.01.14-19.45.54:271][665]LogSavePackage: Moving output files for package: /Game/AI/FlyingEnemy/BT_FlyingEnemy
+[2025.01.14-19.45.54:273][665]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/BT_FlyingEnemy68BCC20A49F90C9490739FAA42831D06.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/AI/FlyingEnemy/BT_FlyingEnemy.uasset'
+[2025.01.14-19.45.54:276][665]LogSavePackage: Moving output files for package: /Game/AI/FlyingEnemy/BB_FlyingEnemy
+[2025.01.14-19.45.54:277][665]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/BB_FlyingEnemy2826657549E23AD3F21ABF85009A3CB7.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/AI/FlyingEnemy/BB_FlyingEnemy.uasset'
+[2025.01.14-19.45.54:287][665]LogFileHelpers: InternalPromptForCheckoutAndSave took 163 ms (total: 394 ms)
+[2025.01.14-19.45.54:296][665]AssetCheck: New page: Asset Save: multiple assets
+[2025.01.14-19.45.54:296][665]LogContentValidation: Display: Validating /Script/AIModule.BehaviorTree /Game/AI/FlyingEnemy/BT_FlyingEnemy.BT_FlyingEnemy
+[2025.01.14-19.45.54:296][665]LogContentValidation: Display: Validating /Script/AIModule.BlackboardData /Game/AI/FlyingEnemy/BB_FlyingEnemy.BB_FlyingEnemy
