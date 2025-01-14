@@ -19,7 +19,8 @@ void AFlyingEnemy::BeginPlay()
 void AFlyingEnemy::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
-	float HeightMod = FMath::Sin(DeltaTime) * 10.0f;
+	RunTime += DeltaTime;
+	float HeightMod = FMath::Sin(RunTime) * 5.0f;
 	ThisController->GetBlackboardComponent()->SetValueAsFloat(TEXT("SineVar"), HeightMod);
 }
 

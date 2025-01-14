@@ -32,6 +32,8 @@ protected:
 
 	virtual bool HitTrace(FHitResult& Hit, FVector& ShotDirection) override;
 
+	float RunTime = 0.0f;
+
 public:
 	virtual void Tick(float DeltaTime) override;
 
