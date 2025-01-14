@@ -126,7 +126,7 @@ bool AFlyingEnemy::HitTrace(FHitResult& Hit, FVector& ShotDirection)
 	//aim shot at where the player is going to be based on movement (can be messy with short bursts of very fast movement)
 	if(bIsPredictiveAiming) ShotDirection = (PredictedLocation - ViewLocation).GetSafeNormal();
 	//otherwise shoot directly forward
-	else ShotDirection = ViewRotation.Vector();
+	else ShotDirection = PlayerLocation - ViewLocation;
 	//calculate end of linetrace to determine shot viability
 	FVector End = ViewLocation + ShotDirection * MaxRange;
 	//create parameter list for ignored actors (prevent wacky bullet collision)
