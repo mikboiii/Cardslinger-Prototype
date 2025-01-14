@@ -21,6 +21,8 @@ class CARDSLINGERPROTOTYPE_API UBTTask_CircleTarget : public UBTTask_BlackboardB
 		FBlackboardKeySelector TargetKey;
 		UPROPERTY(EditAnywhere, Category = Blackboard) 
 		FBlackboardKeySelector SineKey;
+		UPROPERTY(EditAnywhere, Category = Blackboard) 
+		FBlackboardKeySelector SpeedKey;
 
 	private:
 		virtual EBTNodeResult::Type ExecuteTask(UBehaviorTreeComponent& OwnerComp, uint8* NodeMemory) override;

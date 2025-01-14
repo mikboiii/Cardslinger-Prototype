@@ -33,6 +33,10 @@ void EmptyLinkFunctionForGeneratedCodeFlyingEnemy() {}
 		static const UECodeGen_Private::FMetaDataPairParam NewProp_tempBody_MetaData[];
 #endif
 		static const UECodeGen_Private::FObjectPropertyParams NewProp_tempBody;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_FlyingSpeedMod_MetaData[];
+#endif
+		static const UECodeGen_Private::FFloatPropertyParams NewProp_FlyingSpeedMod;
 		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UECodeGen_Private::FClassParams ClassParams;
@@ -60,8 +64,16 @@ void EmptyLinkFunctionForGeneratedCodeFlyingEnemy() {}
 	};
 #endif
 	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFlyingEnemy_Statics::NewProp_tempBody = { "tempBody", nullptr, (EPropertyFlags)0x0022080000080009, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AFlyingEnemy, tempBody), Z_Construct_UClass_UStaticMeshComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_AFlyingEnemy_Statics::NewProp_tempBody_MetaData), Z_Construct_UClass_AFlyingEnemy_Statics::NewProp_tempBody_MetaData) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFlyingEnemy_Statics::NewProp_FlyingSpeedMod_MetaData[] = {
+		{ "Category", "FlyingEnemy" },
+		{ "ModuleRelativePath", "FlyingEnemy.h" },
+	};
+#endif
+	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFlyingEnemy_Statics::NewProp_FlyingSpeedMod = { "FlyingSpeedMod", nullptr, (EPropertyFlags)0x0020080000000001, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AFlyingEnemy, FlyingSpeedMod), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_AFlyingEnemy_Statics::NewProp_FlyingSpeedMod_MetaData), Z_Construct_UClass_AFlyingEnemy_Statics::NewProp_FlyingSpeedMod_MetaData) };
 	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AFlyingEnemy_Statics::PropPointers[] = {
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFlyingEnemy_Statics::NewProp_tempBody,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFlyingEnemy_Statics::NewProp_FlyingSpeedMod,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_AFlyingEnemy_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<AFlyingEnemy>::IsAbstract,
@@ -101,9 +113,9 @@ void EmptyLinkFunctionForGeneratedCodeFlyingEnemy() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_FlyingEnemy_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_AFlyingEnemy, AFlyingEnemy::StaticClass, TEXT("AFlyingEnemy"), &Z_Registration_Info_UClass_AFlyingEnemy, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AFlyingEnemy), 564459365U) },
+		{ Z_Construct_UClass_AFlyingEnemy, AFlyingEnemy::StaticClass, TEXT("AFlyingEnemy"), &Z_Registration_Info_UClass_AFlyingEnemy, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AFlyingEnemy), 1202299423U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_FlyingEnemy_h_294707015(TEXT("/Script/CardslingerPrototype"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_FlyingEnemy_h_512398693(TEXT("/Script/CardslingerPrototype"),
 		Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_FlyingEnemy_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_FlyingEnemy_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);

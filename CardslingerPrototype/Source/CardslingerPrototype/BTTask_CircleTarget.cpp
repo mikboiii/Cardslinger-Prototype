@@ -31,6 +31,7 @@ void UBTTask_CircleTarget::CircleTarget(AActor* AIActor, AActor* PlayerActor, UB
     FRotator LookRotator = UKismetMathLibrary::FindLookAtRotation(AIActor->GetActorLocation(), PlayerActor->GetActorLocation());
     FVector FlyingPos = UKismetMathLibrary::GetRightVector(LookRotator) * DirectionMode;
     FlyingPos.Z += OwnerComp.GetBlackboardComponent()->GetValueAsFloat(SineKey.SelectedKeyName);
+    FlyingPos *= OwnerComp.GetBlackboardComponent()->GetValueAsFloat(SpeedKey.SelectedKeyName);
     Cast<APawn>(AIActor)->AddMovementInput(FlyingPos);
     if(bCanSwitchDirection)
     {

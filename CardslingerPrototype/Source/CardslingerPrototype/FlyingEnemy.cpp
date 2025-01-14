@@ -14,6 +14,7 @@ void AFlyingEnemy::BeginPlay()
 {
 	Super::BeginPlay();
 	ThisController = Cast<AFlyingAIController>(GetController());
+	ThisController->GetBlackboardComponent()->SetValueAsFloat(TEXT("SpeedMod"), FlyingSpeedMod);
 }
 
 void AFlyingEnemy::Tick(float DeltaTime)

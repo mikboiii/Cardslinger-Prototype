@@ -34,6 +34,9 @@ protected:
 
 	float RunTime = 0.0f;
 
+	UPROPERTY(EditAnywhere)
+	float FlyingSpeedMod = 2.0f;
+
 public:
 	virtual void Tick(float DeltaTime) override;
 
