@@ -55,13 +55,6 @@ void ABaseAIClass::Tick(float DeltaTime)
 
 }
 
-// Called to bind functionality to input
-void ABaseAIClass::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
-{
-	Super::SetupPlayerInputComponent(PlayerInputComponent);
-
-}
-
 float ABaseAIClass::TakeDamage(float DamageAmount, struct FDamageEvent const &DamageEvent, class AController *EventInstigator, AActor* DamageCauser)
 {
 	//call unreal damage code

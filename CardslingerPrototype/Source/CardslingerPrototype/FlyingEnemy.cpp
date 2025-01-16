@@ -84,6 +84,7 @@ void AFlyingEnemy::Shoot()
 	//add bullet to list of active bullets
 	ActiveBullets.Emplace(Projectile);
 	//spawn muzzle flash
+	UNiagaraFunctionLibrary::SpawnSystemAtLocation(GetWorld(), MuzzleFlash, GetActorLocation(), ShotDirection.Rotation(), FVector::One(), true, true, ENCPoolMethod::None, true);
 	}
 }
 
