@@ -34,6 +34,8 @@ protected:
 
 	float RunTime = 0.0f;
 
+	virtual void OnDeath() override;
+
 	UPROPERTY(EditAnywhere)
 	float FlyingSpeedMod = 2.0f;
 

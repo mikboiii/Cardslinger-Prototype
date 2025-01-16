@@ -13,7 +13,4 @@ UCLASS()
 class CARDSLINGERPROTOTYPE_API AShooterBasicEnemy : public ABaseAIClass
 {
 	GENERATED_BODY()
-
-	protected:
-		virtual float TakeDamage(float DamageAmount, struct FDamageEvent const &DamageEvent, class AController *EventInstigator, AActor* DamageCauser) override;
 };

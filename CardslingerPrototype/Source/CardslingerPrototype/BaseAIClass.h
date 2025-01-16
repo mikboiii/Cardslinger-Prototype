@@ -95,6 +95,8 @@ protected:
 	class UNiagaraSystem* MuzzleFlash;
 
 	virtual bool HitTrace(FHitResult& Hit, FVector& ShotDirection);
+
+	virtual void OnDeath();
 	
 	FTimerHandle RagdollReset;
 

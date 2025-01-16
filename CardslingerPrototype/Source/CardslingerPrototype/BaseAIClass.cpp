@@ -59,7 +59,30 @@ float ABaseAIClass::TakeDamage(float DamageAmount, struct FDamageEvent const &Da
 {
 	//call unreal damage code
     float DamageToApply = Super::TakeDamage(DamageAmount, DamageEvent, EventInstigator, EventInstigator);
+	Health -= Damage;
+	if(IsDead())
+	{
+		OnDeath();
+	}
     return DamageToApply;
+}
+
+void ABaseAIClass::OnDeath()
+{
+		//set health to zero
+        Health = 0.0f;
+		//get gamemode
+        ACardslingerTestGameMode* GameMode = GetWorld()->GetAuthGameMode<ACardslingerTestGameMode>();
+        if(GameMode != nullptr)
+        {
+			//if gamemode exists, report pawn as dead
+            GameMode->PawnKilled(this);
+        }
+		//disable collision on enemy (prevent collision with player)
+		GetCapsuleComponent()->SetCollisionEnabled(ECollisionEnabled::NoCollision);
+		GetMesh()->SetCollisionEnabled(ECollisionEnabled::NoCollision);
+		//remove ai controller
+        DetachFromControllerPendingDestroy();
 }
 
 bool ABaseAIClass::IsDead() const
