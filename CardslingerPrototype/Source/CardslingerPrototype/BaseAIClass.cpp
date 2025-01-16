@@ -66,27 +66,6 @@ float ABaseAIClass::TakeDamage(float DamageAmount, struct FDamageEvent const &Da
 {
 	//call unreal damage code
     float DamageToApply = Super::TakeDamage(DamageAmount, DamageEvent, EventInstigator, EventInstigator);
-	//reduce health
-    Health -= DamageToApply;
-
-    if(IsDead())
-    {
-		//set health to zero
-        Health = 0.0f;
-		//get gamemode
-        ACardslingerTestGameMode* GameMode = GetWorld()->GetAuthGameMode<ACardslingerTestGameMode>();
-        if(GameMode != nullptr)
-        {
-			//if gamemode exists, report pawn as dead
-            GameMode->PawnKilled(this);
-        }
-		//disable collision on enemy (prevent collision with player)
-		GetCapsuleComponent()->SetCollisionEnabled(ECollisionEnabled::NoCollision);
-		GetMesh()->SetCollisionEnabled(ECollisionEnabled::NoCollision);
-		//remove ai controller
-        DetachFromControllerPendingDestroy();
-        
-    }
     return DamageToApply;
 }
 
@@ -161,15 +140,6 @@ void ABaseAIClass::Shoot()
 	//only fire if the shot impacts something or if the enemies have predictive aiming (often aimed into empty space to track moving targets)
 	if(HitTrace(Hit, ShotDirection) || bIsPredictiveAiming)
 	{
-
-	//i honestly forgot what this code was for but i'm scared to get rid of it:
-	//UGameplayStatics::PlaySoundAtLocation(GetWorld(), ImpactSound, Hit.Location);
-	//FPointDamageEvent DamageEvent(Damage, Hit, ShotDirection, nullptr);
-	//AActor* HitActor = Hit.GetActor();
-	//if(HitActor == nullptr) return;
-	//HitActor->TakeDamage(Damage, DamageEvent, OwnerController, this);
-	//ShotDirection *= -1;
-
 	//get shot spawn location in world space
 	ShootLocation = GetMesh()->GetBoneLocation(TEXT("gun_barrel"), EBoneSpaces::WorldSpace);
 	//determine the upper and lower bound for aim variance
