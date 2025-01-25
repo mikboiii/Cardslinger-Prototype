@@ -13,16 +13,6 @@ void ABaseAIController::BeginPlay()
 
     PlayerPawn = UGameplayStatics::GetPlayerPawn(GetWorld(), 0);
 
-    if(AIBehavior != nullptr)
-    {
-        RunBehaviorTree(AIBehavior);
-        if(GetPawn()) 
-        {
-            GetBlackboardComponent()->SetValueAsVector(TEXT("StartLocation"), GetPawn()->GetActorLocation());
-            GetBlackboardComponent()->SetValueAsFloat(TEXT("FireCooldown"), Cast<ABaseAIClass>(GetPawn())->GetFireCooldown());
-        }
-    }
-
 }
 
 void ABaseAIController::Tick(float DeltaSeconds)

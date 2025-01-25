@@ -1467,3 +1467,96 @@ LogConfig: CVar [[LogNamedEventFilters:Frame *]] deferred - dummy variable creat
 [2025.01.25-17.32.28:841][828]LogUObjectHash: Compacting FUObjectHashTables data took   3.44ms
 [2025.01.25-17.32.30:168][829]Display: Reload/Re-instancing Complete: 1 package changed, 1 class new, 34 classes unchanged, 40 functions remapped
 [2025.01.25-17.32.30:169][829]LogLiveCoding: Warning: Live coding succeeded, data type changes may cause packaging to fail if assets reference the new or updated data types
+[2025.01.25-17.46.06:401][352]LogLiveCoding: Display: Starting Live Coding compile.
+[2025.01.25-17.46.42:865][462]Display: Reload/Re-instancing Complete: No object changes detected
+[2025.01.25-17.46.42:866][462]LogLiveCoding: Error: Live coding failed, please see Live console for more information
+[2025.01.25-17.51.00:046][233]LogLiveCoding: Display: Starting Live Coding compile.
+[2025.01.25-17.51.26:100][311]LogLiveCoding: Display:    Creating library C:\Users\Mikolaj\Documents\Unreal Projects\Cardslinger-Prototype\CardslingerPrototype\Binaries\Win64\UnrealEditor-CardslingerPrototype.patch_2.lib and object C:\Users\Mikolaj\Documents\Unreal Projects\Cardslinger-Prototype\CardslingerPrototype\Binaries\Win64\UnrealEditor-CardslingerPrototype.patch_2.exp
+[2025.01.25-17.51.27:971][312]LogClass: UPackage /Script/CardslingerPrototype Reload.
+[2025.01.25-17.51.27:971][312]LogClass: UClass BaseAIController Reload.
+[2025.01.25-17.51.27:979][312]LogClass: UClass FlyingAIController Reload.
+[2025.01.25-17.51.27:981][312]LogClass: UClass ShooterGruntAIController Reload.
+[2025.01.25-17.51.27:988][312]LogClass: Could not find existing class BaseAIController in package /Script/CardslingerPrototype for reload, assuming new or modified class
+[2025.01.25-17.51.28:061][312]LogClass: Could not find existing class FlyingAIController in package /Script/CardslingerPrototype for reload, assuming new or modified class
+[2025.01.25-17.51.28:083][312]LogClass: Could not find existing class ShooterGruntAIController in package /Script/CardslingerPrototype for reload, assuming new or modified class
+[2025.01.25-17.51.28:205][312]Re-instancing BaseAIController after reload.
+[2025.01.25-17.51.28:668][312]Re-instancing FlyingAIController after reload.
+[2025.01.25-17.51.28:748][312]Re-instancing ShooterGruntAIController after reload.
+[2025.01.25-17.51.29:598][312]LogUObjectHash: Compacting FUObjectHashTables data took   3.60ms
+[2025.01.25-17.51.31:225][313]Display: Reload/Re-instancing Complete: 1 package changed, 3 classes changed, 32 classes unchanged, 40 functions remapped
+[2025.01.25-17.51.31:225][313]LogLiveCoding: Warning: Live coding succeeded, data type changes may cause packaging to fail if assets reference the new or updated data types
+[2025.01.25-17.51.35:329][452]LogDebuggerCommands: Repeating last play command: Selected Viewport
+[2025.01.25-17.51.35:459][452]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2025.01.25-17.51.35:465][452]PIE: New page: PIE session: MovementLevel (25 Jan 2025, 17:51:35)
+[2025.01.25-17.51.35:471][452]LogPlayLevel: Creating play world package: /Game/Levels/UEDPIE_0_MovementLevel
+[2025.01.25-17.51.35:573][452]LogPlayLevel: PIE: StaticDuplicateObject took: (0.101523s)
+[2025.01.25-17.51.35:573][452]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Levels/MovementLevel.MovementLevel to /Game/Levels/UEDPIE_0_MovementLevel.MovementLevel (0.102176s)
+[2025.01.25-17.51.35:726][452]LogUObjectHash: Compacting FUObjectHashTables data took   5.27ms
+[2025.01.25-17.51.35:748][452]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2025.01.25-17.51.35:757][452]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2025.01.25-17.51.35:788][452]LogAIModule: Creating AISystem for world MovementLevel
+[2025.01.25-17.51.35:801][452]LogPlayLevel: PIE: World Init took: (0.061542s)
+[2025.01.25-17.51.35:806][452]LogAudio: Display: Creating Audio Device:                 Id: 5, Scope: Unique, Realtime: True
+[2025.01.25-17.51.35:809][452]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2025.01.25-17.51.35:809][452]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2025.01.25-17.51.35:810][452]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2025.01.25-17.51.35:810][452]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2025.01.25-17.51.35:810][452]LogAudioMixer: Display: 	Number of buffers to queue:			  1
+[2025.01.25-17.51.35:810][452]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2025.01.25-17.51.35:810][452]LogAudioMixer: Display: 	Number of Async Source Workers:		  4
+[2025.01.25-17.51.35:810][452]LogAudio: Display: AudioDevice MaxSources: 32
+[2025.01.25-17.51.35:814][452]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2025.01.25-17.51.35:815][452]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2025.01.25-17.51.35:815][452]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2025.01.25-17.51.35:823][452]LogAudioMixer: Display: Initializing audio mixer using platform API: 'XAudio2'
+[2025.01.25-17.51.35:958][452]LogAudioMixer: Display: Using Audio Hardware Device Speakers (Realtek(R) Audio)
+[2025.01.25-17.51.35:965][452]LogAudioMixer: Display: Initializing Sound Submixes...
+[2025.01.25-17.51.35:965][452]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2025.01.25-17.51.35:966][452]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2025.01.25-17.51.35:973][452]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called. InstanceID=5
+[2025.01.25-17.51.35:973][452]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048, InstanceID=5
+[2025.01.25-17.51.35:975][452]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=5
+[2025.01.25-17.51.35:976][452]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time. InstanceID=5
+[2025.01.25-17.51.35:976][452]LogInit: FAudioDevice initialized with ID 5.
+[2025.01.25-17.51.35:976][452]LogAudio: Display: Audio Device (ID: 5) registered with world 'MovementLevel'.
+[2025.01.25-17.51.35:976][452]LogAudioMixer: Initializing Audio Bus Subsystem for audio device with ID 5
+[2025.01.25-17.51.36:021][452]LogLoad: Game class is 'BP_CardslingerTestGameMode_C'
+[2025.01.25-17.51.36:081][452]LogWorld: Bringing World /Game/Levels/UEDPIE_0_MovementLevel.MovementLevel up for play (max tick rate 60) at 2025.01.25-17.51.36
+[2025.01.25-17.51.36:116][452]LogWorld: Bringing up level for play took: 0.093307
+[2025.01.25-17.51.36:134][452]LogOnline: OSS: Created online subsystem instance for: :Context_13
+[2025.01.25-17.51.36:180][452]LogViewport: Display: Viewport MouseCaptureMode Changed, CapturePermanently_IncludingInitialMouseDown -> CapturePermanently
+[2025.01.25-17.51.36:214][452]LogTemp: Display: ../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/CardDeck.sav
+[2025.01.25-17.51.36:214][452]LogTemp: Load successful!
+[2025.01.25-17.51.36:214][452]LogTemp: Save successful!
+[2025.01.25-17.51.36:219][452]PIE: Server logged in
+[2025.01.25-17.51.36:221][452]PIE: Play in editor total start time 0.858 seconds.
+[2025.01.25-17.51.43:816][888]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2025.01.25-17.51.43:816][888]LogWorld: BeginTearingDown for /Game/Levels/UEDPIE_0_MovementLevel
+[2025.01.25-17.51.43:821][888]LogWorld: UWorld::CleanupWorld for MovementLevel, bSessionEnded=true, bCleanupResources=true
+[2025.01.25-17.51.43:826][888]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.01.25-17.51.43:838][888]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2025.01.25-17.51.43:845][888]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.01.25-17.51.43:867][888]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2025.01.25-17.51.43:871][888]LogAudioMixer: Deinitializing Audio Bus Subsystem for audio device with ID 5
+[2025.01.25-17.51.43:871][888]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=5
+[2025.01.25-17.51.43:875][888]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=5
+[2025.01.25-17.51.43:933][888]LogUObjectHash: Compacting FUObjectHashTables data took   2.37ms
+[2025.01.25-17.51.43:995][889]LogPlayLevel: Display: Destroying online subsystem :Context_13
+[2025.01.25-17.52.03:960][ 23]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2025.01.25-17.52.03:978][ 23]LogShaderCompilers: Display: ================================================
+[2025.01.25-17.52.03:978][ 23]LogShaderCompilers: Display: === FShaderJobCache stats ===
+[2025.01.25-17.52.03:978][ 23]LogShaderCompilers: Display: Total job queries 118, among them cache hits 18 (15.25%)
+[2025.01.25-17.52.03:978][ 23]LogShaderCompilers: Display: Tracking 100 distinct input hashes that result in 79 distinct outputs (79.00%)
+[2025.01.25-17.52.03:978][ 23]LogShaderCompilers: Display: RAM used: 2.28 MiB of 819.20 MiB budget. Usage: 0.28%
+[2025.01.25-17.52.03:978][ 23]LogShaderCompilers: Display: === Shader Compilation stats ===
+[2025.01.25-17.52.03:979][ 23]LogShaderCompilers: Display: Shaders Compiled: 0
+[2025.01.25-17.52.03:979][ 23]LogShaderCompilers: Display: Jobs assigned 0, completed 0 (0%)
+[2025.01.25-17.52.03:979][ 23]LogShaderCompilers: Display: Time at least one job was in flight (either pending or executed): 0.00 s
+[2025.01.25-17.52.03:979][ 23]LogShaderCompilers: Display: ================================================
+[2025.01.25-17.52.04:101][ 27]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2025.01.25-17.52.04:236][ 33]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2025.01.25-17.53.33:204][278]LogWorld: UWorld::CleanupWorld for World_5, bSessionEnded=true, bCleanupResources=true
+[2025.01.25-17.53.33:204][278]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.01.25-17.53.33:264][278]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/AI/BP_BaseAIController.BP_BaseAIController
+[2025.01.25-17.53.33:266][278]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2025.01.25-17.53.33:267][278]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000

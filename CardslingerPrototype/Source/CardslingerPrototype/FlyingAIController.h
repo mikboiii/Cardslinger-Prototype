@@ -10,25 +10,17 @@
  * 
  */
 UCLASS()
-class CARDSLINGERPROTOTYPE_API AFlyingAIController : public AAIController
+class CARDSLINGERPROTOTYPE_API AFlyingAIController : public ABaseAIController
 {
 	GENERATED_BODY()
 	
 	public:
-		virtual void Tick(float DeltaSeconds) override;
-		bool IsDead() const;
 
 		class UBehaviorTree* GetBehaviorTree();
 
 	protected:
 		virtual void BeginPlay() override;
 
-	private:
-		APawn* PlayerPawn;
-
-
 		UPROPERTY(EditAnywhere)
 		float HoverDistFromPlayer = 1000.0f;
-		UPROPERTY(EditAnywhere)
-		class UBehaviorTree* AIBehavior;
 };

@@ -12,8 +12,6 @@ void AFlyingAIController::BeginPlay()
 {
     Super::BeginPlay();
 
-    PlayerPawn = UGameplayStatics::GetPlayerPawn(GetWorld(), 0);
-
     if(AIBehavior != nullptr)
     {
         RunBehaviorTree(AIBehavior);
@@ -24,24 +22,4 @@ void AFlyingAIController::BeginPlay()
         }
     }
 
-}
-
-void AFlyingAIController::Tick(float DeltaSeconds)
-{
-    Super::Tick(DeltaSeconds);
-}
-
-bool AFlyingAIController::IsDead() const
-{
-    AFlyingEnemy* ControlledCharacter = Cast<AFlyingEnemy>(GetPawn());
-    if(ControlledCharacter != nullptr)
-    {
-        return ControlledCharacter->IsDead();
-    }
-    return true;
-}
-
-UBehaviorTree* AFlyingAIController::GetBehaviorTree()
-{
-    return AIBehavior;
 }

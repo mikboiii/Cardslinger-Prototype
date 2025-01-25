@@ -13,5 +13,8 @@ UCLASS()
 class CARDSLINGERPROTOTYPE_API AShooterGruntAIController : public ABaseAIController
 {
 	GENERATED_BODY()
-	
+
+
+	protected:
+		virtual void BeginPlay() override;	
 };
