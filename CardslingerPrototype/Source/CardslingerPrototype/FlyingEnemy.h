@@ -13,13 +13,11 @@ UCLASS()
 class CARDSLINGERPROTOTYPE_API AFlyingEnemy : public ABaseAIClass
 {
 	GENERATED_BODY()
-
+public:
 	AFlyingEnemy();
 
 protected:
 	virtual void BeginPlay() override;
-
-	float TakeDamage(float DamageAmount, struct FDamageEvent const &DamageEvent, class AController *EventInstigator, AActor* DamageCauser) override;
 
 	UPROPERTY(EditAnywhere, Instanced)
 	UStaticMeshComponent* tempBody;

@@ -2,6 +2,8 @@
 
 
 #include "FlyingEnemy.h"
+#include "BehaviorTree/BlackboardComponent.h"
+#include "BehaviorTree/BehaviorTreeComponent.h"
 #include "FlyingAIController.h"
 
 AFlyingEnemy::AFlyingEnemy()
