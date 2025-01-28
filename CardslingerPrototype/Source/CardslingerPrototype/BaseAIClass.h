@@ -97,6 +97,8 @@ protected:
 	virtual bool HitTrace(FHitResult& Hit, FVector& ShotDirection);
 
 	virtual void OnDeath();
+
+	virtual void AimShot(FVector& ShotDir);
 	
 	FTimerHandle RagdollReset;
 

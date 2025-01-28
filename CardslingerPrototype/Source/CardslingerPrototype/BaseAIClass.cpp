@@ -156,18 +156,7 @@ void ABaseAIClass::Shoot()
 	//only fire if the shot impacts something or if the enemies have predictive aiming (often aimed into empty space to track moving targets)
 	if(HitTrace(Hit, ShotDirection) || bIsPredictiveAiming)
 	{
-	//get shot spawn location in world space
-	ShootLocation = GetMesh()->GetBoneLocation(TEXT("gun_barrel"), EBoneSpaces::WorldSpace);
-	//determine the upper and lower bound for aim variance
-	float LowerBound = 1 - AccuracyModifier;
-	float UpperBound = 1 + AccuracyModifier;
-	//create aim offset to mimic innacuracy
-	FVector RandomAimOffset = FVector(FMath::RandRange(LowerBound,UpperBound), 
-	FMath::RandRange(LowerBound,UpperBound), 
-	FMath::RandRange(LowerBound,UpperBound));
-	//apply aim variance
-	ShotDirection *= RandomAimOffset;
-	//spawn bullet and apply transform
+	AimShot(ShotDirection);
 	AEnemyProjectile* Projectile = GetWorld()->SpawnActor<AEnemyProjectile>(Bullet, ShootLocation, ShotDirection.Rotation());
 	//apply velocity to the bullet
 	Projectile->SetBulletSpeed(BulletSpeed);
@@ -180,6 +169,22 @@ void ABaseAIClass::Shoot()
 	//spawn muzzle flash
 	UNiagaraFunctionLibrary::SpawnSystemAtLocation(GetWorld(), MuzzleFlash, GetMesh()->GetBoneLocation(TEXT("gun_barrel")), ShotDirection.Rotation(), FVector::One(), true, true, ENCPoolMethod::None, true);
 	}
+}
+
+void ABaseAIClass::AimShot(FVector& ShotDir) 
+{
+ 	//get shot spawn location in world space
+	ShootLocation = GetMesh()->GetBoneLocation(TEXT("gun_barrel"), EBoneSpaces::WorldSpace);
+	//determine the upper and lower bound for aim variance
+	float LowerBound = 1 - AccuracyModifier;
+	float UpperBound = 1 + AccuracyModifier;
+	//create aim offset to mimic innacuracy
+	FVector RandomAimOffset = FVector(FMath::RandRange(LowerBound,UpperBound), 
+	FMath::RandRange(LowerBound,UpperBound), 
+	FMath::RandRange(LowerBound,UpperBound));
+	//apply aim variance
+	ShotDir *= RandomAimOffset;
+	//spawn bullet and apply transform
 }
 
 void ABaseAIClass::SetRagdollMode(bool bIsRagdollMode, float RagdollTime=2.0f)
