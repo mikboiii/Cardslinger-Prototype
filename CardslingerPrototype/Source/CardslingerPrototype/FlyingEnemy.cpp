@@ -49,6 +49,21 @@ void AFlyingEnemy::AimShot(FVector& ShotLoc, FVector& ShotDir)
 	//spawn bullet and apply transform
 }
 
+void AFlyingEnemy::SpawnShot(FVector ShotLoc, FVector ShotDir)
+{
+	AEnemyProjectile* Projectile = GetWorld()->SpawnActor<AEnemyProjectile>(Bullet, ShotLoc, ShotDir.Rotation());
+	//apply velocity to the bullet
+	Projectile->SetBulletSpeed(BulletSpeed);
+	//if slow shader is active, enable slow effect for bullet
+	if(GetComponentByClass<UPostProcessComponent>()->bEnabled) Projectile->EnableSlowEffect(true, GetActorTimeDilation());
+	//set owner of bullet to this enemy
+	Projectile->SetOwnerClass(this);
+	//add bullet to list of active bullets
+	ActiveBullets.Emplace(Projectile);
+	//spawn muzzle flash
+	UNiagaraFunctionLibrary::SpawnSystemAtLocation(GetWorld(), MuzzleFlash, ShotLoc, ShotDir.Rotation(), FVector::One(), true, true, ENCPoolMethod::None, true);
+}
+
 void AFlyingEnemy::ShootMultiple()
 {
 	if(bCanShoot)

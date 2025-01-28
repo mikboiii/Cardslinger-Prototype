@@ -26,6 +26,8 @@ protected:
 
 	virtual void AimShot(FVector& ShotLoc, FVector& ShotDir) override;
 
+	virtual void SpawnShot(FVector ShotLoc, FVector ShotDir) override;
+
 	virtual void ShootMultiple() override;
 
 	virtual bool HitTrace(FHitResult& Hit, FVector& ShotDirection) override;
