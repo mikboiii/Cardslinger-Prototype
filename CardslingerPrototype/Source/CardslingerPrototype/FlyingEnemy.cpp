@@ -33,10 +33,10 @@ void AFlyingEnemy::OnDeath()
 	tempBody->SetSimulatePhysics(true);
 }
 
-void AFlyingEnemy::AimShot(FVector& ShotDir) 
+void AFlyingEnemy::AimShot(FVector& ShotLoc, FVector& ShotDir) 
 {
  	//get shot spawn location in world space
-	ShootLocation = GetActorLocation() + (GetActorForwardVector() * 100.0f);
+	ShotLoc = GetActorLocation() + (GetActorForwardVector() * 100.0f);
 	//determine the upper and lower bound for aim variance
 	float LowerBound = 1 - AccuracyModifier;
 	float UpperBound = 1 + AccuracyModifier;

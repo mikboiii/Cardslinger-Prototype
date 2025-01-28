@@ -150,31 +150,23 @@ void ABaseAIClass::Shoot()
 {
 	FHitResult Hit;
 	FVector ShotDirection;
+	FVector ShootLocation;
 	AController* OwnerController = GetController();
 	//error catch
 	if(OwnerController == nullptr) return;
 	//only fire if the shot impacts something or if the enemies have predictive aiming (often aimed into empty space to track moving targets)
 	if(HitTrace(Hit, ShotDirection) || bIsPredictiveAiming)
 	{
-	AimShot(ShotDirection);
-	AEnemyProjectile* Projectile = GetWorld()->SpawnActor<AEnemyProjectile>(Bullet, ShootLocation, ShotDirection.Rotation());
-	//apply velocity to the bullet
-	Projectile->SetBulletSpeed(BulletSpeed);
-	//if slow shader is active, enable slow effect for bullet
-	if(GetComponentByClass<UPostProcessComponent>()->bEnabled) Projectile->EnableSlowEffect(true, GetActorTimeDilation());
-	//set owner of bullet to this enemy
-	Projectile->SetOwnerClass(this);
-	//add bullet to list of active bullets
-	ActiveBullets.Emplace(Projectile);
-	//spawn muzzle flash
-	UNiagaraFunctionLibrary::SpawnSystemAtLocation(GetWorld(), MuzzleFlash, GetMesh()->GetBoneLocation(TEXT("gun_barrel")), ShotDirection.Rotation(), FVector::One(), true, true, ENCPoolMethod::None, true);
+	AimShot(ShootLocation, ShotDirection);
+	
+	SpawnShot(ShootLocation, ShotDirection);
 	}
 }
 
-void ABaseAIClass::AimShot(FVector& ShotDir) 
+void ABaseAIClass::AimShot(FVector& ShotLoc, FVector& ShotDir) 
 {
  	//get shot spawn location in world space
-	ShootLocation = GetMesh()->GetBoneLocation(TEXT("gun_barrel"), EBoneSpaces::WorldSpace);
+	ShotLoc = GetMesh()->GetBoneLocation(TEXT("gun_barrel"), EBoneSpaces::WorldSpace);
 	//determine the upper and lower bound for aim variance
 	float LowerBound = 1 - AccuracyModifier;
 	float UpperBound = 1 + AccuracyModifier;
@@ -185,6 +177,21 @@ void ABaseAIClass::AimShot(FVector& ShotDir)
 	//apply aim variance
 	ShotDir *= RandomAimOffset;
 	//spawn bullet and apply transform
+}
+
+void ABaseAIClass::SpawnShot(FVector ShotLoc, FVector ShotDir)
+{
+	AEnemyProjectile* Projectile = GetWorld()->SpawnActor<AEnemyProjectile>(Bullet, ShotLoc, ShotDir.Rotation());
+	//apply velocity to the bullet
+	Projectile->SetBulletSpeed(BulletSpeed);
+	//if slow shader is active, enable slow effect for bullet
+	if(GetComponentByClass<UPostProcessComponent>()->bEnabled) Projectile->EnableSlowEffect(true, GetActorTimeDilation());
+	//set owner of bullet to this enemy
+	Projectile->SetOwnerClass(this);
+	//add bullet to list of active bullets
+	ActiveBullets.Emplace(Projectile);
+	//spawn muzzle flash
+	UNiagaraFunctionLibrary::SpawnSystemAtLocation(GetWorld(), MuzzleFlash, GetMesh()->GetBoneLocation(TEXT("gun_barrel")), ShotDir.Rotation(), FVector::One(), true, true, ENCPoolMethod::None, true);
 }
 
 void ABaseAIClass::SetRagdollMode(bool bIsRagdollMode, float RagdollTime=2.0f)

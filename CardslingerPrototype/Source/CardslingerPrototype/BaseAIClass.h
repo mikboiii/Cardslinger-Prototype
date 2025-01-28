@@ -37,8 +37,6 @@ public:
 
 	virtual void ShootMultiple();
 
-	FVector ShootLocation;
-
 	float GetFireCooldown();
 
 	void RemoveProjectile(class AEnemyProjectile* Projectile);
@@ -98,7 +96,9 @@ protected:
 
 	virtual void OnDeath();
 
-	virtual void AimShot(FVector& ShotDir);
+	virtual void AimShot(FVector& ShotLoc, FVector& ShotDir);
+
+	virtual void SpawnShot(FVector ShotLoc, FVector ShotDir);
 	
 	FTimerHandle RagdollReset;
 
