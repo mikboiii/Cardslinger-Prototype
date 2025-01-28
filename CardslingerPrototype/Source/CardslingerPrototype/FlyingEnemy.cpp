@@ -33,18 +33,9 @@ void AFlyingEnemy::OnDeath()
 	tempBody->SetSimulatePhysics(true);
 }
 
-void AFlyingEnemy::Shoot()
+void AFlyingEnemy::AimShot(FVector& ShotDir) 
 {
-	FHitResult Hit;
-	FVector ShotDirection;
-	AController* OwnerController = GetController();
-	//error catch
-	if(OwnerController == nullptr) return;
-	//only fire if the shot impacts something or if the enemies have predictive aiming (often aimed into empty space to track moving targets)
-	if(HitTrace(Hit, ShotDirection) || bIsPredictiveAiming)
-	{
-
-	//get shot spawn location in world space
+ 	//get shot spawn location in world space
 	ShootLocation = GetActorLocation() + (GetActorForwardVector() * 100.0f);
 	//determine the upper and lower bound for aim variance
 	float LowerBound = 1 - AccuracyModifier;
@@ -54,20 +45,8 @@ void AFlyingEnemy::Shoot()
 	FMath::RandRange(LowerBound,UpperBound), 
 	FMath::RandRange(LowerBound,UpperBound));
 	//apply aim variance
-	ShotDirection *= RandomAimOffset;
+	ShotDir *= RandomAimOffset;
 	//spawn bullet and apply transform
-	AEnemyProjectile* Projectile = GetWorld()->SpawnActor<AEnemyProjectile>(Bullet, ShootLocation, ShotDirection.Rotation());
-	//apply velocity to the bullet
-	Projectile->SetBulletSpeed(BulletSpeed);
-	//if slow shader is active, enable slow effect for bullet
-	//if(GetComponentByClass<UPostProcessComponent>()->bEnabled) Projectile->EnableSlowEffect(true, GetActorTimeDilation());
-	//set owner of bullet to this enemy
-	Projectile->SetOwnerClass(this);
-	//add bullet to list of active bullets
-	ActiveBullets.Emplace(Projectile);
-	//spawn muzzle flash
-	UNiagaraFunctionLibrary::SpawnSystemAtLocation(GetWorld(), MuzzleFlash, GetActorLocation(), ShotDirection.Rotation(), FVector::One(), true, true, ENCPoolMethod::None, true);
-	}
 }
 
 void AFlyingEnemy::ShootMultiple()

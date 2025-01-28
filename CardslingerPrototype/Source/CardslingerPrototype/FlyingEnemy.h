@@ -24,7 +24,7 @@ protected:
 
 	AFlyingAIController* ThisController;
 
-	virtual void Shoot() override;
+	virtual void AimShot(FVector& ShotDir) override;
 
 	virtual void ShootMultiple() override;
 
