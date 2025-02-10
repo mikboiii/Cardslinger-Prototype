@@ -13,4 +13,7 @@ UCLASS()
 class CARDSLINGERPROTOTYPE_API AShooterBasicEnemy : public ABaseAIClass
 {
 	GENERATED_BODY()
+
+protected:
+	virtual void AimShot(FVector& ShotLoc, FVector& ShotDir) override;
 };

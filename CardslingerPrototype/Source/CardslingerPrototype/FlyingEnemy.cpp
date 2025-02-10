@@ -35,18 +35,11 @@ void AFlyingEnemy::OnDeath()
 
 void AFlyingEnemy::AimShot(FVector& ShotLoc, FVector& ShotDir) 
 {
+
+	Super::AimShot(ShotLoc, ShotDir);
+	
  	//get shot spawn location in world space
 	ShotLoc = GetActorLocation() + (GetActorForwardVector() * 100.0f);
-	//determine the upper and lower bound for aim variance
-	float LowerBound = 1 - AccuracyModifier;
-	float UpperBound = 1 + AccuracyModifier;
-	//create aim offset to mimic innacuracy
-	FVector RandomAimOffset = FVector(FMath::RandRange(LowerBound,UpperBound), 
-	FMath::RandRange(LowerBound,UpperBound), 
-	FMath::RandRange(LowerBound,UpperBound));
-	//apply aim variance
-	ShotDir *= RandomAimOffset;
-	//spawn bullet and apply transform
 }
 
 void AFlyingEnemy::SpawnShot(FVector ShotLoc, FVector ShotDir)
