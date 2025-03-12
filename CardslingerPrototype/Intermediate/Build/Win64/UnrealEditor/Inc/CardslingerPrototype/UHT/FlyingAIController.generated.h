@@ -24,7 +24,7 @@ private: \
 	static void StaticRegisterNativesAFlyingAIController(); \
 	friend struct Z_Construct_UClass_AFlyingAIController_Statics; \
 public: \
-	DECLARE_CLASS(AFlyingAIController, AAIController, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/CardslingerPrototype"), NO_API) \
+	DECLARE_CLASS(AFlyingAIController, ABaseAIController, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/CardslingerPrototype"), NO_API) \
 	DECLARE_SERIALIZER(AFlyingAIController)
 
 

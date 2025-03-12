@@ -55,22 +55,20 @@ void ABaseAIClass::Tick(float DeltaTime)
 
 }
 
-// Called to bind functionality to input
-void ABaseAIClass::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
-{
-	Super::SetupPlayerInputComponent(PlayerInputComponent);
-
-}
-
 float ABaseAIClass::TakeDamage(float DamageAmount, struct FDamageEvent const &DamageEvent, class AController *EventInstigator, AActor* DamageCauser)
 {
 	//call unreal damage code
     float DamageToApply = Super::TakeDamage(DamageAmount, DamageEvent, EventInstigator, EventInstigator);
-	//reduce health
-    Health -= DamageToApply;
+	Health -= Damage;
+	if(IsDead())
+	{
+		OnDeath();
+	}
+    return DamageToApply;
+}
 
-    if(IsDead())
-    {
+void ABaseAIClass::OnDeath()
+{
 		//set health to zero
         Health = 0.0f;
 		//get gamemode
@@ -85,9 +83,6 @@ float ABaseAIClass::TakeDamage(float DamageAmount, struct FDamageEvent const &Da
 		GetMesh()->SetCollisionEnabled(ECollisionEnabled::NoCollision);
 		//remove ai controller
         DetachFromControllerPendingDestroy();
-        
-    }
-    return DamageToApply;
 }
 
 bool ABaseAIClass::IsDead() const
@@ -155,23 +150,23 @@ void ABaseAIClass::Shoot()
 {
 	FHitResult Hit;
 	FVector ShotDirection;
+	FVector ShootLocation;
 	AController* OwnerController = GetController();
 	//error catch
 	if(OwnerController == nullptr) return;
 	//only fire if the shot impacts something or if the enemies have predictive aiming (often aimed into empty space to track moving targets)
 	if(HitTrace(Hit, ShotDirection) || bIsPredictiveAiming)
 	{
+	AimShot(ShootLocation, ShotDirection);
+	
+	SpawnShot(ShootLocation, ShotDirection);
+	}
+}
 
-	//i honestly forgot what this code was for but i'm scared to get rid of it:
-	//UGameplayStatics::PlaySoundAtLocation(GetWorld(), ImpactSound, Hit.Location);
-	//FPointDamageEvent DamageEvent(Damage, Hit, ShotDirection, nullptr);
-	//AActor* HitActor = Hit.GetActor();
-	//if(HitActor == nullptr) return;
-	//HitActor->TakeDamage(Damage, DamageEvent, OwnerController, this);
-	//ShotDirection *= -1;
-
-	//get shot spawn location in world space
-	ShootLocation = GetMesh()->GetBoneLocation(TEXT("gun_barrel"), EBoneSpaces::WorldSpace);
+void ABaseAIClass::AimShot(FVector& ShotLoc, FVector& ShotDir) 
+{
+ 	//get shot spawn location in world space
+	ShotLoc = GetMesh()->GetBoneLocation(TEXT("gun_barrel"), EBoneSpaces::WorldSpace);
 	//determine the upper and lower bound for aim variance
 	float LowerBound = 1 - AccuracyModifier;
 	float UpperBound = 1 + AccuracyModifier;
@@ -180,9 +175,13 @@ void ABaseAIClass::Shoot()
 	FMath::RandRange(LowerBound,UpperBound), 
 	FMath::RandRange(LowerBound,UpperBound));
 	//apply aim variance
-	ShotDirection *= RandomAimOffset;
+	ShotDir *= RandomAimOffset;
 	//spawn bullet and apply transform
-	AEnemyProjectile* Projectile = GetWorld()->SpawnActor<AEnemyProjectile>(Bullet, ShootLocation, ShotDirection.Rotation());
+}
+
+void ABaseAIClass::SpawnShot(FVector ShotLoc, FVector ShotDir)
+{
+	AEnemyProjectile* Projectile = GetWorld()->SpawnActor<AEnemyProjectile>(Bullet, ShotLoc, ShotDir.Rotation());
 	//apply velocity to the bullet
 	Projectile->SetBulletSpeed(BulletSpeed);
 	//if slow shader is active, enable slow effect for bullet
@@ -192,8 +191,7 @@ void ABaseAIClass::Shoot()
 	//add bullet to list of active bullets
 	ActiveBullets.Emplace(Projectile);
 	//spawn muzzle flash
-	UNiagaraFunctionLibrary::SpawnSystemAtLocation(GetWorld(), MuzzleFlash, GetMesh()->GetBoneLocation(TEXT("gun_barrel")), ShotDirection.Rotation(), FVector::One(), true, true, ENCPoolMethod::None, true);
-	}
+	UNiagaraFunctionLibrary::SpawnSystemAtLocation(GetWorld(), MuzzleFlash, GetMesh()->GetBoneLocation(TEXT("gun_barrel")), ShotDir.Rotation(), FVector::One(), true, true, ENCPoolMethod::None, true);
 }
 
 void ABaseAIClass::SetRagdollMode(bool bIsRagdollMode, float RagdollTime=2.0f)

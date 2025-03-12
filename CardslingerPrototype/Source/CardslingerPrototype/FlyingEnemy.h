@@ -13,26 +13,28 @@ UCLASS()
 class CARDSLINGERPROTOTYPE_API AFlyingEnemy : public ABaseAIClass
 {
 	GENERATED_BODY()
-
+public:
 	AFlyingEnemy();
 
 protected:
 	virtual void BeginPlay() override;
-
-	float TakeDamage(float DamageAmount, struct FDamageEvent const &DamageEvent, class AController *EventInstigator, AActor* DamageCauser) override;
 
 	UPROPERTY(EditAnywhere, Instanced)
 	UStaticMeshComponent* tempBody;
 
 	AFlyingAIController* ThisController;
 
-	virtual void Shoot() override;
+	virtual void AimShot(FVector& ShotLoc, FVector& ShotDir) override;
+
+	virtual void SpawnShot(FVector ShotLoc, FVector ShotDir) override;
 
 	virtual void ShootMultiple() override;
 
 	virtual bool HitTrace(FHitResult& Hit, FVector& ShotDirection) override;
 
 	float RunTime = 0.0f;
+
+	virtual void OnDeath() override;
 
 	UPROPERTY(EditAnywhere)
 	float FlyingSpeedMod = 2.0f;

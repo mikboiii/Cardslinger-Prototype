@@ -23,10 +23,7 @@ public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
-	// Called to bind functionality to input
-	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
-
-	float TakeDamage(float DamageAmount, struct FDamageEvent const &DamageEvent, class AController *EventInstigator, AActor* DamageCauser) override;
+	virtual float TakeDamage(float DamageAmount, struct FDamageEvent const &DamageEvent, class AController *EventInstigator, AActor* DamageCauser) override;
 
 	void EnableSlowEffect(bool bIsSlow, float TimeSlowed);
 
@@ -39,8 +36,6 @@ public:
 	virtual void Shoot();
 
 	virtual void ShootMultiple();
-
-	FVector ShootLocation;
 
 	float GetFireCooldown();
 
@@ -98,6 +93,12 @@ protected:
 	class UNiagaraSystem* MuzzleFlash;
 
 	virtual bool HitTrace(FHitResult& Hit, FVector& ShotDirection);
+
+	virtual void OnDeath();
+
+	virtual void AimShot(FVector& ShotLoc, FVector& ShotDir);
+
+	virtual void SpawnShot(FVector ShotLoc, FVector ShotDir);
 	
 	FTimerHandle RagdollReset;
 

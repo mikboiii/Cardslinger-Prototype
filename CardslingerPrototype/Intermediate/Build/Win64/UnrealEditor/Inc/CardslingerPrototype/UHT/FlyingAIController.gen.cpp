@@ -9,8 +9,7 @@
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCodeFlyingAIController() {}
 // Cross Module References
-	AIMODULE_API UClass* Z_Construct_UClass_AAIController();
-	AIMODULE_API UClass* Z_Construct_UClass_UBehaviorTree_NoRegister();
+	CARDSLINGERPROTOTYPE_API UClass* Z_Construct_UClass_ABaseAIController();
 	CARDSLINGERPROTOTYPE_API UClass* Z_Construct_UClass_AFlyingAIController();
 	CARDSLINGERPROTOTYPE_API UClass* Z_Construct_UClass_AFlyingAIController_NoRegister();
 	UPackage* Z_Construct_UPackage__Script_CardslingerPrototype();
@@ -33,16 +32,12 @@ void EmptyLinkFunctionForGeneratedCodeFlyingAIController() {}
 		static const UECodeGen_Private::FMetaDataPairParam NewProp_HoverDistFromPlayer_MetaData[];
 #endif
 		static const UECodeGen_Private::FFloatPropertyParams NewProp_HoverDistFromPlayer;
-#if WITH_METADATA
-		static const UECodeGen_Private::FMetaDataPairParam NewProp_AIBehavior_MetaData[];
-#endif
-		static const UECodeGen_Private::FObjectPropertyParams NewProp_AIBehavior;
 		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UECodeGen_Private::FClassParams ClassParams;
 	};
 	UObject* (*const Z_Construct_UClass_AFlyingAIController_Statics::DependentSingletons[])() = {
-		(UObject* (*)())Z_Construct_UClass_AAIController,
+		(UObject* (*)())Z_Construct_UClass_ABaseAIController,
 		(UObject* (*)())Z_Construct_UPackage__Script_CardslingerPrototype,
 	};
 	static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_AFlyingAIController_Statics::DependentSingletons) < 16);
@@ -62,17 +57,9 @@ void EmptyLinkFunctionForGeneratedCodeFlyingAIController() {}
 		{ "ModuleRelativePath", "FlyingAIController.h" },
 	};
 #endif
-	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFlyingAIController_Statics::NewProp_HoverDistFromPlayer = { "HoverDistFromPlayer", nullptr, (EPropertyFlags)0x0040000000000001, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AFlyingAIController, HoverDistFromPlayer), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_AFlyingAIController_Statics::NewProp_HoverDistFromPlayer_MetaData), Z_Construct_UClass_AFlyingAIController_Statics::NewProp_HoverDistFromPlayer_MetaData) };
-#if WITH_METADATA
-	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFlyingAIController_Statics::NewProp_AIBehavior_MetaData[] = {
-		{ "Category", "FlyingAIController" },
-		{ "ModuleRelativePath", "FlyingAIController.h" },
-	};
-#endif
-	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFlyingAIController_Statics::NewProp_AIBehavior = { "AIBehavior", nullptr, (EPropertyFlags)0x0040000000000001, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AFlyingAIController, AIBehavior), Z_Construct_UClass_UBehaviorTree_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_AFlyingAIController_Statics::NewProp_AIBehavior_MetaData), Z_Construct_UClass_AFlyingAIController_Statics::NewProp_AIBehavior_MetaData) };
+	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AFlyingAIController_Statics::NewProp_HoverDistFromPlayer = { "HoverDistFromPlayer", nullptr, (EPropertyFlags)0x0020080000000001, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AFlyingAIController, HoverDistFromPlayer), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_AFlyingAIController_Statics::NewProp_HoverDistFromPlayer_MetaData), Z_Construct_UClass_AFlyingAIController_Statics::NewProp_HoverDistFromPlayer_MetaData) };
 	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AFlyingAIController_Statics::PropPointers[] = {
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFlyingAIController_Statics::NewProp_HoverDistFromPlayer,
-		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFlyingAIController_Statics::NewProp_AIBehavior,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_AFlyingAIController_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<AFlyingAIController>::IsAbstract,
@@ -113,9 +100,9 @@ void EmptyLinkFunctionForGeneratedCodeFlyingAIController() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_FlyingAIController_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_AFlyingAIController, AFlyingAIController::StaticClass, TEXT("AFlyingAIController"), &Z_Registration_Info_UClass_AFlyingAIController, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AFlyingAIController), 3760918026U) },
+		{ Z_Construct_UClass_AFlyingAIController, AFlyingAIController::StaticClass, TEXT("AFlyingAIController"), &Z_Registration_Info_UClass_AFlyingAIController, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AFlyingAIController), 718232556U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_FlyingAIController_h_3291931472(TEXT("/Script/CardslingerPrototype"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_FlyingAIController_h_4105217570(TEXT("/Script/CardslingerPrototype"),
 		Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_FlyingAIController_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_FlyingAIController_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);
