@@ -18,6 +18,8 @@ class CARDSLINGERPROTOTYPE_API ALightningProjectileCard : public AProjectileCard
 
 	class ABaseAIClass* FindClosestEnemy();
 
+	void ChainLightning(const FHitResult& Hit);
+
 private:
 	//the damage that the lighting deals
 	UPROPERTY(EditAnywhere)
@@ -25,11 +27,15 @@ private:
 
 	//the reduction of chain damage between targets
 	UPROPERTY(EditAnywhere)
-	float CardDamageReduction = 10.0f;
+	float ChainDamageReduction = 10.0f;
 
 	//the distance the lightning can chain to
 	UPROPERTY(EditAnywhere)
-	float CardChainDistance = 300.0f;
+	float CardChainDistance = 600.0f;
+
+	//the reduction of chain range between targets
+	UPROPERTY(EditAnywhere)
+	float ChainRangeReduction = 100.0f;
 
 	// amount of times the lightning can chain between enemies
 	UPROPERTY(EditAnywhere)
@@ -44,7 +50,7 @@ private:
 
 	AActor* closestEnemy;
 
-	class ABaseAIClass* enemyTarget;
+	class ABaseAIClass* target;
 
 	TArray<AActor*> EnemyTargets;
 };

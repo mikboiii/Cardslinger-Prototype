@@ -11,22 +11,39 @@
 
 void ALightningProjectileCard::OnHit(UPrimitiveComponent* HitComponent, AActor* OtherActor, UPrimitiveComponent* OtherComponent, FVector NormalImpulse, const FHitResult& Hit)
 {
-    enemyTarget = FindClosestEnemy();
-    if (enemyTarget)
+    ChainLightning(Hit);       
+    DestroyCard();
+}
+
+void ALightningProjectileCard::ChainLightning(const FHitResult& Hit)
+{
+    AActor* CurrentSource = this;
+    float currentDamage = CardLightningDamage;
+    float currentRange = CardChainDistance;
+
+    for (int32 Chains = 0; Chains < CardLightningChains; Chains++)
     {
-        UE_LOG(LogTemp, Log, TEXT("%f"), enemyTarget->GetActorLocation());
-        UE_LOG(LogTemp, Log, TEXT("Target = %s"), *enemyTarget->GetActorNameOrLabel());
+        target = FindClosestEnemy();
+        if (!target) break;
 
         // Add enemy to hit list
-        HitEnemies.Add(enemyTarget);
+        HitEnemies.Add(target);
+
+        DrawDebugLine(GetWorld(), CurrentSource->GetActorLocation(), target->GetActorLocation(), FColor::Yellow, false, 1000.0f);
 
         //create unreal damage event
         FPointDamageEvent DamageEvent(CardDamage, Hit, -GetActorForwardVector(), nullptr);
         //apply damage to target
-        enemyTarget->TakeDamage(CardLightningDamage, DamageEvent, enemyTarget->GetController(), this);
+        target->TakeDamage(CardLightningDamage, DamageEvent, target->GetController(), this);
+
+        // Reduce damage and range after chaining between
+        currentDamage = currentDamage - ChainDamageReduction;
+        currentRange = currentRange - ChainRangeReduction;
+        CurrentSource = target;
     }
-    DestroyCard();
 }
+
+
 
 ABaseAIClass* ALightningProjectileCard::FindClosestEnemy()
 {
@@ -59,8 +76,8 @@ ABaseAIClass* ALightningProjectileCard::FindClosestEnemy()
                 Closest = selectedEnemy;
                 closestDist = ClosestDistanceSq;
 
-                DrawDebugLine(GetWorld(), GetActorLocation(), selectedEnemy->GetActorLocation(), FColor::Red, false, 1000.0f);
-            }
+            }                //DrawDebugLine(GetWorld(), GetActorLocation(), selectedEnemy->GetActorLocation(), FColor::Red, false, 1000.0f);
+
         }
         // Cast the closestEnemy found from the loop to be the first lightning target
         /*ABaseAIClass* lightningTarget = Cast<ABaseAIClass>(closestEnemy);
@@ -68,6 +85,6 @@ ABaseAIClass* ALightningProjectileCard::FindClosestEnemy()
         return Cast<ABaseAIClass>(Closest);
     }
     return nullptr;
-};
+}
 
 
