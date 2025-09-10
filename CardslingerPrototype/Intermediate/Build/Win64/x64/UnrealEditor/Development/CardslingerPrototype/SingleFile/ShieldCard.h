@@ -1,0 +1,1 @@
+#include "G:/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Source/CardslingerPrototype/ShieldCard.h"

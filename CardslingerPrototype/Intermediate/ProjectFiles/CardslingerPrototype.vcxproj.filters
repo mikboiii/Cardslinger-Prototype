@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="..\..\CardslingerPrototype.uproject" />
+    <Filter Include="Source">
+      <UniqueIdentifier>{F31BBDD1-B3E8-3BCC-9652-680E16935819}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\CardslingerPrototype.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\Source\CardslingerPrototypeEditor.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\.ignore" />
+    <None Include="..\..\.vsconfig" />
+    <None Include="..\..\CardslingerPrototype.code-workspace" />
+    <Filter Include="Config">
+      <UniqueIdentifier>{FA535FFB-25E1-3D20-B416-52F9BE21E06E}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\DefaultEditor.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEngine.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultGame.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultInput.ini">
+      <Filter>Config</Filter>
+    </None>
+    <Filter Include="Source\CardslingerPrototype">
+      <UniqueIdentifier>{73F7D967-2B4B-3DF0-8B41-920ED0B9A55E}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\CardslingerPrototype\BaseAIClass.cpp">
+      <Filter>Source\CardslingerPrototype</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\CardslingerPrototype\BaseAIClass.h">
+      <Filter>Source\CardslingerPrototype</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\CardslingerPrototype\BaseAIController.cpp">
+      <Filter>Source\CardslingerPrototype</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\CardslingerPrototype\BaseAIController.h">
+      <Filter>Source\CardslingerPrototype</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\CardslingerPrototype\BaseCard.cpp">
+      <Filter>Source\CardslingerPrototype</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\CardslingerPrototype\BaseCard.h">
+      <Filter>Source\CardslingerPrototype</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\CardslingerPrototype\BaseCharacterClass.cpp">
+      <Filter>Source\CardslingerPrototype</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\CardslingerPrototype\BaseCharacterClass.h">
+      <Filter>Source\CardslingerPrototype</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\CardslingerPrototype\BTService_PlayerLocation.cpp">
+      <Filter>Source\CardslingerPrototype</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\CardslingerPrototype\BTService_PlayerLocation.h">
+      <Filter>Source\CardslingerPrototype</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\CardslingerPrototype\BTService_PlayerLocationIfSeen.cpp">
+      <Filter>Source\CardslingerPrototype</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\CardslingerPrototype\BTService_PlayerLocationIfSeen.h">
+      <Filter>Source\CardslingerPrototype</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\CardslingerPrototype\BTTask_ClearBlackboardValue.cpp">
+      <Filter>Source\CardslingerPrototype</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\CardslingerPrototype\BTTask_ClearBlackboardValue.h">
+      <Filter>Source\CardslingerPrototype</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\CardslingerPrototype\BTTask_Shoot.cpp">
+      <Filter>Source\CardslingerPrototype</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\CardslingerPrototype\BTTask_Shoot.h">
+      <Filter>Source\CardslingerPrototype</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\CardslingerPrototype\CardDeck.cpp">
+      <Filter>Source\CardslingerPrototype</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\CardslingerPrototype\CardDeck.h">
+      <Filter>Source\CardslingerPrototype</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\CardslingerPrototype\CardslingerPlayerController.cpp">
+      <Filter>Source\CardslingerPrototype</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\CardslingerPrototype\CardslingerPlayerController.h">
+      <Filter>Source\CardslingerPrototype</Filter>
+    </ClInclude>
+    <None Include="..\..\Source\CardslingerPrototype\CardslingerPrototype.Build.cs">
+      <Filter>Source\CardslingerPrototype</Filter>
+    </None>
+    <ClCompile Include="..\..\Source\CardslingerPrototype\CardslingerPrototype.cpp">
+      <Filter>Source\CardslingerPrototype</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\CardslingerPrototype\CardslingerPrototype.h">
+      <Filter>Source\CardslingerPrototype</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\CardslingerPrototype\CardslingerTestGameMode.cpp">
+      <Filter>Source\CardslingerPrototype</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\CardslingerPrototype\CardslingerTestGameMode.h">
+      <Filter>Source\CardslingerPrototype</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\CardslingerPrototype\CardUIWidget.cpp">
+      <Filter>Source\CardslingerPrototype</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\CardslingerPrototype\CardUIWidget.h">
+      <Filter>Source\CardslingerPrototype</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\CardslingerPrototype\ConcussiveCard.cpp">
+      <Filter>Source\CardslingerPrototype</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\CardslingerPrototype\ConcussiveCard.h">
+      <Filter>Source\CardslingerPrototype</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\CardslingerPrototype\ConcussiveProjectileCard.cpp">
+      <Filter>Source\CardslingerPrototype</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\CardslingerPrototype\ConcussiveProjectileCard.h">
+      <Filter>Source\CardslingerPrototype</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\CardslingerPrototype\EnemyProjectile.cpp">
+      <Filter>Source\CardslingerPrototype</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\CardslingerPrototype\EnemyProjectile.h">
+      <Filter>Source\CardslingerPrototype</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\CardslingerPrototype\ExplosionProjectileCard.cpp">
+      <Filter>Source\CardslingerPrototype</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\CardslingerPrototype\ExplosionProjectileCard.h">
+      <Filter>Source\CardslingerPrototype</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\CardslingerPrototype\ExplosionTestCard.cpp">
+      <Filter>Source\CardslingerPrototype</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\CardslingerPrototype\ExplosionTestCard.h">
+      <Filter>Source\CardslingerPrototype</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\CardslingerPrototype\HealingCard.cpp">
+      <Filter>Source\CardslingerPrototype</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\CardslingerPrototype\HealingCard.h">
+      <Filter>Source\CardslingerPrototype</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\CardslingerPrototype\HoverCard.cpp">
+      <Filter>Source\CardslingerPrototype</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\CardslingerPrototype\HoverCard.h">
+      <Filter>Source\CardslingerPrototype</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\CardslingerPrototype\LightningCard.cpp">
+      <Filter>Source\CardslingerPrototype</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\CardslingerPrototype\LightningCard.h">
+      <Filter>Source\CardslingerPrototype</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\CardslingerPrototype\LightningProjectileCard.cpp">
+      <Filter>Source\CardslingerPrototype</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\CardslingerPrototype\LightningProjectileCard.h">
+      <Filter>Source\CardslingerPrototype</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\CardslingerPrototype\PlayerHUDWidget.cpp">
+      <Filter>Source\CardslingerPrototype</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\CardslingerPrototype\PlayerHUDWidget.h">
+      <Filter>Source\CardslingerPrototype</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\CardslingerPrototype\ProjectileCard.cpp">
+      <Filter>Source\CardslingerPrototype</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\CardslingerPrototype\ProjectileCard.h">
+      <Filter>Source\CardslingerPrototype</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\CardslingerPrototype\ShieldCard.cpp">
+      <Filter>Source\CardslingerPrototype</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\CardslingerPrototype\ShieldCard.h">
+      <Filter>Source\CardslingerPrototype</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\CardslingerPrototype\SlowTimeCard.cpp">
+      <Filter>Source\CardslingerPrototype</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\CardslingerPrototype\SlowTimeCard.h">
+      <Filter>Source\CardslingerPrototype</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\CardslingerPrototype\SlowTimeProjectileCard.cpp">
+      <Filter>Source\CardslingerPrototype</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\CardslingerPrototype\SlowTimeProjectileCard.h">
+      <Filter>Source\CardslingerPrototype</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\CardslingerPrototype\SwarmCard.cpp">
+      <Filter>Source\CardslingerPrototype</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\CardslingerPrototype\SwarmCard.h">
+      <Filter>Source\CardslingerPrototype</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\CardslingerPrototype\SwarmProjectileCard.cpp">
+      <Filter>Source\CardslingerPrototype</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\CardslingerPrototype\SwarmProjectileCard.h">
+      <Filter>Source\CardslingerPrototype</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
