@@ -137,9 +137,10 @@ void EmptyLinkFunctionForGeneratedCodeLightningProjectileCard() {}
 	};
 #endif
 	const UECodeGen_Private::FIntPropertyParams Z_Construct_UClass_ALightningProjectileCard_Statics::NewProp_CardLightningChains = { "CardLightningChains", nullptr, (EPropertyFlags)0x0040000000000001, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ALightningProjectileCard, CardLightningChains), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_ALightningProjectileCard_Statics::NewProp_CardLightningChains_MetaData), Z_Construct_UClass_ALightningProjectileCard_Statics::NewProp_CardLightningChains_MetaData) };
-	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ALightningProjectileCard_Statics::NewProp_HitEnemies_Inner = { "HitEnemies", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(0, nullptr) };
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ALightningProjectileCard_Statics::NewProp_HitEnemies_Inner = { "HitEnemies", nullptr, (EPropertyFlags)0x0000000000020000, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(0, nullptr) };
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ALightningProjectileCard_Statics::NewProp_HitEnemies_MetaData[] = {
+		{ "Category", "HitList" },
 #if !UE_BUILD_SHIPPING
 		{ "Comment", "// hit list of enemies hit by lightning\n" },
 #endif
@@ -149,7 +150,7 @@ void EmptyLinkFunctionForGeneratedCodeLightningProjectileCard() {}
 #endif
 	};
 #endif
-	const UECodeGen_Private::FArrayPropertyParams Z_Construct_UClass_ALightningProjectileCard_Statics::NewProp_HitEnemies = { "HitEnemies", nullptr, (EPropertyFlags)0x0040000000000000, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ALightningProjectileCard, HitEnemies), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_ALightningProjectileCard_Statics::NewProp_HitEnemies_MetaData), Z_Construct_UClass_ALightningProjectileCard_Statics::NewProp_HitEnemies_MetaData) };
+	const UECodeGen_Private::FArrayPropertyParams Z_Construct_UClass_ALightningProjectileCard_Statics::NewProp_HitEnemies = { "HitEnemies", nullptr, (EPropertyFlags)0x0040000000020001, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ALightningProjectileCard, HitEnemies), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_ALightningProjectileCard_Statics::NewProp_HitEnemies_MetaData), Z_Construct_UClass_ALightningProjectileCard_Statics::NewProp_HitEnemies_MetaData) };
 	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ALightningProjectileCard_Statics::PropPointers[] = {
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ALightningProjectileCard_Statics::NewProp_CardLightningDamage,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ALightningProjectileCard_Statics::NewProp_ChainDamageReduction,
@@ -198,9 +199,9 @@ void EmptyLinkFunctionForGeneratedCodeLightningProjectileCard() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_LightningProjectileCard_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_ALightningProjectileCard, ALightningProjectileCard::StaticClass, TEXT("ALightningProjectileCard"), &Z_Registration_Info_UClass_ALightningProjectileCard, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ALightningProjectileCard), 3966667525U) },
+		{ Z_Construct_UClass_ALightningProjectileCard, ALightningProjectileCard::StaticClass, TEXT("ALightningProjectileCard"), &Z_Registration_Info_UClass_ALightningProjectileCard, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ALightningProjectileCard), 2260041703U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_LightningProjectileCard_h_3342995592(TEXT("/Script/CardslingerPrototype"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_LightningProjectileCard_h_2110058404(TEXT("/Script/CardslingerPrototype"),
 		Z_CompiledInDeferFile_FID_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_LightningProjectileCard_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_LightningProjectileCard_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);

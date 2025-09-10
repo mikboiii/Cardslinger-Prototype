@@ -42,7 +42,7 @@ private:
 	int32 CardLightningChains = 3;
 
 	// hit list of enemies hit by lightning
-	UPROPERTY()
+	UPROPERTY(VisibleAnywhere, Category = "HitList")
 	TArray<AActor*> HitEnemies;
 
 
