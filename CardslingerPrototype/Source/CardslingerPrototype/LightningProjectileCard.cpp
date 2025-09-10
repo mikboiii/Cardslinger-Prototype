@@ -34,6 +34,9 @@ ABaseAIClass* ALightningProjectileCard::FindClosestEnemy()
     //Store the closest distance to the card impact
     if (!EnemyTargets.IsEmpty())
     {
+        AActor* Closest = nullptr;
+        float ClosestDistance = TNumericLimits<float>::Max();
+
         // Foreach loop to check each enemy found in the radius
         for (AActor* selectedEnemy : EnemyTargets)
         {
@@ -41,15 +44,22 @@ ABaseAIClass* ALightningProjectileCard::FindClosestEnemy()
                 closestEnemy = selectedEnemy;
 
             // Find the distance between the enemy and the enemy
-            float cardToEnemyDistance = FVector::Distance(cardLocation, selectedEnemy->GetActorLocation());
+            float cardToEnemyDistance = FVector::DistSquared(cardLocation, selectedEnemy->GetActorLocation());
 
-            if (cardToEnemyDistance < FVector::Distance(cardLocation, closestEnemy->GetActorLocation()))
+            if (Closest == nullptr || cardToEnemyDistance < ClosestDistance)
+            {
                 closestEnemy = selectedEnemy;
+                ClosestDistance = cardToEnemyDistance;
+                UE_LOG(LogTemp, Log, TEXT("%f"), ClosestDistance);
+
+                DrawDebugLine(GetWorld(), GetActorLocation(), selectedEnemy->GetActorLocation(), FColor::Red, false, 1000.0f);
+            }
 
         }
         // Cast the closestEnemy found from the loop to be the first lightning target
-        ABaseAIClass* lightningTarget = Cast<ABaseAIClass>(closestEnemy);
-        return lightningTarget;
+        /*ABaseAIClass* lightningTarget = Cast<ABaseAIClass>(closestEnemy);
+        return lightningTarget;*/
+        return Cast<ABaseAIClass>(Closest);
     }
     return nullptr;
 };
