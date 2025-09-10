@@ -35,6 +35,11 @@ private:
 	UPROPERTY(EditAnywhere)
 	int32 CardLightningChains = 3;
 
+	// hit list of enemies hit by lightning
+	UPROPERTY()
+	TArray<AActor*> HitEnemies;
+
+
 	FVector cardLocation;
 
 	AActor* closestEnemy;

@@ -12,6 +12,7 @@ void EmptyLinkFunctionForGeneratedCodeLightningProjectileCard() {}
 	CARDSLINGERPROTOTYPE_API UClass* Z_Construct_UClass_ALightningProjectileCard();
 	CARDSLINGERPROTOTYPE_API UClass* Z_Construct_UClass_ALightningProjectileCard_NoRegister();
 	CARDSLINGERPROTOTYPE_API UClass* Z_Construct_UClass_AProjectileCard();
+	ENGINE_API UClass* Z_Construct_UClass_AActor_NoRegister();
 	UPackage* Z_Construct_UPackage__Script_CardslingerPrototype();
 // End Cross Module References
 	void ALightningProjectileCard::StaticRegisterNativesALightningProjectileCard()
@@ -44,6 +45,11 @@ void EmptyLinkFunctionForGeneratedCodeLightningProjectileCard() {}
 		static const UECodeGen_Private::FMetaDataPairParam NewProp_CardLightningChains_MetaData[];
 #endif
 		static const UECodeGen_Private::FIntPropertyParams NewProp_CardLightningChains;
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_HitEnemies_Inner;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_HitEnemies_MetaData[];
+#endif
+		static const UECodeGen_Private::FArrayPropertyParams NewProp_HitEnemies;
 		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UECodeGen_Private::FClassParams ClassParams;
@@ -114,11 +120,26 @@ void EmptyLinkFunctionForGeneratedCodeLightningProjectileCard() {}
 	};
 #endif
 	const UECodeGen_Private::FIntPropertyParams Z_Construct_UClass_ALightningProjectileCard_Statics::NewProp_CardLightningChains = { "CardLightningChains", nullptr, (EPropertyFlags)0x0040000000000001, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ALightningProjectileCard, CardLightningChains), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_ALightningProjectileCard_Statics::NewProp_CardLightningChains_MetaData), Z_Construct_UClass_ALightningProjectileCard_Statics::NewProp_CardLightningChains_MetaData) };
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ALightningProjectileCard_Statics::NewProp_HitEnemies_Inner = { "HitEnemies", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(0, nullptr) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ALightningProjectileCard_Statics::NewProp_HitEnemies_MetaData[] = {
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "// hit list of enemies hit by lightning\n" },
+#endif
+		{ "ModuleRelativePath", "LightningProjectileCard.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "hit list of enemies hit by lightning" },
+#endif
+	};
+#endif
+	const UECodeGen_Private::FArrayPropertyParams Z_Construct_UClass_ALightningProjectileCard_Statics::NewProp_HitEnemies = { "HitEnemies", nullptr, (EPropertyFlags)0x0040000000000000, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ALightningProjectileCard, HitEnemies), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_ALightningProjectileCard_Statics::NewProp_HitEnemies_MetaData), Z_Construct_UClass_ALightningProjectileCard_Statics::NewProp_HitEnemies_MetaData) };
 	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ALightningProjectileCard_Statics::PropPointers[] = {
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ALightningProjectileCard_Statics::NewProp_CardLightningDamage,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ALightningProjectileCard_Statics::NewProp_CardDamageReduction,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ALightningProjectileCard_Statics::NewProp_CardChainDistance,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ALightningProjectileCard_Statics::NewProp_CardLightningChains,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ALightningProjectileCard_Statics::NewProp_HitEnemies_Inner,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ALightningProjectileCard_Statics::NewProp_HitEnemies,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_ALightningProjectileCard_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<ALightningProjectileCard>::IsAbstract,
@@ -159,9 +180,9 @@ void EmptyLinkFunctionForGeneratedCodeLightningProjectileCard() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_LightningProjectileCard_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_ALightningProjectileCard, ALightningProjectileCard::StaticClass, TEXT("ALightningProjectileCard"), &Z_Registration_Info_UClass_ALightningProjectileCard, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ALightningProjectileCard), 2128045985U) },
+		{ Z_Construct_UClass_ALightningProjectileCard, ALightningProjectileCard::StaticClass, TEXT("ALightningProjectileCard"), &Z_Registration_Info_UClass_ALightningProjectileCard, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ALightningProjectileCard), 4006825994U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_LightningProjectileCard_h_4232183179(TEXT("/Script/CardslingerPrototype"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_LightningProjectileCard_h_3028330719(TEXT("/Script/CardslingerPrototype"),
 		Z_CompiledInDeferFile_FID_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_LightningProjectileCard_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_LightningProjectileCard_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);

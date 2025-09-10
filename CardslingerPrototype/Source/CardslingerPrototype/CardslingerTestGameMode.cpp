@@ -25,7 +25,7 @@ void ACardslingerTestGameMode::PawnKilled(APawn* PawnKilled)
         }
         
     }
-    EndGame(true);
+    //EndGame(true);
 }
 
 
