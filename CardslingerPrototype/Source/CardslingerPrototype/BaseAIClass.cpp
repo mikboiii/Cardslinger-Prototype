@@ -59,7 +59,7 @@ float ABaseAIClass::TakeDamage(float DamageAmount, struct FDamageEvent const &Da
 {
 	//call unreal damage code
     float DamageToApply = Super::TakeDamage(DamageAmount, DamageEvent, EventInstigator, EventInstigator);
-	Health -= Damage;
+	Health -= DamageToApply;
 	if(IsDead())
 	{
 		OnDeath();
