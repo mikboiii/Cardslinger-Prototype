@@ -18,4 +18,10 @@ class CARDSLINGERPROTOTYPE_API ACardslingerLevelLoadingTest : public ACardslinge
 		virtual void PawnKilled(class APawn* PawnKilled) override;
 
 		virtual void EndGame(bool bIsPlayerWinner) override;
+
+	private:
+		void LoadNextLevel();
+
+		UPROPERTY(EditAnywhere, Category = "Levels")
+		FName LevelEnd;
 };
