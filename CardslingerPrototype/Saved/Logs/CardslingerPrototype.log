@@ -2738,3 +2738,350 @@ LogConfig: Set CVar [[r.Shadow.DetectVertexShaderLayerAtRuntime:1]]
 [2025.09.17-11.03.51:120][ 88]LogFileHelpers: InternalPromptForCheckoutAndSave took 264 ms (total: 4.90 sec)
 [2025.09.17-11.03.51:124][ 88]AssetCheck: New page: Asset Save: ElevatorLevel
 [2025.09.17-11.03.51:124][ 88]LogContentValidation: Display: Validating /Script/Engine.World /Game/Levels/ElevatorLevel.ElevatorLevel
+[2025.09.17-11.04.14:132][114]LogUObjectHash: Compacting FUObjectHashTables data took   0.91ms
+[2025.09.17-11.04.16:016][114]LogSlate: Window 'Save Content' being destroyed
+[2025.09.17-11.04.16:036][114]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2025.09.17-11.04.16:264][114]LogSavePackage: Moving output files for package: /Game/BlockAssets/lift2_Cube_049
+[2025.09.17-11.04.16:265][114]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/lift2_Cube_049B6327F7C438E54A7222E65A33552E262.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/BlockAssets/lift2_Cube_049.uasset'
+[2025.09.17-11.04.16:282][114]LogFileHelpers: InternalPromptForCheckoutAndSave took 245 ms (total: 5.14 sec)
+[2025.09.17-11.04.16:513][114]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2025.09.17-11.04.16:517][114]LogAssetEditorSubsystem: Opening Asset editor for World /Game/Levels/MovementLevel.MovementLevel
+[2025.09.17-11.04.16:518][114]Cmd: MAP LOAD FILE="../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/Levels/MovementLevel.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=4
+[2025.09.17-11.04.16:518][114]LightingResults: New page: Lighting Build
+[2025.09.17-11.04.16:518][114]LoadErrors: New page: Loading map: MovementLevel.umap
+[2025.09.17-11.04.16:585][114]LogWorld: UWorld::CleanupWorld for ElevatorLevel, bSessionEnded=true, bCleanupResources=true
+[2025.09.17-11.04.16:585][114]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.09.17-11.04.16:585][114]MapCheck: New page: Map Check
+[2025.09.17-11.04.16:585][114]LightingResults: New page: Lighting Build
+[2025.09.17-11.04.16:608][114]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2025.09.17-11.04.16:611][114]LogUObjectHash: Compacting FUObjectHashTables data took   2.37ms
+[2025.09.17-11.04.16:616][114]LogWorld: UWorld::CleanupWorld for MovementLevel, bSessionEnded=true, bCleanupResources=true
+[2025.09.17-11.04.16:616][114]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.09.17-11.04.16:642][114]LogUObjectHash: Compacting FUObjectHashTables data took   2.54ms
+[2025.09.17-11.04.16:664][114]LogUObjectHash: Compacting FUObjectHashTables data took   2.20ms
+[2025.09.17-11.04.16:674][114]LogAudio: Display: Audio Device (ID: 1) registered with world 'MovementLevel'.
+[2025.09.17-11.04.16:674][114]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2025.09.17-11.04.16:674][114]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2025.09.17-11.04.16:675][114]LogAIModule: Creating AISystem for world MovementLevel
+[2025.09.17-11.04.16:729][114]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2025.09.17-11.04.16:754][114]LogUObjectHash: Compacting FUObjectHashTables data took   2.01ms
+[2025.09.17-11.04.16:767][114]Cmd: MAP CHECKDEP NOCLEARLOG
+[2025.09.17-11.04.16:768][114]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 0.238ms to complete.
+[2025.09.17-11.04.16:792][114]AssetCheck: New page: Asset Save: lift2_Cube_049
+[2025.09.17-11.04.16:792][114]LogContentValidation: Display: Validating /Script/Engine.StaticMesh /Game/BlockAssets/lift2_Cube_049.lift2_Cube_049
+[2025.09.17-11.04.26:283][671]LogUObjectHash: Compacting FUObjectHashTables data took   0.93ms
+[2025.09.17-11.04.26:437][671]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2025.09.17-11.04.26:440][671]LogAssetEditorSubsystem: Opening Asset editor for World /Game/Levels/ElevatorLevel.ElevatorLevel
+[2025.09.17-11.04.26:441][671]Cmd: MAP LOAD FILE="../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/Levels/ElevatorLevel.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=4
+[2025.09.17-11.04.26:441][671]LightingResults: New page: Lighting Build
+[2025.09.17-11.04.26:441][671]LoadErrors: New page: Loading map: ElevatorLevel.umap
+[2025.09.17-11.04.26:524][671]LogWorld: UWorld::CleanupWorld for MovementLevel, bSessionEnded=true, bCleanupResources=true
+[2025.09.17-11.04.26:524][671]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.09.17-11.04.26:524][671]MapCheck: New page: Map Check
+[2025.09.17-11.04.26:524][671]LightingResults: New page: Lighting Build
+[2025.09.17-11.04.26:543][671]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2025.09.17-11.04.26:548][671]LogUObjectHash: Compacting FUObjectHashTables data took   2.58ms
+[2025.09.17-11.04.26:552][671]LogWorld: UWorld::CleanupWorld for ElevatorLevel, bSessionEnded=true, bCleanupResources=true
+[2025.09.17-11.04.26:552][671]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.09.17-11.04.26:574][671]LogUObjectHash: Compacting FUObjectHashTables data took   2.00ms
+[2025.09.17-11.04.26:596][671]LogUObjectHash: Compacting FUObjectHashTables data took   1.91ms
+[2025.09.17-11.04.26:602][671]LogAudio: Display: Audio Device (ID: 1) registered with world 'ElevatorLevel'.
+[2025.09.17-11.04.26:602][671]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2025.09.17-11.04.26:602][671]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2025.09.17-11.04.26:603][671]LogAIModule: Creating AISystem for world ElevatorLevel
+[2025.09.17-11.04.26:650][671]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2025.09.17-11.04.26:674][671]LogUObjectHash: Compacting FUObjectHashTables data took   1.87ms
+[2025.09.17-11.04.26:688][671]Cmd: MAP CHECKDEP NOCLEARLOG
+[2025.09.17-11.04.26:688][671]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 0.226ms to complete.
+[2025.09.17-11.04.34:459][ 98]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2025.09.17-11.04.34:690][ 98]LogUObjectHash: Compacting FUObjectHashTables data took   0.96ms
+[2025.09.17-11.04.34:702][ 98]LogSavePackage: Moving output files for package: /Game/Levels/ElevatorLevel
+[2025.09.17-11.04.34:704][ 98]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/ElevatorLevel003AB9974260BAA8DF6729A102D320B8.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/Levels/ElevatorLevel.umap'
+[2025.09.17-11.04.34:722][ 98]LogFileHelpers: Saving map 'ElevatorLevel' took 0.111
+[2025.09.17-11.04.34:737][ 98]LogFileHelpers: InternalPromptForCheckoutAndSave took 278 ms (total: 5.42 sec)
+[2025.09.17-11.04.34:739][ 98]AssetCheck: New page: Asset Save: ElevatorLevel
+[2025.09.17-11.04.34:739][ 98]LogContentValidation: Display: Validating /Script/Engine.World /Game/Levels/ElevatorLevel.ElevatorLevel
+[2025.09.17-11.04.36:102][173]LogDebuggerCommands: Repeating last play command: Selected Viewport
+[2025.09.17-11.04.36:119][173]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2025.09.17-11.04.36:119][173]PIE: New page: PIE session: ElevatorLevel (17 Sep 2025, 13:04:36)
+[2025.09.17-11.04.36:119][173]LogPlayLevel: Creating play world package: /Game/Levels/UEDPIE_0_ElevatorLevel
+[2025.09.17-11.04.36:121][173]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001946s)
+[2025.09.17-11.04.36:121][173]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Levels/ElevatorLevel.ElevatorLevel to /Game/Levels/UEDPIE_0_ElevatorLevel.ElevatorLevel (0.002008s)
+[2025.09.17-11.04.36:143][173]LogUObjectHash: Compacting FUObjectHashTables data took   2.23ms
+[2025.09.17-11.04.36:144][173]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2025.09.17-11.04.36:144][173]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2025.09.17-11.04.36:145][173]LogAIModule: Creating AISystem for world ElevatorLevel
+[2025.09.17-11.04.36:145][173]LogPlayLevel: PIE: World Init took: (0.001274s)
+[2025.09.17-11.04.36:145][173]LogAudio: Display: Creating Audio Device:                 Id: 9, Scope: Unique, Realtime: True
+[2025.09.17-11.04.36:146][173]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2025.09.17-11.04.36:146][173]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2025.09.17-11.04.36:146][173]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2025.09.17-11.04.36:146][173]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2025.09.17-11.04.36:146][173]LogAudioMixer: Display: 	Number of buffers to queue:			  1
+[2025.09.17-11.04.36:146][173]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2025.09.17-11.04.36:146][173]LogAudioMixer: Display: 	Number of Async Source Workers:		  4
+[2025.09.17-11.04.36:146][173]LogAudio: Display: AudioDevice MaxSources: 32
+[2025.09.17-11.04.36:146][173]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2025.09.17-11.04.36:146][173]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2025.09.17-11.04.36:146][173]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2025.09.17-11.04.36:149][173]LogAudioMixer: Display: Initializing audio mixer using platform API: 'XAudio2'
+[2025.09.17-11.04.36:248][173]LogAudioMixer: Display: Using Audio Hardware Device Speakers (Realtek(R) Audio)
+[2025.09.17-11.04.36:249][173]LogAudioMixer: Display: Initializing Sound Submixes...
+[2025.09.17-11.04.36:249][173]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2025.09.17-11.04.36:249][173]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2025.09.17-11.04.36:249][173]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called. InstanceID=9
+[2025.09.17-11.04.36:249][173]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048, InstanceID=9
+[2025.09.17-11.04.36:252][173]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=9
+[2025.09.17-11.04.36:252][173]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time. InstanceID=9
+[2025.09.17-11.04.36:252][173]LogInit: FAudioDevice initialized with ID 9.
+[2025.09.17-11.04.36:253][173]LogAudio: Display: Audio Device (ID: 9) registered with world 'ElevatorLevel'.
+[2025.09.17-11.04.36:253][173]LogAudioMixer: Initializing Audio Bus Subsystem for audio device with ID 9
+[2025.09.17-11.04.36:257][173]LogLoad: Game class is 'BP_CardslingerLevelLoadingTest_C'
+[2025.09.17-11.04.36:258][173]LogWorld: Bringing World /Game/Levels/UEDPIE_0_ElevatorLevel.ElevatorLevel up for play (max tick rate 60) at 2025.09.17-12.04.36
+[2025.09.17-11.04.36:258][173]LogWorld: Bringing up level for play took: 0.000878
+[2025.09.17-11.04.36:261][173]LogOnline: OSS: Created online subsystem instance for: :Context_41
+[2025.09.17-11.04.36:264][173]LogViewport: Display: Viewport MouseCaptureMode Changed, CapturePermanently_IncludingInitialMouseDown -> CapturePermanently
+[2025.09.17-11.04.36:271][173]LogTemp: Display: ../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/CardDeck.sav
+[2025.09.17-11.04.36:271][173]LogTemp: Load successful!
+[2025.09.17-11.04.36:272][173]LogTemp: Save successful!
+[2025.09.17-11.04.36:276][173]PIE: Server logged in
+[2025.09.17-11.04.36:277][173]PIE: Play in editor total start time 0.158 seconds.
+[2025.09.17-11.04.37:792][260]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2025.09.17-11.04.37:792][260]LogWorld: BeginTearingDown for /Game/Levels/UEDPIE_0_ElevatorLevel
+[2025.09.17-11.04.37:792][260]LogWorld: UWorld::CleanupWorld for ElevatorLevel, bSessionEnded=true, bCleanupResources=true
+[2025.09.17-11.04.37:793][260]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.09.17-11.04.37:798][260]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2025.09.17-11.04.37:805][260]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.09.17-11.04.37:826][260]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2025.09.17-11.04.37:826][260]LogAudioMixer: Deinitializing Audio Bus Subsystem for audio device with ID 9
+[2025.09.17-11.04.37:827][260]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=9
+[2025.09.17-11.04.37:829][260]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=9
+[2025.09.17-11.04.37:841][260]LogUObjectHash: Compacting FUObjectHashTables data took   2.13ms
+[2025.09.17-11.04.37:961][261]LogPlayLevel: Display: Destroying online subsystem :Context_41
+[2025.09.17-11.04.46:114][703]LogNavigationPoint: PostEditMove Clear paths rebuilt
+[2025.09.17-11.04.46:965][750]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2025.09.17-11.04.47:205][750]LogUObjectHash: Compacting FUObjectHashTables data took   1.68ms
+[2025.09.17-11.04.47:217][750]LogSavePackage: Moving output files for package: /Game/Levels/ElevatorLevel
+[2025.09.17-11.04.47:219][750]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/ElevatorLevel19E6CABF421E24DF78755BA21E102DAE.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/Levels/ElevatorLevel.umap'
+[2025.09.17-11.04.47:234][750]LogFileHelpers: Saving map 'ElevatorLevel' took 0.105
+[2025.09.17-11.04.47:254][750]LogFileHelpers: InternalPromptForCheckoutAndSave took 289 ms (total: 5.71 sec)
+[2025.09.17-11.04.47:257][750]AssetCheck: New page: Asset Save: ElevatorLevel
+[2025.09.17-11.04.47:257][750]LogContentValidation: Display: Validating /Script/Engine.World /Game/Levels/ElevatorLevel.ElevatorLevel
+[2025.09.17-11.04.49:095][846]LogEditorViewport: Clicking Background
+[2025.09.17-11.05.06:339][678]LogStreaming: Display: ULevelStreaming::RequestLevel(/Game/Levels/EmptyLevel) is flushing async loading
+[2025.09.17-11.05.06:339][678]LogStreaming: Display: FlushAsyncLoading(): 1 QueuedPackages, 0 AsyncPackages
+[2025.09.17-11.05.06:405][678]LogSlate: Window 'Open Level' being destroyed
+[2025.09.17-11.05.06:420][678]LogNavigation: Warning: NavData RegistrationFailed_DataPendingKill.
+[2025.09.17-11.05.06:710][680]LogSlate: Vector cache flush requested. Reason: Large atlases out of space; 2/1 Textures; frames since last flush: 18446731758514672024
+[2025.09.17-11.05.06:711][680]LogSlate: Warning: Setting the threshold to trigger a flush to 2 non-atlased textures as there is a lot of font data being cached.
+[2025.09.17-11.05.30:154][ 39]LogSlate: Window 'Levels' being destroyed
+[2025.09.17-11.05.30:165][ 39]LogSlate: Window 'Levels' being destroyed
+[2025.09.17-11.05.35:031][284]LogShaderCompilers: Display: ================================================
+[2025.09.17-11.05.35:031][284]LogShaderCompilers: Display: === FShaderJobCache stats ===
+[2025.09.17-11.05.35:031][284]LogShaderCompilers: Display: Total job queries 255, among them cache hits 40 (15.69%)
+[2025.09.17-11.05.35:031][284]LogShaderCompilers: Display: Tracking 212 distinct input hashes that result in 173 distinct outputs (81.60%)
+[2025.09.17-11.05.35:031][284]LogShaderCompilers: Display: RAM used: 5.75 MiB of 819.20 MiB budget. Usage: 0.70%
+[2025.09.17-11.05.35:031][284]LogShaderCompilers: Display: === Shader Compilation stats ===
+[2025.09.17-11.05.35:031][284]LogShaderCompilers: Display: Shaders Compiled: 124
+[2025.09.17-11.05.35:032][284]LogShaderCompilers: Display: Jobs assigned 127, completed 124 (97.64%)
+[2025.09.17-11.05.35:032][284]LogShaderCompilers: Display: Average time worker was idle: 210.67 s
+[2025.09.17-11.05.35:032][284]LogShaderCompilers: Display: Time job spent in pending queue: average 1.79 s, longest 11.36 s
+[2025.09.17-11.05.35:032][284]LogShaderCompilers: Display: Job execution time: average 5.02 s, max 14.79 s
+[2025.09.17-11.05.35:032][284]LogShaderCompilers: Display: Job life time (pending + execution): average 6.85 s, max 15.96
+[2025.09.17-11.05.35:032][284]LogShaderCompilers: Display: Shader code size: average 54.015 KiB, min 2.816 KiB, max 87.457 KiB
+[2025.09.17-11.05.35:032][284]LogShaderCompilers: Display: Time at least one job was in flight (either pending or executed): 27.72 s
+[2025.09.17-11.05.35:032][284]LogShaderCompilers: Display: Jobs were issued in 75 batches (only local compilation was used), average 1.69 jobs/batch
+[2025.09.17-11.05.35:032][284]LogShaderCompilers: Display: Average processing rate: 4.47 jobs/sec
+[2025.09.17-11.05.35:032][284]LogShaderCompilers: Display: Total thread time: 124.006 s
+[2025.09.17-11.05.35:032][284]LogShaderCompilers: Display: Total thread preprocess time: 12.389 s
+[2025.09.17-11.05.35:032][284]LogShaderCompilers: Display: Percentage time preprocessing: 9.99%
+[2025.09.17-11.05.35:032][284]LogShaderCompilers: Display: Effective parallelization: 4.47 (times faster than compiling all shaders on one thread). Compare with number of workers: 8
+[2025.09.17-11.05.35:032][284]LogShaderCompilers: Display: Top 5 most expensive shader types by average time:
+[2025.09.17-11.05.35:032][284]LogShaderCompilers: Display:                                        FCloudRenderViewPS011 (compiled    1 times, average 2.23 sec, max 2.23 sec, min 2.23 sec)
+[2025.09.17-11.05.35:032][284]LogShaderCompilers: Display:                                        FCloudRenderViewPS111 (compiled    1 times, average 1.88 sec, max 1.88 sec, min 1.88 sec)
+[2025.09.17-11.05.35:032][284]LogShaderCompilers: Display:                                        FCloudRenderViewPS110 (compiled    1 times, average 1.86 sec, max 1.86 sec, min 1.86 sec)
+[2025.09.17-11.05.35:032][284]LogShaderCompilers: Display:                                        FCloudRenderViewPS010 (compiled    1 times, average 1.74 sec, max 1.74 sec, min 1.74 sec)
+[2025.09.17-11.05.35:032][284]LogShaderCompilers: Display:                           FRenderVolumetricCloudRenderViewCS (compiled   34 times, average 1.67 sec, max 2.45 sec, min 0.96 sec)
+[2025.09.17-11.05.35:032][284]LogShaderCompilers: Display: Top 5 shader types by total compile time:
+[2025.09.17-11.05.35:032][284]LogShaderCompilers: Display:                           FRenderVolumetricCloudRenderViewCS - 45.68% of total time (compiled   34 times, average 1.67 sec, max 2.45 sec, min 0.96 sec)
+[2025.09.17-11.05.35:032][284]LogShaderCompilers: Display:                                 TBasePassPSFNoLightMapPolicy - 7.55% of total time (compiled   11 times, average 0.85 sec, max 2.10 sec, min 0.50 sec)
+[2025.09.17-11.05.35:032][284]LogShaderCompilers: Display:                                 TBasePassVSFNoLightMapPolicy - 7.00% of total time (compiled   12 times, average 0.72 sec, max 1.90 sec, min 0.44 sec)
+[2025.09.17-11.05.35:032][284]LogShaderCompilers: Display:                                                 FLumenCardVS - 3.23% of total time (compiled    7 times, average 0.57 sec, max 0.66 sec, min 0.42 sec)
+[2025.09.17-11.05.35:032][284]LogShaderCompilers: Display:                                          FLumenCardPS<false> - 2.38% of total time (compiled    8 times, average 0.37 sec, max 0.65 sec, min 0.25 sec)
+[2025.09.17-11.05.35:032][284]LogShaderCompilers: Display: ================================================
+[2025.09.17-11.06.06:524][ 27]Cmd: DELETE
+[2025.09.17-11.06.06:524][ 27]Cmd: ACTOR DELETE
+[2025.09.17-11.06.06:622][ 27]LogEditorActor: Deleted Actor: PlayerStart
+[2025.09.17-11.06.06:657][ 27]LogUObjectHash: Compacting FUObjectHashTables data took   2.59ms
+[2025.09.17-11.06.06:668][ 27]LogEditorActor: Deleted 1 Actors (0.144 secs)
+[2025.09.17-11.06.36:172][476]LogSlate: Window 'Levels' being destroyed
+[2025.09.17-11.06.36:201][476]LogSlate: Window 'Levels' being destroyed
+[2025.09.17-11.06.37:821][560]Cmd: DELETE
+[2025.09.17-11.06.37:822][560]Cmd: ACTOR DELETE
+[2025.09.17-11.06.37:827][560]LogEditorActor: Deleted Actor: VolumetricCloud
+[2025.09.17-11.06.37:853][560]LogUObjectHash: Compacting FUObjectHashTables data took   1.14ms
+[2025.09.17-11.06.37:867][560]LogEditorActor: Deleted 1 Actors (0.045 secs)
+[2025.09.17-11.06.40:049][679]Cmd: DELETE
+[2025.09.17-11.06.40:049][679]Cmd: ACTOR DELETE
+[2025.09.17-11.06.40:053][679]LogEditorActor: Deleted Actor: SkyLight
+[2025.09.17-11.06.40:099][679]LogUObjectHash: Compacting FUObjectHashTables data took   1.39ms
+[2025.09.17-11.06.40:104][679]LogEditorActor: Deleted 1 Actors (0.054 secs)
+[2025.09.17-11.06.44:747][947]Cmd: DELETE
+[2025.09.17-11.06.44:747][947]Cmd: ACTOR DELETE
+[2025.09.17-11.06.44:750][947]LogEditorActor: Deleted Actor: DirectionalLight
+[2025.09.17-11.06.44:774][947]LogUObjectHash: Compacting FUObjectHashTables data took   0.95ms
+[2025.09.17-11.06.44:778][947]LogEditorActor: Deleted 1 Actors (0.030 secs)
+[2025.09.17-11.06.45:448][984]Cmd: DELETE
+[2025.09.17-11.06.45:448][984]Cmd: ACTOR DELETE
+[2025.09.17-11.06.45:451][984]LogEditorActor: Deleted Actor: ExponentialHeightFog
+[2025.09.17-11.06.45:475][984]LogUObjectHash: Compacting FUObjectHashTables data took   1.11ms
+[2025.09.17-11.06.45:479][984]LogEditorActor: Deleted 1 Actors (0.031 secs)
+[2025.09.17-11.06.45:978][ 11]Cmd: DELETE
+[2025.09.17-11.06.45:978][ 11]Cmd: ACTOR DELETE
+[2025.09.17-11.06.45:981][ 11]LogEditorActor: Deleted Actor: SkyAtmosphere
+[2025.09.17-11.06.46:004][ 11]LogUObjectHash: Compacting FUObjectHashTables data took   0.96ms
+[2025.09.17-11.06.46:008][ 11]LogEditorActor: Deleted 1 Actors (0.030 secs)
+[2025.09.17-11.06.46:578][ 41]Cmd: DELETE
+[2025.09.17-11.06.46:578][ 41]Cmd: ACTOR DELETE
+[2025.09.17-11.06.46:581][ 41]LogEditorActor: Deleted Actor: StaticMeshActor
+[2025.09.17-11.06.46:602][ 41]LogUObjectHash: Compacting FUObjectHashTables data took   0.90ms
+[2025.09.17-11.06.46:607][ 41]LogEditorActor: Deleted 1 Actors (0.028 secs)
+[2025.09.17-11.07.01:452][835]LogNavigation: Warning: ConstructTiledNavMesh: Failed to create navmesh of size 0.
+[2025.09.17-11.07.06:346][ 83]LogSlate: Window 'Levels' being destroyed
+[2025.09.17-11.07.06:369][ 83]LogSlate: Window 'Levels' being destroyed
+[2025.09.17-11.07.12:434][441]Cmd: DELETE
+[2025.09.17-11.07.12:434][441]Cmd: ACTOR DELETE
+[2025.09.17-11.07.41:240][973]Cmd: DELETE
+[2025.09.17-11.07.41:241][973]Cmd: ACTOR DELETE
+[2025.09.17-11.07.41:245][973]LogEditorActor: Deleted Actor: StaticMeshActor
+[2025.09.17-11.07.41:270][973]LogUObjectHash: Compacting FUObjectHashTables data took   2.10ms
+[2025.09.17-11.07.41:283][973]LogEditorActor: Deleted 1 Actors (0.042 secs)
+[2025.09.17-11.07.56:679][771]LogEditorViewport: Clicking Background
+[2025.09.17-11.07.58:240][860]LogSlate: Window 'Levels' being destroyed
+[2025.09.17-11.07.58:251][860]LogSlate: Window 'Levels' being destroyed
+[2025.09.17-11.07.59:939][951]LogEditorViewport: Clicking Background
+[2025.09.17-11.08.01:906][ 60]Cmd: TRANSACTION UNDO
+[2025.09.17-11.08.01:907][ 60]LogEditorTransaction: Undo Clicking on Elements
+[2025.09.17-11.08.03:156][ 61]Cmd: TRANSACTION UNDO
+[2025.09.17-11.08.03:156][ 61]LogEditorTransaction: Undo Clicking Background
+[2025.09.17-11.08.04:128][ 61]LogEditorViewport: Clicking Background
+[2025.09.17-11.08.04:146][ 61]Cmd: TRANSACTION UNDO
+[2025.09.17-11.08.04:146][ 61]LogEditorTransaction: Undo Clicking Background
+[2025.09.17-11.08.05:176][ 61]Cmd: TRANSACTION UNDO
+[2025.09.17-11.08.05:176][ 61]LogEditorTransaction: Undo Toggle Level Visibility
+[2025.09.17-11.08.06:282][ 61]Cmd: TRANSACTION UNDO
+[2025.09.17-11.08.06:282][ 61]LogEditorTransaction: Undo Clicking on Actors
+[2025.09.17-11.08.07:282][ 61]Cmd: TRANSACTION UNDO
+[2025.09.17-11.08.07:282][ 61]LogEditorTransaction: Undo Delete Elements
+[2025.09.17-11.08.08:353][ 61]Cmd: TRANSACTION UNDO
+[2025.09.17-11.08.08:353][ 61]LogEditorTransaction: Undo Clicking on Elements
+[2025.09.17-11.08.09:421][ 61]Cmd: TRANSACTION UNDO
+[2025.09.17-11.08.09:421][ 61]LogEditorTransaction: Undo Move Elements
+[2025.09.17-11.08.10:537][ 61]Cmd: TRANSACTION UNDO
+[2025.09.17-11.08.10:537][ 61]LogEditorTransaction: Undo Move Elements
+[2025.09.17-11.08.11:632][ 61]Cmd: TRANSACTION UNDO
+[2025.09.17-11.08.11:632][ 61]LogEditorTransaction: Undo Clicking on Actors
+[2025.09.17-11.08.12:702][ 61]Cmd: TRANSACTION UNDO
+[2025.09.17-11.08.12:702][ 61]LogEditorTransaction: Undo Clicking on Actors
+[2025.09.17-11.08.13:782][ 61]Cmd: TRANSACTION UNDO
+[2025.09.17-11.08.13:782][ 61]LogEditorTransaction: Undo Clicking on Actors
+[2025.09.17-11.08.14:846][ 61]Cmd: TRANSACTION UNDO
+[2025.09.17-11.08.14:846][ 61]LogEditorTransaction: Undo Clicking on Actors
+[2025.09.17-11.08.15:946][ 61]LogUObjectHash: Compacting FUObjectHashTables data took   2.30ms
+[2025.09.17-11.08.17:861][ 61]LogSlate: Window 'Save Content' being destroyed
+[2025.09.17-11.09.23:622][160]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2025.09.17-11.09.37:205][937]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2025.09.17-11.11.18:996][672]Cmd: ACTOR SELECT ALL
+[2025.09.17-11.11.59:195][616]Cmd: DELETE
+[2025.09.17-11.11.59:195][616]Cmd: ACTOR DELETE
+[2025.09.17-11.11.59:199][616]LogEditorActor: Deleted Actor: StaticMeshActor
+[2025.09.17-11.11.59:235][616]LogUObjectHash: Compacting FUObjectHashTables data took   2.56ms
+[2025.09.17-11.11.59:257][616]LogEditorActor: Deleted 1 Actors (0.062 secs)
+[2025.09.17-11.12.06:148][ 23]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2025.09.17-11.12.06:316][ 23]LogUObjectHash: Compacting FUObjectHashTables data took   0.97ms
+[2025.09.17-11.12.06:354][ 23]LogSavePackage: Moving output files for package: /Game/Levels/EmptyLevel
+[2025.09.17-11.12.06:356][ 23]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/EmptyLevel869EEF70460C50047F6EE4AAC0E80501.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/Levels/EmptyLevel.umap'
+[2025.09.17-11.12.06:370][ 23]LogFileHelpers: Saving map 'EmptyLevel' took 0.078
+[2025.09.17-11.12.06:384][ 23]LogFileHelpers: InternalPromptForCheckoutAndSave took 235 ms (total: 5.95 sec)
+[2025.09.17-11.12.06:389][ 23]AssetCheck: New page: Asset Save: EmptyLevel
+[2025.09.17-11.12.06:389][ 23]LogContentValidation: Display: Validating /Script/Engine.World /Game/Levels/EmptyLevel.EmptyLevel
+[2025.09.17-11.12.07:247][ 60]LogDebuggerCommands: Repeating last play command: Selected Viewport
+[2025.09.17-11.12.07:265][ 60]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2025.09.17-11.12.07:265][ 60]PIE: New page: PIE session: ElevatorLevel (17 Sep 2025, 13:12:07)
+[2025.09.17-11.12.07:293][ 60]LogPlayLevel: Creating play world package: /Game/Levels/UEDPIE_0_ElevatorLevel
+[2025.09.17-11.12.07:296][ 60]LogPlayLevel: PIE: StaticDuplicateObject took: (0.003062s)
+[2025.09.17-11.12.07:296][ 60]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Levels/ElevatorLevel.ElevatorLevel to /Game/Levels/UEDPIE_0_ElevatorLevel.ElevatorLevel (0.003160s)
+[2025.09.17-11.12.07:317][ 60]LogUObjectHash: Compacting FUObjectHashTables data took   1.97ms
+[2025.09.17-11.12.07:320][ 60]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2025.09.17-11.12.07:320][ 60]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2025.09.17-11.12.07:321][ 60]LogAIModule: Creating AISystem for world ElevatorLevel
+[2025.09.17-11.12.07:321][ 60]LogPlayLevel: PIE: World Init took: (0.001389s)
+[2025.09.17-11.12.07:321][ 60]LogAudio: Display: Creating Audio Device:                 Id: 10, Scope: Unique, Realtime: True
+[2025.09.17-11.12.07:321][ 60]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2025.09.17-11.12.07:321][ 60]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2025.09.17-11.12.07:321][ 60]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2025.09.17-11.12.07:321][ 60]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2025.09.17-11.12.07:321][ 60]LogAudioMixer: Display: 	Number of buffers to queue:			  1
+[2025.09.17-11.12.07:321][ 60]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2025.09.17-11.12.07:321][ 60]LogAudioMixer: Display: 	Number of Async Source Workers:		  4
+[2025.09.17-11.12.07:321][ 60]LogAudio: Display: AudioDevice MaxSources: 32
+[2025.09.17-11.12.07:321][ 60]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2025.09.17-11.12.07:321][ 60]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2025.09.17-11.12.07:321][ 60]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2025.09.17-11.12.07:324][ 60]LogAudioMixer: Display: Initializing audio mixer using platform API: 'XAudio2'
+[2025.09.17-11.12.07:424][ 60]LogAudioMixer: Display: Using Audio Hardware Device Speakers (Realtek(R) Audio)
+[2025.09.17-11.12.07:424][ 60]LogAudioMixer: Display: Initializing Sound Submixes...
+[2025.09.17-11.12.07:424][ 60]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2025.09.17-11.12.07:424][ 60]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2025.09.17-11.12.07:425][ 60]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called. InstanceID=10
+[2025.09.17-11.12.07:425][ 60]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048, InstanceID=10
+[2025.09.17-11.12.07:429][ 60]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=10
+[2025.09.17-11.12.07:429][ 60]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time. InstanceID=10
+[2025.09.17-11.12.07:429][ 60]LogInit: FAudioDevice initialized with ID 10.
+[2025.09.17-11.12.07:429][ 60]LogAudio: Display: Audio Device (ID: 10) registered with world 'ElevatorLevel'.
+[2025.09.17-11.12.07:429][ 60]LogAudioMixer: Initializing Audio Bus Subsystem for audio device with ID 10
+[2025.09.17-11.12.07:433][ 60]LogLoad: Game class is 'BP_CardslingerLevelLoadingTest_C'
+[2025.09.17-11.12.07:434][ 60]LogWorld: Bringing World /Game/Levels/UEDPIE_0_ElevatorLevel.ElevatorLevel up for play (max tick rate 60) at 2025.09.17-12.12.07
+[2025.09.17-11.12.07:434][ 60]LogWorld: Bringing up level for play took: 0.001053
+[2025.09.17-11.12.07:439][ 60]LogOnline: OSS: Created online subsystem instance for: :Context_44
+[2025.09.17-11.12.07:441][ 60]LogViewport: Display: Viewport MouseCaptureMode Changed, CapturePermanently_IncludingInitialMouseDown -> CapturePermanently
+[2025.09.17-11.12.07:448][ 60]LogTemp: Display: ../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/CardDeck.sav
+[2025.09.17-11.12.07:448][ 60]LogTemp: Load successful!
+[2025.09.17-11.12.07:448][ 60]LogTemp: Save successful!
+[2025.09.17-11.12.07:451][ 60]PIE: Server logged in
+[2025.09.17-11.12.07:453][ 60]PIE: Play in editor total start time 0.188 seconds.
+[2025.09.17-11.12.11:034][270]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2025.09.17-11.12.11:034][270]LogWorld: BeginTearingDown for /Game/Levels/UEDPIE_0_ElevatorLevel
+[2025.09.17-11.12.11:034][270]LogWorld: UWorld::CleanupWorld for ElevatorLevel, bSessionEnded=true, bCleanupResources=true
+[2025.09.17-11.12.11:034][270]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.09.17-11.12.11:041][270]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2025.09.17-11.12.11:048][270]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.09.17-11.12.11:082][270]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2025.09.17-11.12.11:082][270]LogAudioMixer: Deinitializing Audio Bus Subsystem for audio device with ID 10
+[2025.09.17-11.12.11:082][270]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=10
+[2025.09.17-11.12.11:084][270]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=10
+[2025.09.17-11.12.11:096][270]LogUObjectHash: Compacting FUObjectHashTables data took   2.05ms
+[2025.09.17-11.12.11:160][271]LogPlayLevel: Display: Destroying online subsystem :Context_44
+[2025.09.17-11.12.24:713][ 38]LogSlate: Window 'Levels' being destroyed
+[2025.09.17-11.12.24:725][ 38]LogSlate: Window 'Levels' being destroyed
+[2025.09.17-11.12.32:723][464]LogAssetEditorSubsystem: Opening Asset editor for LevelScriptBlueprint /Game/Levels/EmptyLevel.EmptyLevel:PersistentLevel.EmptyLevel
+[2025.09.17-11.12.32:724][464]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2025.09.17-11.12.32:724][464]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2025.09.17-11.12.38:378][785]LogWorld: UWorld::CleanupWorld for World_35, bSessionEnded=true, bCleanupResources=true
+[2025.09.17-11.12.38:378][785]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.09.17-11.12.40:541][900]LogWorld: UWorld::CleanupWorld for World_31, bSessionEnded=true, bCleanupResources=true
+[2025.09.17-11.12.40:541][900]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.09.17-11.12.41:115][924]LogWorld: UWorld::CleanupWorld for World_32, bSessionEnded=true, bCleanupResources=true
+[2025.09.17-11.12.41:115][924]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.09.17-11.12.42:095][977]LogWorld: UWorld::CleanupWorld for World_30, bSessionEnded=true, bCleanupResources=true
+[2025.09.17-11.12.42:095][977]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.09.17-11.12.47:904][317]LogAssetEditorSubsystem: Opening Asset editor for UserDefinedStruct /Game/Levels/S_Levels.S_Levels
+[2025.09.17-11.13.05:928][373]LogEditorViewport: Clicking Background
+[2025.09.17-11.13.06:466][403]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2025.09.17-11.13.06:639][403]LogUObjectHash: Compacting FUObjectHashTables data took   2.38ms
+[2025.09.17-11.13.06:692][403]LogSavePackage: Moving output files for package: /Game/Levels/EmptyLevel
+[2025.09.17-11.13.06:694][403]LogSavePackage: Moving '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Saved/EmptyLevel6BFBA966471A99C0C7FE84AFF300E6CE.tmp' to '../../../../../../Users/Mikolaj/Documents/Unreal Projects/Cardslinger-Prototype/CardslingerPrototype/Content/Levels/EmptyLevel.umap'
+[2025.09.17-11.13.06:705][403]LogFileHelpers: Saving map 'EmptyLevel' took 0.096
+[2025.09.17-11.13.06:717][403]LogFileHelpers: InternalPromptForCheckoutAndSave took 250 ms (total: 6.20 sec)
+[2025.09.17-11.13.06:718][403]AssetCheck: New page: Asset Save: EmptyLevel
+[2025.09.17-11.13.06:718][403]LogContentValidation: Display: Validating /Script/Engine.World /Game/Levels/EmptyLevel.EmptyLevel
