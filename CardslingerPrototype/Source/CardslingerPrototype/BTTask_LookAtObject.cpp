@@ -20,6 +20,10 @@ EBTNodeResult::Type UBTTask_LookAtObject::ExecuteTask(UBehaviorTreeComponent& Ow
     if(OwnerComp.GetAIOwner()->GetPawn() == nullptr) return EBTNodeResult::Failed;
     AFlyingEnemy* Character = Cast<AFlyingEnemy>(OwnerComp.GetAIOwner()->GetPawn());
     if(Character == nullptr) return EBTNodeResult::Failed;
+    if(OwnerComp.GetBlackboardComponent()->GetValueAsObject(TargetKey.SelectedKeyName) == nullptr)
+    {
+        OwnerComp.GetBlackboardComponent()->SetValueAsObject(TEXT("PlayerActor"), Cast<ABaseCharacterClass>(UGameplayStatics::GetPlayerCharacter(GetWorld(),0)));
+    }
     AActor* Target = Cast<AActor>(OwnerComp.GetBlackboardComponent()->GetValueAsObject(TargetKey.SelectedKeyName));
     TurnToTarget(Character, Target);
     return EBTNodeResult::Succeeded;
