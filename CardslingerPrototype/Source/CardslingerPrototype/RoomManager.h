@@ -2,11 +2,12 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
+#include "Components/BoxComponent.h" 
 #include "RoomManager.generated.h"
 
-class ABaseAIClass; // Enemies
-class AActor; // Doors
-class UBoxComponent; // Trigger to close doors
+class ABaseAIClass;
+
+DECLARE_DYNAMIC_MULTICAST_DELEGATE(FOnDoorOverlap);
 
 UCLASS()
 class CARDSLINGERPROTOTYPE_API ARoomManager : public AActor
@@ -14,16 +15,22 @@ class CARDSLINGERPROTOTYPE_API ARoomManager : public AActor
 	GENERATED_BODY()
 
 public:
-	// Sets default values for this actor's properties
-	ARoomManager();
+	// Expose the event to Blueprints
+	UPROPERTY(BlueprintAssignable, Category = "Events")
+	FOnDoorOverlap OnDoorOverlap;
 
 protected:
-	// Called when the game starts or when spawned
+	ARoomManager();
+
 	virtual void BeginPlay() override;
 
-	void OnPlayerEnterRoom(UPrimitiveComponent* OverlappedComp, AActor* OtherActor,
-		UPrimitiveComponent* OtherComp, int32 OtherBodyIndex,
-		bool bFromSweep, const FHitResult& SweepResult);
+	UFUNCTION()
+	void OnPlayerEnterRoom(UPrimitiveComponent* OverlappedComp,
+		AActor* OtherActor,
+		UPrimitiveComponent* OtherComp,
+		int32 OtherBodyIndex,
+		bool bFromSweep,
+		const FHitResult& SweepResult);
 
 	void LockDoors();
 	void UnlockDoors();
@@ -31,11 +38,12 @@ protected:
 	void SpawnEnemies();
 	void OnEnemyDeath(ABaseAIClass* DeadEnemy);
 
-	UPROPERTY(EditAnywhere, Category = "Room")
-	UBoxComponent* TriggerVolume;
 
-	UPROPERTY(EditAnywhere, Category = "Room")
-	TArray<AActor*> Doors;
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Room")
+	AActor* Door;
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Room")
+	UBoxComponent* DoorTrigger;   // assign an Actor with a BoxComponent
 
 	UPROPERTY(EditAnywhere, Category = "Room")
 	TArray<AActor*> SpawnPoints;
