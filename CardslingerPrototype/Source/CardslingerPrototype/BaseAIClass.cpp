@@ -70,6 +70,7 @@ float ABaseAIClass::TakeDamage(float DamageAmount, struct FDamageEvent const &Da
 void ABaseAIClass::OnDeath()
 {
 		//set health to zero
+		OnEnemyDeath.Broadcast(this);
         Health = 0.0f;
 		//get gamemode
         ACardslingerTestGameMode* GameMode = GetWorld()->GetAuthGameMode<ACardslingerTestGameMode>();

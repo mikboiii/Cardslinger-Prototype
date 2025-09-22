@@ -1,13 +1,13 @@
 #include "RoomManager.h"
 #include "Components/BoxComponent.h" 
 #include "GameFramework/Actor.h"
+#include "BaseAIClass.h"
 
 // Sets default values
 ARoomManager::ARoomManager()
 {
 	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
-	UE_LOG(LogTemp, Warning, TEXT("RoomManager constructor called!"));
 }
 
 // Called when the game starts or when spawned
@@ -35,6 +35,7 @@ void ARoomManager::OnPlayerEnterRoom(UPrimitiveComponent* OverlappedComp,AActor*
 {
 	if (!OtherActor->ActorHasTag("Player")) return; // Filter out non player tags
 
+	OnRoomEntered.Broadcast(); // Event for Blueprints
 	bPlayerEnteredRoom = true;
 	LockDoors();
 }
@@ -64,8 +65,38 @@ void ARoomManager::UnlockDoors()
 
 void ARoomManager::SpawnEnemies()
 {
+	if (!EnemyClass || SpawnPoints.Num() == 0) // Check enemy and spawn points have been set
+	{
+		UE_LOG(LogTemp, Log, TEXT("No enemies assigned OR no spawnpoints"));
+		return;
+	}
+
+	for (int32 i = 0; i > NumEnemiesToSpawn; i++)
+	{
+		int32 Index = FMath::RandRange(0, SpawnPoints.Num() - 1);
+		AActor* SpawnPoint = SpawnPoints[Index];
+		if (!SpawnPoint) continue;
+
+		FVector Location = SpawnPoint->GetActorLocation();
+		FRotator Rotation = SpawnPoint->GetActorRotation();
+
+		ABaseAIClass* SpawnedEnemy = GetWorld()->SpawnActor<ABaseAIClass>(EnemyClass, Location, Rotation);
+		if (SpawnedEnemy)
+		{
+			ActiveEnemies.Add(SpawnedEnemy);
+			SpawnedEnemy->OnEnemyDeath.AddDynamic(this, &ARoomManager::OnEnemyDeath);
+		}
+	}
+
 }
 
 void ARoomManager::OnEnemyDeath(ABaseAIClass* DeadEnemy)
 {
+	ActiveEnemies.Remove(DeadEnemy);
+
+	if (ActiveEnemies.Num() == 0)
+	{
+		UnlockDoors();
+		OnRoomCleared.Broadcast(); // Event for Blueprints
+	}
 }

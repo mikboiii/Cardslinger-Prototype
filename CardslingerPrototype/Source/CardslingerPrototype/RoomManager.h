@@ -8,6 +8,8 @@
 class ABaseAIClass;
 
 DECLARE_DYNAMIC_MULTICAST_DELEGATE(FOnDoorOverlap);
+DECLARE_DYNAMIC_MULTICAST_DELEGATE(FOnRoomEntered);
+DECLARE_DYNAMIC_MULTICAST_DELEGATE(FOnRoomCleared);
 
 UCLASS()
 class CARDSLINGERPROTOTYPE_API ARoomManager : public AActor
@@ -15,9 +17,15 @@ class CARDSLINGERPROTOTYPE_API ARoomManager : public AActor
 	GENERATED_BODY()
 
 public:
-	// Expose the event to Blueprints
+	// Expose events to Blueprints
 	UPROPERTY(BlueprintAssignable, Category = "Events")
 	FOnDoorOverlap OnDoorOverlap;
+
+	UPROPERTY(BlueprintAssignable, Category = "Events")
+	FOnRoomEntered OnRoomEntered;
+
+	UPROPERTY(BlueprintAssignable, Category = "Events")
+	FOnRoomCleared OnRoomCleared;
 
 protected:
 	ARoomManager();
