@@ -2310,32 +2310,3 @@ LogConfig: CVar [[LogNamedEventFilters:Frame *]] deferred - dummy variable creat
 [2025.09.24-10.36.34:711][570]Cmd: ToggleDebugCamera
 [2025.09.24-10.36.34:716][570]LogLevel: ActivateLevel /Game/Levels/UEDPIE_0_EmptyLevel 0 0 0
 [2025.09.24-10.36.34:717][570]LogLevel: ActivateLevel /Game/Levels/UEDPIE_0_MovementLevel 1 1 0
-[2025.09.24-10.36.46:231][856]LogWindows: Error: === Critical error: ===
-[2025.09.24-10.36.46:231][856]LogWindows: Error: 
-[2025.09.24-10.36.46:231][856]LogWindows: Error: Fatal error!
-[2025.09.24-10.36.46:231][856]LogWindows: Error: 
-[2025.09.24-10.36.46:231][856]LogWindows: Error: Unhandled Exception: EXCEPTION_ACCESS_VIOLATION reading address 0x0000000000000131
-[2025.09.24-10.36.46:231][856]LogWindows: Error: 
-[2025.09.24-10.36.46:231][856]LogWindows: Error: [Callstack] 0x00007ff82e00d7c9 UnrealEditor-CoreUObject.dll!UnknownFunction []
-[2025.09.24-10.36.46:231][856]LogWindows: Error: [Callstack] 0x000002bb48721347 UnrealEditor-CardslingerPrototype.patch_0.exe!AProjectileCard::Tick() [C:\Users\Mikolaj\Documents\Unreal Projects\Cardslinger-Prototype\CardslingerPrototype\Source\CardslingerPrototype\ProjectileCard.cpp:55]
-[2025.09.24-10.36.46:231][856]LogWindows: Error: [Callstack] 0x00007fffca21f7bd UnrealEditor-Engine.dll!UnknownFunction []
-[2025.09.24-10.36.46:231][856]LogWindows: Error: [Callstack] 0x00007fffca1e9e51 UnrealEditor-Engine.dll!UnknownFunction []
-[2025.09.24-10.36.46:231][856]LogWindows: Error: [Callstack] 0x00007fffcc1e87eb UnrealEditor-Engine.dll!UnknownFunction []
-[2025.09.24-10.36.46:231][856]LogWindows: Error: [Callstack] 0x00007fffcc1efd32 UnrealEditor-Engine.dll!UnknownFunction []
-[2025.09.24-10.36.46:231][856]LogWindows: Error: [Callstack] 0x00007ff82c371c9f UnrealEditor-Core.dll!UnknownFunction []
-[2025.09.24-10.36.46:231][856]LogWindows: Error: [Callstack] 0x00007ff82c3722ae UnrealEditor-Core.dll!UnknownFunction []
-[2025.09.24-10.36.46:231][856]LogWindows: Error: [Callstack] 0x00007ff82c37eeb0 UnrealEditor-Core.dll!UnknownFunction []
-[2025.09.24-10.36.46:231][856]LogWindows: Error: [Callstack] 0x00007fffcc2175aa UnrealEditor-Engine.dll!UnknownFunction []
-[2025.09.24-10.36.46:231][856]LogWindows: Error: [Callstack] 0x00007fffcc220bfe UnrealEditor-Engine.dll!UnknownFunction []
-[2025.09.24-10.36.46:231][856]LogWindows: Error: [Callstack] 0x00007fffcb2d9839 UnrealEditor-Engine.dll!UnknownFunction []
-[2025.09.24-10.36.46:231][856]LogWindows: Error: [Callstack] 0x00007fffcb2e67a2 UnrealEditor-Engine.dll!UnknownFunction []
-[2025.09.24-10.36.46:231][856]LogWindows: Error: [Callstack] 0x00007ff81f9358f8 UnrealEditor-UnrealEd.dll!UnknownFunction []
-[2025.09.24-10.36.46:231][856]LogWindows: Error: [Callstack] 0x00007ff82058ea06 UnrealEditor-UnrealEd.dll!UnknownFunction []
-[2025.09.24-10.36.46:231][856]LogWindows: Error: [Callstack] 0x00007ff60bf28af2 UnrealEditor.exe!UnknownFunction []
-[2025.09.24-10.36.46:231][856]LogWindows: Error: [Callstack] 0x00007ff60bf4d28c UnrealEditor.exe!UnknownFunction []
-[2025.09.24-10.36.46:231][856]LogWindows: Error: [Callstack] 0x00007ff60bf4d37a UnrealEditor.exe!UnknownFunction []
-[2025.09.24-10.36.46:231][856]LogWindows: Error: [Callstack] 0x00007ff60bf50854 UnrealEditor.exe!UnknownFunction []
-[2025.09.24-10.36.46:231][856]LogWindows: Error: [Callstack] 0x00007ff60bf66984 UnrealEditor.exe!UnknownFunction []
-[2025.09.24-10.36.46:231][856]LogWindows: Error: [Callstack] 0x00007ff60bf69d7a UnrealEditor.exe!UnknownFunction []
-[2025.09.24-10.36.46:231][856]LogWindows: Error: [Callstack] 0x00007ff8800be8d7 KERNEL32.DLL!UnknownFunction []
-[2025.09.24-10.36.46:231][856]LogWindows: Error: 
