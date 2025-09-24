@@ -23,6 +23,7 @@ EBTNodeResult::Type UBTTask_LookAtObject::ExecuteTask(UBehaviorTreeComponent& Ow
     if(OwnerComp.GetBlackboardComponent()->GetValueAsObject(TargetKey.SelectedKeyName) == nullptr)
     {
         OwnerComp.GetBlackboardComponent()->SetValueAsObject(TEXT("PlayerActor"), Cast<ABaseCharacterClass>(UGameplayStatics::GetPlayerCharacter(GetWorld(),0)));
+        return EBTNodeResult::Failed;
     }
     AActor* Target = Cast<AActor>(OwnerComp.GetBlackboardComponent()->GetValueAsObject(TargetKey.SelectedKeyName));
     TurnToTarget(Character, Target);
