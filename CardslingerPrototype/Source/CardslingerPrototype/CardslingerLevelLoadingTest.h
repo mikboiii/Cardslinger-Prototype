@@ -22,10 +22,13 @@ class CARDSLINGERPROTOTYPE_API ACardslingerLevelLoadingTest : public ACardslinge
 		virtual void StartPlay() override;
 
 	private:
+		UFUNCTION(BlueprintCallable, Category="Level Loading")
 		void LoadNextLevel();
 		UPROPERTY(EditAnywhere, Category="Levels")
 		TArray<TSoftObjectPtr<UWorld>> LevelList;
 
+		UPROPERTY(VisibleAnywhere)
 		int CurrentLevel = 0;
-		int MaxLevel;
+		UPROPERTY(VisibleAnywhere)
+		int MaxLevelIndex;
 };

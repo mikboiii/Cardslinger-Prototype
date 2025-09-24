@@ -12,8 +12,10 @@
 void ACardslingerLevelLoadingTest::StartPlay()
 {
     Super::StartPlay();
-    MaxLevel = LevelList.Num();
-    LoadNextLevel();
+    MaxLevelIndex = LevelList.Num()-1;
+    UE_LOG(LogTemp, Display, TEXT("Max Level: %d, Current Level: %d"), MaxLevelIndex, CurrentLevel);
+    FLatentActionInfo LatentInfo;
+    UGameplayStatics::LoadStreamLevel(this, FName(LevelList[CurrentLevel].GetAssetName()), true, false, LatentInfo);
 }
 
 void ACardslingerLevelLoadingTest::PawnKilled(APawn* PawnKilled)
@@ -43,7 +45,12 @@ void ACardslingerLevelLoadingTest::EndGame(bool bIsPlayerWinner)
 
 void ACardslingerLevelLoadingTest::LoadNextLevel()
 {
-    FLatentActionInfo LatentInfo;
-    UGameplayStatics::LoadStreamLevel(this, FName(LevelList[CurrentLevel].GetAssetName()), true, true, LatentInfo);
-    if(CurrentLevel<MaxLevel) CurrentLevel++;
+    FLatentActionInfo LatentInfoLoad;
+    FLatentActionInfo LatentInfoUnload;
+    UGameplayStatics::LoadStreamLevel(this, FName(LevelList[CurrentLevel+1].GetAssetName()), true, true, LatentInfoLoad);
+    UGameplayStatics::UnloadStreamLevel(this, FName(LevelList[CurrentLevel].GetAssetName()), LatentInfoUnload, true);
+    UGameplayStatics::GetStreamingLevel(this, FName(LevelList[CurrentLevel].GetAssetName()))->SetShouldBeLoaded(false);
+    UE_LOG(LogTemp, Display, TEXT("Level unloaded: %s"), *LevelList[CurrentLevel].GetAssetName());
+    if(CurrentLevel<MaxLevelIndex) CurrentLevel++;
+    UE_LOG(LogTemp, Display, TEXT("Max Level: %d, Current Level: %d"), MaxLevelIndex, CurrentLevel);
 }

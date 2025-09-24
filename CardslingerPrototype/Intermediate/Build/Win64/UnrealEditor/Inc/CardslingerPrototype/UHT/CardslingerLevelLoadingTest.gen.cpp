@@ -15,8 +15,43 @@ void EmptyLinkFunctionForGeneratedCodeCardslingerLevelLoadingTest() {}
 	ENGINE_API UClass* Z_Construct_UClass_UWorld_NoRegister();
 	UPackage* Z_Construct_UPackage__Script_CardslingerPrototype();
 // End Cross Module References
+	DEFINE_FUNCTION(ACardslingerLevelLoadingTest::execLoadNextLevel)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->LoadNextLevel();
+		P_NATIVE_END;
+	}
 	void ACardslingerLevelLoadingTest::StaticRegisterNativesACardslingerLevelLoadingTest()
 	{
+		UClass* Class = ACardslingerLevelLoadingTest::StaticClass();
+		static const FNameNativePtrPair Funcs[] = {
+			{ "LoadNextLevel", &ACardslingerLevelLoadingTest::execLoadNextLevel },
+		};
+		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
+	}
+	struct Z_Construct_UFunction_ACardslingerLevelLoadingTest_LoadNextLevel_Statics
+	{
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ACardslingerLevelLoadingTest_LoadNextLevel_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Level Loading" },
+		{ "ModuleRelativePath", "CardslingerLevelLoadingTest.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_ACardslingerLevelLoadingTest_LoadNextLevel_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ACardslingerLevelLoadingTest, nullptr, "LoadNextLevel", nullptr, nullptr, nullptr, 0, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04040401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_ACardslingerLevelLoadingTest_LoadNextLevel_Statics::Function_MetaDataParams), Z_Construct_UFunction_ACardslingerLevelLoadingTest_LoadNextLevel_Statics::Function_MetaDataParams) };
+	UFunction* Z_Construct_UFunction_ACardslingerLevelLoadingTest_LoadNextLevel()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_ACardslingerLevelLoadingTest_LoadNextLevel_Statics::FuncParams);
+		}
+		return ReturnFunction;
 	}
 	IMPLEMENT_CLASS_NO_AUTO_REGISTRATION(ACardslingerLevelLoadingTest);
 	UClass* Z_Construct_UClass_ACardslingerLevelLoadingTest_NoRegister()
@@ -26,6 +61,7 @@ void EmptyLinkFunctionForGeneratedCodeCardslingerLevelLoadingTest() {}
 	struct Z_Construct_UClass_ACardslingerLevelLoadingTest_Statics
 	{
 		static UObject* (*const DependentSingletons[])();
+		static const FClassFunctionLinkInfo FuncInfo[];
 #if WITH_METADATA
 		static const UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
@@ -34,6 +70,14 @@ void EmptyLinkFunctionForGeneratedCodeCardslingerLevelLoadingTest() {}
 		static const UECodeGen_Private::FMetaDataPairParam NewProp_LevelList_MetaData[];
 #endif
 		static const UECodeGen_Private::FArrayPropertyParams NewProp_LevelList;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_CurrentLevel_MetaData[];
+#endif
+		static const UECodeGen_Private::FIntPropertyParams NewProp_CurrentLevel;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_MaxLevelIndex_MetaData[];
+#endif
+		static const UECodeGen_Private::FIntPropertyParams NewProp_MaxLevelIndex;
 		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UECodeGen_Private::FClassParams ClassParams;
@@ -43,6 +87,10 @@ void EmptyLinkFunctionForGeneratedCodeCardslingerLevelLoadingTest() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_CardslingerPrototype,
 	};
 	static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_ACardslingerLevelLoadingTest_Statics::DependentSingletons) < 16);
+	const FClassFunctionLinkInfo Z_Construct_UClass_ACardslingerLevelLoadingTest_Statics::FuncInfo[] = {
+		{ &Z_Construct_UFunction_ACardslingerLevelLoadingTest_LoadNextLevel, "LoadNextLevel" }, // 3578937402
+	};
+	static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_ACardslingerLevelLoadingTest_Statics::FuncInfo) < 2048);
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ACardslingerLevelLoadingTest_Statics::Class_MetaDataParams[] = {
 #if !UE_BUILD_SHIPPING
@@ -62,9 +110,25 @@ void EmptyLinkFunctionForGeneratedCodeCardslingerLevelLoadingTest() {}
 	};
 #endif
 	const UECodeGen_Private::FArrayPropertyParams Z_Construct_UClass_ACardslingerLevelLoadingTest_Statics::NewProp_LevelList = { "LevelList", nullptr, (EPropertyFlags)0x0044000000000001, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ACardslingerLevelLoadingTest, LevelList), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_ACardslingerLevelLoadingTest_Statics::NewProp_LevelList_MetaData), Z_Construct_UClass_ACardslingerLevelLoadingTest_Statics::NewProp_LevelList_MetaData) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ACardslingerLevelLoadingTest_Statics::NewProp_CurrentLevel_MetaData[] = {
+		{ "Category", "CardslingerLevelLoadingTest" },
+		{ "ModuleRelativePath", "CardslingerLevelLoadingTest.h" },
+	};
+#endif
+	const UECodeGen_Private::FIntPropertyParams Z_Construct_UClass_ACardslingerLevelLoadingTest_Statics::NewProp_CurrentLevel = { "CurrentLevel", nullptr, (EPropertyFlags)0x0040000000020001, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ACardslingerLevelLoadingTest, CurrentLevel), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_ACardslingerLevelLoadingTest_Statics::NewProp_CurrentLevel_MetaData), Z_Construct_UClass_ACardslingerLevelLoadingTest_Statics::NewProp_CurrentLevel_MetaData) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ACardslingerLevelLoadingTest_Statics::NewProp_MaxLevelIndex_MetaData[] = {
+		{ "Category", "CardslingerLevelLoadingTest" },
+		{ "ModuleRelativePath", "CardslingerLevelLoadingTest.h" },
+	};
+#endif
+	const UECodeGen_Private::FIntPropertyParams Z_Construct_UClass_ACardslingerLevelLoadingTest_Statics::NewProp_MaxLevelIndex = { "MaxLevelIndex", nullptr, (EPropertyFlags)0x0040000000020001, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ACardslingerLevelLoadingTest, MaxLevelIndex), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_ACardslingerLevelLoadingTest_Statics::NewProp_MaxLevelIndex_MetaData), Z_Construct_UClass_ACardslingerLevelLoadingTest_Statics::NewProp_MaxLevelIndex_MetaData) };
 	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ACardslingerLevelLoadingTest_Statics::PropPointers[] = {
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ACardslingerLevelLoadingTest_Statics::NewProp_LevelList_Inner,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ACardslingerLevelLoadingTest_Statics::NewProp_LevelList,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ACardslingerLevelLoadingTest_Statics::NewProp_CurrentLevel,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ACardslingerLevelLoadingTest_Statics::NewProp_MaxLevelIndex,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_ACardslingerLevelLoadingTest_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<ACardslingerLevelLoadingTest>::IsAbstract,
@@ -74,11 +138,11 @@ void EmptyLinkFunctionForGeneratedCodeCardslingerLevelLoadingTest() {}
 		"Game",
 		&StaticCppClassTypeInfo,
 		DependentSingletons,
-		nullptr,
+		FuncInfo,
 		Z_Construct_UClass_ACardslingerLevelLoadingTest_Statics::PropPointers,
 		nullptr,
 		UE_ARRAY_COUNT(DependentSingletons),
-		0,
+		UE_ARRAY_COUNT(FuncInfo),
 		UE_ARRAY_COUNT(Z_Construct_UClass_ACardslingerLevelLoadingTest_Statics::PropPointers),
 		0,
 		0x009002ACu,
@@ -105,9 +169,9 @@ void EmptyLinkFunctionForGeneratedCodeCardslingerLevelLoadingTest() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_CardslingerLevelLoadingTest_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_ACardslingerLevelLoadingTest, ACardslingerLevelLoadingTest::StaticClass, TEXT("ACardslingerLevelLoadingTest"), &Z_Registration_Info_UClass_ACardslingerLevelLoadingTest, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ACardslingerLevelLoadingTest), 2604456868U) },
+		{ Z_Construct_UClass_ACardslingerLevelLoadingTest, ACardslingerLevelLoadingTest::StaticClass, TEXT("ACardslingerLevelLoadingTest"), &Z_Registration_Info_UClass_ACardslingerLevelLoadingTest, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ACardslingerLevelLoadingTest), 14049840U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_CardslingerLevelLoadingTest_h_2746061486(TEXT("/Script/CardslingerPrototype"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_CardslingerLevelLoadingTest_h_319712926(TEXT("/Script/CardslingerPrototype"),
 		Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_CardslingerLevelLoadingTest_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_Mikolaj_Documents_Unreal_Projects_Cardslinger_Prototype_CardslingerPrototype_Source_CardslingerPrototype_CardslingerLevelLoadingTest_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);
