@@ -21,7 +21,6 @@ class CARDSLINGERPROTOTYPE_API ACardslingerLevelLoadingTest : public ACardslinge
 
 	private:
 		void LoadNextLevel();
-
-		UPROPERTY(EditAnywhere, Category = "Levels")
-		FName LevelEnd;
+		UPROPERTY(EditAnywhere, Category="Levels")
+		TArray<TSoftObjectPtr<UWorld>> LevelList;
 };

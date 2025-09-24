@@ -31,11 +31,11 @@ void ACardslingerLevelLoadingTest::PawnKilled(APawn* PawnKilled)
 
 void ACardslingerLevelLoadingTest::EndGame(bool bIsPlayerWinner)
 {
-    LoadNextLevel();
+    //LoadNextLevel();
 }
 
 void ACardslingerLevelLoadingTest::LoadNextLevel()
 {
-    FLatentActionInfo LatentInfo;
-	UGameplayStatics::LoadStreamLevel(this, LevelEnd, true, true, LatentInfo);
+    //FLatentActionInfo LatentInfo;
+	//UGameplayStatics::LoadStreamLevel(this, LevelEnd, true, true, LatentInfo);
 }
