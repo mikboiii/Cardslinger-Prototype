@@ -19,8 +19,13 @@ class CARDSLINGERPROTOTYPE_API ACardslingerLevelLoadingTest : public ACardslinge
 
 		virtual void EndGame(bool bIsPlayerWinner) override;
 
+		virtual void StartPlay() override;
+
 	private:
 		void LoadNextLevel();
 		UPROPERTY(EditAnywhere, Category="Levels")
 		TArray<TSoftObjectPtr<UWorld>> LevelList;
+
+		int CurrentLevel = 0;
+		int MaxLevel;
 };

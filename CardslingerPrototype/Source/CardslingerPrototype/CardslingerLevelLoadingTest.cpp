@@ -9,6 +9,13 @@
 #include "Engine/DamageEvents.h"
 #include "BaseAIClass.h"
 
+void ACardslingerLevelLoadingTest::StartPlay()
+{
+    Super::StartPlay();
+    MaxLevel = LevelList.Num();
+    LoadNextLevel();
+}
+
 void ACardslingerLevelLoadingTest::PawnKilled(APawn* PawnKilled)
 {
     APlayerController* PlayerController = Cast<APlayerController>(PawnKilled->GetController());
@@ -36,6 +43,7 @@ void ACardslingerLevelLoadingTest::EndGame(bool bIsPlayerWinner)
 
 void ACardslingerLevelLoadingTest::LoadNextLevel()
 {
-    //FLatentActionInfo LatentInfo;
-	//UGameplayStatics::LoadStreamLevel(this, LevelEnd, true, true, LatentInfo);
+    FLatentActionInfo LatentInfo;
+    UGameplayStatics::LoadStreamLevel(this, FName(LevelList[CurrentLevel].GetAssetName()), true, true, LatentInfo);
+    if(CurrentLevel<MaxLevel) CurrentLevel++;
 }
