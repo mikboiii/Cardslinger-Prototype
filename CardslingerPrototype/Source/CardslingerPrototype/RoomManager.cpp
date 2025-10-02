@@ -38,6 +38,7 @@ void ARoomManager::OnPlayerEnterRoom(UPrimitiveComponent* OverlappedComp,AActor*
 	OnRoomEntered.Broadcast(); // Event for Blueprints
 	bPlayerEnteredRoom = true;
 	LockDoors();
+	SpawnEnemies();
 }
 
 void ARoomManager::LockDoors()
@@ -71,7 +72,7 @@ void ARoomManager::SpawnEnemies()
 		return;
 	}
 
-	for (int32 i = 0; i > NumEnemiesToSpawn; i++)
+	for (int32 i = 0; i < NumEnemiesToSpawn; i++)
 	{
 		int32 Index = FMath::RandRange(0, SpawnPoints.Num() - 1);
 		AActor* SpawnPoint = SpawnPoints[Index];
@@ -84,7 +85,15 @@ void ARoomManager::SpawnEnemies()
 		if (SpawnedEnemy)
 		{
 			ActiveEnemies.Add(SpawnedEnemy);
+			// bind RoomManager function to enemy death event
 			SpawnedEnemy->OnEnemyDeath.AddDynamic(this, &ARoomManager::OnEnemyDeath);
+
+			UE_LOG(LogTemp, Warning, TEXT("Enemy [%s] registered to RoomManager. Total enemies: %d"),
+				*SpawnedEnemy->GetName(), ActiveEnemies.Num());
+		}
+		else
+		{
+			UE_LOG(LogTemp, Error, TEXT("RoomManager::SpawnEnemies - Failed to spawn enemy %d"), i);
 		}
 	}
 

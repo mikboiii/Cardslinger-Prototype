@@ -27,6 +27,9 @@ public:
 	UPROPERTY(BlueprintAssignable, Category = "Events")
 	FOnRoomCleared OnRoomCleared;
 
+	UPROPERTY(EditAnywhere)
+	TArray<ABaseAIClass*> ActiveEnemies;
+
 protected:
 	ARoomManager();
 
@@ -66,6 +69,6 @@ protected:
 	bool bPreSpawned = false;
 
 private:
-	TArray<ABaseAIClass*> ActiveEnemies;
+
 	bool bPlayerEnteredRoom;
 };

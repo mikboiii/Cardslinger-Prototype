@@ -70,8 +70,10 @@ float ABaseAIClass::TakeDamage(float DamageAmount, struct FDamageEvent const &Da
 void ABaseAIClass::OnDeath()
 {
 		//set health to zero
-		OnEnemyDeath.Broadcast(this);
         Health = 0.0f;
+		// event that triggers RoomManager to remove enemy from activeEnemies
+		OnEnemyDeath.Broadcast(this);
+
 		//get gamemode
         ACardslingerTestGameMode* GameMode = GetWorld()->GetAuthGameMode<ACardslingerTestGameMode>();
         if(GameMode != nullptr)

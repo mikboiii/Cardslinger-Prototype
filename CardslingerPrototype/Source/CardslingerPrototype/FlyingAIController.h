@@ -17,6 +17,7 @@ class CARDSLINGERPROTOTYPE_API AFlyingAIController : public ABaseAIController
 	public:
 
 		class UBehaviorTree* GetBehaviorTree();
+		UBlackboardComponent* GetBlackboardComponent() const { return BlackboardComponent; }
 
 	protected:
 		virtual void BeginPlay() override;
