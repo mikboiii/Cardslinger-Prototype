@@ -45,12 +45,15 @@ void ACardslingerLevelLoadingTest::EndGame(bool bIsPlayerWinner)
 
 void ACardslingerLevelLoadingTest::LoadNextLevel()
 {
-    FLatentActionInfo LatentInfoLoad;
-    FLatentActionInfo LatentInfoUnload;
-    UGameplayStatics::LoadStreamLevel(this, FName(LevelList[CurrentLevel+1].GetAssetName()), true, true, LatentInfoLoad);
-    UGameplayStatics::UnloadStreamLevel(this, FName(LevelList[CurrentLevel].GetAssetName()), LatentInfoUnload, true);
-    UGameplayStatics::GetStreamingLevel(this, FName(LevelList[CurrentLevel].GetAssetName()))->SetShouldBeLoaded(false);
-    UE_LOG(LogTemp, Display, TEXT("Level unloaded: %s"), *LevelList[CurrentLevel].GetAssetName());
-    if(CurrentLevel<MaxLevelIndex) CurrentLevel++;
-    UE_LOG(LogTemp, Display, TEXT("Max Level: %d, Current Level: %d"), MaxLevelIndex, CurrentLevel);
+    if(CurrentLevel<MaxLevelIndex)
+    {
+        FLatentActionInfo LatentInfoLoad;
+        FLatentActionInfo LatentInfoUnload;
+        UGameplayStatics::LoadStreamLevel(this, FName(LevelList[CurrentLevel+1].GetAssetName()), true, true, LatentInfoLoad);
+        UGameplayStatics::UnloadStreamLevel(this, FName(LevelList[CurrentLevel].GetAssetName()), LatentInfoUnload, true);
+        UGameplayStatics::GetStreamingLevel(this, FName(LevelList[CurrentLevel].GetAssetName()))->SetShouldBeLoaded(false);
+        UE_LOG(LogTemp, Display, TEXT("Level unloaded: %s"), *LevelList[CurrentLevel].GetAssetName());
+        CurrentLevel++;
+        UE_LOG(LogTemp, Display, TEXT("Max Level: %d, Current Level: %d"), MaxLevelIndex, CurrentLevel);
+    }
 }
