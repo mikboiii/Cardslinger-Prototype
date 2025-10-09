@@ -4,7 +4,9 @@
 
 #include "CoreMinimal.h"
 #include "AIController.h"
+#include "BaseAIController.h"
 #include "FlyingAIController.generated.h"
+
 
 /**
  * 
@@ -13,12 +15,10 @@ UCLASS()
 class CARDSLINGERPROTOTYPE_API AFlyingAIController : public ABaseAIController
 {
 	GENERATED_BODY()
-	
+
 	public:
-
-		class UBehaviorTree* GetBehaviorTree();
 		UBlackboardComponent* GetBlackboardComponent() const { return BlackboardComponent; }
-
+	
 	protected:
 		virtual void BeginPlay() override;
 

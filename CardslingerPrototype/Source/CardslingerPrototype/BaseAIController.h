@@ -4,6 +4,8 @@
 
 #include "CoreMinimal.h"
 #include "AIController.h"
+#include "BehaviorTree/BlackboardComponent.h"
+#include "BehaviorTree/BehaviorTreeComponent.h"
 #include "BaseAIController.generated.h"
 
 /**
@@ -23,6 +25,13 @@ public:
 protected:
 	virtual void BeginPlay() override;
 
+	// Blackboard stuff
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "AI")
+	UBlackboardComponent* BlackboardComponent;
+
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "AI")
+	UBehaviorTreeComponent* BehaviorTreeComponent;
+	
 	APawn* PlayerPawn;
 
 

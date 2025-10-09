@@ -3,8 +3,6 @@
 
 #include "BaseAIController.h"
 #include "Kismet/GameplayStatics.h"
-#include "BehaviorTree/BlackboardComponent.h"
-#include "BehaviorTree/BehaviorTree.h"
 #include "BaseAIClass.h"
 
 void ABaseAIController::BeginPlay()
