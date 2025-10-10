@@ -33,10 +33,11 @@ void ARoomManager::BeginPlay()
 
 void ARoomManager::OnPlayerEnterRoom(UPrimitiveComponent* OverlappedComp,AActor* OtherActor,UPrimitiveComponent* OtherComp,int32 OtherBodyIndex,bool bFromSweep,const FHitResult& SweepResult)
 {
-	if (!OtherActor->ActorHasTag("Player")) return; // Filter out non player tags
+	if (!OtherActor->ActorHasTag("Player")) return; // Only trigger for player
+	if (bPlayerEnteredRoom) return; // Prevent multiple triggers
 
-	OnRoomEntered.Broadcast(); // Event for Blueprints
 	bPlayerEnteredRoom = true;
+	OnRoomEntered.Broadcast(); // Event for Blueprints
 	LockDoors();
 	SpawnEnemies();
 }
@@ -59,6 +60,7 @@ void ARoomManager::UnlockDoors()
 	//{
 		if (Door)
 		{
+			UE_LOG(LogTemp, Log, TEXT("Open Doors Bitch"));
 			Door->Tags.Remove("Locked"); // Event that will open the door
 		}
 	//}
@@ -72,10 +74,22 @@ void ARoomManager::SpawnEnemies()
 		return;
 	}
 
-	for (int32 i = 0; i < NumEnemiesToSpawn; i++)
+	// Copy SpawnPoints, then shuffle it
+	TArray<AActor*> ShuffledPoints = SpawnPoints;
+	// Swap each element with a random position
+	for (int32 i = 0; i < ShuffledPoints.Num(); i++)
 	{
-		int32 Index = FMath::RandRange(0, SpawnPoints.Num() - 1);
-		AActor* SpawnPoint = SpawnPoints[Index];
+		int32 SwapIndex = FMath::RandRange(0, SpawnPoints.Num() - 1); 
+		ShuffledPoints.Swap(i, SwapIndex);
+	}
+
+	// Ensure enemies only spawn up to the amount of SpawnPoints
+	int32 SpawnCount = FMath::Min(NumEnemiesToSpawn, ShuffledPoints.Num());
+
+	// Loop through shuffled SpawnPoints
+	for (int32 i = 0; i < SpawnCount; i++)
+	{
+		AActor* SpawnPoint = ShuffledPoints[i];
 		if (!SpawnPoint) continue;
 
 		FVector Location = SpawnPoint->GetActorLocation();
@@ -101,6 +115,7 @@ void ARoomManager::SpawnEnemies()
 
 void ARoomManager::OnEnemyDeath(ABaseAIClass* DeadEnemy)
 {
+	UE_LOG(LogTemp, Log, TEXT("OnEnemyDeath, remove activeEnemy"));
 	ActiveEnemies.Remove(DeadEnemy);
 
 	if (ActiveEnemies.Num() == 0)

@@ -68,7 +68,6 @@ protected:
 	UPROPERTY(EditAnywhere, Category = "Room")
 	bool bPreSpawned = false;
 
-private:
-
+	UPROPERTY(EditAnywhere, Category = "Room")
 	bool bPlayerEnteredRoom;
 };

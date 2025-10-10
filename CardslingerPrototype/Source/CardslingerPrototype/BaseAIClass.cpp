@@ -58,10 +58,11 @@ void ABaseAIClass::Tick(float DeltaTime)
 float ABaseAIClass::TakeDamage(float DamageAmount, struct FDamageEvent const &DamageEvent, class AController *EventInstigator, AActor* DamageCauser)
 {
 	//call unreal damage code
-    float DamageToApply = Super::TakeDamage(DamageAmount, DamageEvent, EventInstigator, EventInstigator);
-	Health -= Damage;
+    float DamageToApply = Super::TakeDamage(DamageAmount, DamageEvent, EventInstigator, DamageCauser);
+	Health -= DamageAmount;
 	if(IsDead())
 	{
+		UE_LOG(LogTemp, Warning, TEXT("Enemy %s died, calling OnDeath()"), *GetName());
 		OnDeath();
 	}
     return DamageToApply;
@@ -72,6 +73,9 @@ void ABaseAIClass::OnDeath()
 		//set health to zero
         Health = 0.0f;
 		// event that triggers RoomManager to remove enemy from activeEnemies
+
+		// UE_LOG(LogTemp, Log, TEXT("On Enemy Death");
+
 		OnEnemyDeath.Broadcast(this);
 
 		//get gamemode
