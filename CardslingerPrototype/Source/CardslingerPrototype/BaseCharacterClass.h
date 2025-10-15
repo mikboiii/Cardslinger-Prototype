@@ -255,6 +255,9 @@ private:
 	UPROPERTY(VisibleAnywhere)
 	TArray<ABaseCard*> CardHand;
 
+	UPROPERTY(EditAnywhere, Category = "Audio")
+    TArray<USoundBase*> BasicThrows;
+
 	UPROPERTY(EditAnywhere)
 	TSubclassOf<ABaseCard> CardTemplate;
 
