@@ -116,6 +116,7 @@ void ARoomManager::SpawnEnemies()
 void ARoomManager::OnEnemyDeath(ABaseAIClass* DeadEnemy)
 {
 	UE_LOG(LogTemp, Log, TEXT("OnEnemyDeath, remove activeEnemy"));
+
 	ActiveEnemies.Remove(DeadEnemy);
 
 	if (ActiveEnemies.Num() == 0)

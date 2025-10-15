@@ -47,6 +47,8 @@ protected:
 	void UnlockDoors();
 
 	void SpawnEnemies();
+
+	UFUNCTION()
 	void OnEnemyDeath(ABaseAIClass* DeadEnemy);
 
 
