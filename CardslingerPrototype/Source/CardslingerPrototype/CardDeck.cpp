@@ -14,12 +14,14 @@
 #include "Serialization/MemoryReader.h"
 #include "Animation/AnimInstance.h"
 #include "Kismet/GameplayStatics.h"
+#include "Components/AudioComponent.h"
 
 // Sets default values
 ACardDeck::ACardDeck()
 {
  	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
+	CardDeckAudioSource = CreateDefaultSubobject<UAudioComponent>(TEXT("Card Deck Audio Source"));
 
 }
 
