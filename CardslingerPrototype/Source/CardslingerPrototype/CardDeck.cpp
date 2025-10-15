@@ -153,6 +153,7 @@ void ACardDeck::RemoveCardFromDeck(int CardIndex)
 /// @brief Triggers the reload animation
 void ACardDeck::ReloadCards()
 {
+	CardDeckAudioSource->Play();
 	//loop through all remaining cards
 	for(USkeletalMeshComponent* CardMesh : CardMeshArray)
 	{
@@ -177,6 +178,7 @@ void ACardDeck::SpawnCard()
 	{
 		//clear reload timer and do nothing
 		GetWorldTimerManager().ClearTimer(ReloadHandle);
+		CardDeckAudioSource->Stop();
 		return;
 	}
 	//get index of current card
