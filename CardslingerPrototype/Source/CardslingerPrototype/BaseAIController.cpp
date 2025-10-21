@@ -8,9 +8,7 @@
 void ABaseAIController::BeginPlay()
 {
     Super::BeginPlay();
-
     PlayerPawn = UGameplayStatics::GetPlayerPawn(GetWorld(), 0);
-
 }
 
 void ABaseAIController::Tick(float DeltaSeconds)
@@ -26,6 +24,32 @@ bool ABaseAIController::IsDead() const
         return ControlledCharacter->IsDead();
     }
     return true;
+}
+
+void ABaseAIController::OnPossess(APawn* InPawn)
+{
+    Super::OnPossess(InPawn);
+
+    // RunBehaviorTree and initialize blackboard here
+    if (AIBehavior)
+    {
+        RunBehaviorTree(AIBehavior);
+        BlackboardComponent =GetBlackboardComponent();
+        if (GetBlackboardComponent())
+        {
+            GetBlackboardComponent()->SetValueAsFloat(TEXT("FireCooldown"), /*initial value*/ 1.0f);
+        }
+        else
+        {
+            {
+                UE_LOG(LogTemp, Warning, TEXT("%s: Blackboard invalid after RunBehaviorTree"), *GetName());
+            }
+        }
+    }
+    else
+    {
+        UE_LOG(LogTemp, Warning, TEXT("%s has no AIBehavior assigned"), *GetName());
+    }
 }
 
 UBehaviorTree* ABaseAIController::GetBehaviorTree()

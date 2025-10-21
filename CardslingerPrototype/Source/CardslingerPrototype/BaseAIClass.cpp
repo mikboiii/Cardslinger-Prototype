@@ -44,6 +44,8 @@ void ABaseAIClass::BeginPlay()
 	EnemyMesh = GetMesh();
 	MeshOffset = EnemyMesh->GetRelativeLocation();
 	MeshRotation = EnemyMesh->GetRelativeRotation();
+
+	// Moved to ABaseAIController
 	//ThisController->GetBlackboardComponent()->SetValueAsFloat(TEXT("FireCooldown"), FireCooldown);
 	
 }
