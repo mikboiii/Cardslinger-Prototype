@@ -15,18 +15,17 @@ void ARoomManager::BeginPlay()
 {
 	Super::BeginPlay();
 
-	if (Door)
+	for (AActor* DoorActor : Doors)
 	{
-		DoorTrigger = Door->FindComponentByClass<UBoxComponent>();
-
-		if (DoorTrigger)
+		if (!DoorActor) continue;
 		{
-			DoorTrigger->OnComponentBeginOverlap.AddDynamic(this, &ARoomManager::OnPlayerEnterRoom);
-			UE_LOG(LogTemp, Log, TEXT("Trigger box: %s"), *DoorTrigger->GetName());
-		}
-		else
-		{
-			UE_LOG(LogTemp, Error, TEXT("TriggerBox is Null!"));
+			UBoxComponent* Trigger = DoorActor->FindComponentByClass<UBoxComponent>();
+			if (Trigger)
+			{
+				Trigger->OnComponentBeginOverlap.AddDynamic(this, &ARoomManager::OnPlayerEnterRoom);
+				DoorTriggers.Add(Trigger);
+				UE_LOG(LogTemp, Log, TEXT("Bound trigger box: %s"), *DoorActor->GetName());
+			}
 		}
 	}
 }
@@ -36,81 +35,100 @@ void ARoomManager::OnPlayerEnterRoom(UPrimitiveComponent* OverlappedComp,AActor*
 	if (!OtherActor->ActorHasTag("Player")) return; // Only trigger for player
 	if (bPlayerEnteredRoom) return; // Prevent multiple triggers
 
+	AActor* TriggeredDoor = nullptr;
+	for (AActor* DoorActor: Doors)
+	{
+		if (UBoxComponent* Trigger = DoorActor->FindComponentByClass<UBoxComponent>())
+		{
+			if (Trigger == OverlappedComp)
+			{
+				TriggeredDoor = DoorActor;
+				break;
+			}
+		}
+	}
+	
 	bPlayerEnteredRoom = true;
 	OnRoomEntered.Broadcast(); // Event for Blueprints
 	LockDoors();
-	SpawnEnemies();
+	
+	SpawnEnemies(TriggeredDoor);
 }
 
 void ARoomManager::LockDoors()
 {
-	//for (AActor* Door : Doors)
-	//{
+	for (AActor* Door : Doors)
+	{
 		if (Door)
-		{
-			UE_LOG(LogTemp, Log, TEXT("Lock Doors Bitch"));
-			Door->Tags.AddUnique("Locked"); // Event that will close the door
-		}
-	//}
+			Door->Tags.AddUnique("Locked");
+	}
 }
 
 void ARoomManager::UnlockDoors()
 {
-	//for (AActor* Door : Doors)
-	//{
-		if (Door)
-		{
-			UE_LOG(LogTemp, Log, TEXT("Open Doors Bitch"));
-			Door->Tags.Remove("Locked"); // Event that will open the door
-		}
-	//}
-}
-
-void ARoomManager::SpawnEnemies()
-{
-	if (!EnemyClass || SpawnPoints.Num() == 0) // Check enemy and spawn points have been set
+	for (AActor* Door : Doors)
 	{
-		UE_LOG(LogTemp, Log, TEXT("No enemies assigned OR no spawnpoints"));
+		if (Door)
+			Door->Tags.Remove("Locked");
+	}
+}
+	
+void ARoomManager::SpawnEnemies(AActor* Door)
+{
+	// Find the DoorActor that triggered the overlap, so we spawn the correct enemies associated with that door
+	const FDoorSpawnConfig* Config = nullptr;
+
+	for (const FDoorSpawnConfig& Item : DoorSpawnConfigs)
+	{
+		if (Item.Door == Door)
+		{
+			Config = &Item;
+			break;
+		}
+	}
+
+	if (!Config)
+	{
+		UE_LOG(LogTemp, Warning, TEXT("No spawn config for this door."));
 		return;
 	}
 
-	// Copy SpawnPoints, then shuffle it
-	TArray<AActor*> ShuffledPoints = SpawnPoints;
-	// Swap each element with a random position
-	for (int32 i = 0; i < ShuffledPoints.Num(); i++)
+	// Make sure enemies and spawnpoints have been assigned
+	if (!EnemyClass || Config->SpawnPoints.Num() == 0)
 	{
-		int32 SwapIndex = FMath::RandRange(0, SpawnPoints.Num() - 1); 
-		ShuffledPoints.Swap(i, SwapIndex);
+		UE_LOG(LogTemp, Warning, TEXT("Missing enemy class or spawn points."));
+		return;
 	}
 
-	// Ensure enemies only spawn up to the amount of SpawnPoints
-	int32 SpawnCount = FMath::Min(NumEnemiesToSpawn, ShuffledPoints.Num());
+	// Get the SpawnCount from the door config, ensure enemies only spawn up to the amount of SpawnPoints
+	int32 SpawnCount = FMath::Min(Config->NumEnemiesToSpawn, Config->SpawnPoints.Num());
+	
+	// // Copy SpawnPoints, then shuffle it
+	
+	// TArray<AActor*> ShuffledPoints = SpawnPoints;
+	// // Swap each element with a random position
+	// for (int32 i = 0; i < ShuffledPoints.Num(); i++)
+	// {
+	// 	int32 SwapIndex = FMath::RandRange(0, SpawnPoints.Num() - 1); 
+	// 	ShuffledPoints.Swap(i, SwapIndex);
+	// }
 
-	// Loop through shuffled SpawnPoints
 	for (int32 i = 0; i < SpawnCount; i++)
 	{
-		AActor* SpawnPoint = ShuffledPoints[i];
+		AActor* SpawnPoint = Config->SpawnPoints[i];
 		if (!SpawnPoint) continue;
 
 		FVector Location = SpawnPoint->GetActorLocation();
 		FRotator Rotation = SpawnPoint->GetActorRotation();
 
-		ABaseAIClass* SpawnedEnemy = GetWorld()->SpawnActor<ABaseAIClass>(EnemyClass, Location, Rotation);
-		if (SpawnedEnemy)
+		ABaseAIClass* Enemy = GetWorld()->SpawnActor<ABaseAIClass>(EnemyClass, Location, Rotation);
+		if (Enemy)
 		{
-			ActiveEnemies.Add(SpawnedEnemy);
-			// bind RoomManager function to enemy death event
-			SpawnedEnemy->OnEnemyDeath.AddDynamic(this, &ARoomManager::OnEnemyDeath);
-
-			UE_LOG(LogTemp, Warning, TEXT("Enemy [%s] registered to RoomManager. Total enemies: %d"),
-				*SpawnedEnemy->GetName(), ActiveEnemies.Num());
-		}
-		else
-		{
-			UE_LOG(LogTemp, Error, TEXT("RoomManager::SpawnEnemies - Failed to spawn enemy %d"), i);
+			ActiveEnemies.Add(Enemy);
+			Enemy->OnEnemyDeath.AddDynamic(this, &ARoomManager::OnEnemyDeath);
 		}
 	}
-
+	UE_LOG(LogTemp, Log, TEXT("Spawned %d enemies for door %s"), SpawnCount, *Door->GetName());
 }
 
 void ARoomManager::OnEnemyDeath(ABaseAIClass* DeadEnemy)

@@ -11,6 +11,24 @@ DECLARE_DYNAMIC_MULTICAST_DELEGATE(FOnDoorOverlap);
 DECLARE_DYNAMIC_MULTICAST_DELEGATE(FOnRoomEntered);
 DECLARE_DYNAMIC_MULTICAST_DELEGATE(FOnRoomCleared);
 
+USTRUCT(BlueprintType)
+struct FDoorSpawnConfig
+{
+    GENERATED_BODY()
+
+	// Door reference 
+    UPROPERTY(EditAnywhere, BlueprintReadWrite)
+    AActor* Door = nullptr;
+
+	// Spawn points associated with this door
+    UPROPERTY(EditAnywhere, BlueprintReadWrite)
+    TArray<AActor*> SpawnPoints;
+
+	// How many enemies to spawn when enemy is triggered
+    UPROPERTY(EditAnywhere, BlueprintReadWrite)
+    int32 NumEnemiesToSpawn = 3;
+};
+
 UCLASS()
 class CARDSLINGERPROTOTYPE_API ARoomManager : public AActor
 {
@@ -30,6 +48,7 @@ public:
 	UPROPERTY(EditAnywhere)
 	TArray<ABaseAIClass*> ActiveEnemies;
 
+
 protected:
 	ARoomManager();
 
@@ -46,17 +65,23 @@ protected:
 	void LockDoors();
 	void UnlockDoors();
 
-	void SpawnEnemies();
+	void SpawnEnemies(AActor* Doors);
 
 	UFUNCTION()
 	void OnEnemyDeath(ABaseAIClass* DeadEnemy);
 
 
-	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Room")
-	AActor* Door;
 
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Room")
-	UBoxComponent* DoorTrigger;   // assign an Actor with a BoxComponent
+	TArray<AActor*> Doors;
+
+	// Spawn configuration array
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Room")
+	TArray<FDoorSpawnConfig> DoorSpawnConfigs;
+
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Room")
+	TArray<UBoxComponent*> DoorTriggers; 
 
 	UPROPERTY(EditAnywhere, Category = "Room")
 	TArray<AActor*> SpawnPoints;
