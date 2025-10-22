@@ -178,12 +178,14 @@ void ACardDeck::SpawnCard()
 	{
 		//clear reload timer and do nothing
 		GetWorldTimerManager().ClearTimer(ReloadHandle);
+		UE_LOG(LogTemp, Display, TEXT("Stopped, or should be"));
 		CardDeckAudioSource->Stop();
 		return;
 	}
 	//get index of current card
 	float CardPos = CardMeshArray.Num()-1;
-	//scalar to keep distances between cards consistent
+	//scalar to keep distances between cards consistent YES I KNOW IT'S A MAGIC NUMBER
+	//i just tried different numbers and saw what looked nicest
 	CardPos *= 0.17f;
 	//vector position of the card
 	FVector Translation = FVector(0,0, CardPos);
