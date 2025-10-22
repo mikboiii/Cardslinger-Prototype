@@ -23,8 +23,11 @@ void ARoomManager::BeginPlay()
 			if (Trigger)
 			{
 				Trigger->OnComponentBeginOverlap.AddDynamic(this, &ARoomManager::OnPlayerEnterRoom);
-				DoorTriggers.Add(Trigger);
 				UE_LOG(LogTemp, Log, TEXT("Bound trigger box: %s"), *DoorActor->GetName());
+			}
+			else
+			{
+				UE_LOG(LogTemp, Log, TEXT("Door %s has no trigger box"), *DoorActor->GetName());
 			}
 		}
 	}

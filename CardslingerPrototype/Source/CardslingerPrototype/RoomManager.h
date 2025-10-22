@@ -69,28 +69,19 @@ protected:
 
 	UFUNCTION()
 	void OnEnemyDeath(ABaseAIClass* DeadEnemy);
-
-
-
+	
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Room")
 	TArray<AActor*> Doors;
 
 	// Spawn configuration array
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Room")
 	TArray<FDoorSpawnConfig> DoorSpawnConfigs;
-
-
-	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Room")
-	TArray<UBoxComponent*> DoorTriggers; 
-
-	UPROPERTY(EditAnywhere, Category = "Room")
-	TArray<AActor*> SpawnPoints;
+	
+	// UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Room")
+	// TArray<UBoxComponent*> DoorTriggers; 
 
 	UPROPERTY(EditAnywhere, Category = "Room")
 	TSubclassOf<ABaseAIClass> EnemyClass;
-
-	UPROPERTY(EditAnywhere, Category = "Room")
-	int32 NumEnemiesToSpawn = 3;
 
 	UPROPERTY(EditAnywhere, Category = "Room")
 	bool bPreSpawned = false;
