@@ -11,6 +11,10 @@ DECLARE_DYNAMIC_MULTICAST_DELEGATE(FOnDoorOverlap);
 DECLARE_DYNAMIC_MULTICAST_DELEGATE(FOnRoomEntered);
 DECLARE_DYNAMIC_MULTICAST_DELEGATE(FOnRoomCleared);
 
+// Per door events
+DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FOnDoorOpen, AActor*, Door);
+DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FOnDoorClose, AActor*, Door);
+
 USTRUCT(BlueprintType)
 struct FDoorSpawnConfig
 {
@@ -30,6 +34,9 @@ struct FDoorSpawnConfig
 
 	UPROPERTY(EditAnywhere)
 	TArray<ABaseAIClass*> ActiveEnemies;
+	
+	UPROPERTY(EditAnywhere)
+	bool bPlayerEnteredRoom = false;
 };
 
 UCLASS()
@@ -47,6 +54,12 @@ public:
 
 	UPROPERTY(BlueprintAssignable, Category = "Events")
 	FOnRoomCleared OnRoomCleared;
+
+	UPROPERTY(BlueprintAssignable, Category = "Events")
+	FOnDoorOpen OnDoorShouldOpen;
+
+	UPROPERTY(BlueprintAssignable, Category = "Events")
+	FOnDoorClose OnDoorShouldClose;
 
 protected:
 	ARoomManager();
@@ -82,6 +95,4 @@ protected:
 	UPROPERTY(EditAnywhere, Category = "Room")
 	bool bPreSpawned = false;
 
-	UPROPERTY(EditAnywhere, Category = "Room")
-	bool bPlayerEnteredRoom;
 };

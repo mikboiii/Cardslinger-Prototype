@@ -15,8 +15,10 @@ void ARoomManager::BeginPlay()
 {
 	Super::BeginPlay();
 
-	for (AActor* DoorActor : Doors)
+	for (const FDoorSpawnConfig& Config : DoorSpawnConfigs)
 	{
+		const AActor* DoorActor = Config.Door;
+		
 		if (!DoorActor) continue;
 		{
 			UBoxComponent* Trigger = DoorActor->FindComponentByClass<UBoxComponent>();
@@ -36,46 +38,61 @@ void ARoomManager::BeginPlay()
 void ARoomManager::OnPlayerEnterRoom(UPrimitiveComponent* OverlappedComp,AActor* OtherActor,UPrimitiveComponent* OtherComp,int32 OtherBodyIndex,bool bFromSweep,const FHitResult& SweepResult)
 {
 	if (!OtherActor->ActorHasTag("Player")) return; // Only trigger for player
-	if (bPlayerEnteredRoom) return; // Prevent multiple triggers
 
-	AActor* TriggeredDoor = nullptr;
-	for (AActor* DoorActor: Doors)
+	FDoorSpawnConfig* TriggeredDoorConfig = nullptr;
+
+	// Find which door triggered
+	for (FDoorSpawnConfig& Config : DoorSpawnConfigs)
 	{
-		if (UBoxComponent* Trigger = DoorActor->FindComponentByClass<UBoxComponent>())
+		if  (!Config.Door) continue;
+		if (UBoxComponent* Trigger = Config.Door->FindComponentByClass<UBoxComponent>())
 		{
 			if (Trigger == OverlappedComp)
 			{
-				TriggeredDoor = DoorActor;
+				TriggeredDoorConfig = &Config;
 				break;
 			}
 		}
 	}
-	
-	bPlayerEnteredRoom = true;
-	OnRoomEntered.Broadcast(); // Event for Blueprints
-	LockDoors();
-	
-	SpawnEnemies(TriggeredDoor);
-}
 
-void ARoomManager::LockDoors()
-{
-	for (AActor* Door : Doors)
+	// make sure trigger belongs to a door and that door is not null
+	if (!TriggeredDoorConfig)
 	{
-		if (Door)
-			Door->Tags.AddUnique("Locked");
+		UE_LOG(LogTemp, Warning, TEXT("Triggered door not found for overlap!"));
+		return;
 	}
-}
 
-void ARoomManager::UnlockDoors()
-{
-	for (AActor* Door : Doors)
+	// Prevent retriggering for the same door
+	if (TriggeredDoorConfig->bPlayerEnteredRoom)
 	{
-		if (Door)
-			Door->Tags.Remove("Locked");
+		UE_LOG(LogTemp, Log, TEXT("Door %s already triggered"), *TriggeredDoorConfig->Door->GetName());
+		return;
 	}
-}
+
+	TriggeredDoorConfig->bPlayerEnteredRoom = true; // Set door config to stop multiple triggers
 	
+	OnDoorShouldClose.Broadcast(TriggeredDoorConfig->Door); // Event for Blueprints
+	
+	if (TriggeredDoorConfig->Door)
+	{
+		TriggeredDoorConfig->Door->Tags.AddUnique("Locked");
+	}
+	
+	SpawnEnemies(TriggeredDoorConfig->Door);
+}
+//
+// void ARoomManager::LockDoors(Con)
+// {
+// 	for (const FDoorSpawnConfig& Config : DoorSpawnConfigs)
+// 	{
+// 		if (Config.Door)
+// 		{
+// 			Config.Door->Tags.AddUnique("Locked");
+// 			OnDoorShouldClose.Broadcast(Config.Door);
+// 		}
+// 	}
+// }
+
 void ARoomManager::SpawnEnemies(AActor* Door)
 {
 	// Find the DoorActor that triggered the overlap, so we spawn the correct enemies associated with that door
@@ -151,8 +168,7 @@ void ARoomManager::OnEnemyDeath(ABaseAIClass* DeadEnemy)
 			if (Config.ActiveEnemies.Num() == 0 && Config.Door)
 			{
 				Config.Door->Tags.Remove("Locked");
-				// UnlockDoors();
-				OnRoomCleared.Broadcast(); // Event for Blueprints
+				OnDoorShouldOpen.Broadcast(Config.Door); // Event for Blueprints
 			}
 			break;
 		}
