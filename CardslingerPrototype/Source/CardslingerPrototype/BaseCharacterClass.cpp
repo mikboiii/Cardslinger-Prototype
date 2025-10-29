@@ -393,13 +393,13 @@ void ABaseCharacterClass::Shoot()
 				CardDeck->FireCard(-ShotDirection, BasicCardProjectile, Hit.ImpactPoint, Hit.GetActor(), BoneName);
 				//remove from deck
 				CardDeck->RemoveCardFromDeck(CurrentClip);
-				UGameplayStatics::PlaySoundAtLocation(GetWorld(), BasicThrows[FMath::RandRange(0,BasicThrows.Num()-1)], GetActorLocation(), 1.0f, 1.0f);
+				UGameplayStatics::PlaySoundAtLocation(GetWorld(), BasicThrows[FMath::RandRange(0,BasicThrows.Num()-1)].LoadSynchronous(), GetActorLocation(), 1.0f, 1.0f);
 				return;
 			}
 		}
 		//launch basic projectile
 		CardDeck->FireCard(-ShotDirection, BasicCardProjectile, Hit.ImpactPoint, nullptr);
-		UGameplayStatics::PlaySoundAtLocation(GetWorld(), BasicThrows[FMath::RandRange(0,BasicThrows.Num()-1)], GetActorLocation(), 1.0f, 1.0f);
+		UGameplayStatics::PlaySoundAtLocation(GetWorld(), BasicThrows[FMath::RandRange(0,BasicThrows.Num()-1)].LoadSynchronous(), GetActorLocation(), 1.0f, 1.0f);
 		//remove from deck
 		CardDeck->RemoveCardFromDeck(CurrentClip);
 	}

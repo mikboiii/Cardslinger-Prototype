@@ -62,7 +62,7 @@ protected:
 	UPROPERTY(EditAnywhere)
 	USkeletalMeshComponent* CardSkeletalMesh;
 
-	UPROPERTY(EditAnywhere, Category="Audio")
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category="Audio")
 	USoundBase* CardReloadLoop;
 	
 	void SpawnCard();
