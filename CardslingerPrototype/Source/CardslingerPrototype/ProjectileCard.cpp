@@ -95,6 +95,7 @@ void AProjectileCard::OnHit(UPrimitiveComponent* HitComponent, AActor* OtherActo
     {
 		//play impact fx that occurs when anything is hit
 		if(CardImpactUniversal) UNiagaraFunctionLibrary::SpawnSystemAtLocation(GetWorld(), CardImpactUniversal, Hit.ImpactPoint, GetActorForwardVector().Rotation(),FVector(ParticleScale), true, true, ENCPoolMethod::None, true);
+		UGameplayStatics::PlaySoundAtLocation(GetWorld(), ImpactSounds[FMath::RandRange(0,ImpactSounds.Num()-1)].LoadSynchronous(), GetActorLocation(), 0.25f, 1.0f);
 		if(OtherActor != PlayerPawn && OtherActor->IsA(ABaseAIClass::StaticClass()))
 		{
 			//create unreal damage event

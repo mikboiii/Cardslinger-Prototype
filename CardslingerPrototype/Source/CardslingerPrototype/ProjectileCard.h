@@ -131,6 +131,9 @@ protected:
 
 	TArray<AActor*> AffectedEnemies;
 
+	UPROPERTY(EditAnywhere, Category="Audio")
+	TArray<TSoftObjectPtr<USoundBase>> ImpactSounds;
+
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
