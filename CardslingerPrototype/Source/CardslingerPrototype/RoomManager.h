@@ -27,6 +27,9 @@ struct FDoorSpawnConfig
 	// How many enemies to spawn when enemy is triggered
     UPROPERTY(EditAnywhere, BlueprintReadWrite)
     int32 NumEnemiesToSpawn = 3;
+
+	UPROPERTY(EditAnywhere)
+	TArray<ABaseAIClass*> ActiveEnemies;
 };
 
 UCLASS()
@@ -44,10 +47,6 @@ public:
 
 	UPROPERTY(BlueprintAssignable, Category = "Events")
 	FOnRoomCleared OnRoomCleared;
-
-	UPROPERTY(EditAnywhere)
-	TArray<ABaseAIClass*> ActiveEnemies;
-
 
 protected:
 	ARoomManager();
@@ -70,9 +69,6 @@ protected:
 	UFUNCTION()
 	void OnEnemyDeath(ABaseAIClass* DeadEnemy);
 	
-	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Room")
-	TArray<AActor*> Doors;
-
 	// Spawn configuration array
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Room")
 	TArray<FDoorSpawnConfig> DoorSpawnConfigs;

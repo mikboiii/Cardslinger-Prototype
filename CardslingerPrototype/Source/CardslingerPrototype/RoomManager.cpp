@@ -127,7 +127,9 @@ void ARoomManager::SpawnEnemies(AActor* Door)
 		ABaseAIClass* Enemy = GetWorld()->SpawnActor<ABaseAIClass>(EnemyClass, Location, Rotation);
 		if (Enemy)
 		{
-			ActiveEnemies.Add(Enemy);
+			FDoorSpawnConfig& SpawnConfig = *const_cast<FDoorSpawnConfig*>(Config);
+			SpawnConfig.ActiveEnemies.Add(Enemy);
+
 			Enemy->OnEnemyDeath.AddDynamic(this, &ARoomManager::OnEnemyDeath);
 		}
 	}
@@ -138,11 +140,29 @@ void ARoomManager::OnEnemyDeath(ABaseAIClass* DeadEnemy)
 {
 	UE_LOG(LogTemp, Log, TEXT("OnEnemyDeath, remove activeEnemy"));
 
-	ActiveEnemies.Remove(DeadEnemy);
-
-	if (ActiveEnemies.Num() == 0)
+	//find which door has the enemy in the config
+	for (FDoorSpawnConfig& Config : DoorSpawnConfigs)
 	{
-		UnlockDoors();
-		OnRoomCleared.Broadcast(); // Event for Blueprints
+		if (Config.ActiveEnemies.Contains(DeadEnemy))
+		{
+			Config.ActiveEnemies.Remove(DeadEnemy);
+			UE_LOG(LogTemp, Log, TEXT("Enemy from door %s died: Remaining enemies %d"), *Config.Door->GetName(), Config.ActiveEnemies.Num());
+
+			if (Config.ActiveEnemies.Num() == 0 && Config.Door)
+			{
+				Config.Door->Tags.Remove("Locked");
+				// UnlockDoors();
+				OnRoomCleared.Broadcast(); // Event for Blueprints
+			}
+			break;
+		}
 	}
+	
+	// ActiveEnemies.Remove(DeadEnemy);
+	//
+	// if (ActiveEnemies.Num() == 0)
+	// {
+	// 	UnlockDoors();
+	// 	OnRoomCleared.Broadcast(); // Event for Blueprints
+	// }
 }
