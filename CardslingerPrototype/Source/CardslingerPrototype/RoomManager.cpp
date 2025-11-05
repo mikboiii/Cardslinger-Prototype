@@ -1,7 +1,9 @@
 #include "RoomManager.h"
+#include "SpawnPoint.h"
 #include "Components/BoxComponent.h" 
 #include "GameFramework/Actor.h"
 #include "BaseAIClass.h"
+
 
 // Sets default values
 ARoomManager::ARoomManager()
@@ -135,18 +137,30 @@ void ARoomManager::SpawnEnemies(AActor* Door)
 
 	for (int32 i = 0; i < SpawnCount; i++)
 	{
-		AActor* SpawnPoint = Config->SpawnPoints[i];
+		ASpawnPoint* SpawnPoint = Config->SpawnPoints[i];
 		if (!SpawnPoint) continue;
 
 		FVector Location = SpawnPoint->GetActorLocation();
 		FRotator Rotation = SpawnPoint->GetActorRotation();
 
-		ABaseAIClass* Enemy = GetWorld()->SpawnActor<ABaseAIClass>(EnemyClass, Location, Rotation);
+		// Check if spawnpoint has assigned a specifc enemy to spawn 
+		TSubclassOf<ABaseAIClass> ClassToSpawn;
+		if (SpawnPoint->EnemyClass)
+		{
+			ClassToSpawn = SpawnPoint->EnemyClass;
+		}
+		else // use default
+		{
+			ClassToSpawn = EnemyClass;
+		}
+
+		if (!ClassToSpawn) continue;
+		
+		ABaseAIClass* Enemy = GetWorld()->SpawnActor<ABaseAIClass>(ClassToSpawn, Location, Rotation);
 		if (Enemy)
 		{
 			FDoorSpawnConfig& SpawnConfig = *const_cast<FDoorSpawnConfig*>(Config);
 			SpawnConfig.ActiveEnemies.Add(Enemy);
-
 			Enemy->OnEnemyDeath.AddDynamic(this, &ARoomManager::OnEnemyDeath);
 		}
 	}

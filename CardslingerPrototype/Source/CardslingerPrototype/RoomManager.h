@@ -2,7 +2,7 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
-#include "Components/BoxComponent.h" 
+#include "SpawnPoint.h"
 #include "RoomManager.generated.h"
 
 class ABaseAIClass;
@@ -25,8 +25,8 @@ struct FDoorSpawnConfig
     AActor* Door = nullptr;
 
 	// Spawn points associated with this door
-    UPROPERTY(EditAnywhere, BlueprintReadWrite)
-    TArray<AActor*> SpawnPoints;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	TArray<TObjectPtr<ASpawnPoint>> SpawnPoints;
 
 	// How many enemies to spawn when enemy is triggered
     UPROPERTY(EditAnywhere, BlueprintReadWrite)
