@@ -2,6 +2,7 @@
 
 
 #include "PickupBase.h"
+#include "Components/SphereComponent.h"
 
 // Sets default values
 APickupBase::APickupBase()
@@ -27,6 +28,6 @@ void APickupBase::Tick(float DeltaTime)
 
 void APickupBase::OnPickUp()
 {
-	
+	UE_LOG(LogTemp, Display, TEXT("Player picked up"));
 }
 

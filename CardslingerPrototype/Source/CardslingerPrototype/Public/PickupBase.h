@@ -20,6 +20,9 @@ protected:
 	virtual void BeginPlay() override;
 
 	virtual void OnPickUp();
+	
+	UPROPERTY(Instanced,EditAnywhere)
+	class USphereComponent* PickupCollision;
 
 public:	
 	// Called every frame
