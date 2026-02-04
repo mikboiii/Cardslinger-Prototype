@@ -137,6 +137,9 @@ public:
 	UFUNCTION(BlueprintPure)
 	UPlayerHUDWidget* GetPlayerHUD();
 
+	UFUNCTION(BlueprintCallable)
+	void ReplenishHandFunction();
+
 private:
 
 	UPROPERTY(EditAnywhere, Category = "Movement")
@@ -322,5 +325,5 @@ private:
 
 	void DrawCardTimerFunction(int CardIndex);
 
-	void ReplenishHandFunction();
+	void SetHud();
 };

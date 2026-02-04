@@ -43,6 +43,7 @@ void AProjectileCard::BeginPlay()
 	CardCollision->SetCollisionEnabled(ECollisionEnabled::NoCollision);
 	GetWorldTimerManager().SetTimer(CardLifetimeManager, this, &AProjectileCard::DestroyCard, CardLifetime);
 	PlayerPawn = Cast<ABaseCharacterClass>(UGameplayStatics::GetPlayerPawn(GetWorld(), 0));
+	if(SpawnSounds.Num() > 0) UGameplayStatics::PlaySoundAtLocation(GetWorld(), SpawnSounds[FMath::RandRange(0,SpawnSounds.Num()-1)].LoadSynchronous(), GetActorLocation(), 0.25f, 1.0f, 0.0f, ImpactAttenuation);
 }
 
 // Called every frame
