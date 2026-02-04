@@ -12,18 +12,23 @@
 				"Engine",
 				"CoreUObject",
 				"AIModule",
-				"UMGEditor",
 				"UMG"
 			]
 		}
 	],
 	"Plugins": [
 		{
-			"Name": "ModelingToolsEditorMode",
-			"Enabled": true,
-			"TargetAllowList": [
-				"Editor"
+			"Name": "Bridge",
+			"Enabled": false,
+			"SupportedTargetPlatforms": [
+				"Win64",
+				"Mac",
+				"Linux"
 			]
+		},
+		{
+			"Name": "ChaosEditor",
+			"Enabled": false
 		}
 	]
 }

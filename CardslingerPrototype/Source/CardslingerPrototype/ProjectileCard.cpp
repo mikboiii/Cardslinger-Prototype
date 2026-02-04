@@ -43,6 +43,7 @@ void AProjectileCard::BeginPlay()
 	CardCollision->SetCollisionEnabled(ECollisionEnabled::NoCollision);
 	GetWorldTimerManager().SetTimer(CardLifetimeManager, this, &AProjectileCard::DestroyCard, CardLifetime);
 	PlayerPawn = Cast<ABaseCharacterClass>(UGameplayStatics::GetPlayerPawn(GetWorld(), 0));
+	if(SpawnSounds.Num() > 0) UGameplayStatics::PlaySoundAtLocation(GetWorld(), SpawnSounds[FMath::RandRange(0,SpawnSounds.Num()-1)].LoadSynchronous(), GetActorLocation(), 0.25f, 1.0f, 0.0f, ImpactAttenuation);
 }
 
 // Called every frame
@@ -95,6 +96,7 @@ void AProjectileCard::OnHit(UPrimitiveComponent* HitComponent, AActor* OtherActo
     {
 		//play impact fx that occurs when anything is hit
 		if(CardImpactUniversal) UNiagaraFunctionLibrary::SpawnSystemAtLocation(GetWorld(), CardImpactUniversal, Hit.ImpactPoint, GetActorForwardVector().Rotation(),FVector(ParticleScale), true, true, ENCPoolMethod::None, true);
+		UGameplayStatics::PlaySoundAtLocation(GetWorld(), ImpactSounds[FMath::RandRange(0,ImpactSounds.Num()-1)].LoadSynchronous(), GetActorLocation(), 0.25f, 1.0f, 0.0f, ImpactAttenuation);
 		if(OtherActor != PlayerPawn && OtherActor->IsA(ABaseAIClass::StaticClass()))
 		{
 			//create unreal damage event
