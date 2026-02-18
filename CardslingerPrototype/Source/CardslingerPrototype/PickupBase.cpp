@@ -10,6 +10,7 @@ APickupBase::APickupBase()
  	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
 	PickupCollision = CreateDefaultSubobject<UBoxComponent>(TEXT("Pickup Collision"));
+	PickupCollision->OnComponentBeginOverlap.AddDynamic(this, &APickupBase::OnOverlapStart);
 
 }
 
@@ -32,7 +33,7 @@ void APickupBase::OnPickup()
 	UE_LOG(LogTemp, Display, TEXT("PICKED UP"));
 }
 
-void APickupBase::OnOverlapStart(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp)
+void APickupBase::OnOverlapStart(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult &SweepResult)
 {
 	OnPickup();
 }
