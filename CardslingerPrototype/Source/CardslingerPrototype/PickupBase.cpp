@@ -2,13 +2,14 @@
 
 
 #include "PickupBase.h"
-#include "Components/SphereComponent.h"
+#include "Components/BoxComponent.h"
 
 // Sets default values
 APickupBase::APickupBase()
 {
  	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
+	PickupCollision = CreateDefaultSubobject<UBoxComponent>(TEXT("Pickup Collision"));
 
 }
 
@@ -26,8 +27,13 @@ void APickupBase::Tick(float DeltaTime)
 
 }
 
-void APickupBase::OnPickUp()
+void APickupBase::OnPickup()
 {
-	UE_LOG(LogTemp, Display, TEXT("Player picked up"));
+	UE_LOG(LogTemp, Display, TEXT("PICKED UP"));
+}
+
+void APickupBase::OnOverlapStart(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp)
+{
+	OnPickup();
 }
 

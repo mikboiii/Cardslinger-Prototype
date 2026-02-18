@@ -19,10 +19,12 @@ protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 
-	virtual void OnPickUp();
-	
-	UPROPERTY(Instanced,EditAnywhere)
-	class USphereComponent* PickupCollision;
+	virtual void OnPickup();
+
+	UFUNCTION()
+	void OnOverlapStart(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp);
+
+	class UBoxComponent* PickupCollision;
 
 public:	
 	// Called every frame
