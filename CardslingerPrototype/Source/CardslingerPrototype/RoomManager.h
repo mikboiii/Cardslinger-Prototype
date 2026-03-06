@@ -16,24 +16,21 @@ DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FOnDoorClose, AActor*, Door);
 USTRUCT(BlueprintType)
 struct FDoorSpawnConfig
 {
-    GENERATED_BODY()
+	GENERATED_BODY()
 
-	// Door reference 
-    UPROPERTY(EditAnywhere, BlueprintReadWrite)
-    AActor* Door = nullptr;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	TObjectPtr<class ADoorBase> Door = nullptr;
 
-	// Spawn points associated with this door
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	TArray<TObjectPtr<ASpawnPoint>> SpawnPoints;
 
-	// How many enemies to spawn when enemy is triggered
-    UPROPERTY(EditAnywhere, BlueprintReadWrite)
-    int32 NumEnemiesToSpawn = 3;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	int32 NumEnemiesToSpawn = 3;
 
-	UPROPERTY(EditAnywhere)
-	TArray<ABaseAIClass*> ActiveEnemies;
-	
-	UPROPERTY(EditAnywhere)
+	UPROPERTY()
+	TArray<TObjectPtr<ABaseAIClass>> ActiveEnemies;
+
+	UPROPERTY()
 	bool bPlayerEnteredRoom = false;
 };
 

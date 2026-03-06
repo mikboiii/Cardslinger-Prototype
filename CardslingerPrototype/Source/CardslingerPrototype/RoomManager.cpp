@@ -3,7 +3,7 @@
 #include "Components/BoxComponent.h" 
 #include "GameFramework/Actor.h"
 #include "BaseAIClass.h"
-
+#include "DoorBase.h"
 
 // Sets default values
 ARoomManager::ARoomManager()
@@ -17,43 +17,39 @@ void ARoomManager::BeginPlay()
 {
 	Super::BeginPlay();
 
-	for (const FDoorSpawnConfig& Config : DoorSpawnConfigs)
+	for (FDoorSpawnConfig& Config : DoorSpawnConfigs)
 	{
-		const AActor* DoorActor = Config.Door;
-		
-		if (!DoorActor) continue;
+		if (!Config.Door) continue;
+
+		UBoxComponent* Trigger = Config.Door->DoorTrigger;
+
+		if (Trigger)
 		{
-			UBoxComponent* Trigger = DoorActor->FindComponentByClass<UBoxComponent>();
-			if (Trigger)
-			{
-				Trigger->OnComponentBeginOverlap.AddDynamic(this, &ARoomManager::OnPlayerEnterRoom);
-				UE_LOG(LogTemp, Log, TEXT("Bound trigger box: %s"), *DoorActor->GetName());
-			}
-			else
-			{
-				UE_LOG(LogTemp, Log, TEXT("Door %s has no trigger box"), *DoorActor->GetName());
-			}
+			Trigger->OnComponentBeginOverlap.AddDynamic(this,&ARoomManager::OnPlayerEnterRoom);
+			UE_LOG(LogTemp, Log, TEXT("Bound trigger for %s"),*Config.Door->GetName());
 		}
 	}
 }
 
 void ARoomManager::OnPlayerEnterRoom(UPrimitiveComponent* OverlappedComp,AActor* OtherActor,UPrimitiveComponent* OtherComp,int32 OtherBodyIndex,bool bFromSweep,const FHitResult& SweepResult)
 {
-	if (!OtherActor->ActorHasTag("Player")) return; // Only trigger for player
+	UE_LOG(LogTemp, Warning, TEXT("Overlap detected by RoomManager"));
+
+	if (!OtherActor->ActorHasTag("Player"))
+	{
+		UE_LOG(LogTemp, Warning, TEXT("Non player detected triggered"));
+		return; // Only trigger for player
+	}
 
 	FDoorSpawnConfig* TriggeredDoorConfig = nullptr;
 
 	// Find which door triggered
 	for (FDoorSpawnConfig& Config : DoorSpawnConfigs)
 	{
-		if  (!Config.Door) continue;
-		if (UBoxComponent* Trigger = Config.Door->FindComponentByClass<UBoxComponent>())
+		if (Config.Door && Config.Door->DoorTrigger == OverlappedComp)
 		{
-			if (Trigger == OverlappedComp)
-			{
-				TriggeredDoorConfig = &Config;
-				break;
-			}
+			TriggeredDoorConfig = &Config;
+			break;
 		}
 	}
 
@@ -72,8 +68,9 @@ void ARoomManager::OnPlayerEnterRoom(UPrimitiveComponent* OverlappedComp,AActor*
 	}
 
 	TriggeredDoorConfig->bPlayerEnteredRoom = true; // Set door config to stop multiple triggers
-	
-	OnDoorShouldClose.Broadcast(TriggeredDoorConfig->Door); // Event for Blueprints
+
+	UE_LOG(LogTemp, Warning, TEXT("Broadcasting Door Close for %s"), *TriggeredDoorConfig->Door->GetName());
+	TriggeredDoorConfig->Door->CloseDoor();
 	
 	if (TriggeredDoorConfig->Door)
 	{
@@ -82,18 +79,6 @@ void ARoomManager::OnPlayerEnterRoom(UPrimitiveComponent* OverlappedComp,AActor*
 	
 	SpawnEnemies(TriggeredDoorConfig->Door);
 }
-//
-// void ARoomManager::LockDoors(Con)
-// {
-// 	for (const FDoorSpawnConfig& Config : DoorSpawnConfigs)
-// 	{
-// 		if (Config.Door)
-// 		{
-// 			Config.Door->Tags.AddUnique("Locked");
-// 			OnDoorShouldClose.Broadcast(Config.Door);
-// 		}
-// 	}
-// }
 
 void ARoomManager::SpawnEnemies(AActor* Door)
 {
@@ -169,30 +154,19 @@ void ARoomManager::SpawnEnemies(AActor* Door)
 
 void ARoomManager::OnEnemyDeath(ABaseAIClass* DeadEnemy)
 {
-	UE_LOG(LogTemp, Log, TEXT("OnEnemyDeath, remove activeEnemy"));
-
-	//find which door has the enemy in the config
 	for (FDoorSpawnConfig& Config : DoorSpawnConfigs)
 	{
 		if (Config.ActiveEnemies.Contains(DeadEnemy))
 		{
 			Config.ActiveEnemies.Remove(DeadEnemy);
-			UE_LOG(LogTemp, Log, TEXT("Enemy from door %s died: Remaining enemies %d"), *Config.Door->GetName(), Config.ActiveEnemies.Num());
 
 			if (Config.ActiveEnemies.Num() == 0 && Config.Door)
 			{
 				Config.Door->Tags.Remove("Locked");
-				OnDoorShouldOpen.Broadcast(Config.Door); // Event for Blueprints
+				Config.Door->OpenDoor();
 			}
+
 			break;
 		}
 	}
-	
-	// ActiveEnemies.Remove(DeadEnemy);
-	//
-	// if (ActiveEnemies.Num() == 0)
-	// {
-	// 	UnlockDoors();
-	// 	OnRoomCleared.Broadcast(); // Event for Blueprints
-	// }
 }
