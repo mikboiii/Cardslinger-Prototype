@@ -47,7 +47,6 @@ void ACardslingerTestGameMode::NPCKillAll()
     AActor* DebugPawn = UGameplayStatics::GetPlayerPawn(GetWorld(), 0);
     for(ABaseAIClass* Enemy : TActorRange<ABaseAIClass>(GetWorld()))
     {
-        
         Enemy->TakeDamage(1000000.0f, KillEvent, DebugController, DebugController);
     }
 }

@@ -44,6 +44,8 @@ void ABaseAIClass::BeginPlay()
 	EnemyMesh = GetMesh();
 	MeshOffset = EnemyMesh->GetRelativeLocation();
 	MeshRotation = EnemyMesh->GetRelativeRotation();
+
+	// Moved to ABaseAIController
 	//ThisController->GetBlackboardComponent()->SetValueAsFloat(TEXT("FireCooldown"), FireCooldown);
 	
 }
@@ -58,10 +60,11 @@ void ABaseAIClass::Tick(float DeltaTime)
 float ABaseAIClass::TakeDamage(float DamageAmount, struct FDamageEvent const &DamageEvent, class AController *EventInstigator, AActor* DamageCauser)
 {
 	//call unreal damage code
-    float DamageToApply = Super::TakeDamage(DamageAmount, DamageEvent, EventInstigator, EventInstigator);
-	Health -= Damage;
+    float DamageToApply = Super::TakeDamage(DamageAmount, DamageEvent, EventInstigator, DamageCauser);
+	Health -= DamageAmount;
 	if(IsDead())
 	{
+		UE_LOG(LogTemp, Warning, TEXT("Enemy %s died, calling OnDeath()"), *GetName());
 		OnDeath();
 	}
     return DamageToApply;
@@ -69,8 +72,14 @@ float ABaseAIClass::TakeDamage(float DamageAmount, struct FDamageEvent const &Da
 
 void ABaseAIClass::OnDeath()
 {
+		UE_LOG(LogTemp, Warning, TEXT("ON DEATH"));
+
+		UE_LOG(LogTemp, Warning, TEXT("Fire event for %s"), *GetName())
+		// event that triggers RoomManager to remove enemy from activeEnemies
+		OnEnemyDeath.Broadcast(this);
 		//set health to zero
         Health = 0.0f;
+
 		//get gamemode
         ACardslingerTestGameMode* GameMode = GetWorld()->GetAuthGameMode<ACardslingerTestGameMode>();
         if(GameMode != nullptr)

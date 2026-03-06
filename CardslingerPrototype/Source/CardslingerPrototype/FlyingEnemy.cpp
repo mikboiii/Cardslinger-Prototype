@@ -2,9 +2,11 @@
 
 
 #include "FlyingEnemy.h"
-#include "BehaviorTree/BlackboardComponent.h"
-#include "BehaviorTree/BehaviorTreeComponent.h"
 #include "FlyingAIController.h"
+#include "EnemyProjectile.h"                    
+#include "Components/PostProcessComponent.h"    
+#include "NiagaraFunctionLibrary.h"             
+#include "BehaviorTree/BlackboardComponent.h"
 
 AFlyingEnemy::AFlyingEnemy()
 {

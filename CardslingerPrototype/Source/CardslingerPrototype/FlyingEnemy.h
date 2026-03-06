@@ -4,6 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "BaseAIClass.h"
+#include "FlyingAIController.h"
 #include "FlyingEnemy.generated.h"
 
 /*
@@ -22,6 +23,7 @@ protected:
 	UPROPERTY(EditAnywhere, Instanced)
 	UStaticMeshComponent* tempBody;
 
+	UPROPERTY()
 	AFlyingAIController* ThisController;
 
 	virtual void AimShot(FVector& ShotLoc, FVector& ShotDir) override;

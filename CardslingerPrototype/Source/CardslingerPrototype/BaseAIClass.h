@@ -6,6 +6,8 @@
 #include "GameFramework/Character.h"
 #include "BaseAIClass.generated.h"
 
+DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FOnEnemyDiedSignature, ABaseAIClass*, DeadEnemy);
+
 UCLASS()
 class CARDSLINGERPROTOTYPE_API ABaseAIClass : public ACharacter
 {
@@ -20,6 +22,10 @@ protected:
 	virtual void BeginPlay() override;
 
 public:	
+
+	UPROPERTY(BlueprintAssignable, Category = "Events")
+	FOnEnemyDiedSignature OnEnemyDeath;
+
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
