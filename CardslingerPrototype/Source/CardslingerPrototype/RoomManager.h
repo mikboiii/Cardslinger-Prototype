@@ -79,8 +79,4 @@ protected:
 
 	UPROPERTY(EditAnywhere, Category = "Room")
 	TSubclassOf<ABaseAIClass> EnemyClass;
-
-	UPROPERTY(EditAnywhere, Category = "Room")
-	bool bPreSpawned = false;
-
 };

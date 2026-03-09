@@ -22,3 +22,5 @@ public:
 	UFUNCTION(BlueprintImplementableEvent)
 	void CloseDoor();
 };
+
+

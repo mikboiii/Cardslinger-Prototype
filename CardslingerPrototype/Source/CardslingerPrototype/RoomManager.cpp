@@ -4,12 +4,13 @@
 #include "GameFramework/Actor.h"
 #include "BaseAIClass.h"
 #include "DoorBase.h"
+#include "Kismet/GameplayStatics.h"
 
 // Sets default values
 ARoomManager::ARoomManager()
 {
 	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
-	PrimaryActorTick.bCanEverTick = true;
+	PrimaryActorTick.bCanEverTick = false;
 }
 
 // Called when the game starts or when spawned
@@ -31,16 +32,17 @@ void ARoomManager::BeginPlay()
 	}
 }
 
-void ARoomManager::OnPlayerEnterRoom(UPrimitiveComponent* OverlappedComp,AActor* OtherActor,UPrimitiveComponent* OtherComp,int32 OtherBodyIndex,bool bFromSweep,const FHitResult& SweepResult)
+void ARoomManager::OnPlayerEnterRoom(
+	UPrimitiveComponent* OverlappedComp,
+	AActor* OtherActor,
+	UPrimitiveComponent* OtherComp,
+	int32 OtherBodyIndex,
+	bool bFromSweep,
+	const FHitResult& SweepResult)
 {
 	UE_LOG(LogTemp, Warning, TEXT("Overlap detected by RoomManager"));
-
-	if (!OtherActor->ActorHasTag("Player"))
-	{
-		UE_LOG(LogTemp, Warning, TEXT("Non player detected triggered"));
-		return; // Only trigger for player
-	}
-
+	
+	
 	FDoorSpawnConfig* TriggeredDoorConfig = nullptr;
 
 	// Find which door triggered
@@ -49,6 +51,7 @@ void ARoomManager::OnPlayerEnterRoom(UPrimitiveComponent* OverlappedComp,AActor*
 		if (Config.Door && Config.Door->DoorTrigger == OverlappedComp)
 		{
 			TriggeredDoorConfig = &Config;
+			UE_LOG(LogTemp, Warning, TEXT("Door name is: %s"), *TriggeredDoorConfig->Door->GetName());
 			break;
 		}
 	}
@@ -67,6 +70,8 @@ void ARoomManager::OnPlayerEnterRoom(UPrimitiveComponent* OverlappedComp,AActor*
 		return;
 	}
 
+	// Stop door trigger from firing multiple times
+	TriggeredDoorConfig->Door->DoorTrigger->SetGenerateOverlapEvents(false);
 	TriggeredDoorConfig->bPlayerEnteredRoom = true; // Set door config to stop multiple triggers
 
 	UE_LOG(LogTemp, Warning, TEXT("Broadcasting Door Close for %s"), *TriggeredDoorConfig->Door->GetName());
@@ -109,16 +114,6 @@ void ARoomManager::SpawnEnemies(AActor* Door)
 
 	// Get the SpawnCount from the door config, ensure enemies only spawn up to the amount of SpawnPoints
 	int32 SpawnCount = FMath::Min(Config->NumEnemiesToSpawn, Config->SpawnPoints.Num());
-	
-	// // Copy SpawnPoints, then shuffle it
-	
-	// TArray<AActor*> ShuffledPoints = SpawnPoints;
-	// // Swap each element with a random position
-	// for (int32 i = 0; i < ShuffledPoints.Num(); i++)
-	// {
-	// 	int32 SwapIndex = FMath::RandRange(0, SpawnPoints.Num() - 1); 
-	// 	ShuffledPoints.Swap(i, SwapIndex);
-	// }
 
 	for (int32 i = 0; i < SpawnCount; i++)
 	{
