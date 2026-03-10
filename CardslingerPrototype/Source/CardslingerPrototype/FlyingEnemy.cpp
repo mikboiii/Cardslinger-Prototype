@@ -14,19 +14,39 @@ AFlyingEnemy::AFlyingEnemy()
 	tempBody->SetupAttachment(GetMesh());
 }
 
+
 void AFlyingEnemy::BeginPlay()
 {
 	Super::BeginPlay();
+
 	ThisController = Cast<AFlyingAIController>(GetController());
-	ThisController->GetBlackboardComponent()->SetValueAsFloat(TEXT("SpeedMod"), FlyingSpeedMod);
+
+	// Make sure that this controller is not null
+	if (!ThisController)
+	{
+		UE_LOG(LogTemp, Warning, TEXT("FlyingEnemy has no controller"));
+		return;
+	}
+
+	if (ThisController->GetBlackboardComponent())
+	{
+		ThisController->GetBlackboardComponent()->SetValueAsFloat(TEXT("SpeedMod"), FlyingSpeedMod);
+	}
 }
 
 void AFlyingEnemy::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
+	
+	if (!ThisController) return;
+	
 	RunTime += DeltaTime;
 	float HeightMod = FMath::Sin(RunTime) * 5.0f;
-	ThisController->GetBlackboardComponent()->SetValueAsFloat(TEXT("SineVar"), HeightMod);
+	
+	if (ThisController->GetBlackboardComponent())
+	{
+		ThisController->GetBlackboardComponent()->SetValueAsFloat(TEXT("SineVar"), HeightMod);
+	}
 }
 
 void AFlyingEnemy::OnDeath()
