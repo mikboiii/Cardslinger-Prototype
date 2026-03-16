@@ -16,12 +16,9 @@ class CARDSLINGERPROTOTYPE_API AFlyingAIController : public ABaseAIController
 {
 	GENERATED_BODY()
 
-	public:
-		UBlackboardComponent* GetBlackboardComponent() const { return BlackboardComponent; }
-	
-	protected:
-		virtual void BeginPlay() override;
+protected:
+		virtual void InitializeBlackboardValues() override;
 
-		UPROPERTY(EditAnywhere)
+		UPROPERTY(EditAnywhere, Category="AI")
 		float HoverDistFromPlayer = 1000.0f;
 };

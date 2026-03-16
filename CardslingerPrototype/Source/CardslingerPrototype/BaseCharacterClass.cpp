@@ -97,7 +97,8 @@ void ABaseCharacterClass::BeginPlay()
 
 	FTimerHandle TimeTest;
 
-	GetWorldTimerManager().SetTimer(TimeTest, this, &ABaseCharacterClass::SetHud, 6.0f);
+	// A timer to ensure pointers can be allocated correctly
+	GetWorldTimerManager().SetTimer(TimeTest, this, &ABaseCharacterClass::SetHud, 0.1f);
 
 	if(DashCurve)
 	{

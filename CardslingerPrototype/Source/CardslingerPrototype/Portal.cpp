@@ -10,6 +10,7 @@
 #include "Materials/MaterialInstance.h"
 #include "Materials/Material.h"
 #include "Engine/TextureRenderTarget2D.h"
+#include "GameFramework/PawnMovementComponent.h"
 #include "Kismet/KismetRenderingLibrary.h"
 #include "Kismet/GameplayStatics.h"
 #include "Kismet/KismetMathLibrary.h"

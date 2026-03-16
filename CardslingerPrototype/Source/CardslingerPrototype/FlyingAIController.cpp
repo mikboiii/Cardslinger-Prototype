@@ -8,18 +8,13 @@
 #include "BaseCharacterClass.h"
 #include "FlyingEnemy.h"
 
-void AFlyingAIController::BeginPlay()
+void AFlyingAIController::InitializeBlackboardValues()
 {
-    Super::BeginPlay();
+    // Keep base AI values
+    Super::InitializeBlackboardValues();
 
-    if(AIBehavior != nullptr)
+    if (BlackboardComponent)
     {
-        RunBehaviorTree(AIBehavior);
-        if(GetPawn()) 
-        {
-            GetBlackboardComponent()->SetValueAsObject(TEXT("PlayerActor"), Cast<ABaseCharacterClass>(PlayerPawn));
-            GetBlackboardComponent()->SetValueAsFloat(TEXT("TargetDistToPlayer"), HoverDistFromPlayer);
-        }
+        BlackboardComponent->SetValueAsFloat(TEXT("TargetDistToPlayer"), HoverDistFromPlayer);
     }
-
 }

@@ -34,23 +34,34 @@ void ABaseAIController::OnPossess(APawn* InPawn)
     if (AIBehavior)
     {
         RunBehaviorTree(AIBehavior);
-        BlackboardComponent =GetBlackboardComponent();
-        if (GetBlackboardComponent())
+        BlackboardComponent = GetBlackboardComponent();
+        
+        if (!BlackboardComponent)
         {
-            GetBlackboardComponent()->SetValueAsFloat(TEXT("FireCooldown"), /*initial value*/ 1.0f);
+            UE_LOG(LogTemp, Warning, TEXT("%s: Blackboard invalid after RunBehaviorTree"), *GetName());
+            return;
         }
-        else
-        {
-            {
-                UE_LOG(LogTemp, Warning, TEXT("%s: Blackboard invalid after RunBehaviorTree"), *GetName());
-            }
-        }
+        // Set the player for all AI
+        BlackboardComponent->SetValueAsObject(TEXT("PlayerActor"), PlayerPawn);
+
+        // Let children set their own values
+        InitializeBlackboardValues();
     }
     else
     {
         UE_LOG(LogTemp, Warning, TEXT("%s has no AIBehavior assigned"), *GetName());
     }
 }
+
+// Put base AI values you want in here
+void ABaseAIController::InitializeBlackboardValues()
+{
+    if (BlackboardComponent)
+    {
+        BlackboardComponent->SetValueAsFloat(TEXT("FireCooldown"), 1.0f);
+    }
+}
+
 
 UBehaviorTree* ABaseAIController::GetBehaviorTree()
 {

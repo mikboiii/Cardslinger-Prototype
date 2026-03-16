@@ -33,14 +33,14 @@ protected:
 	
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "AI")
 	UBlackboardComponent* BlackboardComponent;
-
+	
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "AI")
 	UBehaviorTreeComponent* BehaviorTreeComponent;
 
+	/** Override this in child controllers to set custom blackboard values */
+	virtual void InitializeBlackboardValues();
+
+	
 	UPROPERTY()
 	APawn* PlayerPawn;
-
-	UPROPERTY(EditAnywhere)
-	float FollowRadius = 50.0f;
-
 };
