@@ -137,6 +137,9 @@ public:
 	UFUNCTION(BlueprintPure)
 	UPlayerHUDWidget* GetPlayerHUD();
 
+	UFUNCTION(BlueprintCallable)
+	void ReplenishHandFunction();
+
 private:
 
 	UPROPERTY(EditAnywhere, Category = "Movement")
@@ -255,6 +258,9 @@ private:
 	UPROPERTY(VisibleAnywhere)
 	TArray<ABaseCard*> CardHand;
 
+	UPROPERTY(EditAnywhere, Category = "Audio")
+    TArray<TSoftObjectPtr<USoundBase>> BasicThrows;
+
 	UPROPERTY(EditAnywhere)
 	TSubclassOf<ABaseCard> CardTemplate;
 
@@ -319,5 +325,5 @@ private:
 
 	void DrawCardTimerFunction(int CardIndex);
 
-	void ReplenishHandFunction();
+	void SetHud();
 };

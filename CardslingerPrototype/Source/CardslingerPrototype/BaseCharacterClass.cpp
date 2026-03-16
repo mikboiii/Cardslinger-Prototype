@@ -94,11 +94,10 @@ void ABaseCharacterClass::BeginPlay()
 	DashRecharge = 1.0f;
 
 	PC = Cast<ACardslingerPlayerController>(GetController());
-	//get pointer to player hud widget
-	PlayerHUD = Cast<UPlayerHUDWidget>(PC->GetHUD());
-	
-	//draw initial hands
-	ReplenishHandFunction();
+
+	FTimerHandle TimeTest;
+
+	GetWorldTimerManager().SetTimer(TimeTest, this, &ABaseCharacterClass::SetHud, 6.0f);
 
 	if(DashCurve)
 	{
@@ -393,12 +392,11 @@ void ABaseCharacterClass::Shoot()
 				CardDeck->FireCard(-ShotDirection, BasicCardProjectile, Hit.ImpactPoint, Hit.GetActor(), BoneName);
 				//remove from deck
 				CardDeck->RemoveCardFromDeck(CurrentClip);
-
 				return;
 			}
 		}
 		//launch basic projectile
-		CardDeck->FireCard(-ShotDirection, BasicCardProjectile, Hit.ImpactPoint, nullptr);
+		CardDeck->FireCard(-ShotDirection, BasicCardProjectile, Hit.ImpactPoint, nullptr);	
 		//remove from deck
 		CardDeck->RemoveCardFromDeck(CurrentClip);
 	}
@@ -542,6 +540,7 @@ void ABaseCharacterClass::DrawCardTimerFunction(int CardIndex)
 void ABaseCharacterClass::ReplenishHandFunction()
 {
 	if(CardDeck->IsDeckEmpty()) CardDeck->ShuffleDiscard();
+	
 	for(int i = 0; i < CardHand.Num(); i++)
 		{
 			CardHand[i] = CardDeck->DrawCard();
@@ -550,14 +549,17 @@ void ABaseCharacterClass::ReplenishHandFunction()
 				if(CardHand[i]->CardWidget != nullptr)
 				{
 					//only set card ui if it exists
-					PlayerHUD->SetCard(i, CardHand[i]->CardWidget);
+					if(PlayerHUD != nullptr) PlayerHUD->SetCard(i, CardHand[i]->CardWidget);
 				}
 			}
 			else
 			{
-				PlayerHUD->SetCard(i, CreateWidget<UUserWidget>(GetWorld(), CardBackClass));
+				if(PlayerHUD != nullptr) PlayerHUD->SetCard(i, CreateWidget<UUserWidget>(GetWorld(), CardBackClass));
 			}
 		}
+	if(PlayerHUD != nullptr) UE_LOG(LogTemp, Display, TEXT("PlayerHUD: %s"), *PlayerHUD->GetName());
+	UE_LOG(LogTemp, Display , TEXT("PlayerHUD: %s"), PlayerHUD);
+			
 }
 
 /// @brief Rotates the camera with character movement
@@ -601,6 +603,13 @@ void ABaseCharacterClass::SetReflectionMode(bool bIsReflecting, float Reflection
 	bIsCharacterReflecting = bIsReflecting;
 	FTimerDelegate ReflectDelegate = FTimerDelegate::CreateUObject(this, &ABaseCharacterClass::SetReflectionMode, false, 0.0f);
 	GetWorldTimerManager().SetTimer(ReflectModeHandle, ReflectDelegate, ReflectionTime, false);
+}
+
+void ABaseCharacterClass::SetHud()
+{
+	//get pointer to player hud widget
+	PlayerHUD = Cast<UPlayerHUDWidget>(PC->GetHUD());
+	ReplenishHandFunction();
 }
 
 ///@brief Returns alive state of the player

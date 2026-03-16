@@ -40,6 +40,9 @@ private:
 	class USkeletalMesh* CardSkeletalMeshTemplate;
 
 	class ABaseCharacterClass* Player;
+
+	UPROPERTY(EditAnywhere, Instanced)
+	class UAudioComponent* CardDeckAudioSource;
 	
 	FTimerHandle ReloadHandle;
 	UPROPERTY(EditAnywhere)
@@ -58,7 +61,7 @@ protected:
 
 	UPROPERTY(EditAnywhere)
 	USkeletalMeshComponent* CardSkeletalMesh;
-
+	
 	void SpawnCard();
 
 public:	
