@@ -102,6 +102,8 @@ protected:
 	//determines if the card is homing or not
 	UPROPERTY(EditAnywhere, Category="Projectile Flight")
 	bool IsHoming;
+	UPROPERTY(EditAnywhere, Category = "Projectile Flight")
+	float ShieldDeflectionDistance = 1000.0f;
 	UPROPERTY(EditAnywhere, Category="Combat")
 	float EnergyOnDamage = 0.1f;
 
@@ -126,6 +128,7 @@ protected:
 	UFUNCTION()
 	void CalculateCurveControlPoint();
 
+
 	UFUNCTION()
 	TArray<AActor*> FindActorsInRange(UClass* ActorClass, float Radius);
 
@@ -134,7 +137,8 @@ protected:
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
-	
+
+	void DeflectFromShield(const FHitResult& Hit);
 
 	void FreezeCard(bool bIsFrozen);
 

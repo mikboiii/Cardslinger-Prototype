@@ -201,6 +201,29 @@ void AProjectileCard::CalculateCurveControlPoint()
 	CurvedPoint = MidPoint + UKismetMathLibrary::RotateAngleAxis(y, UKismetMathLibrary::RandomFloatInRange(MinAngle, MaxAngle), x);
 }
 
+void AProjectileCard::DeflectFromShield(const FHitResult& Hit)
+{
+	// Get the direction the card is currently travelling.
+	FVector IncomingDirection = GetActorForwardVector().GetSafeNormal();
+
+	// Reflect the card's direction off the shield surface.
+	FVector ReflectedDirection = FMath::GetReflectionVector(IncomingDirection, Hit.ImpactNormal).GetSafeNormal();
+	
+	// Create a new target point in the reflected direction.
+	TargetLocation = Hit.ImpactPoint + (ReflectedDirection * ShieldDeflectionDistance);
+	
+	// New direction from the hit
+	SetActorLocation(Hit.ImpactPoint + Hit.ImpactNormal * 5.0f);
+
+	CalculateMidPoint();
+	CalculateCurveControlPoint();
+
+	// Stop homing
+	IsHoming = false;
+	TargetEnemy = nullptr;
+	BoneTarget = NAME_None;
+}
+
 TArray<AActor*> AProjectileCard::FindActorsInRange(UClass* ActorClass, float Radius)
 {
     TArray<AActor*> OverlappingActors;

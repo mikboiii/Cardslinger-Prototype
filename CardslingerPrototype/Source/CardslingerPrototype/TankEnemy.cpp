@@ -25,4 +25,6 @@ void ATankEnemy::HandleShieldHit(
 {
 	if (!Projectile)
 		return;
+
+	Projectile->DeflectFromShield(Hit);
 }
