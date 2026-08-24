@@ -3,6 +3,7 @@
 
 #include "TankEnemy.h"
 
+#include "ProjectileCard.h"
 #include "Components/SphereComponent.h"
 
 ATankEnemy::ATankEnemy()
@@ -11,4 +12,17 @@ ATankEnemy::ATankEnemy()
 	ShieldComponent->SetupAttachment(RootComponent);
 
 	ShieldComponent->ComponentTags.Add(FName("Shield"));
+}
+
+void ATankEnemy::BeginPlay()
+{
+	Super::BeginPlay();
+}
+
+void ATankEnemy::HandleShieldHit(
+	AProjectileCard* Projectile,
+	const FHitResult& Hit)
+{
+	if (!Projectile)
+		return;
 }

@@ -15,6 +15,7 @@
 #include "TimerManager.h"
 #include "BaseCharacterClass.h"
 #include "BaseAIClass.h"
+#include "TankEnemy.h"
 
 // Sets default values
 AProjectileCard::AProjectileCard()
@@ -98,7 +99,14 @@ void AProjectileCard::OnHit(UPrimitiveComponent* HitComponent, AActor* OtherActo
 
 		if (OtherComponent && OtherComponent->ComponentHasTag("Shield"))
 		{
-			// ShieldComponent->HandleShieldHit(this,Hit);
+			ATankEnemy* Tank = Cast<ATankEnemy>(OtherComponent->GetOwner());
+
+			if (Tank)
+			{
+				
+				Tank->HandleShieldHit(this, Hit);
+				return;
+			}
 			return;
 			// To do: change sound to a shield bounce mabe
 			if(CardImpact)

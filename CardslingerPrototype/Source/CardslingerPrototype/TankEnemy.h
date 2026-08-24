@@ -9,17 +9,23 @@
 /**
  * 
  */
+
+class USphereComponent;
+class AProjectileCard;
+
 UCLASS()
 class CARDSLINGERPROTOTYPE_API ATankEnemy : public ABaseAIClass // Maybe implement interface later?
 {
 	GENERATED_BODY()
 
+public:
+	ATankEnemy();
+	
 protected:
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly)
 	USphereComponent* ShieldComponent;
 
 	virtual void BeginPlay() override;
-	class AProjectileCard;
 	
 public:
 	void HandleShieldHit(AProjectileCard* Projectile, const FHitResult& Hit);
