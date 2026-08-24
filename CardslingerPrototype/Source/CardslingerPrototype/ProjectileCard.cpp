@@ -95,6 +95,19 @@ void AProjectileCard::OnHit(UPrimitiveComponent* HitComponent, AActor* OtherActo
     {
 		//play impact fx that occurs when anything is hit
 		if(CardImpactUniversal) UNiagaraFunctionLibrary::SpawnSystemAtLocation(GetWorld(), CardImpactUniversal, Hit.ImpactPoint, GetActorForwardVector().Rotation(),FVector(ParticleScale), true, true, ENCPoolMethod::None, true);
+
+		if (OtherComponent && OtherComponent->ComponentHasTag("Shield"))
+		{
+			// ShieldComponent->HandleShieldHit(this,Hit);
+			return;
+			// To do: change sound to a shield bounce mabe
+			if(CardImpact)
+			{
+				//play enemy hit fx if applicable
+				UNiagaraFunctionLibrary::SpawnSystemAtLocation(GetWorld(), CardImpact, Hit.ImpactPoint, GetActorForwardVector().Rotation(),FVector(ParticleScale), true, true, ENCPoolMethod::None, true);
+			}
+		}
+
 		if(OtherActor != PlayerPawn && OtherActor->IsA(ABaseAIClass::StaticClass()))
 		{
 			//create unreal damage event
