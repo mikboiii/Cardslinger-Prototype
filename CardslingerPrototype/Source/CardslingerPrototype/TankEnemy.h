@@ -4,6 +4,8 @@
 
 #include "CoreMinimal.h"
 #include "BaseAIClass.h"
+#include "AIController.h"	
+#include "TankAIController.h"
 #include "TankEnemy.generated.h"
 
 /**
@@ -26,9 +28,13 @@ protected:
 	USphereComponent* ShieldComponent;
 
 	virtual void BeginPlay() override;
+
+	UPROPERTY()
+	ATankAIController* ThisController;
 	
 public:
 	void HandleShieldHit(AProjectileCard* Projectile, const FHitResult& Hit);
+
 };
 
 

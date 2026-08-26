@@ -17,6 +17,7 @@ ATankEnemy::ATankEnemy()
 void ATankEnemy::BeginPlay()
 {
 	Super::BeginPlay();
+	ThisController = Cast<ATankAIController>(GetController());
 }
 
 void ATankEnemy::HandleShieldHit(

@@ -203,7 +203,7 @@ void AProjectileCard::CalculateCurveControlPoint()
 
 void AProjectileCard::DeflectFromShield(const FHitResult& Hit)
 {
-	// Get the direction the card is currently travelling.
+	// Get the direction the card is currently moving.
 	FVector IncomingDirection = GetActorForwardVector().GetSafeNormal();
 
 	// Reflect the card's direction off the shield surface.
