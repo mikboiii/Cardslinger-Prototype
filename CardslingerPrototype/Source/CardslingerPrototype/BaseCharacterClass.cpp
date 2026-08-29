@@ -473,6 +473,14 @@ bool ABaseCharacterClass::HitTrace(FHitResult& Hit, FVector& ShotDirection)
 	return GetWorld()->LineTraceSingleByChannel(Hit, ViewLocation, End, ECollisionChannel::ECC_GameTraceChannel2, Params);
 }
 
+AActor* ABaseCharacterClass::FindBestTarget() {
+
+}
+
+void ABaseCharacterClass::SetCurrentTarget() {
+
+}
+
 /// @brief Gets player controller
 /// @return returns player controller
 AController* ABaseCharacterClass::GetOwnerController() const

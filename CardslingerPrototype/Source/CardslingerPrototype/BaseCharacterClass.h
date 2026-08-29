@@ -12,6 +12,8 @@ struct FInputActionValue;
 class ABaseCard;
 class UProgressBar;
 class UUWidget;
+class AActor;
+
 UCLASS()
 class CARDSLINGERPROTOTYPE_API ABaseCharacterClass : public ACharacter
 {
@@ -70,6 +72,10 @@ protected:
 	void Shoot();
 
 	void ShootMultiple();
+
+	AActor* FindBestTarget();
+
+	void SetCurrentTarget();
 
 	UFUNCTION()
 	void Dash();
@@ -198,6 +204,14 @@ private:
 
 	UPROPERTY(EditAnywhere, Category = "Combat")
 	float MaxRange = 1000.0f;
+
+	UPROPERTY(EditAnywhere, Category = "Combat")
+	float MaxTargetingRange = 400.0f;
+
+	UPROPERTY(EditAnywhere, Category = "Combat")
+	float TargetingConeAngle = 40.0f;
+
+	AActor* currentTarget;
 
 	UPROPERTY(EditAnywhere, Category = "Combat", meta=(EditCondition="bIsStaggeredFiring"))
 	int32 CardsPerShot = 3;
